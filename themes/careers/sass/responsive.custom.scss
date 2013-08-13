@@ -33,6 +33,11 @@
 /*
  * 1100 px Max Width Container and Up
  */
+// Move Front Page Title Off-Screen to hide but maintain accessibility
+.front #page-title{
+	@include offscreen;
+}
+
 @media only screen and (min-width: 1100px) {
   #footer-wrapper {
     .block {
