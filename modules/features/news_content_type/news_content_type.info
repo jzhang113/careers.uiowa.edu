@@ -1,0 +1,17 @@
+name = News Content Type
+core = 7.x
+package = Careers
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = text
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_instance][] = node-news_content_type-body
+features[node][] = news_content_type
+features[variable][] = menu_options_news_content_type
+features[variable][] = menu_parent_news_content_type
+features[variable][] = node_options_news_content_type
+features[variable][] = node_preview_news_content_type
+features[variable][] = node_submitted_news_content_type
