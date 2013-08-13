@@ -1,0 +1,17 @@
+name = Success Stories Content Type
+core = 7.x
+package = Careers
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = text
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_instance][] = node-success_stories_content_type-body
+features[node][] = success_stories_content_type
+features[variable][] = menu_options_success_stories_content_type
+features[variable][] = menu_parent_success_stories_content_type
+features[variable][] = node_options_success_stories_content_type
+features[variable][] = node_preview_success_stories_content_type
+features[variable][] = node_submitted_success_stories_content_type
+features_exclude[dependencies][news_content_type] = news_content_type
