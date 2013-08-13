@@ -14,6 +14,13 @@
  *   element-invisible and focusable styles.
  */
 
+ //
+// Box Sizing
+//
+* {
+  @include box-sizing(border-box);
+}
+
 /* =============================================================================
     HTML5 display definitions
    ========================================================================== */
@@ -134,6 +141,24 @@ a:active {
   outline: 0;
 }
 
+/* =============================================================================
+    Gutters
+   ========================================================================== */
+
+/*
+ * If gutters are set in theme settings they will override these values,
+ * see Extensions > Modify Output > Design
+ * $gutter-width is set in _base.scss
+ */
+
+.panel-display {
+  margin: -$gutters;
+}
+
+.block {
+  padding: $gutters;
+}
+
 
 /* =============================================================================
     Typography
@@ -146,41 +171,41 @@ a:active {
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
 
+
+p {
+  margin: 0 0 $font-block-spacing 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 $font-block-spacing 0;
+  @include font-size(1.8);
+  line-height: normal;
+}
+
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  @include font-size(2.8);
 }
 
 
 h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
+  @include font-size(2.4);
 }
 
 
 h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
+  @include font-size(2.4);
 }
 
 
 h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
+  @include font-size(2.1);
 }
 
 
-h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
-}
+h5 {}
 
 
-h6 {
-  font-size: 0.75em;
-  margin: 2.33em 0;
-}
-
+h6 {}
 
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
@@ -225,9 +250,7 @@ mark {
  * Addresses margins set differently in IE6/7
  */
 p,
-pre {
-  margin: 0 0 1.5em;
-}
+pre {}
 
 
 /*
@@ -532,40 +555,6 @@ table {
 
 
 /* =============================================================================
-    Gutters
-   ========================================================================== */
-
-/*
- * If gutters are set in theme settings they will override these values,
- * see Extensions > Modify Output > Design
- * $gutter-width is set in _base.scss
- */
-#main-content,
-.block-inner,
-.pane-inner,
-.menu-wrapper,
-.branding-elements,
-.breadcrumb-wrapper,
-.attribution,
-.at-panel .rounded-corner,
-.block-panels-mini > .block-title,
-div.messages {
-  margin-left: $gutter-width;
-  margin-right: $gutter-width;
-}
-
-/*
- * Panel pages need negative margin equal to the gutter width applied to #content,
- * this is taken care of in theme settings as per above for normal gutters
- */
-#content .panel-display,
-#content .panel-flexible {
-  margin-left: -$gutter-width;
-  margin-right: -$gutter-width;
-}
-
-
-/* =============================================================================
     Flexible Media and Cross browser improvements
    ========================================================================== */
 
@@ -698,4 +687,13 @@ header[role=banner],
 /* Hide content from all users */
 .element-hidden {
   display: none;
+}
+
+// Debug gutters
+.debug-regions .panel-display {
+  outline: 1px dotted red;
+}
+
+.debug-regions .block {
+  outline: 1px dotted blue;
 }

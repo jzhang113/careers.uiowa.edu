@@ -1,0 +1,37 @@
+/**
+ * @file
+ * OA Whelan Flipped panel layout
+**/
+
+
+.whelan-flipped-column-content-region {
+  width: 25%;
+  float: left;
+}
+
+
+  .whelan-flipped-content {
+    width: 50%;
+  }
+
+/* iPhone [portrait + landscape]*/
+@media only screen and (max-width: 480px) {
+  .whelan-flipped-content,
+  .whelan-flipped-column1,
+  .whelan-flipped-column2 {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .whelan-flipped-content {
+    width: 100%;
+    float: none;
+  }
+  .whelan-flipped-column1,
+  .whelan-flipped-column2 {
+    width: 50%;
+    float: left;
+  }
+}
