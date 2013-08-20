@@ -84,6 +84,14 @@ $font-block-spacing: 20px;
   *zoom: 1;           // Give IE hasLayout, a new formatting context equivalent
 }
 
+//
+// Default Borders
+//
+@mixin border {
+  @include border-radius(4px);
+  @include box-shadow(0 1px 4px rgba(0,0,0,0.2));
+}
+
 
 //
 // Image replacement
