@@ -40,3 +40,34 @@
     width: 33.33333%;
   }
 }
+/*
+ * @file
+ * local.styles
+ *
+*/
+/* line 11, ../sass/_local.scss */
+.view-display-id-employer_showcase_grid_panel_pane .item-list ul {
+  list-style: none;
+}
+/* line 13, ../sass/_local.scss */
+.view-display-id-employer_showcase_grid_panel_pane .item-list ul li {
+  display: inline;
+  float: left;
+  margin: 0.25em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: #cccccc 1px 1px 5px;
+  -moz-box-shadow: #cccccc 1px 1px 5px;
+  box-shadow: #cccccc 1px 1px 5px;
+}
+/* line 22, ../sass/_local.scss */
+.view-display-id-employer_showcase_grid_panel_pane .views-field-field-logo {
+  line-height: 200px;
+}
+/* line 25, ../sass/_local.scss */
+.view-display-id-employer_showcase_grid_panel_pane .views-field-field-logo img {
+  vertical-align: middle;
+}

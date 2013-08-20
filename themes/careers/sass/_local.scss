@@ -1,0 +1,29 @@
+// _base.scss imports _custom.scss and other partials.
+
+@import "base";
+/*
+ * @file
+ * local.styles
+ *
+*/
+
+.view-display-id-employer_showcase_grid_panel_pane {
+	.item-list ul {
+		list-style:none;
+		li {
+			display: inline;
+			float: left;
+			margin: 0.25em;
+			@include border-radius(5px);
+			@include box-shadow(#ccc 1px 1px 5px);
+		}
+	}
+	// Vertical Center Image
+	.views-field-field-logo{
+	    line-height: 200px;
+
+		img {
+		    vertical-align: middle;
+		}
+	}
+}
