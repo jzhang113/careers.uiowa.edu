@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Employers Showcase feature.
+ */
+
+include_once 'employers_showcase_view.features.inc';
