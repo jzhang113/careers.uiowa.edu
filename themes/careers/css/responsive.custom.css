@@ -54,20 +54,56 @@
   display: inline;
   float: left;
   margin: 0.25em;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: #cccccc 1px 1px 5px;
-  -moz-box-shadow: #cccccc 1px 1px 5px;
-  box-shadow: #cccccc 1px 1px 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
-/* line 22, ../sass/_local.scss */
+/* line 21, ../sass/_local.scss */
 .view-display-id-employer_showcase_grid_panel_pane .views-field-field-logo {
   line-height: 200px;
 }
-/* line 25, ../sass/_local.scss */
+/* line 24, ../sass/_local.scss */
 .view-display-id-employer_showcase_grid_panel_pane .views-field-field-logo img {
   vertical-align: middle;
+}
+
+/* line 31, ../sass/_local.scss */
+.view-display-id-employer_showcase_slider_panel_pane .flexslider {
+  border: 0px;
+}
+/* line 34, ../sass/_local.scss */
+.view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane {
+  padding: 0px;
+}
+/* line 37, ../sass/_local.scss */
+.view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .views-field-title {
+  padding: 5px;
+  background: #333;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+/* line 42, ../sass/_local.scss */
+.view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .views-field-title a {
+  color: white;
+}
+/* line 47, ../sass/_local.scss */
+.view-display-id-employer_showcase_slider_panel_pane .flex-control-paging {
+  display: none;
 }

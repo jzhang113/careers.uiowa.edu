@@ -14,8 +14,7 @@
 			display: inline;
 			float: left;
 			margin: 0.25em;
-			@include border-radius(5px);
-			@include box-shadow(#ccc 1px 1px 5px);
+			@include border;
 		}
 	}
 	// Vertical Center Image
@@ -26,4 +25,27 @@
 		    vertical-align: middle;
 		}
 	}
+}
+
+.view-display-id-employer_showcase_slider_panel_pane {
+	.flexslider{
+			border: 0px;
+	}
+	#flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane {
+		padding: 0px;
+
+		.views-field-title{
+		    padding: 5px;
+		    background: #333;
+		    @include border;
+		    @include border-top-radius(0px);
+		    a {
+		    	color: white;
+		    }
+		}
+	}
+	.flex-control-paging{
+		display: none;
+	}
+
 }
