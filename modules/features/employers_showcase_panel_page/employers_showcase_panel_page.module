@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Employers Showcase Panel Page feature.
+ */
+
+include_once 'employers_showcase_panel_page.features.inc';
