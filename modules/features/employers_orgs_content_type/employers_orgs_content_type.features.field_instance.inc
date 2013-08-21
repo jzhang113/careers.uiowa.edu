@@ -242,6 +242,186 @@ function employers_orgs_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-employers_orgs_content_type-field_sponsor'
+  $field_instances['node-employers_orgs_content_type-field_sponsor'] = array(
+    'bundle' => 'employers_orgs_content_type',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Employer/Organization has paid to be a sponsor and will be featured in the showcase gallery',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sponsor',
+    'label' => 'Pomerantz Career Center Sponsor',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-employers_orgs_content_type-field_sponsor_date'
+  $field_instances['node-employers_orgs_content_type-field_sponsor_date'] = array(
+    'bundle' => 'employers_orgs_content_type',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sponsor_date',
+    'label' => 'Sponsor Date',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'm/d/Y - g:i:sa',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-employers_orgs_content_type-field_visited'
+  $field_instances['node-employers_orgs_content_type-field_visited'] = array(
+    'bundle' => 'employers_orgs_content_type',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'The Pomerantz Career Center visited this Employer/Organization.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_visited',
+    'label' => 'Pomerantz Career Center Visited',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-employers_orgs_content_type-field_visited_date'
+  $field_instances['node-employers_orgs_content_type-field_visited_date'] = array(
+    'bundle' => 'employers_orgs_content_type',
+    'deleted' => 0,
+    'description' => 'When the Pomerantz Career Center visited this employer/organization',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_visited_date',
+    'label' => 'Visit Date(s)',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'blank',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'M j Y - g:i:sa',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'text_parts' => array(),
+        'year_range' => '-10:+3',
+      ),
+      'type' => 'date_select',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-employers_orgs_content_type-field_website_link'
   $field_instances['node-employers_orgs_content_type-field_website_link'] = array(
     'bundle' => 'employers_orgs_content_type',
@@ -299,10 +479,17 @@ function employers_orgs_content_type_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Employer/Organization has paid to be a sponsor and will be featured in the showcase gallery');
   t('Location');
   t('Location Geofield');
   t('Logo');
+  t('Pomerantz Career Center Sponsor');
+  t('Pomerantz Career Center Visited');
+  t('Sponsor Date');
+  t('The Pomerantz Career Center visited this Employer/Organization.');
+  t('Visit Date(s)');
   t('Website Link');
+  t('When the Pomerantz Career Center visited this employer/organization');
 
   return $field_instances;
 }
