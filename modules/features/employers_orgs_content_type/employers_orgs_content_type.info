@@ -13,6 +13,7 @@ dependencies[] = image
 dependencies[] = link
 dependencies[] = list
 dependencies[] = media
+dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = text
 features[conditional_fields][] = node:employers_orgs_content_type
