@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Career Center Visited View feature.
+ */
+
+include_once 'career_center_visited_view.features.inc';
