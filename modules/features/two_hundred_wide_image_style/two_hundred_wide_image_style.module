@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Two Hundred Wide Image Style feature.
- */
-
-include_once 'two_hundred_wide_image_style.features.inc';

@@ -1,7 +1,0 @@
-name = Two Hundred Wide Image Style
-core = 7.x
-package = Careers
-php = 5.2.4
-dependencies[] = image
-features[features_api][] = api:2
-features[image][] = 200px_wide

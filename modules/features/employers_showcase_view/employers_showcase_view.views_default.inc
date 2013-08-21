@@ -59,11 +59,12 @@ function employers_showcase_view_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'employers_content_type' => 'employers_content_type',
+    'employers_orgs_content_type' => 'employers_orgs_content_type',
   );
 
   /* Display: Employer Showcase Grid */
   $handler = $view->new_display('panel_pane', 'Employer Showcase Grid', 'employer_showcase_grid_panel_pane');
+  $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -82,7 +83,7 @@ function employers_showcase_view_views_default_views() {
   $handler->display->display_options['fields']['field_logo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_logo']['settings'] = array(
-    'image_style' => '200px_wide',
+    'image_style' => '200px',
     'image_link' => 'content',
   );
 
@@ -147,6 +148,68 @@ function employers_showcase_view_views_default_views() {
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
+
+  /* Display: Employer Showcase Map */
+  $handler = $view->new_display('panel_pane', 'Employer Showcase Map', 'employer_showcase_map_panel_pane');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Map';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'leaflet';
+  $handler->display->display_options['style_options']['data_source'] = 'field_location_geofield';
+  $handler->display->display_options['style_options']['name_field'] = 'title';
+  $handler->display->display_options['style_options']['description_field'] = 'field_logo';
+  $handler->display->display_options['style_options']['map'] = 'OSM Mapnik';
+  $handler->display->display_options['style_options']['icon'] = array(
+    'iconUrl' => '',
+    'shadowUrl' => '',
+    'iconSize' => array(
+      'x' => '',
+      'y' => '',
+    ),
+    'iconAnchor' => array(
+      'x' => '',
+      'y' => '',
+    ),
+    'shadowAnchor' => array(
+      'x' => '',
+      'y' => '',
+    ),
+    'popupAnchor' => array(
+      'x' => '',
+      'y' => '',
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Logo */
+  $handler->display->display_options['fields']['field_logo']['id'] = 'field_logo';
+  $handler->display->display_options['fields']['field_logo']['table'] = 'field_data_field_logo';
+  $handler->display->display_options['fields']['field_logo']['field'] = 'field_logo';
+  $handler->display->display_options['fields']['field_logo']['label'] = '';
+  $handler->display->display_options['fields']['field_logo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_logo']['settings'] = array(
+    'image_style' => 'thumbnail',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Location Geofield */
+  $handler->display->display_options['fields']['field_location_geofield']['id'] = 'field_location_geofield';
+  $handler->display->display_options['fields']['field_location_geofield']['table'] = 'field_data_field_location_geofield';
+  $handler->display->display_options['fields']['field_location_geofield']['field'] = 'field_location_geofield';
+  $handler->display->display_options['fields']['field_location_geofield']['label'] = '';
+  $handler->display->display_options['fields']['field_location_geofield']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_location_geofield']['click_sort_column'] = 'wkt';
+  $handler->display->display_options['fields']['field_location_geofield']['settings'] = array(
+    'data' => 'full',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $export['employer_showcase'] = $view;
 
   return $export;
