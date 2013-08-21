@@ -10,6 +10,33 @@
 function employers_orgs_content_type_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_description'
+  $field_bases['field_description'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_description',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_with_summary',
+  );
+
   // Exported field_base: 'field_location_address'
   $field_bases['field_location_address'] = array(
     'active' => 1,
@@ -167,10 +194,10 @@ function employers_orgs_content_type_field_default_field_bases() {
       'cache_count' => 4,
       'cache_enabled' => 0,
       'granularity' => array(
-        'day' => 'day',
+        'day' => 0,
         'hour' => 0,
         'minute' => 0,
-        'month' => 'month',
+        'month' => 0,
         'second' => 0,
         'year' => 'year',
       ),

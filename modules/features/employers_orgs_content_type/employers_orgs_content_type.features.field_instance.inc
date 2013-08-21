@@ -10,43 +10,41 @@
 function employers_orgs_content_type_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-employers_orgs_content_type-body'
-  $field_instances['node-employers_orgs_content_type-body'] = array(
+  // Exported field_instance: 'node-employers_orgs_content_type-field_description'
+  $field_instances['node-employers_orgs_content_type-field_description'] = array(
     'bundle' => 'employers_orgs_content_type',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 9,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'field_name' => 'field_description',
+    'label' => 'Description',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 20,
+        'rows' => 5,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
@@ -478,7 +476,7 @@ function employers_orgs_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
+  t('Description');
   t('Employer/Organization has paid to be a sponsor and will be featured in the showcase gallery');
   t('Location');
   t('Location Geofield');
