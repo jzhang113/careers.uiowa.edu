@@ -50,11 +50,28 @@
  * local.styles
  *
 */
+/* line 9, ../sass/_local.scss */
+.view-display-id-success_stories_teaser_content_pane {
+  margin: 10px;
+}
 /* line 11, ../sass/_local.scss */
+.view-display-id-success_stories_teaser_content_pane .views-field-field-profile-image {
+  float: right;
+}
+/* line 13, ../sass/_local.scss */
+.view-display-id-success_stories_teaser_content_pane .views-field-field-profile-image img {
+  padding: 10px;
+}
+/* line 17, ../sass/_local.scss */
+.view-display-id-success_stories_teaser_content_pane .views-field-title-1 {
+  text-align: right;
+}
+
+/* line 23, ../sass/_local.scss */
 .view-display-id-employer_showcase_grid_panel_pane .item-list ul {
   list-style: none;
 }
-/* line 13, ../sass/_local.scss */
+/* line 25, ../sass/_local.scss */
 .view-display-id-employer_showcase_grid_panel_pane .item-list ul li {
   display: inline;
   float: left;
@@ -68,26 +85,26 @@
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
-/* line 21, ../sass/_local.scss */
+/* line 33, ../sass/_local.scss */
 .view-display-id-employer_showcase_grid_panel_pane .views-field-field-logo {
   line-height: 200px;
   width: 200px;
   text-align: center;
 }
-/* line 26, ../sass/_local.scss */
+/* line 38, ../sass/_local.scss */
 .view-display-id-employer_showcase_grid_panel_pane .views-field-field-logo img {
   vertical-align: middle;
 }
 
-/* line 33, ../sass/_local.scss */
+/* line 45, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider {
   border: 0px;
 }
-/* line 36, ../sass/_local.scss */
+/* line 48, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane {
   padding: 0px;
 }
-/* line 39, ../sass/_local.scss */
+/* line 51, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .views-field-title {
   padding: 5px;
   background: #333;
@@ -106,11 +123,11 @@
   -webkit-border-top-right-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 44, ../sass/_local.scss */
+/* line 56, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .views-field-title a {
   color: white;
 }
-/* line 49, ../sass/_local.scss */
+/* line 61, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flex-control-paging {
   display: none;
 }

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Success Stories View feature.
+ */
+
+include_once 'success_stories_view.features.inc';

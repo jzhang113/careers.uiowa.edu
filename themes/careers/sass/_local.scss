@@ -6,6 +6,18 @@
  * local.styles
  *
 */
+.view-display-id-success_stories_teaser_content_pane{
+	margin: 10px;
+	.views-field-field-profile-image{
+		float:right;
+		img{
+			padding:10px;
+		}
+	}
+	.views-field-title-1{
+		text-align: right;
+	}
+}
 
 .view-display-id-employer_showcase_grid_panel_pane {
 	.item-list ul {
