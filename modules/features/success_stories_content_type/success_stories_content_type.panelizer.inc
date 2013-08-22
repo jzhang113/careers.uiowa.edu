@@ -104,7 +104,7 @@ function success_stories_content_type_panelizer_defaults() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
+      'label' => 'hidden',
       'formatter' => 'image',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -114,6 +114,8 @@ function success_stories_content_type_panelizer_defaults() {
         'image_link' => '',
       ),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -133,16 +135,20 @@ function success_stories_content_type_panelizer_defaults() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'image',
-      'delta_limit' => 0,
+      'label' => 'hidden',
+      'formatter' => 'flexslider',
+      'delta_limit' => '0',
       'delta_offset' => '0',
-      'delta_reversed' => FALSE,
+      'delta_reversed' => 0,
       'formatter_settings' => array(
         'image_style' => '',
         'image_link' => '',
+        'optionset' => 'default',
+        'caption' => 0,
       ),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
