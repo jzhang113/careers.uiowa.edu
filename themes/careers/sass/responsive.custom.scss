@@ -33,6 +33,29 @@
 /*
  * 1100 px Max Width Container and Up
  */
+
+//
+// Fixed header
+//
+.not-logged-in {
+  #ui-wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 600;
+  }
+
+  #header-wrapper {
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 600;
+  }
+
+  #content-header-wrapper {
+    padding-top: 120px; //height of branding bar + height of header + breathing room.
+  }
+}
+
 // Move Front Page Title Off-Screen to hide but maintain accessibility
 .front #page-title{
 	@include offscreen;
