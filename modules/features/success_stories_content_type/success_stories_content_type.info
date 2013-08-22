@@ -25,6 +25,7 @@ features[variable][] = menu_parent_success_stories_content_type
 features[variable][] = node_options_success_stories_content_type
 features[variable][] = node_preview_success_stories_content_type
 features[variable][] = node_submitted_success_stories_content_type
+features[variable][] = panelizer_defaults_node_success_stories_content_type
 features[variable][] = panelizer_node:success_stories_content_type_allowed_layouts
 features[variable][] = panelizer_node:success_stories_content_type_allowed_layouts_default
 features[variable][] = panelizer_node:success_stories_content_type_allowed_types_default
