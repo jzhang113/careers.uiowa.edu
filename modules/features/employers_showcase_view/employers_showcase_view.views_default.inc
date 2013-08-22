@@ -116,10 +116,11 @@ function employers_showcase_view_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['footer'] = FALSE;
-  /* Footer: Entity: Rendered entity */
-  $handler->display->display_options['footer']['entity']['id'] = 'entity';
-  $handler->display->display_options['footer']['entity']['table'] = 'entity__global';
-  $handler->display->display_options['footer']['entity']['field'] = 'entity';
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="showcasegallery/">View full list of Employers</a>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Logo */
   $handler->display->display_options['fields']['field_logo']['id'] = 'field_logo';
