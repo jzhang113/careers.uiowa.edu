@@ -34,6 +34,15 @@
  * 1100 px Max Width Container and Up
  */
 
+#header-wrapper{
+  background-color: #333;
+  @include box-shadow(black 0px 0px 10px);
+  color: white;
+  a{
+    color: white;
+  }
+}
+
 //
 // Fixed header
 //

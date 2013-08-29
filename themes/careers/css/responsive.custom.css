@@ -23,25 +23,38 @@
 /*
  * 1100 px Max Width Container and Up
  */
+/* line 37, ../sass/responsive.custom.scss */
+#header-wrapper {
+  background-color: #333;
+  -webkit-box-shadow: black 0px 0px 10px;
+  -moz-box-shadow: black 0px 0px 10px;
+  box-shadow: black 0px 0px 10px;
+  color: white;
+}
 /* line 41, ../sass/responsive.custom.scss */
+#header-wrapper a {
+  color: white;
+}
+
+/* line 50, ../sass/responsive.custom.scss */
 .not-logged-in #ui-wrapper {
   position: fixed;
   width: 100%;
   z-index: 600;
 }
-/* line 47, ../sass/responsive.custom.scss */
+/* line 56, ../sass/responsive.custom.scss */
 .not-logged-in #header-wrapper {
   position: fixed;
   top: 40px;
   width: 100%;
   z-index: 600;
 }
-/* line 54, ../sass/responsive.custom.scss */
+/* line 63, ../sass/responsive.custom.scss */
 .not-logged-in #content-header-wrapper {
   padding-top: 120px;
 }
 
-/* line 60, ../sass/responsive.custom.scss */
+/* line 69, ../sass/responsive.custom.scss */
 .front #page-title {
   position: absolute;
   top: -99999em;
@@ -51,13 +64,13 @@
   outline: 0;
 }
 
-/* line 66, ../sass/responsive.custom.scss */
+/* line 75, ../sass/responsive.custom.scss */
 .flexslider ul {
   padding: 0px;
 }
 
 @media only screen and (min-width: 1100px) {
-  /* line 73, ../sass/responsive.custom.scss */
+  /* line 82, ../sass/responsive.custom.scss */
   #footer-wrapper .block {
     float: left;
     width: 33.33333%;
