@@ -47,6 +47,7 @@ function two_hundred_image_style_image_default_styles() {
         'weight' => 2,
       ),
     ),
+    'label' => '200px',
   );
 
   return $styles;
