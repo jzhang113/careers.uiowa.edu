@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Front Panel Page feature.
+ */
+
+include_once 'front_panel_page.features.inc';
