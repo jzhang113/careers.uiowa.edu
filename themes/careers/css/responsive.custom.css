@@ -66,43 +66,22 @@
 /*
  * Main Menu
  */
-/* line 76, ../sass/responsive.custom.scss */
-.js #nav {
-  overflow: visible;
-}
-
-/* line 79, ../sass/responsive.custom.scss */
-#secondary-content-wrapper {
-  background-color: #ffce34;
-}
-
-/* line 82, ../sass/responsive.custom.scss */
+/* line 77, ../sass/responsive.custom.scss */
 #block-responsive-navigation-1 {
-  padding: 0px;
+  background-color: #ffce34;
+  padding: 10px;
 }
-/* line 84, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .block-content {
-  background: #ffce34;
-}
-/* line 86, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .block-content a {
+/* line 80, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 a, #block-responsive-navigation-1 a:hover, #block-responsive-navigation-1 a:active, #block-responsive-navigation-1 a:visited {
   color: #333;
-}
-/* line 88, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .block-content a:hover {
   text-decoration: none;
 }
-/* line 92, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .block-content:hover {
-  background: #ffce34;
-  color: #333;
+/* line 84, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 li ul {
+  display: none;
 }
-/* line 96, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .block-content #nav-toggle {
-  margin-left: 5px;
-}
-/* line 98, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .block-content #nav-toggle:before {
+/* line 88, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 #nav-toggle:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -110,143 +89,38 @@
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f0c9";
-  font-size: 1.6em;
+  font-size: 1.2em;
   color: #333333;
-  padding-right: 10px;
+  padding-right: 5px;
   vertical-align: middle;
 }
-
-/* line 107, ../sass/responsive.custom.scss */
-#nav {
-  border: none;
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
-  font-weight: bold;
-  width: auto;
-}
-/* line 114, ../sass/responsive.custom.scss */
-#nav ul {
-  background: #ffce34;
-  height: 35px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 121, ../sass/responsive.custom.scss */
-#nav li {
-  float: left;
-  padding: 0px;
-}
 @media only screen and (min-width: 40em) {
-  /* line 121, ../sass/responsive.custom.scss */
+  /* line 77, ../sass/responsive.custom.scss */
+  #block-responsive-navigation-1 {
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  /* line 100, ../sass/responsive.custom.scss */
   #nav li {
     width: auto;
+    float: left;
+    padding: 8px;
   }
 }
-/* line 127, ../sass/responsive.custom.scss */
-#nav li a {
-  background: #ffce34;
-  display: block;
-  font-weight: normal;
-  line-height: 35px;
-  margin: 0px;
-  padding: 0px 25px;
-  text-align: center;
-  text-decoration: none;
-}
-/* line 138, ../sass/responsive.custom.scss */
-#nav > ul > li > a, #nav ul ul a {
-  color: #cccccc;
-}
-/* line 141, ../sass/responsive.custom.scss */
-#nav li > a:hover, #nav ul li:hover > a {
-  background: #333;
-  color: #ffce34;
-  text-decoration: none;
-}
-/* line 147, ../sass/responsive.custom.scss */
-#nav li ul {
-  background: #ffce34;
-  display: none;
-  height: auto;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  position: absolute;
-  width: 225px;
-  z-index: 200;
-  /*top:1em;
-  /*left:0;*/
-}
-/* line 161, ../sass/responsive.custom.scss */
-#nav li:hover ul {
-  display: none;
-}
-@media only screen and (min-width: 40em) {
-  /* line 161, ../sass/responsive.custom.scss */
-  #nav li:hover ul {
-    display: block;
-  }
-}
-/* line 167, ../sass/responsive.custom.scss */
-#nav li li {
-  display: block;
-  float: none;
-  margin: 0px;
-  padding: 0px;
-  width: 225px;
-}
-/* line 174, ../sass/responsive.custom.scss */
-#nav li:hover li a {
-  background: none;
-}
-/* line 177, ../sass/responsive.custom.scss */
-#nav li ul {
-  padding-bottom: 10px;
-  -moz-border-radius-bottomright: 10px;
-  -webkit-border-bottom-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-/* line 180, ../sass/responsive.custom.scss */
-#nav li ul a {
-  display: block;
-  height: 35px;
-  margin: 0px;
-  padding: 0px 10px 0px 15px;
-  text-align: left;
-}
-/* line 186, ../sass/responsive.custom.scss */
-#nav li ul a:hover {
-  background: #333;
-  border: 0px;
-  color: #ffce34;
-  text-decoration: none;
-}
-/* line 193, ../sass/responsive.custom.scss */
-#nav li ul li:hover > a {
-  background: #333;
-  border: 0px;
-  color: #ffce34;
-  text-decoration: none;
-}
-/* line 201, ../sass/responsive.custom.scss */
-#nav p {
-  clear: left;
-}
-
-/* line 206, ../sass/responsive.custom.scss */
+/* line 108, ../sass/responsive.custom.scss */
 #main-content, #main-content-header {
   background-color: white;
 }
 
-/* line 214, ../sass/responsive.custom.scss */
+/* line 114, ../sass/responsive.custom.scss */
 .flexslider ul {
   padding: 0px;
 }
 
 @media only screen and (min-width: 1100px) {
-  /* line 221, ../sass/responsive.custom.scss */
+  /* line 121, ../sass/responsive.custom.scss */
   #footer-wrapper .block {
     float: left;
     width: 33.33333%;
