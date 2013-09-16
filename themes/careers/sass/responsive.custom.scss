@@ -67,7 +67,7 @@
 
 // Move Front Page Title Off-Screen to hide but maintain accessibility
 .front #page-title{
-	@include offscreen;
+  @include offscreen;
 }
 
 
@@ -76,15 +76,25 @@
  */
 #block-responsive-navigation-1{
   background-color: #ffce34;
-  padding: 10px;
+  padding: 0px;
   a, a:hover, a:active, a:visited{
     color: #333;
     text-decoration: none;
+  }
+  li{
+    padding: 0px 5px;
+  }
+  li:hover {
+    background-color: #333;
+    a, a:hover, a:active, a:visited{
+      color: white;
+    }
   }
   li ul {
     display:none;
   }
   #nav-toggle{
+    margin-left: 5px;
     &:before {
       @include icon($reorder, $color: #333, $size: 1.2em);
       padding-right: 5px;
@@ -111,9 +121,9 @@
 
 // Override Default Flexslider Styles
 .flexslider{
-	ul{
-		padding:0px;
-	}
+  ul{
+    padding:0px;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -127,5 +137,3 @@
 
 // Imports local style, which can override the styles declared in this file
 @import "local";
-
-
