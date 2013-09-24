@@ -61,6 +61,9 @@ $impact:                      Impact, Haettenschweiler, 'Franklin Gothic Bold', 
 $mono:                        Consolas, Monaco, 'Courier New', Courier, monospace, sans-serif;
 
 $base-font-size: 1.6;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+$base-font: 'Open Sans', sans-serif;
+
 //
 // Gutters
 //
@@ -69,7 +72,7 @@ $base-font-size: 1.6;
 // special gutter wrangling when a Panel is inside #content wrapper, so to ease
 // setting this we use a variable.
 //
-$gutters: 20px;
+$gutters: 10px;
 $font-block-spacing: 20px;
 
 
@@ -79,6 +82,7 @@ $font-block-spacing: 20px;
 $mobile-only: "only screen and (max-width : 480px)";
 $tablet-p: "only screen and (min-width : 481px)";
 $tablet-l: "only screen and (min-width : 769px)";
+$nine-hundred: "only screen and (min-width : 899px)";  // Added for Header purposes only.
 $desktop: "only screen and (min-width : 1025px)";
 $responsive-nav: "only screen and (min-width : 40em)"; //This media query is copied from responsive-nav.css
 

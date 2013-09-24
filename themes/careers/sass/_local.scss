@@ -26,7 +26,10 @@
 			display: inline;
 			float: left;
 			margin: 0.25em;
-			@include border;
+			//@include border;
+			background-color: #ffffff;
+			border: 1px solid #dddddd;
+			border-radius: 4px;
 		}
 	}
 	// Vertical Center Image

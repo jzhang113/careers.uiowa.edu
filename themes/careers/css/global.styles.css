@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 /*
  * @file
  * global.styles
@@ -300,7 +301,7 @@ a:hover, a:focus {
 .block-title,
 .pane-title {
   background-color: #eee;
-  padding: 20px;
+  padding: 10px;
   margin: 0 0 20px 0;
   font-size: 16px;
   font-size: 1.6rem;
@@ -1150,7 +1151,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 206, ../sass/_custom.scss */
+/* line 210, ../sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
