@@ -6,6 +6,11 @@
  * local.styles
  *
 */
+
+/*
+ *	Success Stories Teaser Pane
+ */
+
 .view-display-id-success_stories_teaser_content_pane{
 	margin: 10px;
 	.views-field-field-profile-image{
@@ -19,17 +24,19 @@
 	}
 }
 
+/*
+ *	Employer Showcase Grid Panel Pane
+ */
+
 .view-display-id-employer_showcase_grid_panel_pane {
 	.item-list ul {
 		list-style:none;
 		li {
-			display: inline;
+			display: block;
 			float: left;
 			margin: 0.25em;
-			//@include border;
-			background-color: #ffffff;
-			border: 1px solid #dddddd;
-			border-radius: 4px;
+			background-color: #fff;
+			@include border;
 		}
 	}
 	// Vertical Center Image
@@ -44,6 +51,10 @@
 	}
 }
 
+/*
+ *	Employers Showcase Slider Pane
+ */
+
 .view-display-id-employer_showcase_slider_panel_pane {
 	.flexslider{
 			border: 0px;
@@ -55,8 +66,8 @@
 		.views-field-title{
 		    padding: 5px;
 		    background: #333;
-		    @include border;
-		    @include border-top-radius(0px);
+		    //@include border;
+		    //@include border-top-radius(0px);
 		    a {
 		    	color: white;
 		    }
@@ -92,9 +103,10 @@
 	}
 }
 
-//
-// Video fields 
-//
+/*
+ *	Video Fields
+ */
+
 .field-name-field-video-file {
   iframe {
     width: 100%;

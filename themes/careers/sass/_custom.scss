@@ -103,7 +103,8 @@ $responsive-nav: "only screen and (min-width : 40em)"; //This media query is cop
 //
 @mixin border {
   @include border-radius(4px);
-  @include box-shadow(0 1px 4px rgba(0,0,0,0.2));
+  //@include box-shadow(0 1px 4px rgba(0,0,0,0.2));
+  border: 1px solid #ccc;
 }
 
 

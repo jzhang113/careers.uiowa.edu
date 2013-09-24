@@ -33,6 +33,7 @@
 /*
  * 1100 px Max Width Container and Up
  */
+
 body{
   min-width: 320px;
   background-color: #eee;
@@ -103,6 +104,8 @@ body{
 #header {
   background-color: #eee;
   background: url('images/header.png') no-repeat;
+
+  // Disable background image on mobile devices
   @media #{$mobile-only}{
     background: none;
   }
@@ -137,6 +140,7 @@ body{
         font-size: 1.8rem;
       }
     }
+    // Keeps navigation from overlapping branding.
     @media #{$nine-hundred}{
       bottom: 15px;
     }
@@ -154,6 +158,7 @@ body{
       ul.menu {
         padding: 0px 15px;
         float:right;
+        // properly spaced columns for navigation.
         @media #{$mobile-only}{
           @include column-count(2);
         }
@@ -192,11 +197,11 @@ body{
               color: #333;
             }
           }
-
+          // Prevents right-column nav buttons from getting clipped.
           @media #{$mobile-only} {
           width: 99%;
           }
-
+          // Desktop Circle buttons
           @media #{$responsive-nav} {
             position: relative;
             height: 100px;
@@ -236,6 +241,7 @@ body{
             }
           }
         }
+        // Custom Icons for Menu Items
         @media #{$responsive-nav} {
           .menu-item-1004 { // Students Menu Item
             a:before{
@@ -269,7 +275,7 @@ body{
 }
 
 #main-content, #main-content-header, #breadcrumb, #messages{
-  background: white;
+  background: $page;
 }
 
 #breadcrumb, #messages {
@@ -282,17 +288,17 @@ body{
     background-color: #eee;
     color: #333;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
     margin: 0px;
   }
   .block-inner{
-    border-radius: 4px;
-    border: 1px solid #ddd;
+    @include border;
   }
   .block-content{
     padding: 10px;
   }
 
+  // No border on panes/blocks without title.
   .block-main .no-title {
     .block-inner{
       border:0px;
@@ -307,7 +313,7 @@ body{
   }
   border: 0px;
   border-radius: 0px;
-  @include box-shadow(white 0px 0px 0px);
+  @include box-shadow($page 0px 0px 0px);
 }
 
 @media only screen and (min-width: 1100px) {
