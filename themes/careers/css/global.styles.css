@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic);
 /*
  * @file
  * global.styles
@@ -40,9 +41,9 @@ html {
 
 /* line 46, ../sass/global.styles.scss */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* =============================================================================
@@ -1151,7 +1152,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 211, ../sass/_custom.scss */
+/* line 212, ../sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;

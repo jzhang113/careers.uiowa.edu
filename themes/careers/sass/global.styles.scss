@@ -44,7 +44,7 @@ html {
 }
 
 body {
-  font-family: $sans-serif-arial-helvetica; // Set from _custom.scss font variables
+  font-family: $base-font; // Set from _custom.scss font variables
   @include font-size($base-font-size);
 }
 
