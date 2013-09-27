@@ -1,7 +1,6 @@
 name = Success Stories Content Type
 core = 7.x
 package = Careers
-php = 5.2.4
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = flexslider

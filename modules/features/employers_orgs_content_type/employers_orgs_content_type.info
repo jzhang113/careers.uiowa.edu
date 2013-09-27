@@ -1,7 +1,6 @@
 name = Employers and Organizations Content Type
 core = 7.x
 package = Careers
-php = 5.2.4
 dependencies[] = addressfield
 dependencies[] = conditional_fields
 dependencies[] = ctools
