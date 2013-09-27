@@ -126,7 +126,7 @@ function featured_content_type_and_view_field_default_field_instances() {
           'featured_home' => 'featured_home',
         ),
         'manualcrop_styles_mode' => 'include',
-        'manualcrop_thumblist' => 1,
+        'manualcrop_thumblist' => 0,
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
