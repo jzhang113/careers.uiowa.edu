@@ -314,6 +314,37 @@ body{
   border: 0px;
   border-radius: 0px;
   @include box-shadow($page 0px 0px 0px);
+  .views-field-field-featured-image h3{
+    display: block;
+    bottom: 0px;
+    width: 100%;
+    color: #e8c90c;
+    padding: 10px;
+    overflow: hidden;
+    background: #333;
+    @include opacity(0.9);
+
+    @media #{$responsive-nav}{
+      position: absolute;
+    }
+  }
+  /* Flexslider Pager */
+  .flex-control-nav {
+    width:auto;
+    bottom: -10px;
+    right: 10px;
+  }
+  .views-field-field-featured-image .field-content{
+    padding-bottom: 5px;
+  }
+  .flex-control-paging li a {
+    @include background(linear-gradient(top, #ffcc00, #e8c90c));
+    border-width: 0px;
+    margin-left: 1px;
+  }
+  .flex-control-paging li a.flex-active {
+    @include background(linear-gradient(top, #333, #000));
+  }
 }
 
 @media only screen and (min-width: 1100px) {

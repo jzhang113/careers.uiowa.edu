@@ -373,14 +373,61 @@ body a {
   -webkit-box-shadow: white 0px 0px 0px;
   -moz-box-shadow: white 0px 0px 0px;
   box-shadow: white 0px 0px 0px;
+  /* Flexslider Pager */
 }
 /* line 311, ../sass/responsive.custom.scss */
 .flexslider ul {
   padding: 0px;
 }
+/* line 317, ../sass/responsive.custom.scss */
+.flexslider .views-field-field-featured-image h3 {
+  display: block;
+  bottom: 0px;
+  width: 100%;
+  color: #e8c90c;
+  padding: 10px;
+  overflow: hidden;
+  background: #333;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+@media only screen and (min-width: 40em) {
+  /* line 317, ../sass/responsive.custom.scss */
+  .flexslider .views-field-field-featured-image h3 {
+    position: absolute;
+  }
+}
+/* line 332, ../sass/responsive.custom.scss */
+.flexslider .flex-control-nav {
+  width: auto;
+  bottom: -10px;
+  right: 10px;
+}
+/* line 337, ../sass/responsive.custom.scss */
+.flexslider .views-field-field-featured-image .field-content {
+  padding-bottom: 5px;
+}
+/* line 340, ../sass/responsive.custom.scss */
+.flexslider .flex-control-paging li a {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffcc00), color-stop(100%, #e8c90c));
+  background: -webkit-linear-gradient(top, #ffcc00, #e8c90c);
+  background: -moz-linear-gradient(top, #ffcc00, #e8c90c);
+  background: -o-linear-gradient(top, #ffcc00, #e8c90c);
+  background: linear-gradient(top, #ffcc00, #e8c90c);
+  border-width: 0px;
+  margin-left: 1px;
+}
+/* line 345, ../sass/responsive.custom.scss */
+.flexslider .flex-control-paging li a.flex-active {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, #333333, #000000);
+  background: -moz-linear-gradient(top, #333333, #000000);
+  background: -o-linear-gradient(top, #333333, #000000);
+  background: linear-gradient(top, #333333, #000000);
+}
 
 @media only screen and (min-width: 1100px) {
-  /* line 321, ../sass/responsive.custom.scss */
+  /* line 352, ../sass/responsive.custom.scss */
   #footer-wrapper .block {
     float: left;
     width: 33.33333%;
