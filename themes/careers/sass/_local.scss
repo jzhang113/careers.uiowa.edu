@@ -118,3 +118,17 @@
     width: auto;
   }
 }
+
+/*
+ *	People View Panes
+ */
+
+.pane-people-panel-pane-staff, .pane-people-panel-pane-peer-advisors{
+	.views-field-field-people-picture{
+		display: block;
+		float: left;
+	}
+	.views-field-title, .views-field-field-people-position .field-content, .views-field-field-people-responsibilities{
+		margin-left: 110px;
+	}
+}
