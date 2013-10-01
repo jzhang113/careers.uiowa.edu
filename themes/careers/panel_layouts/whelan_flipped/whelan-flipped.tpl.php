@@ -18,6 +18,8 @@
         <?php print $content['contentmain']; ?>
       </div>
     </div>
+  </div>
+  <div class="whelan-flipped-container whelan-flipped-column-columns clearfix">
     <div class="whelan-flipped-column-content-region whelan-flipped-column1 panel-panel">
       <div class="whelan-flipped-column-content-region-inner whelan-flipped-column1-inner panel-panel-inner">
         <?php print $content['column1']; ?>

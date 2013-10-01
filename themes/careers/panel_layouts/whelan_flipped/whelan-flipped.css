@@ -3,35 +3,30 @@
  * OA Whelan Flipped panel layout
 **/
 
-
-.whelan-flipped-column-content-region {
-  width: 25%;
-  float: left;
-}
-
-
-  .whelan-flipped-content {
-    width: 50%;
-  }
-
-/* iPhone [portrait + landscape]*/
-@media only screen and (max-width: 480px) {
-  .whelan-flipped-content,
-  .whelan-flipped-column1,
-  .whelan-flipped-column2 {
-    width: 100%;
-    float: none;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  .whelan-flipped-content {
-    width: 100%;
-    float: none;
-  }
-  .whelan-flipped-column1,
-  .whelan-flipped-column2 {
-    width: 50%;
+@media only screen and (min-width: 700px) {
+  .whelan-flipped-column-content,
+  .whelan-flipped-column-columns {
     float: left;
+  }
+
+  .whelan-flipped-column-content {
+    width: 60%;
+  }
+
+  .whelan-flipped-column-columns {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .whelan-flipped-column-content,
+  .whelan-flipped-column-columns {
+    width: 50%;
+  }
+
+  .whelan-flipped-column1,
+  .whelan-flipped-column2 {
+    float: left;
+    width: 50%;
   }
 }
