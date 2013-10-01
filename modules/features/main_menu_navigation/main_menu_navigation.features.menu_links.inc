@@ -10,24 +10,6 @@
 function main_menu_navigation_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu:http://www.careers.uiowa.edu/about.html
-  $menu_links['main-menu:http://www.careers.uiowa.edu/about.html'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'http://www.careers.uiowa.edu/about.html',
-    'router_path' => '',
-    'link_title' => 'About Us',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-  );
   // Exported menu link: main-menu:http://www.careers.uiowa.edu/academicprograms.html
   $menu_links['main-menu:http://www.careers.uiowa.edu/academicprograms.html'] = array(
     'menu_name' => 'main-menu',
@@ -102,7 +84,6 @@ function main_menu_navigation_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('About Us');
   t('Career Fairs');
   t('Career Guide');
   t('Career and Leadership Courses');
