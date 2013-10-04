@@ -1,0 +1,35 @@
+<?php
+
+function mymodule_menu() {
+    $items = array();
+
+    $items['my_module/hello_world'] = array(
+        'title' => 'Hello World Test',
+        'page callback' => 'hello_world',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+     );
+
+    return $items;
+}
+
+function hello_world() {
+
+// Define constants
+define('ENDPOINT','https://uiowa.symplicity.com/ws/report_api.php?wsdl');
+define('USERNAME','brian-hickey@uiowa.edu');
+define('PASSWORD','testit');
+
+// Create soap client
+$client = new SoapClient(ENDPOINT, array('login' => USERNAME, 'password' => PASSWORD));
+
+// Gets list of available functions
+$result = $client->__getFunctions();
+
+
+echo "<pre>";
+print_r($result);
+echo "</pre>";
+
+echo "Hello World";
+}
