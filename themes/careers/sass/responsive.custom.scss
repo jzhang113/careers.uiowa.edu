@@ -111,9 +111,9 @@ body{
   }
   position: relative;
   height: 230px;
-  @media #{$responsive-nav} {
-    height: 300px;
-  }
+  //@media #{$responsive-nav} {
+    //height: 300px;
+  //}
   overflow: hidden;
   background-repeat:no-repeat;
   background-size:cover;
