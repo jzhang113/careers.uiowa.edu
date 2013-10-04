@@ -37,7 +37,7 @@
 body{
   min-width: 320px;
   background-color: #eee;
-  color: black;
+  color: #333;
   a{
     color: $gold;
     font-weight: bold;
@@ -460,6 +460,46 @@ body{
 
 .whelan-flipped-column-content{
   background-color: #f5f5f5;
+}
+
+.formtext {
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s
+}
+.button, input[type="button"], input[type="reset"], input[type="submit"] {
+display: inline-block;
+background-color: #333;
+border-color: #333;
+color: white;
+padding: 6px 12px;
+margin: 5px 5px 5px 0px;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.428571429;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+&:hover{
+  background-color: #555;
+}
 }
 
 // Imports local style, which can override the styles declared in this file
