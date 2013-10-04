@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
-@import url(http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
-@import url(http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,800,400italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,800,400italic);
 /*
  * responsive.custom.css is for custom media queries that are not set via the
  * theme settings, such as cascading media queries.
@@ -31,14 +31,19 @@
 body {
   min-width: 320px;
   background-color: #eee;
-  color: #333;
+  color: black;
 }
 /* line 41, ../sass/responsive.custom.scss */
 body a {
-  color: #418bca;
+  color: #9c8345;
+  font-weight: bold;
+}
+/* line 44, ../sass/responsive.custom.scss */
+body a:hover {
+  color: #547496;
 }
 
-/* line 47, ../sass/responsive.custom.scss */
+/* line 51, ../sass/responsive.custom.scss */
 .front #page-title {
   position: absolute;
   top: -99999em;
@@ -48,7 +53,7 @@ body a {
   outline: 0;
 }
 
-/* line 51, ../sass/responsive.custom.scss */
+/* line 55, ../sass/responsive.custom.scss */
 #leaderboard-wrapper {
   background-color: #eee;
 }
@@ -56,37 +61,147 @@ body a {
 /*
  * Main Menu - Responsive
  */
-/* line 59, ../sass/responsive.custom.scss */
+/* line 63, ../sass/responsive.custom.scss */
 #block-responsive-navigation-1 {
   background-color: #eee;
   padding: 0px;
+  float: right;
+  margin-right: 10px;
 }
-/* line 62, ../sass/responsive.custom.scss */
+/* line 68, ../sass/responsive.custom.scss */
 #block-responsive-navigation-1 a, #block-responsive-navigation-1 a:hover, #block-responsive-navigation-1 a:active, #block-responsive-navigation-1 a:visited {
   color: #333;
   text-decoration: none;
 }
-/* line 66, ../sass/responsive.custom.scss */
+/* line 72, ../sass/responsive.custom.scss */
 #block-responsive-navigation-1 li {
   padding: 0px 5px;
 }
-/* line 69, ../sass/responsive.custom.scss */
+/* line 75, ../sass/responsive.custom.scss */
 #block-responsive-navigation-1 li:hover {
   background-color: #333;
 }
-/* line 71, ../sass/responsive.custom.scss */
+/* line 77, ../sass/responsive.custom.scss */
 #block-responsive-navigation-1 li:hover a, #block-responsive-navigation-1 li:hover a:hover, #block-responsive-navigation-1 li:hover a:active, #block-responsive-navigation-1 li:hover a:visited {
   color: white;
 }
-/* line 75, ../sass/responsive.custom.scss */
+/* line 81, ../sass/responsive.custom.scss */
 #block-responsive-navigation-1 li ul {
   display: none;
 }
-/* line 78, ../sass/responsive.custom.scss */
+/* line 84, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1078 {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0px 19px 30px 0px;
+  margin-left: 5px;
+}
+/* line 90, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1078:hover {
+  background: transparent;
+}
+/* line 92, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1078:hover:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f081";
+  font-size: 1.6em;
+  color: #0084b4;
+}
+/* line 97, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1078:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f081";
+  font-size: 1.6em;
+  color: #333333;
+}
+/* line 101, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1080 {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0px 19px 30px 0px;
+  margin-left: 5px;
+}
+/* line 107, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1080:hover {
+  background: transparent;
+}
+/* line 109, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1080:hover:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f166";
+  font-size: 1.6em;
+  color: #cc181e;
+}
+/* line 114, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1080:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f166";
+  font-size: 1.6em;
+  color: #333333;
+}
+/* line 118, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1079 {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0px 19px 30px 0px;
+  margin-left: 5px;
+}
+/* line 124, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1079:hover {
+  background: transparent;
+}
+/* line 126, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1079:hover:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f082";
+  font-size: 1.6em;
+  color: #3b5998;
+}
+/* line 131, ../sass/responsive.custom.scss */
+#block-responsive-navigation-1 .menu-item-1079:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f082";
+  font-size: 1.6em;
+  color: #333333;
+}
+/* line 135, ../sass/responsive.custom.scss */
 #block-responsive-navigation-1 #nav-toggle {
   margin-left: 5px;
 }
-/* line 80, ../sass/responsive.custom.scss */
+/* line 137, ../sass/responsive.custom.scss */
 #block-responsive-navigation-1 #nav-toggle:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -101,26 +216,27 @@ body a {
   vertical-align: middle;
 }
 @media only screen and (min-width: 40em) {
-  /* line 59, ../sass/responsive.custom.scss */
+  /* line 63, ../sass/responsive.custom.scss */
   #block-responsive-navigation-1 {
     padding: 0px;
   }
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 92, ../sass/responsive.custom.scss */
+  /* line 149, ../sass/responsive.custom.scss */
   #nav li {
     width: auto;
     float: left;
     padding: 8px;
   }
 }
-/* line 99, ../sass/responsive.custom.scss */
+/* line 156, ../sass/responsive.custom.scss */
 #header-wrapper {
   background-color: #333;
+  background: url("images/bg_tile.gif") repeat;
 }
 
-/* line 104, ../sass/responsive.custom.scss */
+/* line 162, ../sass/responsive.custom.scss */
 #header {
   background-color: #eee;
   background: url("images/header.png") no-repeat;
@@ -135,66 +251,97 @@ body a {
    */
 }
 @media only screen and (max-width: 480px) {
-  /* line 104, ../sass/responsive.custom.scss */
+  /* line 162, ../sass/responsive.custom.scss */
   #header {
     background: none;
   }
 }
-/* line 122, ../sass/responsive.custom.scss */
+/* line 180, ../sass/responsive.custom.scss */
 #header #branding {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  padding: 10px 20px;
+  padding: 0px 20px;
 }
-/* line 127, ../sass/responsive.custom.scss */
+/* line 185, ../sass/responsive.custom.scss */
+#header #branding #logo {
+  padding: 0px;
+}
+/* line 188, ../sass/responsive.custom.scss */
 #header #branding #site-name {
-  font-size: 2.3rem;
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0;
 }
-/* line 129, ../sass/responsive.custom.scss */
-#header #branding #site-name a {
-  color: white;
-}
-@media only screen and (min-width: 40em) {
-  /* line 127, ../sass/responsive.custom.scss */
-  #header #branding #site-name {
-    font-size: 2.8rem;
-  }
-}
-/* line 136, ../sass/responsive.custom.scss */
+/* line 198, ../sass/responsive.custom.scss */
 #header #branding #site-slogan {
   font-size: 1.5rem;
   color: white;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: right;
+  padding: 5px 20px 5px 5px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
-@media only screen and (min-width: 40em) {
-  /* line 136, ../sass/responsive.custom.scss */
+@media only screen and (max-width: 480px) {
+  /* line 198, ../sass/responsive.custom.scss */
   #header #branding #site-slogan {
-    font-size: 1.8rem;
+    text-align: center;
+    padding: 5px;
   }
 }
 @media only screen and (min-width: 899px) {
-  /* line 122, ../sass/responsive.custom.scss */
+  /* line 198, ../sass/responsive.custom.scss */
+  #header #branding #site-slogan {
+    font-size: 1.8rem;
+    bottom: 10px;
+    background-color: transparent;
+  }
+}
+@media only screen and (min-width: 899px) {
+  /* line 180, ../sass/responsive.custom.scss */
   #header #branding {
     bottom: 15px;
   }
 }
-/* line 152, ../sass/responsive.custom.scss */
+/* line 226, ../sass/responsive.custom.scss */
 #header .region-header {
   position: absolute;
   bottom: 5px;
   right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
 }
-/* line 156, ../sass/responsive.custom.scss */
+@media only screen and (max-width: 480px) {
+  /* line 226, ../sass/responsive.custom.scss */
+  #header .region-header {
+    width: auto;
+    background-color: transparent;
+  }
+}
+@media only screen and (min-width: 899px) {
+  /* line 226, ../sass/responsive.custom.scss */
+  #header .region-header {
+    width: auto;
+    background-color: transparent;
+  }
+}
+/* line 240, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu {
   padding: 0px;
 }
-/* line 158, ../sass/responsive.custom.scss */
+/* line 242, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu {
   padding: 0px 15px;
   float: right;
+  margin: 0px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 158, ../sass/responsive.custom.scss */
+  /* line 242, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -203,217 +350,184 @@ body a {
     column-count: 2;
   }
 }
-/* line 166, ../sass/responsive.custom.scss */
+@media only screen and (min-width: 899px) {
+  /* line 242, ../sass/responsive.custom.scss */
+  #header .region-header .block-menu-audience-menu ul.menu {
+    margin: 10px;
+    margin-bottom: 55px;
+  }
+}
+/* line 255, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li {
   list-style: none;
   list-style-image: none;
   list-style-type: none;
   display: block;
   float: left;
-  padding: 6px 12px;
+  padding: 6px 10px;
   margin: 1px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  border-radius: 4px;
-  background-color: #333;
+  background-color: transparent;
 }
-/* line 181, ../sass/responsive.custom.scss */
+/* line 270, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li ul {
   display: none;
 }
-/* line 185, ../sass/responsive.custom.scss */
+/* line 274, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover {
-  background-color: #e8c90c;
+  background-color: #ffca0e;
 }
-/* line 187, ../sass/responsive.custom.scss */
+/* line 276, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover a {
   color: #333;
 }
-/* line 192, ../sass/responsive.custom.scss */
+/* line 281, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a {
+  text-transform: uppercase;
   color: white;
   font-weight: bold;
 }
-/* line 195, ../sass/responsive.custom.scss */
+/* line 285, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a:hover {
   text-decoration: none;
   color: #333;
 }
 @media only screen and (max-width: 480px) {
-  /* line 166, ../sass/responsive.custom.scss */
+  /* line 255, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu li {
     width: 99%;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 166, ../sass/responsive.custom.scss */
+  /* line 255, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu li {
     position: relative;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    -webkit-box-shadow: #333333 2px 2px 10px;
-    -moz-box-shadow: #333333 2px 2px 10px;
-    box-shadow: #333333 2px 2px 10px;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
-    background: -webkit-linear-gradient(top, #333333, #000000);
-    background: -moz-linear-gradient(top, #333333, #000000);
-    background: -o-linear-gradient(top, #333333, #000000);
-    background: linear-gradient(top, #333333, #000000);
   }
-  /* line 212, ../sass/responsive.custom.scss */
+  /* line 302, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu li a {
     display: block;
     text-align: center;
-    margin-top: 50%;
     color: white;
     font-weight: bold;
     text-decoration: none;
   }
-  /* line 219, ../sass/responsive.custom.scss */
-  #header .region-header .block-menu-audience-menu ul.menu li a:before {
-    color: #e8c90c;
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 30px;
-    display: inline-block;
-    content: "\F02E";
-    float: left;
-    position: absolute;
-    top: 10%;
-    left: 40%;
-  }
-  /* line 233, ../sass/responsive.custom.scss */
+  /* line 323, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu li:hover {
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffcc00), color-stop(100%, #e8c90c));
-    background: -webkit-linear-gradient(top, #ffcc00, #e8c90c);
-    background: -moz-linear-gradient(top, #ffcc00, #e8c90c);
-    background: -o-linear-gradient(top, #ffcc00, #e8c90c);
-    background: linear-gradient(top, #ffcc00, #e8c90c);
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffcc00), color-stop(100%, #ffca0e));
+    background: -webkit-linear-gradient(top, #ffcc00, #ffca0e);
+    background: -moz-linear-gradient(top, #ffcc00, #ffca0e);
+    background: -o-linear-gradient(top, #ffcc00, #ffca0e);
+    background: linear-gradient(top, #ffcc00, #ffca0e);
     -webkit-box-shadow: #cccccc 0px 0px 0px;
     -moz-box-shadow: #cccccc 0px 0px 0px;
     box-shadow: #cccccc 0px 0px 0px;
   }
-  /* line 237, ../sass/responsive.custom.scss */
+  /* line 327, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu li:hover a:before {
     color: #333;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 247, ../sass/responsive.custom.scss */
+  /* line 337, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu .menu-item-1004 a:before {
     content: "\F040";
   }
-  /* line 252, ../sass/responsive.custom.scss */
+  /* line 342, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu .menu-item-1008 a:before {
     content: "\F0F7";
   }
-  /* line 257, ../sass/responsive.custom.scss */
+  /* line 347, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu .menu-item-1007 a:before {
     content: "\F02D";
   }
-  /* line 262, ../sass/responsive.custom.scss */
+  /* line 352, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu .menu-item-1005 a:before {
     content: "\F0C0";
   }
-  /* line 267, ../sass/responsive.custom.scss */
+  /* line 357, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu .menu-item-1006 a:before {
     content: "\F015";
   }
 }
 
-/* line 277, ../sass/responsive.custom.scss */
+/* line 367, ../sass/responsive.custom.scss */
 #main-content, #main-content-header, #breadcrumb, #messages {
   background: white;
 }
 
-/* line 281, ../sass/responsive.custom.scss */
+/* line 371, ../sass/responsive.custom.scss */
 #breadcrumb, #messages {
   margin: 0px;
   padding: 10px;
 }
 
-/* line 287, ../sass/responsive.custom.scss */
+/* line 377, ../sass/responsive.custom.scss */
 #content .pane-title, #content .block-title {
-  background-color: #eee;
+  background-color: transparent;
   color: #333;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0px;
   margin: 0px;
 }
-/* line 294, ../sass/responsive.custom.scss */
-#content .block-inner {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-/* line 297, ../sass/responsive.custom.scss */
+/* line 387, ../sass/responsive.custom.scss */
 #content .block-content {
   padding: 10px;
 }
-/* line 303, ../sass/responsive.custom.scss */
+/* line 393, ../sass/responsive.custom.scss */
 #content .block-main .no-title .block-inner {
   border: 0px;
 }
 
-/* line 310, ../sass/responsive.custom.scss */
+/* line 400, ../sass/responsive.custom.scss */
 .flexslider {
+  margin: 0px;
   border: 0px;
   border-radius: 0px;
+  background-color: transparent;
   -webkit-box-shadow: white 0px 0px 0px;
   -moz-box-shadow: white 0px 0px 0px;
   box-shadow: white 0px 0px 0px;
   /* Flexslider Pager */
 }
-/* line 311, ../sass/responsive.custom.scss */
+/* line 401, ../sass/responsive.custom.scss */
 .flexslider ul {
   padding: 0px;
 }
-/* line 317, ../sass/responsive.custom.scss */
+/* line 409, ../sass/responsive.custom.scss */
 .flexslider .views-field-field-featured-image h3 {
   display: block;
   bottom: 0px;
   width: 100%;
-  color: #e8c90c;
+  color: #9c8345;
   padding: 10px;
   overflow: hidden;
   background: #333;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  opacity: 0.9;
+  height: 38px;
 }
-@media only screen and (min-width: 40em) {
-  /* line 317, ../sass/responsive.custom.scss */
-  .flexslider .views-field-field-featured-image h3 {
-    position: absolute;
-  }
-}
-/* line 332, ../sass/responsive.custom.scss */
+/* line 420, ../sass/responsive.custom.scss */
 .flexslider .flex-control-nav {
   width: auto;
   bottom: -10px;
   right: 10px;
 }
-/* line 337, ../sass/responsive.custom.scss */
+/* line 425, ../sass/responsive.custom.scss */
 .flexslider .views-field-field-featured-image .field-content {
   padding-bottom: 5px;
 }
-/* line 340, ../sass/responsive.custom.scss */
+/* line 428, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffcc00), color-stop(100%, #e8c90c));
-  background: -webkit-linear-gradient(top, #ffcc00, #e8c90c);
-  background: -moz-linear-gradient(top, #ffcc00, #e8c90c);
-  background: -o-linear-gradient(top, #ffcc00, #e8c90c);
-  background: linear-gradient(top, #ffcc00, #e8c90c);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cbbe6b), color-stop(100%, #9c8345));
+  background: -webkit-linear-gradient(top, #cbbe6b, #9c8345);
+  background: -moz-linear-gradient(top, #cbbe6b, #9c8345);
+  background: -o-linear-gradient(top, #cbbe6b, #9c8345);
+  background: linear-gradient(top, #cbbe6b, #9c8345);
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 345, ../sass/responsive.custom.scss */
+/* line 433, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
   background: -webkit-linear-gradient(top, #333333, #000000);
@@ -423,12 +537,51 @@ body a {
 }
 
 @media only screen and (min-width: 1100px) {
-  /* line 352, ../sass/responsive.custom.scss */
+  /* line 440, ../sass/responsive.custom.scss */
   #footer-wrapper .block {
     float: left;
     width: 33.33333%;
   }
 }
+/* line 447, ../sass/responsive.custom.scss */
+.view-footer a {
+  float: right;
+}
+/* line 449, ../sass/responsive.custom.scss */
+.view-footer a:after {
+  margin-left: 5px;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f054";
+  font-size: 1em;
+  color: #9c8345;
+}
+/* line 453, ../sass/responsive.custom.scss */
+.view-footer a:hover {
+  text-decoration: none;
+}
+/* line 455, ../sass/responsive.custom.scss */
+.view-footer a:hover:after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f054";
+  font-size: 1em;
+  color: #547496;
+}
+
+/* line 461, ../sass/responsive.custom.scss */
+.whelan-flipped-column-content {
+  background-color: #f5f5f5;
+}
+
 /*
  * @file
  * local.styles

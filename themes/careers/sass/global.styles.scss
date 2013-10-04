@@ -532,10 +532,8 @@ a {
  * ========================================================================== */
   .block-title,
   .pane-title {
-    background-color: #eee;
     padding: $gutters;
     margin: 0 0 $font-block-spacing 0;
-    @include font-size(1.6);
   }
 /* ========================================================================== */
 

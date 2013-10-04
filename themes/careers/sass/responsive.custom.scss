@@ -37,9 +37,13 @@
 body{
   min-width: 320px;
   background-color: #eee;
-  color: #333;
+  color: black;
   a{
-    color: #418bca;
+    color: $gold;
+    font-weight: bold;
+    &:hover {
+      color: $blue;
+    }
   }
 }
 
@@ -59,6 +63,8 @@ body{
 #block-responsive-navigation-1{
   background-color: #eee;
   padding: 0px;
+  float:right;
+  margin-right: 10px;
   a, a:hover, a:active, a:visited{
     color: #333;
     text-decoration: none;
@@ -74,6 +80,57 @@ body{
   }
   li ul {
     display:none;
+  }
+  .menu-item-1078{ // Twitter
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0px 19px 30px 0px;
+    margin-left: 5px;
+    &:hover{
+      background: transparent;
+      &:before {
+        @include icon($twitter-sign, $color: #0084b4, $size: 1.6em);
+      }
+    }
+
+    &:before {
+      @include icon($twitter-sign, $color: #333, $size: 1.6em);
+    }
+  }
+  .menu-item-1080{ // YouTube
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0px 19px 30px 0px;
+    margin-left: 5px;
+    &:hover{
+      background: transparent;
+      &:before {
+        @include icon($youtube-sign, $color: #cc181e, $size: 1.6em);
+      }
+    }
+
+    &:before {
+      @include icon($youtube-sign, $color: #333, $size: 1.6em);
+    }
+  }
+  .menu-item-1079{ // Facebook
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0px 19px 30px 0px;
+    margin-left: 5px;
+    &:hover{
+      background: transparent;
+      &:before {
+        @include icon($facebook-sign, $color: #3b5998, $size: 1.6em);
+      }
+    }
+
+    &:before {
+      @include icon($facebook-sign, $color: #333, $size: 1.6em);
+    }
   }
   #nav-toggle{
     margin-left: 5px;
@@ -98,6 +155,7 @@ body{
 
 #header-wrapper{
   background-color: #333;
+  background: url('images/bg_tile.gif') repeat;
   //@include background(linear-gradient(top, #333, #000));
 }
 
@@ -123,21 +181,37 @@ body{
     position: absolute;
     background-color:rgba(0,0,0,0.7);
     width: 100%;
-    padding: 10px 20px;
+    padding: 0px 20px;
+    #logo{
+      padding:0px;
+    }
     #site-name{
-      font-size: 2.3rem;
-      a{
-        color: white;
-      }
-      @media #{$responsive-nav} {
-        font-size: 2.8rem;
-      }
+      //font-size: 2.3rem;
+      //a{
+        //color: white;
+      //}
+      //@media #{$responsive-nav} {
+        //font-size: 3.0rem;
+      //}
+      @include offscreen;
     }
     #site-slogan{
       font-size: 1.5rem;
       color: white;
-      @media #{$responsive-nav} {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      text-align: right;
+      padding: 5px 20px 5px 5px;
+      @media #{$mobile-only} {
+        text-align: center;
+        padding: 5px;
+      }
+      background-color:rgba(0,0,0,0.7);
+      @media #{$nine-hundred} {
         font-size: 1.8rem;
+        bottom: 10px;
+        background-color: transparent;
       }
     }
     // Keeps navigation from overlapping branding.
@@ -153,14 +227,29 @@ body{
     position: absolute;
     bottom: 5px;
     right: 0;
+    background-color:rgba(0,0,0,0.7);
+    width: 100%;
+    @media #{$mobile-only}{
+      width: auto;
+      background-color:transparent;
+    }
+    @media #{$nine-hundred}{
+      width: auto;
+      background-color: transparent;
+    }
     .block-menu-audience-menu{
       padding: 0px;
       ul.menu {
         padding: 0px 15px;
         float:right;
+        margin: 0px;
         // properly spaced columns for navigation.
         @media #{$mobile-only}{
           @include column-count(2);
+        }
+        @media #{$nine-hundred}{
+          margin: 10px;
+          margin-bottom: 55px;
         }
 
         li{
@@ -170,26 +259,27 @@ body{
           list-style-type: none;
           display: block;
           float: left;
-          padding: 6px 12px;
+          padding: 6px 10px;
           margin: 1px;
           text-align: center;
           white-space: nowrap;
           vertical-align: middle;
           cursor: pointer;
-          border-radius: 4px;
-          background-color: #333;
+          //border-radius: 4px;
+          background-color: transparent;
           ul{
             display:none;
           }
 
           &:hover{
-            background-color: #e8c90c;
+            background-color: $yellow;
             a{
               color: #333;
             }
           }
 
           a{
+            text-transform: uppercase;
             color: white;
             font-weight: bold;
             &:hover {
@@ -204,34 +294,34 @@ body{
           // Desktop Circle buttons
           @media #{$responsive-nav} {
             position: relative;
-            height: 100px;
-            width: 100px;
-            border-radius: 50px;
-            @include box-shadow(#333 2px 2px 10px);
-            @include background(linear-gradient(top, #333, #000));
+            //height: 100px;
+            //width: 100px;
+            //border-radius: 50px;
+            //@include box-shadow(#333 2px 2px 10px);
+            //@include background(linear-gradient(top, #333, #000));
             a{
               display: block;
               text-align: center;
-              margin-top: 50%;
+              //margin-top: 50%;
               color: white;
               font-weight: bold;
               text-decoration: none;
-              &:before{
-                color: #e8c90c;
-                font-family: FontAwesome;
-                font-weight: normal;
-                font-style: normal;
-                font-size: 30px;
-                display: inline-block;
-                content: "\F02E";
-                float: left;
-                position: absolute;
-                top: 10%;
-                left: 40%;
-              }
+              //&:before{
+                //color: $yellow;
+                //font-family: FontAwesome;
+                //font-weight: normal;
+                //font-style: normal;
+                //font-size: 30px;
+                //display: inline-block;
+                //content: "\F02E";
+                //float: left;
+                //position: absolute;
+                //top: 10%;
+                //left: 40%;
+              //}
             }
             &:hover{
-              @include background(linear-gradient(top, #ffcc00, #e8c90c));
+              @include background(linear-gradient(top, #ffcc00, $yellow));
               @include box-shadow(#ccc 0px 0px 0px);
               a{
                 &:before{
@@ -285,14 +375,14 @@ body{
 
 #content{
   .pane-title, .block-title{
-    background-color: #eee;
+    background-color: transparent;
     color: #333;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 0px;
     margin: 0px;
   }
   .block-inner{
-    @include border;
+    //@include border;
   }
   .block-content{
     padding: 10px;
@@ -311,22 +401,20 @@ body{
   ul{
     padding:0px;
   }
+  margin: 0px;
   border: 0px;
   border-radius: 0px;
+  background-color: transparent;
   @include box-shadow($page 0px 0px 0px);
   .views-field-field-featured-image h3{
     display: block;
     bottom: 0px;
     width: 100%;
-    color: #e8c90c;
+    color: $gold;
     padding: 10px;
     overflow: hidden;
     background: #333;
-    @include opacity(0.9);
-
-    @media #{$responsive-nav}{
-      position: absolute;
-    }
+    height: 38px;
   }
   /* Flexslider Pager */
   .flex-control-nav {
@@ -338,7 +426,7 @@ body{
     padding-bottom: 5px;
   }
   .flex-control-paging li a {
-    @include background(linear-gradient(top, #ffcc00, #e8c90c));
+    @include background(linear-gradient(top, $light_gold, $gold));
     border-width: 0px;
     margin-left: 1px;
   }
@@ -354,6 +442,24 @@ body{
       width: 33.33333%;
     }
   }
+}
+
+.view-footer a{
+  float: right;
+  &:after{
+    margin-left: 5px;
+    @include icon($chevron-right, $color: $gold, $size: 1.0em);
+  }
+  &:hover{
+    text-decoration: none;
+    &:after{
+      @include icon($chevron-right, $color: $blue, $size: 1.0em);
+    }
+  }
+}
+
+.whelan-flipped-column-content{
+  background-color: #f5f5f5;
 }
 
 // Imports local style, which can override the styles declared in this file
