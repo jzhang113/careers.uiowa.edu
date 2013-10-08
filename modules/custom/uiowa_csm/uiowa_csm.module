@@ -6,10 +6,43 @@
  * Integration for Simplicity CSM.
  */
 
+/**
+ * Implements hook_default_wsclient_service().
+ *
+ * Initialize the calendar service that uses the MC API.
+ */
+function uiowa_csm_default_wsclient_service() {
+  // UIowa master calendar service (SOAP).
+  $service = new WSClientServiceDescription();
+  $service->name = 'simplicity_events';
+  $service->label = 'Simplicity Events';
+  $service->url = 'https://uiowa-csm.symplicity.com/ws/report_api.php?wsdl';
+  $service->type = 'soap';
+  $service->settings['options']['login'] = 'brian-hickey@uiowa.edu';
+  $service->settings['options']['password'] = 'testit';
+
+  try {
+    $service->endpoint()->initializeMetaData();
+    $services[$service->name] = $service;
+  }
+  catch (WSClientException $e) {
+    watchdog('wsclient', $e->__toString());
+  }
+
+  return $services;
+}
+
+// function uiowa_csm_service_load($services) {
+//   $service->settings['options']['login'] = 'user';
+//   $service->settings['options']['password'] = 'pass';
+// }
+
+
 function uiowa_csm_init() {
 // Load the web service.
   $service = wsclient_service_load('simplicity_events');
   dpm($service);
+  dpm('Hello');
   //$data = $service->getReportData('1ee5733f9bd09f41cef633d78f7380b2');
   //dpm($data);
 }
