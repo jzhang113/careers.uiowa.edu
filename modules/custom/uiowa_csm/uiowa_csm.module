@@ -15,6 +15,7 @@ function uiowa_csm_menu() {
     'page callback' => 'drupal_get_form',
     'page arguments' => array('uiowa_csm_admin_form'),
     'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
     //'file' => 'mastercal.admin.inc',
   );
 }
