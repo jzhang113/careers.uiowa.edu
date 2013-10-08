@@ -85,16 +85,6 @@ function people_view_and_panel_page_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Content: Group(s) (field_people_group) */
-  $handler->display->display_options['filters']['field_people_group_value']['id'] = 'field_people_group_value';
-  $handler->display->display_options['filters']['field_people_group_value']['table'] = 'field_data_field_people_group';
-  $handler->display->display_options['filters']['field_people_group_value']['field'] = 'field_people_group_value';
-  $handler->display->display_options['filters']['field_people_group_value']['value'] = array(
-    'staff' => 'staff',
-  );
-
-  /* Display: Meet The Staff */
-  $handler = $view->new_display('panel_pane', 'Meet The Staff', 'panel_pane_staff');
 
   /* Display: Peer Advisors */
   $handler = $view->new_display('panel_pane', 'Peer Advisors', 'panel_pane_peer_advisors');
@@ -122,6 +112,90 @@ function people_view_and_panel_page_views_default_views() {
   $handler->display->display_options['filters']['field_people_group_value']['field'] = 'field_people_group_value';
   $handler->display->display_options['filters']['field_people_group_value']['value'] = array(
     'peer_advisor' => 'peer_advisor',
+  );
+
+  /* Display: Career Advisors */
+  $handler = $view->new_display('panel_pane', 'Career Advisors', 'panel_pane_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Career Advisors';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'people' => 'people',
+  );
+  /* Filter criterion: Content: Group(s) (field_people_group) */
+  $handler->display->display_options['filters']['field_people_group_value']['id'] = 'field_people_group_value';
+  $handler->display->display_options['filters']['field_people_group_value']['table'] = 'field_data_field_people_group';
+  $handler->display->display_options['filters']['field_people_group_value']['field'] = 'field_people_group_value';
+  $handler->display->display_options['filters']['field_people_group_value']['value'] = array(
+    'career_advisor' => 'career_advisor',
+  );
+
+  /* Display: Experiential Education Team */
+  $handler = $view->new_display('panel_pane', 'Experiential Education Team', 'panel_pane_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Experiential Education Team';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'people' => 'people',
+  );
+  /* Filter criterion: Content: Group(s) (field_people_group) */
+  $handler->display->display_options['filters']['field_people_group_value']['id'] = 'field_people_group_value';
+  $handler->display->display_options['filters']['field_people_group_value']['table'] = 'field_data_field_people_group';
+  $handler->display->display_options['filters']['field_people_group_value']['field'] = 'field_people_group_value';
+  $handler->display->display_options['filters']['field_people_group_value']['value'] = array(
+    'experiential_education_team' => 'experiential_education_team',
+  );
+
+  /* Display: Employer Relations Team */
+  $handler = $view->new_display('panel_pane', 'Employer Relations Team', 'panel_pane_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Employer Relations Team';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'people' => 'people',
+  );
+  /* Filter criterion: Content: Group(s) (field_people_group) */
+  $handler->display->display_options['filters']['field_people_group_value']['id'] = 'field_people_group_value';
+  $handler->display->display_options['filters']['field_people_group_value']['table'] = 'field_data_field_people_group';
+  $handler->display->display_options['filters']['field_people_group_value']['field'] = 'field_people_group_value';
+  $handler->display->display_options['filters']['field_people_group_value']['value'] = array(
+    'employer_relations_team' => 'employer_relations_team',
   );
   $export['people'] = $view;
 

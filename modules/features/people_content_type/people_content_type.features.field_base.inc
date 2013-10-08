@@ -70,8 +70,10 @@ function people_content_type_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'staff' => 'Staff',
+        'career_advisor' => 'Career Advisor',
         'peer_advisor' => 'Peer Advisor',
+        'experiential_education_team' => 'Experiential Education Team',
+        'employer_relations_team' => 'Employer Relations Team',
       ),
       'allowed_values_function' => '',
     ),
