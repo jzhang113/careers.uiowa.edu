@@ -10,8 +10,8 @@ function uiowa_csm_menu() {
   $items = array();
 
   $items['admin/config/content/test'] = array(
-    'title' => 'UIowa Module Package',
-    'description' => 'Custom modules developed by ITS Web Services.',
+    'title' => 'Test',
+    'description' => 'Testing.',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('uiowa_csm_admin_form'),
     'access callback' => TRUE,
@@ -29,9 +29,9 @@ function uiowa_csm_admin_form($form, &$form_state) {
   );
 
   // Get a list of all calendars available.
-  $events = _uiowa_csm_get_events();
+  //$events = _uiowa_csm_get_events();
 
-  dpm($events);
+  //dpm($events);
 
   return $form;
 }
