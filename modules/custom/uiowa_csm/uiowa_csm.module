@@ -6,6 +6,20 @@
  * Integration for Simplicity CSM.
  */
 
+function uiowa_csm_menu() {
+  $items = array();
+
+  $items['admin/config/uiowa'] = array(
+    'title' => 'UIowa Module Package',
+    'description' => 'Custom modules developed by ITS Web Services.',
+    'position' => 'right',
+    'weight' => '4',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('uiowa_csm_add_form'),
+    //'access arguments' => array('administer_mastercal'),
+    //'file' => 'mastercal.admin.inc',
+  );
+
 function uiowa_csm_add_form($form, &$form_state) {
   // Get a list of all calendars available.
   $events = _uiowa_csm_get_events();
