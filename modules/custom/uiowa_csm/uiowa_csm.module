@@ -43,4 +43,4 @@ function _uiowa_csm_get_events() {
   return $service;
 }
 
-_uiowa_csm_get_events();
+//_uiowa_csm_get_events();
