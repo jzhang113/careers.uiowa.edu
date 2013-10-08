@@ -115,7 +115,7 @@ function people_view_and_panel_page_views_default_views() {
   );
 
   /* Display: Career Advisors */
-  $handler = $view->new_display('panel_pane', 'Career Advisors', 'panel_pane_1');
+  $handler = $view->new_display('panel_pane', 'Career Advisors', 'panel_pane_career_advisors');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Career Advisors';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -143,7 +143,7 @@ function people_view_and_panel_page_views_default_views() {
   );
 
   /* Display: Experiential Education Team */
-  $handler = $view->new_display('panel_pane', 'Experiential Education Team', 'panel_pane_2');
+  $handler = $view->new_display('panel_pane', 'Experiential Education Team', 'panel_pane_experiential_education_team');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Experiential Education Team';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -171,7 +171,7 @@ function people_view_and_panel_page_views_default_views() {
   );
 
   /* Display: Employer Relations Team */
-  $handler = $view->new_display('panel_pane', 'Employer Relations Team', 'panel_pane_3');
+  $handler = $view->new_display('panel_pane', 'Employer Relations Team', 'panel_pane_employer_relations_team');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Employer Relations Team';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
