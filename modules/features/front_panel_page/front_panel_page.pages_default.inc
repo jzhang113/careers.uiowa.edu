@@ -43,7 +43,7 @@ function front_panel_page_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'whelan_flipped';
+  $display->layout = 'bartlett_wide';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -67,6 +67,8 @@ function front_panel_page_default_page_manager_pages() {
       'footercolumn2' => NULL,
       'footercolumn3' => NULL,
       'contentmain' => NULL,
+      'featured' => NULL,
+      'contentfeatured' => NULL,
     ),
   );
   $display->cache = array();
@@ -75,43 +77,7 @@ function front_panel_page_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'column1';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'success_stories-success_stories_teaser_content_pane';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['column1'][0] = 'new-1';
-    $pane = new stdClass();
-    $pane->pid = 'new-2';
-    $pane->panel = 'column1';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'employer_showcase-employer_showcase_slider_panel_pane';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['column1'][1] = 'new-2';
-    $pane = new stdClass();
-    $pane->pid = 'new-3';
-    $pane->panel = 'column2';
+    $pane->panel = 'contentcolumn1';
     $pane->type = 'block';
     $pane->subtype = 'system-main-menu';
     $pane->shown = TRUE;
@@ -128,11 +94,29 @@ function front_panel_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['column2'][0] = 'new-3';
+    $display->content['new-1'] = $pane;
+    $display->panels['contentcolumn1'][0] = 'new-1';
     $pane = new stdClass();
-    $pane->pid = 'new-4';
-    $pane->panel = 'column2';
+    $pane->pid = 'new-2';
+    $pane->panel = 'contentcolumn1';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'employer_showcase-employer_showcase_slider_panel_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-2'] = $pane;
+    $display->panels['contentcolumn1'][1] = 'new-2';
+    $pane = new stdClass();
+    $pane->pid = 'new-3';
+    $pane->panel = 'contentcolumn2';
     $pane->type = 'block';
     $pane->subtype = 'block-1';
     $pane->shown = TRUE;
@@ -147,13 +131,31 @@ function front_panel_page_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-3'] = $pane;
+    $display->panels['contentcolumn2'][0] = 'new-3';
+    $pane = new stdClass();
+    $pane->pid = 'new-4';
+    $pane->panel = 'contentcolumn2';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'success_stories-success_stories_teaser_content_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-4'] = $pane;
-    $display->panels['column2'][1] = 'new-4';
+    $display->panels['contentcolumn2'][1] = 'new-4';
     $pane = new stdClass();
     $pane->pid = 'new-5';
-    $pane->panel = 'contentmain';
+    $pane->panel = 'contentfeatured';
     $pane->type = 'views_panes';
     $pane->subtype = 'featured_slider-panel_pane_featured_slider';
     $pane->shown = TRUE;
@@ -168,7 +170,7 @@ function front_panel_page_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-5'] = $pane;
-    $display->panels['contentmain'][0] = 'new-5';
+    $display->panels['contentfeatured'][0] = 'new-5';
     $pane = new stdClass();
     $pane->pid = 'new-6';
     $pane->panel = 'contentmain';
@@ -183,10 +185,10 @@ function front_panel_page_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $display->content['new-6'] = $pane;
-    $display->panels['contentmain'][1] = 'new-6';
+    $display->panels['contentmain'][0] = 'new-6';
     $pane = new stdClass();
     $pane->pid = 'new-7';
     $pane->panel = 'contentmain';
@@ -210,10 +212,10 @@ function front_panel_page_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 1;
     $pane->locks = array();
     $display->content['new-7'] = $pane;
-    $display->panels['contentmain'][2] = 'new-7';
+    $display->panels['contentmain'][1] = 'new-7';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
