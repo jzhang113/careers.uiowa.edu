@@ -52,7 +52,7 @@ function people_view_and_panel_page_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'People';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

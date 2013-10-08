@@ -286,7 +286,7 @@ function people_content_type_panelizer_defaults() {
     $pane->locks = array();
     $display->content['new-9'] = $pane;
     $display->panels['sidebar'][1] = 'new-9';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-1';
   $panelizer->display = $display;
   $export['node:people:default:default'] = $panelizer;
