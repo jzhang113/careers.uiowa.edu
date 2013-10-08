@@ -406,11 +406,17 @@ body{
   border-radius: 0px;
   background-color: transparent;
   @include box-shadow($page 0px 0px 0px);
+  a{
+    color: white;
+    &:hover {
+      color: $gold;
+      text-decoration: none;
+    }
+  }
   .views-field-field-featured-image h3{
     display: block;
     bottom: 0px;
     width: 100%;
-    color: $gold;
     padding: 10px;
     overflow: hidden;
     background: #333;

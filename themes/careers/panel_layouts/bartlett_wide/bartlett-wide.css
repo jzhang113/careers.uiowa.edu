@@ -1,0 +1,42 @@
+/**
+ * @file
+ * OA Bartlett Wide panel layout
+**/
+
+.bartlett-wide-column {
+  width: 50%;
+  float: left;
+}
+
+.bartlett-wide-content-container { /* This is floated to the left of the sidebar,
+  which is styled by the generic "bartlett-wide-column" class */
+  float: left;
+  width: 50%;
+}
+
+  .bartlett-wide-content-container .bartlett-wide-content-column1 {
+    width: 50%;
+  }
+
+  .bartlett-wide-content-container .bartlett-wide-content-column2 {
+    width: 50%;
+  }
+
+@media only screen and (max-width: 899px) {
+  .bartlett-wide-content-container .bartlett-wide-content-column1,
+  .bartlett-wide-content-container .bartlett-wide-content-column2 {
+    width: 100%;
+    float:none;
+}
+
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-width: 480px) {
+  .bartlett-wide-column,
+  .bartlett-wide-content-container,
+  .bartlett-wide-content-container .bartlett-wide-content-column1,
+  .bartlett-wide-content-container .bartlett-wide-content-column2 {
+    width: 100%;
+    float: none;
+  }
+}
