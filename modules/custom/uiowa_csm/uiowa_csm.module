@@ -18,8 +18,9 @@ function uiowa_csm_default_wsclient_service() {
   $service->label = 'Simplicity Events';
   $service->url = 'https://uiowa-csm.symplicity.com/ws/report_api.php?wsdl';
   $service->type = 'soap';
-  $service->settings['options']['login'] = 'brian-hickey@uiowa.edu';
-  $service->settings['options']['password'] = 'testit';
+  $service->settings['options'] = array(
+                                  'login' => 'brian-hickey@uiowa.edu',
+                                  'password' => 'testit');
 
   try {
     $service->endpoint()->initializeMetaData();
