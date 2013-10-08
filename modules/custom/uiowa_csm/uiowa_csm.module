@@ -19,6 +19,7 @@ function uiowa_csm_menu() {
     //'access arguments' => array('administer_mastercal'),
     //'file' => 'mastercal.admin.inc',
   );
+}
 
 function uiowa_csm_add_form($form, &$form_state) {
   // Get a list of all calendars available.
