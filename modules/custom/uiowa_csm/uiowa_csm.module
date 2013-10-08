@@ -9,7 +9,7 @@
 function uiowa_csm_menu() {
   $items = array();
 
-  $items['admin/config/uiowa'] = array(
+  $items['admin/config/content/uiowa'] = array(
     'title' => 'UIowa Module Package',
     'description' => 'Custom modules developed by ITS Web Services.',
     'position' => 'right',
