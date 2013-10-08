@@ -37,12 +37,7 @@ function uiowa_csm_service_load($services) {
   );
 }
 
-
-function uiowa_csm_init() {
-// Load the web service.
   $service = wsclient_service_load('simplicity_events');
   dpm($service);
-  dpm('Hello');
   //$data = $service->getReportData('1ee5733f9bd09f41cef633d78f7380b2');
   //dpm($data);
-}
