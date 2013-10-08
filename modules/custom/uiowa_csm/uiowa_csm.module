@@ -39,5 +39,5 @@ function uiowa_csm_default_wsclient_service() {
 function uiowa_csm_init() {
 // Load the web service.
   $service = wsclient_service_load('simplicity_events');
-  //dpm($service);
+  dpm($service);
 }
