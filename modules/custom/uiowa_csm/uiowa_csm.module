@@ -6,38 +6,8 @@
  * Integration for Simplicity CSM.
  */
 
-/**
- * Implements hook_default_wsclient_service().
- *
- * Initialize the event service that uses Simplicity CSM API.
- */
-// function uiowa_csm_default_wsclient_service() {
-//   // UIowa Career Services Manager (SOAP).
-//   $service = new WSClientServiceDescription();
-//   $service->name = 'simplicity_events';
-//   $service->label = 'Simplicity Events';
-//   $service->url = 'https://uiowa-csm.symplicity.com/ws/report_api.php?wsdl';
-//   $service->type = 'soap';
-
-//   try {
-//     $service->endpoint()->initializeMetaData();
-//     $services[$service->name] = $service;
-//   }
-//   catch (WSClientException $e) {
-//     watchdog('wsclient', $e->__toString());
-//   }
-
-//   return $services;
-
-// }
-
-// //  function uiowa_csm_wsclient_service_load($services) {
-// //    $service->settings['options']['login'] = 'brian-hickey@uiowa.edu';
-// //    $service->settings['options']['password'] = 'testit';
-// // }
-
-// function uiowa_csm_init() {
-// // Load the web service.
-//   $service = wsclient_service_load('simplicity_events');
-//   dpm($service);
-// }
+function uiowa_csm_init() {
+// Load the web service.
+  $service = wsclient_service_load('simplicity_events');
+  dpm($service);
+}
