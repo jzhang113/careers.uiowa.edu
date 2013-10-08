@@ -31,10 +31,10 @@ function uiowa_csm_default_wsclient_service() {
 
 }
 
- function uiowa_csm_wsclient_service_load($services) {
-   $service->settings['options']['login'] = 'brian-hickey@uiowa.edu';
-   $service->settings['options']['password'] = 'testit';
-}
+//  function uiowa_csm_wsclient_service_load($services) {
+//    $service->settings['options']['login'] = 'brian-hickey@uiowa.edu';
+//    $service->settings['options']['password'] = 'testit';
+// }
 
 function uiowa_csm_init() {
 // Load the web service.
