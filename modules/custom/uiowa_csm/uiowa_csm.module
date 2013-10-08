@@ -6,37 +6,6 @@
  * Integration for Simplicity CSM.
  */
 
-function uiowa_csm_menu() {
-  $items = array();
-
-  $items['admin/config/content/test'] = array(
-    'title' => 'Test',
-    'description' => 'Testing.',
-    'page callback' => 'drupal_get_form',
-    'page arguments' => array('uiowa_csm_admin_form'),
-    'access arguments' => array('administer content'),
-    'type' => MENU_NORMAL_ITEM,
-    //'file' => 'mastercal.admin.inc',
-  );
-}
-
-function uiowa_csm_admin_form($form, &$form_state) {
-
-  $form['fields']['email'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Email'),
-    '#description' => t('The person\'s email.'),
-    '#default_value' => '',
-  );
-
-  // Get a list of all calendars available.
-  //$events = _uiowa_csm_get_events();
-
-  //dpm($events);
-
-  return $form;
-}
-
 /**
  * Implements hook_default_wsclient_service().
  *
@@ -68,8 +37,10 @@ function uiowa_csm_service_load($services) {
 
 function _uiowa_csm_get_events() {
   $service = wsclient_service_load('simplicity_events');
-  //dpm($service);
+  dpm($service);
   //$data = $service->getReportData('1ee5733f9bd09f41cef633d78f7380b2');
   //dpm($data);
   return $service;
 }
+
+_uiowa_csm_get_events();
