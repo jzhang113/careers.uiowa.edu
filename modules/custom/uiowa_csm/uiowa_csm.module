@@ -6,6 +6,18 @@
  * Integration for Simplicity CSM.
  */
 
+function uiowa_csm_menu() {
+  $items = array();
+
+  $items['admin/config/content/test'] = array(
+    'title' => 'Test',
+    'description' => 'Testing.',
+    'page callback' => '_uiowa_csm_get_events',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+}
+
 /**
  * Implements hook_default_wsclient_service().
  *
@@ -42,5 +54,3 @@ function _uiowa_csm_get_events() {
   //dpm($data);
   return $service;
 }
-
-//_uiowa_csm_get_events();
