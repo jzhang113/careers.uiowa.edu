@@ -60,7 +60,7 @@ body{
  * Main Menu - Responsive
  */
 
-#block-responsive-navigation-1{
+#block-menu-menu-site-links{
   background-color: #eee;
   padding: 0px;
   float:right;
@@ -503,8 +503,15 @@ border-radius: 4px;
 -moz-user-select: none;
 -ms-user-select: none;
 -o-user-select: none;
+a{
+  color: white;
+}
 &:hover{
   background-color: #555;
+  a{
+    color: white;
+    text-decoration: none;
+  }
 }
 }
 

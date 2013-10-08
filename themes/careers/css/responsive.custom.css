@@ -62,35 +62,35 @@ body a:hover {
  * Main Menu - Responsive
  */
 /* line 63, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 {
+#block-menu-menu-site-links {
   background-color: #eee;
   padding: 0px;
   float: right;
   margin-right: 10px;
 }
 /* line 68, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 a, #block-responsive-navigation-1 a:hover, #block-responsive-navigation-1 a:active, #block-responsive-navigation-1 a:visited {
+#block-menu-menu-site-links a, #block-menu-menu-site-links a:hover, #block-menu-menu-site-links a:active, #block-menu-menu-site-links a:visited {
   color: #333;
   text-decoration: none;
 }
 /* line 72, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 li {
+#block-menu-menu-site-links li {
   padding: 0px 5px;
 }
 /* line 75, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 li:hover {
+#block-menu-menu-site-links li:hover {
   background-color: #333;
 }
 /* line 77, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 li:hover a, #block-responsive-navigation-1 li:hover a:hover, #block-responsive-navigation-1 li:hover a:active, #block-responsive-navigation-1 li:hover a:visited {
+#block-menu-menu-site-links li:hover a, #block-menu-menu-site-links li:hover a:hover, #block-menu-menu-site-links li:hover a:active, #block-menu-menu-site-links li:hover a:visited {
   color: white;
 }
 /* line 81, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 li ul {
+#block-menu-menu-site-links li ul {
   display: none;
 }
 /* line 84, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1078 {
+#block-menu-menu-site-links .menu-item-1078 {
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -98,11 +98,11 @@ body a:hover {
   margin-left: 5px;
 }
 /* line 90, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1078:hover {
+#block-menu-menu-site-links .menu-item-1078:hover {
   background: transparent;
 }
 /* line 92, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1078:hover:before {
+#block-menu-menu-site-links .menu-item-1078:hover:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -114,7 +114,7 @@ body a:hover {
   color: #0084b4;
 }
 /* line 97, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1078:before {
+#block-menu-menu-site-links .menu-item-1078:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -126,7 +126,7 @@ body a:hover {
   color: #333333;
 }
 /* line 101, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1080 {
+#block-menu-menu-site-links .menu-item-1080 {
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -134,11 +134,11 @@ body a:hover {
   margin-left: 5px;
 }
 /* line 107, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1080:hover {
+#block-menu-menu-site-links .menu-item-1080:hover {
   background: transparent;
 }
 /* line 109, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1080:hover:before {
+#block-menu-menu-site-links .menu-item-1080:hover:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -150,7 +150,7 @@ body a:hover {
   color: #cc181e;
 }
 /* line 114, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1080:before {
+#block-menu-menu-site-links .menu-item-1080:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -162,7 +162,7 @@ body a:hover {
   color: #333333;
 }
 /* line 118, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1079 {
+#block-menu-menu-site-links .menu-item-1079 {
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -170,11 +170,11 @@ body a:hover {
   margin-left: 5px;
 }
 /* line 124, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1079:hover {
+#block-menu-menu-site-links .menu-item-1079:hover {
   background: transparent;
 }
 /* line 126, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1079:hover:before {
+#block-menu-menu-site-links .menu-item-1079:hover:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -186,7 +186,7 @@ body a:hover {
   color: #3b5998;
 }
 /* line 131, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 .menu-item-1079:before {
+#block-menu-menu-site-links .menu-item-1079:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -198,11 +198,11 @@ body a:hover {
   color: #333333;
 }
 /* line 135, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 #nav-toggle {
+#block-menu-menu-site-links #nav-toggle {
   margin-left: 5px;
 }
 /* line 137, ../sass/responsive.custom.scss */
-#block-responsive-navigation-1 #nav-toggle:before {
+#block-menu-menu-site-links #nav-toggle:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -217,7 +217,7 @@ body a:hover {
 }
 @media only screen and (min-width: 40em) {
   /* line 63, ../sass/responsive.custom.scss */
-  #block-responsive-navigation-1 {
+  #block-menu-menu-site-links {
     padding: 0px;
   }
 }
@@ -630,8 +630,17 @@ body a:hover {
   -o-user-select: none;
 }
 /* line 506, ../sass/responsive.custom.scss */
+.button a, input[type="button"] a, input[type="reset"] a, input[type="submit"] a {
+  color: white;
+}
+/* line 509, ../sass/responsive.custom.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #555;
+}
+/* line 511, ../sass/responsive.custom.scss */
+.button:hover a, input[type="button"]:hover a, input[type="reset"]:hover a, input[type="submit"]:hover a {
+  color: white;
+  text-decoration: none;
 }
 
 /*
