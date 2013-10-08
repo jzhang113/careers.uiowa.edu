@@ -497,27 +497,35 @@ body a:hover {
   padding: 0px;
 }
 /* line 409, ../sass/responsive.custom.scss */
+.flexslider a {
+  color: white;
+}
+/* line 411, ../sass/responsive.custom.scss */
+.flexslider a:hover {
+  color: #9c8345;
+  text-decoration: none;
+}
+/* line 416, ../sass/responsive.custom.scss */
 .flexslider .views-field-field-featured-image h3 {
   display: block;
   bottom: 0px;
   width: 100%;
-  color: #9c8345;
   padding: 10px;
   overflow: hidden;
   background: #333;
   height: 38px;
 }
-/* line 420, ../sass/responsive.custom.scss */
+/* line 426, ../sass/responsive.custom.scss */
 .flexslider .flex-control-nav {
   width: auto;
   bottom: -10px;
   right: 10px;
 }
-/* line 425, ../sass/responsive.custom.scss */
+/* line 431, ../sass/responsive.custom.scss */
 .flexslider .views-field-field-featured-image .field-content {
   padding-bottom: 5px;
 }
-/* line 428, ../sass/responsive.custom.scss */
+/* line 434, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cbbe6b), color-stop(100%, #9c8345));
   background: -webkit-linear-gradient(top, #cbbe6b, #9c8345);
@@ -527,7 +535,7 @@ body a:hover {
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 433, ../sass/responsive.custom.scss */
+/* line 439, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
   background: -webkit-linear-gradient(top, #333333, #000000);
@@ -537,17 +545,17 @@ body a:hover {
 }
 
 @media only screen and (min-width: 1100px) {
-  /* line 440, ../sass/responsive.custom.scss */
+  /* line 446, ../sass/responsive.custom.scss */
   #footer-wrapper .block {
     float: left;
     width: 33.33333%;
   }
 }
-/* line 447, ../sass/responsive.custom.scss */
+/* line 453, ../sass/responsive.custom.scss */
 .view-footer a {
   float: right;
 }
-/* line 449, ../sass/responsive.custom.scss */
+/* line 455, ../sass/responsive.custom.scss */
 .view-footer a:after {
   margin-left: 5px;
   font-family: FontAwesome;
@@ -560,11 +568,11 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 453, ../sass/responsive.custom.scss */
+/* line 459, ../sass/responsive.custom.scss */
 .view-footer a:hover {
   text-decoration: none;
 }
-/* line 455, ../sass/responsive.custom.scss */
+/* line 461, ../sass/responsive.custom.scss */
 .view-footer a:hover:after {
   font-family: FontAwesome;
   font-weight: normal;
@@ -577,12 +585,12 @@ body a:hover {
   color: #547496;
 }
 
-/* line 461, ../sass/responsive.custom.scss */
+/* line 467, ../sass/responsive.custom.scss */
 .whelan-flipped-column-content {
   background-color: #f5f5f5;
 }
 
-/* line 465, ../sass/responsive.custom.scss */
+/* line 471, ../sass/responsive.custom.scss */
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -599,7 +607,7 @@ body a:hover {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-/* line 480, ../sass/responsive.custom.scss */
+/* line 486, ../sass/responsive.custom.scss */
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
   background-color: #333;
@@ -621,7 +629,7 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 500, ../sass/responsive.custom.scss */
+/* line 506, ../sass/responsive.custom.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #555;
 }
