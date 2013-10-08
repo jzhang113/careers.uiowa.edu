@@ -6,45 +6,49 @@
  * Integration for Simplicity CSM.
  */
 
-/**
- * Implements hook_default_wsclient_service().
- *
- * Initialize the event service that uses Simplicity CSM API.
- */
-function uiowa_csm_default_wsclient_service() {
-  // UIowa Career Services Manager (SOAP).
-  $service = new WSClientServiceDescription();
-  $service->name = 'simplicity_events';
-  $service->label = 'Simplicity Events';
-  $service->url = 'https://uiowa-csm.symplicity.com/ws/report_api.php?wsdl';
-  $service->type = 'soap';
-  //$service->settings['options']['login'] = 'brian-hickey@uiowa.edu';
-  //$service->settings['options']['password'] = 'testit';
 
-  try {
-    $service->endpoint()->initializeMetaData();
-    $services[$service->name] = $service;
-  }
-  catch (WSClientException $e) {
-    watchdog('wsclient', $e->__toString());
+// Define constants
+define('ENDPOINT','https://uiowa-csm.symplicity.com/ws/report_api.php?wsdl');
+define('USERNAME','brian-hickey@uiowa.edu');
+define('PASSWORD','testit');
 
-    // This prevents an undefined variable error if the MC API is down.
-    // Not sure if I need this for CSM
-    //$services = NULL;
-  }
+// Create soap client
+$client = new SoapClient(ENDPOINT, array('login'    => USERNAME,
+                                         'password' => PASSWORD));
 
-  return $services;
+// Gets list of available functions
+$result = $client->__getFunctions();
 
-}
+// Gets list of reports
+// @returns - Array of report information
+//$result = $client->getReportList();
 
-// function uiowa_csm_wsclient_service_load($services) {
-//   $service->settings['options']['login'] = 'brian-hickey@uiowa.edu';
-//   $service->settings['options']['password'] = 'testit';
-// }
+// Gets list of runs for a given report
+// @parameters - report id
+// @returns - Array of report run information
+//$result = $client->getReportRunList('67133127287e2176a67b808c5474971c');
 
+// Gets report run status
+// @parameters - run id
+// @returns - report run status
+//$result = $client->checkReportRun('829b897540608be5b8742477cc4e74ce');
 
-function uiowa_csm_init() {
-// Load the web service.
-  $service = wsclient_service_load('simplicity_events');
-  //dpm($service);
-}
+// Gets report report data in csv format
+// @parameters - run id
+// @returns - report data in csv format
+//$result = $client->getReportData('829b897540608be5b8742477cc4e74ce');
+
+// Gets report data in excel format
+// @parameters - run id
+// @returns - report data in excel format
+//$result = $client->getReportExcel('829b897540608be5b8742477cc4e74ce');
+
+// Re-runs the report
+// @parameters - report id
+// @returns - report run id of new report
+//$result = $client->checkReportRun('67133127287e2176a67b808c5474971c');
+
+echo "<pre>";
+print_r($result);
+echo "</pre>";
+?>
