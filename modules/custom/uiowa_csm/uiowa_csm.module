@@ -14,7 +14,7 @@ function uiowa_csm_menu() {
     'description' => 'Testing.',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('uiowa_csm_admin_form'),
-    'access callback' => TRUE,
+    'access arguments' => array('administer content'),
     'type' => MENU_NORMAL_ITEM,
     //'file' => 'mastercal.admin.inc',
   );
