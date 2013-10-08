@@ -13,13 +13,13 @@ function uiowa_csm_menu() {
     'title' => 'UIowa Module Package',
     'description' => 'Custom modules developed by ITS Web Services.',
     'page callback' => 'drupal_get_form',
-    'page arguments' => array('uiowa_csm_add_form'),
-    //'access arguments' => array('administer_mastercal'),
+    'page arguments' => array('uiowa_csm_admin_form'),
+    'access callback' => TRUE,
     //'file' => 'mastercal.admin.inc',
   );
 }
 
-function uiowa_csm_add_form($form, &$form_state) {
+function uiowa_csm_admin_form($form, &$form_state) {
 
   $form['fields']['email'] = array(
     '#type' => 'checkbox',
