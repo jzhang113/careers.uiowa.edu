@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ *
+ * Integration for Simplicity CSM.
+ */
+
+
+// Define constants
+define('ENDPOINT','https://uiowa-csm.symplicity.com/ws/report_api.php?wsdl');
+define('USERNAME','brian-hickey@uiowa.edu');
+define('PASSWORD','testit');
+
+// Create soap client
+$client = new SoapClient(ENDPOINT, array('login'    => USERNAME,
+                                         'password' => PASSWORD));
+
+// Gets list of available functions
+$result = $client->__getFunctions();
+
+// Gets list of reports
+// @returns - Array of report information
+//$result = $client->getReportList();
+
+// Gets list of runs for a given report
+// @parameters - report id
+// @returns - Array of report run information
+//$result = $client->getReportRunList('67133127287e2176a67b808c5474971c');
+
+// Gets report run status
+// @parameters - run id
+// @returns - report run status
+//$result = $client->checkReportRun('829b897540608be5b8742477cc4e74ce');
+
+// Gets report report data in csv format
+// @parameters - run id
+// @returns - report data in csv format
+//$result = $client->getReportData('829b897540608be5b8742477cc4e74ce');
+
+// Gets report data in excel format
+// @parameters - run id
+// @returns - report data in excel format
+//$result = $client->getReportExcel('829b897540608be5b8742477cc4e74ce');
+
+// Re-runs the report
+// @parameters - report id
+// @returns - report run id of new report
+//$result = $client->checkReportRun('67133127287e2176a67b808c5474971c');
+
+echo "<pre>";
+print_r($result);
+echo "</pre>";
+?>

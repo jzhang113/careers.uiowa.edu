@@ -1,0 +1,5 @@
+name = Uiowa Career Services Manager
+description = Drupal Integration with Simplicity CSM
+package = UI Custom
+core = 7.x
+
