@@ -83,7 +83,7 @@ function news_content_type_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 0,
+      'default_image' => 23,
       'file_directory' => 'news',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',

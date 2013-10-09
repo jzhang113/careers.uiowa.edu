@@ -4,6 +4,7 @@ package = Careers
 dependencies[] = ctools
 dependencies[] = eighty_image_style
 dependencies[] = features
+dependencies[] = media
 dependencies[] = panelizer
 dependencies[] = strongarm
 dependencies[] = text
