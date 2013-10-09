@@ -6,59 +6,59 @@
  * Integration for Simplicity CSM.
  */
 
-function uiowa_csm_menu() {
-  $items = array();
+// function uiowa_csm_menu() {
+//   $items = array();
 
-  $items['admin/config/content/test'] = array(
-    'title' => 'Test',
-    'description' => 'Testing.',
-    'page callback' => 'drupal_get_form',
-    'page arguments' => array('uiowa_csm_admin_form'),
-    'access callback' => TRUE,
-    'type' => MENU_NORMAL_ITEM,
-    'menu_name' => 'management',
-    'file' => 'uiowa_csm.module',
-    'file path' => drupal_get_path('module', 'uiowa_csm'),
-  );
+//   $items['admin/config/content/test'] = array(
+//     'title' => 'Test',
+//     'description' => 'Testing.',
+//     'page callback' => 'drupal_get_form',
+//     'page arguments' => array('uiowa_csm_admin_form'),
+//     'access callback' => TRUE,
+//     'type' => MENU_NORMAL_ITEM,
+//     'menu_name' => 'management',
+//     'file' => 'uiowa_csm.module',
+//     'file path' => drupal_get_path('module', 'uiowa_csm'),
+//   );
 
-  return $items;
-}
+//   return $items;
+// }
 
-function uiowa_csm_admin_form($form, &$form_state) {
+// function uiowa_csm_admin_form($form, &$form_state) {
 
-  _uiowa_csm_get_events();
+//   _uiowa_csm_get_events();
 
-  $form['description'] = array(
-    '#type' => 'item',
-    '#title' => t('University of Iowa Module Package'),
-    '#markup' => '<p>This package contains various modules developed by ITS
-     Web Services.</p>',
-  );
+//   $form['description'] = array(
+//     '#type' => 'item',
+//     '#title' => t('University of Iowa Module Package'),
+//     '#markup' => '<p>This package contains various modules developed by ITS
+//      Web Services.</p>',
+//   );
 
-  return $form;
-}
+//   return $form;
+// }
 
-/**
- * Implements hook_default_wsclient_service().
- *
- */
-function uiowa_csm_default_wsclient_service() {
-  $service = new WSClientServiceDescription();
-  $service->name = 'simplicity_events';
-  $service->label = 'Test Events';
-  $service->url = 'https://uiowa-csm.symplicity.com/ws/report_api.php?wsdl';
-  $service->type = 'soap';
+// /**
+//  * Implements hook_default_wsclient_service().
+//  *
+//  */
+// function uiowa_csm_default_wsclient_service() {
+//   $service = new WSClientServiceDescription();
+//   $service->name = 'simplicity_events';
+//   $service->label = 'Test Events';
+//   $service->url = 'https://uiowa-csm.symplicity.com/ws/report_api.php?wsdl';
+//   $service->type = 'soap';
 
-  try {
-    $service->endpoint()->initializeMetaData();
-    $services[$service->name] = $service;
-  }
-  catch (WSClientException $e) {
-    watchdog('wsclient', $e->__toString());
-  }
+//   try {
+//     $service->endpoint()->initializeMetaData();
+//     $services[$service->name] = $service;
+//   }
+//   catch (WSClientException $e) {
+//     watchdog('wsclient', $e->__toString());
+//   }
 
-  return $services;
-}
+//   return $services;
+// }
 
 function uiowa_csm_wsclient_service_load($services) {
   foreach ($services as $service_id => &$service) {
@@ -72,10 +72,10 @@ function uiowa_csm_wsclient_service_load($services) {
   }
 }
 
-function _uiowa_csm_get_events() {
-  $service = wsclient_service_load('simplicity_events');
-  dpm($service);
-  $data = $service->getReportDataObject('9ae76f91d9b5013d967b39750d16fa2b');
-  dpm($data);
-  //return $service;
-}
+// function _uiowa_csm_get_events() {
+//   $service = wsclient_service_load('simplicity_events');
+//   dpm($service);
+//   $data = $service->getReportDataObject('9ae76f91d9b5013d967b39750d16fa2b');
+//   dpm($data);
+//   //return $service;
+// }
