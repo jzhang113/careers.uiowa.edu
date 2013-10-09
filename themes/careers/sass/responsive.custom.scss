@@ -39,10 +39,10 @@ body{
   background-color: #eee;
   color: #333;
   a{
-    color: $gold;
+    color: $blue;
     font-weight: bold;
     &:hover {
-      color: $blue;
+      color: $gold;
     }
   }
 }
@@ -455,16 +455,16 @@ body{
 }
 
 .view-footer a{
-  float: right;
+  width: 100%;
+  text-align: right;
+  float:right;
   &:after{
     margin-left: 5px;
     @include icon($chevron-right, $color: $gold, $size: 1.0em);
   }
   &:hover{
     text-decoration: none;
-    &:after{
-      @include icon($chevron-right, $color: $blue, $size: 1.0em);
-    }
+
   }
 }
 

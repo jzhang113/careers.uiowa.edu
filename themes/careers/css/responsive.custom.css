@@ -35,12 +35,12 @@ body {
 }
 /* line 41, ../sass/responsive.custom.scss */
 body a {
-  color: #9c8345;
+  color: #547496;
   font-weight: bold;
 }
 /* line 44, ../sass/responsive.custom.scss */
 body a:hover {
-  color: #547496;
+  color: #9c8345;
 }
 
 /* line 51, ../sass/responsive.custom.scss */
@@ -558,9 +558,11 @@ body a:hover {
 }
 /* line 457, ../sass/responsive.custom.scss */
 .view-footer a {
+  width: 100%;
+  text-align: right;
   float: right;
 }
-/* line 459, ../sass/responsive.custom.scss */
+/* line 461, ../sass/responsive.custom.scss */
 .view-footer a:after {
   margin-left: 5px;
   font-family: FontAwesome;
@@ -573,21 +575,9 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 463, ../sass/responsive.custom.scss */
+/* line 465, ../sass/responsive.custom.scss */
 .view-footer a:hover {
   text-decoration: none;
-}
-/* line 465, ../sass/responsive.custom.scss */
-.view-footer a:hover:after {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f054";
-  font-size: 1em;
-  color: #547496;
 }
 
 /* line 471, ../sass/responsive.custom.scss */
@@ -797,4 +787,132 @@ body a:hover {
 /* line 131, ../sass/_local.scss */
 .pane-people-panel-pane-career_advisors .views-field-title, .pane-people-panel-pane-career_advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-career_advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-peer-advisors .views-field-title, .pane-people-panel-pane-peer-advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-peer-advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-experiential_education_team .views-field-title, .pane-people-panel-pane-experiential_education_team .views-field-field-people-position .field-content, .pane-people-panel-pane-experiential_education_team .views-field-field-people-responsibilities, .pane-people-panel-pane-employer_relations_team .views-field-title, .pane-people-panel-pane-employer_relations_team .views-field-field-people-position .field-content, .pane-people-panel-pane-employer_relations_team .views-field-field-people-responsibilities {
   margin-left: 110px;
+}
+
+/* line 136, ../sass/_local.scss */
+.pane-quicktabs-announcements-events .block-inner {
+  border-bottom: 2px solid #547496;
+}
+
+/* line 141, ../sass/_local.scss */
+.view-display-id-announcements_news_content_pane .views-field-field-featured-image {
+  display: block;
+  float: left;
+}
+/* line 144, ../sass/_local.scss */
+.view-display-id-announcements_news_content_pane .views-field-field-featured-image img {
+  border: 5px solid #547496;
+  border-radius: 4px;
+}
+/* line 149, ../sass/_local.scss */
+.view-display-id-announcements_news_content_pane .views-field-title, .view-display-id-announcements_news_content_pane .views-field-created, .view-display-id-announcements_news_content_pane .views-field-body {
+  margin-left: 95px;
+}
+
+/* line 154, ../sass/_local.scss */
+.view-display-id-attachment_announcements_bottom .views-field-title {
+  margin-left: 0px;
+}
+/* line 157, ../sass/_local.scss */
+.view-display-id-attachment_announcements_bottom .views-row {
+  margin-left: 0px;
+  float: left;
+  width: auto;
+  display: block;
+  width: 230px;
+  padding-right: 10px;
+  margin-left: 0px;
+}
+/* line 165, ../sass/_local.scss */
+.view-display-id-attachment_announcements_bottom .views-row:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f138";
+  font-size: 1.2em;
+  color: #9c8345;
+  display: block;
+  float: left;
+  padding-right: 5px;
+}
+/* line 173, ../sass/_local.scss */
+.view-display-id-attachment_announcements_bottom .views-row-1:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f138";
+  font-size: 1.2em;
+  color: #e68b39;
+}
+/* line 178, ../sass/_local.scss */
+.view-display-id-attachment_announcements_bottom .views-row-2:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f138";
+  font-size: 1.2em;
+  color: #57b4a5;
+}
+/* line 183, ../sass/_local.scss */
+.view-display-id-attachment_announcements_bottom .views-row-3:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f138";
+  font-size: 1.2em;
+  color: #8f394f;
+}
+/* line 188, ../sass/_local.scss */
+.view-display-id-attachment_announcements_bottom .views-row-4:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f138";
+  font-size: 1.2em;
+  color: #d1d55a;
+}
+
+/* line 195, ../sass/_local.scss */
+.front .pane-system-main-menu ul {
+  margin-top: 0px;
+}
+/* line 198, ../sass/_local.scss */
+.front .pane-system-main-menu li {
+  font-size: 1.8rem;
+  list-style: none;
+}
+/* line 201, ../sass/_local.scss */
+.front .pane-system-main-menu li:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f105";
+  font-size: 1em;
+  color: #9c8345;
+  display: block;
+  float: left;
+  padding-right: 5px;
+}
+
+/* line 210, ../sass/_local.scss */
+#quicktabs-announcements_events ul.quicktabs-tabs.quicktabs-style-arrows {
+  font: inherit;
 }
