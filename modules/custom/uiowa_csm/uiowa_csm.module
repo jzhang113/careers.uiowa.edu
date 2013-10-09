@@ -85,18 +85,29 @@ function uiowa_csm_wsclient_service_load($services) {
 /**
 * Implements hook_feeds_parser_sources_alter().
 */
-// function uiowa_csm_feeds_parser_sources_alter(&$sources, $content_type) {
-//   $sources['field_event_type'] = array(
-//     'name' => t('Event Type'),
-//     'description' => t('The type of event.'),
-//     'callback' => '_uiowa_csm_get_type',
-//   );
-// }
+function uiowa_csm_feeds_parser_sources_alter(&$sources, $content_type) {
+  $sources['field_event_type'] = array(
+    'name' => t('Event Type'),
+    'description' => t('The type of event.'),
+    'callback' => '_uiowa_csm_get_type',
+  );
+  $sources['my_guied'] = array(
+    'name' => t('Identifier'),
+    'description' => t('Unique identifier of event.'),
+    'callback' => '_uiowa_csm_get_identifier',
+  );
+}
 
-// function _uiowa_csm_get_type(FeedsSource $source, FeedsParserResult $result, $key) {
-//   //dpm($source);
-//   $item = 'hello';
-//   return $item;
-// }
+function _uiowa_csm_get_type(FeedsSource $source, FeedsParserResult $result, $key) {
+  //dpm($source);
+  $item = $result->data[0][0];
+  return $item;
+}
+
+function _uiowa_csm_get_identifier(FeedsSource $source, FeedsParserResult $result, $key) {
+  //dpm($source);
+  $item = 78111;
+  return $item;
+}
 
 
