@@ -45,17 +45,17 @@ function uiowa_csm_default_wsclient_service() {
   return $services;
 }
 
-function uiowa_csm_service_load($services) {
-  $service->settings['options'] = array(
-    'login' => 'brian-hickey@uiowa.edu',
-    'password' => 'testit',
-  );
-}
+// function uiowa_csm_service_load($services) {
+//   $service->settings['options'] = array(
+//     'login' => 'brian-hickey@uiowa.edu',
+//     'password' => 'testit',
+//   );
+// }
 
 function _uiowa_csm_get_events() {
   $service = wsclient_service_load('simplicity_events');
   dpm($service);
   //$data = $service->getReportData('1ee5733f9bd09f41cef633d78f7380b2');
   //dpm($data);
-  return $service;
+  //return $service;
 }
