@@ -96,6 +96,11 @@ function uiowa_csm_feeds_parser_sources_alter(&$sources, $content_type) {
     'description' => t('Unique identifier of event.'),
     'callback' => '_uiowa_csm_get_identifier',
   );
+  $sources['my_title'] = array(
+    'name' => t('Title'),
+    'description' => t('Title of event.'),
+    'callback' => '_uiowa_csm_get_title',
+  );
 }
 
 function _uiowa_csm_get_type(FeedsSource $source, FeedsParserResult $result, $key) {
@@ -107,6 +112,12 @@ function _uiowa_csm_get_type(FeedsSource $source, FeedsParserResult $result, $ke
 function _uiowa_csm_get_identifier(FeedsSource $source, FeedsParserResult $result, $key) {
   //dpm($source);
   $item = 78111;
+  return $item;
+}
+
+function _uiowa_csm_get_title(FeedsSource $source, FeedsParserResult $result, $key) {
+  //dpm($source);
+  $item = $result->data[0][1];
   return $item;
 }
 
