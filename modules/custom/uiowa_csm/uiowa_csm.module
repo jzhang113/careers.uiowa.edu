@@ -94,8 +94,8 @@ function uiowa_csm_feeds_parser_sources_alter(&$sources, $content_type) {
 }
 
 function _uiowa_csm_get_type(FeedsSource $source, FeedsParserResult $result, $key) {
-  dpm($source);
-  dpm($result);
+  //dpm($source);
+  return dpm($result);
 }
 
 
