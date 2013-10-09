@@ -61,11 +61,11 @@ function uiowa_csm_default_wsclient_service() {
 }
 
 function uiowa_csm_wsclient_service_load($services) {
-  dpm($services);
   $service->settings['options'] = array(
     'login' => 'brian-hickey@uiowa.edu',
     'password' => 'testit',
   );
+  dpm($services);
 }
 
 function _uiowa_csm_get_events() {
