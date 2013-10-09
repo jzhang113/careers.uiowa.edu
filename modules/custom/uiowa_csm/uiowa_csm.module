@@ -45,12 +45,12 @@ function uiowa_csm_default_wsclient_service() {
   return $services;
 }
 
-// function uiowa_csm_service_load($services) {
-//   $service->settings['options'] = array(
-//     'login' => 'brian-hickey@uiowa.edu',
-//     'password' => 'testit',
-//   );
-// }
+function uiowa_csm_service_load($services) {
+  $service->settings['options'] = array(
+    'login' => 'brian-hickey@uiowa.edu',
+    'password' => 'testit',
+  );
+}
 
 function _uiowa_csm_get_events() {
   $service = wsclient_service_load('simplicity_events');
