@@ -780,12 +780,12 @@ body a:hover {
  *	People View Panes
  */
 /* line 127, ../sass/_local.scss */
-.pane-people-panel-pane-career_advisors .views-field-field-people-picture, .pane-people-panel-pane-peer-advisors .views-field-field-people-picture, .pane-people-panel-pane-experiential_education_team .views-field-field-people-picture, .pane-people-panel-pane-employer_relations_team .views-field-field-people-picture {
+.pane-people-panel-pane-career-advisors .views-field-field-people-picture, .pane-people-panel-pane-peer-advisors .views-field-field-people-picture, .pane-people-panel-pane-experiential-education-team .views-field-field-people-picture, .pane-people-panel-pane-employer-relations-team .views-field-field-people-picture {
   display: block;
   float: left;
 }
 /* line 131, ../sass/_local.scss */
-.pane-people-panel-pane-career_advisors .views-field-title, .pane-people-panel-pane-career_advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-career_advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-peer-advisors .views-field-title, .pane-people-panel-pane-peer-advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-peer-advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-experiential_education_team .views-field-title, .pane-people-panel-pane-experiential_education_team .views-field-field-people-position .field-content, .pane-people-panel-pane-experiential_education_team .views-field-field-people-responsibilities, .pane-people-panel-pane-employer_relations_team .views-field-title, .pane-people-panel-pane-employer_relations_team .views-field-field-people-position .field-content, .pane-people-panel-pane-employer_relations_team .views-field-field-people-responsibilities {
+.pane-people-panel-pane-career-advisors .views-field-title, .pane-people-panel-pane-career-advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-career-advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-peer-advisors .views-field-title, .pane-people-panel-pane-peer-advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-peer-advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-experiential-education-team .views-field-title, .pane-people-panel-pane-experiential-education-team .views-field-field-people-position .field-content, .pane-people-panel-pane-experiential-education-team .views-field-field-people-responsibilities, .pane-people-panel-pane-employer-relations-team .views-field-title, .pane-people-panel-pane-employer-relations-team .views-field-field-people-position .field-content, .pane-people-panel-pane-employer-relations-team .views-field-field-people-responsibilities {
   margin-left: 110px;
 }
 

@@ -59,7 +59,7 @@ function people_view_and_panel_page_default_page_manager_pages() {
     $pane->pid = 'new-1';
     $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
-    $pane->subtype = 'people-panel_pane_1';
+    $pane->subtype = 'people-panel_pane_career_advisors';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -95,7 +95,7 @@ function people_view_and_panel_page_default_page_manager_pages() {
     $pane->pid = 'new-3';
     $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
-    $pane->subtype = 'people-panel_pane_2';
+    $pane->subtype = 'people-panel_pane_experiential_education_team';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -113,7 +113,7 @@ function people_view_and_panel_page_default_page_manager_pages() {
     $pane->pid = 'new-4';
     $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
-    $pane->subtype = 'people-panel_pane_3';
+    $pane->subtype = 'people-panel_pane_employer_relations_team';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
