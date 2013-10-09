@@ -12,7 +12,8 @@ function uiowa_csm_menu() {
   $items['admin/config/content/test'] = array(
     'title' => 'Test',
     'description' => 'Testing.',
-    'page callback' => '_uiowa_csm_get_events',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('uiowa_csm_admin_form'),
     'access callback' => TRUE,
     'type' => MENU_NORMAL_ITEM,
     'menu_name' => 'management',
@@ -21,6 +22,17 @@ function uiowa_csm_menu() {
   );
 
   return $items;
+}
+
+function uiowa_csm_admin_form($form, &$form_state) {
+  $form['description'] = array(
+    '#type' => 'item',
+    '#title' => t('University of Iowa Module Package'),
+    '#markup' => '<p>This package contains various modules developed by ITS
+     Web Services.</p>',
+  );
+
+  return $form;
 }
 
 /**
