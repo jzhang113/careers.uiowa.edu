@@ -60,7 +60,7 @@ function uiowa_csm_default_wsclient_service() {
   return $services;
 }
 
-function uiowa_csm_service_load($services) {
+function uiowa_csm_wsclient_service_load($services) {
   $service->settings['options'] = array(
     'login' => 'brian-hickey@uiowa.edu',
     'password' => 'testit',
