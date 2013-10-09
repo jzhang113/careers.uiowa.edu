@@ -79,3 +79,23 @@ function uiowa_csm_wsclient_service_load($services) {
 //   dpm($data);
 //   //return $service;
 // }
+//
+//
+
+/**
+* Implements hook_feeds_parser_sources_alter().
+*/
+function uiowa_csm_feeds_parser_sources_alter(&$sources, $content_type) {
+  $sources['field_event_type'] = array(
+    'name' => t('Event Type'),
+    'description' => t('The type of event.'),
+    'callback' => '_uiowa_csm_get_type',
+  );
+}
+
+function _uiowa_csm_get_type(FeedsSource $source, FeedsParserResult $result, $key) {
+  dpm($source);
+  dpm($result);
+}
+
+
