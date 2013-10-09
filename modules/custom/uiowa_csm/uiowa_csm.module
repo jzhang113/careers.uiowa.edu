@@ -9,7 +9,7 @@
 function uiowa_csm_menu() {
   $items = array();
 
-  $items['admin/config/content/test'] = array(
+  $items['admin/config/test'] = array(
     'title' => 'Test',
     'description' => 'Testing.',
     'page callback' => '_uiowa_csm_get_events',
