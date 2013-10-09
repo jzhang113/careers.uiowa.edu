@@ -25,6 +25,9 @@ function uiowa_csm_menu() {
 }
 
 function uiowa_csm_admin_form($form, &$form_state) {
+
+  _uiowa_csm_get_events();
+
   $form['description'] = array(
     '#type' => 'item',
     '#title' => t('University of Iowa Module Package'),
