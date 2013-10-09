@@ -9,7 +9,7 @@
 function uiowa_csm_menu() {
   $items = array();
 
-  $items['admin/config/test'] = array(
+  $items['admin/config/content/test'] = array(
     'title' => 'Test',
     'description' => 'Testing.',
     'page callback' => '_uiowa_csm_get_events',
@@ -19,6 +19,8 @@ function uiowa_csm_menu() {
     'file' => 'uiowa_csm.module',
     'file path' => drupal_get_path('module', 'uiowa_csm'),
   );
+
+  return $items;
 }
 
 /**
