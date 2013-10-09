@@ -61,6 +61,7 @@ function uiowa_csm_default_wsclient_service() {
 }
 
 function uiowa_csm_wsclient_service_load($services) {
+  dpm($services);
   $service->settings['options'] = array(
     'login' => 'brian-hickey@uiowa.edu',
     'password' => 'testit',
@@ -69,7 +70,7 @@ function uiowa_csm_wsclient_service_load($services) {
 
 function _uiowa_csm_get_events() {
   $service = wsclient_service_load('simplicity_events');
-  dpm($service);
+  //dpm($service);
   //$data = $service->getReportData('1ee5733f9bd09f41cef633d78f7380b2');
   //dpm($data);
   //return $service;
