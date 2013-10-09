@@ -31,7 +31,7 @@
 
 
 /* iPhone [portrait + landscape] */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   .bartlett-wide-column,
   .bartlett-wide-content-container,
   .bartlett-wide-content-container .bartlett-wide-content-column1,
