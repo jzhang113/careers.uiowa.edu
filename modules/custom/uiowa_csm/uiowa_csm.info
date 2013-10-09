@@ -3,3 +3,6 @@ description = Drupal Integration with Simplicity CSM
 package = UI Custom
 core = 7.x
 
+dependencies[] = wsclient
+dependencies[] = wsclient_soap
+dependencies[] = entity
