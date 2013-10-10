@@ -54,6 +54,11 @@
 /*
  *	Employers Showcase Slider Pane
  */
+ .pane-employer-showcase-employer-showcase-slider-panel-pane{
+ 	.block-inner{
+ 		border-bottom: 2px solid $blue;
+ 	}
+ }
 
 .view-display-id-employer_showcase_slider_panel_pane {
 	.flexslider{
@@ -62,26 +67,15 @@
 	}
 	#flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane {
 		padding: 0px;
-
-		.views-field-title{
-		    padding: 5px;
-		    background: #333;
-		    //@include border;
-		    //@include border-top-radius(0px);
-		    a {
-		    	color: white;
-		    }
-		}
 		.field-content{
 		  	position: relative;
-		  	height: 120px;
-		  	width: 120px;
+		  	height: 200px;
 		  	img{
 		  	  position: absolute;
 			  top: 0; left: 0; right: 0; bottom: 0;
 		      margin: auto;
-		      max-height: 100px;
-		      max-width: 100px;
+		      width: auto;
+		      max-height: 200px;
 		      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
 		      filter: gray; /* IE6-9 */
 		      -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */

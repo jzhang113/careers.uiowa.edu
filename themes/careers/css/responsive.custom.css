@@ -697,31 +697,26 @@ body a:hover {
 /*
  *	Employers Showcase Slider Pane
  */
-/* line 59, ../sass/_local.scss */
+/* line 58, ../sass/_local.scss */
+.pane-employer-showcase-employer-showcase-slider-panel-pane .block-inner {
+  border-bottom: 2px solid #547496;
+}
+
+/* line 64, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider {
   border: 0px;
   margin: 0 0 5px;
 }
-/* line 63, ../sass/_local.scss */
+/* line 68, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane {
   padding: 0px;
 }
-/* line 66, ../sass/_local.scss */
-.view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .views-field-title {
-  padding: 5px;
-  background: #333;
-}
-/* line 71, ../sass/_local.scss */
-.view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .views-field-title a {
-  color: white;
-}
-/* line 75, ../sass/_local.scss */
+/* line 70, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content {
   position: relative;
-  height: 120px;
-  width: 120px;
+  height: 200px;
 }
-/* line 79, ../sass/_local.scss */
+/* line 73, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content img {
   position: absolute;
   top: 0;
@@ -729,8 +724,8 @@ body a:hover {
   right: 0;
   bottom: 0;
   margin: auto;
-  max-height: 100px;
-  max-width: 100px;
+  width: auto;
+  max-height: 200px;
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   /* Firefox 10+, Firefox on Android */
   filter: gray;
@@ -741,7 +736,7 @@ body a:hover {
   filter: alpha(opacity=40);
   /* For IE8 and earlier */
 }
-/* line 90, ../sass/_local.scss */
+/* line 84, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content img:hover {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
@@ -757,7 +752,7 @@ body a:hover {
   -o-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
-/* line 101, ../sass/_local.scss */
+/* line 95, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flex-control-paging {
   display: none;
 }
@@ -765,12 +760,12 @@ body a:hover {
 /*
  *	Video Fields
  */
-/* line 111, ../sass/_local.scss */
+/* line 105, ../sass/_local.scss */
 .field-name-field-video-file iframe {
   width: 100%;
   max-width: 640px;
 }
-/* line 116, ../sass/_local.scss */
+/* line 110, ../sass/_local.scss */
 .field-name-field-video-file #player {
   height: auto;
   width: auto;
@@ -779,41 +774,41 @@ body a:hover {
 /*
  *	People View Panes
  */
-/* line 127, ../sass/_local.scss */
+/* line 121, ../sass/_local.scss */
 .pane-people-panel-pane-career-advisors .views-field-field-people-picture, .pane-people-panel-pane-peer-advisors .views-field-field-people-picture, .pane-people-panel-pane-experiential-education-team .views-field-field-people-picture, .pane-people-panel-pane-employer-relations-team .views-field-field-people-picture {
   display: block;
   float: left;
 }
-/* line 131, ../sass/_local.scss */
+/* line 125, ../sass/_local.scss */
 .pane-people-panel-pane-career-advisors .views-field-title, .pane-people-panel-pane-career-advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-career-advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-peer-advisors .views-field-title, .pane-people-panel-pane-peer-advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-peer-advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-experiential-education-team .views-field-title, .pane-people-panel-pane-experiential-education-team .views-field-field-people-position .field-content, .pane-people-panel-pane-experiential-education-team .views-field-field-people-responsibilities, .pane-people-panel-pane-employer-relations-team .views-field-title, .pane-people-panel-pane-employer-relations-team .views-field-field-people-position .field-content, .pane-people-panel-pane-employer-relations-team .views-field-field-people-responsibilities {
   margin-left: 110px;
 }
 
-/* line 136, ../sass/_local.scss */
+/* line 130, ../sass/_local.scss */
 .pane-quicktabs-announcements-events .block-inner {
   border-bottom: 2px solid #547496;
 }
 
-/* line 141, ../sass/_local.scss */
+/* line 135, ../sass/_local.scss */
 .view-display-id-announcements_news_content_pane .views-field-field-featured-image {
   display: block;
   float: left;
 }
-/* line 144, ../sass/_local.scss */
+/* line 138, ../sass/_local.scss */
 .view-display-id-announcements_news_content_pane .views-field-field-featured-image img {
   border: 5px solid #547496;
   border-radius: 4px;
 }
-/* line 149, ../sass/_local.scss */
+/* line 143, ../sass/_local.scss */
 .view-display-id-announcements_news_content_pane .views-field-title, .view-display-id-announcements_news_content_pane .views-field-created, .view-display-id-announcements_news_content_pane .views-field-body {
   margin-left: 95px;
 }
 
-/* line 154, ../sass/_local.scss */
+/* line 148, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-field-title {
   margin-left: 0px;
 }
-/* line 157, ../sass/_local.scss */
+/* line 151, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row {
   margin-left: 0px;
   float: left;
@@ -823,7 +818,7 @@ body a:hover {
   padding-right: 10px;
   margin-left: 0px;
 }
-/* line 165, ../sass/_local.scss */
+/* line 159, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -838,7 +833,7 @@ body a:hover {
   float: left;
   padding-right: 5px;
 }
-/* line 173, ../sass/_local.scss */
+/* line 167, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-1:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -850,7 +845,7 @@ body a:hover {
   font-size: 1.2em;
   color: #e68b39;
 }
-/* line 178, ../sass/_local.scss */
+/* line 172, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-2:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -862,7 +857,7 @@ body a:hover {
   font-size: 1.2em;
   color: #57b4a5;
 }
-/* line 183, ../sass/_local.scss */
+/* line 177, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-3:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -874,7 +869,7 @@ body a:hover {
   font-size: 1.2em;
   color: #8f394f;
 }
-/* line 188, ../sass/_local.scss */
+/* line 182, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-4:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -887,16 +882,16 @@ body a:hover {
   color: #d1d55a;
 }
 
-/* line 195, ../sass/_local.scss */
+/* line 189, ../sass/_local.scss */
 .front .pane-system-main-menu ul {
   margin-top: 0px;
 }
-/* line 198, ../sass/_local.scss */
+/* line 192, ../sass/_local.scss */
 .front .pane-system-main-menu li {
   font-size: 1.8rem;
   list-style: none;
 }
-/* line 201, ../sass/_local.scss */
+/* line 195, ../sass/_local.scss */
 .front .pane-system-main-menu li:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -912,7 +907,7 @@ body a:hover {
   padding-right: 5px;
 }
 
-/* line 210, ../sass/_local.scss */
+/* line 204, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-tabs.quicktabs-style-arrows {
   font: inherit;
 }

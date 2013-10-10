@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Employer Showcase Image Style feature.
+ */
+
+include_once 'employer_showcase_image_style.features.inc';
