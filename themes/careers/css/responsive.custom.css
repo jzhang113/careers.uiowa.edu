@@ -883,16 +883,16 @@ body a:hover {
 }
 
 /* line 189, ../sass/_local.scss */
-.front .pane-system-main-menu ul {
+.front .pane-system-main-menu ul.menu {
   margin-top: 0px;
 }
-/* line 192, ../sass/_local.scss */
-.front .pane-system-main-menu li {
+/* line 191, ../sass/_local.scss */
+.front .pane-system-main-menu ul.menu li {
   font-size: 1.8rem;
   list-style: none;
 }
-/* line 195, ../sass/_local.scss */
-.front .pane-system-main-menu li:before {
+/* line 194, ../sass/_local.scss */
+.front .pane-system-main-menu ul.menu li:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;

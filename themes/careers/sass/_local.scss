@@ -186,17 +186,17 @@
 }
 
 .front .pane-system-main-menu{
-	ul{
+	ul.menu{
 		margin-top: 0px;
-	}
-	li{
-		font-size: 1.8rem;
-		list-style:none;
-		&:before {
-			@include icon($angle-right, $color: $gold, $size: 1.0em);
-        	display: block;
-			float: left;
-			padding-right: 5px;
+		li{
+			font-size: 1.8rem;
+			list-style:none;
+			&:before {
+				@include icon($angle-right, $color: $gold, $size: 1.0em);
+	        	display: block;
+				float: left;
+				padding-right: 5px;
+			}
 		}
 	}
 }
