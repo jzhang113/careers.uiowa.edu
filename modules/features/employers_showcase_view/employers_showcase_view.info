@@ -2,6 +2,7 @@ name = Employers Showcase View
 core = 7.x
 package = Careers
 dependencies[] = ctools
+dependencies[] = employer_showcase_image_style
 dependencies[] = employers_orgs_content_type
 dependencies[] = flexslider
 dependencies[] = flexslider_views_slideshow
