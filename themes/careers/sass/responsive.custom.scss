@@ -52,90 +52,94 @@ body{
   @include offscreen;
 }
 
-#leaderboard-wrapper{
-  background-color: #eee;
-}
-
 /*
  * Main Menu - Responsive
  */
+#block-responsive-navigation-1{
+  //position: absolute;
+  //top: 0;
+  //right: 0;
+    padding: 0px;
+}
 
-#block-menu-menu-site-links{
-  background-color: #eee;
-  padding: 0px;
-  float:right;
-  margin-right: 10px;
+.responsive-navigation-menu-1{
+  background-color:rgba(0,0,0,0.7);
+  float: right;
+  //background-color: #eee;
+  //padding: 0px;
+  //float:right;
+  //margin-right: 10px;
   ul{
-    margin: 0px;
+    //margin: 0px;
   }
   a, a:hover, a:active, a:visited{
-    color: #333;
+    color: white;
     text-decoration: none;
   }
   li{
-    padding: 15px 5px 10px 5px;
+    //padding: 15px 5px 10px 5px;
     display: inline-block;
   }
   li:hover {
-    background-color: #333;
+    background-color: white;
     a, a:hover, a:active, a:visited{
-      color: white;
+      color: #333;
     }
   }
   li ul {
     display:none;
   }
-  .menu-item-1078{ // Twitter
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    padding: 0px 19px 30px 0px;
-    margin-left: 5px;
-    &:hover{
-      background: transparent;
-      &:before {
-        @include icon($twitter-sign, $color: #0084b4, $size: 1.6em);
-      }
-    }
-
-    &:before {
-      @include icon($twitter-sign, $color: #333, $size: 1.6em);
-    }
-  }
-  .menu-item-1080{ // YouTube
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    padding: 0px 19px 30px 0px;
-    margin-left: 5px;
-    &:hover{
-      background: transparent;
-      &:before {
-        @include icon($youtube-sign, $color: #cc181e, $size: 1.6em);
-      }
-    }
-
-    &:before {
-      @include icon($youtube-sign, $color: #333, $size: 1.6em);
-    }
-  }
-  .menu-item-1079{ // Facebook
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    padding: 0px 19px 30px 0px;
-    margin-left: 5px;
-    &:hover{
-      background: transparent;
-      &:before {
-        @include icon($facebook-sign, $color: #3b5998, $size: 1.6em);
-      }
-    }
-
-    &:before {
-      @include icon($facebook-sign, $color: #333, $size: 1.6em);
-    }
-  }
+//  .menu-item-1078{ // Twitter
+//    width: 1px;
+//    height: 1px;
+//    overflow: hidden;
+//    padding: 0px 19px 30px 0px;
+//   margin-left: 5px;
+//    &:hover{
+//      background: transparent;
+//     &:before {
+//        @include icon($twitter-sign, $color: #0084b4, $size: 1.6em);
+//      }
+//    }
+//
+//    &:before {
+//      @include icon($twitter-sign, $color: #333, $size: 1.6em);
+//    }
+//  }
+//  .menu-item-1080{ // YouTube
+//    width: 1px;
+//    height: 1px;
+//    overflow: hidden;
+//    padding: 0px 19px 30px 0px;
+//    margin-left: 5px;
+//    &:hover{
+//      background: transparent;
+//      &:before {
+//        @include icon($youtube-sign, $color: #cc181e, $size: 1.6em);
+//      }
+//    }
+//
+//    &:before {
+//      @include icon($youtube-sign, $color: #333, $size: 1.6em);
+//    }
+// }
+//  .menu-item-1079{ // Facebook
+//    width: 1px;
+//    height: 1px;
+//    overflow: hidden;
+//    padding: 0px 19px 30px 0px;
+//    margin-left: 5px;
+//    &:hover{
+//      background: transparent;
+//      &:before {
+//        @include icon($facebook-sign, $color: #3b5998, $size: 1.6em);
+//      }
+//    }
+//
+//    &:before {
+//      @include icon($facebook-sign, $color: #333, $size: 1.6em);
+//    }
+//  }
   #nav-toggle{
     margin-left: 5px;
     &:before {
@@ -176,7 +180,7 @@ body{
   //@media #{$responsive-nav} {
     //height: 300px;
   //}
-  overflow: hidden;
+  //overflow: hidden;
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
@@ -184,10 +188,12 @@ body{
   #branding {
     position: absolute;
     background-color:rgba(0,0,0,0.7);
-    width: 100%;
-    padding: 0px 20px;
+    bottom: 10px;
+    //width: auto;
+    //padding: 0px 20px;
     #logo{
-      padding:0px;
+      //padding:0px;
+      @include offscreen;
     }
     #site-name{
       //font-size: 2.3rem;
@@ -200,27 +206,27 @@ body{
       @include offscreen;
     }
     #site-slogan{
+      @include offscreen;
       font-size: 1.5rem;
       color: white;
-      position: absolute;
-      width: 100%;
-      left: 0;
-      text-align: right;
-      padding: 5px 20px 5px 5px;
+      //width: 100%;
+      //left: 0;
+      //text-align: right;
+      //padding: 5px 20px 5px 5px;
       @media #{$mobile-only} {
-        text-align: center;
-        padding: 5px;
+        //text-align: center;
+        //padding: 5px;
       }
       background-color:rgba(0,0,0,0.7);
       @media #{$nine-hundred} {
         font-size: 1.8rem;
-        bottom: 10px;
+        //bottom: 10px;
         background-color: transparent;
       }
     }
     // Keeps navigation from overlapping branding.
     @media #{$nine-hundred}{
-      bottom: 15px;
+      //bottom: 15px;
     }
   }
 
@@ -228,32 +234,66 @@ body{
    * Audience Menu - Header Region
    */
   .region-header{
-    position: absolute;
-    bottom: 5px;
-    right: 0;
+    //position: absolute;
+    //bottom: 5px;
+    //right: 0;
     background-color:rgba(0,0,0,0.7);
-    width: 100%;
+    //width: 100%;
     @media #{$mobile-only}{
-      width: auto;
+      //width: auto;
       background-color:transparent;
     }
     @media #{$nine-hundred}{
-      width: auto;
+      //width: auto;
       background-color: transparent;
     }
     .block-menu-audience-menu{
+      float: right;
       padding: 0px;
+      padding: 0 0 0 25px;
+      position: absolute;
+      bottom: -25px;
+      right: 0px;
+      //padding: 0px;
+      //bottom: 0;
+      //right: 0;
+      //position: relative;
+      background-color: transparent;
+      &:before{
+        width: 0;
+        height: 0;
+        content: "";
+        left: 5px;
+        position: absolute;
+        border-top: 16px solid transparent;
+        border-bottom: 17px solid transparent;
+        border-right: 20px solid $light_yellow;
+      }
       ul.menu {
-        padding: 0px 15px;
-        float:right;
+        background-color: $light_yellow;
+        @include box-shadow(#ccc 2px 2px 10px);
         margin: 0px;
+        padding-left: 100px;
+        padding-right: 10px;
+        &:before{
+          content:"Start Here:";
+          position: absolute;
+          left: 40px;
+          top: 6px;
+          color: black;
+          font-weight: bold;
+        }
+        
+        //padding: 0px 15px;
+        //float:right;
+        //margin: 0px;
         // properly spaced columns for navigation.
         @media #{$mobile-only}{
-          @include column-count(2);
+          //@include column-count(2);
         }
         @media #{$nine-hundred}{
-          margin: 10px;
-          margin-bottom: 55px;
+          //margin: 10px;
+          //margin-bottom: 55px;
         }
 
         li{
@@ -264,7 +304,7 @@ body{
           display: block;
           float: left;
           padding: 6px 10px;
-          margin: 1px;
+          //margin: 1px;
           text-align: center;
           white-space: nowrap;
           vertical-align: middle;
@@ -276,28 +316,28 @@ body{
           }
 
           &:hover{
-            background-color: $yellow;
+            background-color: #333;
             a{
-              color: #333;
+              color: white;
             }
           }
 
           a{
             text-transform: uppercase;
-            color: white;
+            color: black;
             font-weight: bold;
             &:hover {
               text-decoration: none;
-              color: #333;
+              color: white;
             }
           }
           // Prevents right-column nav buttons from getting clipped.
           @media #{$mobile-only} {
-          width: 99%;
+          //width: 99%;
           }
           // Desktop Circle buttons
           @media #{$responsive-nav} {
-            position: relative;
+            //position: relative;
             //height: 100px;
             //width: 100px;
             //border-radius: 50px;
@@ -307,7 +347,7 @@ body{
               display: block;
               text-align: center;
               //margin-top: 50%;
-              color: white;
+              color: black;
               font-weight: bold;
               text-decoration: none;
               //&:before{
@@ -325,50 +365,54 @@ body{
               //}
             }
             &:hover{
-              @include background(linear-gradient(top, #ffcc00, $yellow));
-              @include box-shadow(#ccc 0px 0px 0px);
+              //@include background(linear-gradient(top, #ffcc00, $yellow));
+              //@include box-shadow(#ccc 0px 0px 0px);
+              background-color: #333;
               a{
                 &:before{
-                  color: #333;
+                  color: white;
                 }
               }
             }
           }
         }
         // Custom Icons for Menu Items
-        @media #{$responsive-nav} {
-          .menu-item-1004 { // Students Menu Item
-            a:before{
-              content: "\F040";
-            }
-          }
-          .menu-item-1008 { // Employers Menu Item
-            a:before{
-              content: "\F0F7";
-            }
-          }
-          .menu-item-1007 { // Faculty Menu Item
-            a:before{
-              content: "\F02D";
-            }
-          }
-          .menu-item-1005 { // Alumni Menu Item
-            a:before{
-              content: "\F0C0";
-            }
-          }
-          .menu-item-1006 { // Parents Menu Item
-            a:before{
-              content: "\F015";
-            }
-          }
-        }
+//        @media #{$responsive-nav} {
+//         .menu-item-1004 { // Students Menu Item
+//            a:before{
+//              content: "\F040";
+//            }
+//          }
+//          .menu-item-1008 { // Employers Menu Item
+//            a:before{
+//              content: "\F0F7";
+//            }
+//         }
+//          .menu-item-1007 { // Faculty Menu Item
+//            a:before{
+//              content: "\F02D";
+//            }
+//          }
+//          .menu-item-1005 { // Alumni Menu Item
+//            a:before{
+//              content: "\F0C0";
+//            }
+//          }
+//          .menu-item-1006 { // Parents Menu Item
+//            a:before{
+//              content: "\F015";
+//           }
+//          }
+//        }
       }
     }
   }
 }
+#content-wrapper{
+padding-top: 20px;
+}
 
-#main-content, #main-content-header, #breadcrumb, #messages{
+#content-wrapper, #main-content, #main-content-header, #breadcrumb, #messages{
   background: $page;
 }
 
