@@ -10,6 +10,24 @@
 function main_menu_navigation_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: main-menu:http://hireahawk.com
+  $menu_links['main-menu:http://hireahawk.com'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'http://hireahawk.com',
+    'router_path' => '',
+    'link_title' => 'HireaHawk.com',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+  );
   // Exported menu link: main-menu:http://www.careers.uiowa.edu/academicprograms.html
   $menu_links['main-menu:http://www.careers.uiowa.edu/academicprograms.html'] = array(
     'menu_name' => 'main-menu',
@@ -154,24 +172,6 @@ function main_menu_navigation_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 0,
   );
-  // Exported menu link: main-menu:people/
-  $menu_links['main-menu:people/'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'people/',
-    'router_path' => 'people',
-    'link_title' => 'About Us',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-  );
   // Exported menu link: main-menu:relations
   $menu_links['main-menu:relations'] = array(
     'menu_name' => 'main-menu',
@@ -192,7 +192,6 @@ function main_menu_navigation_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('About Us');
   t('Career Fairs');
   t('Career Guide');
   t('Career Leadership Academy');
@@ -201,6 +200,7 @@ function main_menu_navigation_menu_default_menu_links() {
   t('Corporate and Community Relations');
   t('Dual Career Network');
   t('Hawkeye Career Navigator');
+  t('HireaHawk.com');
   t('The Washington Center');
 
 
