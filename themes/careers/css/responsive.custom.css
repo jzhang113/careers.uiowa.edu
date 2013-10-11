@@ -588,41 +588,40 @@ body a:hover {
   /* line 458, ../sass/responsive.custom.scss */
   #footer-wrapper .block {
     float: left;
-    width: 25%;
   }
 }
 
-/* line 464, ../sass/responsive.custom.scss */
+/* line 463, ../sass/responsive.custom.scss */
 .region-footer {
   position: relative;
   font-size: 12px;
 }
-/* line 467, ../sass/responsive.custom.scss */
+/* line 466, ../sass/responsive.custom.scss */
 .region-footer a {
   color: black;
 }
-/* line 469, ../sass/responsive.custom.scss */
+/* line 468, ../sass/responsive.custom.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 473, ../sass/responsive.custom.scss */
+/* line 472, ../sass/responsive.custom.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 476, ../sass/responsive.custom.scss */
+/* line 475, ../sass/responsive.custom.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 481, ../sass/responsive.custom.scss */
+  /* line 480, ../sass/responsive.custom.scss */
   .region-footer #block-menu-block-2 {
     width: 50%;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 487, ../sass/responsive.custom.scss */
+  /* line 486, ../sass/responsive.custom.scss */
   .region-footer .menu-name-main-menu ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -631,7 +630,7 @@ body a:hover {
     column-count: 2;
   }
 }
-/* line 493, ../sass/responsive.custom.scss */
+/* line 492, ../sass/responsive.custom.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
