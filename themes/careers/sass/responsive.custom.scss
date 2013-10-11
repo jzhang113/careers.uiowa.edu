@@ -52,119 +52,9 @@ body{
   @include offscreen;
 }
 
-/*
- * Main Menu - Responsive
- */
-#block-responsive-navigation-1{
-  //position: absolute;
-  //top: 0;
-  //right: 0;
-    padding: 0px;
-}
-
-.responsive-navigation-menu-1{
-  background-color:rgba(0,0,0,0.7);
-  float: right;
-  //background-color: #eee;
-  //padding: 0px;
-  //float:right;
-  //margin-right: 10px;
-  ul{
-    //margin: 0px;
-  }
-  a, a:hover, a:active, a:visited{
-    color: white;
-    text-decoration: none;
-  }
-  li{
-    //padding: 15px 5px 10px 5px;
-    display: inline-block;
-  }
-  li:hover {
-    background-color: white;
-    a, a:hover, a:active, a:visited{
-      color: #333;
-    }
-  }
-  li ul {
-    display:none;
-  }
-//  .menu-item-1078{ // Twitter
-//    width: 1px;
-//    height: 1px;
-//    overflow: hidden;
-//    padding: 0px 19px 30px 0px;
-//   margin-left: 5px;
-//    &:hover{
-//      background: transparent;
-//     &:before {
-//        @include icon($twitter-sign, $color: #0084b4, $size: 1.6em);
-//      }
-//    }
-//
-//    &:before {
-//      @include icon($twitter-sign, $color: #333, $size: 1.6em);
-//    }
-//  }
-//  .menu-item-1080{ // YouTube
-//    width: 1px;
-//    height: 1px;
-//    overflow: hidden;
-//    padding: 0px 19px 30px 0px;
-//    margin-left: 5px;
-//    &:hover{
-//      background: transparent;
-//      &:before {
-//        @include icon($youtube-sign, $color: #cc181e, $size: 1.6em);
-//      }
-//    }
-//
-//    &:before {
-//      @include icon($youtube-sign, $color: #333, $size: 1.6em);
-//    }
-// }
-//  .menu-item-1079{ // Facebook
-//    width: 1px;
-//    height: 1px;
-//    overflow: hidden;
-//    padding: 0px 19px 30px 0px;
-//    margin-left: 5px;
-//    &:hover{
-//      background: transparent;
-//      &:before {
-//        @include icon($facebook-sign, $color: #3b5998, $size: 1.6em);
-//      }
-//    }
-//
-//    &:before {
-//      @include icon($facebook-sign, $color: #333, $size: 1.6em);
-//    }
-//  }
-  #nav-toggle{
-    margin-left: 5px;
-    &:before {
-      @include icon($reorder, $color: #333, $size: 1.2em);
-      padding-right: 5px;
-      vertical-align: middle;
-    }
-  }
-  @media #{$responsive-nav}{
-    padding: 0px;
-  }
-}
-
-@media #{$responsive-nav}{
-  #nav li {
-    width: auto;
-    float: left;
-    padding: 8px;
-  }
-}
-
 #header-wrapper{
   background-color: #333;
   background: url('images/bg_tile.gif') repeat;
-  //@include background(linear-gradient(top, #333, #000));
 }
 
 #header {
@@ -230,9 +120,6 @@ body{
     }
   }
 
-  /*
-   * Audience Menu - Header Region
-   */
   .region-header{
     //position: absolute;
     //bottom: 5px;
@@ -247,6 +134,91 @@ body{
       //width: auto;
       background-color: transparent;
     }
+    
+    /*
+     * Main Menu - Responsive
+     */
+    #block-responsive-navigation-1{
+      padding: 0px;
+
+      #nav{
+        background-color:rgba(0,0,0,0.7);
+        float: right;
+        
+        a, a:hover, a:active, a:visited{
+          color: white;
+          text-decoration: none;
+        }
+        li{
+          padding: 6px;
+          display: inline-block;
+          width: auto;
+        }
+        li:hover {
+          background-color: white;
+          a, a:hover, a:active, a:visited{
+            color: #333;
+          }
+        }
+        li ul {
+          display:none;
+        }
+
+        // Site Links Social Icon Links
+        .menu-item-1078, .menu-item-1079, 
+        .menu-item-1080, .menu-item-1228,
+        .menu-item-1229, .menu-item-1230 {
+          padding: 0px;
+          margin: 0px 3px;
+          background-color:rgba(0,0,0,0.7);
+          a{
+            display: block;
+            background-color:rgba(0,0,0,0.7);
+            background-position:top;
+            margin-bottom: -10px;
+            min-width: 30px;
+            height: 30px;
+            text-indent: -9999px;
+            overflow: hidden;
+            &:hover {
+              background-color: transparent;
+              background-position:bottom;
+            }
+          }
+        }
+        .menu-item-1078 a { // Twitter
+          background: url('images/social/twitter-icon.png') no-repeat;
+        }
+        .menu-item-1080 a{ // YouTube
+          background: url('images/social/youtube-icon.png') no-repeat;
+        }
+        .menu-item-1079 a{ // Facebook
+          background: url('images/social/facebook-icon.png') no-repeat;
+        }
+        .menu-item-1228 a{ // LinkedIn
+          background: url('images/social/linkedin-icon.png') no-repeat;
+        }
+        .menu-item-1229 a{ // Pinterest
+          background: url('images/social/pintrest-icon.png') no-repeat;
+        }
+        .menu-item-1230 a{ // Instagram
+          background: url('images/social/instagram-icon.png') no-repeat;
+        }
+        #nav-toggle{
+          margin-left: 5px;
+          &:before {
+            @include icon($reorder, $color: #333, $size: 1.2em);
+            padding-right: 5px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+    /*
+     * Audience Menu - Header Region
+     */
+
     .block-menu-audience-menu{
       float: right;
       padding: 0px;
@@ -376,34 +348,6 @@ body{
             }
           }
         }
-        // Custom Icons for Menu Items
-//        @media #{$responsive-nav} {
-//         .menu-item-1004 { // Students Menu Item
-//            a:before{
-//              content: "\F040";
-//            }
-//          }
-//          .menu-item-1008 { // Employers Menu Item
-//            a:before{
-//              content: "\F0F7";
-//            }
-//         }
-//          .menu-item-1007 { // Faculty Menu Item
-//            a:before{
-//              content: "\F02D";
-//            }
-//          }
-//          .menu-item-1005 { // Alumni Menu Item
-//            a:before{
-//              content: "\F0C0";
-//            }
-//          }
-//          .menu-item-1006 { // Parents Menu Item
-//            a:before{
-//              content: "\F015";
-//           }
-//          }
-//        }
       }
     }
   }
