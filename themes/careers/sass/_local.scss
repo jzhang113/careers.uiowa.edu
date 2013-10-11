@@ -35,7 +35,7 @@
 			display: block;
 			float: left;
 			margin: 0.25em;
-			background-color: #fff;
+			background-color: $page;
 			@include border;
 		}
 	}
@@ -165,22 +165,22 @@
 	}
 	.views-row-1 {
 		&:before{
-			@include icon($chevron-sign-right, $color: #E68B39, $size: 1.2em);//orange
+			@include icon($chevron-sign-right, $color: $orange, $size: 1.2em);//orange
 		}
 	}
 	.views-row-2 {
 		&:before{
-			@include icon($chevron-sign-right, $color: #57B4A5, $size: 1.2em);//teal
+			@include icon($chevron-sign-right, $color: $teal, $size: 1.2em);//teal
 		}
 	}
 	.views-row-3 {
 		&:before{
-			@include icon($chevron-sign-right, $color: #8F394F, $size: 1.2em);//maroon
+			@include icon($chevron-sign-right, $color: $maroon, $size: 1.2em);//maroon
 		}
 	}
 	.views-row-4 {
 		&:before{
-			@include icon($chevron-sign-right, $color: #D1D55A, $size: 1.2em);//green
+			@include icon($chevron-sign-right, $color: $green, $size: 1.2em);//green
 		}
 	}
 }

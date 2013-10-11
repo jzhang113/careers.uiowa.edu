@@ -109,10 +109,10 @@ body{
         margin-left: 5px;
         color: white;
         &:hover {
-          color: $light_yellow;
+          color: $yellow;
           text-decoration: none;
           &:before {
-            @include icon($reorder, $color: $light_yellow, $size: 1.2em);
+            @include icon($reorder, $color: $yellow, $size: 1.2em);
           }
         }
         &:before {
@@ -198,7 +198,7 @@ body{
       position: absolute;
       bottom: 0;
       padding: 0 5px;
-      background: $light_yellow;
+      background: $yellow;
       width: 100%;
       @media #{$responsive-nav} {
         width: auto;
@@ -215,7 +215,7 @@ body{
           position: absolute;
           border-top: 25px solid transparent;
           border-bottom: 25px solid transparent;
-          border-right: 20px solid $light_yellow;
+          border-right: 20px solid $yellow;
         }
       }
       @media #{$mobile-only} {
@@ -243,7 +243,7 @@ body{
       }
       ul.menu {
         @media #{$responsive-nav} {
-          background-color: $light_yellow;
+          background-color: $yellow;
           @include box-shadow(#999 -1px 2px 10px);
           margin: 0px;
           padding-left: 100px;
@@ -377,7 +377,7 @@ padding-top: 30px;
     padding-bottom: 5px;
   }
   .flex-control-paging li a {
-    @include background(linear-gradient(top, $light_gold, $gold));
+    @include background(linear-gradient(top, $yellow, $gold));
     border-width: 0px;
     margin-left: 1px;
   }
@@ -401,7 +401,7 @@ padding-top: 30px;
 }
 
 .whelan-flipped-column-content{
-  background-color: #f5f5f5;
+  background-color: $tan;
 }
 
 .formtext {
@@ -411,7 +411,7 @@ padding-top: 30px;
   line-height: 1.428571429;
   color: #555555;
   vertical-align: middle;
-  background-color: #ffffff;
+  background-color: $page;
   border: 1px solid #cccccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -453,7 +453,7 @@ a{
 
 // FOOTER
 #footer-wrapper {
-  background-color: #f5f5f5;
+  background-color: $tan;
   @media #{$responsive-nav} {
     .block {
       float: left;

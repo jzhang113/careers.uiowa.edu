@@ -35,7 +35,7 @@ body {
 }
 /* line 41, ../sass/responsive.custom.scss */
 body a {
-  color: #547496;
+  color: #687893;
   font-weight: bold;
 }
 /* line 44, ../sass/responsive.custom.scss */
@@ -481,11 +481,11 @@ body a:hover {
 }
 /* line 379, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cbbe6b), color-stop(100%, #9c8345));
-  background: -webkit-linear-gradient(top, #cbbe6b, #9c8345);
-  background: -moz-linear-gradient(top, #cbbe6b, #9c8345);
-  background: -o-linear-gradient(top, #cbbe6b, #9c8345);
-  background: linear-gradient(top, #cbbe6b, #9c8345);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffd451), color-stop(100%, #9c8345));
+  background: -webkit-linear-gradient(top, #ffd451, #9c8345);
+  background: -moz-linear-gradient(top, #ffd451, #9c8345);
+  background: -o-linear-gradient(top, #ffd451, #9c8345);
+  background: linear-gradient(top, #ffd451, #9c8345);
   border-width: 0px;
   margin-left: 1px;
 }
@@ -524,7 +524,7 @@ body a:hover {
 
 /* line 403, ../sass/responsive.custom.scss */
 .whelan-flipped-column-content {
-  background-color: #f5f5f5;
+  background-color: #eae3d2;
 }
 
 /* line 407, ../sass/responsive.custom.scss */
@@ -535,7 +535,7 @@ body a:hover {
   line-height: 1.428571429;
   color: #555555;
   vertical-align: middle;
-  background-color: #ffffff;
+  background-color: white;
   border: 1px solid #cccccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -582,7 +582,7 @@ body a:hover {
 
 /* line 455, ../sass/responsive.custom.scss */
 #footer-wrapper {
-  background-color: #f5f5f5;
+  background-color: #eae3d2;
 }
 @media only screen and (min-width: 40em) {
   /* line 458, ../sass/responsive.custom.scss */
@@ -683,7 +683,7 @@ body a:hover {
   display: block;
   float: left;
   margin: 0.25em;
-  background-color: #fff;
+  background-color: white;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -707,7 +707,7 @@ body a:hover {
  */
 /* line 58, ../sass/_local.scss */
 .pane-employer-showcase-employer-showcase-slider-panel-pane .block-inner {
-  border-bottom: 2px solid #547496;
+  border-bottom: 2px solid #687893;
 }
 
 /* line 64, ../sass/_local.scss */
@@ -794,7 +794,7 @@ body a:hover {
 
 /* line 130, ../sass/_local.scss */
 .pane-quicktabs-announcements-events .block-inner {
-  border-bottom: 2px solid #547496;
+  border-bottom: 2px solid #687893;
 }
 
 /* line 135, ../sass/_local.scss */
@@ -804,7 +804,7 @@ body a:hover {
 }
 /* line 138, ../sass/_local.scss */
 .view-display-id-announcements_news_content_pane .views-field-field-featured-image img {
-  border: 5px solid #547496;
+  border: 5px solid #687893;
   border-radius: 4px;
 }
 /* line 143, ../sass/_local.scss */
