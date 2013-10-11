@@ -634,16 +634,7 @@ body a:hover {
 /* line 493, ../sass/responsive.custom.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
-}
-@media only screen and (min-width: 40em) {
-  /* line 493, ../sass/responsive.custom.scss */
-  .region-footer #block-block-2 {
-    position: absolute;
-    margin-top: 10px;
-    right: 0px;
-    text-align: right;
-    padding: 0 15px 0 0;
-  }
+  margin-top: 10px;
 }
 
 /*

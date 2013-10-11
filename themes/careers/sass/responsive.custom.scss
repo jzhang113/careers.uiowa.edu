@@ -492,13 +492,7 @@ a{
   }
   #block-block-2{  // Location and Contact Information
     padding: 0 0 0 15px;
-    @media #{$responsive-nav} {
-      position: absolute;
-      margin-top: 10px;
-      right: 0px;
-      text-align: right;
-      padding: 0 15px 0 0;
-    }
+    margin-top: 10px;
   }
 } // END FOOTER
 
