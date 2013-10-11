@@ -124,7 +124,7 @@ body a:hover {
   padding: 0px;
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
-  z-index: 999;
+  z-index: 1;
 }
 @media only screen and (min-width: 40em) {
   /* line 120, ../sass/responsive.custom.scss */
