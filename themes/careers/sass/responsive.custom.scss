@@ -60,99 +60,109 @@ body{
 #header {
   background-color: #eee;
   background: url('images/header.png') no-repeat;
-
-  // Disable background image on mobile devices
-  @media #{$mobile-only}{
-    background: none;
-  }
   position: relative;
   height: 230px;
-  //@media #{$responsive-nav} {
-    //height: 300px;
-  //}
-  //overflow: hidden;
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
+  border-bottom: 5px solid #333;
 
   #branding {
     position: absolute;
-    background-color:rgba(0,0,0,0.7);
-    bottom: 10px;
-    //width: auto;
-    //padding: 0px 20px;
+    bottom: 60px;
+    @media #{$responsive-nav} {
+      bottom: 10px;
+    }
     #logo{
-      //padding:0px;
-      @include offscreen;
+      @media #{$responsive-nav} {
+        padding-left: 20px;
+      }
+    }
+    .site-logo{
+      width: 320px;
     }
     #site-name{
-      //font-size: 2.3rem;
-      //a{
-        //color: white;
-      //}
-      //@media #{$responsive-nav} {
-        //font-size: 3.0rem;
-      //}
       @include offscreen;
     }
     #site-slogan{
-      @include offscreen;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       color: white;
+      font-family: $serif;
+      text-align: center;
+      position: relative;
+      bottom: 25px;
+      @include text-shadow(rgba(black, 0.2) 1px 1px 0, rgba(black, 0.2) 2px 2px 0, rgba(black, 0.2) 3px 3px 0);
       //width: 100%;
       //left: 0;
       //text-align: right;
       //padding: 5px 20px 5px 5px;
-      @media #{$mobile-only} {
+      //@media #{$mobile-only} {
         //text-align: center;
         //padding: 5px;
-      }
-      background-color:rgba(0,0,0,0.7);
-      @media #{$nine-hundred} {
-        font-size: 1.8rem;
+      //}
+      //background-color:rgba(0,0,0,0.7);
+      //@media #{$nine-hundred} {
+        //font-size: 1.8rem;
         //bottom: 10px;
-        background-color: transparent;
-      }
+        //background-color: transparent;
+      //}
     }
     // Keeps navigation from overlapping branding.
-    @media #{$nine-hundred}{
+    //@media #{$nine-hundred}{
       //bottom: 15px;
-    }
+    //}
   }
 
   .region-header{
-    //position: absolute;
-    //bottom: 5px;
-    //right: 0;
-    background-color:rgba(0,0,0,0.7);
-    //width: 100%;
-    @media #{$mobile-only}{
-      //width: auto;
-      background-color:transparent;
-    }
-    @media #{$nine-hundred}{
-      //width: auto;
-      background-color: transparent;
-    }
-    
     /*
      * Main Menu - Responsive
      */
     #block-responsive-navigation-1{
       padding: 0px;
+      background-color:rgba(0,0,0,0.7);
+      position: relative;
+      z-index: 999;
+      @media #{$responsive-nav} {
+        background-color: transparent;
+      }
+      #nav-toggle{
+        margin-left: 5px;
+        color: white;
+        &:hover {
+          color: $light_yellow;
+          text-decoration: none;
+          &:before {
+            @include icon($reorder, $color: $light_yellow, $size: 1.2em);
+          }
+        }
+        &:before {
+          @include icon($reorder, $color: white, $size: 1.2em);
+          padding-right: 5px;
+          vertical-align: middle;
+        }
+      }
 
       #nav{
-        background-color:rgba(0,0,0,0.7);
+        @media #{$responsive-nav} {
+          background-color:rgba(0,0,0,0.7);
+        }
         float: right;
+        ul{
+          text-align: right;
+        }
         
         a, a:hover, a:active, a:visited{
           color: white;
           text-decoration: none;
         }
         li{
-          padding: 6px;
-          display: inline-block;
-          width: auto;
+          padding: 6px 20px 6px 6px;
+
+          @media #{$responsive-nav} {
+            display: inline-block;
+            width: auto;
+            padding: 6px;
+          }
         }
         li:hover {
           background-color: white;
@@ -163,53 +173,43 @@ body{
         li ul {
           display:none;
         }
-
-        // Site Links Social Icon Links
-        .menu-item-1078, .menu-item-1079, 
-        .menu-item-1080, .menu-item-1228,
-        .menu-item-1229, .menu-item-1230 {
-          padding: 0px;
-          margin: 0px 3px;
-          background-color:rgba(0,0,0,0.7);
-          a{
-            display: block;
-            background-color:rgba(0,0,0,0.7);
-            background-position:top;
-            margin-bottom: -10px;
-            min-width: 30px;
-            height: 30px;
-            text-indent: -9999px;
-            overflow: hidden;
-            &:hover {
-              background-color: transparent;
-              background-position:bottom;
+        @media #{$responsive-nav} {
+          .menu-item-1078, .menu-item-1079, 
+          .menu-item-1080, .menu-item-1228,
+          .menu-item-1229, .menu-item-1230 {
+            padding: 0px;
+            margin: 0px 3px;
+            a{
+              display: block;
+              overflow: hidden;
+              background-position:top;
+              width: 30px;
+              height: 30px;
+              margin-bottom: -10px;
+              text-indent: 9999px;
+              &:hover {
+                background-color: transparent;
+                background-position:bottom;
+              }
             }
           }
-        }
-        .menu-item-1078 a { // Twitter
-          background: url('images/social/twitter-icon.png') no-repeat;
-        }
-        .menu-item-1080 a{ // YouTube
-          background: url('images/social/youtube-icon.png') no-repeat;
-        }
-        .menu-item-1079 a{ // Facebook
-          background: url('images/social/facebook-icon.png') no-repeat;
-        }
-        .menu-item-1228 a{ // LinkedIn
-          background: url('images/social/linkedin-icon.png') no-repeat;
-        }
-        .menu-item-1229 a{ // Pinterest
-          background: url('images/social/pintrest-icon.png') no-repeat;
-        }
-        .menu-item-1230 a{ // Instagram
-          background: url('images/social/instagram-icon.png') no-repeat;
-        }
-        #nav-toggle{
-          margin-left: 5px;
-          &:before {
-            @include icon($reorder, $color: #333, $size: 1.2em);
-            padding-right: 5px;
-            vertical-align: middle;
+          .menu-item-1078 a { // Twitter
+            background: url('images/social/twitter-icon.png') no-repeat;
+          }
+          .menu-item-1080 a{ // YouTube
+            background: url('images/social/youtube-icon.png') no-repeat;
+          }
+          .menu-item-1079 a{ // Facebook
+            background: url('images/social/facebook-icon.png') no-repeat;
+          }
+          .menu-item-1228 a{ // LinkedIn
+            background: url('images/social/linkedin-icon.png') no-repeat;
+          }
+          .menu-item-1229 a{ // Pinterest
+            background: url('images/social/pintrest-icon.png') no-repeat;
+          }
+          .menu-item-1230 a{ // Instagram
+            background: url('images/social/instagram-icon.png') no-repeat;
           }
         }
       }
@@ -220,52 +220,67 @@ body{
      */
 
     .block-menu-audience-menu{
-      float: right;
-      padding: 0px;
-      padding: 0 0 0 25px;
       position: absolute;
-      bottom: -25px;
-      right: 0px;
-      //padding: 0px;
-      //bottom: 0;
-      //right: 0;
-      //position: relative;
-      background-color: transparent;
-      &:before{
-        width: 0;
-        height: 0;
-        content: "";
-        left: 5px;
-        position: absolute;
-        border-top: 16px solid transparent;
-        border-bottom: 17px solid transparent;
-        border-right: 20px solid $light_yellow;
+      width: 100%;
+      @media #{$responsive-nav} {
+        width: auto;
+      }
+      bottom: 0;
+      padding: 0 5px;
+      background: $light_yellow;
+      @media #{$mobile-only} {
+        font-size: 13px;
+      }
+      ul {
+        padding: 0px;
+        margin: 0px;
+        float: right;
+        li {
+          margin: 0px;
+          display: block;
+          float: left;
+          padding: 15px 10px;
+          @media #{$mobile-only} {
+            padding: 6px 3px;
+          }
+          a{
+            color: black;
+          }
+        }
+      }
+      @media #{$responsive-nav} {
+        float: right;
+        padding: 0 0 0 25px;
+        bottom: -25px;
+        right: 0px;
+        background-color: transparent;
+        &:before{
+          width: 0;
+          height: 0;
+          content: "";
+          left: 5px;
+          position: absolute;
+          border-top: 25px solid transparent;
+          border-bottom: 25px solid transparent;
+          border-right: 20px solid $light_yellow;
+        }
       }
       ul.menu {
-        background-color: $light_yellow;
-        @include box-shadow(#ccc 2px 2px 10px);
-        margin: 0px;
-        padding-left: 100px;
-        padding-right: 10px;
-        &:before{
-          content:"Start Here:";
-          position: absolute;
-          left: 40px;
-          top: 6px;
-          color: black;
-          font-weight: bold;
-        }
-        
-        //padding: 0px 15px;
-        //float:right;
-        //margin: 0px;
-        // properly spaced columns for navigation.
-        @media #{$mobile-only}{
-          //@include column-count(2);
-        }
-        @media #{$nine-hundred}{
-          //margin: 10px;
-          //margin-bottom: 55px;
+        @media #{$responsive-nav} {
+          background-color: $light_yellow;
+          @include box-shadow(#999 0px 2px 10px);
+          margin: 0px;
+          padding-left: 100px;
+          padding-right: 10px;
+          height: 50px;
+          &:before{
+            content:"Start Here:";
+            position: absolute;
+            left: 40px;
+            top: 15px;
+            color: black;
+            font-weight: bold;
+          }
         }
 
         li{
@@ -273,10 +288,6 @@ body{
           list-style: none;
           list-style-image: none;
           list-style-type: none;
-          display: block;
-          float: left;
-          padding: 6px 10px;
-          //margin: 1px;
           text-align: center;
           white-space: nowrap;
           vertical-align: middle;
@@ -295,56 +306,14 @@ body{
           }
 
           a{
-            text-transform: uppercase;
+
             color: black;
             font-weight: bold;
+            text-decoration: none;
             &:hover {
               text-decoration: none;
               color: white;
-            }
-          }
-          // Prevents right-column nav buttons from getting clipped.
-          @media #{$mobile-only} {
-          //width: 99%;
-          }
-          // Desktop Circle buttons
-          @media #{$responsive-nav} {
-            //position: relative;
-            //height: 100px;
-            //width: 100px;
-            //border-radius: 50px;
-            //@include box-shadow(#333 2px 2px 10px);
-            //@include background(linear-gradient(top, #333, #000));
-            a{
-              display: block;
-              text-align: center;
-              //margin-top: 50%;
-              color: black;
-              font-weight: bold;
-              text-decoration: none;
-              //&:before{
-                //color: $yellow;
-                //font-family: FontAwesome;
-                //font-weight: normal;
-                //font-style: normal;
-                //font-size: 30px;
-                //display: inline-block;
-                //content: "\F02E";
-                //float: left;
-                //position: absolute;
-                //top: 10%;
-                //left: 40%;
-              //}
-            }
-            &:hover{
-              //@include background(linear-gradient(top, #ffcc00, $yellow));
-              //@include box-shadow(#ccc 0px 0px 0px);
               background-color: #333;
-              a{
-                &:before{
-                  color: white;
-                }
-              }
             }
           }
         }
@@ -353,7 +322,7 @@ body{
   }
 }
 #content-wrapper{
-padding-top: 20px;
+padding-top: 30px;
 }
 
 #content-wrapper, #main-content, #main-content-header, #breadcrumb, #messages{
