@@ -621,7 +621,13 @@ body a:hover {
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 486, ../sass/responsive.custom.scss */
+  /* line 485, ../sass/responsive.custom.scss */
+  .region-footer #block-menu-block-3 {
+    min-width: 110px;
+  }
+}
+@media only screen and (min-width: 40em) {
+  /* line 491, ../sass/responsive.custom.scss */
   .region-footer .menu-name-main-menu ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -630,7 +636,7 @@ body a:hover {
     column-count: 2;
   }
 }
-/* line 492, ../sass/responsive.custom.scss */
+/* line 497, ../sass/responsive.custom.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;

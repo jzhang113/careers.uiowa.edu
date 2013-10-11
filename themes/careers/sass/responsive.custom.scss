@@ -482,6 +482,11 @@ a{
       width: 50%;
     }
   }
+  #block-menu-block-3 { // Audience Menu Footer Block
+    @media #{$responsive-nav} {
+      min-width: 110px;
+    }
+  }
   .menu-name-main-menu {
     ul{
       @media #{$responsive-nav} {
