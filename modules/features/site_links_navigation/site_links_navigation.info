@@ -1,0 +1,16 @@
+name = Site Links Navigation
+core = 7.x
+package = Careers
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = menu-site-links
+features[menu_links][] = menu-site-links:<front>
+features[menu_links][] = menu-site-links:http://google.com/maps
+features[menu_links][] = menu-site-links:http://instagram.com
+features[menu_links][] = menu-site-links:http://www.linkedin.com/groups?home=&gid=3904736&trk=anet_ug_hm
+features[menu_links][] = menu-site-links:http://www.pinterest.com/UICareerCenter/
+features[menu_links][] = menu-site-links:http://www.youtube.com/user/careersuiowa
+features[menu_links][] = menu-site-links:https://twitter.com/UICareerCenter
+features[menu_links][] = menu-site-links:https://www.facebook.com/UICareerCenter
+features[menu_links][] = menu-site-links:people/
