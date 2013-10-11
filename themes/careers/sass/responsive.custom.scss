@@ -90,31 +90,13 @@ body{
       position: relative;
       bottom: 25px;
       @include text-shadow(rgba(black, 0.2) 1px 1px 0, rgba(black, 0.2) 2px 2px 0, rgba(black, 0.2) 3px 3px 0);
-      //width: 100%;
-      //left: 0;
-      //text-align: right;
-      //padding: 5px 20px 5px 5px;
-      //@media #{$mobile-only} {
-        //text-align: center;
-        //padding: 5px;
-      //}
-      //background-color:rgba(0,0,0,0.7);
-      //@media #{$nine-hundred} {
-        //font-size: 1.8rem;
-        //bottom: 10px;
-        //background-color: transparent;
-      //}
+      @media #{$responsive-nav} {
+        padding-left: 80px;
+      }
     }
-    // Keeps navigation from overlapping branding.
-    //@media #{$nine-hundred}{
-      //bottom: 15px;
-    //}
   }
-
   .region-header{
-    /*
-     * Main Menu - Responsive
-     */
+    // Main Menu - Responsive Navigation
     #block-responsive-navigation-1{
       padding: 0px;
       background-color:rgba(0,0,0,0.7);
@@ -141,21 +123,19 @@ body{
       }
 
       #nav{
+        float: right;
         @media #{$responsive-nav} {
           background-color:rgba(0,0,0,0.7);
         }
-        float: right;
-        ul{
-          text-align: right;
-        }
-        
         a, a:hover, a:active, a:visited{
           color: white;
           text-decoration: none;
         }
+        ul{
+          text-align: right;
+        }
         li{
           padding: 6px 20px 6px 6px;
-
           @media #{$responsive-nav} {
             display: inline-block;
             width: auto;
@@ -211,42 +191,17 @@ body{
           }
         }
       }
-    }
+    } // END Main Menu - Responsive Navigation
 
-    /*
-     * Audience Menu - Header Region
-     */
-
+    //Audience Menu - Header Region
     .block-menu-audience-menu{
       position: absolute;
-      width: 100%;
-      @media #{$responsive-nav} {
-        width: auto;
-      }
       bottom: 0;
       padding: 0 5px;
       background: $light_yellow;
-      @media #{$mobile-only} {
-        font-size: 13px;
-      }
-      ul {
-        padding: 0px;
-        margin: 0px;
-        float: right;
-        li {
-          margin: 0px;
-          display: block;
-          float: left;
-          padding: 15px 10px;
-          @media #{$mobile-only} {
-            padding: 6px 3px;
-          }
-          a{
-            color: black;
-          }
-        }
-      }
+      width: 100%;
       @media #{$responsive-nav} {
+        width: auto;
         float: right;
         padding: 0 0 0 25px;
         bottom: -50px;
@@ -261,6 +216,29 @@ body{
           border-top: 25px solid transparent;
           border-bottom: 25px solid transparent;
           border-right: 20px solid $light_yellow;
+        }
+      }
+      @media #{$mobile-only} {
+        font-size: 13px;
+      }
+      ul {
+        padding: 0px;
+        margin: 0px;
+        float: right;
+        li {
+          margin: 0px;
+          display: block;
+          float: left;
+          padding: 15px 10px;
+          @media #{$nine-hundred} {
+            padding: 15px 26px;
+          }
+          @media #{$mobile-only} {
+            padding: 6px 3px;
+          }
+          a{
+            color: black;
+          }
         }
       }
       ul.menu {
@@ -316,7 +294,7 @@ body{
           }
         }
       }
-    }
+    } // END Audience Menu - Header Region
   }
 }
 #secondary-content-wrapper{
