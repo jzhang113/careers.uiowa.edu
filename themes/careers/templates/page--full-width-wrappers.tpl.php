@@ -158,6 +158,14 @@
       </div>
     <?php endif; ?>
 
+    <?php if ($page['secondary_content']): ?>
+      <div id="secondary-content-wrapper">
+        <div class="container clearfix">
+          <?php print render($page['secondary_content']); ?>
+        </div>
+      </div>
+    <?php endif; ?>
+
     <?php if ($breadcrumb): ?>
       <div id="breadcrumb-wrapper">
         <div class="container clearfix">
@@ -171,14 +179,6 @@
         <div class="container clearfix">
           <?php print $messages; ?>
           <?php print render($page['help']); ?>
-        </div>
-      </div>
-    <?php endif; ?>
-
-    <?php if ($page['secondary_content']): ?>
-      <div id="secondary-content-wrapper">
-        <div class="container clearfix">
-          <?php print render($page['secondary_content']); ?>
         </div>
       </div>
     <?php endif; ?>
