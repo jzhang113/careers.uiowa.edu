@@ -36,7 +36,7 @@
 
 body{
   min-width: 320px;
-  background-color: #eee;
+  background-color: $page;
   color: #333;
   a{
     color: $blue;
@@ -497,6 +497,10 @@ a{
   #block-block-2{  // Location and Contact Information
     padding: 0 0 0 15px;
     margin-top: 10px;
+    @media #{$responsive-nav} {
+      float:right;
+      padding: 0 15px 0 0;
+    }
   }
 } // END FOOTER
 

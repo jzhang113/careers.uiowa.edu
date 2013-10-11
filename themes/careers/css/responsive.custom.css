@@ -30,7 +30,7 @@
 /* line 37, ../sass/responsive.custom.scss */
 body {
   min-width: 320px;
-  background-color: #eee;
+  background-color: white;
   color: #333;
 }
 /* line 41, ../sass/responsive.custom.scss */
@@ -640,6 +640,13 @@ body a:hover {
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
+}
+@media only screen and (min-width: 40em) {
+  /* line 497, ../sass/responsive.custom.scss */
+  .region-footer #block-block-2 {
+    float: right;
+    padding: 0 15px 0 0;
+  }
 }
 
 /*
