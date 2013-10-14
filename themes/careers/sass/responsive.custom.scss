@@ -141,6 +141,9 @@ body{
             width: auto;
             padding: 6px;
           }
+          ul {
+            display:none;
+          }
         }
         li:hover {
           background-color: white;
@@ -148,9 +151,7 @@ body{
             color: #333;
           }
         }
-        li ul {
-          display:none;
-        }
+        // Social Media Icons
         @media #{$responsive-nav} {
           .menu-item-1078, .menu-item-1079, 
           .menu-item-1080, .menu-item-1228,
@@ -171,7 +172,7 @@ body{
               }
             }
           }
-          .menu-item-1078 a { // Twitter
+          .menu-item-1078 a{ // Twitter
             background: url('images/social/twitter-icon.png') no-repeat;
           }
           .menu-item-1080 a{ // YouTube
@@ -268,21 +269,17 @@ body{
           white-space: nowrap;
           vertical-align: middle;
           cursor: pointer;
-          //border-radius: 4px;
           background-color: transparent;
           ul{
             display:none;
           }
-
           &:hover{
             background-color: #333;
             a{
               color: white;
             }
           }
-
           a{
-
             color: black;
             font-weight: bold;
             text-decoration: none;
@@ -297,6 +294,7 @@ body{
     } // END Audience Menu - Header Region
   }
 }
+// Blank gradient bar with syndication block off screen.
 #secondary-content-wrapper{
   background-color: #333;
   @include background-image(linear-gradient(#333, black));
@@ -305,6 +303,7 @@ body{
     @include offscreen;
   }
 }
+// Padding before content for Audience Menu.
 #content-wrapper{
 padding-top: 30px;
 }
@@ -420,35 +419,35 @@ padding-top: 30px;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s
 }
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
-display: inline-block;
-background-color: #333;
-border-color: #333;
-color: white;
-padding: 6px 12px;
-margin: 5px 5px 5px 0px;
-font-size: 14px;
-font-weight: normal;
-line-height: 1.428571429;
-text-align: center;
-white-space: nowrap;
-vertical-align: middle;
-cursor: pointer;
-border: 1px solid transparent;
-border-radius: 4px;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
--o-user-select: none;
-a{
+  display: inline-block;
+  background-color: #333;
+  border-color: #333;
   color: white;
-}
-&:hover{
-  background-color: #555;
+  padding: 6px 12px;
+  margin: 5px 5px 5px 0px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
   a{
     color: white;
-    text-decoration: none;
   }
-}
+  &:hover{
+    background-color: #555;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
 // FOOTER
@@ -471,11 +470,11 @@ a{
   }
   ul{
     margin-top: 0px;
-  }
-  ul li {
-    list-style-image: none;
-    list-style-type: none;
-    padding-right: 5px;
+    li {
+      list-style-image: none;
+      list-style-type: none;
+      padding-right: 5px;
+    }
   }
   #block-menu-block-2{  // Main Menu Footer Block
     @media #{$responsive-nav} {

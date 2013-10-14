@@ -195,27 +195,27 @@ body a:hover {
     padding: 6px;
   }
 }
-/* line 145, ../sass/responsive.custom.scss */
-#header .region-header #block-responsive-navigation-1 #nav li:hover {
-  background-color: white;
-}
-/* line 147, ../sass/responsive.custom.scss */
-#header .region-header #block-responsive-navigation-1 #nav li:hover a, #header .region-header #block-responsive-navigation-1 #nav li:hover a:hover, #header .region-header #block-responsive-navigation-1 #nav li:hover a:active, #header .region-header #block-responsive-navigation-1 #nav li:hover a:visited {
-  color: #333;
-}
-/* line 151, ../sass/responsive.custom.scss */
+/* line 144, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav li ul {
   display: none;
 }
+/* line 148, ../sass/responsive.custom.scss */
+#header .region-header #block-responsive-navigation-1 #nav li:hover {
+  background-color: white;
+}
+/* line 150, ../sass/responsive.custom.scss */
+#header .region-header #block-responsive-navigation-1 #nav li:hover a, #header .region-header #block-responsive-navigation-1 #nav li:hover a:hover, #header .region-header #block-responsive-navigation-1 #nav li:hover a:active, #header .region-header #block-responsive-navigation-1 #nav li:hover a:visited {
+  color: #333;
+}
 @media only screen and (min-width: 40em) {
-  /* line 157, ../sass/responsive.custom.scss */
+  /* line 158, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1078, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1079,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1080, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1228,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1229, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1230 {
     padding: 0px;
     margin: 0px 3px;
   }
-  /* line 160, ../sass/responsive.custom.scss */
+  /* line 161, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1078 a, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1079 a,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1080 a, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1228 a,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1229 a, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1230 a {
@@ -227,39 +227,39 @@ body a:hover {
     margin-bottom: -10px;
     text-indent: 9999px;
   }
-  /* line 168, ../sass/responsive.custom.scss */
+  /* line 169, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1078 a:hover, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1079 a:hover,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1080 a:hover, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1228 a:hover,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1229 a:hover, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1230 a:hover {
     background-color: transparent;
     background-position: bottom;
   }
-  /* line 174, ../sass/responsive.custom.scss */
+  /* line 175, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1078 a {
     background: url("images/social/twitter-icon.png") no-repeat;
   }
-  /* line 177, ../sass/responsive.custom.scss */
+  /* line 178, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1080 a {
     background: url("images/social/youtube-icon.png") no-repeat;
   }
-  /* line 180, ../sass/responsive.custom.scss */
+  /* line 181, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1079 a {
     background: url("images/social/facebook-icon.png") no-repeat;
   }
-  /* line 183, ../sass/responsive.custom.scss */
+  /* line 184, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1228 a {
     background: url("images/social/linkedin-icon.png") no-repeat;
   }
-  /* line 186, ../sass/responsive.custom.scss */
+  /* line 187, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1229 a {
     background: url("images/social/pintrest-icon.png") no-repeat;
   }
-  /* line 189, ../sass/responsive.custom.scss */
+  /* line 190, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1230 a {
     background: url("images/social/instagram-icon.png") no-repeat;
   }
 }
-/* line 197, ../sass/responsive.custom.scss */
+/* line 198, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu {
   position: absolute;
   bottom: 0;
@@ -268,7 +268,7 @@ body a:hover {
   width: 100%;
 }
 @media only screen and (min-width: 40em) {
-  /* line 197, ../sass/responsive.custom.scss */
+  /* line 198, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu {
     width: auto;
     float: right;
@@ -277,7 +277,7 @@ body a:hover {
     right: 0px;
     background-color: transparent;
   }
-  /* line 210, ../sass/responsive.custom.scss */
+  /* line 211, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu:before {
     width: 0;
     height: 0;
@@ -290,18 +290,18 @@ body a:hover {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 197, ../sass/responsive.custom.scss */
+  /* line 198, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu {
     font-size: 13px;
   }
 }
-/* line 224, ../sass/responsive.custom.scss */
+/* line 225, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul {
   padding: 0px;
   margin: 0px;
   float: right;
 }
-/* line 228, ../sass/responsive.custom.scss */
+/* line 229, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul li {
   margin: 0px;
   display: block;
@@ -309,23 +309,23 @@ body a:hover {
   padding: 15px 10px;
 }
 @media only screen and (min-width: 899px) {
-  /* line 228, ../sass/responsive.custom.scss */
+  /* line 229, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul li {
     padding: 15px 26px;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 228, ../sass/responsive.custom.scss */
+  /* line 229, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul li {
     padding: 6px 3px;
   }
 }
-/* line 239, ../sass/responsive.custom.scss */
+/* line 240, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul li a {
   color: black;
 }
 @media only screen and (min-width: 40em) {
-  /* line 244, ../sass/responsive.custom.scss */
+  /* line 245, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu {
     background-color: #ffd451;
     -webkit-box-shadow: #999999 -1px 2px 10px;
@@ -336,7 +336,7 @@ body a:hover {
     padding-right: 10px;
     height: 50px;
   }
-  /* line 252, ../sass/responsive.custom.scss */
+  /* line 253, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu:before {
     content: "Start Here:";
     position: absolute;
@@ -346,7 +346,7 @@ body a:hover {
     font-weight: bold;
   }
 }
-/* line 262, ../sass/responsive.custom.scss */
+/* line 263, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li {
   list-style: none;
   list-style-image: none;
@@ -361,28 +361,28 @@ body a:hover {
 #header .region-header .block-menu-audience-menu ul.menu li ul {
   display: none;
 }
-/* line 277, ../sass/responsive.custom.scss */
+/* line 276, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover {
   background-color: #333;
 }
-/* line 279, ../sass/responsive.custom.scss */
+/* line 278, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover a {
   color: white;
 }
-/* line 284, ../sass/responsive.custom.scss */
+/* line 282, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a {
   color: black;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 289, ../sass/responsive.custom.scss */
+/* line 286, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a:hover {
   text-decoration: none;
   color: white;
   background-color: #333;
 }
 
-/* line 300, ../sass/responsive.custom.scss */
+/* line 298, ../sass/responsive.custom.scss */
 #secondary-content-wrapper {
   background-color: #333;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
@@ -392,7 +392,7 @@ body a:hover {
   background-image: linear-gradient(#333333, #000000);
   height: 25px;
 }
-/* line 304, ../sass/responsive.custom.scss */
+/* line 302, ../sass/responsive.custom.scss */
 #secondary-content-wrapper .feed-icon {
   position: absolute;
   top: -99999em;
@@ -402,23 +402,23 @@ body a:hover {
   outline: 0;
 }
 
-/* line 308, ../sass/responsive.custom.scss */
+/* line 307, ../sass/responsive.custom.scss */
 #content-wrapper {
   padding-top: 30px;
 }
 
-/* line 312, ../sass/responsive.custom.scss */
+/* line 311, ../sass/responsive.custom.scss */
 #content-wrapper, #main-content, #main-content-header, #breadcrumb, #messages {
   background: white;
 }
 
-/* line 316, ../sass/responsive.custom.scss */
+/* line 315, ../sass/responsive.custom.scss */
 #breadcrumb, #messages {
   margin: 0px;
   padding: 10px;
 }
 
-/* line 322, ../sass/responsive.custom.scss */
+/* line 321, ../sass/responsive.custom.scss */
 #content .pane-title, #content .block-title {
   background-color: transparent;
   color: #333;
@@ -426,16 +426,16 @@ body a:hover {
   border-bottom: 0px;
   margin: 0px;
 }
-/* line 332, ../sass/responsive.custom.scss */
+/* line 331, ../sass/responsive.custom.scss */
 #content .block-content {
   padding: 10px;
 }
-/* line 338, ../sass/responsive.custom.scss */
+/* line 337, ../sass/responsive.custom.scss */
 #content .block-main .no-title .block-inner {
   border: 0px;
 }
 
-/* line 345, ../sass/responsive.custom.scss */
+/* line 344, ../sass/responsive.custom.scss */
 .flexslider {
   margin: 0px;
   border: 0px;
@@ -446,20 +446,20 @@ body a:hover {
   box-shadow: white 0px 0px 0px;
   /* Flexslider Pager */
 }
-/* line 346, ../sass/responsive.custom.scss */
+/* line 345, ../sass/responsive.custom.scss */
 .flexslider ul {
   padding: 0px;
 }
-/* line 354, ../sass/responsive.custom.scss */
+/* line 353, ../sass/responsive.custom.scss */
 .flexslider a {
   color: white;
 }
-/* line 356, ../sass/responsive.custom.scss */
+/* line 355, ../sass/responsive.custom.scss */
 .flexslider a:hover {
   color: #9c8345;
   text-decoration: none;
 }
-/* line 361, ../sass/responsive.custom.scss */
+/* line 360, ../sass/responsive.custom.scss */
 .flexslider .views-field-field-featured-image h3 {
   display: block;
   bottom: 0px;
@@ -469,17 +469,17 @@ body a:hover {
   background: #333;
   height: 38px;
 }
-/* line 371, ../sass/responsive.custom.scss */
+/* line 370, ../sass/responsive.custom.scss */
 .flexslider .flex-control-nav {
   width: auto;
   bottom: -10px;
   right: 10px;
 }
-/* line 376, ../sass/responsive.custom.scss */
+/* line 375, ../sass/responsive.custom.scss */
 .flexslider .views-field-field-featured-image .field-content {
   padding-bottom: 5px;
 }
-/* line 379, ../sass/responsive.custom.scss */
+/* line 378, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffd451), color-stop(100%, #9c8345));
   background: -webkit-linear-gradient(top, #ffd451, #9c8345);
@@ -489,7 +489,7 @@ body a:hover {
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 384, ../sass/responsive.custom.scss */
+/* line 383, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
   background: -webkit-linear-gradient(top, #333333, #000000);
@@ -498,13 +498,13 @@ body a:hover {
   background: linear-gradient(top, #333333, #000000);
 }
 
-/* line 389, ../sass/responsive.custom.scss */
+/* line 388, ../sass/responsive.custom.scss */
 .view-footer a {
   width: 100%;
   text-align: right;
   float: right;
 }
-/* line 393, ../sass/responsive.custom.scss */
+/* line 392, ../sass/responsive.custom.scss */
 .view-footer a:after {
   margin-left: 5px;
   font-family: FontAwesome;
@@ -517,17 +517,17 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 397, ../sass/responsive.custom.scss */
+/* line 396, ../sass/responsive.custom.scss */
 .view-footer a:hover {
   text-decoration: none;
 }
 
-/* line 403, ../sass/responsive.custom.scss */
+/* line 402, ../sass/responsive.custom.scss */
 .whelan-flipped-column-content {
   background-color: #eae3d2;
 }
 
-/* line 407, ../sass/responsive.custom.scss */
+/* line 406, ../sass/responsive.custom.scss */
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -544,7 +544,7 @@ body a:hover {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-/* line 422, ../sass/responsive.custom.scss */
+/* line 421, ../sass/responsive.custom.scss */
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
   background-color: #333;
@@ -566,68 +566,68 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 442, ../sass/responsive.custom.scss */
+/* line 441, ../sass/responsive.custom.scss */
 .button a, input[type="button"] a, input[type="reset"] a, input[type="submit"] a {
   color: white;
 }
-/* line 445, ../sass/responsive.custom.scss */
+/* line 444, ../sass/responsive.custom.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #555;
 }
-/* line 447, ../sass/responsive.custom.scss */
+/* line 446, ../sass/responsive.custom.scss */
 .button:hover a, input[type="button"]:hover a, input[type="reset"]:hover a, input[type="submit"]:hover a {
   color: white;
   text-decoration: none;
 }
 
-/* line 455, ../sass/responsive.custom.scss */
+/* line 454, ../sass/responsive.custom.scss */
 #footer-wrapper {
   background-color: #eae3d2;
 }
 @media only screen and (min-width: 40em) {
-  /* line 458, ../sass/responsive.custom.scss */
+  /* line 457, ../sass/responsive.custom.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 463, ../sass/responsive.custom.scss */
+/* line 462, ../sass/responsive.custom.scss */
 .region-footer {
   position: relative;
   font-size: 12px;
 }
-/* line 466, ../sass/responsive.custom.scss */
+/* line 465, ../sass/responsive.custom.scss */
 .region-footer a {
   color: black;
 }
-/* line 468, ../sass/responsive.custom.scss */
+/* line 467, ../sass/responsive.custom.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 472, ../sass/responsive.custom.scss */
+/* line 471, ../sass/responsive.custom.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 475, ../sass/responsive.custom.scss */
+/* line 473, ../sass/responsive.custom.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 480, ../sass/responsive.custom.scss */
+  /* line 479, ../sass/responsive.custom.scss */
   .region-footer #block-menu-block-2 {
     width: 50%;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 485, ../sass/responsive.custom.scss */
+  /* line 484, ../sass/responsive.custom.scss */
   .region-footer #block-menu-block-3 {
     min-width: 110px;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 491, ../sass/responsive.custom.scss */
+  /* line 490, ../sass/responsive.custom.scss */
   .region-footer .menu-name-main-menu ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -636,13 +636,13 @@ body a:hover {
     column-count: 2;
   }
 }
-/* line 497, ../sass/responsive.custom.scss */
+/* line 496, ../sass/responsive.custom.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 497, ../sass/responsive.custom.scss */
+  /* line 496, ../sass/responsive.custom.scss */
   .region-footer #block-block-2 {
     float: right;
     padding: 0 15px 0 0;
