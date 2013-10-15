@@ -428,8 +428,8 @@ padding-top: 30px;
 }
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
-  background-color: #333;
-  border-color: #333;
+  background-color: $blue;
+  border-color: $blue;
   color: white;
   padding: 6px 12px;
   margin: 5px 5px 5px 0px;
@@ -441,21 +441,18 @@ padding-top: 30px;
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid transparent;
-  border-radius: 4px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  a{
-    color: white;
-  }
   &:hover{
-    background-color: #555;
-    a{
-      color: white;
-      text-decoration: none;
-    }
+    background-color: $gold;
+    color: white;
+    text-decoration: none;
   }
+}
+.front .button{
+  float: right;
 }
 
 // FOOTER

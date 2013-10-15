@@ -1006,13 +1006,6 @@ fieldset {
 /*
  * Buttons used by contrib modules like Media
  */
-/* line 1677, ../sass/global.styles.scss */
-a.button {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-}
-
 /*
  * Password confirmation
  */
