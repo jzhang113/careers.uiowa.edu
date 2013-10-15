@@ -951,7 +951,7 @@ body a:hover {
   position: relative;
   background-color: #ffd451;
   color: #333;
-  padding: 6px 12px;
+  padding: 6px 0px 6px 6px;
   margin: 5px 5px 5px 0px;
   font-size: 14px;
   font-weight: normal;
