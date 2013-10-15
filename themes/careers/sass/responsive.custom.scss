@@ -295,17 +295,22 @@ body{
   }
 }
 // Blank gradient bar with syndication block off screen.
-#secondary-content-wrapper{
-  background-color: #333;
-  @include background-image(linear-gradient(#333, black));
-  height: 25px;
-  .feed-icon{
-    @include offscreen;
-  }
-}
-// Padding before content for Audience Menu.
+//#secondary-content-wrapper{
+//  background-color: #333;
+//  @include background-image(linear-gradient(#333, #1d1c1c));
+//  height: 25px;
+//  .feed-icon{
+//    @include offscreen;
+//  }
+//}
+// Border before content for Audience Menu.
 #content-wrapper{
 padding-top: 30px;
+border-top: 25px solid #333;
+border-image: linear-gradient(#333333, #1d1c1c) 14% stretch;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
 }
 
 #content-wrapper, #main-content, #main-content-header, #breadcrumb, #messages{

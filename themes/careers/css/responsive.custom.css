@@ -382,43 +382,28 @@ body a:hover {
   background-color: #333;
 }
 
-/* line 298, ../sass/responsive.custom.scss */
-#secondary-content-wrapper {
-  background-color: #333;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
-  background-image: -webkit-linear-gradient(#333333, #000000);
-  background-image: -moz-linear-gradient(#333333, #000000);
-  background-image: -o-linear-gradient(#333333, #000000);
-  background-image: linear-gradient(#333333, #000000);
-  height: 25px;
-}
-/* line 302, ../sass/responsive.custom.scss */
-#secondary-content-wrapper .feed-icon {
-  position: absolute;
-  top: -99999em;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  outline: 0;
-}
-
 /* line 307, ../sass/responsive.custom.scss */
 #content-wrapper {
   padding-top: 30px;
+  border-top: 25px solid #333;
+  border-image: linear-gradient(#333333, #1d1c1c) 14% stretch;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
 }
 
-/* line 311, ../sass/responsive.custom.scss */
+/* line 316, ../sass/responsive.custom.scss */
 #content-wrapper, #main-content, #main-content-header, #breadcrumb, #messages {
   background: white;
 }
 
-/* line 315, ../sass/responsive.custom.scss */
+/* line 320, ../sass/responsive.custom.scss */
 #breadcrumb, #messages {
   margin: 0px;
   padding: 10px;
 }
 
-/* line 321, ../sass/responsive.custom.scss */
+/* line 326, ../sass/responsive.custom.scss */
 #content .pane-title, #content .block-title {
   background-color: transparent;
   color: #333;
@@ -426,16 +411,16 @@ body a:hover {
   border-bottom: 0px;
   margin: 0px;
 }
-/* line 331, ../sass/responsive.custom.scss */
+/* line 336, ../sass/responsive.custom.scss */
 #content .block-content {
   padding: 10px;
 }
-/* line 337, ../sass/responsive.custom.scss */
+/* line 342, ../sass/responsive.custom.scss */
 #content .block-main .no-title .block-inner {
   border: 0px;
 }
 
-/* line 344, ../sass/responsive.custom.scss */
+/* line 349, ../sass/responsive.custom.scss */
 .flexslider {
   margin: 0px;
   border: 0px;
@@ -446,20 +431,20 @@ body a:hover {
   box-shadow: white 0px 0px 0px;
   /* Flexslider Pager */
 }
-/* line 345, ../sass/responsive.custom.scss */
+/* line 350, ../sass/responsive.custom.scss */
 .flexslider ul {
   padding: 0px;
 }
-/* line 353, ../sass/responsive.custom.scss */
+/* line 358, ../sass/responsive.custom.scss */
 .flexslider a {
   color: white;
 }
-/* line 355, ../sass/responsive.custom.scss */
+/* line 360, ../sass/responsive.custom.scss */
 .flexslider a:hover {
   color: #9c8345;
   text-decoration: none;
 }
-/* line 360, ../sass/responsive.custom.scss */
+/* line 365, ../sass/responsive.custom.scss */
 .flexslider .views-field-field-featured-image h3 {
   display: block;
   bottom: 0px;
@@ -469,17 +454,17 @@ body a:hover {
   background: #333;
   height: 38px;
 }
-/* line 370, ../sass/responsive.custom.scss */
+/* line 375, ../sass/responsive.custom.scss */
 .flexslider .flex-control-nav {
   width: auto;
   bottom: -10px;
   right: 10px;
 }
-/* line 375, ../sass/responsive.custom.scss */
+/* line 380, ../sass/responsive.custom.scss */
 .flexslider .views-field-field-featured-image .field-content {
   padding-bottom: 5px;
 }
-/* line 378, ../sass/responsive.custom.scss */
+/* line 383, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffd451), color-stop(100%, #9c8345));
   background: -webkit-linear-gradient(top, #ffd451, #9c8345);
@@ -489,7 +474,7 @@ body a:hover {
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 383, ../sass/responsive.custom.scss */
+/* line 388, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
   background: -webkit-linear-gradient(top, #333333, #000000);
@@ -498,13 +483,13 @@ body a:hover {
   background: linear-gradient(top, #333333, #000000);
 }
 
-/* line 388, ../sass/responsive.custom.scss */
+/* line 393, ../sass/responsive.custom.scss */
 .view-footer a {
   width: 100%;
   text-align: right;
   float: right;
 }
-/* line 392, ../sass/responsive.custom.scss */
+/* line 397, ../sass/responsive.custom.scss */
 .view-footer a:after {
   margin-left: 5px;
   font-family: FontAwesome;
@@ -517,17 +502,17 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 396, ../sass/responsive.custom.scss */
+/* line 401, ../sass/responsive.custom.scss */
 .view-footer a:hover {
   text-decoration: none;
 }
 
-/* line 402, ../sass/responsive.custom.scss */
+/* line 407, ../sass/responsive.custom.scss */
 .whelan-flipped-column-content {
   background-color: #eae3d2;
 }
 
-/* line 406, ../sass/responsive.custom.scss */
+/* line 411, ../sass/responsive.custom.scss */
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -544,7 +529,7 @@ body a:hover {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-/* line 421, ../sass/responsive.custom.scss */
+/* line 426, ../sass/responsive.custom.scss */
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
   background-color: #333;
@@ -566,68 +551,68 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 441, ../sass/responsive.custom.scss */
+/* line 446, ../sass/responsive.custom.scss */
 .button a, input[type="button"] a, input[type="reset"] a, input[type="submit"] a {
   color: white;
 }
-/* line 444, ../sass/responsive.custom.scss */
+/* line 449, ../sass/responsive.custom.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #555;
 }
-/* line 446, ../sass/responsive.custom.scss */
+/* line 451, ../sass/responsive.custom.scss */
 .button:hover a, input[type="button"]:hover a, input[type="reset"]:hover a, input[type="submit"]:hover a {
   color: white;
   text-decoration: none;
 }
 
-/* line 454, ../sass/responsive.custom.scss */
+/* line 459, ../sass/responsive.custom.scss */
 #footer-wrapper {
   background-color: #eae3d2;
 }
 @media only screen and (min-width: 40em) {
-  /* line 457, ../sass/responsive.custom.scss */
+  /* line 462, ../sass/responsive.custom.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 462, ../sass/responsive.custom.scss */
+/* line 467, ../sass/responsive.custom.scss */
 .region-footer {
   position: relative;
   font-size: 12px;
 }
-/* line 465, ../sass/responsive.custom.scss */
+/* line 470, ../sass/responsive.custom.scss */
 .region-footer a {
   color: black;
 }
-/* line 467, ../sass/responsive.custom.scss */
+/* line 472, ../sass/responsive.custom.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 471, ../sass/responsive.custom.scss */
+/* line 476, ../sass/responsive.custom.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 473, ../sass/responsive.custom.scss */
+/* line 478, ../sass/responsive.custom.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 479, ../sass/responsive.custom.scss */
+  /* line 484, ../sass/responsive.custom.scss */
   .region-footer #block-menu-block-2 {
     width: 50%;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 484, ../sass/responsive.custom.scss */
+  /* line 489, ../sass/responsive.custom.scss */
   .region-footer #block-menu-block-3 {
     min-width: 110px;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 490, ../sass/responsive.custom.scss */
+  /* line 495, ../sass/responsive.custom.scss */
   .region-footer .menu-name-main-menu ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -636,13 +621,13 @@ body a:hover {
     column-count: 2;
   }
 }
-/* line 496, ../sass/responsive.custom.scss */
+/* line 501, ../sass/responsive.custom.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 496, ../sass/responsive.custom.scss */
+  /* line 501, ../sass/responsive.custom.scss */
   .region-footer #block-block-2 {
     float: right;
     padding: 0 15px 0 0;
