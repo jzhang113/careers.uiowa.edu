@@ -348,6 +348,14 @@ padding-top: 30px;
   }
 }
 
+// Specific padding for block nodes
+#content{
+  .pane-node{
+    .block-content{
+      padding: 5px;
+    }
+  }
+}
 // Override Default Flexslider Styles
 .flexslider{
   ul{
