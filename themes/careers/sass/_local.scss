@@ -232,4 +232,51 @@
 	}
 }
 
+.button-yellow{
+  display: inline-block;
+  position: relative;
+  background-color: $yellow;
+  color: #333;
+  padding: 6px 12px;
+  margin: 5px 5px 5px 0px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  &:hover{
+    background-color: $gold;
+    color: white;
+    text-decoration: none;
+    &:after{
+	  	width: 0;
+		height: 0;
+		content: "";
+		right: -16px;
+		bottom: 0px;
+		position: absolute;
+		border-top: 16px solid transparent;
+		border-bottom: 16px solid transparent;
+		border-left: 16px solid $gold;
+	  }
+  }
+  &:after{
+  	width: 0;
+	height: 0;
+	content: "";
+	right: -16px;
+	bottom: 0px;
+	position: absolute;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-left: 16px solid $yellow;
+  }
+}
+
 

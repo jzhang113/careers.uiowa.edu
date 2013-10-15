@@ -944,3 +944,54 @@ body a:hover {
   color: #ccc;
   padding-left: 2px;
 }
+
+/* line 235, ../sass/_local.scss */
+.button-yellow {
+  display: inline-block;
+  position: relative;
+  background-color: #ffd451;
+  color: #333;
+  padding: 6px 12px;
+  margin: 5px 5px 5px 0px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+/* line 253, ../sass/_local.scss */
+.button-yellow:hover {
+  background-color: #9c8345;
+  color: white;
+  text-decoration: none;
+}
+/* line 257, ../sass/_local.scss */
+.button-yellow:hover:after {
+  width: 0;
+  height: 0;
+  content: "";
+  right: -16px;
+  bottom: 0px;
+  position: absolute;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid #9c8345;
+}
+/* line 269, ../sass/_local.scss */
+.button-yellow:after {
+  width: 0;
+  height: 0;
+  content: "";
+  right: -16px;
+  bottom: 0px;
+  position: absolute;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid #ffd451;
+}
