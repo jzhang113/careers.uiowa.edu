@@ -279,4 +279,24 @@
   }
 }
 
+.view-id-events {
+	.views-row{
+		padding: 5px;
+	}
+	.views-row-odd {
+		background-color: #f5f5f5;
+	}
+	.events-date{
+		&:before {
+			@include icon($time, $color: $gold, $size: 1.0em);
+		}
+	}
+	.events-location{
+		&:before {
+			@include icon($map-marker, $color: $gold, $size: 1.0em);
+			padding: 0px 2px;
+		}
+	}
+}
+
 
