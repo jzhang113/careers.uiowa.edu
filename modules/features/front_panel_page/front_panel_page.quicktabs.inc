@@ -28,8 +28,8 @@ function front_panel_page_quicktabs_default_quicktabs() {
       'type' => 'view',
     ),
     1 => array(
-      'vid' => 'news',
-      'display' => 'default_news_content_pane',
+      'vid' => 'events',
+      'display' => 'events_short_list',
       'args' => '',
       'title' => 'Events',
       'weight' => '-99',
@@ -37,7 +37,7 @@ function front_panel_page_quicktabs_default_quicktabs() {
     ),
   );
   $quicktabs->renderer = 'quicktabs';
-  $quicktabs->style = 'default';
+  $quicktabs->style = 'nostyle';
   $quicktabs->options = array();
 
   // Translatables
