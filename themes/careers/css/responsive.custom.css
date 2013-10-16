@@ -392,7 +392,7 @@ body a:hover {
 }
 
 /* line 315, ../sass/responsive.custom.scss */
-#content-wrapper {
+#content-header-wrapper {
   padding-top: 30px;
 }
 
@@ -994,4 +994,38 @@ body a:hover {
   border-top: 16px solid transparent;
   border-bottom: 16px solid transparent;
   border-left: 16px solid #ffd451;
+}
+
+/* line 283, ../sass/_local.scss */
+.view-id-events .views-row {
+  padding: 5px;
+}
+/* line 286, ../sass/_local.scss */
+.view-id-events .views-row-odd {
+  background-color: #f5f5f5;
+}
+/* line 290, ../sass/_local.scss */
+.view-id-events .events-date:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f017";
+  font-size: 1em;
+  color: #9c8345;
+}
+/* line 295, ../sass/_local.scss */
+.view-id-events .events-location:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f041";
+  font-size: 1em;
+  color: #9c8345;
+  padding: 0px 2px;
 }
