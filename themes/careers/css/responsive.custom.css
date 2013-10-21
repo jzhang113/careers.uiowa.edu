@@ -122,6 +122,7 @@ body a:hover {
   position: relative;
   z-index: 1;
   font-family: "Neuton", serif;
+  font-size: 1.8rem;
 }
 @media only screen and (min-width: 40em) {
   /* line 100, ../sass/responsive.custom.scss */
@@ -129,17 +130,17 @@ body a:hover {
     background-color: transparent;
   }
 }
-/* line 109, ../sass/responsive.custom.scss */
+/* line 110, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav-toggle {
   margin-left: 5px;
   color: white;
 }
-/* line 112, ../sass/responsive.custom.scss */
+/* line 113, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav-toggle:hover {
   color: #ffd451;
   text-decoration: none;
 }
-/* line 115, ../sass/responsive.custom.scss */
+/* line 116, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav-toggle:hover:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -151,7 +152,7 @@ body a:hover {
   font-size: 1.2em;
   color: #ffd451;
 }
-/* line 119, ../sass/responsive.custom.scss */
+/* line 120, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav-toggle:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -165,58 +166,58 @@ body a:hover {
   padding-right: 5px;
   vertical-align: middle;
 }
-/* line 126, ../sass/responsive.custom.scss */
+/* line 127, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav {
   float: right;
 }
 @media only screen and (min-width: 40em) {
-  /* line 126, ../sass/responsive.custom.scss */
+  /* line 127, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav {
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-/* line 131, ../sass/responsive.custom.scss */
+/* line 132, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav a, #header .region-header #block-responsive-navigation-1 #nav a:hover, #header .region-header #block-responsive-navigation-1 #nav a:active, #header .region-header #block-responsive-navigation-1 #nav a:visited {
   color: white;
   text-decoration: none;
 }
-/* line 135, ../sass/responsive.custom.scss */
+/* line 136, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav ul {
   text-align: right;
 }
-/* line 138, ../sass/responsive.custom.scss */
+/* line 139, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav li {
   padding: 6px 20px 6px 6px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 138, ../sass/responsive.custom.scss */
+  /* line 139, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav li {
     display: inline-block;
     width: auto;
     padding: 6px;
   }
 }
-/* line 145, ../sass/responsive.custom.scss */
+/* line 146, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav li ul {
   display: none;
 }
-/* line 149, ../sass/responsive.custom.scss */
+/* line 150, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav li:hover {
   background-color: white;
 }
-/* line 151, ../sass/responsive.custom.scss */
+/* line 152, ../sass/responsive.custom.scss */
 #header .region-header #block-responsive-navigation-1 #nav li:hover a, #header .region-header #block-responsive-navigation-1 #nav li:hover a:hover, #header .region-header #block-responsive-navigation-1 #nav li:hover a:active, #header .region-header #block-responsive-navigation-1 #nav li:hover a:visited {
   color: #333;
 }
 @media only screen and (min-width: 40em) {
-  /* line 159, ../sass/responsive.custom.scss */
+  /* line 160, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1078, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1079,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1080, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1228,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1229, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1230 {
     padding: 0px;
     margin: 0px 3px;
   }
-  /* line 162, ../sass/responsive.custom.scss */
+  /* line 163, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1078 a, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1079 a,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1080 a, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1228 a,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1229 a, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1230 a {
@@ -228,39 +229,39 @@ body a:hover {
     margin-bottom: -10px;
     text-indent: 9999px;
   }
-  /* line 170, ../sass/responsive.custom.scss */
+  /* line 171, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1078 a:hover, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1079 a:hover,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1080 a:hover, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1228 a:hover,
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1229 a:hover, #header .region-header #block-responsive-navigation-1 #nav .menu-item-1230 a:hover {
     background-color: transparent;
     background-position: bottom;
   }
-  /* line 176, ../sass/responsive.custom.scss */
+  /* line 177, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1078 a {
     background: url("images/social/twitter-icon.png") no-repeat;
   }
-  /* line 179, ../sass/responsive.custom.scss */
+  /* line 180, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1080 a {
     background: url("images/social/youtube-icon.png") no-repeat;
   }
-  /* line 182, ../sass/responsive.custom.scss */
+  /* line 183, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1079 a {
     background: url("images/social/facebook-icon.png") no-repeat;
   }
-  /* line 185, ../sass/responsive.custom.scss */
+  /* line 186, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1228 a {
     background: url("images/social/linkedin-icon.png") no-repeat;
   }
-  /* line 188, ../sass/responsive.custom.scss */
+  /* line 189, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1229 a {
     background: url("images/social/pintrest-icon.png") no-repeat;
   }
-  /* line 191, ../sass/responsive.custom.scss */
+  /* line 192, ../sass/responsive.custom.scss */
   #header .region-header #block-responsive-navigation-1 #nav .menu-item-1230 a {
     background: url("images/social/instagram-icon.png") no-repeat;
   }
 }
-/* line 199, ../sass/responsive.custom.scss */
+/* line 200, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu {
   position: absolute;
   bottom: 0;
@@ -268,9 +269,10 @@ body a:hover {
   background: #ffd451;
   width: 100%;
   font-family: "Neuton", serif;
+  font-size: 1.8rem;
 }
 @media only screen and (min-width: 40em) {
-  /* line 199, ../sass/responsive.custom.scss */
+  /* line 200, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu {
     width: auto;
     float: right;
@@ -279,7 +281,7 @@ body a:hover {
     right: 0px;
     background-color: transparent;
   }
-  /* line 213, ../sass/responsive.custom.scss */
+  /* line 215, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu:before {
     width: 0;
     height: 0;
@@ -292,42 +294,42 @@ body a:hover {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 199, ../sass/responsive.custom.scss */
+  /* line 200, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu {
-    font-size: 13px;
+    font-size: 18px;
   }
 }
-/* line 227, ../sass/responsive.custom.scss */
+/* line 229, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul {
   padding: 0px;
   margin: 0px;
   float: right;
 }
-/* line 231, ../sass/responsive.custom.scss */
+/* line 233, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul li {
   margin: 0px;
   display: block;
   float: left;
-  padding: 15px 10px;
+  padding: 11px 10px;
 }
 @media only screen and (min-width: 899px) {
-  /* line 231, ../sass/responsive.custom.scss */
+  /* line 233, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul li {
-    padding: 15px 26px;
+    padding: 11px 26px;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 231, ../sass/responsive.custom.scss */
+  /* line 233, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul li {
     padding: 6px 3px;
   }
 }
-/* line 242, ../sass/responsive.custom.scss */
+/* line 244, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul li a {
   color: black;
 }
 @media only screen and (min-width: 40em) {
-  /* line 247, ../sass/responsive.custom.scss */
+  /* line 249, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu {
     background-color: #ffd451;
     -webkit-box-shadow: #999999 -1px 2px 10px;
@@ -338,17 +340,17 @@ body a:hover {
     padding-right: 10px;
     height: 50px;
   }
-  /* line 255, ../sass/responsive.custom.scss */
+  /* line 257, ../sass/responsive.custom.scss */
   #header .region-header .block-menu-audience-menu ul.menu:before {
     content: "Start Here:";
     position: absolute;
     left: 40px;
-    top: 15px;
+    top: 11px;
     color: black;
     font-weight: bold;
   }
 }
-/* line 265, ../sass/responsive.custom.scss */
+/* line 267, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li {
   list-style: none;
   list-style-image: none;
@@ -359,32 +361,32 @@ body a:hover {
   cursor: pointer;
   background-color: transparent;
 }
-/* line 275, ../sass/responsive.custom.scss */
+/* line 277, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li ul {
   display: none;
 }
-/* line 278, ../sass/responsive.custom.scss */
+/* line 280, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover {
   background-color: #333;
 }
-/* line 280, ../sass/responsive.custom.scss */
+/* line 282, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover a {
   color: white;
 }
-/* line 284, ../sass/responsive.custom.scss */
+/* line 286, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a {
   color: black;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 288, ../sass/responsive.custom.scss */
+/* line 290, ../sass/responsive.custom.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a:hover {
   text-decoration: none;
   color: white;
   background-color: #333;
 }
 
-/* line 309, ../sass/responsive.custom.scss */
+/* line 311, ../sass/responsive.custom.scss */
 #header-wrapper {
   border-bottom: 25px solid #333;
   border-image: linear-gradient(#333333, #1d1c1c) 14% stretch;
@@ -393,23 +395,23 @@ body a:hover {
   border-top: 0px;
 }
 
-/* line 317, ../sass/responsive.custom.scss */
+/* line 319, ../sass/responsive.custom.scss */
 #content-header-wrapper {
   padding-top: 30px;
 }
 
-/* line 321, ../sass/responsive.custom.scss */
+/* line 323, ../sass/responsive.custom.scss */
 #content-wrapper, #main-content, #main-content-header, #breadcrumb, #messages {
   background: white;
 }
 
-/* line 325, ../sass/responsive.custom.scss */
+/* line 327, ../sass/responsive.custom.scss */
 #breadcrumb, #messages {
   margin: 0px;
   padding: 10px;
 }
 
-/* line 331, ../sass/responsive.custom.scss */
+/* line 333, ../sass/responsive.custom.scss */
 #content .pane-title, #content .block-title {
   background-color: transparent;
   color: #333;
@@ -417,21 +419,21 @@ body a:hover {
   border-bottom: 0px;
   margin: 0px;
 }
-/* line 341, ../sass/responsive.custom.scss */
+/* line 343, ../sass/responsive.custom.scss */
 #content .block-content {
   padding: 10px;
 }
-/* line 347, ../sass/responsive.custom.scss */
+/* line 349, ../sass/responsive.custom.scss */
 #content .block-main .no-title .block-inner {
   border: 0px;
 }
 
-/* line 356, ../sass/responsive.custom.scss */
+/* line 358, ../sass/responsive.custom.scss */
 #content .pane-node .block-content {
   padding: 5px;
 }
 
-/* line 362, ../sass/responsive.custom.scss */
+/* line 364, ../sass/responsive.custom.scss */
 .flexslider {
   margin: 0px;
   border: 0px;
@@ -442,20 +444,20 @@ body a:hover {
   box-shadow: white 0px 0px 0px;
   /* Flexslider Pager */
 }
-/* line 363, ../sass/responsive.custom.scss */
+/* line 365, ../sass/responsive.custom.scss */
 .flexslider ul {
   padding: 0px;
 }
-/* line 371, ../sass/responsive.custom.scss */
+/* line 373, ../sass/responsive.custom.scss */
 .flexslider a {
   color: white;
 }
-/* line 373, ../sass/responsive.custom.scss */
+/* line 375, ../sass/responsive.custom.scss */
 .flexslider a:hover {
   color: #9c8345;
   text-decoration: none;
 }
-/* line 378, ../sass/responsive.custom.scss */
+/* line 380, ../sass/responsive.custom.scss */
 .flexslider .views-field-field-featured-image h3 {
   display: block;
   bottom: 0px;
@@ -465,17 +467,17 @@ body a:hover {
   background: #333;
   height: 38px;
 }
-/* line 388, ../sass/responsive.custom.scss */
+/* line 390, ../sass/responsive.custom.scss */
 .flexslider .flex-control-nav {
   width: auto;
   bottom: -10px;
   right: 10px;
 }
-/* line 393, ../sass/responsive.custom.scss */
+/* line 395, ../sass/responsive.custom.scss */
 .flexslider .views-field-field-featured-image .field-content {
   padding-bottom: 5px;
 }
-/* line 396, ../sass/responsive.custom.scss */
+/* line 398, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffd451), color-stop(100%, #9c8345));
   background: -webkit-linear-gradient(top, #ffd451, #9c8345);
@@ -485,7 +487,7 @@ body a:hover {
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 401, ../sass/responsive.custom.scss */
+/* line 403, ../sass/responsive.custom.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
   background: -webkit-linear-gradient(top, #333333, #000000);
@@ -494,13 +496,13 @@ body a:hover {
   background: linear-gradient(top, #333333, #000000);
 }
 
-/* line 406, ../sass/responsive.custom.scss */
+/* line 408, ../sass/responsive.custom.scss */
 .view-footer a {
   width: 100%;
   text-align: right;
   float: right;
 }
-/* line 410, ../sass/responsive.custom.scss */
+/* line 412, ../sass/responsive.custom.scss */
 .view-footer a:after {
   margin-left: 5px;
   font-family: FontAwesome;
@@ -513,17 +515,17 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 414, ../sass/responsive.custom.scss */
+/* line 416, ../sass/responsive.custom.scss */
 .view-footer a:hover {
   text-decoration: none;
 }
 
-/* line 420, ../sass/responsive.custom.scss */
+/* line 422, ../sass/responsive.custom.scss */
 .whelan-flipped-column-content {
   background-color: #eae3d2;
 }
 
-/* line 424, ../sass/responsive.custom.scss */
+/* line 426, ../sass/responsive.custom.scss */
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -540,7 +542,7 @@ body a:hover {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-/* line 439, ../sass/responsive.custom.scss */
+/* line 441, ../sass/responsive.custom.scss */
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
   background-color: #687893;
@@ -561,67 +563,67 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 458, ../sass/responsive.custom.scss */
+/* line 460, ../sass/responsive.custom.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #9c8345;
   color: white;
   text-decoration: none;
 }
 
-/* line 464, ../sass/responsive.custom.scss */
+/* line 466, ../sass/responsive.custom.scss */
 .front .button {
   float: right;
 }
 
-/* line 469, ../sass/responsive.custom.scss */
+/* line 471, ../sass/responsive.custom.scss */
 #footer-wrapper {
   background-color: #eae3d2;
 }
 @media only screen and (min-width: 40em) {
-  /* line 472, ../sass/responsive.custom.scss */
+  /* line 474, ../sass/responsive.custom.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 477, ../sass/responsive.custom.scss */
+/* line 479, ../sass/responsive.custom.scss */
 .region-footer {
   position: relative;
-  font-size: 12px;
+  font-size: 14px;
 }
-/* line 480, ../sass/responsive.custom.scss */
+/* line 482, ../sass/responsive.custom.scss */
 .region-footer a {
   color: black;
   font-family: "Neuton", serif;
 }
-/* line 483, ../sass/responsive.custom.scss */
+/* line 485, ../sass/responsive.custom.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 487, ../sass/responsive.custom.scss */
+/* line 489, ../sass/responsive.custom.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 489, ../sass/responsive.custom.scss */
+/* line 491, ../sass/responsive.custom.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 495, ../sass/responsive.custom.scss */
+  /* line 497, ../sass/responsive.custom.scss */
   .region-footer #block-menu-block-2 {
     width: 50%;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 500, ../sass/responsive.custom.scss */
+  /* line 502, ../sass/responsive.custom.scss */
   .region-footer #block-menu-block-3 {
     min-width: 110px;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 506, ../sass/responsive.custom.scss */
+  /* line 508, ../sass/responsive.custom.scss */
   .region-footer .menu-name-main-menu ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -630,13 +632,13 @@ body a:hover {
     column-count: 2;
   }
 }
-/* line 512, ../sass/responsive.custom.scss */
+/* line 514, ../sass/responsive.custom.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 512, ../sass/responsive.custom.scss */
+  /* line 514, ../sass/responsive.custom.scss */
   .region-footer #block-block-2 {
     float: right;
     padding: 0 15px 0 0;

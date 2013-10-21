@@ -103,6 +103,7 @@ body{
       position: relative;
       z-index: 1;
       font-family: $serif;
+      font-size: 1.8rem;
       @media #{$responsive-nav} {
         background-color: transparent;
       }
@@ -154,7 +155,7 @@ body{
         }
         // Social Media Icons
         @media #{$responsive-nav} {
-          .menu-item-1078, .menu-item-1079, 
+          .menu-item-1078, .menu-item-1079,
           .menu-item-1080, .menu-item-1228,
           .menu-item-1229, .menu-item-1230 {
             padding: 0px;
@@ -203,6 +204,7 @@ body{
       background: $yellow;
       width: 100%;
       font-family: $serif;
+      font-size: 1.8rem;
       @media #{$responsive-nav} {
         width: auto;
         float: right;
@@ -222,7 +224,7 @@ body{
         }
       }
       @media #{$mobile-only} {
-        font-size: 13px;
+        font-size: 18px;
       }
       ul {
         padding: 0px;
@@ -232,9 +234,9 @@ body{
           margin: 0px;
           display: block;
           float: left;
-          padding: 15px 10px;
+          padding: 11px 10px;
           @media #{$nine-hundred} {
-            padding: 15px 26px;
+            padding: 11px 26px;
           }
           @media #{$mobile-only} {
             padding: 6px 3px;
@@ -256,7 +258,7 @@ body{
             content:"Start Here:";
             position: absolute;
             left: 40px;
-            top: 15px;
+            top: 11px;
             color: black;
             font-weight: bold;
           }
@@ -476,7 +478,7 @@ padding-top: 30px;
 }
 .region-footer{
   position: relative;
-  font-size: 12px;
+  font-size: 14px;
   a{
     color: black;
     font-family: $serif;
