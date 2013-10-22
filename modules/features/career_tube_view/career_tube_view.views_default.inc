@@ -112,7 +112,7 @@ function career_tube_view_views_default_views() {
   $handler->display->display_options['filters']['field_tag_tid']['table'] = 'field_data_field_tag';
   $handler->display->display_options['filters']['field_tag_tid']['field'] = 'field_tag_tid';
   $handler->display->display_options['filters']['field_tag_tid']['value'] = array(
-    0 => '1',
+    0 => '2',
   );
   $handler->display->display_options['filters']['field_tag_tid']['vocabulary'] = 'tags';
   $export['career_tube'] = $view;

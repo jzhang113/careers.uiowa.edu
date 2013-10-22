@@ -51,7 +51,7 @@ function career_tube_video_content_type_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 2,
     ),
   );
 
@@ -91,7 +91,7 @@ function career_tube_video_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 34,
+      'weight' => 6,
     ),
   );
 
@@ -160,7 +160,61 @@ function career_tube_video_content_type_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 32,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-career_tube_video-field_video_link'
+  $field_instances['node-career_tube_video-field_video_link'] = array(
+    'bundle' => 'career_tube_video',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_video_link',
+    'label' => 'Video Link',
+    'required' => 0,
+    'settings' => array(
+      'attributes' => array(
+        'class' => 'button',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'value',
+      'title_maxlength' => 128,
+      'title_value' => 'Watch this video',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 4,
     ),
   );
 
@@ -200,7 +254,7 @@ function career_tube_video_content_type_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 33,
+      'weight' => 5,
     ),
   );
 
@@ -209,6 +263,7 @@ function career_tube_video_content_type_field_default_field_instances() {
   t('Description');
   t('Tags');
   t('Video File');
+  t('Video Link');
   t('Video Transcript');
 
   return $field_instances;
