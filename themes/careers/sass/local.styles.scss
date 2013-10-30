@@ -92,11 +92,11 @@ body{
           color: $yellow;
           text-decoration: none;
           &:before {
-            @include icon($reorder, $color: $yellow, $size: 1.2em);
+            @include icon($fa-var-reorder, $color: $yellow, $size: 1.2em);
           }
         }
         &:before {
-          @include icon($reorder, $color: white, $size: 1.2em);
+          @include icon($fa-var-reorder, $color: white, $size: 1.2em);
           padding-right: 5px;
           vertical-align: middle;
         }
@@ -390,7 +390,7 @@ padding-top: 30px;
   float:right;
   &:after{
     margin-left: 5px;
-    @include icon($chevron-right, $color: $gold, $size: 1.0em);
+    @include icon($fa-var-chevron-right, $color: $gold, $size: 1.0em);
   }
   &:hover{
     text-decoration: none;

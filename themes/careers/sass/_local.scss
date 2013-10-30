@@ -158,7 +158,7 @@
 		padding-right: 10px;
 		margin-left: 0px;
 		&:before {
-			@include icon($chevron-sign-right, $color: $gold, $size: 1.2em);
+			@include icon($fa-var-chevron-right, $color: $gold, $size: 1.2em);
         	display: block;
 			float: left;
 			padding-right: 5px;
@@ -166,22 +166,22 @@
 	}
 	.views-row-1 {
 		&:before{
-			@include icon($chevron-sign-right, $color: $orange, $size: 1.2em);//orange
+			@include icon($fa-var-chevron-right, $color: $orange, $size: 1.2em);//orange
 		}
 	}
 	.views-row-2 {
 		&:before{
-			@include icon($chevron-sign-right, $color: $teal, $size: 1.2em);//teal
+			@include icon($fa-var-chevron-right, $color: $teal, $size: 1.2em);//teal
 		}
 	}
 	.views-row-3 {
 		&:before{
-			@include icon($chevron-sign-right, $color: $maroon, $size: 1.2em);//maroon
+			@include icon($fa-var-chevron-right, $color: $maroon, $size: 1.2em);//maroon
 		}
 	}
 	.views-row-4 {
 		&:before{
-			@include icon($chevron-sign-right, $color: $green, $size: 1.2em);//green
+			@include icon($fa-var-chevron-right, $color: $green, $size: 1.2em);//green
 		}
 	}
 }
@@ -193,7 +193,7 @@
 			font-size: 1.8rem;
 			list-style:none;
 			&:before {
-				@include icon($angle-right, $color: $gold, $size: 1.0em);
+				@include icon($fa-var-angle-right, $color: $gold, $size: 1.0em);
 	        	display: block;
 				float: left;
 				padding-right: 5px;
@@ -295,12 +295,12 @@
 	}
 	.events-date{
 		&:before {
-			@include icon($time, $color: $gold, $size: 1.0em);
+			@include icon($fa-var-clock-o, $color: $gold, $size: 1.0em);
 		}
 	}
 	.events-location{
 		&:before {
-			@include icon($map-marker, $color: $gold, $size: 1.0em);
+			@include icon($fa-var-map-marker, $color: $gold, $size: 1.0em);
 			padding: 0px 2px;
 		}
 	}
