@@ -593,20 +593,24 @@ body a:hover {
   list-style-type: none;
   padding-right: 5px;
 }
+/* line 476, ../sass/local.styles.scss */
+.region-footer h2 {
+  font-size: 1.8rem;
+}
 @media only screen and (min-width: 40em) {
-  /* line 476, ../sass/local.styles.scss */
+  /* line 479, ../sass/local.styles.scss */
   .region-footer #block-menu-block-2 {
     width: 50%;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 481, ../sass/local.styles.scss */
+  /* line 484, ../sass/local.styles.scss */
   .region-footer #block-menu-block-3 {
     min-width: 110px;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 487, ../sass/local.styles.scss */
+  /* line 490, ../sass/local.styles.scss */
   .region-footer .menu-name-main-menu ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -615,13 +619,13 @@ body a:hover {
     column-count: 2;
   }
 }
-/* line 493, ../sass/local.styles.scss */
+/* line 496, ../sass/local.styles.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 493, ../sass/local.styles.scss */
+  /* line 496, ../sass/local.styles.scss */
   .region-footer #block-block-2 {
     float: right;
     padding: 0 15px 0 0;
@@ -913,28 +917,40 @@ body a:hover {
   font: inherit;
   padding-left: 0px;
 }
-/* line 213, ../sass/_local.scss */
+/* line 214, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li {
-  font-size: 2.5rem;
   margin: 0px;
+  background-color: #f5f5f5;
+  font-size: 2.5rem;
+  padding: 5px 10px;
 }
-/* line 216, ../sass/_local.scss */
+/* line 219, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li a {
   color: #687893;
 }
 /* line 221, ../sass/_local.scss */
-#quicktabs-announcements_events ul.quicktabs-style-nostyle li.active a {
-  color: #9c8345;
-  text-decoration: underline;
+#quicktabs-announcements_events ul.quicktabs-style-nostyle li a:hover {
+  color: white;
+  text-decoration: none;
 }
-/* line 227, ../sass/_local.scss */
-#quicktabs-announcements_events ul.quicktabs-style-nostyle li.first:after {
-  content: "&";
-  color: #ccc;
-  padding-left: 2px;
+/* line 226, ../sass/_local.scss */
+#quicktabs-announcements_events ul.quicktabs-style-nostyle li:hover {
+  background-color: #9c8345;
+}
+/* line 228, ../sass/_local.scss */
+#quicktabs-announcements_events ul.quicktabs-style-nostyle li:hover a {
+  color: white;
+}
+/* line 233, ../sass/_local.scss */
+#quicktabs-announcements_events ul.quicktabs-style-nostyle li.active {
+  background-color: #687893;
+}
+/* line 235, ../sass/_local.scss */
+#quicktabs-announcements_events ul.quicktabs-style-nostyle li.active a {
+  color: white;
 }
 
-/* line 236, ../sass/_local.scss */
+/* line 242, ../sass/_local.scss */
 .button-yellow {
   display: inline-block;
   position: relative;
@@ -954,13 +970,13 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 254, ../sass/_local.scss */
+/* line 260, ../sass/_local.scss */
 .button-yellow:hover {
   background-color: #9c8345;
   color: white;
   text-decoration: none;
 }
-/* line 258, ../sass/_local.scss */
+/* line 264, ../sass/_local.scss */
 .button-yellow:hover:after {
   width: 0;
   height: 0;
@@ -972,7 +988,7 @@ body a:hover {
   border-bottom: 16px solid transparent;
   border-left: 16px solid #9c8345;
 }
-/* line 270, ../sass/_local.scss */
+/* line 276, ../sass/_local.scss */
 .button-yellow:after {
   width: 0;
   height: 0;
@@ -985,15 +1001,15 @@ body a:hover {
   border-left: 16px solid #ffd451;
 }
 
-/* line 284, ../sass/_local.scss */
+/* line 290, ../sass/_local.scss */
 .view-id-events .views-row {
   padding: 5px;
 }
-/* line 287, ../sass/_local.scss */
+/* line 293, ../sass/_local.scss */
 .view-id-events .views-row-odd {
   background-color: #f5f5f5;
 }
-/* line 291, ../sass/_local.scss */
+/* line 297, ../sass/_local.scss */
 .view-id-events .events-date:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1005,7 +1021,7 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 296, ../sass/_local.scss */
+/* line 302, ../sass/_local.scss */
 .view-id-events .events-location:before {
   font-family: FontAwesome;
   font-weight: normal;

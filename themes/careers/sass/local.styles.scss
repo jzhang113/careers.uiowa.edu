@@ -473,6 +473,9 @@ padding-top: 30px;
       padding-right: 5px;
     }
   }
+  h2{
+    font-size: 1.8rem;
+  }
   #block-menu-block-2{  // Main Menu Footer Block
     @media #{$responsive-nav} {
       width: 50%;
