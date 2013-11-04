@@ -15,13 +15,13 @@ function front_panel_page_quicktabs_default_quicktabs() {
   $quicktabs->api_version = 1;
   $quicktabs->machine_name = 'announcements_events';
   $quicktabs->ajax = 0;
-  $quicktabs->hide_empty_tabs = FALSE;
+  $quicktabs->hide_empty_tabs = TRUE;
   $quicktabs->default_tab = 0;
   $quicktabs->title = 'Announcements & Events';
   $quicktabs->tabs = array(
     0 => array(
-      'vid' => 'news',
-      'display' => 'announcements_news_content_pane',
+      'vid' => 'announcements',
+      'display' => 'announcements_front_content_pane',
       'args' => '',
       'title' => 'Announcements',
       'weight' => '-100',

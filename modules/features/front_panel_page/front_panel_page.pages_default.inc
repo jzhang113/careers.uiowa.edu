@@ -79,12 +79,12 @@ function front_panel_page_default_page_manager_pages() {
     $pane->pid = 'new-1';
     $pane->panel = 'contentcolumn1';
     $pane->type = 'block';
-    $pane->subtype = 'block-3';
+    $pane->subtype = 'block-1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Have a plan?',
+      'override_title' => 0,
+      'override_title_text' => 'Hireahawk Login',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -99,13 +99,19 @@ function front_panel_page_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-2';
     $pane->panel = 'contentcolumn1';
-    $pane->type = 'block';
-    $pane->subtype = 'block-4';
+    $pane->type = 'node';
+    $pane->subtype = 'node';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Give Support',
+      'nid' => '13',
+      'links' => 0,
+      'leave_node_title' => 0,
+      'identifier' => '',
+      'build_mode' => 'full',
+      'link_node_title' => 0,
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -120,19 +126,13 @@ function front_panel_page_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-3';
     $pane->panel = 'contentcolumn1';
-    $pane->type = 'node';
-    $pane->subtype = 'node';
+    $pane->type = 'block';
+    $pane->subtype = 'block-4';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'nid' => '13',
-      'links' => 0,
-      'leave_node_title' => 0,
-      'identifier' => '',
-      'build_mode' => 'full',
-      'link_node_title' => 0,
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Give Support',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -166,12 +166,12 @@ function front_panel_page_default_page_manager_pages() {
     $pane->pid = 'new-5';
     $pane->panel = 'contentcolumn2';
     $pane->type = 'block';
-    $pane->subtype = 'block-1';
+    $pane->subtype = 'block-3';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => 'Hireahawk Login',
+      'override_title' => 1,
+      'override_title_text' => 'Have a plan?',
     );
     $pane->cache = array();
     $pane->style = array(
