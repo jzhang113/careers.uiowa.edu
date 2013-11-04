@@ -10,26 +10,8 @@
 function main_menu_navigation_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu:http://hireahawk.com
-  $menu_links['main-menu:http://hireahawk.com'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'http://hireahawk.com',
-    'router_path' => '',
-    'link_title' => 'HireaHawk.com',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-  );
-  // Exported menu link: main-menu:http://www.careers.uiowa.edu/academicprograms.html
-  $menu_links['main-menu:http://www.careers.uiowa.edu/academicprograms.html'] = array(
+  // Exported menu link: main-menu_career-and-leadership-courses:http://www.careers.uiowa.edu/academicprograms.html
+  $menu_links['main-menu_career-and-leadership-courses:http://www.careers.uiowa.edu/academicprograms.html'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'http://www.careers.uiowa.edu/academicprograms.html',
     'router_path' => '',
@@ -38,34 +20,18 @@ function main_menu_navigation_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
+      'identifier' => 'main-menu_career-and-leadership-courses:http://www.careers.uiowa.edu/academicprograms.html',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -50,
+    'customized' => 1,
   );
-  // Exported menu link: main-menu:http://www.careers.uiowa.edu/cblp/
-  $menu_links['main-menu:http://www.careers.uiowa.edu/cblp/'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'http://www.careers.uiowa.edu/cblp/',
-    'router_path' => '',
-    'link_title' => 'Community-Based Learning Program',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-  );
-  // Exported menu link: main-menu:http://www.careers.uiowa.edu/fairs
-  $menu_links['main-menu:http://www.careers.uiowa.edu/fairs'] = array(
+  // Exported menu link: main-menu_career-fairs:http://www.careers.uiowa.edu/fairs
+  $menu_links['main-menu_career-fairs:http://www.careers.uiowa.edu/fairs'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'http://www.careers.uiowa.edu/fairs',
     'router_path' => '',
@@ -74,16 +40,18 @@ function main_menu_navigation_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
+      'identifier' => 'main-menu_career-fairs:http://www.careers.uiowa.edu/fairs',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -49,
+    'customized' => 1,
   );
-  // Exported menu link: main-menu:http://www.careers.uiowa.edu/guide.html
-  $menu_links['main-menu:http://www.careers.uiowa.edu/guide.html'] = array(
+  // Exported menu link: main-menu_career-guide:http://www.careers.uiowa.edu/guide.html
+  $menu_links['main-menu_career-guide:http://www.careers.uiowa.edu/guide.html'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'http://www.careers.uiowa.edu/guide.html',
     'router_path' => '',
@@ -92,16 +60,18 @@ function main_menu_navigation_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
+      'identifier' => 'main-menu_career-guide:http://www.careers.uiowa.edu/guide.html',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -48,
+    'customized' => 1,
   );
-  // Exported menu link: main-menu:http://www.careers.uiowa.edu/leadershipacademy/
-  $menu_links['main-menu:http://www.careers.uiowa.edu/leadershipacademy/'] = array(
+  // Exported menu link: main-menu_career-leadership-academy:http://www.careers.uiowa.edu/leadershipacademy/
+  $menu_links['main-menu_career-leadership-academy:http://www.careers.uiowa.edu/leadershipacademy/'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'http://www.careers.uiowa.edu/leadershipacademy/',
     'router_path' => '',
@@ -110,34 +80,98 @@ function main_menu_navigation_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
+      'identifier' => 'main-menu_career-leadership-academy:http://www.careers.uiowa.edu/leadershipacademy/',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -47,
+    'customized' => 1,
   );
-  // Exported menu link: main-menu:http://www.careers.uiowa.edu/nav/findyourfocus/
-  $menu_links['main-menu:http://www.careers.uiowa.edu/nav/findyourfocus/'] = array(
+  // Exported menu link: main-menu_community-based-learning-program:http://www.careers.uiowa.edu/cblp/
+  $menu_links['main-menu_community-based-learning-program:http://www.careers.uiowa.edu/cblp/'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'http://www.careers.uiowa.edu/nav/findyourfocus/',
+    'link_path' => 'http://www.careers.uiowa.edu/cblp/',
     'router_path' => '',
-    'link_title' => 'Hawkeye Career Navigator',
+    'link_title' => 'Community-Based Learning Program',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
+      'identifier' => 'main-menu_community-based-learning-program:http://www.careers.uiowa.edu/cblp/',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -46,
+    'customized' => 1,
   );
-  // Exported menu link: main-menu:http://www.careers.uiowa.edu/twc/
-  $menu_links['main-menu:http://www.careers.uiowa.edu/twc/'] = array(
+  // Exported menu link: main-menu_hireahawkcom:http://hireahawk.com
+  $menu_links['main-menu_hireahawkcom:http://hireahawk.com'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'http://hireahawk.com',
+    'router_path' => '',
+    'link_title' => 'HireaHawk.com',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_hireahawkcom:http://hireahawk.com',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -45,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_internships:http://careers.uiowa.edu
+  $menu_links['main-menu_internships:http://careers.uiowa.edu'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'http://careers.uiowa.edu',
+    'router_path' => '',
+    'link_title' => 'Internships',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_internships:http://careers.uiowa.edu',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -44,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_resources-for-special-populations:http://careers.uiowa.edu
+  $menu_links['main-menu_resources-for-special-populations:http://careers.uiowa.edu'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'http://careers.uiowa.edu',
+    'router_path' => '',
+    'link_title' => 'Resources for Special Populations',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_resources-for-special-populations:http://careers.uiowa.edu',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -43,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_the-washington-center:http://www.careers.uiowa.edu/twc/
+  $menu_links['main-menu_the-washington-center:http://www.careers.uiowa.edu/twc/'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'http://www.careers.uiowa.edu/twc/',
     'router_path' => '',
@@ -146,49 +180,15 @@ function main_menu_navigation_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
+      'identifier' => 'main-menu_the-washington-center:http://www.careers.uiowa.edu/twc/',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
-  );
-  // Exported menu link: main-menu:http://www.uiowa.edu/~dcn/
-  $menu_links['main-menu:http://www.uiowa.edu/~dcn/'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'http://www.uiowa.edu/~dcn/',
-    'router_path' => '',
-    'link_title' => 'Dual Career Network',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-  );
-  // Exported menu link: main-menu:relations
-  $menu_links['main-menu:relations'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'relations',
-    'router_path' => 'relations',
-    'link_title' => 'Corporate and Community Relations',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -46,
+    'weight' => -42,
+    'customized' => 1,
   );
   // Translatables
   // Included for use with string extractors like potx.
@@ -197,10 +197,9 @@ function main_menu_navigation_menu_default_menu_links() {
   t('Career Leadership Academy');
   t('Career and Leadership Courses');
   t('Community-Based Learning Program');
-  t('Corporate and Community Relations');
-  t('Dual Career Network');
-  t('Hawkeye Career Navigator');
   t('HireaHawk.com');
+  t('Internships');
+  t('Resources for Special Populations');
   t('The Washington Center');
 
 
