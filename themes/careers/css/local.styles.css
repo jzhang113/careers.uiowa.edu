@@ -102,7 +102,7 @@ body a:hover {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
-  z-index: 1;
+  z-index: 3;
   font-family: "Neuton", serif;
   font-size: 1.8rem;
 }
@@ -632,6 +632,24 @@ body a:hover {
   }
 }
 
+/* line 509, ../sass/local.styles.scss */
+.rss-feed a:before {
+  margin-right: 0.5em;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f143";
+  font-size: 1em;
+  color: #e68b39;
+}
+/* line 513, ../sass/local.styles.scss */
+.rss-feed a:hover {
+  text-decoration: none;
+}
+
 /*
  * @file
  * local.styles
@@ -785,25 +803,49 @@ body a:hover {
 }
 
 /* line 136, ../sass/_local.scss */
-.view-display-id-announcements_news_content_pane .views-field-field-featured-image {
+.view-display-id-announcements_front_content_pane .views-field-field-featured-image {
   display: block;
   float: left;
-}
-/* line 139, ../sass/_local.scss */
-.view-display-id-announcements_news_content_pane .views-field-field-featured-image img {
+  position: relative;
+  width: 80px;
+  height: 80px;
   border: 5px solid #687893;
   border-radius: 4px;
 }
 /* line 144, ../sass/_local.scss */
-.view-display-id-announcements_news_content_pane .views-field-title, .view-display-id-announcements_news_content_pane .views-field-created, .view-display-id-announcements_news_content_pane .views-field-body {
+.view-display-id-announcements_front_content_pane .views-field-field-featured-image:before {
+  position: absolute;
+  left: 15px;
+  top: -5px;
+  z-index: 1;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f05a";
+  font-size: 4.2em;
+  color: #687893;
+}
+/* line 151, ../sass/_local.scss */
+.view-display-id-announcements_front_content_pane .views-field-field-featured-image img {
+  position: relative;
+  z-index: 2;
+}
+/* line 159, ../sass/_local.scss */
+.view-display-id-announcements_front_content_pane .views-field-title,
+.view-display-id-announcements_front_content_pane .views-field-body,
+.view-display-id-announcements_front_content_pane .views-field-field-announcement-attachments,
+.view-display-id-announcements_front_content_pane .views-field-field-announcement-link {
   margin-left: 95px;
 }
 
-/* line 149, ../sass/_local.scss */
+/* line 164, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-field-title {
   margin-left: 0px;
 }
-/* line 152, ../sass/_local.scss */
+/* line 167, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row {
   margin-left: 0px;
   float: left;
@@ -813,7 +855,7 @@ body a:hover {
   padding-right: 10px;
   margin-left: 0px;
 }
-/* line 160, ../sass/_local.scss */
+/* line 175, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -823,12 +865,12 @@ body a:hover {
   *margin-right: .3em;
   content: "\f138";
   font-size: 1.2em;
-  color: #9c8345;
+  color: #333333;
   display: block;
   float: left;
   padding-right: 5px;
 }
-/* line 168, ../sass/_local.scss */
+/* line 183, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-1:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -840,7 +882,7 @@ body a:hover {
   font-size: 1.2em;
   color: #e68b39;
 }
-/* line 173, ../sass/_local.scss */
+/* line 188, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-2:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -852,7 +894,7 @@ body a:hover {
   font-size: 1.2em;
   color: #57b4a5;
 }
-/* line 178, ../sass/_local.scss */
+/* line 193, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-3:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -864,7 +906,7 @@ body a:hover {
   font-size: 1.2em;
   color: #8f394f;
 }
-/* line 183, ../sass/_local.scss */
+/* line 198, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-4:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -877,16 +919,16 @@ body a:hover {
   color: #d1d55a;
 }
 
-/* line 190, ../sass/_local.scss */
+/* line 205, ../sass/_local.scss */
 .front .pane-system-main-menu ul.menu {
   margin-top: 0px;
 }
-/* line 192, ../sass/_local.scss */
+/* line 207, ../sass/_local.scss */
 .front .pane-system-main-menu ul.menu li {
   font-size: 1.8rem;
   list-style: none;
 }
-/* line 195, ../sass/_local.scss */
+/* line 210, ../sass/_local.scss */
 .front .pane-system-main-menu ul.menu li:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -902,7 +944,7 @@ body a:hover {
   padding-right: 5px;
 }
 
-/* line 205, ../sass/_local.scss */
+/* line 220, ../sass/_local.scss */
 .pane-quicktabs-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -912,45 +954,45 @@ body a:hover {
   outline: 0;
 }
 
-/* line 210, ../sass/_local.scss */
+/* line 225, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle {
   font: inherit;
   padding-left: 0px;
 }
-/* line 214, ../sass/_local.scss */
+/* line 229, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li {
   margin: 0px;
   background-color: #f5f5f5;
   font-size: 2.5rem;
   padding: 5px 10px;
 }
-/* line 219, ../sass/_local.scss */
+/* line 234, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li a {
   color: #687893;
 }
-/* line 221, ../sass/_local.scss */
+/* line 236, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 226, ../sass/_local.scss */
+/* line 241, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li:hover {
   background-color: #9c8345;
 }
-/* line 228, ../sass/_local.scss */
+/* line 243, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li:hover a {
   color: white;
 }
-/* line 233, ../sass/_local.scss */
+/* line 248, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li.active {
   background-color: #687893;
 }
-/* line 235, ../sass/_local.scss */
+/* line 250, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li.active a {
   color: white;
 }
 
-/* line 242, ../sass/_local.scss */
+/* line 257, ../sass/_local.scss */
 .button-yellow {
   display: inline-block;
   position: relative;
@@ -970,13 +1012,13 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 260, ../sass/_local.scss */
+/* line 275, ../sass/_local.scss */
 .button-yellow:hover {
   background-color: #9c8345;
   color: white;
   text-decoration: none;
 }
-/* line 264, ../sass/_local.scss */
+/* line 279, ../sass/_local.scss */
 .button-yellow:hover:after {
   width: 0;
   height: 0;
@@ -988,7 +1030,7 @@ body a:hover {
   border-bottom: 16px solid transparent;
   border-left: 16px solid #9c8345;
 }
-/* line 276, ../sass/_local.scss */
+/* line 291, ../sass/_local.scss */
 .button-yellow:after {
   width: 0;
   height: 0;
@@ -1001,15 +1043,15 @@ body a:hover {
   border-left: 16px solid #ffd451;
 }
 
-/* line 290, ../sass/_local.scss */
+/* line 305, ../sass/_local.scss */
 .view-id-events .views-row {
   padding: 5px;
 }
-/* line 293, ../sass/_local.scss */
+/* line 308, ../sass/_local.scss */
 .view-id-events .views-row-odd {
   background-color: #f5f5f5;
 }
-/* line 297, ../sass/_local.scss */
+/* line 312, ../sass/_local.scss */
 .view-id-events .events-date:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1021,7 +1063,7 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 302, ../sass/_local.scss */
+/* line 317, ../sass/_local.scss */
 .view-id-events .events-location:before {
   font-family: FontAwesome;
   font-weight: normal;

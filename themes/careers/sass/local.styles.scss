@@ -79,7 +79,7 @@ body{
       background-color:rgb(0,0,0); // Old Browser Fall Back
       background-color:rgba(0,0,0,0.7);
       position: relative;
-      z-index: 1;
+      z-index: 3;
       font-family: $serif;
       font-size: 1.8rem;
       @media #{$responsive-nav} {
@@ -502,6 +502,18 @@ padding-top: 30px;
     }
   }
 } // END FOOTER
+
+
+// RSS Feed Font Awesome Icon
+.rss-feed a {
+  &:before{
+    margin-right: 0.5em;
+    @include icon($fa-var-rss-square, $color: $orange, $size: 1.0em);
+  }
+  &:hover{
+    text-decoration: none;
+  }
+}
 
 // Imports local style, which can override the styles declared in this file
 @import "local";
