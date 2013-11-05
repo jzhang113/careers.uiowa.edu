@@ -26,7 +26,7 @@ function events_view_and_panel_page_views_default_views() {
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['xml_file'] = 'http://data.its.uiowa.edu/mastercal/today';
+  $handler->display->display_options['query']['options']['xml_file'] = 'http://data.its.uiowa.edu/mastercal/custom?calendar=73&enddate=12-31-2014';
   $handler->display->display_options['query']['options']['row_xpath'] = 'event';
   $handler->display->display_options['query']['options']['show_errors'] = 1;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -114,19 +114,28 @@ function events_view_and_panel_page_views_default_views() {
   $handler->display->display_options['fields']['text_2']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['text_2']['xpath_selector'] = 'EventContactName';
   $handler->display->display_options['fields']['text_2']['multiple'] = 0;
-  /* Sort criterion: EventTitle: Text */
-  $handler->display->display_options['sorts']['text']['id'] = 'text';
-  $handler->display->display_options['sorts']['text']['table'] = 'xml';
-  $handler->display->display_options['sorts']['text']['field'] = 'text';
-  $handler->display->display_options['sorts']['text']['xpath_selector'] = 'EventTitle';
+  /* Sort criterion: EventStartTime: Date */
+  $handler->display->display_options['sorts']['date']['id'] = 'date';
+  $handler->display->display_options['sorts']['date']['table'] = 'xml';
+  $handler->display->display_options['sorts']['date']['field'] = 'date';
+  $handler->display->display_options['sorts']['date']['xpath_selector'] = 'EventStartTime';
 
   /* Display: Short/Minimal List */
   $handler = $view->new_display('panel_pane', 'Short/Minimal List', 'events_short_list');
   $handler->display->display_options['display_description'] = 'A short listing to be displayed on the homepage or in a block.';
+  $handler->display->display_options['defaults']['use_ajax'] = FALSE;
+  $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'View more events';
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['type'] = 'mini';
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['defaults']['footer'] = FALSE;
   /* Footer: Global: Unfiltered text */
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
