@@ -113,7 +113,7 @@ function people_content_type_node_info() {
     'people' => array(
       'name' => t('People'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Add staff members, peer advisors, etc.'),
       'has_title' => '1',
       'title_label' => t('Full Name'),
       'help' => '',

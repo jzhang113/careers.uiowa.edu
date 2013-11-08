@@ -126,88 +126,6 @@ function people_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-people-field_people_office'
-  $field_instances['node-people-field_people_office'] = array(
-    'bundle' => 'people',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_people_office',
-    'label' => 'Office',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'node-people-field_people_phone'
-  $field_instances['node-people-field_people_phone'] = array(
-    'bundle' => 'people',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'phone',
-        'settings' => array(),
-        'type' => 'phone',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_people_phone',
-    'label' => 'Phone',
-    'required' => 0,
-    'settings' => array(
-      'ca_phone_parentheses' => 1,
-      'ca_phone_separator' => '-',
-      'phone_country_code' => 0,
-      'phone_default_country_code' => 1,
-      'phone_int_max_length' => 15,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'phone',
-      'settings' => array(),
-      'type' => 'phone_textfield',
-      'weight' => 5,
-    ),
-  );
-
   // Exported field_instance: 'node-people-field_people_picture'
   $field_instances['node-people-field_people_picture'] = array(
     'bundle' => 'people',
@@ -377,8 +295,6 @@ function people_content_type_field_default_field_instances() {
   t('Biography');
   t('Email');
   t('Group(s)');
-  t('Office');
-  t('Phone');
   t('Picture');
   t('Position');
   t('Responsibilities');
