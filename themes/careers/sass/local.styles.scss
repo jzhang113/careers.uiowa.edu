@@ -45,9 +45,6 @@ body{
     //background-color: rgba(0,0,0,0.5);
     position: absolute;
     bottom: 45px;
-    @media #{$responsive-nav} {
-      bottom: 10px;
-    }
     #logo{
       @media #{$responsive-nav} {
         padding-left: 20px;
@@ -72,9 +69,9 @@ body{
       }
     }
   }
-  .region-header{
+  .region-header {
     // Main Menu - Responsive Navigation
-    #block-responsive-navigation-1{
+    #block-responsive-navigation-1 {
       padding: 0px;
       background-color:rgb(0,0,0); // Old Browser Fall Back
       background-color:rgba(0,0,0,0.7);
@@ -84,6 +81,7 @@ body{
       font-size: 1.8rem;
       @media #{$responsive-nav} {
         background-color: transparent;
+        font-size: 1.4rem;
       }
       #nav-toggle{
         margin-left: 5px;
@@ -171,80 +169,53 @@ body{
           .menu-item-1230 a{ // Instagram
             background: url('images/social/instagram-icon.png') no-repeat;
           }
-        }
+        } // END Social Media Icons
       }
     } // END Main Menu - Responsive Navigation
 
-    //Audience Menu - Header Region
+    // Audience Menu - Header Region
     .block-menu-audience-menu{
       position: absolute;
       bottom: 0;
-      padding: 0 5px;
-      background: $yellow;
+      padding: 0px;
+      background: black;
       width: 100%;
       font-family: $serif;
       font-size: 1.8rem;
-      @media #{$responsive-nav} {
-        width: auto;
-        float: right;
-        padding: 0 0 0 25px;
-        bottom: -50px;
-        right: 0px;
-        background-color: transparent;
+      @media #{$nine-hundred} {
         &:before{
-          width: 0;
-          height: 0;
-          content: "";
-          left: 5px;
+          content:"Start Here";
           position: absolute;
-          border-top: 25px solid transparent;
-          border-bottom: 25px solid transparent;
-          border-right: 20px solid $yellow;
+          right: 600px;
+          top: 19%;
+          color: white;
+          font-weight: bold;
         }
       }
       @media #{$mobile-only} {
-        font-size: 18px;
-      }
-      ul {
-        padding: 0px;
-        margin: 0px;
-        float: right;
-        li {
-          margin: 0px;
-          display: block;
-          float: left;
-          padding: 11px 10px;
-          @media #{$nine-hundred} {
-            padding: 11px 26px;
-          }
-          @media #{$mobile-only} {
-            padding: 6px 3px;
-          }
-          a{
-            color: black;
-          }
-        }
+        font-size: 1.6rem;
       }
       ul.menu {
-        @media #{$responsive-nav} {
-          background-color: $yellow;
-          @include box-shadow(#999 -1px 2px 10px);
-          margin: 0px;
-          padding-left: 100px;
-          padding-right: 10px;
-          height: 50px;
+        background-color: $yellow;
+        width: 100%;
+        float: right;
+        padding-left: 15px;
+        margin: 0px;
+        @media #{$nine-hundred} {
+          width: auto;
+          padding-left: 25px;
           &:before{
-            content:"Start Here:";
+            width: 0;
+            height: 0;
+            content: "";
+            right: 570px;
             position: absolute;
-            left: 40px;
-            top: 11px;
-            color: black;
-            font-weight: bold;
+            border-top: 25px solid transparent;
+            border-bottom: 24px solid transparent;
+            border-left: 20px solid black;
           }
         }
-
         li{
-          // Override Default Menu Style
           list-style: none;
           list-style-image: none;
           list-style-type: none;
@@ -253,11 +224,20 @@ body{
           vertical-align: middle;
           cursor: pointer;
           background-color: transparent;
+          display: block;
+          float: left;
+          padding: 10px 12px;
+          @media #{$nine-hundred} {
+            padding: 10px 26px;
+          }
+          @media #{$mobile-only} {
+            padding: 6px 3px;
+          }
           ul{
             display:none;
           }
           &:hover{
-            background-color: #333;
+            background-color: black;
             a{
               color: white;
             }
@@ -269,35 +249,13 @@ body{
             &:hover {
               text-decoration: none;
               color: white;
-              background-color: #333;
             }
           }
-        }
-      }
+        } 
+      } 
     } // END Audience Menu - Header Region
-  }
-}
-// Blank gradient bar with syndication block off screen.
-//#secondary-content-wrapper{
-//  background-color: #333;
-//  @include background-image(linear-gradient(#333, #1d1c1c));
-//  height: 25px;
-//  .feed-icon{
-//    @include offscreen;
-//  }
-//}
-
-#header-wrapper{
-border-bottom: 25px solid #333;
-border-image: linear-gradient(#333333, #1d1c1c) 14% stretch;
-border-left: 0px;
-border-right: 0px;
-border-top: 0px;
-}
-// Padding before content for Audience Menu.
-#content-header-wrapper{
-padding-top: 30px;
-}
+  } // END region-header
+} // END header
 
 #content-wrapper, #main-content, #main-content-header, #breadcrumb, #messages{
   background: $page;
@@ -398,10 +356,6 @@ padding-top: 30px;
   }
 }
 
-.whelan-flipped-column-content{
-  background-color: $tan;
-}
-
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -476,44 +430,7 @@ padding-top: 30px;
   h2{
     font-size: 1.8rem;
   }
-  #block-menu-block-2{  // Main Menu Footer Block
-    @media #{$responsive-nav} {
-      width: 50%;
-    }
-  }
-  #block-menu-block-3 { // Audience Menu Footer Block
-    @media #{$responsive-nav} {
-      min-width: 110px;
-    }
-  }
-  .menu-name-main-menu {
-    ul{
-      @media #{$responsive-nav} {
-        @include column-count(2);
-      }
-    }
-  }
-  #block-block-2{  // Location and Contact Information
-    padding: 0 0 0 15px;
-    margin-top: 10px;
-    @media #{$responsive-nav} {
-      float:right;
-      padding: 0 15px 0 0;
-    }
-  }
 } // END FOOTER
-
-
-// RSS Feed Font Awesome Icon
-.rss-feed a {
-  &:before{
-    margin-right: 0.5em;
-    @include icon($fa-var-rss-square, $color: $orange, $size: 1.0em);
-  }
-  &:hover{
-    text-decoration: none;
-  }
-}
 
 // Imports local style, which can override the styles declared in this file
 @import "local";

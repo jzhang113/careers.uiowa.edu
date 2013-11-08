@@ -140,7 +140,7 @@
 		width: 80px;
 		height: 80px;
 		border: 5px solid $blue;
-		border-radius: 4px;
+
 		&:before{
 			position: absolute;
 			left: 15px;
@@ -319,6 +319,45 @@
 			padding: 0px 2px;
 		}
 	}
+}
+
+.region-footer{
+  #block-menu-block-2{  // Main Menu Footer Block
+    @media #{$responsive-nav} {
+      width: 50%;
+    }
+  }
+  #block-menu-block-3 { // Audience Menu Footer Block
+    @media #{$responsive-nav} {
+      min-width: 110px;
+    }
+  }
+  .menu-name-main-menu {
+    ul{
+      @media #{$responsive-nav} {
+        @include column-count(2);
+      }
+    }
+  }
+  #block-block-2{  // Location and Contact Information
+    padding: 0 0 0 15px;
+    margin-top: 10px;
+    @media #{$responsive-nav} {
+      float:right;
+      padding: 0 15px 0 0;
+    }
+  }
+}
+
+// RSS Feed Font Awesome Icon
+.rss-feed a {
+  &:before{
+    margin-right: 0.5em;
+    @include icon($fa-var-rss-square, $color: $orange, $size: 1.0em);
+  }
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 
