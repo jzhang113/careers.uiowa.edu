@@ -260,7 +260,11 @@ body{
   } // END region-header
 } // END header
 
-#content-wrapper, #main-content, #main-content-header, #breadcrumb, #messages{
+#content-wrapper, #header-wrapper, #messages-help-wrapper{
+  background-color: #ddd;
+}
+
+#main-content, #main-content-header, #breadcrumb, #messages{
   background: $page;
 }
 
@@ -336,12 +340,12 @@ body{
     padding-bottom: 5px;
   }
   .flex-control-paging li a {
-    @include background(linear-gradient(top, $yellow, $gold));
+    background-color: $ultralight;
     border-width: 0px;
     margin-left: 1px;
   }
   .flex-control-paging li a.flex-active {
-    @include background(linear-gradient(top, #333, #000));
+    background-color: $blue;
   }
 }
 
