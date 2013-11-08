@@ -13,7 +13,7 @@ function employer_showcase_image_style_image_default_styles() {
   // Exported image style: employer_showcase.
   $styles['employer_showcase'] = array(
     'name' => 'employer_showcase',
-    'label' => '',
+    'label' => 'employer_showcase',
     'effects' => array(
       1 => array(
         'label' => 'Scale',

@@ -32,7 +32,7 @@ function featured_content_type_and_view_image_default_styles() {
   // Exported image style: featured_home.
   $styles['featured_home'] = array(
     'name' => 'featured_home',
-    'label' => '',
+    'label' => 'featured_home',
     'effects' => array(
       3 => array(
         'label' => 'Manual crop',

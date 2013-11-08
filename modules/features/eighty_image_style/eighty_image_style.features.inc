@@ -13,7 +13,7 @@ function eighty_image_style_image_default_styles() {
   // Exported image style: 80px.
   $styles['80px'] = array(
     'name' => '80px',
-    'label' => '',
+    'label' => '80px',
     'effects' => array(
       1 => array(
         'label' => 'Manual crop',
