@@ -252,7 +252,13 @@ body a:hover {
   font-size: 1.8rem;
 }
 @media only screen and (min-width: 899px) {
-  /* line 186, ../sass/local.styles.scss */
+  /* line 177, ../sass/local.styles.scss */
+  #header .region-header .block-menu-audience-menu {
+    width: auto;
+    right: 0;
+    padding-left: 100px;
+  }
+  /* line 189, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu:before {
     content: "Start Here";
     position: absolute;
@@ -268,7 +274,7 @@ body a:hover {
     font-size: 1.6rem;
   }
 }
-/* line 198, ../sass/local.styles.scss */
+/* line 201, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu {
   background-color: #ffd451;
   width: 100%;
@@ -277,12 +283,12 @@ body a:hover {
   margin: 0px;
 }
 @media only screen and (min-width: 899px) {
-  /* line 198, ../sass/local.styles.scss */
+  /* line 201, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu {
     width: auto;
     padding-left: 25px;
   }
-  /* line 207, ../sass/local.styles.scss */
+  /* line 210, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu:before {
     width: 0;
     height: 0;
@@ -294,7 +300,7 @@ body a:hover {
     border-left: 20px solid black;
   }
 }
-/* line 218, ../sass/local.styles.scss */
+/* line 221, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li {
   list-style: none;
   list-style-image: none;
@@ -309,53 +315,53 @@ body a:hover {
   padding: 10px 12px;
 }
 @media only screen and (min-width: 899px) {
-  /* line 218, ../sass/local.styles.scss */
+  /* line 221, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu li {
     padding: 10px 26px;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 218, ../sass/local.styles.scss */
+  /* line 221, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu li {
     padding: 6px 3px;
   }
 }
-/* line 236, ../sass/local.styles.scss */
+/* line 239, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li ul {
   display: none;
 }
-/* line 239, ../sass/local.styles.scss */
+/* line 242, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover {
   background-color: black;
 }
-/* line 241, ../sass/local.styles.scss */
+/* line 244, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover a {
   color: white;
 }
-/* line 245, ../sass/local.styles.scss */
+/* line 248, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a {
   color: black;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 249, ../sass/local.styles.scss */
+/* line 252, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a:hover {
   text-decoration: none;
   color: white;
 }
 
-/* line 260, ../sass/local.styles.scss */
+/* line 263, ../sass/local.styles.scss */
 #content-wrapper, #main-content, #main-content-header, #breadcrumb, #messages {
   background: white;
 }
 
-/* line 264, ../sass/local.styles.scss */
+/* line 267, ../sass/local.styles.scss */
 #breadcrumb, #messages {
   margin: 0px;
   padding: 10px;
 }
 
-/* line 270, ../sass/local.styles.scss */
+/* line 273, ../sass/local.styles.scss */
 #content .pane-title, #content .block-title {
   background-color: transparent;
   color: #333;
@@ -363,21 +369,21 @@ body a:hover {
   border-bottom: 0px;
   margin: 0px;
 }
-/* line 280, ../sass/local.styles.scss */
+/* line 283, ../sass/local.styles.scss */
 #content .block-content {
   padding: 10px;
 }
-/* line 286, ../sass/local.styles.scss */
+/* line 289, ../sass/local.styles.scss */
 #content .block-main .no-title .block-inner {
   border: 0px;
 }
 
-/* line 295, ../sass/local.styles.scss */
+/* line 298, ../sass/local.styles.scss */
 #content .pane-node .block-content {
   padding: 5px;
 }
 
-/* line 301, ../sass/local.styles.scss */
+/* line 304, ../sass/local.styles.scss */
 .flexslider {
   margin: 0px;
   border: 0px;
@@ -388,20 +394,20 @@ body a:hover {
   box-shadow: white 0px 0px 0px;
   /* Flexslider Pager */
 }
-/* line 302, ../sass/local.styles.scss */
+/* line 305, ../sass/local.styles.scss */
 .flexslider ul {
   padding: 0px;
 }
-/* line 310, ../sass/local.styles.scss */
+/* line 313, ../sass/local.styles.scss */
 .flexslider a {
   color: white;
 }
-/* line 312, ../sass/local.styles.scss */
+/* line 315, ../sass/local.styles.scss */
 .flexslider a:hover {
   color: #9c8345;
   text-decoration: none;
 }
-/* line 317, ../sass/local.styles.scss */
+/* line 320, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-image h3 {
   display: block;
   bottom: 0px;
@@ -411,17 +417,17 @@ body a:hover {
   background: #333;
   height: 38px;
 }
-/* line 327, ../sass/local.styles.scss */
+/* line 330, ../sass/local.styles.scss */
 .flexslider .flex-control-nav {
   width: auto;
   bottom: -10px;
   right: 10px;
 }
-/* line 332, ../sass/local.styles.scss */
+/* line 335, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-image .field-content {
   padding-bottom: 5px;
 }
-/* line 335, ../sass/local.styles.scss */
+/* line 338, ../sass/local.styles.scss */
 .flexslider .flex-control-paging li a {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffd451), color-stop(100%, #9c8345));
   background: -webkit-linear-gradient(top, #ffd451, #9c8345);
@@ -431,7 +437,7 @@ body a:hover {
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 340, ../sass/local.styles.scss */
+/* line 343, ../sass/local.styles.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
   background: -webkit-linear-gradient(top, #333333, #000000);
@@ -440,13 +446,13 @@ body a:hover {
   background: linear-gradient(top, #333333, #000000);
 }
 
-/* line 345, ../sass/local.styles.scss */
+/* line 348, ../sass/local.styles.scss */
 .view-footer a {
   width: 100%;
   text-align: right;
   float: right;
 }
-/* line 349, ../sass/local.styles.scss */
+/* line 352, ../sass/local.styles.scss */
 .view-footer a:after {
   margin-left: 5px;
   font-family: FontAwesome;
@@ -459,12 +465,12 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 353, ../sass/local.styles.scss */
+/* line 356, ../sass/local.styles.scss */
 .view-footer a:hover {
   text-decoration: none;
 }
 
-/* line 359, ../sass/local.styles.scss */
+/* line 362, ../sass/local.styles.scss */
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -481,7 +487,7 @@ body a:hover {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-/* line 374, ../sass/local.styles.scss */
+/* line 377, ../sass/local.styles.scss */
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
   font-family: "Fjalla One", sans-serif;
@@ -503,54 +509,54 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 394, ../sass/local.styles.scss */
+/* line 397, ../sass/local.styles.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #9c8345;
   color: white;
   text-decoration: none;
 }
 
-/* line 400, ../sass/local.styles.scss */
+/* line 403, ../sass/local.styles.scss */
 .front .button {
   float: right;
 }
 
-/* line 405, ../sass/local.styles.scss */
+/* line 408, ../sass/local.styles.scss */
 #footer-wrapper {
   background-color: #eae3d2;
 }
 @media only screen and (min-width: 40em) {
-  /* line 408, ../sass/local.styles.scss */
+  /* line 411, ../sass/local.styles.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 413, ../sass/local.styles.scss */
+/* line 416, ../sass/local.styles.scss */
 .region-footer {
   position: relative;
   font-size: 14px;
 }
-/* line 416, ../sass/local.styles.scss */
+/* line 419, ../sass/local.styles.scss */
 .region-footer a {
   color: black;
   font-family: "Neuton", serif;
 }
-/* line 419, ../sass/local.styles.scss */
+/* line 422, ../sass/local.styles.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 423, ../sass/local.styles.scss */
+/* line 426, ../sass/local.styles.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 425, ../sass/local.styles.scss */
+/* line 428, ../sass/local.styles.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 431, ../sass/local.styles.scss */
+/* line 434, ../sass/local.styles.scss */
 .region-footer h2 {
   font-size: 1.8rem;
 }

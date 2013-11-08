@@ -183,6 +183,9 @@ body{
       font-family: $serif;
       font-size: 1.8rem;
       @media #{$nine-hundred} {
+        width: auto;
+        right: 0;
+        padding-left: 100px;
         &:before{
           content:"Start Here";
           position: absolute;
