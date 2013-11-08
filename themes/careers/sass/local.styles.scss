@@ -21,6 +21,10 @@ body{
   }
 }
 
+#page-title{
+  padding-left: 10px;
+}
+
 // Move Front Page Title off-screen to hide but maintain accessibility
 .front #page-title{
   @include offscreen;
