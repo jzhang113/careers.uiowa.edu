@@ -7,6 +7,14 @@
  *
 */
 
+.pane-block-1 {
+	background-color: #f5f5f5;
+	.pane-title{
+		font-family: $hireahawk;
+		font-size: 3.0rem;
+	}
+}
+
 /*
  *	Success Stories Teaser Pane
  */
@@ -257,6 +265,7 @@
 .button-yellow{
   display: inline-block;
   position: relative;
+  font-family: $hireahawk;
   background-color: $yellow;
   color: #333;
   padding: 6px 0px 6px 6px;

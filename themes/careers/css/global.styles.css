@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 @import url(http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,800,400italic);
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 /*
  * @file
  * global.styles
@@ -1142,7 +1143,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 224, ../sass/_custom.scss */
+/* line 226, ../sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
