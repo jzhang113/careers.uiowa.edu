@@ -566,32 +566,35 @@ body a:hover {
  * local.styles
  *
 */
-/* line 10, ../sass/_local.scss */
+/*
+ *	HireAHawk Block Style
+ */
+/* line 14, ../sass/_local.scss */
 .pane-block-1 {
   background-color: #f5f5f5;
 }
-/* line 12, ../sass/_local.scss */
+/* line 16, ../sass/_local.scss */
 .pane-block-1 .pane-title {
   font-family: "Fjalla One", sans-serif;
-  font-size: 3.0rem;
+  font-size: 2.9rem;
 }
 
 /*
  *	Success Stories Teaser Pane
  */
-/* line 22, ../sass/_local.scss */
+/* line 26, ../sass/_local.scss */
 .view-display-id-success_stories_teaser_content_pane {
   margin: 10px;
 }
-/* line 24, ../sass/_local.scss */
+/* line 28, ../sass/_local.scss */
 .view-display-id-success_stories_teaser_content_pane .views-field-field-profile-image {
   float: right;
 }
-/* line 26, ../sass/_local.scss */
+/* line 30, ../sass/_local.scss */
 .view-display-id-success_stories_teaser_content_pane .views-field-field-profile-image img {
   padding: 10px;
 }
-/* line 30, ../sass/_local.scss */
+/* line 34, ../sass/_local.scss */
 .view-display-id-success_stories_teaser_content_pane .views-field-title-1 {
   text-align: right;
 }
@@ -599,11 +602,11 @@ body a:hover {
 /*
  *	Employer Showcase Grid Panel Pane
  */
-/* line 40, ../sass/_local.scss */
+/* line 44, ../sass/_local.scss */
 .view-display-id-employer_showcase_grid_panel_pane .item-list ul {
   list-style: none;
 }
-/* line 42, ../sass/_local.scss */
+/* line 46, ../sass/_local.scss */
 .view-display-id-employer_showcase_grid_panel_pane .item-list ul li {
   display: block;
   float: left;
@@ -616,40 +619,52 @@ body a:hover {
   border-radius: 4px;
   border: 1px solid #ccc;
 }
-/* line 51, ../sass/_local.scss */
+/* line 55, ../sass/_local.scss */
 .view-display-id-employer_showcase_grid_panel_pane .views-field-field-logo {
   line-height: 200px;
   width: 200px;
   text-align: center;
 }
-/* line 56, ../sass/_local.scss */
+/* line 60, ../sass/_local.scss */
 .view-display-id-employer_showcase_grid_panel_pane .views-field-field-logo img {
   vertical-align: middle;
 }
 
 /*
+ *	Homepage Featured Slider
+ */
+/* line 70, ../sass/_local.scss */
+#content .pane-featured-slider-panel-pane-featured-slider {
+  padding: 5px 0px;
+}
+/* line 72, ../sass/_local.scss */
+#content .pane-featured-slider-panel-pane-featured-slider .block-content {
+  padding: 10px 0px;
+}
+
+/*
  *	Employers Showcase Slider Pane
  */
-/* line 66, ../sass/_local.scss */
+/* line 83, ../sass/_local.scss */
 .pane-employer-showcase-employer-showcase-slider-panel-pane .block-inner {
   border-bottom: 2px solid #687893;
 }
 
-/* line 72, ../sass/_local.scss */
+/* line 89, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider {
   border: 0px;
   margin: 0 0 5px;
 }
-/* line 76, ../sass/_local.scss */
+/* line 93, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane {
   padding: 0px;
 }
-/* line 78, ../sass/_local.scss */
+/* line 95, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content {
   position: relative;
   height: 200px;
 }
-/* line 81, ../sass/_local.scss */
+/* line 98, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content img {
   position: absolute;
   top: 0;
@@ -670,7 +685,7 @@ body a:hover {
   filter: alpha(opacity=40);
   /* For IE8 and earlier */
 }
-/* line 93, ../sass/_local.scss */
+/* line 110, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content img:hover {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
@@ -686,7 +701,7 @@ body a:hover {
   -o-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
-/* line 104, ../sass/_local.scss */
+/* line 121, ../sass/_local.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flex-control-paging {
   display: none;
 }
@@ -694,12 +709,12 @@ body a:hover {
 /*
  *	Video Fields
  */
-/* line 114, ../sass/_local.scss */
+/* line 131, ../sass/_local.scss */
 .field-name-field-video-file iframe {
   width: 100%;
   max-width: 640px;
 }
-/* line 119, ../sass/_local.scss */
+/* line 136, ../sass/_local.scss */
 .field-name-field-video-file #player {
   height: auto;
   width: auto;
@@ -708,22 +723,22 @@ body a:hover {
 /*
  *	People View Panes
  */
-/* line 130, ../sass/_local.scss */
+/* line 147, ../sass/_local.scss */
 .pane-people-panel-pane-career-advisors .views-field-field-people-picture, .pane-people-panel-pane-peer-advisors .views-field-field-people-picture, .pane-people-panel-pane-experiential-education-team .views-field-field-people-picture, .pane-people-panel-pane-employer-relations-team .views-field-field-people-picture {
   display: block;
   float: left;
 }
-/* line 134, ../sass/_local.scss */
+/* line 151, ../sass/_local.scss */
 .pane-people-panel-pane-career-advisors .views-field-title, .pane-people-panel-pane-career-advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-career-advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-peer-advisors .views-field-title, .pane-people-panel-pane-peer-advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-peer-advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-experiential-education-team .views-field-title, .pane-people-panel-pane-experiential-education-team .views-field-field-people-position .field-content, .pane-people-panel-pane-experiential-education-team .views-field-field-people-responsibilities, .pane-people-panel-pane-employer-relations-team .views-field-title, .pane-people-panel-pane-employer-relations-team .views-field-field-people-position .field-content, .pane-people-panel-pane-employer-relations-team .views-field-field-people-responsibilities {
   margin-left: 110px;
 }
 
-/* line 139, ../sass/_local.scss */
+/* line 156, ../sass/_local.scss */
 .pane-quicktabs-announcements-events .block-inner {
   border-bottom: 2px solid #687893;
 }
 
-/* line 144, ../sass/_local.scss */
+/* line 161, ../sass/_local.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-featured-image {
   display: block;
   float: left;
@@ -732,7 +747,7 @@ body a:hover {
   height: 80px;
   border: 5px solid #687893;
 }
-/* line 152, ../sass/_local.scss */
+/* line 169, ../sass/_local.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-featured-image:before {
   position: absolute;
   left: 15px;
@@ -748,12 +763,12 @@ body a:hover {
   font-size: 4.2em;
   color: #687893;
 }
-/* line 159, ../sass/_local.scss */
+/* line 176, ../sass/_local.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-featured-image img {
   position: relative;
   z-index: 2;
 }
-/* line 167, ../sass/_local.scss */
+/* line 184, ../sass/_local.scss */
 .view-display-id-announcements_front_content_pane .views-field-title,
 .view-display-id-announcements_front_content_pane .views-field-body,
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-attachments,
@@ -761,11 +776,11 @@ body a:hover {
   margin-left: 95px;
 }
 
-/* line 172, ../sass/_local.scss */
+/* line 189, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-field-title {
   margin-left: 0px;
 }
-/* line 175, ../sass/_local.scss */
+/* line 192, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row {
   margin-left: 0px;
   float: left;
@@ -775,7 +790,7 @@ body a:hover {
   padding-right: 10px;
   margin-left: 0px;
 }
-/* line 183, ../sass/_local.scss */
+/* line 200, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -790,7 +805,7 @@ body a:hover {
   float: left;
   padding-right: 5px;
 }
-/* line 191, ../sass/_local.scss */
+/* line 208, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-1:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -802,7 +817,7 @@ body a:hover {
   font-size: 1.2em;
   color: #e68b39;
 }
-/* line 196, ../sass/_local.scss */
+/* line 213, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-2:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -814,7 +829,7 @@ body a:hover {
   font-size: 1.2em;
   color: #57b4a5;
 }
-/* line 201, ../sass/_local.scss */
+/* line 218, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-3:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -826,7 +841,7 @@ body a:hover {
   font-size: 1.2em;
   color: #8f394f;
 }
-/* line 206, ../sass/_local.scss */
+/* line 223, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-4:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -839,16 +854,16 @@ body a:hover {
   color: #d1d55a;
 }
 
-/* line 213, ../sass/_local.scss */
+/* line 230, ../sass/_local.scss */
 .front .pane-system-main-menu ul.menu {
   margin-top: 0px;
 }
-/* line 215, ../sass/_local.scss */
+/* line 232, ../sass/_local.scss */
 .front .pane-system-main-menu ul.menu li {
   font-size: 1.8rem;
   list-style: none;
 }
-/* line 218, ../sass/_local.scss */
+/* line 235, ../sass/_local.scss */
 .front .pane-system-main-menu ul.menu li:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -864,7 +879,7 @@ body a:hover {
   padding-right: 5px;
 }
 
-/* line 228, ../sass/_local.scss */
+/* line 245, ../sass/_local.scss */
 .pane-quicktabs-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -874,45 +889,51 @@ body a:hover {
   outline: 0;
 }
 
-/* line 233, ../sass/_local.scss */
+/* line 250, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle {
   font: inherit;
   padding-left: 0px;
 }
-/* line 237, ../sass/_local.scss */
+/* line 254, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li {
   margin: 0px;
   background-color: #f5f5f5;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   padding: 5px 10px;
 }
-/* line 242, ../sass/_local.scss */
+@media only screen and (min-width: 899px) {
+  /* line 254, ../sass/_local.scss */
+  #quicktabs-announcements_events ul.quicktabs-style-nostyle li {
+    font-size: 2.5rem;
+  }
+}
+/* line 262, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li a {
   color: #687893;
 }
-/* line 244, ../sass/_local.scss */
+/* line 264, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 249, ../sass/_local.scss */
+/* line 269, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li:hover {
   background-color: #9c8345;
 }
-/* line 251, ../sass/_local.scss */
+/* line 271, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li:hover a {
   color: white;
 }
-/* line 256, ../sass/_local.scss */
+/* line 276, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li.active {
   background-color: #687893;
 }
-/* line 258, ../sass/_local.scss */
+/* line 278, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li.active a {
   color: white;
 }
 
-/* line 265, ../sass/_local.scss */
+/* line 285, ../sass/_local.scss */
 .button-yellow {
   display: inline-block;
   position: relative;
@@ -933,13 +954,13 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 284, ../sass/_local.scss */
+/* line 304, ../sass/_local.scss */
 .button-yellow:hover {
   background-color: #9c8345;
   color: white;
   text-decoration: none;
 }
-/* line 288, ../sass/_local.scss */
+/* line 308, ../sass/_local.scss */
 .button-yellow:hover:after {
   width: 0;
   height: 0;
@@ -951,7 +972,7 @@ body a:hover {
   border-bottom: 16px solid transparent;
   border-left: 16px solid #9c8345;
 }
-/* line 300, ../sass/_local.scss */
+/* line 320, ../sass/_local.scss */
 .button-yellow:after {
   width: 0;
   height: 0;
@@ -964,15 +985,15 @@ body a:hover {
   border-left: 16px solid #ffd451;
 }
 
-/* line 314, ../sass/_local.scss */
+/* line 334, ../sass/_local.scss */
 .view-id-events .views-row {
   padding: 5px;
 }
-/* line 317, ../sass/_local.scss */
+/* line 337, ../sass/_local.scss */
 .view-id-events .views-row-odd {
   background-color: #f5f5f5;
 }
-/* line 321, ../sass/_local.scss */
+/* line 341, ../sass/_local.scss */
 .view-id-events .events-date:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -984,7 +1005,7 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 326, ../sass/_local.scss */
+/* line 346, ../sass/_local.scss */
 .view-id-events .events-location:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -999,19 +1020,19 @@ body a:hover {
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 334, ../sass/_local.scss */
+  /* line 354, ../sass/_local.scss */
   .region-footer #block-menu-block-2 {
     width: 50%;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 339, ../sass/_local.scss */
+  /* line 359, ../sass/_local.scss */
   .region-footer #block-menu-block-3 {
     min-width: 110px;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 345, ../sass/_local.scss */
+  /* line 365, ../sass/_local.scss */
   .region-footer .menu-name-main-menu ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -1020,20 +1041,20 @@ body a:hover {
     column-count: 2;
   }
 }
-/* line 351, ../sass/_local.scss */
+/* line 371, ../sass/_local.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 351, ../sass/_local.scss */
+  /* line 371, ../sass/_local.scss */
   .region-footer #block-block-2 {
     float: right;
     padding: 0 15px 0 0;
   }
 }
 
-/* line 363, ../sass/_local.scss */
+/* line 383, ../sass/_local.scss */
 .rss-feed a:before {
   margin-right: 0.5em;
   font-family: FontAwesome;
@@ -1046,7 +1067,7 @@ body a:hover {
   font-size: 1em;
   color: #e68b39;
 }
-/* line 367, ../sass/_local.scss */
+/* line 387, ../sass/_local.scss */
 .rss-feed a:hover {
   text-decoration: none;
 }
