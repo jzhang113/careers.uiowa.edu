@@ -42,6 +42,10 @@ function employers_showcase_view_views_default_views() {
     'image_style' => '',
     'image_link' => 'content',
   );
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'OR',
+  );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -56,6 +60,20 @@ function employers_showcase_view_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'employers_orgs_content_type' => 'employers_orgs_content_type',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Sponsor Date - end date (field_sponsor_date:value2) */
+  $handler->display->display_options['filters']['field_sponsor_date_value2']['id'] = 'field_sponsor_date_value2';
+  $handler->display->display_options['filters']['field_sponsor_date_value2']['table'] = 'field_data_field_sponsor_date';
+  $handler->display->display_options['filters']['field_sponsor_date_value2']['field'] = 'field_sponsor_date_value2';
+  $handler->display->display_options['filters']['field_sponsor_date_value2']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_sponsor_date_value2']['group'] = 2;
+  $handler->display->display_options['filters']['field_sponsor_date_value2']['default_date'] = 'now';
+  /* Filter criterion: Content: Sponsor Date - end date (field_sponsor_date:value2) */
+  $handler->display->display_options['filters']['field_sponsor_date_value2_1']['id'] = 'field_sponsor_date_value2_1';
+  $handler->display->display_options['filters']['field_sponsor_date_value2_1']['table'] = 'field_data_field_sponsor_date';
+  $handler->display->display_options['filters']['field_sponsor_date_value2_1']['field'] = 'field_sponsor_date_value2';
+  $handler->display->display_options['filters']['field_sponsor_date_value2_1']['operator'] = 'empty';
+  $handler->display->display_options['filters']['field_sponsor_date_value2_1']['group'] = 2;
 
   /* Display: Employer Showcase Grid */
   $handler = $view->new_display('panel_pane', 'Employer Showcase Grid', 'employer_showcase_grid_panel_pane');

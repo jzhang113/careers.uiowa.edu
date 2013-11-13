@@ -10,6 +10,46 @@
 function employers_orgs_content_type_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-employers_orgs_content_type-field_additional_notes'
+  $field_instances['node-employers_orgs_content_type-field_additional_notes'] = array(
+    'bundle' => 'employers_orgs_content_type',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_additional_notes',
+    'label' => 'Additional Notes',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'node-employers_orgs_content_type-field_description'
   $field_instances['node-employers_orgs_content_type-field_description'] = array(
     'bundle' => 'employers_orgs_content_type',
@@ -250,43 +290,6 @@ function employers_orgs_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employers_orgs_content_type-field_sponsor'
-  $field_instances['node-employers_orgs_content_type-field_sponsor'] = array(
-    'bundle' => 'employers_orgs_content_type',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Employer/Organization has paid to be a sponsor and will be featured in the showcase gallery',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sponsor',
-    'label' => 'Pomerantz Career Center Sponsor',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-employers_orgs_content_type-field_sponsor_date'
   $field_instances['node-employers_orgs_content_type-field_sponsor_date'] = array(
     'bundle' => 'employers_orgs_content_type',
@@ -337,43 +340,6 @@ function employers_orgs_content_type_field_default_field_instances() {
       ),
       'type' => 'date_popup',
       'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'node-employers_orgs_content_type-field_visited'
-  $field_instances['node-employers_orgs_content_type-field_visited'] = array(
-    'bundle' => 'employers_orgs_content_type',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'The Pomerantz Career Center visited this Employer/Organization.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_visited',
-    'label' => 'Pomerantz Career Center Visited',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 9,
     ),
   );
 
@@ -486,15 +452,12 @@ function employers_orgs_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Additional Notes');
   t('Description');
-  t('Employer/Organization has paid to be a sponsor and will be featured in the showcase gallery');
   t('Location');
   t('Location Geofield');
   t('Logo');
-  t('Pomerantz Career Center Sponsor');
-  t('Pomerantz Career Center Visited');
   t('Sponsor Date');
-  t('The Pomerantz Career Center visited this Employer/Organization.');
   t('Visit Date(s)');
   t('Website Link');
   t('When the Pomerantz Career Center visited this employer/organization');
