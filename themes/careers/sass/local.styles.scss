@@ -264,11 +264,13 @@ body{
   } // END region-header
 } // END header
 
-#content-wrapper, #header-wrapper, #content-header-wrapper, #messages-help-wrapper{
+#content-wrapper, #header-wrapper, 
+#breadcrumb-wrapper, #content-header-wrapper, 
+#messages-help-wrapper, #tertiary-content-wrapper {
   background-color: #ddd;
 }
 
-#main-content, #main-content-header, #breadcrumb, #messages{
+#main-content, #main-content-header, #breadcrumb, #messages, .region-tertiary-content{
   background: $page;
 }
 
@@ -307,6 +309,10 @@ body{
       padding: 5px;
     }
   }
+}
+
+.field-label {
+  font-size: 1.8rem;
 }
 // Override Default Flexslider Styles
 .flexslider{

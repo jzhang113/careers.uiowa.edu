@@ -20,6 +20,43 @@
 }
 
 /*
+ *	Audience Portal Menu Block Styling (UNDER CONSTRUCTION)
+ */
+ /*.menu-block-4{
+ 	ul{
+ 		padding: 0px;
+ 		margin: 0px;
+ 	}
+ 	.menu-depth-2{
+ 		width: 100%;
+ 		@media #{$responsive-nav} {
+ 			max-width: 33%;
+ 		}
+ 		min-height: 250px;
+ 		@include inline-block;
+ 		vertical-align: top;
+ 		margin: 10px 10px 10px 0px;
+ 		*display: inline; // IE HACK
+ 		_height: 250px; // IE HACK
+ 		
+ 		a{
+ 			padding: 6px 12px;
+			background-color: black;
+			color: white;
+			font-size: 2.0rem;
+			display: block;
+			width: 100%;
+ 		}
+ 		li a{
+ 			background-color: transparent;
+ 			color: #333;
+ 			font-size: 1.6rem;
+ 		}
+ 	}
+ }*/
+
+
+/*
  *	Success Stories Teaser Pane
  */
 
@@ -124,6 +161,58 @@
     height: auto;
     width: auto;
   }
+}
+
+/*
+ *	People Node
+ */
+
+ #content {
+ 	.pane-node-title, .pane-node-field-people-position, .pane-node-field-people-email{
+ 		.block-content{
+ 			padding: 0px 10px;
+ 		}
+ 	}
+ }
+
+.node-type-people {
+	#page-title{
+		@include offscreen;
+	}
+	.pane-node-field-people-picture{
+		img{
+			border: 5px solid $blue;
+		}
+		@media #{$responsive-nav} {
+			float: right;
+			img {
+				width: 250px;
+			}
+		}
+	}
+	.pane-node-title{
+		.pane-title {
+			display: none;
+		}
+	}
+	@media #{$nine-hundred} {
+		.pane-node-title, .pane-node-field-people-position, .pane-node-field-people-email{
+			text-align: right;
+		}
+		.pane-node-title {
+			padding-top: 165px;
+		}
+		.pane-node-field-people-email {
+			margin-bottom: 14px;
+		}
+	}
+	.pane-node-title, .pane-node-field-people-position,
+	.pane-node-field-people-email, .pane-node-field-people-biography,
+	.pane-node-field-people-responsibilities, .pane-node-field-people-group,
+	.pane-node-links {
+		overflow: hidden;
+		min-width: 200px;
+	}
 }
 
 /*
