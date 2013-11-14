@@ -743,7 +743,7 @@ body a:hover {
  *	People Node
  */
 /* line 172, ../sass/_local.scss */
-#content .pane-node-title .block-content, #content .pane-node-field-people-position .block-content, #content .pane-node-field-people-email .block-content {
+#content .pane-node-field-people-picture .block-content, #content .pane-node-title .block-content, #content .pane-node-field-people-position .block-content, #content .pane-node-field-people-email .block-content {
   padding: 0px 10px;
 }
 
@@ -758,7 +758,11 @@ body a:hover {
     outline: 0;
   }
 }
-/* line 185, ../sass/_local.scss */
+/* line 184, ../sass/_local.scss */
+.node-type-people .pane-node-field-people-picture {
+  padding-top: 0px;
+}
+/* line 186, ../sass/_local.scss */
 .node-type-people .pane-node-field-people-picture img {
   border: 5px solid #687893;
 }
@@ -769,41 +773,41 @@ body a:hover {
     width: 50%;
   }
 }
-/* line 194, ../sass/_local.scss */
+/* line 195, ../sass/_local.scss */
 .node-type-people .pane-node-title .pane-title {
   display: none;
 }
-/* line 197, ../sass/_local.scss */
+/* line 198, ../sass/_local.scss */
 .node-type-people .pane-node-title .block-content {
   display: none;
 }
 @media only screen and (min-width: 40em) {
-  /* line 197, ../sass/_local.scss */
+  /* line 198, ../sass/_local.scss */
   .node-type-people .pane-node-title .block-content {
     display: block;
   }
 }
 @media only screen and (min-width: 899px) {
-  /* line 205, ../sass/_local.scss */
+  /* line 206, ../sass/_local.scss */
   .node-type-people .pane-node-title, .node-type-people .pane-node-field-people-position, .node-type-people .pane-node-field-people-email {
     text-align: right;
   }
-  /* line 208, ../sass/_local.scss */
+  /* line 209, ../sass/_local.scss */
   .node-type-people .pane-node-title {
-    padding-top: 200px;
+    padding-top: 180px;
   }
-  /* line 211, ../sass/_local.scss */
+  /* line 212, ../sass/_local.scss */
   .node-type-people .pane-node-field-people-email {
     margin-bottom: 14px;
   }
 }
-/* line 216, ../sass/_local.scss */
+/* line 217, ../sass/_local.scss */
 .node-type-people .pane-node-title, .node-type-people .pane-node-field-people-position,
 .node-type-people .pane-node-field-people-email {
   overflow: hidden;
   width: 50%;
 }
-/* line 222, ../sass/_local.scss */
+/* line 223, ../sass/_local.scss */
 .node-type-people .pane-node-field-people-biography,
 .node-type-people .pane-node-field-people-responsibilities, .node-type-people .pane-node-field-people-group,
 .node-type-people .pane-node-links {
@@ -814,22 +818,22 @@ body a:hover {
 /*
  *	People View Panes
  */
-/* line 233, ../sass/_local.scss */
+/* line 234, ../sass/_local.scss */
 .pane-people-panel-pane-career-advisors .views-field-field-people-picture, .pane-people-panel-pane-peer-advisors .views-field-field-people-picture, .pane-people-panel-pane-experiential-education-team .views-field-field-people-picture, .pane-people-panel-pane-employer-relations-team .views-field-field-people-picture {
   display: block;
   float: left;
 }
-/* line 237, ../sass/_local.scss */
+/* line 238, ../sass/_local.scss */
 .pane-people-panel-pane-career-advisors .views-field-title, .pane-people-panel-pane-career-advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-career-advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-peer-advisors .views-field-title, .pane-people-panel-pane-peer-advisors .views-field-field-people-position .field-content, .pane-people-panel-pane-peer-advisors .views-field-field-people-responsibilities, .pane-people-panel-pane-experiential-education-team .views-field-title, .pane-people-panel-pane-experiential-education-team .views-field-field-people-position .field-content, .pane-people-panel-pane-experiential-education-team .views-field-field-people-responsibilities, .pane-people-panel-pane-employer-relations-team .views-field-title, .pane-people-panel-pane-employer-relations-team .views-field-field-people-position .field-content, .pane-people-panel-pane-employer-relations-team .views-field-field-people-responsibilities {
   margin-left: 110px;
 }
 
-/* line 242, ../sass/_local.scss */
+/* line 243, ../sass/_local.scss */
 .pane-quicktabs-announcements-events .block-inner {
   border-bottom: 2px solid #687893;
 }
 
-/* line 247, ../sass/_local.scss */
+/* line 248, ../sass/_local.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-featured-image {
   display: block;
   float: left;
@@ -838,7 +842,7 @@ body a:hover {
   height: 80px;
   border: 5px solid #687893;
 }
-/* line 255, ../sass/_local.scss */
+/* line 256, ../sass/_local.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-featured-image:before {
   position: absolute;
   left: 15px;
@@ -854,12 +858,12 @@ body a:hover {
   font-size: 4.2em;
   color: #687893;
 }
-/* line 262, ../sass/_local.scss */
+/* line 263, ../sass/_local.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-featured-image img {
   position: relative;
   z-index: 2;
 }
-/* line 270, ../sass/_local.scss */
+/* line 271, ../sass/_local.scss */
 .view-display-id-announcements_front_content_pane .views-field-title,
 .view-display-id-announcements_front_content_pane .views-field-body,
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-attachments,
@@ -867,11 +871,11 @@ body a:hover {
   margin-left: 95px;
 }
 
-/* line 275, ../sass/_local.scss */
+/* line 276, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-field-title {
   margin-left: 0px;
 }
-/* line 278, ../sass/_local.scss */
+/* line 279, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row {
   margin-left: 0px;
   float: left;
@@ -881,7 +885,7 @@ body a:hover {
   padding-right: 10px;
   margin-left: 0px;
 }
-/* line 286, ../sass/_local.scss */
+/* line 287, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -896,7 +900,7 @@ body a:hover {
   float: left;
   padding-right: 5px;
 }
-/* line 294, ../sass/_local.scss */
+/* line 295, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-1:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -908,7 +912,7 @@ body a:hover {
   font-size: 1.2em;
   color: #e68b39;
 }
-/* line 299, ../sass/_local.scss */
+/* line 300, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-2:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -920,7 +924,7 @@ body a:hover {
   font-size: 1.2em;
   color: #57b4a5;
 }
-/* line 304, ../sass/_local.scss */
+/* line 305, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-3:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -932,7 +936,7 @@ body a:hover {
   font-size: 1.2em;
   color: #8f394f;
 }
-/* line 309, ../sass/_local.scss */
+/* line 310, ../sass/_local.scss */
 .view-display-id-attachment_announcements_bottom .views-row-4:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -945,16 +949,16 @@ body a:hover {
   color: #d1d55a;
 }
 
-/* line 316, ../sass/_local.scss */
+/* line 317, ../sass/_local.scss */
 .front .pane-system-main-menu ul.menu {
   margin-top: 0px;
 }
-/* line 318, ../sass/_local.scss */
+/* line 319, ../sass/_local.scss */
 .front .pane-system-main-menu ul.menu li {
   font-size: 1.8rem;
   list-style: none;
 }
-/* line 321, ../sass/_local.scss */
+/* line 322, ../sass/_local.scss */
 .front .pane-system-main-menu ul.menu li:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -970,7 +974,7 @@ body a:hover {
   padding-right: 5px;
 }
 
-/* line 331, ../sass/_local.scss */
+/* line 332, ../sass/_local.scss */
 .pane-quicktabs-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -980,12 +984,12 @@ body a:hover {
   outline: 0;
 }
 
-/* line 336, ../sass/_local.scss */
+/* line 337, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle {
   font: inherit;
   padding-left: 0px;
 }
-/* line 340, ../sass/_local.scss */
+/* line 341, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li {
   margin: 0px;
   background-color: whitesmoke;
@@ -993,38 +997,38 @@ body a:hover {
   padding: 5px 10px;
 }
 @media only screen and (min-width: 899px) {
-  /* line 340, ../sass/_local.scss */
+  /* line 341, ../sass/_local.scss */
   #quicktabs-announcements_events ul.quicktabs-style-nostyle li {
     font-size: 2.5rem;
   }
 }
-/* line 348, ../sass/_local.scss */
+/* line 349, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li a {
   color: #687893;
 }
-/* line 350, ../sass/_local.scss */
+/* line 351, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 355, ../sass/_local.scss */
+/* line 356, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li:hover {
   background-color: #9c8345;
 }
-/* line 357, ../sass/_local.scss */
+/* line 358, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li:hover a {
   color: white;
 }
-/* line 362, ../sass/_local.scss */
+/* line 363, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li.active {
   background-color: #687893;
 }
-/* line 364, ../sass/_local.scss */
+/* line 365, ../sass/_local.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li.active a {
   color: white;
 }
 
-/* line 371, ../sass/_local.scss */
+/* line 372, ../sass/_local.scss */
 .button-yellow {
   display: inline-block;
   position: relative;
@@ -1045,13 +1049,13 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 390, ../sass/_local.scss */
+/* line 391, ../sass/_local.scss */
 .button-yellow:hover {
   background-color: #9c8345;
   color: white;
   text-decoration: none;
 }
-/* line 394, ../sass/_local.scss */
+/* line 395, ../sass/_local.scss */
 .button-yellow:hover:after {
   width: 0;
   height: 0;
@@ -1063,7 +1067,7 @@ body a:hover {
   border-bottom: 16px solid transparent;
   border-left: 16px solid #9c8345;
 }
-/* line 406, ../sass/_local.scss */
+/* line 407, ../sass/_local.scss */
 .button-yellow:after {
   width: 0;
   height: 0;
@@ -1076,15 +1080,15 @@ body a:hover {
   border-left: 16px solid #ffd451;
 }
 
-/* line 420, ../sass/_local.scss */
+/* line 421, ../sass/_local.scss */
 .view-id-events .views-row {
   padding: 5px;
 }
-/* line 423, ../sass/_local.scss */
+/* line 424, ../sass/_local.scss */
 .view-id-events .views-row-odd {
   background-color: whitesmoke;
 }
-/* line 427, ../sass/_local.scss */
+/* line 428, ../sass/_local.scss */
 .view-id-events .events-date:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1096,7 +1100,7 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 432, ../sass/_local.scss */
+/* line 433, ../sass/_local.scss */
 .view-id-events .events-location:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1111,19 +1115,19 @@ body a:hover {
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 440, ../sass/_local.scss */
+  /* line 441, ../sass/_local.scss */
   .region-footer #block-menu-block-2 {
     width: 50%;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 445, ../sass/_local.scss */
+  /* line 446, ../sass/_local.scss */
   .region-footer #block-menu-block-3 {
     min-width: 110px;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 451, ../sass/_local.scss */
+  /* line 452, ../sass/_local.scss */
   .region-footer .menu-name-main-menu ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -1132,20 +1136,20 @@ body a:hover {
     column-count: 2;
   }
 }
-/* line 457, ../sass/_local.scss */
+/* line 458, ../sass/_local.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 457, ../sass/_local.scss */
+  /* line 458, ../sass/_local.scss */
   .region-footer #block-block-2 {
     float: right;
     padding: 0 15px 0 0;
   }
 }
 
-/* line 469, ../sass/_local.scss */
+/* line 470, ../sass/_local.scss */
 .rss-feed a:before {
   margin-right: 0.5em;
   font-family: FontAwesome;
@@ -1158,7 +1162,7 @@ body a:hover {
   font-size: 1em;
   color: #e68b39;
 }
-/* line 473, ../sass/_local.scss */
+/* line 474, ../sass/_local.scss */
 .rss-feed a:hover {
   text-decoration: none;
 }
