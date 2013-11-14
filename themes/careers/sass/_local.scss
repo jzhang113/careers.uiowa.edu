@@ -176,8 +176,10 @@
  }
 
 .node-type-people {
-	#page-title{
-		@include offscreen;
+	@media #{$responsive-nav} {
+		#page-title{
+			@include offscreen;
+		}
 	}
 	.pane-node-field-people-picture{
 		img{
@@ -185,14 +187,18 @@
 		}
 		@media #{$responsive-nav} {
 			float: right;
-			img {
-				width: 250px;
-			}
+			width: 50%;
 		}
 	}
 	.pane-node-title{
 		.pane-title {
 			display: none;
+		}
+		.block-content{
+			display: none;
+			@media #{$responsive-nav} {
+				display: block;
+			}
 		}
 	}
 	@media #{$nine-hundred} {
@@ -200,17 +206,21 @@
 			text-align: right;
 		}
 		.pane-node-title {
-			padding-top: 165px;
+			padding-top: 200px;
 		}
 		.pane-node-field-people-email {
 			margin-bottom: 14px;
 		}
 	}
 	.pane-node-title, .pane-node-field-people-position,
-	.pane-node-field-people-email, .pane-node-field-people-biography,
+	.pane-node-field-people-email {
+		overflow: hidden;
+		width: 50%;
+	}
+	.pane-node-field-people-biography,
 	.pane-node-field-people-responsibilities, .pane-node-field-people-group,
 	.pane-node-links {
-		overflow: hidden;
+		overflow: inherit;
 		min-width: 200px;
 	}
 }
