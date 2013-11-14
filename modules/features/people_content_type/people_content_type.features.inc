@@ -65,7 +65,7 @@ function people_content_type_image_default_styles() {
   // Exported image style: people_profile_320.
   $styles['people_profile_320'] = array(
     'name' => 'people_profile_320',
-    'label' => '',
+    'label' => 'people_profile_320',
     'effects' => array(
       5 => array(
         'label' => 'Manual crop',
