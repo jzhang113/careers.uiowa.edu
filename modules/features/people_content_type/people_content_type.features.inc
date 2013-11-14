@@ -65,9 +65,9 @@ function people_content_type_image_default_styles() {
   // Exported image style: people_profile_320.
   $styles['people_profile_320'] = array(
     'name' => 'people_profile_320',
-    'label' => 'people_profile_320',
+    'label' => '',
     'effects' => array(
-      8 => array(
+      5 => array(
         'label' => 'Manual crop',
         'help' => 'Crop a freely user-selected area.',
         'effect callback' => 'manualcrop_crop_effect',
@@ -78,13 +78,13 @@ function people_content_type_image_default_styles() {
         'name' => 'manualcrop_crop',
         'data' => array(
           'width' => 320,
-          'height' => 480,
+          'height' => 320,
           'keepproportions' => 1,
           'style_name' => 'people_profile_320',
         ),
         'weight' => 0,
       ),
-      9 => array(
+      6 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -95,7 +95,7 @@ function people_content_type_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 320,
-          'height' => 480,
+          'height' => 320,
         ),
         'weight' => 2,
       ),
