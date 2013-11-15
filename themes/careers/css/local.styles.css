@@ -950,16 +950,16 @@ body a:hover {
 }
 
 /* line 317, ../sass/_local.scss */
-.front .pane-system-main-menu ul.menu {
+.front .pane-menu-menu-quick-links ul.menu {
   margin-top: 0px;
 }
 /* line 319, ../sass/_local.scss */
-.front .pane-system-main-menu ul.menu li {
+.front .pane-menu-menu-quick-links ul.menu li {
   font-size: 1.8rem;
   list-style: none;
 }
 /* line 322, ../sass/_local.scss */
-.front .pane-system-main-menu ul.menu li:before {
+.front .pane-menu-menu-quick-links ul.menu li:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -1116,7 +1116,7 @@ body a:hover {
 
 @media only screen and (min-width: 40em) {
   /* line 441, ../sass/_local.scss */
-  .region-footer #block-menu-block-2 {
+  .region-footer #block-menu-menu-quick-links {
     width: 50%;
   }
 }
@@ -1128,7 +1128,7 @@ body a:hover {
 }
 @media only screen and (min-width: 40em) {
   /* line 452, ../sass/_local.scss */
-  .region-footer .menu-name-main-menu ul {
+  .region-footer .block-menu-quick-links ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     -ms-column-count: 2;
