@@ -125,27 +125,6 @@ function front_panel_page_default_page_manager_pages() {
     $display->panels['contentcolumn1'][1] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
-    $pane->panel = 'contentcolumn1';
-    $pane->type = 'block';
-    $pane->subtype = 'block-4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Give Support',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['contentcolumn1'][2] = 'new-3';
-    $pane = new stdClass();
-    $pane->pid = 'new-4';
     $pane->panel = 'contentcolumn2';
     $pane->type = 'views_panes';
     $pane->subtype = 'employer_showcase-employer_showcase_slider_panel_pane';
@@ -160,10 +139,10 @@ function front_panel_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['contentcolumn2'][0] = 'new-4';
+    $display->content['new-3'] = $pane;
+    $display->panels['contentcolumn2'][0] = 'new-3';
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-4';
     $pane->panel = 'contentcolumn2';
     $pane->type = 'block';
     $pane->subtype = 'block-3';
@@ -181,8 +160,29 @@ function front_panel_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
+    $display->content['new-4'] = $pane;
+    $display->panels['contentcolumn2'][1] = 'new-4';
+    $pane = new stdClass();
+    $pane->pid = 'new-5';
+    $pane->panel = 'contentcolumn2';
+    $pane->type = 'block';
+    $pane->subtype = 'block-4';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Give Support',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
     $display->content['new-5'] = $pane;
-    $display->panels['contentcolumn2'][1] = 'new-5';
+    $display->panels['contentcolumn2'][2] = 'new-5';
     $pane = new stdClass();
     $pane->pid = 'new-6';
     $pane->panel = 'contentfeatured';
@@ -226,12 +226,12 @@ function front_panel_page_default_page_manager_pages() {
     $pane->pid = 'new-8';
     $pane->panel = 'contentmain';
     $pane->type = 'block';
-    $pane->subtype = 'system-main-menu';
+    $pane->subtype = 'menu-menu-quick-links';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Quick Links',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
