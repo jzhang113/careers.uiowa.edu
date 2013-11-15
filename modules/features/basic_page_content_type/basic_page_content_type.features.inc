@@ -25,7 +25,7 @@ function basic_page_content_type_image_default_styles() {
   // Exported image style: featured_page.
   $styles['featured_page'] = array(
     'name' => 'featured_page',
-    'label' => '',
+    'label' => 'featured_page',
     'effects' => array(
       3 => array(
         'label' => 'Manual crop',
