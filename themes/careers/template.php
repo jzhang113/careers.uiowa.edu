@@ -92,3 +92,9 @@ function careers_preprocess_block(&$vars) {
 function careers_process_block(&$vars) {
 }
 // */
+
+function careers_preprocess(&$variables, $hook) {
+  if(isset($variables['page']['content']['system_main']['no_content'])) {
+    unset($variables['page']['content']['system_main']['no_content']);
+  }
+}
