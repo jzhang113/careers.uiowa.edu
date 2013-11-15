@@ -1114,20 +1114,34 @@ body a:hover {
   padding: 0px 2px;
 }
 
+/* line 442, ../sass/_local.scss */
+.node-type-page .pane-menu-block-4 {
+  background-color: whitesmoke;
+  border-bottom: 2px solid white;
+}
+/* line 445, ../sass/_local.scss */
+.node-type-page .pane-menu-block-4 ul {
+  margin: 0px;
+}
+/* line 447, ../sass/_local.scss */
+.node-type-page .pane-menu-block-4 ul li {
+  list-style: none;
+}
+
 @media only screen and (min-width: 40em) {
-  /* line 441, ../sass/_local.scss */
+  /* line 455, ../sass/_local.scss */
   .region-footer #block-menu-menu-quick-links {
     width: 50%;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 446, ../sass/_local.scss */
+  /* line 460, ../sass/_local.scss */
   .region-footer #block-menu-block-3 {
     min-width: 110px;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 452, ../sass/_local.scss */
+  /* line 466, ../sass/_local.scss */
   .region-footer .block-menu-quick-links ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -1136,20 +1150,20 @@ body a:hover {
     column-count: 2;
   }
 }
-/* line 458, ../sass/_local.scss */
+/* line 472, ../sass/_local.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 458, ../sass/_local.scss */
+  /* line 472, ../sass/_local.scss */
   .region-footer #block-block-2 {
     float: right;
     padding: 0 15px 0 0;
   }
 }
 
-/* line 470, ../sass/_local.scss */
+/* line 484, ../sass/_local.scss */
 .rss-feed a:before {
   margin-right: 0.5em;
   font-family: FontAwesome;
@@ -1162,7 +1176,7 @@ body a:hover {
   font-size: 1em;
   color: #e68b39;
 }
-/* line 474, ../sass/_local.scss */
+/* line 488, ../sass/_local.scss */
 .rss-feed a:hover {
   text-decoration: none;
 }

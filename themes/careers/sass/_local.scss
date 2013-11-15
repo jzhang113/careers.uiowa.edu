@@ -437,6 +437,20 @@
 	}
 }
 
+// Basic Page Sub Links
+.node-type-page{
+	.pane-menu-block-4{
+		background-color: $ultralight;
+		border-bottom: 2px solid white;
+		ul {
+			margin: 0px;
+			li{
+				list-style: none;
+			}
+		}
+	}
+}
+
 .region-footer{
   #block-menu-menu-quick-links{  // Main Menu Footer Block
     @media #{$responsive-nav} {
