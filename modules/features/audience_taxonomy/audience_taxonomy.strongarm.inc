@@ -18,8 +18,8 @@ function audience_taxonomy_strongarm() {
     'status' => 1,
     'view modes' => array(
       'page_manager' => array(
-        'status' => 1,
-        'default' => 1,
+        'status' => 0,
+        'default' => 0,
         'choice' => 0,
       ),
       'default' => array(
