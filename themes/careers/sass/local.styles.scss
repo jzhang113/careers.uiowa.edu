@@ -193,7 +193,7 @@ body{
         &:before{
           content:"Start Here";
           position: absolute;
-          right: 580px;
+          right: 600px;
           top: 19%;
           color: white;
           font-weight: bold;
@@ -210,12 +210,12 @@ body{
         margin: 0px;
         @media #{$nine-hundred} {
           width: auto;
-          padding-left: 0px;
+          padding-left: 25px;
           &:before{
             width: 0;
             height: 0;
             content: "";
-            right: 546px;
+            right: 570px;
             position: absolute;
             border-top: 24px solid transparent;
             border-bottom: 24px solid transparent;
