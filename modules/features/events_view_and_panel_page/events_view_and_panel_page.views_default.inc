@@ -33,6 +33,13 @@ function events_view_and_panel_page_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'There are no events scheduled.';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Field: EventUrl: Markup */
   $handler->display->display_options['fields']['markup']['id'] = 'markup';
   $handler->display->display_options['fields']['markup']['table'] = 'xml';
