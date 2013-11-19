@@ -26,7 +26,7 @@ function events_view_and_panel_page_views_default_views() {
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['xml_file'] = 'http://data.its.uiowa.edu/mastercal/custom?calendar=73&enddate=12-31-2014';
+  $handler->display->display_options['query']['options']['xml_file'] = 'http://data.its.uiowa.edu/mastercal/custom?calendar=73&enddate=12-31-2050';
   $handler->display->display_options['query']['options']['row_xpath'] = 'event';
   $handler->display->display_options['query']['options']['show_errors'] = 1;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
