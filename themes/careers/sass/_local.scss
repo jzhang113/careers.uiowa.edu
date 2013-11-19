@@ -12,7 +12,7 @@
  *	HireAHawk Block Style
  */
 .pane-block-1 {
-	background-color: $ultralight;
+	background-color: $yellow;
 	.pane-title{
 		font-family: $hireahawk;
 		font-size: 2.9rem;
@@ -20,7 +20,7 @@
 }
 
 /*
- *	Audience Portal Menu Block Styling (UNDER CONSTRUCTION)
+ *	Audience Portal Menu Block Styling
  */
  .menu-block-5{
  	ul{
@@ -463,6 +463,7 @@
 			margin: 0px;
 			li{
 				list-style: none;
+				font-size: 1.6rem;
 			}
 		}
 	}
