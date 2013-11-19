@@ -22,7 +22,7 @@
 /*
  *	Audience Portal Menu Block Styling (UNDER CONSTRUCTION)
  */
- /*.menu-block-4{
+ .menu-block-5{
  	ul{
  		padding: 0px;
  		margin: 0px;
@@ -30,7 +30,7 @@
  	.menu-depth-2{
  		width: 100%;
  		@media #{$responsive-nav} {
- 			max-width: 33%;
+ 			max-width: 32%;
  		}
  		min-height: 250px;
  		@include inline-block;
@@ -46,14 +46,31 @@
 			font-size: 2.0rem;
 			display: block;
 			width: 100%;
+			height: 100%;
+			&:hover{
+				text-decoration: none;
+				background-color: $yellow;
+				color: black;
+			}
+ 		}
+ 		ul {
+ 			padding: 0;
  		}
  		li a{
  			background-color: transparent;
  			color: #333;
  			font-size: 1.6rem;
+ 			&:hover {
+ 				text-decoration: underline;
+ 				background-color: transparent;
+ 				color: $gold;
+ 			}
  		}
  	}
- }*/
+ 	.menu-depth-3 {
+ 		list-style: none;
+ 	}
+ }
 
 
 /*
