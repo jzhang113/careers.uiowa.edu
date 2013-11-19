@@ -81,12 +81,13 @@ function audience_taxonomy_panelizer_defaults() {
     $pane = new stdClass();
     $pane->pid = 'new-1';
     $pane->panel = 'header';
-    $pane->type = 'block';
-    $pane->subtype = 'menu_block-4';
+    $pane->type = 'term_description';
+    $pane->subtype = 'term_description';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
+      'context' => 'panelizer',
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();
@@ -99,6 +100,27 @@ function audience_taxonomy_panelizer_defaults() {
     $pane->locks = array();
     $display->content['new-1'] = $pane;
     $display->panels['header'][0] = 'new-1';
+    $pane = new stdClass();
+    $pane->pid = 'new-2';
+    $pane->panel = 'header';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-5';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-2'] = $pane;
+    $display->panels['header'][1] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
