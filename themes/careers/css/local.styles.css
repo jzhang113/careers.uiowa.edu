@@ -267,7 +267,7 @@ body a:hover {
   #header .region-header .block-menu-audience-menu:before {
     content: "Start Here";
     position: absolute;
-    right: 600px;
+    right: 580px;
     top: 19%;
     color: white;
     font-weight: bold;
@@ -291,14 +291,14 @@ body a:hover {
   /* line 205, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu {
     width: auto;
-    padding-left: 25px;
+    padding-left: 0px;
   }
   /* line 214, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu:before {
     width: 0;
     height: 0;
     content: "";
-    right: 570px;
+    right: 545px;
     position: absolute;
     border-top: 24px solid transparent;
     border-bottom: 23px solid transparent;
