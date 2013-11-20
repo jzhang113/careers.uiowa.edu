@@ -30,7 +30,7 @@ function announcements_content_type_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'burr';
+  $display->layout = 'boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -121,7 +121,7 @@ function announcements_content_type_panelizer_defaults() {
     $display->panels['contentmain'][2] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_featured_image';
     $pane->shown = TRUE;
@@ -146,13 +146,13 @@ function announcements_content_type_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 3;
     $pane->locks = array();
     $display->content['new-4'] = $pane;
-    $display->panels['sidebar'][0] = 'new-4';
+    $display->panels['contentmain'][3] = 'new-4';
     $pane = new stdClass();
     $pane->pid = 'new-5';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_announcement_attachments';
     $pane->shown = TRUE;
@@ -174,13 +174,13 @@ function announcements_content_type_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 4;
     $pane->locks = array();
     $display->content['new-5'] = $pane;
-    $display->panels['sidebar'][1] = 'new-5';
+    $display->panels['contentmain'][4] = 'new-5';
     $pane = new stdClass();
     $pane->pid = 'new-6';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_announcement_link';
     $pane->shown = TRUE;
@@ -202,10 +202,10 @@ function announcements_content_type_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 5;
     $pane->locks = array();
     $display->content['new-6'] = $pane;
-    $display->panels['sidebar'][2] = 'new-6';
+    $display->panels['contentmain'][5] = 'new-6';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-2';
   $panelizer->display = $display;

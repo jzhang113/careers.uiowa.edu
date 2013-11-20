@@ -6,6 +6,7 @@ dependencies[] = features
 dependencies[] = flexslider
 dependencies[] = flexslider_fields
 dependencies[] = image
+dependencies[] = inthenews
 dependencies[] = media
 dependencies[] = panelizer
 dependencies[] = strongarm

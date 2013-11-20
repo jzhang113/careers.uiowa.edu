@@ -30,7 +30,7 @@ function people_content_type_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'burr_flipped';
+  $display->layout = 'boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -275,7 +275,7 @@ function people_content_type_panelizer_defaults() {
     $display->panels['contentmain'][7] = 'new-8';
     $pane = new stdClass();
     $pane->pid = 'new-9';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'contentmain';
     $pane->type = 'block';
     $pane->subtype = 'block-1';
     $pane->shown = TRUE;
@@ -290,10 +290,10 @@ function people_content_type_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 8;
     $pane->locks = array();
     $display->content['new-9'] = $pane;
-    $display->panels['sidebar'][0] = 'new-9';
+    $display->panels['contentmain'][8] = 'new-9';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-3';
   $panelizer->display = $display;

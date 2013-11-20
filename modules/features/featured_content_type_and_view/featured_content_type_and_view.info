@@ -5,6 +5,7 @@ dependencies[] = ctools
 dependencies[] = draggableviews
 dependencies[] = features
 dependencies[] = image
+dependencies[] = inthenews
 dependencies[] = link
 dependencies[] = manualcrop
 dependencies[] = media
