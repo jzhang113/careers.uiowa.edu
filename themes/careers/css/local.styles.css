@@ -380,7 +380,7 @@ body a:hover {
 }
 
 /* line 287, ../sass/local.styles.scss */
-#main-content, #main-content-header, #breadcrumb, #messages, .region-tertiary-content {
+#main-content, #main-content-header, #breadcrumb, #messages, .region-tertiary-content, #columns {
   background: white;
 }
 
