@@ -184,6 +184,11 @@ body{
       padding: 0px;
       background: black;
       width: 100%;
+      min-width: 320px;
+      height: 35px;
+      @media #{$nine-hundred} {
+        height: 50px;
+      }
       font-family: $serif;
       font-size: 1.8rem;
       @media #{$nine-hundred} {
@@ -205,21 +210,29 @@ body{
       ul.menu {
         background-color: $yellow;
         width: 100%;
+        min-width: 320px;
+        height: 35px;
+        @media #{$nine-hundred} {
+          height: 50px;
+        }
         float: right;
-        padding-left: 15px;
+        padding-left: 5px;
         margin: 0px;
         @media #{$nine-hundred} {
           width: auto;
           padding-left: 25px;
           &:before{
-            width: 0;
-            height: 0;
             content: "";
-            right: 570px;
+            left: 100px;
             position: absolute;
-            border-top: 24px solid transparent;
-            border-bottom: 24px solid transparent;
-            border-left: 20px solid black;
+            font-size: 0px;
+            line-height: 0px;
+            width: 0px;
+            height: 0px;
+            border-style: inset;
+            border-width: 25px 0 25px 20px;
+            -webkit-transform:rotate(360deg);
+            border-color: transparent transparent transparent black;
           }
         }
         li{
@@ -229,6 +242,7 @@ body{
           text-align: center;
           white-space: nowrap;
           vertical-align: middle;
+          height: 100%;
           cursor: pointer;
           background-color: transparent;
           display: inline;
@@ -246,12 +260,9 @@ body{
             color: black;
             font-weight: bold;
             text-decoration: none;
-            padding: 10px 10px;
+            padding: 6px 3px;
             @media #{$nine-hundred} {
               padding: 10px 26px;
-            }
-            @media #{$mobile-only} {
-              padding: 6px 3px;
             }
             display: block;
             width: 100%;
