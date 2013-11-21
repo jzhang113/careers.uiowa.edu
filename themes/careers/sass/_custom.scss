@@ -241,22 +241,22 @@ $responsive-nav: "only screen and (min-width : 40em)"; //This media query is cop
 // Social Media Icons
 //
 @mixin social-icons {
-  .menu-item-1357 a{ // Twitter
+  .menu-item-1078 a{ // Twitter
     background: url('images/social/twitter-icon.png') no-repeat;
   }
-  .menu-item-1360 a{ // YouTube
+  .menu-item-1080 a{ // YouTube
     background: url('images/social/youtube-icon.png') no-repeat;
   }
-  .menu-item-1356 a{ // Facebook
+  .menu-item-1079 a{ // Facebook
     background: url('images/social/facebook-icon.png') no-repeat;
   }
-  .menu-item-1358 a{ // LinkedIn
+  .menu-item-1228 a{ // LinkedIn
     background: url('images/social/linkedin-icon.png') no-repeat;
   }
-  .menu-item-1359 a{ // Pinterest
+  .menu-item-1229 a{ // Pinterest
     background: url('images/social/pintrest-icon.png') no-repeat;
   }
-  .menu-item-1361 a{ // Instagram
+  .menu-item-1230 a{ // Instagram
     background: url('images/social/instagram-icon.png') no-repeat;
   }
 }

@@ -256,16 +256,16 @@ body a:hover {
   color: #333;
 }
 /* line 189, ../sass/local.styles.scss */
-#header .region-header .block-menu-social-media .menu-item-1356, #header .region-header .block-menu-social-media .menu-item-1357,
-#header .region-header .block-menu-social-media .menu-item-1358, #header .region-header .block-menu-social-media .menu-item-1359,
-#header .region-header .block-menu-social-media .menu-item-1360, #header .region-header .block-menu-social-media .menu-item-1361 {
+#header .region-header .block-menu-social-media .menu-item-1079, #header .region-header .block-menu-social-media .menu-item-1078,
+#header .region-header .block-menu-social-media .menu-item-1228, #header .region-header .block-menu-social-media .menu-item-1229,
+#header .region-header .block-menu-social-media .menu-item-1080, #header .region-header .block-menu-social-media .menu-item-1230 {
   padding: 0px;
   margin: 0px 3px;
 }
 /* line 192, ../sass/local.styles.scss */
-#header .region-header .block-menu-social-media .menu-item-1356 a, #header .region-header .block-menu-social-media .menu-item-1357 a,
-#header .region-header .block-menu-social-media .menu-item-1358 a, #header .region-header .block-menu-social-media .menu-item-1359 a,
-#header .region-header .block-menu-social-media .menu-item-1360 a, #header .region-header .block-menu-social-media .menu-item-1361 a {
+#header .region-header .block-menu-social-media .menu-item-1079 a, #header .region-header .block-menu-social-media .menu-item-1078 a,
+#header .region-header .block-menu-social-media .menu-item-1228 a, #header .region-header .block-menu-social-media .menu-item-1229 a,
+#header .region-header .block-menu-social-media .menu-item-1080 a, #header .region-header .block-menu-social-media .menu-item-1230 a {
   display: block;
   overflow: hidden;
   background-position: top;
@@ -275,34 +275,34 @@ body a:hover {
   text-indent: 9999px;
 }
 /* line 200, ../sass/local.styles.scss */
-#header .region-header .block-menu-social-media .menu-item-1356 a:hover, #header .region-header .block-menu-social-media .menu-item-1357 a:hover,
-#header .region-header .block-menu-social-media .menu-item-1358 a:hover, #header .region-header .block-menu-social-media .menu-item-1359 a:hover,
-#header .region-header .block-menu-social-media .menu-item-1360 a:hover, #header .region-header .block-menu-social-media .menu-item-1361 a:hover {
+#header .region-header .block-menu-social-media .menu-item-1079 a:hover, #header .region-header .block-menu-social-media .menu-item-1078 a:hover,
+#header .region-header .block-menu-social-media .menu-item-1228 a:hover, #header .region-header .block-menu-social-media .menu-item-1229 a:hover,
+#header .region-header .block-menu-social-media .menu-item-1080 a:hover, #header .region-header .block-menu-social-media .menu-item-1230 a:hover {
   background-color: transparent;
   background-position: bottom;
 }
 /* line 244, ../sass/_custom.scss */
-#header .region-header .block-menu-social-media .menu-item-1357 a {
+#header .region-header .block-menu-social-media .menu-item-1078 a {
   background: url("images/social/twitter-icon.png") no-repeat;
 }
 /* line 247, ../sass/_custom.scss */
-#header .region-header .block-menu-social-media .menu-item-1360 a {
+#header .region-header .block-menu-social-media .menu-item-1080 a {
   background: url("images/social/youtube-icon.png") no-repeat;
 }
 /* line 250, ../sass/_custom.scss */
-#header .region-header .block-menu-social-media .menu-item-1356 a {
+#header .region-header .block-menu-social-media .menu-item-1079 a {
   background: url("images/social/facebook-icon.png") no-repeat;
 }
 /* line 253, ../sass/_custom.scss */
-#header .region-header .block-menu-social-media .menu-item-1358 a {
+#header .region-header .block-menu-social-media .menu-item-1228 a {
   background: url("images/social/linkedin-icon.png") no-repeat;
 }
 /* line 256, ../sass/_custom.scss */
-#header .region-header .block-menu-social-media .menu-item-1359 a {
+#header .region-header .block-menu-social-media .menu-item-1229 a {
   background: url("images/social/pintrest-icon.png") no-repeat;
 }
 /* line 259, ../sass/_custom.scss */
-#header .region-header .block-menu-social-media .menu-item-1361 a {
+#header .region-header .block-menu-social-media .menu-item-1230 a {
   background: url("images/social/instagram-icon.png") no-repeat;
 }
 /* line 210, ../sass/local.styles.scss */
@@ -1337,40 +1337,40 @@ body a:hover {
   color: white;
 }
 /* line 244, ../sass/_custom.scss */
-.region-footer #block-menu-block-5 .menu-item-1357 a {
+.region-footer #block-menu-block-5 .menu-item-1078 a {
   background: url("images/social/twitter-icon.png") no-repeat;
 }
 /* line 247, ../sass/_custom.scss */
-.region-footer #block-menu-block-5 .menu-item-1360 a {
+.region-footer #block-menu-block-5 .menu-item-1080 a {
   background: url("images/social/youtube-icon.png") no-repeat;
 }
 /* line 250, ../sass/_custom.scss */
-.region-footer #block-menu-block-5 .menu-item-1356 a {
+.region-footer #block-menu-block-5 .menu-item-1079 a {
   background: url("images/social/facebook-icon.png") no-repeat;
 }
 /* line 253, ../sass/_custom.scss */
-.region-footer #block-menu-block-5 .menu-item-1358 a {
+.region-footer #block-menu-block-5 .menu-item-1228 a {
   background: url("images/social/linkedin-icon.png") no-repeat;
 }
 /* line 256, ../sass/_custom.scss */
-.region-footer #block-menu-block-5 .menu-item-1359 a {
+.region-footer #block-menu-block-5 .menu-item-1229 a {
   background: url("images/social/pintrest-icon.png") no-repeat;
 }
 /* line 259, ../sass/_custom.scss */
-.region-footer #block-menu-block-5 .menu-item-1361 a {
+.region-footer #block-menu-block-5 .menu-item-1230 a {
   background: url("images/social/instagram-icon.png") no-repeat;
 }
 /* line 546, ../sass/_local.scss */
-.region-footer #block-menu-block-5 .menu-item-1356, .region-footer #block-menu-block-5 .menu-item-1357,
-.region-footer #block-menu-block-5 .menu-item-1358, .region-footer #block-menu-block-5 .menu-item-1359,
-.region-footer #block-menu-block-5 .menu-item-1360, .region-footer #block-menu-block-5 .menu-item-1361 {
+.region-footer #block-menu-block-5 .menu-item-1079, .region-footer #block-menu-block-5 .menu-item-1078,
+.region-footer #block-menu-block-5 .menu-item-1228, .region-footer #block-menu-block-5 .menu-item-1229,
+.region-footer #block-menu-block-5 .menu-item-1080, .region-footer #block-menu-block-5 .menu-item-1230 {
   padding: 0px;
   margin: 0px 3px;
 }
 /* line 549, ../sass/_local.scss */
-.region-footer #block-menu-block-5 .menu-item-1356 a, .region-footer #block-menu-block-5 .menu-item-1357 a,
-.region-footer #block-menu-block-5 .menu-item-1358 a, .region-footer #block-menu-block-5 .menu-item-1359 a,
-.region-footer #block-menu-block-5 .menu-item-1360 a, .region-footer #block-menu-block-5 .menu-item-1361 a {
+.region-footer #block-menu-block-5 .menu-item-1079 a, .region-footer #block-menu-block-5 .menu-item-1078 a,
+.region-footer #block-menu-block-5 .menu-item-1228 a, .region-footer #block-menu-block-5 .menu-item-1229 a,
+.region-footer #block-menu-block-5 .menu-item-1080 a, .region-footer #block-menu-block-5 .menu-item-1230 a {
   display: block;
   overflow: hidden;
   background-position: bottom;
@@ -1380,9 +1380,9 @@ body a:hover {
   text-indent: 9999px;
 }
 /* line 557, ../sass/_local.scss */
-.region-footer #block-menu-block-5 .menu-item-1356 a:hover, .region-footer #block-menu-block-5 .menu-item-1357 a:hover,
-.region-footer #block-menu-block-5 .menu-item-1358 a:hover, .region-footer #block-menu-block-5 .menu-item-1359 a:hover,
-.region-footer #block-menu-block-5 .menu-item-1360 a:hover, .region-footer #block-menu-block-5 .menu-item-1361 a:hover {
+.region-footer #block-menu-block-5 .menu-item-1079 a:hover, .region-footer #block-menu-block-5 .menu-item-1078 a:hover,
+.region-footer #block-menu-block-5 .menu-item-1228 a:hover, .region-footer #block-menu-block-5 .menu-item-1229 a:hover,
+.region-footer #block-menu-block-5 .menu-item-1080 a:hover, .region-footer #block-menu-block-5 .menu-item-1230 a:hover {
   background-color: transparent;
   background-position: top;
 }
