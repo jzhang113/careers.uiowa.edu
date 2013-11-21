@@ -62,7 +62,7 @@ function audience_taxonomy_panelizer_defaults() {
   $panelizer->link_to_entity = FALSE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'geary';
+  $display->layout = 'boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -80,7 +80,7 @@ function audience_taxonomy_panelizer_defaults() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'header';
+    $pane->panel = 'contentmain';
     $pane->type = 'term_description';
     $pane->subtype = 'term_description';
     $pane->shown = TRUE;
@@ -99,28 +99,7 @@ function audience_taxonomy_panelizer_defaults() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['header'][0] = 'new-1';
-    $pane = new stdClass();
-    $pane->pid = 'new-2';
-    $pane->panel = 'header';
-    $pane->type = 'block';
-    $pane->subtype = 'menu_block-5';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['header'][1] = 'new-2';
+    $display->panels['contentmain'][0] = 'new-1';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
