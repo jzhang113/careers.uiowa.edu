@@ -374,6 +374,7 @@ body a:hover {
     left: 100px;
     position: absolute;
     font-size: 0px;
+    color: black;
     line-height: 0px;
     width: 0px;
     height: 0px;
@@ -383,7 +384,7 @@ body a:hover {
     border-color: transparent transparent transparent black;
   }
 }
-/* line 267, ../sass/local.styles.scss */
+/* line 268, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li {
   list-style: none;
   list-style-image: none;
@@ -397,19 +398,19 @@ body a:hover {
   display: inline;
   float: left;
 }
-/* line 279, ../sass/local.styles.scss */
+/* line 280, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li ul {
   display: none;
 }
-/* line 282, ../sass/local.styles.scss */
+/* line 283, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover {
   background-color: black;
 }
-/* line 284, ../sass/local.styles.scss */
+/* line 285, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover a {
   color: white;
 }
-/* line 288, ../sass/local.styles.scss */
+/* line 289, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a {
   color: black;
   font-weight: bold;
@@ -420,36 +421,36 @@ body a:hover {
   height: 100%;
 }
 @media only screen and (min-width: 899px) {
-  /* line 288, ../sass/local.styles.scss */
+  /* line 289, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu li a {
     padding: 10px 26px;
   }
 }
-/* line 299, ../sass/local.styles.scss */
+/* line 300, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a:hover {
   text-decoration: none;
   color: white;
 }
 
-/* line 312, ../sass/local.styles.scss */
+/* line 313, ../sass/local.styles.scss */
 #content-wrapper, #header-wrapper,
 #breadcrumb-wrapper, #content-header-wrapper,
 #messages-help-wrapper, #tertiary-content-wrapper, #footer-wrapper {
   background-color: #ddd;
 }
 
-/* line 316, ../sass/local.styles.scss */
+/* line 317, ../sass/local.styles.scss */
 #main-content, #main-content-header, #breadcrumb, #messages, .region-tertiary-content, #columns {
   background: white;
 }
 
-/* line 320, ../sass/local.styles.scss */
+/* line 321, ../sass/local.styles.scss */
 #breadcrumb, #messages {
   margin: 0px;
   padding: 10px;
 }
 
-/* line 326, ../sass/local.styles.scss */
+/* line 327, ../sass/local.styles.scss */
 #content .pane-title, #content .block-title {
   background-color: transparent;
   color: #333;
@@ -457,26 +458,26 @@ body a:hover {
   border-bottom: 0px;
   margin: 0px;
 }
-/* line 336, ../sass/local.styles.scss */
+/* line 337, ../sass/local.styles.scss */
 #content .block-content {
   padding: 10px;
 }
-/* line 342, ../sass/local.styles.scss */
+/* line 343, ../sass/local.styles.scss */
 #content .block-main .no-title .block-inner {
   border: 0px;
 }
 
-/* line 351, ../sass/local.styles.scss */
+/* line 352, ../sass/local.styles.scss */
 #content .pane-node .block-content {
   padding: 5px;
 }
 
-/* line 357, ../sass/local.styles.scss */
+/* line 358, ../sass/local.styles.scss */
 .field-label {
   font-size: 1.8rem;
 }
 
-/* line 361, ../sass/local.styles.scss */
+/* line 362, ../sass/local.styles.scss */
 .flexslider {
   margin: 0px;
   border: 0px;
@@ -487,20 +488,20 @@ body a:hover {
   box-shadow: white 0px 0px 0px;
   /* Flexslider Pager */
 }
-/* line 362, ../sass/local.styles.scss */
+/* line 363, ../sass/local.styles.scss */
 .flexslider ul {
   padding: 0px;
 }
-/* line 370, ../sass/local.styles.scss */
+/* line 371, ../sass/local.styles.scss */
 .flexslider a {
   color: white;
 }
-/* line 372, ../sass/local.styles.scss */
+/* line 373, ../sass/local.styles.scss */
 .flexslider a:hover {
   color: #9c8345;
   text-decoration: none;
 }
-/* line 377, ../sass/local.styles.scss */
+/* line 378, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-image h3 {
   display: block;
   bottom: 0px;
@@ -510,34 +511,34 @@ body a:hover {
   background: #333;
   height: 38px;
 }
-/* line 387, ../sass/local.styles.scss */
+/* line 388, ../sass/local.styles.scss */
 .flexslider .flex-control-nav {
   width: auto;
   bottom: -10px;
   right: 10px;
 }
-/* line 392, ../sass/local.styles.scss */
+/* line 393, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-image .field-content {
   padding-bottom: 5px;
 }
-/* line 395, ../sass/local.styles.scss */
+/* line 396, ../sass/local.styles.scss */
 .flexslider .flex-control-paging li a {
   background-color: whitesmoke;
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 400, ../sass/local.styles.scss */
+/* line 401, ../sass/local.styles.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background-color: #687893;
 }
 
-/* line 405, ../sass/local.styles.scss */
+/* line 406, ../sass/local.styles.scss */
 .view-footer a {
   width: 100%;
   text-align: right;
   float: right;
 }
-/* line 409, ../sass/local.styles.scss */
+/* line 410, ../sass/local.styles.scss */
 .view-footer a:after {
   margin-left: 5px;
   font-family: FontAwesome;
@@ -550,12 +551,12 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 413, ../sass/local.styles.scss */
+/* line 414, ../sass/local.styles.scss */
 .view-footer a:hover {
   text-decoration: none;
 }
 
-/* line 419, ../sass/local.styles.scss */
+/* line 420, ../sass/local.styles.scss */
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -572,7 +573,7 @@ body a:hover {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-/* line 434, ../sass/local.styles.scss */
+/* line 435, ../sass/local.styles.scss */
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
   font-family: "Fjalla One", sans-serif;
@@ -594,51 +595,51 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 454, ../sass/local.styles.scss */
+/* line 455, ../sass/local.styles.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #9c8345;
   color: white;
   text-decoration: none;
 }
 
-/* line 460, ../sass/local.styles.scss */
+/* line 461, ../sass/local.styles.scss */
 .front .button {
   float: right;
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 467, ../sass/local.styles.scss */
+  /* line 468, ../sass/local.styles.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 472, ../sass/local.styles.scss */
+/* line 473, ../sass/local.styles.scss */
 .region-footer {
   position: relative;
   font-size: 14px;
   background-color: #eae3d2;
 }
-/* line 476, ../sass/local.styles.scss */
+/* line 477, ../sass/local.styles.scss */
 .region-footer a {
   color: black;
   font-family: "Neuton", serif;
 }
-/* line 479, ../sass/local.styles.scss */
+/* line 480, ../sass/local.styles.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 483, ../sass/local.styles.scss */
+/* line 484, ../sass/local.styles.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 485, ../sass/local.styles.scss */
+/* line 486, ../sass/local.styles.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 491, ../sass/local.styles.scss */
+/* line 492, ../sass/local.styles.scss */
 .region-footer h2 {
   font-size: 1.8rem;
 }
