@@ -381,7 +381,7 @@ body a:hover {
     border-style: inset;
     border-width: 25px 0 25px 20px;
     -webkit-transform: rotate(360deg);
-    border-color: transparent transparent transparent black;
+    border-color: transparent transparent transparent #000000;
   }
 }
 /* line 268, ../sass/local.styles.scss */
