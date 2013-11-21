@@ -25,7 +25,6 @@ body{
   padding-left: 10px;
 }
 
-// Move Front Page Title off-screen to hide but maintain accessibility
 .front #page-title{
   @include offscreen;
 }
@@ -44,11 +43,14 @@ body{
   background-size:cover;
   background-position:center;
   #branding {
-    padding-right: 20px;
-    //background-color: rgb(0,0,0); // Old browser fallback
-    //background-color: rgba(0,0,0,0.5);
+    // Branding Background If Needed
+    // background-color: rgb(0,0,0); // Old browser fallback
+    // background-color: rgba(0,0,0,0.5);
     position: absolute;
-    bottom: 45px;
+    bottom: 55px;
+    @media #{$responsive-nav} {
+      bottom: 45px;
+    }
     #logo{
       @media #{$responsive-nav} {
         padding-left: 20px;
@@ -106,13 +108,18 @@ body{
 
       #nav{
         float: right;
+        width: 100%;
         @media #{$responsive-nav} {
+          width: auto;
           background-color:rgb(0,0,0); // Old Browser Fall Back
           background-color:rgba(0,0,0,0.7);
         }
         a, a:hover, a:active, a:visited{
           color: white;
           text-decoration: none;
+          display: block;
+          width: 100%;
+          height: 100%;
         }
         ul{
           text-align: right;
@@ -134,48 +141,70 @@ body{
             color: #333;
           }
         }
-        // Social Media Icons
-        @media #{$responsive-nav} {
-          .menu-item-1078, .menu-item-1079,
-          .menu-item-1080, .menu-item-1228,
-          .menu-item-1229, .menu-item-1230 {
-            padding: 0px;
-            margin: 0px 3px;
-            a{
-              display: block;
-              overflow: hidden;
-              background-position:top;
-              width: 30px;
-              height: 30px;
-              margin-bottom: -10px;
-              text-indent: 9999px;
-              &:hover {
-                background-color: transparent;
-                background-position:bottom;
-              }
-            }
-          }
-          .menu-item-1078 a{ // Twitter
-            background: url('images/social/twitter-icon.png') no-repeat;
-          }
-          .menu-item-1080 a{ // YouTube
-            background: url('images/social/youtube-icon.png') no-repeat;
-          }
-          .menu-item-1079 a{ // Facebook
-            background: url('images/social/facebook-icon.png') no-repeat;
-          }
-          .menu-item-1228 a{ // LinkedIn
-            background: url('images/social/linkedin-icon.png') no-repeat;
-          }
-          .menu-item-1229 a{ // Pinterest
-            background: url('images/social/pintrest-icon.png') no-repeat;
-          }
-          .menu-item-1230 a{ // Instagram
-            background: url('images/social/instagram-icon.png') no-repeat;
-          }
-        } // END Social Media Icons
       }
     } // END Main Menu - Responsive Navigation
+
+    // Social Media Menu - Header Region
+    .block-menu-social-media{
+      position: absolute;
+      width: 100%;
+      bottom: 35px;
+      @media #{$responsive-nav} {
+      position: relative;
+      width: auto;
+      bottom: 0;
+      }
+      float: right;
+      margin: 0;
+      background-color:rgb(0,0,0); // Old Browser Fall Back
+      background-color:rgba(0,0,0,0.7);
+
+        a, a:hover, a:active, a:visited{
+          color: white;
+          text-decoration: none;
+        }
+        ul{
+          text-align: center;
+          @media #{$responsive-nav} {
+            text-align: right;
+          }
+          margin: 0;
+          padding: 0;
+          height: 30px;
+        }
+        li{
+          padding: 6px 20px 6px 6px;
+          display: inline-block;
+          width: auto;
+          padding: 6px;
+        }
+        li:hover {
+          background-color: white;
+          a, a:hover, a:active, a:visited{
+            color: #333;
+          }
+        }
+      .menu-item-1356, .menu-item-1357,
+      .menu-item-1358, .menu-item-1359,
+      .menu-item-1360, .menu-item-1361 {
+        padding: 0px;
+        margin: 0px 3px;
+        a{
+          display: block;
+          overflow: hidden;
+          background-position:top;
+          width: 30px;
+          height: 30px;
+          margin-bottom: -10px;
+          text-indent: 9999px;
+          &:hover {
+            background-color: transparent;
+            background-position:bottom;
+          }
+        }
+      }
+      @include social-icons;
+    } // END Social Media Menu - Header Region
 
     // Audience Menu - Header Region
     .block-menu-audience-menu{
@@ -280,7 +309,7 @@ body{
 
 #content-wrapper, #header-wrapper, 
 #breadcrumb-wrapper, #content-header-wrapper, 
-#messages-help-wrapper, #tertiary-content-wrapper {
+#messages-help-wrapper, #tertiary-content-wrapper, #footer-wrapper {
   background-color: #ddd;
 }
 
@@ -434,7 +463,6 @@ body{
 
 // FOOTER
 #footer-wrapper {
-  background-color: $tan;
   @media #{$responsive-nav} {
     .block {
       float: left;
@@ -444,6 +472,7 @@ body{
 .region-footer{
   position: relative;
   font-size: 14px;
+  background-color: $tan;
   a{
     color: black;
     font-family: $serif;

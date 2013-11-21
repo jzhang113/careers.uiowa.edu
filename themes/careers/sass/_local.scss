@@ -454,17 +454,22 @@
 	}
 }
 
-// Basic Page Sub Links
-.node-type-page{
-	.pane-menu-block-4{
-		background-color: $ultralight;
-		border-bottom: 2px solid white;
-		ul {
-			margin: 0px;
-			li{
-				list-style: none;
-				font-size: 1.6rem;
-			}
+// Sub Links
+#block-menu-block-4{
+	background-color: $ultralight;
+	ul {
+		margin: 0px;
+		li{
+			list-style: none;
+			font-size: 1.6rem;
+		}
+		li.collapsed {
+			&:before {
+				@include icon($fa-var-chevron-right, $color: $gold, $size: 0.8em);
+				position: absolute;
+				left: 8px;
+				margin-top: 2px;
+      }
 		}
 	}
 }
@@ -472,28 +477,89 @@
 .region-footer{
   #block-menu-menu-quick-links{  // Main Menu Footer Block
     @media #{$responsive-nav} {
-      width: 50%;
+    	width: 50%;
+    	ul {
+    		@include column-count(2);
+    	}
     }
   }
   #block-menu-block-3 { // Audience Menu Footer Block
+  	
     @media #{$responsive-nav} {
-      min-width: 110px;
+    	width: 25%;
+      //min-width: 110px;
     }
   }
-  .block-menu-quick-links {
+  /*.block-menu-quick-links {
     ul{
       @media #{$responsive-nav} {
         @include column-count(2);
       }
     }
-  }
+  }*/
   #block-block-2{  // Location and Contact Information
     padding: 0 0 0 15px;
     margin-top: 10px;
     @media #{$responsive-nav} {
-      float:right;
+      width: 25%;
+      text-align: right;
       padding: 0 15px 0 0;
     }
+    
+  }
+  #block-menu-block-5 { // Social Media Links
+  	display: block;
+  	@media #{$responsive-nav} {
+      float: right;
+    }
+      padding: 3px 3px 8px 4px;
+
+        a, a:hover, a:active, a:visited{
+          color: black;
+          text-decoration: none;
+        }
+        ul{
+        	@media #{$responsive-nav} {
+          text-align: right;
+        }
+          margin: 0;
+          padding: 0;
+        }
+        li{
+          padding: 6px 20px 6px 6px;
+          display: inline-block;
+          width: auto;
+          padding: 6px;
+          ul {
+            display:none;
+          }
+        }
+        li:hover {
+          background-color: white;
+          a, a:hover, a:active, a:visited{
+            color: white;
+          }
+        }
+      @include social-icons;
+      .menu-item-1356, .menu-item-1357,
+      .menu-item-1358, .menu-item-1359,
+      .menu-item-1360, .menu-item-1361 {
+        padding: 0px;
+        margin: 0px 3px;
+        a{
+          display: block;
+          overflow: hidden;
+          background-position: bottom;
+          width: 30px;
+          height: 30px;
+          margin-bottom: -10px;
+          text-indent: 9999px;
+          &:hover {
+            background-color: transparent;
+            background-position: top;
+          }
+        }
+      }
   }
 }
 
