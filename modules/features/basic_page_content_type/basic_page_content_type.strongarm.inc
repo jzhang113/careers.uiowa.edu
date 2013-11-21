@@ -58,7 +58,8 @@ function basic_page_content_type_strongarm() {
   $strongarm->name = 'menu_options_page';
   $strongarm->value = array(
     0 => 'menu-audience-menu',
-    1 => 'main-menu',
+    1 => 'menu-quick-links',
+    2 => 'menu-site-links',
   );
   $export['menu_options_page'] = $strongarm;
 
@@ -66,7 +67,7 @@ function basic_page_content_type_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_page';
-  $strongarm->value = 'main-menu:0';
+  $strongarm->value = 'menu-quick-links:0';
   $export['menu_parent_page'] = $strongarm;
 
   $strongarm = new stdClass();
