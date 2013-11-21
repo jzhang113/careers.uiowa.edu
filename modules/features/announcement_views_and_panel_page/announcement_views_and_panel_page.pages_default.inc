@@ -16,7 +16,10 @@ function announcement_views_and_panel_page_default_page_manager_pages() {
   $page->admin_title = 'Announcements';
   $page->admin_description = '';
   $page->path = 'announcements/!month';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array(
     'month' => array(
