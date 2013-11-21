@@ -1,0 +1,11 @@
+name = Career Center Navigation
+core = 7.x
+package = Careers
+dependencies[] = block
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = menu-audience-menu
+features[menu_custom][] = menu-quick-links
+features[menu_custom][] = menu-site-links
+features[menu_custom][] = menu-social-media
