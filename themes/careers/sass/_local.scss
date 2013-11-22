@@ -520,54 +520,44 @@
   	@media #{$responsive-nav} {
       float: right;
     }
-      padding: 3px 3px 8px 4px;
-
-        a, a:hover, a:active, a:visited{
-          color: black;
-          text-decoration: none;
-        }
-        ul{
-        	@media #{$responsive-nav} {
-          text-align: right;
-        }
-          margin: 0;
-          padding: 0;
-        }
-        li{
-          padding: 6px 20px 6px 6px;
-          display: inline-block;
-          width: auto;
-          padding: 6px;
-          ul {
-            display:none;
-          }
-        }
-        li:hover {
-          background-color: white;
-          a, a:hover, a:active, a:visited{
-            color: white;
-          }
-        }
-      @include social-icons;
-      .menu-item-1079, .menu-item-1078,
-      .menu-item-1228, .menu-item-1229,
-      .menu-item-1080, .menu-item-1230 {
-        padding: 0px;
-        margin: 0px 3px;
-        a{
-          display: block;
-          overflow: hidden;
-          background-position: bottom;
-          width: 30px;
-          height: 30px;
-          margin-bottom: -10px;
-          text-indent: 9999px;
-          &:hover {
-            background-color: transparent;
-            background-position: top;
-          }
+    padding: 3px 3px 8px 4px;
+    ul{
+    	@media #{$responsive-nav} {
+      text-align: right;
+    }
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      padding: 6px 20px 6px 6px;
+      display: inline-block;
+      width: auto;
+      padding: 6px;
+      ul {
+        display:none;
+      }
+    }
+    @include social-icons;
+    .menu-item-1079, .menu-item-1078,
+    .menu-item-1228, .menu-item-1229,
+    .menu-item-1080, .menu-item-1230 {
+      padding: 0px;
+      margin: 0px 3px;
+      a{
+        display: block;
+        overflow: hidden;
+        background-position: bottom;
+        width: 30px;
+        height: 30px;
+        margin-bottom: -10px;
+        text-indent: 9999px;
+        font-size: 0px;
+        &:hover {
+          background-color: transparent;
+          background-position: top;
         }
       }
+    }
   }
 }
 
