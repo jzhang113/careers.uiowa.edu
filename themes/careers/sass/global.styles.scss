@@ -718,7 +718,7 @@ ul.menu {
       &:visited {}
 
       &:active,
-      &.active {}
+      &.active { color: $gold;}
 
       &:hover,
       &:focus {}

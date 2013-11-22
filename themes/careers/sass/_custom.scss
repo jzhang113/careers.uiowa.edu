@@ -260,3 +260,17 @@ $responsive-nav: "only screen and (min-width : 40em)"; //This media query is cop
     background: url('images/social/instagram-icon.png') no-repeat;
   }
 }
+
+//
+//  Angle Bullet
+//
+@mixin angle-bullet {
+  &:before {
+    @include icon($fa-var-angle-right, $color: $gold, $size: 1.0em);
+    display: inline-block;
+    width: 10px;
+    padding-right: 2px;
+  }
+}
+
+

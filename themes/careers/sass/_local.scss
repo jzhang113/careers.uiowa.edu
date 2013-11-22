@@ -336,12 +336,7 @@
 		li{
 			font-size: 1.8rem;
 			list-style:none;
-			&:before {
-				@include icon($fa-var-angle-right, $color: $gold, $size: 1.0em);
-	        	display: block;
-				float: left;
-				padding-right: 5px;
-			}
+			@include angle-bullet;
 		}
 	}
 }
@@ -459,17 +454,34 @@
 	background-color: $ultralight;
 	ul {
 		margin: 0px;
+		span.nolink {
+			font-weight: bold;
+		}
 		li{
 			list-style: none;
 			font-size: 1.6rem;
-		}
-		li.collapsed {
-			&:before {
-				@include icon($fa-var-chevron-right, $color: $gold, $size: 0.8em);
-				position: absolute;
-				left: 8px;
-				margin-top: 2px;
-      }
+			.collapsed a{
+				@include angle-bullet;
+      	&:hover{
+      		@include angle-bullet;
+      		&:before {
+      			text-decoration: none;
+      		}
+				}
+			}
+			.expanded a.active{
+		    @include angle-bullet;
+		    &:before {
+					@include icon($fa-var-angle-down, $color: $gold, $size: 1.0em);
+				}
+      	&:hover{
+   				@include angle-bullet;
+      		&:before {
+      			@include icon($fa-var-angle-down, $color: $gold, $size: 1.0em);
+      			text-decoration: none;
+      		}
+				}
+			}
 		}
 	}
 }
