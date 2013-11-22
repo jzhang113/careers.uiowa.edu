@@ -264,9 +264,17 @@ $responsive-nav: "only screen and (min-width : 40em)"; //This media query is cop
 //
 //  Angle Bullet
 //
-@mixin angle-bullet {
+@mixin angle-bullet-right {
   &:before {
     @include icon($fa-var-angle-right, $color: $gold, $size: 1.0em);
+    display: inline-block;
+    width: 10px;
+    padding-right: 2px;
+  }
+}
+@mixin angle-bullet-down {
+  &:before {
+    @include icon($fa-var-angle-down, $color: $gold, $size: 1.0em);
     display: inline-block;
     width: 10px;
     padding-right: 2px;

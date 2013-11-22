@@ -1270,22 +1270,7 @@ body a:hover {
 #block-menu-block-4 ul li .collapsed a:hover:before {
   text-decoration: none;
 }
-/* line 268, ../sass/_custom.scss */
-#block-menu-block-4 ul li .expanded a.active:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f105";
-  font-size: 1em;
-  color: #9c8345;
-  display: inline-block;
-  width: 10px;
-  padding-right: 2px;
-}
-/* line 474, ../sass/_local.scss */
+/* line 276, ../sass/_custom.scss */
 #block-menu-block-4 ul li .expanded a.active:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1296,23 +1281,11 @@ body a:hover {
   content: "\f107";
   font-size: 1em;
   color: #9c8345;
-}
-/* line 268, ../sass/_custom.scss */
-#block-menu-block-4 ul li .expanded a.active:hover:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f105";
-  font-size: 1em;
-  color: #9c8345;
   display: inline-block;
   width: 10px;
   padding-right: 2px;
 }
-/* line 479, ../sass/_local.scss */
+/* line 276, ../sass/_custom.scss */
 #block-menu-block-4 ul li .expanded a.active:hover:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1323,10 +1296,16 @@ body a:hover {
   content: "\f107";
   font-size: 1em;
   color: #9c8345;
+  display: inline-block;
+  width: 10px;
+  padding-right: 2px;
+}
+/* line 476, ../sass/_local.scss */
+#block-menu-block-4 ul li .expanded a.active:hover:before {
   text-decoration: none;
 }
 
-/* line 489, ../sass/_local.scss */
+/* line 485, ../sass/_local.scss */
 .region-footer {
   /*.block-menu-quick-links {
     ul{
@@ -1337,11 +1316,11 @@ body a:hover {
   }*/
 }
 @media only screen and (min-width: 40em) {
-  /* line 490, ../sass/_local.scss */
+  /* line 486, ../sass/_local.scss */
   .region-footer #block-menu-menu-quick-links {
     width: 50%;
   }
-  /* line 493, ../sass/_local.scss */
+  /* line 489, ../sass/_local.scss */
   .region-footer #block-menu-menu-quick-links ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -1351,67 +1330,67 @@ body a:hover {
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 498, ../sass/_local.scss */
+  /* line 494, ../sass/_local.scss */
   .region-footer #block-menu-block-3 {
     width: 25%;
   }
 }
-/* line 512, ../sass/_local.scss */
+/* line 508, ../sass/_local.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 512, ../sass/_local.scss */
+  /* line 508, ../sass/_local.scss */
   .region-footer #block-block-2 {
     width: 25%;
     text-align: right;
     padding: 0 15px 0 0;
   }
 }
-/* line 522, ../sass/_local.scss */
+/* line 518, ../sass/_local.scss */
 .region-footer #block-menu-block-5 {
   display: block;
   padding: 3px 3px 8px 4px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 522, ../sass/_local.scss */
+  /* line 518, ../sass/_local.scss */
   .region-footer #block-menu-block-5 {
     float: right;
   }
 }
-/* line 529, ../sass/_local.scss */
+/* line 525, ../sass/_local.scss */
 .region-footer #block-menu-block-5 a, .region-footer #block-menu-block-5 a:hover, .region-footer #block-menu-block-5 a:active, .region-footer #block-menu-block-5 a:visited {
   color: black;
   text-decoration: none;
 }
-/* line 533, ../sass/_local.scss */
+/* line 529, ../sass/_local.scss */
 .region-footer #block-menu-block-5 ul {
   margin: 0;
   padding: 0;
 }
 @media only screen and (min-width: 40em) {
-  /* line 533, ../sass/_local.scss */
+  /* line 529, ../sass/_local.scss */
   .region-footer #block-menu-block-5 ul {
     text-align: right;
   }
 }
-/* line 540, ../sass/_local.scss */
+/* line 536, ../sass/_local.scss */
 .region-footer #block-menu-block-5 li {
   padding: 6px 20px 6px 6px;
   display: inline-block;
   width: auto;
   padding: 6px;
 }
-/* line 545, ../sass/_local.scss */
+/* line 541, ../sass/_local.scss */
 .region-footer #block-menu-block-5 li ul {
   display: none;
 }
-/* line 549, ../sass/_local.scss */
+/* line 545, ../sass/_local.scss */
 .region-footer #block-menu-block-5 li:hover {
   background-color: white;
 }
-/* line 551, ../sass/_local.scss */
+/* line 547, ../sass/_local.scss */
 .region-footer #block-menu-block-5 li:hover a, .region-footer #block-menu-block-5 li:hover a:hover, .region-footer #block-menu-block-5 li:hover a:active, .region-footer #block-menu-block-5 li:hover a:visited {
   color: white;
 }
@@ -1439,14 +1418,14 @@ body a:hover {
 .region-footer #block-menu-block-5 .menu-item-1230 a {
   background: url("images/social/instagram-icon.png") no-repeat;
 }
-/* line 558, ../sass/_local.scss */
+/* line 554, ../sass/_local.scss */
 .region-footer #block-menu-block-5 .menu-item-1079, .region-footer #block-menu-block-5 .menu-item-1078,
 .region-footer #block-menu-block-5 .menu-item-1228, .region-footer #block-menu-block-5 .menu-item-1229,
 .region-footer #block-menu-block-5 .menu-item-1080, .region-footer #block-menu-block-5 .menu-item-1230 {
   padding: 0px;
   margin: 0px 3px;
 }
-/* line 561, ../sass/_local.scss */
+/* line 557, ../sass/_local.scss */
 .region-footer #block-menu-block-5 .menu-item-1079 a, .region-footer #block-menu-block-5 .menu-item-1078 a,
 .region-footer #block-menu-block-5 .menu-item-1228 a, .region-footer #block-menu-block-5 .menu-item-1229 a,
 .region-footer #block-menu-block-5 .menu-item-1080 a, .region-footer #block-menu-block-5 .menu-item-1230 a {
@@ -1458,7 +1437,7 @@ body a:hover {
   margin-bottom: -10px;
   text-indent: 9999px;
 }
-/* line 569, ../sass/_local.scss */
+/* line 565, ../sass/_local.scss */
 .region-footer #block-menu-block-5 .menu-item-1079 a:hover, .region-footer #block-menu-block-5 .menu-item-1078 a:hover,
 .region-footer #block-menu-block-5 .menu-item-1228 a:hover, .region-footer #block-menu-block-5 .menu-item-1229 a:hover,
 .region-footer #block-menu-block-5 .menu-item-1080 a:hover, .region-footer #block-menu-block-5 .menu-item-1230 a:hover {
@@ -1466,7 +1445,7 @@ body a:hover {
   background-position: top;
 }
 
-/* line 580, ../sass/_local.scss */
+/* line 576, ../sass/_local.scss */
 .rss-feed a:before {
   margin-right: 0.5em;
   font-family: FontAwesome;
@@ -1479,7 +1458,7 @@ body a:hover {
   font-size: 1em;
   color: #e68b39;
 }
-/* line 584, ../sass/_local.scss */
+/* line 580, ../sass/_local.scss */
 .rss-feed a:hover {
   text-decoration: none;
 }

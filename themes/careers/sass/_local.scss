@@ -336,7 +336,7 @@
 		li{
 			font-size: 1.8rem;
 			list-style:none;
-			@include angle-bullet;
+			@include angle-bullet-right;
 		}
 	}
 }
@@ -461,23 +461,19 @@
 			list-style: none;
 			font-size: 1.6rem;
 			.collapsed a{
-				@include angle-bullet;
+				@include angle-bullet-right;
       	&:hover{
-      		@include angle-bullet;
+      		@include angle-bullet-right;
       		&:before {
       			text-decoration: none;
       		}
 				}
 			}
 			.expanded a.active{
-		    @include angle-bullet;
-		    &:before {
-					@include icon($fa-var-angle-down, $color: $gold, $size: 1.0em);
-				}
+		    @include angle-bullet-down;
       	&:hover{
-   				@include angle-bullet;
+   				@include angle-bullet-down;
       		&:before {
-      			@include icon($fa-var-angle-down, $color: $gold, $size: 1.0em);
       			text-decoration: none;
       		}
 				}
