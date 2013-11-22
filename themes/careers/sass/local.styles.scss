@@ -122,7 +122,10 @@ body{
           height: 100%;
         }
         ul{
-          text-align: right;
+          text-align: center;
+          @media #{$responsive-nav} {
+            text-align: right;
+          }
         }
         li{
           padding: 6px 20px 6px 6px;

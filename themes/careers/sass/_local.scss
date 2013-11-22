@@ -460,23 +460,11 @@
 		li{
 			list-style: none;
 			font-size: 1.6rem;
-			.collapsed a{
+			.collapsed {
 				@include angle-bullet-right;
-      	&:hover{
-      		@include angle-bullet-right;
-      		&:before {
-      			text-decoration: none;
-      		}
-				}
 			}
-			.expanded a.active{
+			.expanded {
 		    @include angle-bullet-down;
-      	&:hover{
-   				@include angle-bullet-down;
-      		&:before {
-      			text-decoration: none;
-      		}
-				}
 			}
 		}
 	}
