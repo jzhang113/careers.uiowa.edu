@@ -37,7 +37,7 @@ function basic_page_content_type_image_default_styles() {
         'module' => 'manualcrop',
         'name' => 'manualcrop_crop',
         'data' => array(
-          'width' => 768,
+          'width' => 825,
           'height' => 250,
           'keepproportions' => 1,
           'style_name' => 'featured_page',
@@ -54,7 +54,7 @@ function basic_page_content_type_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 768,
+          'width' => 825,
           'height' => 250,
         ),
         'weight' => 2,
