@@ -81,6 +81,38 @@ function audience_taxonomy_panelizer_defaults() {
     $pane = new stdClass();
     $pane->pid = 'new-1';
     $pane->panel = 'contentmain';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'taxonomy_term:field_featured_image';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'image',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'file_view_mode' => 'default',
+        'image_style' => 'featured_page',
+        'image_link' => '',
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-1'] = $pane;
+    $display->panels['contentmain'][0] = 'new-1';
+    $pane = new stdClass();
+    $pane->pid = 'new-2';
+    $pane->panel = 'contentmain';
     $pane->type = 'term_description';
     $pane->subtype = 'term_description';
     $pane->shown = TRUE;
@@ -96,10 +128,10 @@ function audience_taxonomy_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['contentmain'][0] = 'new-1';
+    $display->content['new-2'] = $pane;
+    $display->panels['contentmain'][1] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
