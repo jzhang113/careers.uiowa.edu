@@ -2,7 +2,6 @@ name = Announcements Content Type
 core = 7.x
 package = Careers
 dependencies[] = ctools
-dependencies[] = featured_content_type_and_view
 dependencies[] = features
 dependencies[] = file
 dependencies[] = image
