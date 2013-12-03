@@ -1,0 +1,10 @@
+name = Image Styles
+description = Image styles specific to the Career Center website
+core = 7.x
+package = Careers
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = featured
+features[image][] = square
+features[image][] = square_small
+features[image][] = two_hundred
