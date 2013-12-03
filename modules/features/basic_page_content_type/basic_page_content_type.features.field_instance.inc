@@ -22,7 +22,7 @@ function basic_page_content_type_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -50,12 +50,12 @@ function basic_page_content_type_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-page-field_featured_image'
-  $field_instances['node-page-field_featured_image'] = array(
+  // Exported field_instance: 'node-page-field_page_image'
+  $field_instances['node-page-field_page_image'] = array(
     'bundle' => 'page',
     'deleted' => 0,
     'description' => '',
@@ -65,10 +65,10 @@ function basic_page_content_type_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'featured_page',
+          'image_style' => 'featured',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -78,7 +78,7 @@ function basic_page_content_type_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_featured_image',
+    'field_name' => 'field_page_image',
     'label' => 'Featured Image',
     'required' => 0,
     'settings' => array(
@@ -88,7 +88,7 @@ function basic_page_content_type_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '825x85',
+      'min_resolution' => '',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -121,17 +121,21 @@ function basic_page_content_type_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           '80px' => 0,
+          'featured' => 'featured',
           'featured_home' => 0,
-          'featured_page' => 'featured_page',
+          'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
+          'square' => 0,
         ),
         'manualcrop_styles_list' => array(
           '80px' => 0,
+          'featured' => 'featured',
           'featured_home' => 0,
-          'featured_page' => 'featured_page',
+          'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
+          'square' => 0,
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,

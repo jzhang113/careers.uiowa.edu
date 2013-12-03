@@ -47,7 +47,7 @@ function basic_page_content_type_panelizer_defaults() {
     $pane->pid = 'new-1';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_featured_image';
+    $pane->subtype = 'node:field_page_image';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -57,8 +57,7 @@ function basic_page_content_type_panelizer_defaults() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'file_view_mode' => 'default',
-        'image_style' => 'featured_page',
+        'image_style' => 'featured',
         'image_link' => '',
       ),
       'context' => 'panelizer',

@@ -39,7 +39,7 @@ function employers_showcase_view_views_default_views() {
   $handler->display->display_options['fields']['field_logo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_logo']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'two_hundred',
     'image_link' => 'content',
   );
   $handler->display->display_options['filter_groups']['groups'] = array(
@@ -96,7 +96,7 @@ function employers_showcase_view_views_default_views() {
   $handler->display->display_options['fields']['field_logo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_logo']['settings'] = array(
-    'image_style' => '200px',
+    'image_style' => 'two_hundred',
     'image_link' => 'content',
   );
 
@@ -148,7 +148,7 @@ function employers_showcase_view_views_default_views() {
   $handler->display->display_options['fields']['field_logo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_logo']['settings'] = array(
-    'image_style' => 'employer_showcase',
+    'image_style' => 'two_hundred',
     'image_link' => 'content',
   );
   $handler->display->display_options['defaults']['sorts'] = FALSE;

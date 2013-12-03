@@ -10,6 +10,7 @@ dependencies[] = features
 dependencies[] = geocoder
 dependencies[] = geofield
 dependencies[] = image
+dependencies[] = image_styles
 dependencies[] = link
 dependencies[] = list
 dependencies[] = media

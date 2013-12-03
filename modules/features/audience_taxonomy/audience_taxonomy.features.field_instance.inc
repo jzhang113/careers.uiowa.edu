@@ -10,25 +10,25 @@
 function audience_taxonomy_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'taxonomy_term-audience-field_featured_image'
-  $field_instances['taxonomy_term-audience-field_featured_image'] = array(
+  // Exported field_instance: 'taxonomy_term-audience-field_audience_image'
+  $field_instances['taxonomy_term-audience-field_audience_image'] = array(
     'bundle' => 'audience',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'featured',
         ),
         'type' => 'image',
         'weight' => 0,
       ),
     ),
     'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_featured_image',
+    'field_name' => 'field_audience_image',
     'label' => 'Featured Image',
     'required' => 0,
     'settings' => array(
@@ -38,7 +38,7 @@ function audience_taxonomy_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '825x85',
+      'min_resolution' => '',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -71,19 +71,23 @@ function audience_taxonomy_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           '80px' => 0,
+          'featured' => 'featured',
           'featured_home' => 0,
-          'featured_page' => 'featured_page',
+          'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
+          'square' => 0,
         ),
         'manualcrop_styles_list' => array(
           '80px' => 0,
+          'featured' => 'featured',
           'featured_home' => 0,
-          'featured_page' => 'featured_page',
+          'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
+          'square' => 0,
         ),
-        'manualcrop_styles_mode' => 'include',
+        'manualcrop_styles_mode' => 'exclude',
         'manualcrop_thumblist' => 0,
         'progress_indicator' => 'throbber',
       ),

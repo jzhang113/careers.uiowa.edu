@@ -22,7 +22,7 @@ function featured_content_type_and_view_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -50,7 +50,7 @@ function featured_content_type_and_view_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 3,
     ),
   );
 
@@ -61,14 +61,14 @@ function featured_content_type_and_view_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'featured_home',
+          'image_style' => 'featured',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -79,17 +79,17 @@ function featured_content_type_and_view_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_featured_image',
-    'label' => 'Image',
+    'label' => 'Featured Image',
     'required' => 0,
     'settings' => array(
-      'alt_field' => 1,
+      'alt_field' => 0,
       'default_image' => 0,
       'file_directory' => 'featured',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '800x400',
-      'title_field' => 1,
+      'min_resolution' => '',
+      'title_field' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -108,7 +108,7 @@ function featured_content_type_and_view_field_default_field_instances() {
         ),
         'browser_plugins' => array(
           'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 0,
+          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
           'media_internet' => 0,
           'upload' => 'upload',
           'youtube' => 0,
@@ -120,17 +120,29 @@ function featured_content_type_and_view_field_default_field_instances() {
         'manualcrop_instant_crop' => FALSE,
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
-          'featured_home' => 'featured_home',
+          '80px' => 0,
+          'featured' => 'featured',
+          'featured_home' => 0,
+          'featured_page' => 0,
+          'people_profile_100' => 0,
+          'people_profile_320' => 0,
+          'square' => 0,
         ),
         'manualcrop_styles_list' => array(
-          'featured_home' => 'featured_home',
+          '80px' => 0,
+          'featured' => 'featured',
+          'featured_home' => 0,
+          'featured_page' => 0,
+          'people_profile_100' => 0,
+          'people_profile_320' => 0,
+          'square' => 0,
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 32,
+      'weight' => 2,
     ),
   );
 
@@ -184,14 +196,14 @@ function featured_content_type_and_view_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 33,
+      'weight' => 4,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Image');
+  t('Featured Image');
   t('Link');
 
   return $field_instances;

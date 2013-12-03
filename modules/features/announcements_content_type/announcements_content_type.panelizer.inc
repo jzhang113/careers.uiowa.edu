@@ -134,7 +134,7 @@ function announcements_content_type_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_style' => '',
-        'image_link' => 'file',
+        'image_link' => '',
       ),
       'context' => 'panelizer',
       'override_title' => 0,

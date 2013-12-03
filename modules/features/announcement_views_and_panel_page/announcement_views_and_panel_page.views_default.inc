@@ -200,14 +200,14 @@ function announcement_views_and_panel_page_views_default_views() {
   $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="announcements">View Announcement Archive</a>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Featured Image */
-  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
-  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
-  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
-  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
-  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
-    'image_style' => '80px',
+  $handler->display->display_options['fields']['field_announcement_image']['id'] = 'field_announcement_image';
+  $handler->display->display_options['fields']['field_announcement_image']['table'] = 'field_data_field_announcement_image';
+  $handler->display->display_options['fields']['field_announcement_image']['field'] = 'field_announcement_image';
+  $handler->display->display_options['fields']['field_announcement_image']['label'] = '';
+  $handler->display->display_options['fields']['field_announcement_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_announcement_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_announcement_image']['settings'] = array(
+    'image_style' => 'square_small',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
