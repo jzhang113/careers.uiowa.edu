@@ -498,41 +498,51 @@ body a:hover {
 /* line 374, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-image h3 {
   display: block;
-  bottom: 0px;
+  position: absolute;
+  bottom: -5px;
   width: 100%;
   padding: 10px;
   overflow: hidden;
-  background: #333;
-  height: 38px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 /* line 384, ../sass/local.styles.scss */
+.flexslider .views-field-field-featured-image h3 a {
+  color: white;
+}
+/* line 386, ../sass/local.styles.scss */
+.flexslider .views-field-field-featured-image h3 a:hover {
+  text-decoration: underline;
+}
+/* line 392, ../sass/local.styles.scss */
 .flexslider .flex-control-nav {
   width: auto;
   bottom: -10px;
   right: 10px;
 }
-/* line 389, ../sass/local.styles.scss */
+/* line 397, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-image .field-content {
   padding-bottom: 5px;
 }
-/* line 392, ../sass/local.styles.scss */
+/* line 400, ../sass/local.styles.scss */
 .flexslider .flex-control-paging li a {
   background-color: whitesmoke;
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 397, ../sass/local.styles.scss */
+/* line 405, ../sass/local.styles.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background-color: #687893;
 }
 
-/* line 402, ../sass/local.styles.scss */
+/* line 410, ../sass/local.styles.scss */
 .view-footer a {
   width: 100%;
   text-align: right;
   float: right;
 }
-/* line 406, ../sass/local.styles.scss */
+/* line 414, ../sass/local.styles.scss */
 .view-footer a:after {
   margin-left: 5px;
   font-family: FontAwesome;
@@ -545,12 +555,12 @@ body a:hover {
   font-size: 1em;
   color: #9c8345;
 }
-/* line 410, ../sass/local.styles.scss */
+/* line 418, ../sass/local.styles.scss */
 .view-footer a:hover {
   text-decoration: none;
 }
 
-/* line 416, ../sass/local.styles.scss */
+/* line 424, ../sass/local.styles.scss */
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -567,7 +577,7 @@ body a:hover {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-/* line 431, ../sass/local.styles.scss */
+/* line 439, ../sass/local.styles.scss */
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
   font-family: "Fjalla One", sans-serif;
@@ -589,51 +599,51 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 451, ../sass/local.styles.scss */
+/* line 459, ../sass/local.styles.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #9c8345;
   color: white;
   text-decoration: none;
 }
 
-/* line 457, ../sass/local.styles.scss */
+/* line 465, ../sass/local.styles.scss */
 .front .button {
   float: right;
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 464, ../sass/local.styles.scss */
+  /* line 472, ../sass/local.styles.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 469, ../sass/local.styles.scss */
+/* line 477, ../sass/local.styles.scss */
 .region-footer {
   position: relative;
   font-size: 14px;
   background-color: #eae3d2;
 }
-/* line 473, ../sass/local.styles.scss */
+/* line 481, ../sass/local.styles.scss */
 .region-footer a {
   color: black;
   font-family: "Neuton", serif;
 }
-/* line 476, ../sass/local.styles.scss */
+/* line 484, ../sass/local.styles.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 480, ../sass/local.styles.scss */
+/* line 488, ../sass/local.styles.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 482, ../sass/local.styles.scss */
+/* line 490, ../sass/local.styles.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 488, ../sass/local.styles.scss */
+/* line 496, ../sass/local.styles.scss */
 .region-footer h2 {
   font-size: 1.8rem;
 }

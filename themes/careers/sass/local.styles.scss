@@ -373,12 +373,20 @@ body{
   }
   .views-field-field-featured-image h3{
     display: block;
-    bottom: 0px;
+    position: absolute;
+    bottom: -5px;
     width: 100%;
     padding: 10px;
     overflow: hidden;
-    background: #333;
-    height: 38px;
+    background-color:rgb(0,0,0); // Old Browser Fall Back
+    background-color:rgba(0,0,0,0.7);
+    color: white;
+    a{
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
   /* Flexslider Pager */
   .flex-control-nav {
