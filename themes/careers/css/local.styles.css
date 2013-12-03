@@ -933,7 +933,7 @@ body a:hover {
 }
 
 /* line 265, ../sass/_local.scss */
-.view-display-id-announcements_front_content_pane .views-field-field-featured-image {
+.view-display-id-announcements_front_content_pane .views-field-field-announcement-image {
   display: block;
   float: left;
   position: relative;
@@ -942,7 +942,7 @@ body a:hover {
   border: 5px solid #687893;
 }
 /* line 273, ../sass/_local.scss */
-.view-display-id-announcements_front_content_pane .views-field-field-featured-image:before {
+.view-display-id-announcements_front_content_pane .views-field-field-announcement-image:before {
   position: absolute;
   left: 15px;
   top: -5px;
@@ -958,7 +958,7 @@ body a:hover {
   color: #687893;
 }
 /* line 280, ../sass/_local.scss */
-.view-display-id-announcements_front_content_pane .views-field-field-featured-image img {
+.view-display-id-announcements_front_content_pane .views-field-field-announcement-image img {
   position: relative;
   z-index: 2;
 }
