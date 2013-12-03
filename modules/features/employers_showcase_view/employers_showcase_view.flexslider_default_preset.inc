@@ -16,8 +16,8 @@ function employers_showcase_view_flexslider_default_presets() {
   $preset->name = 'employer_showcase_carousel';
   $preset->title = 'Employer Showcase Carousel';
   $preset->theme = 'classic';
-  $preset->imagestyle_normal = 'thumbnail';
-  $preset->imagestyle_thumbnail = 'thumbnail';
+  $preset->imagestyle_normal = 'square';
+  $preset->imagestyle_thumbnail = 'square_small';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',
@@ -37,7 +37,7 @@ function employers_showcase_view_flexslider_default_presets() {
     'controlsContainer' => '.flex-control-nav-container',
     'sync' => '',
     'asNavFor' => '',
-    'itemWidth' => '120',
+    'itemWidth' => '275',
     'itemMargin' => '0',
     'minItems' => '1',
     'maxItems' => '0',

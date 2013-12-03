@@ -104,6 +104,7 @@ function employers_showcase_view_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Employer Showcase Slider', 'employer_showcase_slider_panel_pane');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'slideshow';
+  $handler->display->display_options['style_options']['flexslider_views_slideshow']['optionset'] = 'employer_showcase_carousel';
   $handler->display->display_options['style_options']['slideshow_type'] = 'flexslider_views_slideshow';
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
   $handler->display->display_options['style_options']['skin_info'] = array(
