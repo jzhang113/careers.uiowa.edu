@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Two Hundred Image Style feature.
- */
-
-include_once 'two_hundred_image_style.features.inc';
