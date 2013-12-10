@@ -13,7 +13,7 @@ function image_styles_image_default_styles() {
   // Exported image style: featured.
   $styles['featured'] = array(
     'name' => 'featured',
-    'label' => '',
+    'label' => 'featured',
     'effects' => array(
       5 => array(
         'label' => 'Crop and scale manually',
@@ -55,7 +55,7 @@ function image_styles_image_default_styles() {
   // Exported image style: square.
   $styles['square'] = array(
     'name' => 'square',
-    'label' => '',
+    'label' => 'square',
     'effects' => array(
       3 => array(
         'label' => 'Crop and scale manually',
@@ -97,7 +97,7 @@ function image_styles_image_default_styles() {
   // Exported image style: square_small.
   $styles['square_small'] = array(
     'name' => 'square_small',
-    'label' => '',
+    'label' => 'square_small',
     'effects' => array(
       8 => array(
         'label' => 'Reuse a Manual Crop selection',
@@ -135,7 +135,7 @@ function image_styles_image_default_styles() {
   // Exported image style: two_hundred.
   $styles['two_hundred'] = array(
     'name' => 'two_hundred',
-    'label' => '',
+    'label' => 'two_hundred',
     'effects' => array(
       10 => array(
         'label' => 'Scale',
