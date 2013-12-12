@@ -5,6 +5,7 @@ package = Careers
 dependencies[] = image
 features[features_api][] = api:2
 features[image][] = featured_home
+features[image][] = featured_page
 features[image][] = square
 features[image][] = square_small
 features[image][] = two_hundred

@@ -50,6 +50,47 @@ function image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: featured_page.
+  $styles['featured_page'] = array(
+    'name' => 'featured_page',
+    'label' => 'featured_page',
+    'effects' => array(
+      5 => array(
+        'label' => 'Manual crop',
+        'help' => 'Crop a freely user-selected area.',
+        'effect callback' => 'manualcrop_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'manualcrop_crop_form',
+        'summary theme' => 'manualcrop_crop_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_crop',
+        'data' => array(
+          'width' => 825,
+          'height' => '',
+          'keepproportions' => 0,
+          'style_name' => 'featured_page',
+        ),
+        'weight' => 0,
+      ),
+      7 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 825,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   // Exported image style: square.
   $styles['square'] = array(
     'name' => 'square',
