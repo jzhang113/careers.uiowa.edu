@@ -56,8 +56,11 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_date']['table'] = 'field_data_field_mcf_date';
   $handler->display->display_options['fields']['field_mcf_date']['field'] = 'field_mcf_date';
   $handler->display->display_options['fields']['field_mcf_date']['label'] = '';
+  $handler->display->display_options['fields']['field_mcf_date']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_date']['alter']['text'] = '<i class="fa fa-clock-o"></i> [field_mcf_date]';
   $handler->display->display_options['fields']['field_mcf_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_date']['element_wrapper_class'] = 'events-date';
+  $handler->display->display_options['fields']['field_mcf_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_mcf_date']['settings'] = array(
     'format_type' => 'long',
     'fromto' => 'value',
@@ -70,8 +73,11 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_location']['table'] = 'field_data_field_mcf_location';
   $handler->display->display_options['fields']['field_mcf_location']['field'] = 'field_mcf_location';
   $handler->display->display_options['fields']['field_mcf_location']['label'] = '';
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['text'] = '<i class="fa fa-map-marker"></i> [field_mcf_location]';
   $handler->display->display_options['fields']['field_mcf_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_location']['element_wrapper_class'] = 'events-location';
+  $handler->display->display_options['fields']['field_mcf_location']['hide_empty'] = TRUE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
