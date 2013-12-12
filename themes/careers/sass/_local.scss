@@ -430,22 +430,17 @@
 }
 
 .view-id-events {
+	.fa {
+		color: $gold;
+	}
+	.fa-map-marker {
+		padding: 0px 2px;
+	}
 	.views-row{
 		padding: 5px;
 	}
 	.views-row-odd {
 		background-color: $ultralight;
-	}
-	.events-date{
-		&:before {
-			@include icon($fa-var-clock-o, $color: $gold, $size: 1.0em);
-		}
-	}
-	.events-location{
-		&:before {
-			@include icon($fa-var-map-marker, $color: $gold, $size: 1.0em);
-			padding: 0px 2px;
-		}
 	}
 }
 
