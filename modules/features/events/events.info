@@ -1,0 +1,17 @@
+name = Events
+core = 7.x
+package = Careers
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = feeds_mastercal
+dependencies[] = options
+dependencies[] = strongarm
+dependencies[] = taxonomy
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_base][] = field_event_category
+features[field_instance][] = node-master_calendar_event-field_event_category
+features[taxonomy][] = events
+features[variable][] = additional_settings__active_tab_master_calendar_event
+features[variable][] = panelizer_defaults_node_master_calendar_event
+features[variable][] = panelizer_defaults_taxonomy_term_events
