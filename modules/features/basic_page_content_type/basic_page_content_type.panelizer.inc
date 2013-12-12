@@ -57,7 +57,7 @@ function basic_page_content_type_panelizer_defaults() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'image_style' => 'featured',
+        'image_style' => 'featured_page',
         'image_link' => '',
       ),
       'context' => 'panelizer',

@@ -93,7 +93,7 @@ function featured_content_type_and_view_views_default_views() {
   $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
-    'image_style' => 'featured',
+    'image_style' => 'featured_home',
     'image_link' => '',
   );
   /* Field: Global: View result counter */

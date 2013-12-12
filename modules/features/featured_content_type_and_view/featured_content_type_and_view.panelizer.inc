@@ -58,7 +58,7 @@ function featured_content_type_and_view_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => '',
-        'image_style' => 'featured',
+        'image_style' => 'featured_home',
       ),
       'context' => 'panelizer',
       'override_title' => 0,
