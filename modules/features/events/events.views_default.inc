@@ -244,6 +244,7 @@ function events_views_default_views() {
   $handler->display->display_options['sorts']['field_event_category_tid']['id'] = 'field_event_category_tid';
   $handler->display->display_options['sorts']['field_event_category_tid']['table'] = 'field_data_field_event_category';
   $handler->display->display_options['sorts']['field_event_category_tid']['field'] = 'field_event_category_tid';
+  $handler->display->display_options['sorts']['field_event_category_tid']['order'] = 'DESC';
   $export['events'] = $view;
 
   return $export;
