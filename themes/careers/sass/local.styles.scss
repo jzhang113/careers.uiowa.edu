@@ -76,7 +76,7 @@ body{
     }
   }
   .region-header {
-    // Main Menu - Responsive Navigation
+    // Site Links Menu - Responsive Navigation
     #block-responsive-navigation-1 {
       padding: 0px;
       background-color:rgb(0,0,0); // Old Browser Fall Back
@@ -105,7 +105,6 @@ body{
           vertical-align: middle;
         }
       }
-
       #nav{
         float: right;
         width: 100%;
@@ -145,9 +144,9 @@ body{
           }
         }
       }
-    } // END Main Menu - Responsive Navigation
+    } // END Site Links - Responsive Menu
 
-    // Social Media Menu - Header Region
+    // Social Media Menu
     .block-menu-social-media{
       position: absolute;
       width: 100%;
@@ -197,9 +196,9 @@ body{
         }
       }
       @include social-icons;
-    } // END Social Media Menu - Header Region
+    } // END Social Media Menu
 
-    // Audience Menu - Header Region
+    // Audience Menu
     .block-menu-audience-menu{
       position: absolute;
       bottom: 0;
@@ -252,13 +251,10 @@ body{
             line-height: 0px;
             width: 0px;
             height: 0px;
-            //border-style: inset;
             border-bottom: 25px solid transparent; 
             border-top: 25px solid transparent; 
-            border-left: 20px solid black; //
-            //border-width: 25px 0 25px 20px;
+            border-left: 20px solid black;
             -webkit-transform:rotate(360deg);
-            //border-color: transparent transparent transparent #000000;
           }
         }
         li{
@@ -300,16 +296,18 @@ body{
           }
         } 
       } 
-    } // END Audience Menu - Header Region
+    } // END Audience Menu
   } // END region-header
 } // END header
 
+// Page Wrapper Areas
 #content-wrapper, #header-wrapper, 
 #breadcrumb-wrapper, #content-header-wrapper, 
 #messages-help-wrapper, #tertiary-content-wrapper, #footer-wrapper {
   background-color: #ddd;
 }
 
+// Page Content Areas
 #main-content, #main-content-header, #breadcrumb, #messages, .region-tertiary-content, #columns{
   background: $page;
 }
@@ -327,18 +325,8 @@ body{
     border-bottom: 0px;
     margin: 0px;
   }
-  .block-inner{
-    //@include border;
-  }
   .block-content{
     padding: 10px;
-  }
-
-  // No border on panes/blocks without title.
-  .block-main .no-title {
-    .block-inner{
-      border:0px;
-    }
   }
 }
 
@@ -351,10 +339,12 @@ body{
   }
 }
 
+// Content Type Field Labels
 .field-label {
   font-size: 1.8rem;
 }
-// Override Default Flexslider Styles
+
+// Flexslider
 .flexslider{
   ul{
     padding:0px;
@@ -388,7 +378,7 @@ body{
       }
     }
   }
-  /* Flexslider Pager */
+  // Flexslider Pager
   .flex-control-nav {
     width:auto;
     bottom: -10px;
@@ -405,22 +395,9 @@ body{
   .flex-control-paging li a.flex-active {
     background-color: $blue;
   }
-}
+} // END Flexslider
 
-.view-footer a{
-  width: 100%;
-  text-align: right;
-  float:right;
-  &:after{
-    margin-left: 5px;
-    @include icon($fa-var-chevron-right, $color: $gold, $size: 1.0em);
-  }
-  &:hover{
-    text-decoration: none;
-
-  }
-}
-
+// Form Stuff
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -465,8 +442,9 @@ body{
 .front .button{
   float: right;
 }
+// END Form Stuff
 
-// FOOTER
+// Footer
 #footer-wrapper {
   @media #{$responsive-nav} {
     .block {
@@ -496,7 +474,7 @@ body{
   h2{
     font-size: 1.8rem;
   }
-} // END FOOTER
+} // END Footer
 
 // Imports local style, which can override the styles declared in this file
 @import "local";

@@ -7,10 +7,7 @@
  *
 */
 
-
-/*
- *	HireAHawk Block Style
- */
+// BLOCK HireaHawk.com
 .pane-block-1 {
 	background-color: $yellow;
 	.pane-title{
@@ -19,64 +16,28 @@
 	}
 }
 
-/*
- *	Audience Portal Menu Block Styling
- */
- .menu-block-5{
- 	ul{
- 		padding: 0px;
- 		margin: 0px;
- 	}
- 	.menu-depth-2{
- 		width: 100%;
- 		@media #{$responsive-nav} {
- 			max-width: 32%;
- 		}
- 		min-height: 250px;
- 		@include inline-block;
- 		vertical-align: top;
- 		margin: 10px 10px 10px 0px;
- 		*display: inline; // IE HACK
- 		_height: 250px; // IE HACK
- 		
- 		a{
- 			padding: 6px 12px;
-			background-color: black;
-			color: white;
-			font-size: 2.0rem;
-			display: block;
-			width: 100%;
-			height: 100%;
-			&:hover{
-				text-decoration: none;
-				background-color: $yellow;
-				color: black;
+// MENU BLOCK Sub Links
+#block-menu-block-4{
+	background-color: $ultralight;
+	ul {
+		margin: 0px;
+		span.nolink {
+			font-weight: bold;
+		}
+		li{
+			list-style: none;
+			font-size: 1.6rem;
+			.collapsed {
+				@include angle-bullet-right;
 			}
- 		}
- 		ul {
- 			padding: 0;
- 		}
- 		li a{
- 			background-color: transparent;
- 			color: #333;
- 			font-size: 1.6rem;
- 			&:hover {
- 				text-decoration: underline;
- 				background-color: transparent;
- 				color: $gold;
- 			}
- 		}
- 	}
- 	.menu-depth-3 {
- 		list-style: none;
- 	}
- }
+			.expanded {
+		    @include angle-bullet-down;
+			}
+		}
+	}
+}
 
-
-/*
- *	Success Stories Teaser Pane
- */
-
+// CONTENT PANE Success Stories Teaser
 .view-display-id-success_stories_teaser_content_pane{
 	margin: 10px;
 	.views-field-field-profile-image{
@@ -90,10 +51,7 @@
 	}
 }
 
-/*
- *	Employer Showcase Grid Panel Pane
- */
-
+// CONTENT PANE Employer Showcase Grid
 .view-display-id-employer_showcase_grid_panel_pane {
 	.item-list ul {
 		list-style:none;
@@ -117,9 +75,7 @@
 	}
 }
 
-/*
- *	Homepage Featured Slider
- */
+// CONTENT PANE Homepage Featured Slider
 #content{
  .pane-featured-slider-panel-pane-featured-slider{
  	padding: 5px 0px;
@@ -130,14 +86,12 @@
 }
 
 
-/*
- *	Employers Showcase Slider Pane
- */
- .pane-employer-showcase-employer-showcase-slider-panel-pane{
- 	.block-inner{
- 		border-bottom: 2px solid $blue;
- 	}
- }
+// CONTENT PANE Employers Showcase Slider
+.pane-employer-showcase-employer-showcase-slider-panel-pane{
+	.block-inner{
+		border-bottom: 2px solid $blue;
+	}
+}
 
 .view-display-id-employer_showcase_slider_panel_pane {
 	.flexslider{
@@ -163,34 +117,44 @@
 		display: none;
 	}
 }
+// END CONTENT PANE Employers Showcase Slider
 
-/*
- *	Video Fields
- */
-
+// Video Fields
 .field-name-field-video-file {
   iframe {
     width: 100%;
     max-width: 640px;
   }
-
   #player {
     height: auto;
     width: auto;
   }
 }
 
-/*
- *	People Node
- */
+// Events
+.view-id-events {
+	.fa {
+		color: $gold;
+	}
+	.fa-map-marker {
+		padding: 0px 2px;
+	}
+	.views-row{
+		padding: 5px;
+	}
+	.views-row-odd {
+		background-color: $ultralight;
+	}
+}
 
- #content {
- 	.pane-node-field-people-picture, .pane-node-title, .pane-node-field-people-position, .pane-node-field-people-email{
- 		.block-content{
- 			padding: 0px 10px;
- 		}
- 	}
- }
+// People Nodes
+#content {
+	.pane-node-field-people-picture, .pane-node-title, .pane-node-field-people-position, .pane-node-field-people-email{
+		.block-content{
+			padding: 0px 10px;
+		}
+	}
+}
 
 .node-type-people {
 	@media #{$responsive-nav} {
@@ -242,11 +206,9 @@
 		min-width: 200px;
 	}
 }
+// END People Nodes
 
-/*
- *	People View Panes
- */
-
+// CONTENT PANE People View
 .pane-people-panel-pane-career-advisors, .pane-people-panel-pane-peer-advisors, .pane-people-panel-pane-experiential-education-team, .pane-people-panel-pane-employer-relations-team{
 	.views-field-field-people-picture{
 		display: block;
@@ -257,6 +219,7 @@
 	}
 }
 
+// QUICKTABS Announcements & Events
 .pane-quicktabs-announcements-events .block-inner{
 	border-bottom: 2px solid $blue;
 }
@@ -329,17 +292,6 @@
 		}
 	}
 }
-
-.front .pane-menu-menu-quick-links{
-	ul.menu{
-		margin-top: 0px;
-		li{
-			font-size: 1.8rem;
-			list-style:none;
-			@include angle-bullet-right;
-		}
-	}
-}
 .pane-quicktabs-announcements-events{
 	.pane-title{
 		@include offscreen;
@@ -380,7 +332,21 @@
 		}
 	}
 }
+// END QUICKTABS Announcements & Events
 
+// MENU Front Quick Links
+.front .pane-menu-menu-quick-links{
+	ul.menu{
+		margin-top: 0px;
+		li{
+			font-size: 1.8rem;
+			list-style:none;
+			@include angle-bullet-right;
+		}
+	}
+}
+
+// Special Yellow Button
 .button-yellow{
   display: inline-block;
   position: relative;
@@ -427,46 +393,23 @@
 	border-bottom: 16px solid transparent;
 	border-left: 16px solid $yellow;
   }
+} // END Special Yellow Button
+
+// RSS Feed Font Awesome Icon
+.rss-feed a {
+  &:before{
+    margin-right: 0.5em;
+    @include icon($fa-var-rss-square, $color: $orange, $size: 1.0em);
+  }
+  &:hover{
+    text-decoration: none;
+  }
 }
 
-.view-id-events {
-	.fa {
-		color: $gold;
-	}
-	.fa-map-marker {
-		padding: 0px 2px;
-	}
-	.views-row{
-		padding: 5px;
-	}
-	.views-row-odd {
-		background-color: $ultralight;
-	}
-}
-
-// Sub Links
-#block-menu-block-4{
-	background-color: $ultralight;
-	ul {
-		margin: 0px;
-		span.nolink {
-			font-weight: bold;
-		}
-		li{
-			list-style: none;
-			font-size: 1.6rem;
-			.collapsed {
-				@include angle-bullet-right;
-			}
-			.expanded {
-		    @include angle-bullet-down;
-			}
-		}
-	}
-}
-
+// Region Footer
 .region-footer{
-  #block-menu-menu-quick-links{  // Main Menu Footer Block
+	// MENU BLOCK Quick Links
+  #block-menu-menu-quick-links{
     @media #{$responsive-nav} {
     	width: 50%;
     	ul {
@@ -474,21 +417,15 @@
     	}
     }
   }
-  #block-menu-block-3 { // Audience Menu Footer Block
+  // MENU BLOCK Audience Block
+  #block-menu-block-3 {
   	
     @media #{$responsive-nav} {
     	width: 25%;
-      //min-width: 110px;
     }
   }
-  /*.block-menu-quick-links {
-    ul{
-      @media #{$responsive-nav} {
-        @include column-count(2);
-      }
-    }
-  }*/
-  #block-block-2{  // Location and Contact Information
+  // BLOCK Location and Contact Information
+  #block-block-2{
     padding: 0 0 0 15px;
     margin-top: 10px;
     @media #{$responsive-nav} {
@@ -498,7 +435,8 @@
     }
     
   }
-  #block-menu-block-5 { // Social Media Links
+  // MENU BLOCK Social Media Menu
+  #block-menu-block-5 {
   	display: block;
   	@media #{$responsive-nav} {
       float: right;
@@ -542,17 +480,4 @@
       }
     }
   }
-}
-
-// RSS Feed Font Awesome Icon
-.rss-feed a {
-  &:before{
-    margin-right: 0.5em;
-    @include icon($fa-var-rss-square, $color: $orange, $size: 1.0em);
-  }
-  &:hover{
-    text-decoration: none;
-  }
-}
-
-
+} // END Region Footer
