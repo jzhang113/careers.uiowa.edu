@@ -131,8 +131,23 @@
   }
 }
 
+// In The News
+.pane-inthenews-inthenews-month-links {
+	background-color: $ultralight;
+}
+
+.view-display-id-inthenews {
+	.views-row{
+		padding: 5px;
+	}
+	.views-row-odd {
+		background-color: $ultralight;
+	}
+}
+
 // Events
-.view-id-events {
+.view-display-id-events_list,
+.view-display-id-events_teaser_list {
 	.fa {
 		color: $gold;
 	}
@@ -144,6 +159,17 @@
 	}
 	.views-row-odd {
 		background-color: $ultralight;
+	}
+}
+
+.pane-events-events-categories,
+.pane-views-exp-events-events-list {
+	background-color: $ultralight;
+}
+
+.pane-views-exp-events-events-list {
+	.views-submit-button {
+		width: 100%;
 	}
 }
 
