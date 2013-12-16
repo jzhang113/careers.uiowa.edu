@@ -29,7 +29,7 @@ function front_panel_page_quicktabs_default_quicktabs() {
     ),
     1 => array(
       'vid' => 'events',
-      'display' => 'events_short_list',
+      'display' => 'events_teaser_list',
       'args' => '',
       'title' => 'Events',
       'weight' => '-99',
