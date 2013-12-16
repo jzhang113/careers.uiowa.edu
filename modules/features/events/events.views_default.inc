@@ -34,6 +34,7 @@ function events_views_default_views() {
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
@@ -75,9 +76,13 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_location']['label'] = '';
   $handler->display->display_options['fields']['field_mcf_location']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_mcf_location']['alter']['text'] = '<i class="fa fa-map-marker"></i> [field_mcf_location]';
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['preserve_tags'] = '<i>';
   $handler->display->display_options['fields']['field_mcf_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_location']['element_wrapper_class'] = 'events-location';
   $handler->display->display_options['fields']['field_mcf_location']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['type'] = 'text_plain';
   /* Field: Content: Event Category */
   $handler->display->display_options['fields']['field_event_category']['id'] = 'field_event_category';
   $handler->display->display_options['fields']['field_event_category']['table'] = 'field_data_field_event_category';
@@ -169,9 +174,13 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_location']['label'] = '';
   $handler->display->display_options['fields']['field_mcf_location']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_mcf_location']['alter']['text'] = '<i class="fa fa-map-marker"></i> [field_mcf_location]';
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['preserve_tags'] = '<i>';
   $handler->display->display_options['fields']['field_mcf_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_location']['element_wrapper_class'] = 'events-location';
   $handler->display->display_options['fields']['field_mcf_location']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['type'] = 'text_plain';
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -267,6 +276,7 @@ function events_views_default_views() {
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Nid */

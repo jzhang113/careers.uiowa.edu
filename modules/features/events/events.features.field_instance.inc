@@ -13,11 +13,7 @@ function events_field_default_field_instances() {
   // Exported field_instance: 'node-master_calendar_event-field_event_category'
   $field_instances['node-master_calendar_event-field_event_category'] = array(
     'bundle' => 'master_calendar_event',
-    'default_value' => array(
-      0 => array(
-        'tid' => 9,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
