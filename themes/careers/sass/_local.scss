@@ -37,6 +37,46 @@
 	}
 }
 
+// AUDIENCE PORTAL
+
+// Related Links
+.field-name-field-audience-links{
+	width: 100%;
+	font-size: 1.8rem;
+	.field-items {
+		width: 100%;
+		text-align: center;
+		.field-item:nth-child(1) a { background-color: $maroon;} //maroon
+		.field-item:nth-child(2) a { background-color: #2A9F51;} //green
+		.field-item:nth-child(3) a { background-color: #F26A33;} //orange
+		.field-item:nth-child(4) a { background-color: #2195D2;} //blue
+		.field-item {
+			@include inline-block;
+			width: 100%;
+			@media #{$desktop} {
+				width: 188px;
+				height: 75px;
+			}
+			margin: 2px;
+			a{
+				display: block;
+				width: 100%;
+				height: 100%;
+				padding: 15px 5px 5px 5px;
+				font-family: $hireahawk;
+				color: white;
+				font-weight: normal;
+				&:hover{
+			    background-color: #666;
+			    color: white;
+			    text-decoration: none;
+			  }
+			}
+		}
+	}
+}
+// END AUDIENCE PORTAL
+
 // CONTENT PANE Success Stories Teaser
 .view-display-id-success_stories_teaser_content_pane{
 	margin: 10px;
