@@ -47,9 +47,10 @@
 		width: 100%;
 		text-align: center;
 		.field-item:nth-child(1) a { background-color: $maroon;} //maroon
-		.field-item:nth-child(2) a { background-color: #2A9F51;} //green
-		.field-item:nth-child(3) a { background-color: #F26A33;} //orange
-		.field-item:nth-child(4) a { background-color: #2195D2;} //blue
+		.field-item:nth-child(2) a { background-color: #2195D2;} //blue
+		.field-item:nth-child(3) a { background-color: #F18631;} //orange
+		.field-item:nth-child(4) a { background-color: #2A9F51;} //green
+		
 		.field-item {
 			@include inline-block;
 			width: 100%;
