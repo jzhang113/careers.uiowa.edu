@@ -73,9 +73,12 @@ function featured_views_default_views() {
   $handler->display->display_options['fields']['field_featured_title']['field'] = 'field_featured_title';
   $handler->display->display_options['fields']['field_featured_title']['label'] = '';
   $handler->display->display_options['fields']['field_featured_title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_featured_title']['alter']['text'] = '[field_featured_title]';
+  $handler->display->display_options['fields']['field_featured_title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_featured_title']['alter']['text'] = '<h3>[field_featured_title]</h3>';
+  $handler->display->display_options['fields']['field_featured_title']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_featured_title']['alter']['path'] = '[field_featured_link]';
   $handler->display->display_options['fields']['field_featured_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_title']['element_wrapper_type'] = 'h3';
   $handler->display->display_options['fields']['field_featured_title']['hide_empty'] = TRUE;
   /* Field: Content: Caption */
   $handler->display->display_options['fields']['field_featured_caption']['id'] = 'field_featured_caption';
@@ -84,6 +87,7 @@ function featured_views_default_views() {
   $handler->display->display_options['fields']['field_featured_caption']['label'] = '';
   $handler->display->display_options['fields']['field_featured_caption']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_featured_caption']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_caption']['element_wrapper_type'] = 'p';
   $handler->display->display_options['fields']['field_featured_caption']['hide_empty'] = TRUE;
   /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
@@ -91,11 +95,9 @@ function featured_views_default_views() {
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['label'] = '';
   $handler->display->display_options['fields']['field_featured_image']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['text'] = '<a href="[field_featured_link]">[field_featured_image]</a>
-<div class="featured-fields">
-<div class="featured-title"><h3><a href="[field_featured_link]">[field_featured_title]</a></h3></div>
-<div class="featured-caption">[field_featured_caption]</div>
-</div>';
+  $handler->display->display_options['fields']['field_featured_image']['alter']['text'] = '[field_featured_image]
+';
+  $handler->display->display_options['fields']['field_featured_image']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_featured_image']['alter']['path'] = '[field_featured_link] ';
   $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
@@ -103,6 +105,16 @@ function featured_views_default_views() {
     'image_style' => 'featured',
     'image_link' => '',
   );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_featured_title][field_featured_caption]';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'views-field-field-featured-text';
+  $handler->display->display_options['fields']['nothing']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['hide_alter_empty'] = TRUE;
   /* Field: Global: View result counter */
   $handler->display->display_options['fields']['counter']['id'] = 'counter';
   $handler->display->display_options['fields']['counter']['table'] = 'views';
