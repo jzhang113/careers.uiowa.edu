@@ -1,4 +1,5 @@
 settings.php
 .DS_Store
+.gem
 
 /themes/careers/.sass-cache/
