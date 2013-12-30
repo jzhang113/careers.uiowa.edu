@@ -67,14 +67,35 @@ function featured_views_default_views() {
   $handler->display->display_options['fields']['field_featured_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_link']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_featured_link']['type'] = 'link_plain';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['field_featured_title']['id'] = 'field_featured_title';
+  $handler->display->display_options['fields']['field_featured_title']['table'] = 'field_data_field_featured_title';
+  $handler->display->display_options['fields']['field_featured_title']['field'] = 'field_featured_title';
+  $handler->display->display_options['fields']['field_featured_title']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_featured_title']['alter']['text'] = '[field_featured_title]';
+  $handler->display->display_options['fields']['field_featured_title']['alter']['path'] = '[field_featured_link]';
+  $handler->display->display_options['fields']['field_featured_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_title']['hide_empty'] = TRUE;
+  /* Field: Content: Caption */
+  $handler->display->display_options['fields']['field_featured_caption']['id'] = 'field_featured_caption';
+  $handler->display->display_options['fields']['field_featured_caption']['table'] = 'field_data_field_featured_caption';
+  $handler->display->display_options['fields']['field_featured_caption']['field'] = 'field_featured_caption';
+  $handler->display->display_options['fields']['field_featured_caption']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_caption']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_featured_caption']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_caption']['hide_empty'] = TRUE;
   /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['label'] = '';
   $handler->display->display_options['fields']['field_featured_image']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['text'] = '[field_featured_image]';
-  $handler->display->display_options['fields']['field_featured_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_featured_image']['alter']['text'] = '<a href="[field_featured_link]">[field_featured_image]</a>
+<div class="featured-fields">
+<div class="featured-title"><h3><a href="[field_featured_link]">[field_featured_title]</a></h3></div>
+<div class="featured-caption">[field_featured_caption]</div>
+</div>';
   $handler->display->display_options['fields']['field_featured_image']['alter']['path'] = '[field_featured_link] ';
   $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
@@ -82,25 +103,6 @@ function featured_views_default_views() {
     'image_style' => 'featured',
     'image_link' => '',
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['field_featured_title']['id'] = 'field_featured_title';
-  $handler->display->display_options['fields']['field_featured_title']['table'] = 'field_data_field_featured_title';
-  $handler->display->display_options['fields']['field_featured_title']['field'] = 'field_featured_title';
-  $handler->display->display_options['fields']['field_featured_title']['label'] = '';
-  $handler->display->display_options['fields']['field_featured_title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_featured_title']['alter']['text'] = '[field_featured_title]';
-  $handler->display->display_options['fields']['field_featured_title']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_featured_title']['alter']['path'] = '[field_featured_link]';
-  $handler->display->display_options['fields']['field_featured_title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_featured_title']['element_wrapper_type'] = 'h3';
-  $handler->display->display_options['fields']['field_featured_title']['hide_empty'] = TRUE;
-  /* Field: Content: Caption */
-  $handler->display->display_options['fields']['field_featured_caption']['id'] = 'field_featured_caption';
-  $handler->display->display_options['fields']['field_featured_caption']['table'] = 'field_data_field_featured_caption';
-  $handler->display->display_options['fields']['field_featured_caption']['field'] = 'field_featured_caption';
-  $handler->display->display_options['fields']['field_featured_caption']['label'] = '';
-  $handler->display->display_options['fields']['field_featured_caption']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_featured_caption']['hide_empty'] = TRUE;
   /* Field: Global: View result counter */
   $handler->display->display_options['fields']['counter']['id'] = 'counter';
   $handler->display->display_options['fields']['counter']['table'] = 'views';
@@ -147,7 +149,7 @@ function featured_views_default_views() {
   /* Display: Reorder Featured */
   $handler = $view->new_display('page', 'Reorder Featured', 'featured_reorder_page');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Reorder Featured Items';
+  $handler->display->display_options['title'] = 'Reorder Homepage Featured Items';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
