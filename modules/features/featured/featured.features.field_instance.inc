@@ -34,7 +34,7 @@ function featured_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_featured_caption',
     'label' => 'Caption',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -183,7 +183,7 @@ function featured_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_featured_link',
     'label' => 'Link',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'attributes' => array(
         'class' => '',
