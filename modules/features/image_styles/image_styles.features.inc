@@ -10,6 +10,46 @@
 function image_styles_image_default_styles() {
   $styles = array();
 
+  // Exported image style: featured.
+  $styles['featured'] = array(
+    'name' => 'featured',
+    'label' => 'featured',
+    'effects' => array(
+      1 => array(
+        'label' => 'Manual crop',
+        'help' => 'Crop a freely user-selected area.',
+        'effect callback' => 'manualcrop_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'manualcrop_crop_form',
+        'summary theme' => 'manualcrop_crop_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_crop',
+        'data' => array(
+          'width' => 640,
+          'height' => 269,
+          'keepproportions' => 1,
+          'style_name' => 'featured',
+        ),
+        'weight' => 0,
+      ),
+      7 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 1100,
+          'height' => 463,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   // Exported image style: featured_home.
   $styles['featured_home'] = array(
     'name' => 'featured_home',
