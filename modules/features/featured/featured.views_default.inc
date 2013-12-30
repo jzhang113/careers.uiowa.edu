@@ -258,7 +258,6 @@ function featured_views_default_views() {
   $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
     'audience' => 'audience',
   );
-  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'name';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -277,7 +276,7 @@ function featured_views_default_views() {
   );
   $handler->display->display_options['argument_input'] = array(
     'tid' => array(
-      'type' => 'none',
+      'type' => 'context',
       'context' => 'entity:taxonomy_term.tid',
       'context_optional' => 0,
       'panel' => '0',
