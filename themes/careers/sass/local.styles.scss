@@ -361,13 +361,13 @@ body{
       text-decoration: none;
     }
   }
-  .featured-fields {
+  .views-field-field-featured-text {
     display: block;
     position: absolute;
     bottom: 5px;
     margin-bottom: 0px;
     width: 100%;
-    padding: 10px 10px 15px 10px;
+    padding: 5px 10px 15px 10px;
     overflow: hidden;
     background-color:rgb(0,0,0); // Old Browser Fall Back
     background-color:rgba(0,0,0,0.7);
