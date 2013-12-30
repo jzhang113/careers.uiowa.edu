@@ -196,7 +196,7 @@ function front_panel_page_default_page_manager_pages() {
     $pane->pid = 'new-6';
     $pane->panel = 'contentfeatured';
     $pane->type = 'views_panes';
-    $pane->subtype = 'featured_slider-panel_pane_featured_slider';
+    $pane->subtype = 'featured-panel_pane_featured';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
