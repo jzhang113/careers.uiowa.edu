@@ -1,8 +1,9 @@
 (function ($) {
    $(document).ready(function() {
     $(".nolink").addClass("menu-toggle").attr("tabindex",0);
-    if ($(".menu-name-menu-audience-menu li").hasClass("active-trail")) {
-      $(".menu-name-menu-audience-menu .active-trail").parent("ul").removeClass("hide").addClass("show").show();
+    $(".menu-toggle").next("ul").addClass("hide").hide();
+    if ($(".block-region-sidebar-first .menu-name-menu-audience-menu li").hasClass("active-trail")) {
+      $(".block-region-sidebar-first .menu-name-menu-audience-menu .active-trail").parent("ul").removeClass("hide").addClass("show").show();
     }
     else {
       $(".menu-toggle").next("ul").addClass("hide").hide();
