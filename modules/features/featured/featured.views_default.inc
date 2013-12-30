@@ -65,6 +65,7 @@ function featured_views_default_views() {
   $handler->display->display_options['fields']['field_featured_link']['label'] = '';
   $handler->display->display_options['fields']['field_featured_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_featured_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_link']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_featured_link']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_featured_link']['type'] = 'link_plain';
   /* Field: Content: Title */
