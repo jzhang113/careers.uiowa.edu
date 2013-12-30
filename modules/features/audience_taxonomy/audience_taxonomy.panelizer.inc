@@ -82,23 +82,14 @@ function audience_taxonomy_panelizer_defaults() {
     $pane = new stdClass();
     $pane->pid = 'new-1';
     $pane->panel = 'contentmain';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'taxonomy_term:field_audience_image';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'featured-featured_entity_reference';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'image',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'image_style' => 'featured_page',
-        'image_link' => '',
+      'context' => array(
+        0 => 'panelizer',
       ),
-      'context' => 'panelizer',
-      'override_title' => 0,
-      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
