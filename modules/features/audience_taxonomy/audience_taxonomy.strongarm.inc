@@ -29,13 +29,13 @@ function audience_taxonomy_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'path' => array(
-          'weight' => '5',
+          'weight' => '4',
         ),
         'name' => array(
           'weight' => '0',
         ),
         'description' => array(
-          'weight' => '4',
+          'weight' => '3',
         ),
       ),
       'display' => array(
