@@ -116,9 +116,9 @@
 	}
 }
 
-// CONTENT PANE Homepage Featured Slider
+// CONTENT PANE Front Featured Slider
 #content{
- .pane-featured-slider-panel-pane-featured-slider{
+ .pane-featured-panel-pane-featured{
  	padding: 5px 0px;
  	.block-content{
  		padding: 10px 0px;
@@ -126,6 +126,15 @@
  }
 }
 
+// CONTENT PANE Audience Featured
+#content{
+ .pane-featured-featured-entity-reference{
+ 	padding: 0px;
+ 	.block-content{
+ 		padding: 0px;
+ 	}
+ }
+}
 
 // CONTENT PANE Employers Showcase Slider
 .pane-employer-showcase-employer-showcase-slider-panel-pane{

@@ -361,12 +361,13 @@ body{
       text-decoration: none;
     }
   }
-  .views-field-field-featured-image h3{
+  .featured-fields {
     display: block;
     position: absolute;
-    bottom: -5px;
+    bottom: 5px;
+    margin-bottom: 0px;
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 15px 10px;
     overflow: hidden;
     background-color:rgb(0,0,0); // Old Browser Fall Back
     background-color:rgba(0,0,0,0.7);
@@ -377,11 +378,15 @@ body{
         text-decoration: underline;
       }
     }
+    h3 {
+      margin-bottom: 0px;
+    }
   }
   // Flexslider Pager
   .flex-control-nav {
     width:auto;
-    bottom: -10px;
+    position: absolute;
+    bottom: 0px;
     right: 10px;
   }
   .views-field-field-featured-image .field-content{
