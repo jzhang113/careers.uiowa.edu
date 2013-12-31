@@ -91,7 +91,7 @@ function career_tube_video_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -117,7 +117,7 @@ function career_tube_video_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_video_file',
-    'label' => 'Video File',
+    'label' => 'YouTube Video',
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
@@ -147,20 +147,36 @@ function career_tube_video_content_type_field_default_field_instances() {
           'upload' => 0,
           'youtube' => 'youtube',
         ),
-        'manualcrop_crop_info' => TRUE,
-        'manualcrop_default_crop_area' => TRUE,
-        'manualcrop_enable' => FALSE,
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
         'manualcrop_inline_crop' => FALSE,
         'manualcrop_instant_crop' => FALSE,
-        'manualcrop_instant_preview' => TRUE,
-        'manualcrop_require_cropping' => array(),
-        'manualcrop_styles_list' => array(),
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_require_cropping' => array(
+          'featured' => 0,
+          'featured_home' => 0,
+          'featured_page' => 0,
+          'featured_small' => 0,
+          'people_profile_100' => 0,
+          'people_profile_320' => 0,
+          'square' => 0,
+        ),
+        'manualcrop_styles_list' => array(
+          'featured' => 0,
+          'featured_home' => 0,
+          'featured_page' => 0,
+          'featured_small' => 0,
+          'people_profile_100' => 0,
+          'people_profile_320' => 0,
+          'square' => 0,
+        ),
         'manualcrop_styles_mode' => 'exclude',
-        'manualcrop_thumblist' => FALSE,
+        'manualcrop_thumblist' => 0,
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 6,
     ),
   );
 
@@ -187,7 +203,7 @@ function career_tube_video_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_video_link',
-    'label' => 'Video Link',
+    'label' => 'Link to Video',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -204,7 +220,7 @@ function career_tube_video_content_type_field_default_field_instances() {
       'rel_remove' => 'default',
       'title' => 'value',
       'title_maxlength' => 128,
-      'title_value' => 'Watch this video',
+      'title_value' => 'Click to Watch [node:title]',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
@@ -214,7 +230,7 @@ function career_tube_video_content_type_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 7,
     ),
   );
 
@@ -223,7 +239,7 @@ function career_tube_video_content_type_field_default_field_instances() {
     'bundle' => 'career_tube_video',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Consider adding a transcript for accessibility and search engine optimization purposes. If you included a YouTube video, use their transcript feature.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -244,7 +260,7 @@ function career_tube_video_content_type_field_default_field_instances() {
     'label' => 'Video Transcript',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -254,17 +270,57 @@ function career_tube_video_content_type_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-career_tube_video-field_video_youtube_check'
+  $field_instances['node-career_tube_video-field_video_youtube_check'] = array(
+    'bundle' => 'career_tube_video',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Is the video a YouTube video or a video hosted elsewhere? YouTube is recommended for accessibility and security reasons.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_video_youtube_check',
+    'label' => 'Is it a YouTube video?',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
       'weight' => 5,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Consider adding a transcript for accessibility and search engine optimization purposes. If you included a YouTube video, use their transcript feature.');
   t('Description');
+  t('Is it a YouTube video?');
+  t('Is the video a YouTube video or a video hosted elsewhere? YouTube is recommended for accessibility and security reasons.');
+  t('Link to Video');
   t('Tags');
-  t('Video File');
-  t('Video Link');
   t('Video Transcript');
+  t('YouTube Video');
 
   return $field_instances;
 }
