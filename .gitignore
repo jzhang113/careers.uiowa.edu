@@ -1,5 +1,7 @@
 settings.php
 .DS_Store
-.gem
 
 /themes/careers/.sass-cache/
+/themes/careers/.bundle
+/themes/careers/Gemfile
+/themes/careers/Gemfile.lock
