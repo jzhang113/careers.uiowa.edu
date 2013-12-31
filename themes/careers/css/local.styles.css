@@ -538,6 +538,11 @@ body a:hover {
 }
 
 /* line 406, ../sass/local.styles.scss */
+.media-youtube-video {
+  text-align: center;
+}
+
+/* line 411, ../sass/local.styles.scss */
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -554,7 +559,7 @@ body a:hover {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-/* line 421, ../sass/local.styles.scss */
+/* line 426, ../sass/local.styles.scss */
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
   font-family: "Fjalla One", sans-serif;
@@ -576,51 +581,51 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 441, ../sass/local.styles.scss */
+/* line 446, ../sass/local.styles.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #9c8345;
   color: white;
   text-decoration: none;
 }
 
-/* line 447, ../sass/local.styles.scss */
+/* line 452, ../sass/local.styles.scss */
 .front .button {
   float: right;
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 455, ../sass/local.styles.scss */
+  /* line 460, ../sass/local.styles.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 460, ../sass/local.styles.scss */
+/* line 465, ../sass/local.styles.scss */
 .region-footer {
   position: relative;
   font-size: 14px;
   background-color: #eae3d2;
 }
-/* line 464, ../sass/local.styles.scss */
+/* line 469, ../sass/local.styles.scss */
 .region-footer a {
   color: black;
   font-family: "Neuton", serif;
 }
-/* line 467, ../sass/local.styles.scss */
+/* line 472, ../sass/local.styles.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 471, ../sass/local.styles.scss */
+/* line 476, ../sass/local.styles.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 473, ../sass/local.styles.scss */
+/* line 478, ../sass/local.styles.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 479, ../sass/local.styles.scss */
+/* line 484, ../sass/local.styles.scss */
 .region-footer h2 {
   font-size: 1.8rem;
 }
