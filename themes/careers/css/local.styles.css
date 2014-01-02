@@ -615,17 +615,21 @@ body a:hover {
 .region-footer a:hover {
   color: black;
 }
-/* line 476, ../sass/local.styles.scss */
+/* line 475, ../sass/local.styles.scss */
+.region-footer a:active {
+  color: black;
+}
+/* line 479, ../sass/local.styles.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 478, ../sass/local.styles.scss */
+/* line 481, ../sass/local.styles.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 484, ../sass/local.styles.scss */
+/* line 487, ../sass/local.styles.scss */
 .region-footer h2 {
   font-size: 1.8rem;
 }
