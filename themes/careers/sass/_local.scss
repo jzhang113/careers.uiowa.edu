@@ -520,17 +520,10 @@
 	// MENU BLOCK Quick Links
   #block-menu-menu-quick-links{
     @media #{$responsive-nav} {
-    	width: 50%;
+    	width: 75%;
     	ul {
-    		@include column-count(2);
+    		@include column-count(3);
     	}
-    }
-  }
-  // MENU BLOCK Audience Block
-  #block-menu-block-3 {
-
-    @media #{$responsive-nav} {
-    	width: 25%;
     }
   }
   // BLOCK Location and Contact Information
@@ -542,7 +535,6 @@
       text-align: right;
       padding: 0 15px 0 0;
     }
-
   }
   // MENU BLOCK Social Media Menu
   #block-menu-block-5 {

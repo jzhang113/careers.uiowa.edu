@@ -1266,66 +1266,60 @@ body a:hover {
 @media only screen and (min-width: 40em) {
   /* line 521, ../sass/_local.scss */
   .region-footer #block-menu-menu-quick-links {
-    width: 50%;
+    width: 75%;
   }
   /* line 524, ../sass/_local.scss */
   .region-footer #block-menu-menu-quick-links ul {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    -ms-column-count: 2;
-    -o-column-count: 2;
-    column-count: 2;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    -o-column-count: 3;
+    column-count: 3;
   }
 }
-@media only screen and (min-width: 40em) {
-  /* line 530, ../sass/_local.scss */
-  .region-footer #block-menu-block-3 {
-    width: 25%;
-  }
-}
-/* line 537, ../sass/_local.scss */
+/* line 530, ../sass/_local.scss */
 .region-footer #block-block-2 {
   padding: 0 0 0 15px;
   margin-top: 10px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 537, ../sass/_local.scss */
+  /* line 530, ../sass/_local.scss */
   .region-footer #block-block-2 {
     width: 25%;
     text-align: right;
     padding: 0 15px 0 0;
   }
 }
-/* line 548, ../sass/_local.scss */
+/* line 540, ../sass/_local.scss */
 .region-footer #block-menu-block-5 {
   display: block;
   padding: 3px 3px 8px 4px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 548, ../sass/_local.scss */
+  /* line 540, ../sass/_local.scss */
   .region-footer #block-menu-block-5 {
     float: right;
   }
 }
-/* line 554, ../sass/_local.scss */
+/* line 546, ../sass/_local.scss */
 .region-footer #block-menu-block-5 ul {
   margin: 0;
   padding: 0;
 }
 @media only screen and (min-width: 40em) {
-  /* line 554, ../sass/_local.scss */
+  /* line 546, ../sass/_local.scss */
   .region-footer #block-menu-block-5 ul {
     text-align: right;
   }
 }
-/* line 561, ../sass/_local.scss */
+/* line 553, ../sass/_local.scss */
 .region-footer #block-menu-block-5 li {
   padding: 6px 20px 6px 6px;
   display: inline-block;
   width: auto;
   padding: 6px;
 }
-/* line 566, ../sass/_local.scss */
+/* line 558, ../sass/_local.scss */
 .region-footer #block-menu-block-5 li ul {
   display: none;
 }
@@ -1353,14 +1347,14 @@ body a:hover {
 .region-footer #block-menu-block-5 .menu-item-1230 a {
   background: url("images/social/instagram-icon.png") no-repeat;
 }
-/* line 573, ../sass/_local.scss */
+/* line 565, ../sass/_local.scss */
 .region-footer #block-menu-block-5 .menu-item-1079, .region-footer #block-menu-block-5 .menu-item-1078,
 .region-footer #block-menu-block-5 .menu-item-1228, .region-footer #block-menu-block-5 .menu-item-1229,
 .region-footer #block-menu-block-5 .menu-item-1080, .region-footer #block-menu-block-5 .menu-item-1230 {
   padding: 0px;
   margin: 0px 3px;
 }
-/* line 576, ../sass/_local.scss */
+/* line 568, ../sass/_local.scss */
 .region-footer #block-menu-block-5 .menu-item-1079 a, .region-footer #block-menu-block-5 .menu-item-1078 a,
 .region-footer #block-menu-block-5 .menu-item-1228 a, .region-footer #block-menu-block-5 .menu-item-1229 a,
 .region-footer #block-menu-block-5 .menu-item-1080 a, .region-footer #block-menu-block-5 .menu-item-1230 a {
@@ -1373,7 +1367,7 @@ body a:hover {
   text-indent: 9999px;
   font-size: 0px;
 }
-/* line 585, ../sass/_local.scss */
+/* line 577, ../sass/_local.scss */
 .region-footer #block-menu-block-5 .menu-item-1079 a:hover, .region-footer #block-menu-block-5 .menu-item-1078 a:hover,
 .region-footer #block-menu-block-5 .menu-item-1228 a:hover, .region-footer #block-menu-block-5 .menu-item-1229 a:hover,
 .region-footer #block-menu-block-5 .menu-item-1080 a:hover, .region-footer #block-menu-block-5 .menu-item-1230 a:hover {
