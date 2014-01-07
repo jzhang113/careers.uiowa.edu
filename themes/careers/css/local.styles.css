@@ -1292,11 +1292,11 @@ body a:hover {
 
 @media only screen and (min-width: 40em) {
   /* line 524, ../sass/_local.scss */
-  .region-footer #block-menu-menu-quick-links {
+  .region-footer #block-menu-block-1 {
     width: 75%;
   }
   /* line 527, ../sass/_local.scss */
-  .region-footer #block-menu-menu-quick-links ul {
+  .region-footer #block-menu-block-1 ul {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     -ms-column-count: 3;
