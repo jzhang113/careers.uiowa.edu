@@ -46,7 +46,7 @@ function people_content_type_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -85,7 +85,50 @@ function people_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 3,
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-people-field_people_exclude'
+  $field_instances['node-people-field_people_exclude'] = array(
+    'bundle' => 'people',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Exclude this person from staff directory. An example is person that is not part of the staff that are only used for testimonials.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_people_exclude',
+    'label' => 'Exclude from directory?',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 1,
     ),
   );
 
@@ -122,7 +165,7 @@ function people_content_type_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -206,7 +249,7 @@ function people_content_type_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 9,
+      'weight' => 2,
     ),
   );
 
@@ -246,7 +289,7 @@ function people_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -255,7 +298,7 @@ function people_content_type_field_default_field_instances() {
     'bundle' => 'people',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter as many as you want, however, only the first ten will be displayed.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -286,7 +329,7 @@ function people_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -294,6 +337,9 @@ function people_content_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Biography');
   t('Email');
+  t('Enter as many as you want, however, only the first ten will be displayed.');
+  t('Exclude from directory?');
+  t('Exclude this person from staff directory. An example is person that is not part of the staff that are only used for testimonials.');
   t('Group(s)');
   t('Picture');
   t('Position');

@@ -29,7 +29,7 @@ function people_content_type_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '1',
+          'weight' => '8',
         ),
       ),
       'display' => array(),
