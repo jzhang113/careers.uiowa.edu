@@ -71,8 +71,13 @@
 // AUDIENCE PORTAL
 
 // Related Links
-.pane-taxonomy-term-field-audience-links{
-	padding-top: 0px;
+#content {
+	.pane-taxonomy-term-field-audience-links{
+		padding: 0px;
+		.block-content{
+			padding: 0px;
+		}
+	}
 }
 .field-name-field-audience-links{
 	width: 100%;
@@ -90,10 +95,10 @@
 			@include inline-block;
 			width: 100%;
 			@media #{$desktop} {
-				width: 188px;
+				min-width: 188px;
+				max-width: 25%;
 				height: 75px;
 			}
-			margin: 2px;
 			a{
 				display: block;
 				background-color: $yellow;
