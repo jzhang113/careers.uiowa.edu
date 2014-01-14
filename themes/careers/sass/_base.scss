@@ -35,11 +35,13 @@ $legacy-support-for-ie7: true;
 @import 'singularitygs';
 @import 'breakpoint';
 
+// Import font-awesome partials
+@import 'fa_variables';
+@import 'fa_mixins';
+
 //
 // Import custom partial - mixins and variables defined for your theme
 //
 @import 'custom';
+@import 'classes';
 
-// Import font-awesome partials
-@import 'fa_variables';
-@import 'fa_mixins';
