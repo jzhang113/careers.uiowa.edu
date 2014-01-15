@@ -31,6 +31,14 @@ function people_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Email */
+  $handler->display->display_options['fields']['field_people_email']['id'] = 'field_people_email';
+  $handler->display->display_options['fields']['field_people_email']['table'] = 'field_data_field_people_email';
+  $handler->display->display_options['fields']['field_people_email']['field'] = 'field_people_email';
+  $handler->display->display_options['fields']['field_people_email']['label'] = '';
+  $handler->display->display_options['fields']['field_people_email']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_people_email']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_people_email']['type'] = 'email_plain';
   /* Field: Content: Picture */
   $handler->display->display_options['fields']['field_people_picture']['id'] = 'field_people_picture';
   $handler->display->display_options['fields']['field_people_picture']['table'] = 'field_data_field_people_picture';
@@ -47,10 +55,15 @@ function people_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[title]';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = 'mailto:"[field_people_email]"';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Position */
   $handler->display->display_options['fields']['field_people_position']['id'] = 'field_people_position';
   $handler->display->display_options['fields']['field_people_position']['table'] = 'field_data_field_people_position';
