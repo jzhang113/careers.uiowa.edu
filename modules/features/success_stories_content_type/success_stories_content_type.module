@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Success Stories Content Type feature.
- */
-
-include_once 'success_stories_content_type.features.inc';
