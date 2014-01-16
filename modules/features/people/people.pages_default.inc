@@ -13,9 +13,9 @@ function people_default_page_manager_pages() {
   $page->api_version = 1;
   $page->name = 'people';
   $page->task = 'page';
-  $page->admin_title = 'People';
+  $page->admin_title = 'Staff';
   $page->admin_description = '';
-  $page->path = 'people/!group';
+  $page->path = 'staff/!group';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
@@ -63,7 +63,7 @@ function people_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'People';
+  $display->title = 'Meet The Staff';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -88,7 +88,7 @@ function people_default_page_manager_pages() {
     $pane->pid = 'new-2';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'people-panel_pane_1';
+    $pane->subtype = 'people-people_groups_panel_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();

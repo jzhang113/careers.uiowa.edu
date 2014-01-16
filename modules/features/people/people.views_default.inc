@@ -22,7 +22,6 @@ function people_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Meet The Staff';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -138,7 +137,7 @@ function people_views_default_views() {
   $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: Groups */
-  $handler = $view->new_display('panel_pane', 'Groups', 'panel_pane_1');
+  $handler = $view->new_display('panel_pane', 'Groups', 'people_groups_panel_pane');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Groups';
   $handler->display->display_options['defaults']['group_by'] = FALSE;
@@ -168,7 +167,7 @@ function people_views_default_views() {
   $handler->display->display_options['fields']['field_people_groups']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_people_groups']['alter']['text'] = '[field_people_groups] <span class="summary-count">[nid]</span>';
   $handler->display->display_options['fields']['field_people_groups']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_people_groups']['alter']['path'] = 'people/[field_people_groups]';
+  $handler->display->display_options['fields']['field_people_groups']['alter']['path'] = 'staff/[field_people_groups]';
   $handler->display->display_options['fields']['field_people_groups']['alter']['replace_spaces'] = TRUE;
   $handler->display->display_options['fields']['field_people_groups']['alter']['path_case'] = 'lower';
   $handler->display->display_options['fields']['field_people_groups']['element_label_colon'] = FALSE;
