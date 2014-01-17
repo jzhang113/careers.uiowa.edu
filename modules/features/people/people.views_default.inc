@@ -83,23 +83,6 @@ function people_views_default_views() {
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
   $handler->display->display_options['sorts']['title']['order'] = 'DESC';
-  /* Contextual filter: Content: Groups (field_people_groups) */
-  $handler->display->display_options['arguments']['field_people_groups_tid']['id'] = 'field_people_groups_tid';
-  $handler->display->display_options['arguments']['field_people_groups_tid']['table'] = 'field_data_field_people_groups';
-  $handler->display->display_options['arguments']['field_people_groups_tid']['field'] = 'field_people_groups_tid';
-  $handler->display->display_options['arguments']['field_people_groups_tid']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['field_people_groups_tid']['title'] = '%1';
-  $handler->display->display_options['arguments']['field_people_groups_tid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_people_groups_tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_people_groups_tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_people_groups_tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_people_groups_tid']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['field_people_groups_tid']['validate']['type'] = 'taxonomy_term';
-  $handler->display->display_options['arguments']['field_people_groups_tid']['validate_options']['vocabularies'] = array(
-    'groups' => 'groups',
-  );
-  $handler->display->display_options['arguments']['field_people_groups_tid']['validate_options']['type'] = 'convert';
-  $handler->display->display_options['arguments']['field_people_groups_tid']['validate_options']['transform'] = TRUE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -124,14 +107,49 @@ function people_views_default_views() {
 
   /* Display: People Content Pane */
   $handler = $view->new_display('panel_pane', 'People Content Pane', 'people_panel_pane');
+  $handler->display->display_options['defaults']['query'] = FALSE;
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'groups' => 'groups',
+    'audience' => 0,
+    'events' => 0,
+    'tags' => 0,
+    'testimonials' => 0,
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['tid']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['title'] = '%1';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
+    'groups' => 'groups',
+  );
+  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
   $handler->display->display_options['argument_input'] = array(
-    'field_people_groups_tid' => array(
+    'tid' => array(
       'type' => 'panel',
       'context' => 'entity:file.field-file-image-alt-text',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
-      'label' => 'Content: Groups (field_people_groups)',
+      'label' => 'Taxonomy term: Term ID',
     ),
   );
   $handler->display->display_options['inherit_panels_path'] = '1';
@@ -141,44 +159,53 @@ function people_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Groups';
   $handler->display->display_options['defaults']['group_by'] = FALSE;
-  $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'groups' => 'groups',
+    'audience' => 0,
+    'events' => 0,
+    'tags' => 0,
+    'testimonials' => 0,
+  );
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid']['id'] = 'nid';
-  $handler->display->display_options['fields']['nid']['table'] = 'node';
-  $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  $handler->display->display_options['fields']['nid']['group_type'] = 'count';
-  $handler->display->display_options['fields']['nid']['label'] = '';
-  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['nid']['prefix'] = '(';
-  $handler->display->display_options['fields']['nid']['suffix'] = ')';
-  /* Field: Content: Groups */
-  $handler->display->display_options['fields']['field_people_groups']['id'] = 'field_people_groups';
-  $handler->display->display_options['fields']['field_people_groups']['table'] = 'field_data_field_people_groups';
-  $handler->display->display_options['fields']['field_people_groups']['field'] = 'field_people_groups';
-  $handler->display->display_options['fields']['field_people_groups']['label'] = '';
-  $handler->display->display_options['fields']['field_people_groups']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_people_groups']['alter']['text'] = '[field_people_groups] <span class="summary-count">[nid]</span>';
-  $handler->display->display_options['fields']['field_people_groups']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_people_groups']['alter']['path'] = 'staff/[field_people_groups]';
-  $handler->display->display_options['fields']['field_people_groups']['alter']['replace_spaces'] = TRUE;
-  $handler->display->display_options['fields']['field_people_groups']['alter']['path_case'] = 'lower';
-  $handler->display->display_options['fields']['field_people_groups']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_people_groups']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_people_groups']['delta_offset'] = '0';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['field_featured_title']['id'] = 'field_featured_title';
+  $handler->display->display_options['fields']['field_featured_title']['table'] = 'field_data_field_featured_title';
+  $handler->display->display_options['fields']['field_featured_title']['field'] = 'field_featured_title';
+  $handler->display->display_options['fields']['field_featured_title']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Groups (field_people_groups) */
   $handler->display->display_options['sorts']['field_people_groups_tid']['id'] = 'field_people_groups_tid';
   $handler->display->display_options['sorts']['field_people_groups_tid']['table'] = 'field_data_field_people_groups';
   $handler->display->display_options['sorts']['field_people_groups_tid']['field'] = 'field_people_groups_tid';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Name */
+  $handler->display->display_options['arguments']['name']['id'] = 'name';
+  $handler->display->display_options['arguments']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['name']['field'] = 'name';
+  $handler->display->display_options['arguments']['name']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['name']['default_action'] = 'summary';
+  $handler->display->display_options['arguments']['name']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '1';
+  $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['name']['summary_options']['base_path'] = 'staff';
+  $handler->display->display_options['arguments']['name']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['name']['limit'] = '0';
+  $handler->display->display_options['arguments']['name']['case'] = 'ucwords';
+  $handler->display->display_options['arguments']['name']['path_case'] = 'lower';
+  $handler->display->display_options['arguments']['name']['transform_dash'] = TRUE;
   $export['people'] = $view;
 
   return $export;

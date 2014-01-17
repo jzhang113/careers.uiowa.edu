@@ -20,13 +20,35 @@ function people_default_page_manager_pages() {
     'type' => 'none',
     'settings' => NULL,
   );
-  $page->menu = array();
+  $page->menu = array(
+    'type' => 'none',
+    'title' => '',
+    'name' => 'menu-site-links',
+    'weight' => '0',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
   $page->arguments = array(
     'group' => array(
-      'id' => '',
-      'identifier' => '',
-      'argument' => '',
-      'settings' => array(),
+      'id' => 1,
+      'identifier' => 'Taxonomy term: ID',
+      'name' => 'term',
+      'settings' => array(
+        'input_form' => 'term',
+        'vids' => array(
+          6 => '6',
+          2 => 0,
+          3 => 0,
+          1 => 0,
+          5 => 0,
+        ),
+        'breadcrumb' => 1,
+        'transform' => 1,
+      ),
     ),
   );
   $page->conf = array(
