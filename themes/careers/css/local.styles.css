@@ -18,20 +18,29 @@
 #block-menu-block-4 ul.menu li:before {
   position: absolute;
   left: -1em;
+  background-color: #000;
+  top: 0px;
+  padding: 4.5px 4px;
 }
-/* line 18, ../sass/_classes.scss */
+/* line 21, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-depth-2 > a,
 #block-menu-block-4 ul.menu .menu-depth-2 > .nolink {
   background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+  display: block;
+  cursor: pointer;
 }
-/* line 24, ../sass/_classes.scss */
+/* line 33, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu li.leaf,
 #block-menu-block-4 ul.menu li.expanded,
 #block-menu-block-4 ul.menu li.collapsed {
   list-style-image: none;
   list-style-type: none;
+  font-weight: bold;
 }
-/* line 31, ../sass/_classes.scss */
+/* line 41, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu li.expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -39,10 +48,12 @@
   text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
-  content: "\f0d7";
+  content: "\f0fe";
+  font-size: 1.1em;
+  color: white;
 }
-/* line 38, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.collapsed:before {
+/* line 46, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu li.expanded ul li.expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -50,10 +61,27 @@
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f0da";
+  font-size: 1.1em;
+  color: black;
+  background-color: #fff;
 }
-/* line 43, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu ul {
-  margin-left: 1em;
+/* line 56, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu li.collapsed:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f147";
+}
+/* line 72, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu a {
+  background-color: #fff;
+  color: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /*
@@ -718,20 +746,29 @@ body a:hover {
 #block-menu-block-4 ul.menu li:before {
   position: absolute;
   left: -1em;
+  background-color: #000;
+  top: 0px;
+  padding: 4.5px 4px;
 }
-/* line 18, ../sass/_classes.scss */
+/* line 21, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-depth-2 > a,
 #block-menu-block-4 ul.menu .menu-depth-2 > .nolink {
   background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+  display: block;
+  cursor: pointer;
 }
-/* line 24, ../sass/_classes.scss */
+/* line 33, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu li.leaf,
 #block-menu-block-4 ul.menu li.expanded,
 #block-menu-block-4 ul.menu li.collapsed {
   list-style-image: none;
   list-style-type: none;
+  font-weight: bold;
 }
-/* line 31, ../sass/_classes.scss */
+/* line 41, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu li.expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -739,10 +776,12 @@ body a:hover {
   text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
-  content: "\f0d7";
+  content: "\f0fe";
+  font-size: 1.1em;
+  color: white;
 }
-/* line 38, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.collapsed:before {
+/* line 46, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu li.expanded ul li.expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -750,10 +789,27 @@ body a:hover {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f0da";
+  font-size: 1.1em;
+  color: black;
+  background-color: #fff;
 }
-/* line 43, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu ul {
-  margin-left: 1em;
+/* line 56, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu li.collapsed:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f147";
+}
+/* line 72, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu a {
+  background-color: #fff;
+  color: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /*
