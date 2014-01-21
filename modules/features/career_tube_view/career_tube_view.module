@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Career Tube View feature.
- */
-
-include_once 'career_tube_view.features.inc';

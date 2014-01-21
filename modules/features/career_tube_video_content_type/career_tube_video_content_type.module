@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Career Tube Video Content Type feature.
- */
-
-include_once 'career_tube_video_content_type.features.inc';

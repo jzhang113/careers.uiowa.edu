@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Career Tube Panel Page feature.
- */
-
-include_once 'career_tube_panel_page.features.inc';
