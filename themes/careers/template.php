@@ -98,3 +98,39 @@ function careers_preprocess(&$variables, $hook) {
     unset($variables['page']['content']['system_main']['no_content']);
   }
 }
+
+//Adding wrapper span inside li
+
+function careers_menu_link(array $vars) {
+  global $theme_key;
+  $theme_name = $theme_key;
+
+  $element = $vars['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+
+  if (at_get_setting('extra_menu_classes', $theme_name) == 1 && !empty($element['#original_link'])) {
+    if (!empty($element['#original_link']['depth'])) {
+      $element['#attributes']['class'][] = 'menu-depth-' . $element['#original_link']['depth'];
+    }
+    if (!empty($element['#original_link']['mlid'])) {
+      $element['#attributes']['class'][] = 'menu-item-' . $element['#original_link']['mlid'];
+    }
+  }
+
+  if (at_get_setting('menu_item_span_elements', $theme_name) == 1 && !empty($element['#title'])) {
+    $element['#title'] = '<span>' . $element['#title'] . '</span>';
+    $element['#localized_options']['html'] = TRUE;
+  }
+
+  if (at_get_setting('unset_menu_titles', $theme_name) == 1 && !empty($element['#localized_options']['attributes']['title'])) {
+    unset($element['#localized_options']['attributes']['title']);
+  }
+
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  $output = '<span class="menu-inner">' . $output . '</span>';
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>";
+}

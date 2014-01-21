@@ -14,19 +14,8 @@
   margin: .5em 0 .5em 1em;
   position: relative;
 }
-/* line 11, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li:before, #block-menu-block-3 ul.menu li:before, #block-menu-block-6 ul.menu li:before {
-  position: absolute;
-  left: -1em;
-  background-color: #000;
-  top: 0px;
-  padding: 4.5px 4px;
-}
-/* line 21, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu .menu-depth-2 > a, #block-menu-block-3 ul.menu .menu-depth-2 > a, #block-menu-block-6 ul.menu .menu-depth-2 > a,
-#block-menu-block-4 ul.menu .menu-depth-2 > .nolink,
-#block-menu-block-3 ul.menu .menu-depth-2 > .nolink,
-#block-menu-block-6 ul.menu .menu-depth-2 > .nolink {
+/* line 15, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-depth-2 > .menu-inner, #block-menu-block-3 ul.menu .menu-depth-2 > .menu-inner, #block-menu-block-6 ul.menu .menu-depth-2 > .menu-inner {
   background-color: #000;
   color: #fff;
   font-weight: bold;
@@ -34,7 +23,11 @@
   display: block;
   cursor: pointer;
 }
-/* line 33, ../sass/_classes.scss */
+/* line 23, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-depth-2 > .menu-inner a, #block-menu-block-3 ul.menu .menu-depth-2 > .menu-inner a, #block-menu-block-6 ul.menu .menu-depth-2 > .menu-inner a {
+  color: #fff;
+}
+/* line 30, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu li.leaf, #block-menu-block-3 ul.menu li.leaf, #block-menu-block-6 ul.menu li.leaf,
 #block-menu-block-4 ul.menu li.expanded,
 #block-menu-block-3 ul.menu li.expanded,
@@ -46,20 +39,19 @@
   list-style-type: none;
   font-weight: bold;
 }
-/* line 41, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded:before, #block-menu-block-3 ul.menu li.expanded:before, #block-menu-block-6 ul.menu li.expanded:before {
+/* line 38, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu li.expanded a:before, #block-menu-block-3 ul.menu li.expanded a:before, #block-menu-block-6 ul.menu li.expanded a:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
-  content: "\f0fe";
-  font-size: 1.1em;
-  color: white;
+  content: "\f0d7";
+  margin-right: .5em;
 }
 /* line 46, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded ul li.expanded:before, #block-menu-block-3 ul.menu li.expanded ul li.expanded:before, #block-menu-block-6 ul.menu li.expanded ul li.expanded:before {
+#block-menu-block-4 ul.menu li.collapsed a:before, #block-menu-block-3 ul.menu li.collapsed a:before, #block-menu-block-6 ul.menu li.collapsed a:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -67,27 +59,33 @@
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f0da";
-  font-size: 1.1em;
-  color: black;
-  background-color: #fff;
+  margin-right: .5em;
 }
-/* line 56, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.collapsed:before, #block-menu-block-3 ul.menu li.collapsed:before, #block-menu-block-6 ul.menu li.collapsed:before {
+/* line 53, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-toggle, #block-menu-block-3 ul.menu .menu-toggle, #block-menu-block-6 ul.menu .menu-toggle {
+  display: block;
+}
+/* line 58, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
-  content: "\f147";
+  content: "\f146";
+  margin-right: .5em;
 }
-/* line 72, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu a, #block-menu-block-3 ul.menu a, #block-menu-block-6 ul.menu a {
-  background-color: #fff;
-  color: #000;
-  display: block;
-  width: 100%;
-  height: 100%;
+/* line 65, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-3 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-6 ul.menu .menu-toggle.is-collapsed:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0fe";
+  margin-right: .5em;
 }
 
 /*
@@ -748,19 +746,8 @@ body a:hover {
   margin: .5em 0 .5em 1em;
   position: relative;
 }
-/* line 11, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li:before, #block-menu-block-3 ul.menu li:before, #block-menu-block-6 ul.menu li:before {
-  position: absolute;
-  left: -1em;
-  background-color: #000;
-  top: 0px;
-  padding: 4.5px 4px;
-}
-/* line 21, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu .menu-depth-2 > a, #block-menu-block-3 ul.menu .menu-depth-2 > a, #block-menu-block-6 ul.menu .menu-depth-2 > a,
-#block-menu-block-4 ul.menu .menu-depth-2 > .nolink,
-#block-menu-block-3 ul.menu .menu-depth-2 > .nolink,
-#block-menu-block-6 ul.menu .menu-depth-2 > .nolink {
+/* line 15, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-depth-2 > .menu-inner, #block-menu-block-3 ul.menu .menu-depth-2 > .menu-inner, #block-menu-block-6 ul.menu .menu-depth-2 > .menu-inner {
   background-color: #000;
   color: #fff;
   font-weight: bold;
@@ -768,7 +755,11 @@ body a:hover {
   display: block;
   cursor: pointer;
 }
-/* line 33, ../sass/_classes.scss */
+/* line 23, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-depth-2 > .menu-inner a, #block-menu-block-3 ul.menu .menu-depth-2 > .menu-inner a, #block-menu-block-6 ul.menu .menu-depth-2 > .menu-inner a {
+  color: #fff;
+}
+/* line 30, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu li.leaf, #block-menu-block-3 ul.menu li.leaf, #block-menu-block-6 ul.menu li.leaf,
 #block-menu-block-4 ul.menu li.expanded,
 #block-menu-block-3 ul.menu li.expanded,
@@ -780,20 +771,19 @@ body a:hover {
   list-style-type: none;
   font-weight: bold;
 }
-/* line 41, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded:before, #block-menu-block-3 ul.menu li.expanded:before, #block-menu-block-6 ul.menu li.expanded:before {
+/* line 38, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu li.expanded a:before, #block-menu-block-3 ul.menu li.expanded a:before, #block-menu-block-6 ul.menu li.expanded a:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
-  content: "\f0fe";
-  font-size: 1.1em;
-  color: white;
+  content: "\f0d7";
+  margin-right: .5em;
 }
 /* line 46, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded ul li.expanded:before, #block-menu-block-3 ul.menu li.expanded ul li.expanded:before, #block-menu-block-6 ul.menu li.expanded ul li.expanded:before {
+#block-menu-block-4 ul.menu li.collapsed a:before, #block-menu-block-3 ul.menu li.collapsed a:before, #block-menu-block-6 ul.menu li.collapsed a:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -801,27 +791,33 @@ body a:hover {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f0da";
-  font-size: 1.1em;
-  color: black;
-  background-color: #fff;
+  margin-right: .5em;
 }
-/* line 56, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.collapsed:before, #block-menu-block-3 ul.menu li.collapsed:before, #block-menu-block-6 ul.menu li.collapsed:before {
+/* line 53, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-toggle, #block-menu-block-3 ul.menu .menu-toggle, #block-menu-block-6 ul.menu .menu-toggle {
+  display: block;
+}
+/* line 58, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
-  content: "\f147";
+  content: "\f146";
+  margin-right: .5em;
 }
-/* line 72, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu a, #block-menu-block-3 ul.menu a, #block-menu-block-6 ul.menu a {
-  background-color: #fff;
-  color: #000;
-  display: block;
-  width: 100%;
-  height: 100%;
+/* line 65, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-3 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-6 ul.menu .menu-toggle.is-collapsed:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0fe";
+  margin-right: .5em;
 }
 
 /*
