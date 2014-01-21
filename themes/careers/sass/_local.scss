@@ -212,8 +212,11 @@
 }
 
 .pane-views-exp-events-events-list {
-	.views-submit-button {
-		width: 100%;
+	.views-submit-button, .views-reset-button {
+		width: auto;
+	}
+	input[type="text"], .views-widget-filter-field_event_category_tid, .form-select {
+		width: 99%;
 	}
 }
 
