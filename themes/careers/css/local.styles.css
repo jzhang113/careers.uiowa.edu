@@ -21,13 +21,12 @@
   font-weight: bold;
   padding: 5px;
   display: block;
-  cursor: pointer;
 }
-/* line 23, ../sass/_classes.scss */
+/* line 22, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-depth-2 > .menu-inner a, #block-menu-block-3 ul.menu .menu-depth-2 > .menu-inner a, #block-menu-block-6 ul.menu .menu-depth-2 > .menu-inner a {
   color: #fff;
 }
-/* line 30, ../sass/_classes.scss */
+/* line 29, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu li.leaf, #block-menu-block-3 ul.menu li.leaf, #block-menu-block-6 ul.menu li.leaf,
 #block-menu-block-4 ul.menu li.expanded,
 #block-menu-block-3 ul.menu li.expanded,
@@ -39,8 +38,8 @@
   list-style-type: none;
   font-weight: bold;
 }
-/* line 38, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded a:before, #block-menu-block-3 ul.menu li.expanded a:before, #block-menu-block-6 ul.menu li.expanded a:before {
+/* line 37, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu li.expanded .menu-inner > a:before, #block-menu-block-3 ul.menu li.expanded .menu-inner > a:before, #block-menu-block-6 ul.menu li.expanded .menu-inner > a:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -50,8 +49,8 @@
   content: "\f0d7";
   margin-right: .5em;
 }
-/* line 46, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.collapsed a:before, #block-menu-block-3 ul.menu li.collapsed a:before, #block-menu-block-6 ul.menu li.collapsed a:before {
+/* line 45, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu li.collapsed .menu-inner > a:before, #block-menu-block-3 ul.menu li.collapsed .menu-inner > a:before, #block-menu-block-6 ul.menu li.collapsed .menu-inner > a:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -61,9 +60,10 @@
   content: "\f0da";
   margin-right: .5em;
 }
-/* line 53, ../sass/_classes.scss */
+/* line 52, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle, #block-menu-block-3 ul.menu .menu-toggle, #block-menu-block-6 ul.menu .menu-toggle {
   display: block;
+  cursor: pointer;
 }
 /* line 58, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:before {
@@ -753,13 +753,12 @@ body a:hover {
   font-weight: bold;
   padding: 5px;
   display: block;
-  cursor: pointer;
 }
-/* line 23, ../sass/_classes.scss */
+/* line 22, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-depth-2 > .menu-inner a, #block-menu-block-3 ul.menu .menu-depth-2 > .menu-inner a, #block-menu-block-6 ul.menu .menu-depth-2 > .menu-inner a {
   color: #fff;
 }
-/* line 30, ../sass/_classes.scss */
+/* line 29, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu li.leaf, #block-menu-block-3 ul.menu li.leaf, #block-menu-block-6 ul.menu li.leaf,
 #block-menu-block-4 ul.menu li.expanded,
 #block-menu-block-3 ul.menu li.expanded,
@@ -771,8 +770,8 @@ body a:hover {
   list-style-type: none;
   font-weight: bold;
 }
-/* line 38, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded a:before, #block-menu-block-3 ul.menu li.expanded a:before, #block-menu-block-6 ul.menu li.expanded a:before {
+/* line 37, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu li.expanded .menu-inner > a:before, #block-menu-block-3 ul.menu li.expanded .menu-inner > a:before, #block-menu-block-6 ul.menu li.expanded .menu-inner > a:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -782,8 +781,8 @@ body a:hover {
   content: "\f0d7";
   margin-right: .5em;
 }
-/* line 46, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.collapsed a:before, #block-menu-block-3 ul.menu li.collapsed a:before, #block-menu-block-6 ul.menu li.collapsed a:before {
+/* line 45, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu li.collapsed .menu-inner > a:before, #block-menu-block-3 ul.menu li.collapsed .menu-inner > a:before, #block-menu-block-6 ul.menu li.collapsed .menu-inner > a:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -793,9 +792,10 @@ body a:hover {
   content: "\f0da";
   margin-right: .5em;
 }
-/* line 53, ../sass/_classes.scss */
+/* line 52, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle, #block-menu-block-3 ul.menu .menu-toggle, #block-menu-block-6 ul.menu .menu-toggle {
   display: block;
+  cursor: pointer;
 }
 /* line 58, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:before {

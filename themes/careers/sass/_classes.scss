@@ -18,7 +18,6 @@
       font-weight: bold;
       padding: 5px;
       display: block;
-      cursor: pointer;
 
       a {
         color: #fff;
@@ -33,7 +32,7 @@
       font-weight: bold;
     }
 
-    li.expanded a {
+    li.expanded .menu-inner > a {
 
       &:before {
         @include icon($fa-var-caret-down);
@@ -41,7 +40,7 @@
       }
     }
 
-    li.collapsed a {
+    li.collapsed .menu-inner > a {
 
       &:before {
         @include icon($fa-var-caret-right);
@@ -52,6 +51,7 @@
     //jquery toggle
     .menu-toggle {
       display: block;
+      cursor: pointer;
     }
     .menu-toggle.is-expanded {
 

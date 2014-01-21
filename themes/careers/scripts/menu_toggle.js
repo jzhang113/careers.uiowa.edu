@@ -4,7 +4,7 @@
     $(".menu-toggle").parent().next("ul").addClass("hide").hide();
     if ($(".block-region-sidebar-first .menu-name-menu-audience-menu li").hasClass("active-trail")) {
       $(".block-region-sidebar-first .menu-name-menu-audience-menu .active-trail").parent("ul").removeClass("hide").addClass("show").show();
-      $(".active-trail .menu-toggle").removeClass("is-collapsed").addClass("is-expanded");
+      $("ul.show").siblings(".menu-inner").children(".menu-toggle").removeClass("is-collapsed").addClass("is-expanded");
     }
     else {
       $(".menu-toggle").parent().next("ul").addClass("hide").hide();
