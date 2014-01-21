@@ -12,6 +12,11 @@
       }
     }
 
+    a,
+    .nolink {
+      color: #000;
+    }
+
     .menu-depth-2 >.menu-inner {
       background-color: #000;
       color: #fff;
@@ -19,7 +24,8 @@
       padding: 5px;
       display: block;
 
-      a {
+      a,
+      .nolink {
         color: #fff;
       }
     }
@@ -32,7 +38,7 @@
       font-weight: bold;
     }
 
-    li.expanded .menu-inner > a {
+    li.expanded a {
 
       &:before {
         @include icon($fa-var-caret-down);
@@ -40,12 +46,27 @@
       }
     }
 
-    li.collapsed .menu-inner > a {
+    li.collapsed a {
 
       &:before {
         @include icon($fa-var-caret-right);
         margin-right: .5em;
       }
+    }
+
+    li.leaf a {
+      &:before {
+        content: "";
+        margin-right: 0;
+      }
+    }
+
+    ul {
+      display: none;
+    }
+
+    li.active-trail > ul {
+      display: block;
     }
 
     //jquery toggle
