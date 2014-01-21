@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * people_content_type.panelizer.inc
+ * people.panelizer.inc
  */
 
 /**
  * Implements hook_panelizer_defaults().
  */
-function people_content_type_panelizer_defaults() {
+function people_panelizer_defaults() {
   $export = array();
 
   $panelizer = new stdClass();
@@ -224,17 +224,19 @@ function people_content_type_panelizer_defaults() {
     $pane->pid = 'new-7';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_people_group';
+    $pane->subtype = 'node:field_people_groups';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'above',
-      'formatter' => 'list_default',
-      'delta_limit' => 0,
+      'formatter' => 'taxonomy_term_reference_plain',
+      'delta_limit' => '0',
       'delta_offset' => '0',
-      'delta_reversed' => FALSE,
+      'delta_reversed' => 0,
       'formatter_settings' => array(),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(

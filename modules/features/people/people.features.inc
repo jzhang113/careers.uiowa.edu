@@ -1,13 +1,16 @@
 <?php
 /**
  * @file
- * people_content_type.features.inc
+ * people.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function people_content_type_ctools_plugin_api($module = NULL, $api = NULL) {
+function people_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "page_manager" && $api == "pages_default") {
+    return array("version" => "1");
+  }
   if ($module == "panelizer" && $api == "panelizer") {
     return array("version" => "1");
   }
@@ -17,9 +20,16 @@ function people_content_type_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function people_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_image_default_styles().
  */
-function people_content_type_image_default_styles() {
+function people_image_default_styles() {
   $styles = array();
 
   // Exported image style: people_profile_100.
@@ -108,7 +118,7 @@ function people_content_type_image_default_styles() {
 /**
  * Implements hook_node_info().
  */
-function people_content_type_node_info() {
+function people_node_info() {
   $items = array(
     'people' => array(
       'name' => t('People'),

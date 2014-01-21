@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * people_content_type.features.field_instance.inc
+ * people.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function people_content_type_field_default_field_instances() {
+function people_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-people-field_people_biography'
@@ -132,8 +132,8 @@ function people_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-people-field_people_group'
-  $field_instances['node-people-field_people_group'] = array(
+  // Exported field_instance: 'node-people-field_people_groups'
+  $field_instances['node-people-field_people_groups'] = array(
     'bundle' => 'people',
     'default_value' => NULL,
     'deleted' => 0,
@@ -141,10 +141,10 @@ function people_content_type_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 6,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -154,8 +154,8 @@ function people_content_type_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_people_group',
-    'label' => 'Group(s)',
+    'field_name' => 'field_people_groups',
+    'label' => 'Groups',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -340,7 +340,7 @@ function people_content_type_field_default_field_instances() {
   t('Enter as many as you want, however, only the first ten will be displayed.');
   t('Exclude from directory?');
   t('Exclude this person from staff directory. An example is person that is not part of the staff that are only used for testimonials.');
-  t('Group(s)');
+  t('Groups');
   t('Picture');
   t('Position');
   t('Responsibilities');

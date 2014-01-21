@@ -1,27 +1,56 @@
 <?php
 /**
  * @file
- * people_view_and_panel_page.pages_default.inc
+ * people.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_pages().
  */
-function people_view_and_panel_page_default_page_manager_pages() {
+function people_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
   $page->name = 'people';
   $page->task = 'page';
-  $page->admin_title = 'People';
+  $page->admin_title = 'Staff';
   $page->admin_description = '';
-  $page->path = 'people';
+  $page->path = 'staff/!group';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
   );
-  $page->menu = array();
-  $page->arguments = array();
+  $page->menu = array(
+    'type' => 'none',
+    'title' => '',
+    'name' => 'menu-site-links',
+    'weight' => '0',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
+  $page->arguments = array(
+    'group' => array(
+      'id' => 1,
+      'identifier' => 'Taxonomy term: ID',
+      'name' => 'term',
+      'settings' => array(
+        'input_form' => 'term',
+        'vids' => array(
+          6 => '6',
+          2 => 0,
+          3 => 0,
+          1 => 0,
+          5 => 0,
+        ),
+        'breadcrumb' => 1,
+        'transform' => 1,
+      ),
+    ),
+  );
   $page->conf = array(
     'admin_paths' => FALSE,
   );
@@ -46,23 +75,24 @@ function people_view_and_panel_page_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'boxton';
+  $display->layout = 'burr_flipped';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'contentmain' => NULL,
+      'sidebar' => NULL,
     ),
   );
   $display->cache = array();
-  $display->title = 'People';
+  $display->title = 'Meet The Staff';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
     $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
-    $pane->subtype = 'people-panel_pane_career_advisors';
+    $pane->subtype = 'people-people_panel_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -78,9 +108,9 @@ function people_view_and_panel_page_default_page_manager_pages() {
     $display->panels['contentmain'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
-    $pane->panel = 'contentmain';
+    $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'people-panel_pane_peer_advisors';
+    $pane->subtype = 'people-people_groups_panel_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -90,46 +120,10 @@ function people_view_and_panel_page_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['contentmain'][1] = 'new-2';
-    $pane = new stdClass();
-    $pane->pid = 'new-3';
-    $pane->panel = 'contentmain';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'people-panel_pane_experiential_education_team';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['contentmain'][2] = 'new-3';
-    $pane = new stdClass();
-    $pane->pid = 'new-4';
-    $pane->panel = 'contentmain';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'people-panel_pane_employer_relations_team';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['contentmain'][3] = 'new-4';
+    $display->panels['sidebar'][0] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

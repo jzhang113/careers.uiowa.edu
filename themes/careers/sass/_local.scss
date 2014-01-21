@@ -212,8 +212,11 @@
 }
 
 .pane-views-exp-events-events-list {
-	.views-submit-button {
-		width: 100%;
+	.views-submit-button, .views-reset-button {
+		width: auto;
+	}
+	input[type="text"], .views-widget-filter-field_event_category_tid, .form-select {
+		width: 99%;
 	}
 }
 
@@ -279,7 +282,7 @@
 // END People Nodes
 
 // CONTENT PANE People View
-.pane-people-panel-pane-career-advisors, .pane-people-panel-pane-peer-advisors, .pane-people-panel-pane-experiential-education-team, .pane-people-panel-pane-employer-relations-team{
+.view-display-id-people_panel_pane {
 	.views-field-field-people-picture{
 		display: block;
 		float: left;
