@@ -5,17 +5,17 @@
 @import url(http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,800,400italic);
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 /* line 3, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu {
+#block-menu-block-4 ul.menu, #block-menu-block-3 ul.menu, #block-menu-block-6 ul.menu {
   margin: 0;
   padding: 0;
 }
 /* line 7, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li {
+#block-menu-block-4 ul.menu li, #block-menu-block-3 ul.menu li, #block-menu-block-6 ul.menu li {
   margin: .5em 0 .5em 1em;
   position: relative;
 }
 /* line 11, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li:before {
+#block-menu-block-4 ul.menu li:before, #block-menu-block-3 ul.menu li:before, #block-menu-block-6 ul.menu li:before {
   position: absolute;
   left: -1em;
   background-color: #000;
@@ -23,8 +23,10 @@
   padding: 4.5px 4px;
 }
 /* line 21, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu .menu-depth-2 > a,
-#block-menu-block-4 ul.menu .menu-depth-2 > .nolink {
+#block-menu-block-4 ul.menu .menu-depth-2 > a, #block-menu-block-3 ul.menu .menu-depth-2 > a, #block-menu-block-6 ul.menu .menu-depth-2 > a,
+#block-menu-block-4 ul.menu .menu-depth-2 > .nolink,
+#block-menu-block-3 ul.menu .menu-depth-2 > .nolink,
+#block-menu-block-6 ul.menu .menu-depth-2 > .nolink {
   background-color: #000;
   color: #fff;
   font-weight: bold;
@@ -33,15 +35,19 @@
   cursor: pointer;
 }
 /* line 33, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.leaf,
+#block-menu-block-4 ul.menu li.leaf, #block-menu-block-3 ul.menu li.leaf, #block-menu-block-6 ul.menu li.leaf,
 #block-menu-block-4 ul.menu li.expanded,
-#block-menu-block-4 ul.menu li.collapsed {
+#block-menu-block-3 ul.menu li.expanded,
+#block-menu-block-6 ul.menu li.expanded,
+#block-menu-block-4 ul.menu li.collapsed,
+#block-menu-block-3 ul.menu li.collapsed,
+#block-menu-block-6 ul.menu li.collapsed {
   list-style-image: none;
   list-style-type: none;
   font-weight: bold;
 }
 /* line 41, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded:before {
+#block-menu-block-4 ul.menu li.expanded:before, #block-menu-block-3 ul.menu li.expanded:before, #block-menu-block-6 ul.menu li.expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -53,7 +59,7 @@
   color: white;
 }
 /* line 46, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded ul li.expanded:before {
+#block-menu-block-4 ul.menu li.expanded ul li.expanded:before, #block-menu-block-3 ul.menu li.expanded ul li.expanded:before, #block-menu-block-6 ul.menu li.expanded ul li.expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -66,7 +72,7 @@
   background-color: #fff;
 }
 /* line 56, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.collapsed:before {
+#block-menu-block-4 ul.menu li.collapsed:before, #block-menu-block-3 ul.menu li.collapsed:before, #block-menu-block-6 ul.menu li.collapsed:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -76,7 +82,7 @@
   content: "\f147";
 }
 /* line 72, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu a {
+#block-menu-block-4 ul.menu a, #block-menu-block-3 ul.menu a, #block-menu-block-6 ul.menu a {
   background-color: #fff;
   color: #000;
   display: block;
@@ -733,17 +739,17 @@ body a:hover {
 }
 
 /* line 3, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu {
+#block-menu-block-4 ul.menu, #block-menu-block-3 ul.menu, #block-menu-block-6 ul.menu {
   margin: 0;
   padding: 0;
 }
 /* line 7, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li {
+#block-menu-block-4 ul.menu li, #block-menu-block-3 ul.menu li, #block-menu-block-6 ul.menu li {
   margin: .5em 0 .5em 1em;
   position: relative;
 }
 /* line 11, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li:before {
+#block-menu-block-4 ul.menu li:before, #block-menu-block-3 ul.menu li:before, #block-menu-block-6 ul.menu li:before {
   position: absolute;
   left: -1em;
   background-color: #000;
@@ -751,8 +757,10 @@ body a:hover {
   padding: 4.5px 4px;
 }
 /* line 21, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu .menu-depth-2 > a,
-#block-menu-block-4 ul.menu .menu-depth-2 > .nolink {
+#block-menu-block-4 ul.menu .menu-depth-2 > a, #block-menu-block-3 ul.menu .menu-depth-2 > a, #block-menu-block-6 ul.menu .menu-depth-2 > a,
+#block-menu-block-4 ul.menu .menu-depth-2 > .nolink,
+#block-menu-block-3 ul.menu .menu-depth-2 > .nolink,
+#block-menu-block-6 ul.menu .menu-depth-2 > .nolink {
   background-color: #000;
   color: #fff;
   font-weight: bold;
@@ -761,15 +769,19 @@ body a:hover {
   cursor: pointer;
 }
 /* line 33, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.leaf,
+#block-menu-block-4 ul.menu li.leaf, #block-menu-block-3 ul.menu li.leaf, #block-menu-block-6 ul.menu li.leaf,
 #block-menu-block-4 ul.menu li.expanded,
-#block-menu-block-4 ul.menu li.collapsed {
+#block-menu-block-3 ul.menu li.expanded,
+#block-menu-block-6 ul.menu li.expanded,
+#block-menu-block-4 ul.menu li.collapsed,
+#block-menu-block-3 ul.menu li.collapsed,
+#block-menu-block-6 ul.menu li.collapsed {
   list-style-image: none;
   list-style-type: none;
   font-weight: bold;
 }
 /* line 41, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded:before {
+#block-menu-block-4 ul.menu li.expanded:before, #block-menu-block-3 ul.menu li.expanded:before, #block-menu-block-6 ul.menu li.expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -781,7 +793,7 @@ body a:hover {
   color: white;
 }
 /* line 46, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded ul li.expanded:before {
+#block-menu-block-4 ul.menu li.expanded ul li.expanded:before, #block-menu-block-3 ul.menu li.expanded ul li.expanded:before, #block-menu-block-6 ul.menu li.expanded ul li.expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -794,7 +806,7 @@ body a:hover {
   background-color: #fff;
 }
 /* line 56, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu li.collapsed:before {
+#block-menu-block-4 ul.menu li.collapsed:before, #block-menu-block-3 ul.menu li.collapsed:before, #block-menu-block-6 ul.menu li.collapsed:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -804,7 +816,7 @@ body a:hover {
   content: "\f147";
 }
 /* line 72, ../sass/_classes.scss */
-#block-menu-block-4 ul.menu a {
+#block-menu-block-4 ul.menu a, #block-menu-block-3 ul.menu a, #block-menu-block-6 ul.menu a {
   background-color: #fff;
   color: #000;
   display: block;
