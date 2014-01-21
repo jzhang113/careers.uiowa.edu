@@ -87,11 +87,15 @@ function events_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-2';
     $pane->panel = 'sidebar';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'events-events_categories';
+    $pane->type = 'block';
+    $pane->subtype = 'views--exp-events-events_list';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 0,
+      'override_title_text' => 'Date Range',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -102,28 +106,6 @@ function events_default_page_manager_pages() {
     $pane->locks = array();
     $display->content['new-2'] = $pane;
     $display->panels['sidebar'][0] = 'new-2';
-    $pane = new stdClass();
-    $pane->pid = 'new-3';
-    $pane->panel = 'sidebar';
-    $pane->type = 'block';
-    $pane->subtype = 'views--exp-events-events_list';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'inherit_path' => 1,
-      'override_title' => 1,
-      'override_title_text' => 'Date Range',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['sidebar'][1] = 'new-3';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-1';
   $handler->conf['display'] = $display;
