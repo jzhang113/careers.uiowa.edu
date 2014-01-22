@@ -7,7 +7,11 @@
 include_once 'video.features.inc';
 
 function video_form_video_node_form_alter(&$form, &$form_state, $form_id) {
+  
+  // Setup for video_video_validate function
   $form['#validate'][] = 'video_video_validate';
+
+  // Conditional Visibility
   $form['field_video_link']['#states'] = array(
     'invisible' => array(
        ':input[name="field_video_check[' . LANGUAGE_NONE . ']"]' => array('checked' => FALSE),
@@ -26,14 +30,22 @@ function video_form_video_node_form_alter(&$form, &$form_state, $form_id) {
 }
 
 function video_video_validate($form, &$form_state) {
+
+  // Check to make sure a YouTube Video and a Screenshot are not both filled out.
   if ($form_state['values']['field_video_screenshot'][LANGUAGE_NONE][0]['fid'] > 0 AND $form_state['values']['field_video_file'][LANGUAGE_NONE][0]['fid'] > 0) {
+    // Assuming the browser/drupal supports it, highlight both fields with the error.
     form_set_error('field_video_screenshot', 'Cannot save both a YouTube Video and a Screenshot. Only one must be filled out.');
     form_set_error('field_video_file', 'Cannot save both a YouTube Video and a Screenshot. Only one must be filled out.');
+    // Remove duplicate error messages.
     $_SESSION['messages']['error'] = array_unique($_SESSION['messages']['error']);
   }
+
+  // Check to make sure a YouTube Video and a Video Link are not both filled out.
   if ($form_state['values']['field_video_link'][LANGUAGE_NONE][0]['url'] != "" AND $form_state['values']['field_video_file'][LANGUAGE_NONE][0]['fid'] > 0) {
+    // Assuming the browser/drupal supports it, highlight both fields with the error.
     form_set_error('field_video_file', 'Cannot save both a YouTube Video and a Video Link. Only one must be filled out.');
     form_set_error('field_video_link', 'Cannot save both a YouTube Video and a Video Link. Only one must be filled out.');
+    // Remove duplicate error messages.
     $_SESSION['messages']['error'] = array_unique($_SESSION['messages']['error']);
   }
 }
