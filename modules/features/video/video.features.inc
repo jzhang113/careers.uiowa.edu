@@ -37,7 +37,7 @@ function video_node_info() {
       'description' => '',
       'has_title' => '1',
       'title_label' => t('Title'),
-      'help' => '',
+      'help' => t('Add either a YouTube Video or a Video Link to an external video. Both fields cannot be filled out at the time of submission. The screenshot field is only for use with the Video Link field.'),
     ),
   );
   return $items;

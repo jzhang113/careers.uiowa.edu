@@ -16,7 +16,10 @@ function video_default_page_manager_pages() {
   $page->admin_title = 'Career Tube';
   $page->admin_description = '';
   $page->path = 'video/!category';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array(
     'category' => array(

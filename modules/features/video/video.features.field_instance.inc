@@ -109,7 +109,7 @@ function video_field_default_field_instances() {
   $field_instances['node-video-field_video_file'] = array(
     'bundle' => 'video',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A screenshot will be taken from YouTube for use on this site.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -264,7 +264,7 @@ function video_field_default_field_instances() {
   $field_instances['node-video-field_video_screenshot'] = array(
     'bundle' => 'video',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The screenshot is only used for the Video Link option.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -404,10 +404,12 @@ function video_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A screenshot will be taken from YouTube for use on this site.');
   t('Category');
   t('Description');
   t('Not a YouTube Video?');
   t('Screenshot');
+  t('The screenshot is only used for the Video Link option.');
   t('Video Link');
   t('YouTube Video');
 
