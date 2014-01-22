@@ -88,7 +88,11 @@
   display: block;
   cursor: pointer;
 }
-/* line 79, ../sass/_classes.scss */
+/* line 78, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-toggle.is-expanded:focus, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:focus, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:focus {
+  outline: 1px dotted white;
+}
+/* line 81, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -99,7 +103,11 @@
   content: "\f146";
   margin-right: .5em;
 }
-/* line 86, ../sass/_classes.scss */
+/* line 87, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-toggle.is-collapsed:focus, #block-menu-block-3 ul.menu .menu-toggle.is-collapsed:focus, #block-menu-block-6 ul.menu .menu-toggle.is-collapsed:focus {
+  outline: 1px dotted white;
+}
+/* line 90, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-3 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-6 ul.menu .menu-toggle.is-collapsed:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -843,7 +851,11 @@ body a:hover {
   display: block;
   cursor: pointer;
 }
-/* line 79, ../sass/_classes.scss */
+/* line 78, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-toggle.is-expanded:focus, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:focus, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:focus {
+  outline: 1px dotted white;
+}
+/* line 81, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -854,7 +866,11 @@ body a:hover {
   content: "\f146";
   margin-right: .5em;
 }
-/* line 86, ../sass/_classes.scss */
+/* line 87, ../sass/_classes.scss */
+#block-menu-block-4 ul.menu .menu-toggle.is-collapsed:focus, #block-menu-block-3 ul.menu .menu-toggle.is-collapsed:focus, #block-menu-block-6 ul.menu .menu-toggle.is-collapsed:focus {
+  outline: 1px dotted white;
+}
+/* line 90, ../sass/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-3 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-6 ul.menu .menu-toggle.is-collapsed:before {
   font-family: FontAwesome;
   font-weight: normal;

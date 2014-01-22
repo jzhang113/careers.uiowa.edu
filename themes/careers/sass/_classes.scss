@@ -75,14 +75,18 @@
       cursor: pointer;
     }
     .menu-toggle.is-expanded {
-
+      &:focus {
+        outline: 1px dotted white;;
+      }
       &:before {
         @include icon($fa-var-minus-square);
         margin-right: .5em;
       }
     }
     .menu-toggle.is-collapsed {
-
+      &:focus {
+        outline: 1px dotted white;
+      }
       &:before {
         @include icon($fa-var-plus-square);
         margin-right: .5em;
