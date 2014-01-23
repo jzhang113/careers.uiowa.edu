@@ -468,8 +468,12 @@ body{
     text-decoration: none;
   }
 }
-.front .button{
-  float: right;
+
+.block-side-button-side-button-block {
+  .button { // Sidebar Button Block
+    width: 100%;
+    white-space: normal;
+  }
 }
 // END Form Stuff
 

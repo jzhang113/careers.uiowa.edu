@@ -8,11 +8,15 @@
 */
 
 // BLOCK HireaHawk.com
-.pane-block-1 {
+.pane-block-1, #block-block-1 {
 	background-color: $yellow;
-	.pane-title{
+	img {
+		width: 50%;
+	}
+	.block-title{
 		font-family: $hireahawk;
 		font-size: 2.9rem;
+		text-align: center;
 	}
 }
 
