@@ -52,7 +52,7 @@ function video_views_default_views() {
   $handler->display->display_options['fields']['field_video_file']['settings'] = array(
     'file_view_mode' => 'preview',
   );
-  /* Field: Content: Screenshot */
+  /* Field: Content: Video Link Screenshot */
   $handler->display->display_options['fields']['field_video_screenshot']['id'] = 'field_video_screenshot';
   $handler->display->display_options['fields']['field_video_screenshot']['table'] = 'field_data_field_video_screenshot';
   $handler->display->display_options['fields']['field_video_screenshot']['field'] = 'field_video_screenshot';
