@@ -62,7 +62,7 @@ function audience_taxonomy_panelizer_defaults() {
   $panelizer->link_to_entity = FALSE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'boxton';
+  $display->layout = 'sutro';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -81,7 +81,7 @@ function audience_taxonomy_panelizer_defaults() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'contentmain';
+    $pane->panel = 'header';
     $pane->type = 'views_panes';
     $pane->subtype = 'featured-featured_entity_reference';
     $pane->shown = TRUE;
@@ -100,10 +100,10 @@ function audience_taxonomy_panelizer_defaults() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['contentmain'][0] = 'new-1';
+    $display->panels['header'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
-    $pane->panel = 'contentmain';
+    $pane->panel = 'header';
     $pane->type = 'entity_field';
     $pane->subtype = 'taxonomy_term:field_audience_links';
     $pane->shown = TRUE;
@@ -128,10 +128,10 @@ function audience_taxonomy_panelizer_defaults() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['contentmain'][1] = 'new-2';
+    $display->panels['header'][1] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
-    $pane->panel = 'contentmain';
+    $pane->panel = 'header';
     $pane->type = 'term_description';
     $pane->subtype = 'term_description';
     $pane->shown = TRUE;
@@ -150,7 +150,7 @@ function audience_taxonomy_panelizer_defaults() {
     $pane->position = 2;
     $pane->locks = array();
     $display->content['new-3'] = $pane;
-    $display->panels['contentmain'][2] = 'new-3';
+    $display->panels['header'][2] = 'new-3';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
