@@ -295,7 +295,7 @@ function video_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_video_screenshot',
-    'label' => 'Screenshot',
+    'label' => 'Video Link Screenshot',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -408,9 +408,9 @@ function video_field_default_field_instances() {
   t('Category');
   t('Description');
   t('Not a YouTube Video?');
-  t('Screenshot');
   t('The screenshot is only used for the Video Link option.');
   t('Video Link');
+  t('Video Link Screenshot');
   t('YouTube Video');
 
   return $field_instances;
