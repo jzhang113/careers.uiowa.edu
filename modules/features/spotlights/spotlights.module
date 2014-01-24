@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Spotlights feature.
+ */
+
+include_once 'spotlights.features.inc';
