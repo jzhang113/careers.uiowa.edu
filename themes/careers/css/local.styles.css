@@ -705,7 +705,6 @@ body a:hover {
   font-weight: normal;
   line-height: 1.428571429;
   text-align: center;
-  white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid transparent;
@@ -714,56 +713,55 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 465, ../sass/local.styles.scss */
+/* line 464, ../sass/local.styles.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #9c8345;
   color: white;
   text-decoration: none;
 }
 
-/* line 473, ../sass/local.styles.scss */
-.block-side-button-side-button-block .button {
+/* line 472, ../sass/local.styles.scss */
+.view-display-id-sidebar_button .button {
   width: 100%;
-  white-space: normal;
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 483, ../sass/local.styles.scss */
+  /* line 481, ../sass/local.styles.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 488, ../sass/local.styles.scss */
+/* line 486, ../sass/local.styles.scss */
 .region-footer {
   position: relative;
   font-size: 14px;
   background-color: #eae3d2;
 }
-/* line 492, ../sass/local.styles.scss */
+/* line 490, ../sass/local.styles.scss */
 .region-footer a {
   color: black;
   font-family: "Neuton", serif;
 }
-/* line 495, ../sass/local.styles.scss */
+/* line 493, ../sass/local.styles.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 498, ../sass/local.styles.scss */
+/* line 496, ../sass/local.styles.scss */
 .region-footer a:active {
   color: black;
 }
-/* line 502, ../sass/local.styles.scss */
+/* line 500, ../sass/local.styles.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 504, ../sass/local.styles.scss */
+/* line 502, ../sass/local.styles.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 510, ../sass/local.styles.scss */
+/* line 508, ../sass/local.styles.scss */
 .region-footer h2 {
   font-size: 1.8rem;
 }

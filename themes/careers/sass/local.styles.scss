@@ -454,7 +454,6 @@ body{
   font-weight: normal;
   line-height: 1.428571429;
   text-align: center;
-  white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid transparent;
@@ -469,10 +468,9 @@ body{
   }
 }
 
-.block-side-button-side-button-block {
+.view-display-id-sidebar_button {
   .button { // Sidebar Button Block
     width: 100%;
-    white-space: normal;
   }
 }
 // END Form Stuff
