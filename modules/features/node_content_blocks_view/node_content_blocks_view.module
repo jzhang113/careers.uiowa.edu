@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Node Content Blocks View feature.
- */
-
-include_once 'node_content_blocks_view.features.inc';
