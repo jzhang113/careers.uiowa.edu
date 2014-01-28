@@ -989,28 +989,28 @@ body a:hover {
 }
 
 /* line 83, ../sass/_local.scss */
-.pond-footer-inner .block {
+.stella-footer-inner .block {
   float: left;
 }
 @media only screen and (min-width: 1025px) {
   /* line 82, ../sass/_local.scss */
-  .pond-footer-inner {
+  .stella-footer-inner {
     width: 33.333% \9;
     /* IE8 and below */
   }
   /* line 91, ../sass/_local.scss */
-  .pond-footer-inner .block:first-of-type:nth-last-child(1),
-  .pond-footer-inner .block:first-of-type:nth-last-child(1) ~ .block {
+  .stella-footer-inner .block:first-of-type:nth-last-child(1),
+  .stella-footer-inner .block:first-of-type:nth-last-child(1) ~ .block {
     width: 100%;
   }
   /* line 91, ../sass/_local.scss */
-  .pond-footer-inner .block:first-of-type:nth-last-child(2),
-  .pond-footer-inner .block:first-of-type:nth-last-child(2) ~ .block {
+  .stella-footer-inner .block:first-of-type:nth-last-child(2),
+  .stella-footer-inner .block:first-of-type:nth-last-child(2) ~ .block {
     width: 50%;
   }
   /* line 91, ../sass/_local.scss */
-  .pond-footer-inner .block:first-of-type:nth-last-child(3),
-  .pond-footer-inner .block:first-of-type:nth-last-child(3) ~ .block {
+  .stella-footer-inner .block:first-of-type:nth-last-child(3),
+  .stella-footer-inner .block:first-of-type:nth-last-child(3) ~ .block {
     width: 33.33333%;
   }
 }
