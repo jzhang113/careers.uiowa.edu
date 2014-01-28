@@ -9,7 +9,6 @@
 
 // BLOCK HireaHawk.com
 .pane-block-1, #block-block-1 {
-	background-color: $yellow;
 	img {
 		width: 50%;
 	}
@@ -18,6 +17,9 @@
 		font-size: 2.9rem;
 		text-align: center;
 	}
+}
+.pane-block-1 {
+	background-color: $yellow;
 }
 
 // MENU BLOCK Sub Links
