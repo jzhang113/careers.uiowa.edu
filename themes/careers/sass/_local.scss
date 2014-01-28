@@ -42,28 +42,22 @@
 	.field-items {
 		width: 100%;
 		text-align: center;
-
-		//.field-item:nth-child(1) a { background-color: $maroon;} //maroon
-		//.field-item:nth-child(2) a { background-color: #2195D2;} //blue
-		//.field-item:nth-child(3) a { background-color: #F18631;} //orange
-		//.field-item:nth-child(4) a { background-color: #2A9F51;} //green
-
+		background-color: $blue;
+		color: white;
 		.field-item {
 			@include inline-block;
 			width: 100%;
 			@media #{$desktop} {
-				min-width: 188px;
-				max-width: 25%;
-				height: 75px;
+				width: 188px\9; /* IE8 and below */
+				height: 65px;
 			}
 			a{
 				display: block;
-				background-color: $yellow;
 				width: 100%;
 				height: 100%;
-				padding: 15px 5px 5px 5px;
+				padding: 5px;
 				font-family: $hireahawk;
-				color: black;
+				color: white;
 				font-weight: normal;
 				&:hover{
 			    background-color: black;
@@ -72,8 +66,31 @@
 			  }
 			}
 		}
+		// Adjust item width based on number of links 1-4 column.
+		@media #{$desktop} {
+			@for $i from 1 through 4 {
+		    .field-item:first-of-type:nth-last-child(#{$i}),
+		    .field-item:first-of-type:nth-last-child(#{$i}) ~ .field-item {
+		      width: #{100%/$i}; } }
+	    }
 	}
 }
+
+// 1-3 Column Footer
+.pond-footer-inner {
+  .block {
+    float:left;
+  }
+  @media #{$desktop} {
+  	width: 33.333%\9; /* IE8 and below */
+  	// Adjust block width based on number of blocks 1-3 column. required removal of panel-separator. see template.php
+	  @for $i from 1 through 3 {
+	    .block:first-of-type:nth-last-child(#{$i}),
+	    .block:first-of-type:nth-last-child(#{$i}) ~ .block {
+	      width: #{100%/$i}; } }
+  }
+}
+
 // END AUDIENCE PORTAL
 
 // CONTENT PANE Success Stories Teaser
@@ -87,6 +104,22 @@
 	}
 	.views-field-title-1{
 		text-align: right;
+	}
+}
+
+// CONTENT PANE Spotlight Entity Teaser
+.view-display-id-spotlight_teaser_pane {
+	.views-field-field-spotlight-image{
+		display: block;
+		text-align: center;
+		margin-bottom: 5px;
+		@media #{$nine-hundred} {
+			float: right;
+			width: 100px;
+		}
+		img{
+			border: 5px solid $blue;
+		}
 	}
 }
 
@@ -127,6 +160,7 @@
 // CONTENT PANE Audience Featured
 #content{
  .pane-featured-featured-entity-reference{
+ 	margin-top: 12px;
  	padding: 0px;
  	.block-content{
  		padding: 0px;
@@ -211,7 +245,7 @@
 .view-display-id-events_list,
 .view-display-id-events_teaser_list {
 	.fa {
-		color: $gold;
+		color: black;
 	}
 	.fa-map-marker {
 		padding: 0px 2px;
@@ -409,7 +443,7 @@
 				}
 			}
 			&:hover {
-				background-color: $gold;
+				background-color: black;
 				a {
 					color: white;
 				}
@@ -424,6 +458,48 @@
 	}
 }
 // END QUICKTABS Announcements & Events
+
+// QUICKTABS Subpage Announcements & Events
+.pane-quicktabs-subpage-announcements-events{
+	margin-top: 3px;
+	width: 100%;
+	.pane-title{
+		@include offscreen;
+	}
+	h3 {
+		font-size: 1.8rem;
+	}
+	ul.quicktabs-style-nostyle {
+		font: inherit;
+		padding-left:0px;
+		text-align: center;
+		li{
+			margin: 0px;
+			background-color: $ultralight;
+			font-size: 1.8rem;
+			padding: 5px 10px;
+			a{
+			color: $blue;
+				&:hover{
+					color: white;
+					text-decoration: none;
+				}
+			}
+			&:hover {
+				background-color: black;
+				a {
+					color: white;
+				}
+			}
+		}
+		li.active {
+			background-color: $blue;
+			a{
+			color: white;
+			}
+		}
+	}
+}
 
 // MENU Front Quick Links
 .front .pane-menu-menu-quick-links{
@@ -458,7 +534,7 @@
   -ms-user-select: none;
   -o-user-select: none;
   &:hover{
-    background-color: $gold;
+    background-color: black;
     color: white;
     text-decoration: none;
     &:after{
@@ -470,7 +546,7 @@
 		position: absolute;
 		border-top: 16px solid transparent;
 		border-bottom: 16px solid transparent;
-		border-left: 16px solid $gold;
+		border-left: 16px solid black;
 	  }
   }
   &:after{
