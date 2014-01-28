@@ -106,6 +106,55 @@ function spotlights_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_spotlight_teaser_taxonomy_term']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_spotlight_teaser_taxonomy_term']['field'] = 'reverse_field_spotlight_teaser_taxonomy_term';
   $handler->display->display_options['relationships']['reverse_field_spotlight_teaser_taxonomy_term']['required'] = TRUE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_spotlight_image']['id'] = 'field_spotlight_image';
+  $handler->display->display_options['fields']['field_spotlight_image']['table'] = 'field_data_field_spotlight_image';
+  $handler->display->display_options['fields']['field_spotlight_image']['field'] = 'field_spotlight_image';
+  $handler->display->display_options['fields']['field_spotlight_image']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_spotlight_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_spotlight_image']['type'] = 'file_rendered';
+  $handler->display->display_options['fields']['field_spotlight_image']['settings'] = array(
+    'file_view_mode' => 'default',
+  );
+  /* Field: Content: Name */
+  $handler->display->display_options['fields']['field_spotlight_name']['id'] = 'field_spotlight_name';
+  $handler->display->display_options['fields']['field_spotlight_name']['table'] = 'field_data_field_spotlight_name';
+  $handler->display->display_options['fields']['field_spotlight_name']['field'] = 'field_spotlight_name';
+  $handler->display->display_options['fields']['field_spotlight_name']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_spotlight_name']['element_wrapper_type'] = 'h3';
+  /* Field: Content: Title/Position */
+  $handler->display->display_options['fields']['field_spotlight_position']['id'] = 'field_spotlight_position';
+  $handler->display->display_options['fields']['field_spotlight_position']['table'] = 'field_data_field_spotlight_position';
+  $handler->display->display_options['fields']['field_spotlight_position']['field'] = 'field_spotlight_position';
+  $handler->display->display_options['fields']['field_spotlight_position']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_position']['element_label_colon'] = FALSE;
+  /* Field: Content: Organization */
+  $handler->display->display_options['fields']['field_spotlight_organization']['id'] = 'field_spotlight_organization';
+  $handler->display->display_options['fields']['field_spotlight_organization']['table'] = 'field_data_field_spotlight_organization';
+  $handler->display->display_options['fields']['field_spotlight_organization']['field'] = 'field_spotlight_organization';
+  $handler->display->display_options['fields']['field_spotlight_organization']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_organization']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_spotlight_organization']['element_wrapper_type'] = 'strong';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '300',
+  );
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'Read More...';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Taxonomy term: Term ID */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
