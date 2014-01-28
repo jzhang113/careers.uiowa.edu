@@ -993,11 +993,6 @@ body a:hover {
   float: left;
 }
 @media only screen and (min-width: 1025px) {
-  /* line 82, ../sass/_local.scss */
-  .stella-footer-inner {
-    width: 33.333% \9;
-    /* IE8 and below */
-  }
   /* line 91, ../sass/_local.scss */
   .stella-footer-inner .block:first-of-type:nth-last-child(1),
   .stella-footer-inner .block:first-of-type:nth-last-child(1) ~ .block {

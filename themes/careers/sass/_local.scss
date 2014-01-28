@@ -84,7 +84,7 @@
     float:left;
   }
   @media #{$desktop} {
-  	width: 33.333%\9; /* IE8 and below */
+  	//width: 33.333%\9; /* IE8 and below */
   	// Adjust block width based on number of blocks 1-3 column. required removal of panel-separator. see template.php
 	  @for $i from 1 through 3 {
 	    .block:first-of-type:nth-last-child(#{$i}),
