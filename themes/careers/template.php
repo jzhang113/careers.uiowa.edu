@@ -134,3 +134,10 @@ function careers_menu_link(array $vars) {
   $output = '<span class="menu-inner">' . $output . '</span>';
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>";
 }
+
+// Remove panel-separator markup for accurate nth-last-child counting.
+function careers_panels_default_style_render_region($vars) {
+  $output = '';
+  $output .= implode('', $vars['panes']);
+  return $output;
+}
