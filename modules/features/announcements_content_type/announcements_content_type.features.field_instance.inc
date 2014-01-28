@@ -133,6 +133,50 @@ function announcements_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-announcement-field_announcement_category'
+  $field_instances['node-announcement-field_announcement_category'] = array(
+    'bundle' => 'announcement',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_announcement_category',
+    'label' => 'Category',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-announcement-field_announcement_image'
   $field_instances['node-announcement-field_announcement_image'] = array(
     'bundle' => 'announcement',
@@ -283,6 +327,7 @@ function announcements_content_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Attachments');
   t('Body');
+  t('Category');
   t('Featured Image');
   t('Link');
 
