@@ -65,7 +65,7 @@ function audience_taxonomy_strongarm() {
       'default' => array(
         'status' => 1,
         'default' => 1,
-        'choice' => 0,
+        'choice' => 1,
       ),
     ),
   );

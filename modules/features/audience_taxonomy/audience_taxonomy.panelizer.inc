@@ -52,7 +52,7 @@ function audience_taxonomy_panelizer_defaults() {
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = '';
   $panelizer->css = '';
-  $panelizer->pipeline = 'ipe';
+  $panelizer->pipeline = 'standard';
   $panelizer->contexts = array();
   $panelizer->relationships = array();
   $panelizer->access = array();
@@ -62,7 +62,7 @@ function audience_taxonomy_panelizer_defaults() {
   $panelizer->link_to_entity = FALSE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'sutro';
+  $display->layout = 'pond';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -73,6 +73,10 @@ function audience_taxonomy_panelizer_defaults() {
       'column2' => NULL,
       'column3' => NULL,
       'sidebar' => NULL,
+      'footer' => NULL,
+      'secondarycolumn1' => NULL,
+      'secondarycolumn2' => NULL,
+      'secondarycolumn3' => NULL,
     ),
   );
   $display->cache = array();
@@ -81,6 +85,71 @@ function audience_taxonomy_panelizer_defaults() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
+    $pane->panel = 'footer';
+    $pane->type = 'term_description';
+    $pane->subtype = 'term_description';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'panelizer',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-1'] = $pane;
+    $display->panels['footer'][0] = 'new-1';
+    $pane = new stdClass();
+    $pane->pid = 'new-2';
+    $pane->panel = 'footer';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'spotlights-spotlight_teaser_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'panelizer',
+      ),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-2'] = $pane;
+    $display->panels['footer'][1] = 'new-2';
+    $pane = new stdClass();
+    $pane->pid = 'new-3';
+    $pane->panel = 'footer';
+    $pane->type = 'block';
+    $pane->subtype = 'quicktabs-subpage_announcements_events';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $display->content['new-3'] = $pane;
+    $display->panels['footer'][2] = 'new-3';
+    $pane = new stdClass();
+    $pane->pid = 'new-4';
     $pane->panel = 'header';
     $pane->type = 'views_panes';
     $pane->subtype = 'featured-featured_entity_reference';
@@ -99,10 +168,10 @@ function audience_taxonomy_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['header'][0] = 'new-1';
+    $display->content['new-4'] = $pane;
+    $display->panels['header'][0] = 'new-4';
     $pane = new stdClass();
-    $pane->pid = 'new-2';
+    $pane->pid = 'new-5';
     $pane->panel = 'header';
     $pane->type = 'entity_field';
     $pane->subtype = 'taxonomy_term:field_audience_links';
@@ -127,30 +196,8 @@ function audience_taxonomy_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['header'][1] = 'new-2';
-    $pane = new stdClass();
-    $pane->pid = 'new-3';
-    $pane->panel = 'header';
-    $pane->type = 'term_description';
-    $pane->subtype = 'term_description';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => 'panelizer',
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['header'][2] = 'new-3';
+    $display->content['new-5'] = $pane;
+    $display->panels['header'][1] = 'new-5';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
