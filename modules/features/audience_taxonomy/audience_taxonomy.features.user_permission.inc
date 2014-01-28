@@ -10,6 +10,13 @@
 function audience_taxonomy_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer taxonomy_term audience choice'.
+  $permissions['administer panelizer taxonomy_term audience choice'] = array(
+    'name' => 'administer panelizer taxonomy_term audience choice',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer taxonomy_term audience content'.
   $permissions['administer panelizer taxonomy_term audience content'] = array(
     'name' => 'administer panelizer taxonomy_term audience content',
@@ -50,6 +57,20 @@ function audience_taxonomy_user_default_permissions() {
     'name' => 'administer panelizer taxonomy_term audience settings',
     'roles' => array(),
     'module' => 'panelizer',
+  );
+
+  // Exported permission: 'delete terms in audience'.
+  $permissions['delete terms in audience'] = array(
+    'name' => 'delete terms in audience',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in audience'.
+  $permissions['edit terms in audience'] = array(
+    'name' => 'edit terms in audience',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   return $permissions;
