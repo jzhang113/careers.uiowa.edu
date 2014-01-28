@@ -16,7 +16,7 @@ body{
     color: $blue;
     font-weight: bold;
     &:hover {
-      color: $gold;
+      color: black;
     }
   }
 }
@@ -462,7 +462,7 @@ body{
   -ms-user-select: none;
   -o-user-select: none;
   &:hover{
-    background-color: $gold;
+    background-color: black;
     color: white;
     text-decoration: none;
   }
