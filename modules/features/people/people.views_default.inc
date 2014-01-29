@@ -112,11 +112,15 @@ function people_views_default_views() {
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
   $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
-    'groups' => 'groups',
+    'people_groups' => 'people_groups',
     'audience' => 0,
     'events' => 0,
+    'groups' => 0,
+    'people_type' => 0,
+    'spotlights' => 0,
     'tags' => 0,
     'testimonials' => 0,
+    'video_type' => 0,
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Taxonomy term: Term ID */
@@ -167,11 +171,15 @@ function people_views_default_views() {
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
   $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
-    'groups' => 'groups',
+    'people_groups' => 'people_groups',
     'audience' => 0,
     'events' => 0,
+    'groups' => 0,
+    'people_type' => 0,
+    'spotlights' => 0,
     'tags' => 0,
     'testimonials' => 0,
+    'video_type' => 0,
   );
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
