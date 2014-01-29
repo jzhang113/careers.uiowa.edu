@@ -272,12 +272,6 @@ body{
           ul{
             display:none;
           }
-          &:hover{
-            background-color: black;
-            a{
-              color: white;
-            }
-          }
           a{
             color: black;
             font-weight: bold;
@@ -289,8 +283,15 @@ body{
             display: block;
             width: 100%;
             height: 100%;
-            &:hover {
+            &:hover, .active-trail {
               text-decoration: none;
+              color: white;
+            }
+          }
+          &:hover, .active-trail {
+            background-color: black;
+            color: white;
+            a{
               color: white;
             }
           }

@@ -516,14 +516,6 @@ body a:hover {
   display: none;
 }
 /* line 275, ../sass/local.styles.scss */
-#header .region-header .block-menu-audience-menu ul.menu li:hover {
-  background-color: black;
-}
-/* line 277, ../sass/local.styles.scss */
-#header .region-header .block-menu-audience-menu ul.menu li:hover a {
-  color: white;
-}
-/* line 281, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a {
   color: black;
   font-weight: bold;
@@ -534,36 +526,45 @@ body a:hover {
   height: 100%;
 }
 @media only screen and (min-width: 899px) {
-  /* line 281, ../sass/local.styles.scss */
+  /* line 275, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu li a {
     padding: 10px 26px;
   }
 }
-/* line 292, ../sass/local.styles.scss */
-#header .region-header .block-menu-audience-menu ul.menu li a:hover {
+/* line 286, ../sass/local.styles.scss */
+#header .region-header .block-menu-audience-menu ul.menu li a:hover, #header .region-header .block-menu-audience-menu ul.menu li a .active-trail {
   text-decoration: none;
   color: white;
 }
+/* line 291, ../sass/local.styles.scss */
+#header .region-header .block-menu-audience-menu ul.menu li:hover, #header .region-header .block-menu-audience-menu ul.menu li .active-trail {
+  background-color: black;
+  color: white;
+}
+/* line 294, ../sass/local.styles.scss */
+#header .region-header .block-menu-audience-menu ul.menu li:hover a, #header .region-header .block-menu-audience-menu ul.menu li .active-trail a {
+  color: white;
+}
 
-/* line 306, ../sass/local.styles.scss */
+/* line 307, ../sass/local.styles.scss */
 #content-wrapper, #header-wrapper,
 #breadcrumb-wrapper, #content-header-wrapper,
 #messages-help-wrapper, #tertiary-content-wrapper, #footer-wrapper {
   background-color: #ddd;
 }
 
-/* line 311, ../sass/local.styles.scss */
+/* line 312, ../sass/local.styles.scss */
 #main-content, #main-content-header, #breadcrumb, #messages, .region-tertiary-content, #columns {
   background: white;
 }
 
-/* line 315, ../sass/local.styles.scss */
+/* line 316, ../sass/local.styles.scss */
 #breadcrumb, #messages {
   margin: 0px;
   padding: 10px;
 }
 
-/* line 321, ../sass/local.styles.scss */
+/* line 322, ../sass/local.styles.scss */
 #content .pane-title, #content .block-title {
   background-color: transparent;
   color: #333;
@@ -571,22 +572,22 @@ body a:hover {
   border-bottom: 0px;
   margin: 0px;
 }
-/* line 328, ../sass/local.styles.scss */
+/* line 329, ../sass/local.styles.scss */
 #content .block-content {
   padding: 10px;
 }
 
-/* line 336, ../sass/local.styles.scss */
+/* line 337, ../sass/local.styles.scss */
 #content .pane-node .block-content {
   padding: 5px;
 }
 
-/* line 343, ../sass/local.styles.scss */
+/* line 344, ../sass/local.styles.scss */
 .field-label {
   font-size: 1.8rem;
 }
 
-/* line 348, ../sass/local.styles.scss */
+/* line 349, ../sass/local.styles.scss */
 .flexslider {
   margin: 0px;
   border: 0px;
@@ -596,20 +597,20 @@ body a:hover {
   -moz-box-shadow: white 0px 0px 0px;
   box-shadow: white 0px 0px 0px;
 }
-/* line 349, ../sass/local.styles.scss */
+/* line 350, ../sass/local.styles.scss */
 .flexslider ul {
   padding: 0px;
 }
-/* line 357, ../sass/local.styles.scss */
+/* line 358, ../sass/local.styles.scss */
 .flexslider a {
   color: white;
 }
-/* line 359, ../sass/local.styles.scss */
+/* line 360, ../sass/local.styles.scss */
 .flexslider a:hover {
   color: #9c8345;
   text-decoration: none;
 }
-/* line 365, ../sass/local.styles.scss */
+/* line 366, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text, .flexslider .views-field-field-front-featured-text {
   display: block;
   overflow: hidden;
@@ -618,15 +619,15 @@ body a:hover {
   padding: 5px 10px 10px 10px;
   color: white;
 }
-/* line 372, ../sass/local.styles.scss */
+/* line 373, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text a, .flexslider .views-field-field-front-featured-text a {
   color: white;
 }
-/* line 374, ../sass/local.styles.scss */
+/* line 375, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text a:hover, .flexslider .views-field-field-front-featured-text a:hover {
   text-decoration: underline;
 }
-/* line 378, ../sass/local.styles.scss */
+/* line 379, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text .featured-logo, .flexslider .views-field-field-front-featured-text .featured-logo {
   float: left;
   width: auto;
@@ -634,52 +635,52 @@ body a:hover {
   margin-right: 10px;
   border-right: 1px dotted white;
 }
-/* line 385, ../sass/local.styles.scss */
+/* line 386, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text h3, .flexslider .views-field-field-front-featured-text h3 {
   margin-bottom: 0px;
 }
-/* line 389, ../sass/local.styles.scss */
+/* line 390, ../sass/local.styles.scss */
 .flexslider .views-field-field-front-featured-text {
   position: absolute;
   bottom: 0px;
   background-color: rgba(0, 0, 0, 0.7);
 }
-/* line 394, ../sass/local.styles.scss */
+/* line 395, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text {
   background-color: black;
 }
 @media only screen and (min-width: 899px) {
-  /* line 394, ../sass/local.styles.scss */
+  /* line 395, ../sass/local.styles.scss */
   .flexslider .views-field-field-featured-text {
     position: absolute;
     bottom: 0px;
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-/* line 405, ../sass/local.styles.scss */
+/* line 406, ../sass/local.styles.scss */
 .flexslider .flex-control-nav {
   width: auto;
   position: absolute;
   bottom: -8px;
   right: 10px;
 }
-/* line 414, ../sass/local.styles.scss */
+/* line 415, ../sass/local.styles.scss */
 .flexslider .flex-control-paging li a {
   background-color: whitesmoke;
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 419, ../sass/local.styles.scss */
+/* line 420, ../sass/local.styles.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background-color: #ffd451;
 }
 
-/* line 425, ../sass/local.styles.scss */
+/* line 426, ../sass/local.styles.scss */
 .media-youtube-video {
   text-align: center;
 }
 
-/* line 430, ../sass/local.styles.scss */
+/* line 431, ../sass/local.styles.scss */
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -696,7 +697,7 @@ body a:hover {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-/* line 445, ../sass/local.styles.scss */
+/* line 446, ../sass/local.styles.scss */
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
   font-family: "Fjalla One", sans-serif;
@@ -717,55 +718,55 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 464, ../sass/local.styles.scss */
+/* line 465, ../sass/local.styles.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: black;
   color: white;
   text-decoration: none;
 }
 
-/* line 472, ../sass/local.styles.scss */
+/* line 473, ../sass/local.styles.scss */
 .view-display-id-sidebar_button .button {
   width: 100%;
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 481, ../sass/local.styles.scss */
+  /* line 482, ../sass/local.styles.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 486, ../sass/local.styles.scss */
+/* line 487, ../sass/local.styles.scss */
 .region-footer {
   position: relative;
   font-size: 14px;
   background-color: #eae3d2;
 }
-/* line 490, ../sass/local.styles.scss */
+/* line 491, ../sass/local.styles.scss */
 .region-footer a {
   color: black;
   font-family: "Neuton", serif;
 }
-/* line 493, ../sass/local.styles.scss */
+/* line 494, ../sass/local.styles.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 496, ../sass/local.styles.scss */
+/* line 497, ../sass/local.styles.scss */
 .region-footer a:active {
   color: black;
 }
-/* line 500, ../sass/local.styles.scss */
+/* line 501, ../sass/local.styles.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 502, ../sass/local.styles.scss */
+/* line 503, ../sass/local.styles.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 508, ../sass/local.styles.scss */
+/* line 509, ../sass/local.styles.scss */
 .region-footer h2 {
   font-size: 1.8rem;
 }
