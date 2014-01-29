@@ -900,7 +900,7 @@ body a:hover {
   width: 50%;
 }
 /* line 15, ../sass/_local.scss */
-.pane-block-1 .block-title, #block-block-1 .block-title {
+.pane-block-1 h2, #block-block-1 h2 {
   font-family: "Fjalla One", sans-serif;
   font-size: 2.9rem;
   text-align: center;
