@@ -42,6 +42,7 @@ features[node][] = people
 features[page_manager_pages][] = people
 features[panelizer_defaults][] = node:people:default:default
 features[taxonomy][] = groups
+features[taxonomy][] = people_groups
 features[variable][] = additional_settings__active_tab_people
 features[variable][] = field_bundle_settings_node__people
 features[variable][] = menu_options_people

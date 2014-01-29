@@ -9,9 +9,9 @@
  */
 function people_taxonomy_default_vocabularies() {
   return array(
-    'groups' => array(
-      'name' => 'Groups',
-      'machine_name' => 'groups',
+    'people_groups' => array(
+      'name' => 'People Groups',
+      'machine_name' => 'people_groups',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
