@@ -57,7 +57,7 @@ function spotlights_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '10',
+          'weight' => '12',
         ),
       ),
       'display' => array(),
