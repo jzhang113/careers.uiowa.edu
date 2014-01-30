@@ -109,7 +109,7 @@ function featured_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_featured';
   $strongarm->value = array(
-    'status' => 0,
+    'status' => 1,
     'view modes' => array(
       'page_manager' => array(
         'status' => 0,

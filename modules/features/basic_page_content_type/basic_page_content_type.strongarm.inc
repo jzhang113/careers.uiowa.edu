@@ -116,7 +116,7 @@ function basic_page_content_type_strongarm() {
       'default' => array(
         'status' => 1,
         'default' => 1,
-        'choice' => 1,
+        'choice' => 0,
       ),
       'teaser' => array(
         'status' => 0,
