@@ -30,7 +30,7 @@ function spotlights_node_info() {
       'base' => 'node_content',
       'description' => t('Add a success story, employer testimonial, etc.'),
       'has_title' => '1',
-      'title_label' => t('Administrative Title'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );
