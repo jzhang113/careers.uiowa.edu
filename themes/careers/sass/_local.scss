@@ -266,6 +266,24 @@
 // Events
 .view-display-id-events_list,
 .view-display-id-events_teaser_list {
+	.views-field-field-mcf-date {
+		&:before {
+			@include icon($fa-var-clock-o, $color: #333, $size: 1.2em);
+      display: block;
+      float: left;
+			padding-right: 5px;
+    }
+	}
+	.views-field-field-mcf-location {
+		&:before {
+			@include icon($fa-var-map-marker, $color: #333, $size: 1.2em);
+      display: block;
+      float: left;
+			padding-right: 5px;
+			position: absolute;
+			margin-left: 2px;
+    }
+	}
 	.fa {
 		color: black;
 	}
