@@ -10,9 +10,44 @@
 function spotlights_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node spotlight content'.
+  $permissions['administer panelizer node spotlight content'] = array(
+    'name' => 'administer panelizer node spotlight content',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node spotlight context'.
+  $permissions['administer panelizer node spotlight context'] = array(
+    'name' => 'administer panelizer node spotlight context',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node spotlight defaults'.
   $permissions['administer panelizer node spotlight defaults'] = array(
     'name' => 'administer panelizer node spotlight defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node spotlight layout'.
+  $permissions['administer panelizer node spotlight layout'] = array(
+    'name' => 'administer panelizer node spotlight layout',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node spotlight overview'.
+  $permissions['administer panelizer node spotlight overview'] = array(
+    'name' => 'administer panelizer node spotlight overview',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node spotlight settings'.
+  $permissions['administer panelizer node spotlight settings'] = array(
+    'name' => 'administer panelizer node spotlight settings',
     'roles' => array(),
     'module' => 'panelizer',
   );
