@@ -27,18 +27,18 @@
   @extend %toggle-menu-tree;
 }
 
-// AUDIENCE PORTAL
+// AUDIENCE PORTALS/PROGRAMS
 
 // Related Links
 #content {
-	.pane-taxonomy-term-field-audience-links{
+	.pane-taxonomy-term-field-audience-links, .pane-taxonomy-term-field-program-links{
 		padding: 0px;
 		.block-content{
 			padding: 0px;
 		}
 	}
 }
-.field-name-field-audience-links{
+.field-name-field-audience-links, .field-name-field-program-links{
 	width: 100%;
 	font-size: 1.8rem;
 	.field-items {
@@ -95,7 +95,7 @@
   }
 }
 
-// END AUDIENCE PORTAL
+// END AUDIENCE PORTALS/PROGRAMS
 
 // CONTENT PANE Success Stories Teaser
 .view-display-id-success_stories_teaser_content_pane{
