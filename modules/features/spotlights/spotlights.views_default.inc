@@ -118,22 +118,34 @@ function spotlights_views_default_views() {
     'video_type' => 0,
   );
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['path']['absolute'] = TRUE;
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_spotlight_image']['id'] = 'field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['table'] = 'field_data_field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['field'] = 'field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_spotlight_image']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['field_spotlight_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_spotlight_image']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_spotlight_image']['settings'] = array(
-    'file_view_mode' => 'default',
+    'file_view_mode' => 'preview',
   );
   /* Field: Content: Name */
   $handler->display->display_options['fields']['field_spotlight_name']['id'] = 'field_spotlight_name';
   $handler->display->display_options['fields']['field_spotlight_name']['table'] = 'field_data_field_spotlight_name';
   $handler->display->display_options['fields']['field_spotlight_name']['field'] = 'field_spotlight_name';
   $handler->display->display_options['fields']['field_spotlight_name']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_spotlight_name']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['field_spotlight_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_name']['element_wrapper_type'] = 'h3';
   /* Field: Content: Title/Position */
@@ -209,22 +221,34 @@ function spotlights_views_default_views() {
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['path']['absolute'] = TRUE;
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_spotlight_image']['id'] = 'field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['table'] = 'field_data_field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['field'] = 'field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_spotlight_image']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['field_spotlight_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_spotlight_image']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_spotlight_image']['settings'] = array(
-    'file_view_mode' => 'default',
+    'file_view_mode' => 'preview',
   );
   /* Field: Content: Name */
   $handler->display->display_options['fields']['field_spotlight_name']['id'] = 'field_spotlight_name';
   $handler->display->display_options['fields']['field_spotlight_name']['table'] = 'field_data_field_spotlight_name';
   $handler->display->display_options['fields']['field_spotlight_name']['field'] = 'field_spotlight_name';
   $handler->display->display_options['fields']['field_spotlight_name']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_spotlight_name']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['field_spotlight_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_name']['element_wrapper_type'] = 'h3';
   /* Field: Content: Title/Position */
@@ -250,14 +274,6 @@ function spotlights_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '300',
   );
-  /* Field: Content: Spotlight Type */
-  $handler->display->display_options['fields']['field_spotlight_type']['id'] = 'field_spotlight_type';
-  $handler->display->display_options['fields']['field_spotlight_type']['table'] = 'field_data_field_spotlight_type';
-  $handler->display->display_options['fields']['field_spotlight_type']['field'] = 'field_spotlight_type';
-  $handler->display->display_options['fields']['field_spotlight_type']['label'] = '';
-  $handler->display->display_options['fields']['field_spotlight_type']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_spotlight_type']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_spotlight_type']['delta_offset'] = '0';
   $export['spotlights'] = $view;
 
   return $export;
