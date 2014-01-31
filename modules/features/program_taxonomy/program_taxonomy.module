@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Program Taxonomy feature.
+ */
+
+include_once 'program_taxonomy.features.inc';
