@@ -57,11 +57,9 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_date']['table'] = 'field_data_field_mcf_date';
   $handler->display->display_options['fields']['field_mcf_date']['field'] = 'field_mcf_date';
   $handler->display->display_options['fields']['field_mcf_date']['label'] = '';
-  $handler->display->display_options['fields']['field_mcf_date']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_mcf_date']['alter']['text'] = '<i class="fa fa-clock-o"></i> [field_mcf_date]';
   $handler->display->display_options['fields']['field_mcf_date']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_mcf_date']['element_wrapper_class'] = 'events-date';
   $handler->display->display_options['fields']['field_mcf_date']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_date']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_date']['settings'] = array(
     'format_type' => 'long',
     'fromto' => 'value',
@@ -74,14 +72,10 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_location']['table'] = 'field_data_field_mcf_location';
   $handler->display->display_options['fields']['field_mcf_location']['field'] = 'field_mcf_location';
   $handler->display->display_options['fields']['field_mcf_location']['label'] = '';
-  $handler->display->display_options['fields']['field_mcf_location']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_mcf_location']['alter']['text'] = '<i class="fa fa-map-marker"></i> [field_mcf_location]';
-  $handler->display->display_options['fields']['field_mcf_location']['alter']['trim_whitespace'] = TRUE;
-  $handler->display->display_options['fields']['field_mcf_location']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_mcf_location']['alter']['preserve_tags'] = '<i>';
   $handler->display->display_options['fields']['field_mcf_location']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_mcf_location']['element_wrapper_class'] = 'events-location';
   $handler->display->display_options['fields']['field_mcf_location']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_location']['type'] = 'text_plain';
   /* Field: Content: Event Category */
   $handler->display->display_options['fields']['field_event_category']['id'] = 'field_event_category';
@@ -158,11 +152,9 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_date']['table'] = 'field_data_field_mcf_date';
   $handler->display->display_options['fields']['field_mcf_date']['field'] = 'field_mcf_date';
   $handler->display->display_options['fields']['field_mcf_date']['label'] = '';
-  $handler->display->display_options['fields']['field_mcf_date']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_mcf_date']['alter']['text'] = '<i class="fa fa-clock-o"></i> [field_mcf_date]';
   $handler->display->display_options['fields']['field_mcf_date']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_mcf_date']['element_wrapper_class'] = 'events-date';
   $handler->display->display_options['fields']['field_mcf_date']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_date']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_date']['settings'] = array(
     'format_type' => 'long',
     'fromto' => 'value',
@@ -175,14 +167,9 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_location']['table'] = 'field_data_field_mcf_location';
   $handler->display->display_options['fields']['field_mcf_location']['field'] = 'field_mcf_location';
   $handler->display->display_options['fields']['field_mcf_location']['label'] = '';
-  $handler->display->display_options['fields']['field_mcf_location']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_mcf_location']['alter']['text'] = '<i class="fa fa-map-marker"></i> [field_mcf_location]';
-  $handler->display->display_options['fields']['field_mcf_location']['alter']['trim_whitespace'] = TRUE;
-  $handler->display->display_options['fields']['field_mcf_location']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['field_mcf_location']['alter']['preserve_tags'] = '<i>';
   $handler->display->display_options['fields']['field_mcf_location']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_mcf_location']['element_wrapper_class'] = 'events-location';
   $handler->display->display_options['fields']['field_mcf_location']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_location']['type'] = 'text_plain';
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
