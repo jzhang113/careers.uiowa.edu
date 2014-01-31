@@ -1030,7 +1030,7 @@ body a:hover {
 .view-display-id-spotlight_teaser_pane .views-field-field-spotlight-image {
   display: block;
   text-align: center;
-  margin-bottom: 5px;
+  margin: 3px;
   float: right;
 }
 /* line 121, ../sass/_local.scss */
