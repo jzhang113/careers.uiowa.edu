@@ -29,7 +29,7 @@ function people_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '12',
         ),
       ),
       'display' => array(),
