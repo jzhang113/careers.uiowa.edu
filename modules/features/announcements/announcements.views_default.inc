@@ -362,17 +362,29 @@ function announcements_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_announcement_category_target_id']['id'] = 'field_announcement_category_target_id';
-  $handler->display->display_options['relationships']['field_announcement_category_target_id']['table'] = 'field_data_field_announcement_category';
-  $handler->display->display_options['relationships']['field_announcement_category_target_id']['field'] = 'field_announcement_category_target_id';
-  $handler->display->display_options['relationships']['field_announcement_category_target_id']['required'] = TRUE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'audience' => 'audience',
+    'program' => 'program',
+    'events' => 0,
+    'people_groups' => 0,
+    'people_type' => 0,
+    'spotlights' => 0,
+    'student_status' => 0,
+    'tags' => 0,
+    'testimonials' => 0,
+    'video_type' => 0,
+  );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Taxonomy term: Term ID */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['relationship'] = 'field_announcement_category_target_id';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'raw';
   $handler->display->display_options['arguments']['tid']['default_argument_options']['index'] = '0';
@@ -384,6 +396,7 @@ function announcements_views_default_views() {
   $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
   $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
     'audience' => 'audience',
+    'program' => 'program',
   );
   $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
   $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;

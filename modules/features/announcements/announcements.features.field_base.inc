@@ -41,47 +41,38 @@ function announcements_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_announcement_category'
-  $field_bases['field_announcement_category'] = array(
+  // Exported field_base: 'field_announcement_audience'
+  $field_bases['field_announcement_audience'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_announcement_category',
+    'field_name' => 'field_announcement_audience',
     'foreign keys' => array(
-      'taxonomy_term_data' => array(
+      'tid' => array(
         'columns' => array(
-          'target_id' => 'tid',
+          'tid' => 'tid',
         ),
         'table' => 'taxonomy_term_data',
       ),
     ),
     'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'entityreference',
+    'module' => 'taxonomy',
     'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'audience' => 'audience',
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'audience',
+          'parent' => 0,
         ),
       ),
-      'target_type' => 'taxonomy_term',
     ),
     'translatable' => 0,
-    'type' => 'entityreference',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_announcement_image'
@@ -142,6 +133,40 @@ function announcements_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_announcement_program'
+  $field_bases['field_announcement_program'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_announcement_program',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'program',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
   );
 
   return $field_bases;

@@ -133,8 +133,8 @@ function announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_category'
-  $field_instances['node-announcement-field_announcement_category'] = array(
+  // Exported field_instance: 'node-announcement-field_announcement_audience'
+  $field_instances['node-announcement-field_announcement_audience'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
     'deleted' => 0,
@@ -142,11 +142,9 @@ function announcements_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 4,
       ),
       'teaser' => array(
@@ -157,15 +155,10 @@ function announcements_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_announcement_category',
-    'label' => 'Category',
+    'field_name' => 'field_announcement_audience',
+    'label' => 'Audience',
     'required' => 0,
     'settings' => array(
-      'behaviors' => array(
-        'taxonomy-index' => array(
-          'status' => TRUE,
-        ),
-      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -323,13 +316,51 @@ function announcements_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-announcement-field_announcement_program'
+  $field_instances['node-announcement-field_announcement_program'] = array(
+    'bundle' => 'announcement',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_announcement_program',
+    'label' => 'Program',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 8,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Attachments');
+  t('Audience');
   t('Body');
-  t('Category');
   t('Featured Image');
   t('Link');
+  t('Program');
 
   return $field_instances;
 }
