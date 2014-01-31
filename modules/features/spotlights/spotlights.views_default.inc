@@ -40,7 +40,7 @@ function spotlights_views_default_views() {
   $handler->display->display_options['fields']['field_spotlight_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_spotlight_image']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_spotlight_image']['settings'] = array(
-    'file_view_mode' => 'default',
+    'file_view_mode' => 'preview',
   );
   /* Field: Content: Name */
   $handler->display->display_options['fields']['field_spotlight_name']['id'] = 'field_spotlight_name';
@@ -131,8 +131,6 @@ function spotlights_views_default_views() {
   $handler->display->display_options['fields']['field_spotlight_image']['table'] = 'field_data_field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['field'] = 'field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['label'] = '';
-  $handler->display->display_options['fields']['field_spotlight_image']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_spotlight_image']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['field_spotlight_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_spotlight_image']['type'] = 'file_rendered';
@@ -234,8 +232,6 @@ function spotlights_views_default_views() {
   $handler->display->display_options['fields']['field_spotlight_image']['table'] = 'field_data_field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['field'] = 'field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['label'] = '';
-  $handler->display->display_options['fields']['field_spotlight_image']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_spotlight_image']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['field_spotlight_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_spotlight_image']['type'] = 'file_rendered';
