@@ -1,0 +1,12 @@
+name = Taxonomy Blocks
+description = View Blocks related to Audience and Program Taxonomies
+core = 7.x
+package = Careers
+dependencies[] = audience_taxonomy
+dependencies[] = program_taxonomy
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = taxonomy_blocks_nodes
+features[views_view][] = taxonomy_blocks_terms
+features_exclude[dependencies][ctools] = ctools
