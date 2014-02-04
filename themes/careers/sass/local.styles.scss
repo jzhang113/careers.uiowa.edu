@@ -469,9 +469,12 @@ body{
   }
 }
 
-.view-display-id-sidebar_button {
-  .button { // Sidebar Button Block
-    width: 100%;
+// Sidebar Button Block
+.region-sidebar-first{
+  .views-field-field-side-button-link{
+    .button {
+      width: 100%;
+    }
   }
 }
 // END Form Stuff

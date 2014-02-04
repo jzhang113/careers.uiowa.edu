@@ -725,48 +725,48 @@ body a:hover {
   text-decoration: none;
 }
 
-/* line 473, ../sass/local.styles.scss */
-.view-display-id-sidebar_button .button {
+/* line 475, ../sass/local.styles.scss */
+.region-sidebar-first .views-field-field-side-button-link .button {
   width: 100%;
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 482, ../sass/local.styles.scss */
+  /* line 485, ../sass/local.styles.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 487, ../sass/local.styles.scss */
+/* line 490, ../sass/local.styles.scss */
 .region-footer {
   position: relative;
   font-size: 14px;
   background-color: #eae3d2;
 }
-/* line 491, ../sass/local.styles.scss */
+/* line 494, ../sass/local.styles.scss */
 .region-footer a {
   color: black;
   font-family: "Neuton", serif;
 }
-/* line 494, ../sass/local.styles.scss */
+/* line 497, ../sass/local.styles.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 497, ../sass/local.styles.scss */
+/* line 500, ../sass/local.styles.scss */
 .region-footer a:active {
   color: black;
 }
-/* line 501, ../sass/local.styles.scss */
+/* line 504, ../sass/local.styles.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 503, ../sass/local.styles.scss */
+/* line 506, ../sass/local.styles.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 509, ../sass/local.styles.scss */
+/* line 512, ../sass/local.styles.scss */
 .region-footer h2 {
   font-size: 1.8rem;
 }
