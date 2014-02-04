@@ -60,6 +60,47 @@ function audience_taxonomy_views_default_views() {
 
   /* Display: SIdebar Button */
   $handler = $view->new_display('block', 'SIdebar Button', 'sidebar_button');
+
+  /* Display: Contact Information */
+  $handler = $view->new_display('block', 'Contact Information', 'contact_info');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Contact Us';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Point of Contact */
+  $handler->display->display_options['fields']['field_program_poc']['id'] = 'field_program_poc';
+  $handler->display->display_options['fields']['field_program_poc']['table'] = 'field_data_field_program_poc';
+  $handler->display->display_options['fields']['field_program_poc']['field'] = 'field_program_poc';
+  $handler->display->display_options['fields']['field_program_poc']['label'] = '';
+  $handler->display->display_options['fields']['field_program_poc']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_program_poc']['element_wrapper_type'] = 'strong';
+  $handler->display->display_options['fields']['field_program_poc']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: Taxonomy term: Program Email */
+  $handler->display->display_options['fields']['field_program_email']['id'] = 'field_program_email';
+  $handler->display->display_options['fields']['field_program_email']['table'] = 'field_data_field_program_email';
+  $handler->display->display_options['fields']['field_program_email']['field'] = 'field_program_email';
+  $handler->display->display_options['fields']['field_program_email']['label'] = '';
+  $handler->display->display_options['fields']['field_program_email']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['use_alias'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
+    'program' => 'program',
+  );
+  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
   $export['taxonomy_blocks'] = $view;
 
   return $export;
