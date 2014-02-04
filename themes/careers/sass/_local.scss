@@ -223,13 +223,12 @@
 }
 // END CONTENT PANE Employers Showcase Slider
 
-// Video Fields
-.field-name-field-video-file {
-  iframe {
-    width: 100%;
-    max-width: 640px;
-  }
-  #player {
+.media-youtube-video{
+	.media-youtube-player{
+		width: 100%;
+		max-width: 640px;
+	}
+	#player {
     height: auto;
     width: auto;
   }
