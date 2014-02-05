@@ -122,6 +122,13 @@ function people_views_default_views() {
     'testimonials' => 0,
     'video_type' => 0,
   );
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Draggableviews: Weight */
+  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
+  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'people:people_reorder_page';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Taxonomy term: Term ID */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
@@ -209,6 +216,118 @@ function people_views_default_views() {
   $handler->display->display_options['arguments']['name']['case'] = 'ucwords';
   $handler->display->display_options['arguments']['name']['path_case'] = 'lower';
   $handler->display->display_options['arguments']['name']['transform_dash'] = TRUE;
+
+  /* Display: Reorder People */
+  $handler = $view->new_display('page', 'Reorder People', 'people_reorder_page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Reorder People List';
+  $handler->display->display_options['defaults']['use_ajax'] = FALSE;
+  $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_people_email' => 'field_people_email',
+    'field_people_picture' => 'field_people_picture',
+    'title' => 'title',
+    'field_people_position' => 'field_people_position',
+    'field_people_responsibilities' => 'field_people_responsibilities',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_people_email' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_people_picture' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_people_position' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_people_responsibilities' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Email */
+  $handler->display->display_options['fields']['field_people_email']['id'] = 'field_people_email';
+  $handler->display->display_options['fields']['field_people_email']['table'] = 'field_data_field_people_email';
+  $handler->display->display_options['fields']['field_people_email']['field'] = 'field_people_email';
+  $handler->display->display_options['fields']['field_people_email']['label'] = '';
+  $handler->display->display_options['fields']['field_people_email']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_people_email']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_people_email']['type'] = 'email_plain';
+  /* Field: Content: Picture */
+  $handler->display->display_options['fields']['field_people_picture']['id'] = 'field_people_picture';
+  $handler->display->display_options['fields']['field_people_picture']['table'] = 'field_data_field_people_picture';
+  $handler->display->display_options['fields']['field_people_picture']['field'] = 'field_people_picture';
+  $handler->display->display_options['fields']['field_people_picture']['label'] = '';
+  $handler->display->display_options['fields']['field_people_picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_people_picture']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_people_picture']['settings'] = array(
+    'image_style' => 'people_profile_100',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
+  /* Field: Content: Position */
+  $handler->display->display_options['fields']['field_people_position']['id'] = 'field_people_position';
+  $handler->display->display_options['fields']['field_people_position']['table'] = 'field_data_field_people_position';
+  $handler->display->display_options['fields']['field_people_position']['field'] = 'field_people_position';
+  $handler->display->display_options['fields']['field_people_position']['label'] = '';
+  $handler->display->display_options['fields']['field_people_position']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_people_position']['element_wrapper_type'] = 'strong';
+  /* Field: Draggableviews: Content */
+  $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
+  $handler->display->display_options['fields']['draggableviews']['table'] = 'node';
+  $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
+  $handler->display->display_options['fields']['draggableviews']['label'] = '';
+  $handler->display->display_options['fields']['draggableviews']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['draggableviews']['draggableviews']['save_button_label'] = 'Update';
+  $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 1;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Draggableviews: Weight */
+  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
+  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'self';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
+  $handler->display->display_options['path'] = 'admin/config/people';
   $export['people'] = $view;
 
   return $export;
