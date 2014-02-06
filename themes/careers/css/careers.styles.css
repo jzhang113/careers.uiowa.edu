@@ -689,6 +689,10 @@ img {
 .pane-block-1 {
   background-color: #ffd451;
 }
+/* line 15, ../sass/components/_hireahawk.scss */
+.pane-block-1 a {
+  color: #4e5b6e;
+}
 
 /* line 2, ../sass/components/_in_the_news.scss */
 .pane-inthenews-inthenews-month-links {
