@@ -1,0 +1,12 @@
+// Location and Contact Information
+.region-footer{
+  #block-block-2{
+    padding: 0 0 0 15px;
+    margin-top: 10px;
+    @media #{$responsive-nav} {
+      width: 25%;
+      text-align: right;
+      padding: 0 15px 0 0;
+    }
+  }
+}

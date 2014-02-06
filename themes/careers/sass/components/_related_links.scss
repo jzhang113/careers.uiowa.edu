@@ -1,0 +1,49 @@
+// Related Links
+#content {
+  .pane-taxonomy-term-field-audience-links, .pane-taxonomy-term-field-program-links{
+    padding: 0px;
+    .block-content{
+      padding: 0px;
+    }
+  }
+}
+.field-name-field-audience-links, .field-name-field-program-links{
+  width: 100%;
+  font-size: 1.8rem;
+  .field-items {
+    width: 100%;
+    text-align: center;
+    background-color: $blue;
+    color: white;
+    .field-item {
+      @include inline-block;
+      width: 100%;
+      @media #{$desktop} {
+        height: 65px;
+      }
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        font-family: $hireahawk;
+        color: white;
+        font-weight: normal;
+        &:hover{
+          background-color: black;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+    // Adjust item width based on number of links 1-4 column.
+    @media #{$desktop} {
+      @for $i from 1 through 4 {
+        .field-item:first-of-type:nth-last-child(#{$i}),
+        .field-item:first-of-type:nth-last-child(#{$i}) ~ .field-item {
+          width: #{100%/$i};
+        }
+      }
+    }
+  }
+}

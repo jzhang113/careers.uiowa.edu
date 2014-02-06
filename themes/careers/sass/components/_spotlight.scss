@@ -1,0 +1,32 @@
+// Spotlight Entity Teaser
+.view-display-id-spotlight_teaser_pane {
+  .views-field-field-spotlight-image{
+    display: block;
+    text-align: center;
+    margin: 3px;
+    float: right;
+    img{
+      @include blue-border;
+    }
+  }
+}
+
+// CONTENT PANE Spotlight List
+.view-display-id-spotlights_panel_pane {
+  .view-content {
+    @media #{$nine-hundred} {
+      @include column-count(2);
+    }
+  }
+  .views-row {
+    margin: 20px 0px;
+  }
+  .views-field {
+    margin: 0px;
+  }
+  .views-field-field-spotlight-image {
+    img {
+      @include blue-border;
+    }
+  }
+}

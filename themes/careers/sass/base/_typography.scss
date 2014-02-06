@@ -1,0 +1,56 @@
+html {
+  background: $page;
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  background-color: $page;
+  font-family: $base-font; // Set from _custom.scss font variables
+  font-size: 1.4rem;
+}
+
+p {
+  margin: 0 0 $font-block-spacing 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 $font-block-spacing 0;
+  @include font-size(1.8);
+  line-height: normal;
+}
+
+h1 {
+  @include font-size(3.0);
+}
+
+
+h2 {
+  @include font-size(2.5);
+}
+
+
+h3 {
+  @include font-size(2.0);
+}
+
+
+h4 {
+  @include font-size(1.8);
+}
+
+a {
+  color: $blue;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+img {
+  height: auto;
+}

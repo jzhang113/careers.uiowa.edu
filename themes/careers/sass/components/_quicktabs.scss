@@ -1,0 +1,150 @@
+// QUICKTABS Announcements & Events
+.pane-quicktabs-announcements-events .block-inner{
+  border-bottom: 2px solid $blue;
+}
+
+.view-display-id-announcements_front_content_pane{
+  .views-field-field-announcement-image{
+    display: block;
+    float: left;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    @include blue-border;
+
+    img{
+      position: relative;
+      width: 70px;
+      z-index: 2;
+    }
+  }
+  .views-field-title,
+  .views-field-body,
+  .views-field-field-announcement-attachments,
+  .views-field-field-announcement-link {
+    margin-left: 95px;
+  }
+}
+.view-display-id-attachment_announcements_bottom {
+  .views-field-title{
+    margin-left: 0px;
+  }
+  .views-row {
+    margin-left: 0px;
+    float: left;
+    width: auto;
+    display: block;
+    width: 230px;
+    padding-right: 10px;
+    margin-left: 0px;
+    &:before {
+      @include icon($fa-var-chevron-circle-right, $color: #333, $size: 1.2em);
+          display: block;
+      float: left;
+      padding-right: 5px;
+        }
+  }
+  .views-row-1 {
+    &:before{
+      @include icon($fa-var-chevron-circle-right, $color: $orange, $size: 1.2em);//orange
+    }
+  }
+  .views-row-2 {
+    &:before{
+      @include icon($fa-var-chevron-circle-right, $color: $teal, $size: 1.2em);//teal
+    }
+  }
+  .views-row-3 {
+    &:before{
+      @include icon($fa-var-chevron-circle-right, $color: $maroon, $size: 1.2em);//maroon
+    }
+  }
+  .views-row-4 {
+    &:before{
+      @include icon($fa-var-chevron-circle-right, $color: $green, $size: 1.2em);//green
+    }
+  }
+}
+.pane-quicktabs-announcements-events{
+  .pane-title{
+    @include offscreen;
+  }
+}
+#quicktabs-announcements_events{
+  ul.quicktabs-style-nostyle {
+    font: inherit;
+    padding-left:0px;
+
+    li{
+      margin: 0px;
+      background-color: $ultralight;
+      font-size: 2.4rem;
+      @media #{$nine-hundred} {
+        font-size: 2.5rem;
+      }
+      padding: 5px 10px;
+      a{
+      color: $blue;
+        &:hover{
+          color: white;
+          text-decoration: none;
+        }
+      }
+      &:hover {
+        background-color: black;
+        a {
+          color: white;
+        }
+      }
+    }
+    li.active {
+      background-color: $blue;
+      a{
+      color: white;
+      }
+    }
+  }
+}
+// END QUICKTABS Announcements & Events
+
+// QUICKTABS Subpage Announcements & Events
+.pane-quicktabs-subpage-announcements-events{
+  margin-top: 3px;
+  width: 100%;
+  .pane-title{
+    @include offscreen;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  ul.quicktabs-style-nostyle {
+    font: inherit;
+    padding-left:0px;
+    text-align: center;
+    li{
+      margin: 0px;
+      background-color: $ultralight;
+      font-size: 1.8rem;
+      padding: 5px 10px;
+      a{
+      color: $blue;
+        &:hover{
+          color: white;
+          text-decoration: none;
+        }
+      }
+      &:hover {
+        background-color: black;
+        a {
+          color: white;
+        }
+      }
+    }
+    li.active {
+      background-color: $blue;
+      a{
+      color: white;
+      }
+    }
+  }
+}

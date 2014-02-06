@@ -1,0 +1,22 @@
+// Quick Links
+.front .pane-menu-menu-quick-links {
+  ul.menu {
+    margin-top: 0px;
+    li {
+      font-size: 1.8rem;
+      list-style:none;
+      @include angle-bullet-right;
+    }
+  }
+}
+
+.region-footer{
+  #block-menu-block-1{
+    @media #{$responsive-nav} {
+      width: 75%;
+      ul {
+        @include column-count(3);
+      }
+    }
+  }
+}

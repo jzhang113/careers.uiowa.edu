@@ -1,0 +1,100 @@
+@import "utilities/mixins";
+
+%toggle-menu-tree {
+  ul.menu {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: .5em 0 .5em 1em;
+      position: relative;
+
+      &:before {
+      }
+    }
+    li.menu-depth-2 {
+      margin: .5em 0em;
+    }
+
+    a,
+    .nolink {
+      color: #000;
+    }
+
+    .menu-depth-2 >.menu-inner {
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px;
+      display: block;
+
+      a,
+      .nolink {
+        color: #fff;
+      }
+    }
+
+    li.leaf,
+    li.expanded,
+    li.collapsed {
+      list-style-image: none;
+      list-style-type: none;
+      font-weight: bold;
+    }
+
+    li.expanded a {
+
+      &:before {
+        @include icon($fa-var-caret-down);
+        margin-right: .5em;
+      }
+    }
+
+    li.collapsed a {
+
+      &:before {
+        @include icon($fa-var-caret-right);
+        margin-right: .5em;
+      }
+    }
+
+    li.leaf a {
+      &:before {
+        content: "";
+        margin-right: 0;
+      }
+    }
+
+    ul {
+      display: none;
+    }
+
+    li.active-trail > ul {
+      display: block;
+    }
+
+    //jquery toggle
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+    }
+    .menu-toggle.is-expanded {
+      &:focus {
+        outline: 1px dotted white;;
+      }
+      &:before {
+        @include icon($fa-var-minus-square);
+        margin-right: .5em;
+      }
+    }
+    .menu-toggle.is-collapsed {
+      &:focus {
+        outline: 1px dotted white;
+      }
+      &:before {
+        @include icon($fa-var-plus-square);
+        margin-right: .5em;
+      }
+    }
+  }
+}

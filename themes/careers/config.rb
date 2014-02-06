@@ -1,5 +1,9 @@
-require 'singularitygs'
 require 'breakpoint'
+require 'compass-normalize'
+require 'rgbapng'
+require 'sass-globbing'
+require 'singularitygs'
+require 'toolkit'
 
 #
 # This file is only needed for Compass/Sass integration. If you are not using

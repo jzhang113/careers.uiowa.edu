@@ -1,0 +1,48 @@
+// Events
+.view-display-id-events_list,
+.view-display-id-events_teaser_list {
+  .views-field-field-mcf-date {
+    &:before {
+      @include icon($fa-var-clock-o, $color: #333, $size: 1.2em);
+      display: block;
+      float: left;
+      padding-right: 5px;
+    }
+  }
+  .views-field-field-mcf-location {
+    &:before {
+      @include icon($fa-var-map-marker, $color: #333, $size: 1.2em);
+      display: block;
+      float: left;
+      padding-right: 5px;
+      position: absolute;
+      margin-left: 2px;
+    }
+  }
+  .fa {
+    color: black;
+  }
+  .fa-map-marker {
+    padding: 0px 2px;
+  }
+  .views-row{
+    padding: 5px;
+  }
+  .views-row-odd {
+    background-color: $ultralight;
+  }
+}
+
+.pane-events-events-categories,
+.pane-views-exp-events-events-list {
+  background-color: $ultralight;
+}
+
+.pane-views-exp-events-events-list {
+  .views-submit-button, .views-reset-button {
+    width: auto;
+  }
+  input[type="text"], .views-widget-filter-field_event_category_tid, .form-select {
+    width: 99%;
+  }
+}

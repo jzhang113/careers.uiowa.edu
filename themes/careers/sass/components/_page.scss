@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+
+#header-wrapper{
+  background-color: #333;
+  background: url('images/bg_tile.gif') repeat;
+}
+
+#header {
+  background-color: #eee;
+  background: url('images/header.png') no-repeat;
+  position: relative;
+  height: 230px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+#branding {
+  position: absolute;
+  bottom: 55px;
+  @media #{$responsive-nav} {
+    bottom: 45px;
+  }
+}
+
+#logo {
+  padding: 10px 0;
+  @media #{$responsive-nav} {
+    padding-left: 20px;
+  }
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+#site-name{
+  @include offscreen;
+}
+
+#site-slogan {
+  @include font-size(1.8);
+  color: white;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  bottom: 25px;
+  @include text-shadow(rgba(black, 0.2) 1px 1px 0, rgba(black, 0.2) 2px 2px 0, rgba(black, 0.2) 3px 3px 0);
+  @media #{$responsive-nav} {
+    padding-left: 80px;
+  }
+}
+
+.site-logo {
+  width: 320px;
+}
+
+#page-title {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#skip-link {
+  left: 50%;
+  margin-left: -6.5em;
+  margin-top: 0;
+  padding: 0 0.5em;
+  position: absolute;
+  width: 12em;
+  z-index: 50;
+
+  a {
+    background: #444;
+    background: rgba(0, 0, 0, 0.6);
+    color: $page;
+    display: block;
+    line-height: 2;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      background: #444;
+      background: rgba(0, 0, 0, 0.6);
+      color: $page;
+      display: block;
+      line-height: 2;
+      padding: 0;
+      text-align: center;
+      text-decoration: none;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      outline: 0;
+    }
+  }
+}
+
+// Page Wrapper Areas
+#content-wrapper, 
+#header-wrapper, 
+#breadcrumb-wrapper, 
+#content-header-wrapper, 
+#messages-help-wrapper, 
+#tertiary-content-wrapper, 
+#footer-wrapper {
+  background-color: #ddd;
+}
+
+// Page Content Areas
+#main-content, 
+#main-content-header, 
+#breadcrumb, 
+#messages, 
+.region-tertiary-content, 
+#columns {
+  background: $page;
+}
+
+// Footer
+#footer-wrapper {
+  @media #{$responsive-nav} {
+    .block {
+      float: left;
+    }
+  }
+}
+.region-footer{
+  position: relative;
+  @include font-size(1.4);
+  background-color: $tan;
+  a {
+    color: black;
+    &:hover {
+      color: black;
+    }
+    &:active {
+      color: black;
+    }
+  }
+  ul {
+    margin-top: 0px;
+    li {
+      list-style-image: none;
+      list-style-type: none;
+      padding-right: 5px;
+    }
+  }
+  h2 {
+    @include font-size(1.8);
+  }
+}

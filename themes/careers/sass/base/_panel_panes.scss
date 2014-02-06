@@ -1,0 +1,20 @@
+.pane-title {
+  background-color: transparent;
+  color: #333;
+  padding: 10px;
+  border-bottom: 0px;
+  margin: 0px;
+}
+
+.panel-display {
+  margin: -$gutters;
+}
+
+// Specific padding for block nodes
+#content {
+  .pane-node {
+    .block-content {
+      padding: 5px;
+    }
+  }
+}

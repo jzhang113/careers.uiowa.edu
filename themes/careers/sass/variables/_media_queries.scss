@@ -1,0 +1,9 @@
+//
+// Custom media queries
+//
+$mobile-only: "only screen and (max-width : 480px)";
+$tablet-p: "only screen and (min-width : 481px)";
+$tablet-l: "only screen and (min-width : 769px)";
+$nine-hundred: "only screen and (min-width : 899px)";  // Added for Header purposes only.
+$desktop: "only screen and (min-width : 1025px)";
+$responsive-nav: "only screen and (min-width : 40em)"; //This media query is copied from responsive-nav.css

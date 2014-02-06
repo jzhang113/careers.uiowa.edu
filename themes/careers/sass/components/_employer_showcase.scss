@@ -1,0 +1,55 @@
+// Employer Showcase Grid
+.view-display-id-employer_showcase_grid_panel_pane {
+  .item-list ul {
+    list-style:none;
+    li {
+      display: block;
+      float: left;
+      margin: 0.25em;
+      background-color: $page;
+      @include border;
+    }
+  }
+  // Vertical Center Image
+  .views-field-field-logo{
+      line-height: 200px;
+      width: 200px;
+      text-align: center;
+
+    img {
+        vertical-align: middle;
+    }
+  }
+}
+
+// Employers Showcase Slider
+.pane-employer-showcase-employer-showcase-slider-panel-pane{
+  .block-inner{
+    border-bottom: 2px solid $blue;
+  }
+}
+
+.view-display-id-employer_showcase_slider_panel_pane {
+  .flexslider{
+      border: 0px;
+      margin: 0 0 5px;
+  }
+  #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane {
+    padding: 0px;
+    .field-content{
+      position: relative;
+      height: 200px;
+      img{
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        margin: auto;
+        max-height: 200px;
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+  .flex-control-paging{
+    display: none;
+  }
+}

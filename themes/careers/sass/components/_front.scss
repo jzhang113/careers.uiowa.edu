@@ -1,0 +1,13 @@
+.front #page-title {
+    @include offscreen;
+}
+
+// CONTENT PANE Front Featured Slider
+#content {
+ .pane-featured-panel-pane-featured {
+  padding: 5px 0px;
+  .block-content{
+    padding: 10px 0px;
+  }
+ }
+}
