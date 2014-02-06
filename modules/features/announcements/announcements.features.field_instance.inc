@@ -199,7 +199,7 @@ function announcements_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
-      'default_image' => 0,
+      'default_image' => 61,
       'file_directory' => 'announcements',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
