@@ -65,7 +65,6 @@ body{
     #site-slogan{
       font-size: 1.8rem;
       color: white;
-      font-family: $serif;
       text-align: center;
       position: relative;
       bottom: 25px;
@@ -83,7 +82,6 @@ body{
       background-color:rgba(0,0,0,0.7);
       position: relative;
       z-index: 3;
-      font-family: $serif;
       font-size: 1.8rem;
       @media #{$responsive-nav} {
         background-color: transparent;
@@ -210,7 +208,6 @@ body{
       @media #{$nine-hundred} {
         height: 50px;
       }
-      font-family: $serif;
       font-size: 1.8rem;
       @media #{$nine-hundred} {
         width: auto;
@@ -219,17 +216,18 @@ body{
         &:before{
           content:"Start Here";
           position: absolute;
-          right: 600px;
+          right: 660px;
           top: 19%;
           color: white;
           font-weight: bold;
         }
       }
       @media #{$mobile-only} {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
       ul.menu {
         background-color: $yellow;
+        text-align: center;
         width: 100%;
         min-width: 320px;
         height: 35px;
@@ -237,7 +235,7 @@ body{
           height: 50px;
         }
         float: right;
-        padding-left: 5px;
+        padding: 0px;
         margin: 0px;
         @media #{$nine-hundred} {
           width: auto;
@@ -267,8 +265,7 @@ body{
           height: 100%;
           cursor: pointer;
           background-color: transparent;
-          display: inline;
-          float: left;
+          @include inline-block;
           ul{
             display:none;
           }
@@ -493,7 +490,6 @@ body{
   background-color: $tan;
   a{
     color: black;
-    font-family: $serif;
     &:hover {
       color: black;
     }

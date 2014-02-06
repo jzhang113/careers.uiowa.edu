@@ -209,7 +209,6 @@ body a:hover {
 #header #branding #site-slogan {
   font-size: 1.8rem;
   color: white;
-  font-family: "Neuton", serif;
   text-align: center;
   position: relative;
   bottom: 25px;
@@ -221,34 +220,33 @@ body a:hover {
     padding-left: 80px;
   }
 }
-/* line 80, ../sass/local.styles.scss */
+/* line 79, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 {
   padding: 0px;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
   z-index: 3;
-  font-family: "Neuton", serif;
   font-size: 1.8rem;
 }
 @media only screen and (min-width: 40em) {
-  /* line 80, ../sass/local.styles.scss */
+  /* line 79, ../sass/local.styles.scss */
   #header .region-header #block-responsive-navigation-1 {
     background-color: transparent;
     font-size: 1.4rem;
   }
 }
-/* line 92, ../sass/local.styles.scss */
+/* line 90, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav-toggle {
   margin-left: 5px;
   color: white;
 }
-/* line 95, ../sass/local.styles.scss */
+/* line 93, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav-toggle:hover {
   color: #ffd451;
   text-decoration: none;
 }
-/* line 98, ../sass/local.styles.scss */
+/* line 96, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav-toggle:hover:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -260,7 +258,7 @@ body a:hover {
   font-size: 1.2em;
   color: #ffd451;
 }
-/* line 102, ../sass/local.styles.scss */
+/* line 100, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav-toggle:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -274,20 +272,20 @@ body a:hover {
   padding-right: 5px;
   vertical-align: middle;
 }
-/* line 108, ../sass/local.styles.scss */
+/* line 106, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav {
   float: right;
   width: 100%;
 }
 @media only screen and (min-width: 40em) {
-  /* line 108, ../sass/local.styles.scss */
+  /* line 106, ../sass/local.styles.scss */
   #header .region-header #block-responsive-navigation-1 #nav {
     width: auto;
     background-color: black;
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-/* line 116, ../sass/local.styles.scss */
+/* line 114, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav a, #header .region-header #block-responsive-navigation-1 #nav a:hover, #header .region-header #block-responsive-navigation-1 #nav a:active, #header .region-header #block-responsive-navigation-1 #nav a:visited {
   color: white;
   text-decoration: none;
@@ -295,41 +293,41 @@ body a:hover {
   width: 100%;
   height: 100%;
 }
-/* line 123, ../sass/local.styles.scss */
+/* line 121, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav ul {
   text-align: center;
 }
 @media only screen and (min-width: 40em) {
-  /* line 123, ../sass/local.styles.scss */
+  /* line 121, ../sass/local.styles.scss */
   #header .region-header #block-responsive-navigation-1 #nav ul {
     text-align: right;
   }
 }
-/* line 129, ../sass/local.styles.scss */
+/* line 127, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav li {
   padding: 6px 20px 6px 6px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 129, ../sass/local.styles.scss */
+  /* line 127, ../sass/local.styles.scss */
   #header .region-header #block-responsive-navigation-1 #nav li {
     display: inline-block;
     width: auto;
     padding: 6px;
   }
 }
-/* line 136, ../sass/local.styles.scss */
+/* line 134, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav li ul {
   display: none;
 }
-/* line 140, ../sass/local.styles.scss */
+/* line 138, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav li:hover {
   background-color: white;
 }
-/* line 142, ../sass/local.styles.scss */
+/* line 140, ../sass/local.styles.scss */
 #header .region-header #block-responsive-navigation-1 #nav li:hover a, #header .region-header #block-responsive-navigation-1 #nav li:hover a:hover, #header .region-header #block-responsive-navigation-1 #nav li:hover a:active, #header .region-header #block-responsive-navigation-1 #nav li:hover a:visited {
   color: #333;
 }
-/* line 150, ../sass/local.styles.scss */
+/* line 148, ../sass/local.styles.scss */
 #header .region-header .block-menu-social-media {
   position: absolute;
   width: 100%;
@@ -340,14 +338,14 @@ body a:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 @media only screen and (min-width: 40em) {
-  /* line 150, ../sass/local.styles.scss */
+  /* line 148, ../sass/local.styles.scss */
   #header .region-header .block-menu-social-media {
     position: relative;
     width: auto;
     bottom: 0;
   }
 }
-/* line 163, ../sass/local.styles.scss */
+/* line 161, ../sass/local.styles.scss */
 #header .region-header .block-menu-social-media ul {
   text-align: center;
   margin: 0;
@@ -355,26 +353,26 @@ body a:hover {
   height: 30px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 163, ../sass/local.styles.scss */
+  /* line 161, ../sass/local.styles.scss */
   #header .region-header .block-menu-social-media ul {
     text-align: right;
   }
 }
-/* line 172, ../sass/local.styles.scss */
+/* line 170, ../sass/local.styles.scss */
 #header .region-header .block-menu-social-media li {
   padding: 6px 20px 6px 6px;
   display: inline-block;
   width: auto;
   padding: 6px;
 }
-/* line 180, ../sass/local.styles.scss */
+/* line 178, ../sass/local.styles.scss */
 #header .region-header .block-menu-social-media .menu-item-1079, #header .region-header .block-menu-social-media .menu-item-1078,
 #header .region-header .block-menu-social-media .menu-item-1228, #header .region-header .block-menu-social-media .menu-item-1229,
 #header .region-header .block-menu-social-media .menu-item-1080, #header .region-header .block-menu-social-media .menu-item-1230 {
   padding: 0px;
   margin: 0px 3px;
 }
-/* line 183, ../sass/local.styles.scss */
+/* line 181, ../sass/local.styles.scss */
 #header .region-header .block-menu-social-media .menu-item-1079 a, #header .region-header .block-menu-social-media .menu-item-1078 a,
 #header .region-header .block-menu-social-media .menu-item-1228 a, #header .region-header .block-menu-social-media .menu-item-1229 a,
 #header .region-header .block-menu-social-media .menu-item-1080 a, #header .region-header .block-menu-social-media .menu-item-1230 a {
@@ -387,7 +385,7 @@ body a:hover {
   text-indent: 9999px;
   font-size: 0px;
 }
-/* line 192, ../sass/local.styles.scss */
+/* line 190, ../sass/local.styles.scss */
 #header .region-header .block-menu-social-media .menu-item-1079 a:hover, #header .region-header .block-menu-social-media .menu-item-1078 a:hover,
 #header .region-header .block-menu-social-media .menu-item-1228 a:hover, #header .region-header .block-menu-social-media .menu-item-1229 a:hover,
 #header .region-header .block-menu-social-media .menu-item-1080 a:hover, #header .region-header .block-menu-social-media .menu-item-1230 a:hover {
@@ -418,7 +416,7 @@ body a:hover {
 #header .region-header .block-menu-social-media .menu-item-1230 a {
   background: url("images/social/instagram-icon.png") no-repeat;
 }
-/* line 202, ../sass/local.styles.scss */
+/* line 200, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu {
   position: absolute;
   bottom: 0;
@@ -427,61 +425,61 @@ body a:hover {
   width: 100%;
   min-width: 320px;
   height: 35px;
-  font-family: "Neuton", serif;
   font-size: 1.8rem;
 }
 @media only screen and (min-width: 899px) {
-  /* line 202, ../sass/local.styles.scss */
+  /* line 200, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu {
     height: 50px;
   }
 }
 @media only screen and (min-width: 899px) {
-  /* line 202, ../sass/local.styles.scss */
+  /* line 200, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu {
     width: auto;
     right: 0;
     padding-left: 100px;
   }
-  /* line 219, ../sass/local.styles.scss */
+  /* line 216, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu:before {
     content: "Start Here";
     position: absolute;
-    right: 600px;
+    right: 660px;
     top: 19%;
     color: white;
     font-weight: bold;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 202, ../sass/local.styles.scss */
+  /* line 200, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
-/* line 231, ../sass/local.styles.scss */
+/* line 228, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu {
   background-color: #ffd451;
+  text-align: center;
   width: 100%;
   min-width: 320px;
   height: 35px;
   float: right;
-  padding-left: 5px;
+  padding: 0px;
   margin: 0px;
 }
 @media only screen and (min-width: 899px) {
-  /* line 231, ../sass/local.styles.scss */
+  /* line 228, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu {
     height: 50px;
   }
 }
 @media only screen and (min-width: 899px) {
-  /* line 231, ../sass/local.styles.scss */
+  /* line 228, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu {
     width: auto;
     padding-left: 25px;
   }
-  /* line 245, ../sass/local.styles.scss */
+  /* line 243, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu:before {
     content: "";
     left: 100px;
@@ -497,7 +495,7 @@ body a:hover {
     -webkit-transform: rotate(360deg);
   }
 }
-/* line 260, ../sass/local.styles.scss */
+/* line 258, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li {
   list-style: none;
   list-style-image: none;
@@ -508,14 +506,18 @@ body a:hover {
   height: 100%;
   cursor: pointer;
   background-color: transparent;
-  display: inline;
-  float: left;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
 }
-/* line 272, ../sass/local.styles.scss */
+/* line 269, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li ul {
   display: none;
 }
-/* line 275, ../sass/local.styles.scss */
+/* line 272, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a {
   color: black;
   font-weight: bold;
@@ -526,45 +528,45 @@ body a:hover {
   height: 100%;
 }
 @media only screen and (min-width: 899px) {
-  /* line 275, ../sass/local.styles.scss */
+  /* line 272, ../sass/local.styles.scss */
   #header .region-header .block-menu-audience-menu ul.menu li a {
     padding: 10px 26px;
   }
 }
-/* line 286, ../sass/local.styles.scss */
+/* line 283, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li a:hover, #header .region-header .block-menu-audience-menu ul.menu li a .active-trail {
   text-decoration: none;
   color: white;
 }
-/* line 291, ../sass/local.styles.scss */
+/* line 288, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover, #header .region-header .block-menu-audience-menu ul.menu li .active-trail {
   background-color: black;
   color: white;
 }
-/* line 294, ../sass/local.styles.scss */
+/* line 291, ../sass/local.styles.scss */
 #header .region-header .block-menu-audience-menu ul.menu li:hover a, #header .region-header .block-menu-audience-menu ul.menu li .active-trail a {
   color: white;
 }
 
-/* line 307, ../sass/local.styles.scss */
+/* line 304, ../sass/local.styles.scss */
 #content-wrapper, #header-wrapper,
 #breadcrumb-wrapper, #content-header-wrapper,
 #messages-help-wrapper, #tertiary-content-wrapper, #footer-wrapper {
   background-color: #ddd;
 }
 
-/* line 312, ../sass/local.styles.scss */
+/* line 309, ../sass/local.styles.scss */
 #main-content, #main-content-header, #breadcrumb, #messages, .region-tertiary-content, #columns {
   background: white;
 }
 
-/* line 316, ../sass/local.styles.scss */
+/* line 313, ../sass/local.styles.scss */
 #breadcrumb, #messages {
   margin: 0px;
   padding: 10px;
 }
 
-/* line 322, ../sass/local.styles.scss */
+/* line 319, ../sass/local.styles.scss */
 #content .pane-title, #content .block-title {
   background-color: transparent;
   color: #333;
@@ -572,22 +574,22 @@ body a:hover {
   border-bottom: 0px;
   margin: 0px;
 }
-/* line 329, ../sass/local.styles.scss */
+/* line 326, ../sass/local.styles.scss */
 #content .block-content {
   padding: 10px;
 }
 
-/* line 337, ../sass/local.styles.scss */
+/* line 334, ../sass/local.styles.scss */
 #content .pane-node .block-content {
   padding: 5px;
 }
 
-/* line 344, ../sass/local.styles.scss */
+/* line 341, ../sass/local.styles.scss */
 .field-label {
   font-size: 1.8rem;
 }
 
-/* line 349, ../sass/local.styles.scss */
+/* line 346, ../sass/local.styles.scss */
 .flexslider {
   margin: 0px;
   border: 0px;
@@ -597,20 +599,20 @@ body a:hover {
   -moz-box-shadow: white 0px 0px 0px;
   box-shadow: white 0px 0px 0px;
 }
-/* line 350, ../sass/local.styles.scss */
+/* line 347, ../sass/local.styles.scss */
 .flexslider ul {
   padding: 0px;
 }
-/* line 358, ../sass/local.styles.scss */
+/* line 355, ../sass/local.styles.scss */
 .flexslider a {
   color: white;
 }
-/* line 360, ../sass/local.styles.scss */
+/* line 357, ../sass/local.styles.scss */
 .flexslider a:hover {
   color: #9c8345;
   text-decoration: none;
 }
-/* line 366, ../sass/local.styles.scss */
+/* line 363, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text, .flexslider .views-field-field-front-featured-text {
   display: block;
   overflow: hidden;
@@ -619,15 +621,15 @@ body a:hover {
   padding: 5px 10px 10px 10px;
   color: white;
 }
-/* line 373, ../sass/local.styles.scss */
+/* line 370, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text a, .flexslider .views-field-field-front-featured-text a {
   color: white;
 }
-/* line 375, ../sass/local.styles.scss */
+/* line 372, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text a:hover, .flexslider .views-field-field-front-featured-text a:hover {
   text-decoration: underline;
 }
-/* line 379, ../sass/local.styles.scss */
+/* line 376, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text .featured-logo, .flexslider .views-field-field-front-featured-text .featured-logo {
   float: left;
   width: auto;
@@ -635,52 +637,52 @@ body a:hover {
   margin-right: 10px;
   border-right: 1px dotted white;
 }
-/* line 386, ../sass/local.styles.scss */
+/* line 383, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text h3, .flexslider .views-field-field-front-featured-text h3 {
   margin-bottom: 0px;
 }
-/* line 390, ../sass/local.styles.scss */
+/* line 387, ../sass/local.styles.scss */
 .flexslider .views-field-field-front-featured-text {
   position: absolute;
   bottom: 0px;
   background-color: rgba(0, 0, 0, 0.7);
 }
-/* line 395, ../sass/local.styles.scss */
+/* line 392, ../sass/local.styles.scss */
 .flexslider .views-field-field-featured-text {
   background-color: black;
 }
 @media only screen and (min-width: 899px) {
-  /* line 395, ../sass/local.styles.scss */
+  /* line 392, ../sass/local.styles.scss */
   .flexslider .views-field-field-featured-text {
     position: absolute;
     bottom: 0px;
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-/* line 406, ../sass/local.styles.scss */
+/* line 403, ../sass/local.styles.scss */
 .flexslider .flex-control-nav {
   width: auto;
   position: absolute;
   bottom: -8px;
   right: 10px;
 }
-/* line 415, ../sass/local.styles.scss */
+/* line 412, ../sass/local.styles.scss */
 .flexslider .flex-control-paging li a {
   background-color: whitesmoke;
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 420, ../sass/local.styles.scss */
+/* line 417, ../sass/local.styles.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background-color: #ffd451;
 }
 
-/* line 426, ../sass/local.styles.scss */
+/* line 423, ../sass/local.styles.scss */
 .media-youtube-video {
   text-align: center;
 }
 
-/* line 431, ../sass/local.styles.scss */
+/* line 428, ../sass/local.styles.scss */
 .formtext {
   height: 34px;
   padding: 6px 12px;
@@ -697,7 +699,7 @@ body a:hover {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-/* line 446, ../sass/local.styles.scss */
+/* line 443, ../sass/local.styles.scss */
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   display: inline-block;
   font-family: "Fjalla One", sans-serif;
@@ -718,55 +720,54 @@ body a:hover {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 465, ../sass/local.styles.scss */
+/* line 462, ../sass/local.styles.scss */
 .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: black;
   color: white;
   text-decoration: none;
 }
 
-/* line 475, ../sass/local.styles.scss */
+/* line 472, ../sass/local.styles.scss */
 .region-sidebar-first .views-field-field-side-button-link .button {
   width: 100%;
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 485, ../sass/local.styles.scss */
+  /* line 482, ../sass/local.styles.scss */
   #footer-wrapper .block {
     float: left;
   }
 }
 
-/* line 490, ../sass/local.styles.scss */
+/* line 487, ../sass/local.styles.scss */
 .region-footer {
   position: relative;
   font-size: 14px;
   background-color: #eae3d2;
 }
-/* line 494, ../sass/local.styles.scss */
+/* line 491, ../sass/local.styles.scss */
 .region-footer a {
   color: black;
-  font-family: "Neuton", serif;
 }
-/* line 497, ../sass/local.styles.scss */
+/* line 493, ../sass/local.styles.scss */
 .region-footer a:hover {
   color: black;
 }
-/* line 500, ../sass/local.styles.scss */
+/* line 496, ../sass/local.styles.scss */
 .region-footer a:active {
   color: black;
 }
-/* line 504, ../sass/local.styles.scss */
+/* line 500, ../sass/local.styles.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 506, ../sass/local.styles.scss */
+/* line 502, ../sass/local.styles.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 512, ../sass/local.styles.scss */
+/* line 508, ../sass/local.styles.scss */
 .region-footer h2 {
   font-size: 1.8rem;
 }
