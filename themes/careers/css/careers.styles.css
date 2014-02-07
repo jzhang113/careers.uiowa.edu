@@ -316,6 +316,7 @@ a:hover, a:focus {
 /* line 54, ../sass/base/_typography.scss */
 img {
   height: auto;
+  max-width: 100%;
 }
 
 /* line 3, ../sass/components/_audience_featured.scss */
