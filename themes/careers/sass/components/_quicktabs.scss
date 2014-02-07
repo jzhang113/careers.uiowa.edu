@@ -4,6 +4,9 @@
 }
 
 .view-display-id-announcements_front_content_pane{
+  .views-row {
+    min-height: 85px;
+  }
   .views-field-field-announcement-image{
     display: block;
     float: left;

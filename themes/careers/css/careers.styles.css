@@ -993,6 +993,10 @@ body {
 }
 
 /* line 7, ../sass/components/_quicktabs.scss */
+.view-display-id-announcements_front_content_pane .views-row {
+  min-height: 85px;
+}
+/* line 10, ../sass/components/_quicktabs.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-image {
   display: block;
   float: left;
@@ -1001,13 +1005,13 @@ body {
   height: 80px;
   border: 5px solid #687893;
 }
-/* line 15, ../sass/components/_quicktabs.scss */
+/* line 18, ../sass/components/_quicktabs.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-image img {
   position: relative;
   width: 70px;
   z-index: 2;
 }
-/* line 24, ../sass/components/_quicktabs.scss */
+/* line 27, ../sass/components/_quicktabs.scss */
 .view-display-id-announcements_front_content_pane .views-field-title,
 .view-display-id-announcements_front_content_pane .views-field-body,
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-attachments,
@@ -1015,11 +1019,11 @@ body {
   margin-left: 95px;
 }
 
-/* line 29, ../sass/components/_quicktabs.scss */
+/* line 32, ../sass/components/_quicktabs.scss */
 .view-display-id-attachment_announcements_bottom .views-field-title {
   margin-left: 0px;
 }
-/* line 32, ../sass/components/_quicktabs.scss */
+/* line 35, ../sass/components/_quicktabs.scss */
 .view-display-id-attachment_announcements_bottom .views-row {
   margin-left: 0px;
   float: left;
@@ -1029,7 +1033,7 @@ body {
   padding-right: 10px;
   margin-left: 0px;
 }
-/* line 40, ../sass/components/_quicktabs.scss */
+/* line 43, ../sass/components/_quicktabs.scss */
 .view-display-id-attachment_announcements_bottom .views-row:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1044,7 +1048,7 @@ body {
   float: left;
   padding-right: 5px;
 }
-/* line 48, ../sass/components/_quicktabs.scss */
+/* line 51, ../sass/components/_quicktabs.scss */
 .view-display-id-attachment_announcements_bottom .views-row-1:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1056,7 +1060,7 @@ body {
   font-size: 1.2em;
   color: #e68b39;
 }
-/* line 53, ../sass/components/_quicktabs.scss */
+/* line 56, ../sass/components/_quicktabs.scss */
 .view-display-id-attachment_announcements_bottom .views-row-2:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1068,7 +1072,7 @@ body {
   font-size: 1.2em;
   color: #57b4a5;
 }
-/* line 58, ../sass/components/_quicktabs.scss */
+/* line 61, ../sass/components/_quicktabs.scss */
 .view-display-id-attachment_announcements_bottom .views-row-3:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1080,7 +1084,7 @@ body {
   font-size: 1.2em;
   color: #8f394f;
 }
-/* line 63, ../sass/components/_quicktabs.scss */
+/* line 66, ../sass/components/_quicktabs.scss */
 .view-display-id-attachment_announcements_bottom .views-row-4:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1093,7 +1097,7 @@ body {
   color: #d1d55a;
 }
 
-/* line 69, ../sass/components/_quicktabs.scss */
+/* line 72, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -1103,12 +1107,12 @@ body {
   outline: 0;
 }
 
-/* line 74, ../sass/components/_quicktabs.scss */
+/* line 77, ../sass/components/_quicktabs.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle {
   font: inherit;
   padding-left: 0px;
 }
-/* line 78, ../sass/components/_quicktabs.scss */
+/* line 81, ../sass/components/_quicktabs.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li {
   margin: 0px;
   background-color: whitesmoke;
@@ -1116,43 +1120,43 @@ body {
   padding: 5px 10px;
 }
 @media only screen and (min-width: 899px) {
-  /* line 78, ../sass/components/_quicktabs.scss */
+  /* line 81, ../sass/components/_quicktabs.scss */
   #quicktabs-announcements_events ul.quicktabs-style-nostyle li {
     font-size: 2.5rem;
   }
 }
-/* line 86, ../sass/components/_quicktabs.scss */
+/* line 89, ../sass/components/_quicktabs.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li a {
   color: #687893;
 }
-/* line 88, ../sass/components/_quicktabs.scss */
+/* line 91, ../sass/components/_quicktabs.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 93, ../sass/components/_quicktabs.scss */
+/* line 96, ../sass/components/_quicktabs.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li:hover {
   background-color: black;
 }
-/* line 95, ../sass/components/_quicktabs.scss */
+/* line 98, ../sass/components/_quicktabs.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li:hover a {
   color: white;
 }
-/* line 100, ../sass/components/_quicktabs.scss */
+/* line 103, ../sass/components/_quicktabs.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li.active {
   background-color: #687893;
 }
-/* line 102, ../sass/components/_quicktabs.scss */
+/* line 105, ../sass/components/_quicktabs.scss */
 #quicktabs-announcements_events ul.quicktabs-style-nostyle li.active a {
   color: white;
 }
 
-/* line 111, ../sass/components/_quicktabs.scss */
+/* line 114, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events {
   margin-top: 3px;
   width: 100%;
 }
-/* line 114, ../sass/components/_quicktabs.scss */
+/* line 117, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -1161,45 +1165,45 @@ body {
   overflow: hidden;
   outline: 0;
 }
-/* line 117, ../sass/components/_quicktabs.scss */
+/* line 120, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events h3 {
   font-size: 1.5rem;
 }
-/* line 120, ../sass/components/_quicktabs.scss */
+/* line 123, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-style-nostyle {
   font: inherit;
   padding-left: 0px;
   text-align: center;
 }
-/* line 124, ../sass/components/_quicktabs.scss */
+/* line 127, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-style-nostyle li {
   margin: 0px;
   background-color: whitesmoke;
   font-size: 1.8rem;
   padding: 5px 10px;
 }
-/* line 129, ../sass/components/_quicktabs.scss */
+/* line 132, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-style-nostyle li a {
   color: #687893;
 }
-/* line 131, ../sass/components/_quicktabs.scss */
+/* line 134, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-style-nostyle li a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 136, ../sass/components/_quicktabs.scss */
+/* line 139, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-style-nostyle li:hover {
   background-color: black;
 }
-/* line 138, ../sass/components/_quicktabs.scss */
+/* line 141, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-style-nostyle li:hover a {
   color: white;
 }
-/* line 143, ../sass/components/_quicktabs.scss */
+/* line 146, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-style-nostyle li.active {
   background-color: #687893;
 }
-/* line 145, ../sass/components/_quicktabs.scss */
+/* line 148, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-style-nostyle li.active a {
   color: white;
 }
