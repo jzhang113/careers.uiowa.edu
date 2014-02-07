@@ -99,7 +99,7 @@ function announcements_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Field: Content: Link */
+  /* Field: Content: Related Link */
   $handler->display->display_options['fields']['field_announcement_link']['id'] = 'field_announcement_link';
   $handler->display->display_options['fields']['field_announcement_link']['table'] = 'field_data_field_announcement_link';
   $handler->display->display_options['fields']['field_announcement_link']['field'] = 'field_announcement_link';
@@ -230,7 +230,7 @@ function announcements_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '250',
   );
-  /* Field: Content: Link */
+  /* Field: Content: Related Link */
   $handler->display->display_options['fields']['field_announcement_link']['id'] = 'field_announcement_link';
   $handler->display->display_options['fields']['field_announcement_link']['table'] = 'field_data_field_announcement_link';
   $handler->display->display_options['fields']['field_announcement_link']['field'] = 'field_announcement_link';
