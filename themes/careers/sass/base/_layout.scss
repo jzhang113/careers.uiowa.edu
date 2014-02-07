@@ -2,7 +2,9 @@
 .stella-footer-inner {
   .block {
     float: left;
+    width: 100%;
   }
+  
   @media #{$desktop} {
     // Adjust block width based on number of blocks 1-3 column. required removal of panel-separator. see template.php
     @for $i from 1 through 3 {
