@@ -141,10 +141,9 @@ function announcements_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'teaser' => array(
@@ -177,13 +176,12 @@ function announcements_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'image',
+        'label' => 'hidden',
+        'module' => 'file_entity',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'file_view_mode' => 'full',
         ),
-        'type' => 'image',
+        'type' => 'file_rendered',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -285,7 +283,7 @@ function announcements_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_announcement_link',
-    'label' => 'Link',
+    'label' => 'Related Link',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -324,10 +322,9 @@ function announcements_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'teaser' => array(
@@ -359,8 +356,8 @@ function announcements_field_default_field_instances() {
   t('Audience');
   t('Body');
   t('Featured Image');
-  t('Link');
   t('Program');
+  t('Related Link');
 
   return $field_instances;
 }
