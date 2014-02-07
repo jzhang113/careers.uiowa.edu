@@ -27,6 +27,16 @@
 }
 
 //
+// Horizontal Rule
+//
+@mixin hr{
+  height: auto;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+//
 // Image replacement
 // Kellum Method: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement
 // Additional helpers from http://html5boilerplate.com/docs/css/
