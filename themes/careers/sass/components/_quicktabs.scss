@@ -32,7 +32,7 @@ ul.quicktabs-tabs {
   }
 }
 
-// Announcments and Events on the front page
+// Announcments and Events tabs on the front page
 .front .pane-quicktabs-announcements-events {
   ul.quicktabs-tabs li a {
     @include font-size(2);
@@ -51,29 +51,7 @@ ul.quicktabs-tabs {
   }
 }
 
-.view-display-id-announcements_front_content_pane {
-  .views-field {
-    margin-left: 100px;
-  }
-
-  .views-field-field-announcement-image{
-    display: block;
-    float: left;
-    margin-left: 0;
-
-    img {
-      margin-bottom: 20px;
-      @include blue-border;
-    }
-  }
-
-  .views-row {
-    clear: left;
-    margin-bottom: 20px;
-  }
-}
-
-// Announcments and Events on subpages
+// Announcments and Events tabs on subpages
 .pane-quicktabs-subpage-announcements-events {
   .pane-title {
     @include offscreen;

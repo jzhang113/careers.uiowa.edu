@@ -7,3 +7,26 @@
 		border-bottom: 0px;
 	}
 }
+
+// Announcements on the front page
+.view-display-id-announcements_front_content_pane {
+  .views-field {
+    margin-left: 100px;
+  }
+
+  .views-field-field-announcement-image{
+    display: block;
+    float: left;
+    margin-left: 0;
+
+    img {
+      margin-bottom: 20px;
+      @include blue-border;
+    }
+  }
+
+  .views-row {
+    clear: left;
+    margin-bottom: 20px;
+  }
+}

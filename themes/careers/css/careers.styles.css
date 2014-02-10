@@ -343,6 +343,27 @@ img {
   border-bottom: 0px;
 }
 
+/* line 13, ../sass/components/_announcements.scss */
+.view-display-id-announcements_front_content_pane .views-field {
+  margin-left: 100px;
+}
+/* line 17, ../sass/components/_announcements.scss */
+.view-display-id-announcements_front_content_pane .views-field-field-announcement-image {
+  display: block;
+  float: left;
+  margin-left: 0;
+}
+/* line 22, ../sass/components/_announcements.scss */
+.view-display-id-announcements_front_content_pane .views-field-field-announcement-image img {
+  margin-bottom: 20px;
+  border: 5px solid #687893;
+}
+/* line 28, ../sass/components/_announcements.scss */
+.view-display-id-announcements_front_content_pane .views-row {
+  clear: left;
+  margin-bottom: 20px;
+}
+
 /* line 3, ../sass/components/_audience_featured.scss */
 #content .pane-featured-featured-entity-reference {
   margin-top: 12px;
@@ -1060,28 +1081,7 @@ ul.quicktabs-tabs li.active a {
   outline: 0;
 }
 
-/* line 55, ../sass/components/_quicktabs.scss */
-.view-display-id-announcements_front_content_pane .views-field {
-  margin-left: 100px;
-}
-/* line 59, ../sass/components/_quicktabs.scss */
-.view-display-id-announcements_front_content_pane .views-field-field-announcement-image {
-  display: block;
-  float: left;
-  margin-left: 0;
-}
-/* line 64, ../sass/components/_quicktabs.scss */
-.view-display-id-announcements_front_content_pane .views-field-field-announcement-image img {
-  margin-bottom: 20px;
-  border: 5px solid #687893;
-}
-/* line 70, ../sass/components/_quicktabs.scss */
-.view-display-id-announcements_front_content_pane .views-row {
-  clear: left;
-  margin-bottom: 20px;
-}
-
-/* line 78, ../sass/components/_quicktabs.scss */
+/* line 56, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -1090,21 +1090,21 @@ ul.quicktabs-tabs li.active a {
   overflow: hidden;
   outline: 0;
 }
-/* line 82, ../sass/components/_quicktabs.scss */
+/* line 60, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs {
   padding: 0 5px;
 }
-/* line 85, ../sass/components/_quicktabs.scss */
+/* line 63, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs li {
   padding: 0 3px;
 }
-/* line 88, ../sass/components/_quicktabs.scss */
+/* line 66, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs li a {
   padding: 2px 5px 0;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 95, ../sass/components/_quicktabs.scss */
+/* line 73, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events h3 {
   font-size: 15px;
   font-size: 1.5rem;
