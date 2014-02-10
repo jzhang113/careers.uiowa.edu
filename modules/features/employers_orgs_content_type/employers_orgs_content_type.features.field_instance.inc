@@ -92,6 +92,49 @@ function employers_orgs_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-employers_orgs_content_type-field_is_sponsor'
+  $field_instances['node-employers_orgs_content_type-field_is_sponsor'] = array(
+    'bundle' => 'employers_orgs_content_type',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Check if this employer/organization has paid to be a sponsor. If checked, they will be featured in the showcase gallery.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_is_sponsor',
+    'label' => 'Pomerantz Career Center Sponsor',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-employers_orgs_content_type-field_location_address'
   $field_instances['node-employers_orgs_content_type-field_location_address'] = array(
     'bundle' => 'employers_orgs_content_type',
@@ -287,43 +330,6 @@ function employers_orgs_content_type_field_default_field_instances() {
       ),
       'type' => 'media_generic',
       'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'node-employers_orgs_content_type-field_sponsor'
-  $field_instances['node-employers_orgs_content_type-field_sponsor'] = array(
-    'bundle' => 'employers_orgs_content_type',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Employer/Organization has paid to be a sponsor and will be featured in the showcase gallery',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sponsor',
-    'label' => 'Pomerantz Career Center Sponsor',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 7,
     ),
   );
 
@@ -527,8 +533,8 @@ function employers_orgs_content_type_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Additional Notes');
+  t('Check if this employer/organization has paid to be a sponsor. If checked, they will be featured in the showcase gallery.');
   t('Description');
-  t('Employer/Organization has paid to be a sponsor and will be featured in the showcase gallery');
   t('Location');
   t('Location Geofield');
   t('Logo');

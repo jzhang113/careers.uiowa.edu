@@ -1,0 +1,10 @@
+<?php
+/**
+ * @file 
+ * Install, update and uninstall functions for the employers_orgs_content_type feature.
+ */
+
+function employers_orgs_content_type_update_7100() {
+  // Delete the base and all instances of field_sponsor.
+  field_delete_field('field_sponsor');
+}
