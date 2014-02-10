@@ -1313,7 +1313,7 @@ ul.quicktabs-tabs li.active a {
   .block-menu-audience-menu {
     width: auto;
     right: 0;
-    padding-left: 100px;
+    padding-left: 105px;
   }
   /* line 18, ../sass/components/navigation/_audience_menu.scss */
   .block-menu-audience-menu:before {
