@@ -66,8 +66,9 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   list-style-image: none;
   list-style-type: none;
   font-weight: bold;
+  padding: 0px;
 }
-/* line 47, ../sass/utilities/_classes.scss */
+/* line 48, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu li.expanded a:before, #block-menu-block-3 ul.menu li.expanded a:before, #block-menu-block-6 ul.menu li.expanded a:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -78,7 +79,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   content: "\f0d7";
   margin-right: .5em;
 }
-/* line 55, ../sass/utilities/_classes.scss */
+/* line 56, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu li.collapsed a:before, #block-menu-block-3 ul.menu li.collapsed a:before, #block-menu-block-6 ul.menu li.collapsed a:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -89,29 +90,29 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   content: "\f0da";
   margin-right: .5em;
 }
-/* line 62, ../sass/utilities/_classes.scss */
+/* line 63, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu li.leaf a:before, #block-menu-block-3 ul.menu li.leaf a:before, #block-menu-block-6 ul.menu li.leaf a:before {
   content: "";
   margin-right: 0;
 }
-/* line 68, ../sass/utilities/_classes.scss */
+/* line 69, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu ul, #block-menu-block-3 ul.menu ul, #block-menu-block-6 ul.menu ul {
   display: none;
 }
-/* line 72, ../sass/utilities/_classes.scss */
+/* line 73, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu li.active-trail > ul, #block-menu-block-3 ul.menu li.active-trail > ul, #block-menu-block-6 ul.menu li.active-trail > ul {
   display: block;
 }
-/* line 77, ../sass/utilities/_classes.scss */
+/* line 78, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle, #block-menu-block-3 ul.menu .menu-toggle, #block-menu-block-6 ul.menu .menu-toggle {
   display: block;
   cursor: pointer;
 }
-/* line 82, ../sass/utilities/_classes.scss */
+/* line 83, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle.is-expanded:focus, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:focus, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:focus {
   outline: 1px dotted white;
 }
-/* line 85, ../sass/utilities/_classes.scss */
+/* line 86, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -122,11 +123,11 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   content: "\f146";
   margin-right: .5em;
 }
-/* line 91, ../sass/utilities/_classes.scss */
+/* line 92, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle.is-collapsed:focus, #block-menu-block-3 ul.menu .menu-toggle.is-collapsed:focus, #block-menu-block-6 ul.menu .menu-toggle.is-collapsed:focus {
   outline: 1px dotted white;
 }
-/* line 94, ../sass/utilities/_classes.scss */
+/* line 95, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-3 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-6 ul.menu .menu-toggle.is-collapsed:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -241,12 +242,17 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   margin: 0px;
 }
 
-/* line 9, ../sass/base/_panel_panes.scss */
+/* line 8, ../sass/base/_panel_panes.scss */
+.pane-node-created {
+  font-weight: bold;
+}
+
+/* line 12, ../sass/base/_panel_panes.scss */
 .panel-display {
   margin: -5px;
 }
 
-/* line 16, ../sass/base/_panel_panes.scss */
+/* line 19, ../sass/base/_panel_panes.scss */
 #content .pane-node .block-content {
   padding: 5px;
 }
@@ -318,6 +324,23 @@ a:hover, a:focus {
 img {
   height: auto;
   max-width: 100%;
+}
+
+/* line 1, ../sass/base/_views.scss */
+.views-field-created {
+  font-weight: bold;
+}
+
+/* line 2, ../sass/components/_announcements.scss */
+.pane-announcements-announcements-archive .views-row {
+  height: auto;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+/* line 6, ../sass/components/_announcements.scss */
+.pane-announcements-announcements-archive .views-row-last {
+  border-bottom: 0px;
 }
 
 /* line 3, ../sass/components/_audience_featured.scss */
@@ -987,109 +1010,31 @@ body {
   margin-left: 110px;
 }
 
-/* line 3, ../sass/components/_quicktabs.scss */
-.view-display-id-attachment_announcements_bottom .views-field-title {
-  margin-left: 0px;
-}
-/* line 6, ../sass/components/_quicktabs.scss */
-.view-display-id-attachment_announcements_bottom .views-row {
-  margin-left: 0px;
-  float: left;
-  width: auto;
-  display: block;
-  width: 230px;
-  padding-right: 10px;
-  margin-left: 0px;
-}
-/* line 14, ../sass/components/_quicktabs.scss */
-.view-display-id-attachment_announcements_bottom .views-row:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f138";
-  font-size: 1.2em;
-  color: #333333;
-  display: block;
-  float: left;
-  padding-right: 5px;
-}
-/* line 22, ../sass/components/_quicktabs.scss */
-.view-display-id-attachment_announcements_bottom .views-row-1:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f138";
-  font-size: 1.2em;
-  color: #e68b39;
-}
-/* line 27, ../sass/components/_quicktabs.scss */
-.view-display-id-attachment_announcements_bottom .views-row-2:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f138";
-  font-size: 1.2em;
-  color: #57b4a5;
-}
-/* line 32, ../sass/components/_quicktabs.scss */
-.view-display-id-attachment_announcements_bottom .views-row-3:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f138";
-  font-size: 1.2em;
-  color: #8f394f;
-}
-/* line 37, ../sass/components/_quicktabs.scss */
-.view-display-id-attachment_announcements_bottom .views-row-4:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f138";
-  font-size: 1.2em;
-  color: #d1d55a;
-}
-
-/* line 44, ../sass/components/_quicktabs.scss */
+/* line 2, ../sass/components/_quicktabs.scss */
 ul.quicktabs-tabs {
   border-bottom: 1px solid #D0D0D0;
   border-collapse: collapse;
   font: inherit;
   padding: 0 10px;
 }
-/* line 50, ../sass/components/_quicktabs.scss */
+/* line 8, ../sass/components/_quicktabs.scss */
 ul.quicktabs-tabs li {
   margin: 0px;
   padding: 0 5px;
 }
-/* line 54, ../sass/components/_quicktabs.scss */
+/* line 12, ../sass/components/_quicktabs.scss */
 ul.quicktabs-tabs li a {
   background-color: #fff;
   border: 1px solid #D0D0D0;
   color: #687893;
   padding: 5px 10px 0px;
 }
-/* line 60, ../sass/components/_quicktabs.scss */
+/* line 18, ../sass/components/_quicktabs.scss */
 ul.quicktabs-tabs li a:hover, ul.quicktabs-tabs li a:focus {
   color: #363636;
   text-decoration: none;
 }
-/* line 67, ../sass/components/_quicktabs.scss */
+/* line 25, ../sass/components/_quicktabs.scss */
 ul.quicktabs-tabs li.active a {
   border-color: #D0D0D0 #D0D0D0 #FFFFFF;
   border-style: solid;
@@ -1097,23 +1042,23 @@ ul.quicktabs-tabs li.active a {
   color: #000;
 }
 
-/* line 79, ../sass/components/_quicktabs.scss */
+/* line 37, ../sass/components/_quicktabs.scss */
 .front .pane-quicktabs-announcements-events ul.quicktabs-tabs li a {
   font-size: 20px;
   font-size: 2rem;
 }
 @media only screen and (min-width: 899px) {
-  /* line 79, ../sass/components/_quicktabs.scss */
+  /* line 37, ../sass/components/_quicktabs.scss */
   .front .pane-quicktabs-announcements-events ul.quicktabs-tabs li a {
     font-size: 25px;
     font-size: 2.5rem;
   }
 }
-/* line 87, ../sass/components/_quicktabs.scss */
+/* line 45, ../sass/components/_quicktabs.scss */
 .front .pane-quicktabs-announcements-events .block-inner {
   border-bottom: 2px solid #687893;
 }
-/* line 91, ../sass/components/_quicktabs.scss */
+/* line 49, ../sass/components/_quicktabs.scss */
 .front .pane-quicktabs-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -1123,26 +1068,28 @@ ul.quicktabs-tabs li.active a {
   outline: 0;
 }
 
-/* line 97, ../sass/components/_quicktabs.scss */
+/* line 55, ../sass/components/_quicktabs.scss */
 .view-display-id-announcements_front_content_pane .views-field {
   margin-left: 100px;
 }
-/* line 101, ../sass/components/_quicktabs.scss */
+/* line 59, ../sass/components/_quicktabs.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-image {
   display: block;
   float: left;
   margin-left: 0;
 }
-/* line 106, ../sass/components/_quicktabs.scss */
+/* line 64, ../sass/components/_quicktabs.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-image img {
+  margin-bottom: 20px;
   border: 5px solid #687893;
 }
-/* line 111, ../sass/components/_quicktabs.scss */
+/* line 70, ../sass/components/_quicktabs.scss */
 .view-display-id-announcements_front_content_pane .views-row {
+  clear: left;
   margin-bottom: 20px;
 }
 
-/* line 118, ../sass/components/_quicktabs.scss */
+/* line 78, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -1151,21 +1098,21 @@ ul.quicktabs-tabs li.active a {
   overflow: hidden;
   outline: 0;
 }
-/* line 122, ../sass/components/_quicktabs.scss */
+/* line 82, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs {
   padding: 0 5px;
 }
-/* line 125, ../sass/components/_quicktabs.scss */
+/* line 85, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs li {
   padding: 0 3px;
 }
-/* line 128, ../sass/components/_quicktabs.scss */
+/* line 88, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs li a {
   padding: 2px 5px 0;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 135, ../sass/components/_quicktabs.scss */
+/* line 95, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events h3 {
   font-size: 15px;
   font-size: 1.5rem;
@@ -1213,7 +1160,7 @@ ul.quicktabs-tabs li.active a {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 5px;
+  padding: 10px 5px;
   font-family: "Fjalla One", sans-serif;
   color: white;
   font-weight: normal;
@@ -1381,7 +1328,7 @@ ul.quicktabs-tabs li.active a {
     content: "Start Here";
     position: absolute;
     right: 660px;
-    top: 19%;
+    top: 25%;
     color: white;
     font-weight: bold;
   }
@@ -1460,6 +1407,7 @@ ul.quicktabs-tabs li.active a {
   font-weight: bold;
   text-decoration: none;
   padding: 6px 3px;
+  line-height: 1.6em;
   display: block;
   width: 100%;
   height: 100%;
@@ -1470,17 +1418,17 @@ ul.quicktabs-tabs li.active a {
     padding: 10px 26px;
   }
 }
-/* line 88, ../sass/components/navigation/_audience_menu.scss */
+/* line 89, ../sass/components/navigation/_audience_menu.scss */
 .block-menu-audience-menu ul.menu li a:hover, .block-menu-audience-menu ul.menu li a .active-trail {
   text-decoration: none;
   color: white;
 }
-/* line 93, ../sass/components/navigation/_audience_menu.scss */
+/* line 94, ../sass/components/navigation/_audience_menu.scss */
 .block-menu-audience-menu ul.menu li:hover, .block-menu-audience-menu ul.menu li .active-trail {
   background-color: black;
   color: white;
 }
-/* line 96, ../sass/components/navigation/_audience_menu.scss */
+/* line 97, ../sass/components/navigation/_audience_menu.scss */
 .block-menu-audience-menu ul.menu li:hover a, .block-menu-audience-menu ul.menu li .active-trail a {
   color: white;
 }
@@ -1583,7 +1531,7 @@ ul.menu li a:active, ul.menu li a.active {
   font-size: 1.8rem;
   list-style: none;
 }
-/* line 171, ../sass/utilities/_mixins.scss */
+/* line 181, ../sass/utilities/_mixins.scss */
 .front .pane-menu-menu-quick-links ul.menu li:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1723,27 +1671,27 @@ ul.menu li a:active, ul.menu li a.active {
   color: #333;
 }
 
-/* line 147, ../sass/utilities/_mixins.scss */
+/* line 157, ../sass/utilities/_mixins.scss */
 #block-menu-block-5 .menu-item-1078 a, .block-menu-social-media .menu-item-1078 a {
   background: url("images/social/twitter-icon.png") no-repeat;
 }
-/* line 150, ../sass/utilities/_mixins.scss */
+/* line 160, ../sass/utilities/_mixins.scss */
 #block-menu-block-5 .menu-item-1080 a, .block-menu-social-media .menu-item-1080 a {
   background: url("images/social/youtube-icon.png") no-repeat;
 }
-/* line 153, ../sass/utilities/_mixins.scss */
+/* line 163, ../sass/utilities/_mixins.scss */
 #block-menu-block-5 .menu-item-1079 a, .block-menu-social-media .menu-item-1079 a {
   background: url("images/social/facebook-icon.png") no-repeat;
 }
-/* line 156, ../sass/utilities/_mixins.scss */
+/* line 166, ../sass/utilities/_mixins.scss */
 #block-menu-block-5 .menu-item-1228 a, .block-menu-social-media .menu-item-1228 a {
   background: url("images/social/linkedin-icon.png") no-repeat;
 }
-/* line 159, ../sass/utilities/_mixins.scss */
+/* line 169, ../sass/utilities/_mixins.scss */
 #block-menu-block-5 .menu-item-1229 a, .block-menu-social-media .menu-item-1229 a {
   background: url("images/social/pintrest-icon.png") no-repeat;
 }
-/* line 162, ../sass/utilities/_mixins.scss */
+/* line 172, ../sass/utilities/_mixins.scss */
 #block-menu-block-5 .menu-item-1230 a, .block-menu-social-media .menu-item-1230 a {
   background: url("images/social/instagram-icon.png") no-repeat;
 }

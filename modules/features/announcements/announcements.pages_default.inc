@@ -63,7 +63,7 @@ function announcements_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Announcements Archive';
+  $display->title = 'Announcements';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

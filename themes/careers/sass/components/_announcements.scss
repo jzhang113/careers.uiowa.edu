@@ -1,0 +1,9 @@
+.pane-announcements-announcements-archive {
+	.views-row {
+		@include hr;
+	}
+
+	.views-row-last {
+		border-bottom: 0px;
+	}
+}

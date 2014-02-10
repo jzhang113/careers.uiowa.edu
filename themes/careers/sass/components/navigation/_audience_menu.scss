@@ -19,7 +19,7 @@
       content:"Start Here";
       position: absolute;
       right: 660px;
-      top: 19%;
+      top: 25%;
       color: white;
       font-weight: bold;
     }
@@ -79,6 +79,7 @@
         font-weight: bold;
         text-decoration: none;
         padding: 6px 3px;
+        line-height: 1.6em;
         @media #{$nine-hundred} {
           padding: 10px 26px;
         }

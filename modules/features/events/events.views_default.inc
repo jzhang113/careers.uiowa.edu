@@ -72,10 +72,12 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_location']['table'] = 'field_data_field_mcf_location';
   $handler->display->display_options['fields']['field_mcf_location']['field'] = 'field_mcf_location';
   $handler->display->display_options['fields']['field_mcf_location']['label'] = '';
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['text'] = '[field_mcf_location]';
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['trim_whitespace'] = TRUE;
   $handler->display->display_options['fields']['field_mcf_location']['alter']['preserve_tags'] = '<i>';
   $handler->display->display_options['fields']['field_mcf_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_location']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_mcf_location']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_location']['type'] = 'text_plain';
   /* Field: Content: Event Category */
   $handler->display->display_options['fields']['field_event_category']['id'] = 'field_event_category';
@@ -122,6 +124,66 @@ function events_views_default_views() {
 
   /* Display: Teaser List */
   $handler = $view->new_display('panel_pane', 'Teaser List', 'events_teaser_list');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
+  /* Field: Content: Date */
+  $handler->display->display_options['fields']['field_mcf_date']['id'] = 'field_mcf_date';
+  $handler->display->display_options['fields']['field_mcf_date']['table'] = 'field_data_field_mcf_date';
+  $handler->display->display_options['fields']['field_mcf_date']['field'] = 'field_mcf_date';
+  $handler->display->display_options['fields']['field_mcf_date']['label'] = '';
+  $handler->display->display_options['fields']['field_mcf_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_mcf_date']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_date']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_mcf_date']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'value',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Location */
+  $handler->display->display_options['fields']['field_mcf_location']['id'] = 'field_mcf_location';
+  $handler->display->display_options['fields']['field_mcf_location']['table'] = 'field_data_field_mcf_location';
+  $handler->display->display_options['fields']['field_mcf_location']['field'] = 'field_mcf_location';
+  $handler->display->display_options['fields']['field_mcf_location']['label'] = '';
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['text'] = '[field_mcf_location]';
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['preserve_tags'] = '<i>';
+  $handler->display->display_options['fields']['field_mcf_location']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_mcf_location']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['type'] = 'text_plain';
+  /* Field: Content: Event Category */
+  $handler->display->display_options['fields']['field_event_category']['id'] = 'field_event_category';
+  $handler->display->display_options['fields']['field_event_category']['table'] = 'field_data_field_event_category';
+  $handler->display->display_options['fields']['field_event_category']['field'] = 'field_event_category';
+  $handler->display->display_options['fields']['field_event_category']['label'] = '';
+  $handler->display->display_options['fields']['field_event_category']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_event_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_category']['delta_offset'] = '0';
+  /* Field: Date Short Format */
+  $handler->display->display_options['fields']['field_mcf_date_1']['id'] = 'field_mcf_date_1';
+  $handler->display->display_options['fields']['field_mcf_date_1']['table'] = 'field_data_field_mcf_date';
+  $handler->display->display_options['fields']['field_mcf_date_1']['field'] = 'field_mcf_date';
+  $handler->display->display_options['fields']['field_mcf_date_1']['ui_name'] = 'Date Short Format';
+  $handler->display->display_options['fields']['field_mcf_date_1']['label'] = '';
+  $handler->display->display_options['fields']['field_mcf_date_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_date_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_mcf_date_1']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'value',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
 
   /* Display: Events Listing */
   $handler = $view->new_display('panel_pane', 'Events Listing', 'events_list');
@@ -167,9 +229,11 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_location']['table'] = 'field_data_field_mcf_location';
   $handler->display->display_options['fields']['field_mcf_location']['field'] = 'field_mcf_location';
   $handler->display->display_options['fields']['field_mcf_location']['label'] = '';
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['text'] = '[field_mcf_location]';
+  $handler->display->display_options['fields']['field_mcf_location']['alter']['trim_whitespace'] = TRUE;
   $handler->display->display_options['fields']['field_mcf_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_location']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_mcf_location']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_mcf_location']['type'] = 'text_plain';
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';

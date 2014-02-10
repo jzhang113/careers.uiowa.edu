@@ -99,7 +99,7 @@ function announcements_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Field: Content: Link */
+  /* Field: Content: Related Link */
   $handler->display->display_options['fields']['field_announcement_link']['id'] = 'field_announcement_link';
   $handler->display->display_options['fields']['field_announcement_link']['table'] = 'field_data_field_announcement_link';
   $handler->display->display_options['fields']['field_announcement_link']['field'] = 'field_announcement_link';
@@ -148,11 +148,6 @@ function announcements_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'announcement' => 'announcement',
   );
-  /* Filter criterion: Content: Promoted to front page */
-  $handler->display->display_options['filters']['promote']['id'] = 'promote';
-  $handler->display->display_options['filters']['promote']['table'] = 'node';
-  $handler->display->display_options['filters']['promote']['field'] = 'promote';
-  $handler->display->display_options['filters']['promote']['value'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
   $handler->display->display_options['allow']['items_per_page'] = 0;
   $handler->display->display_options['allow']['offset'] = 0;
@@ -230,7 +225,7 @@ function announcements_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '250',
   );
-  /* Field: Content: Link */
+  /* Field: Content: Related Link */
   $handler->display->display_options['fields']['field_announcement_link']['id'] = 'field_announcement_link';
   $handler->display->display_options['fields']['field_announcement_link']['table'] = 'field_data_field_announcement_link';
   $handler->display->display_options['fields']['field_announcement_link']['field'] = 'field_announcement_link';
@@ -324,11 +319,6 @@ function announcements_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'announcement' => 'announcement',
   );
-  /* Filter criterion: Content: Promoted to front page */
-  $handler->display->display_options['filters']['promote']['id'] = 'promote';
-  $handler->display->display_options['filters']['promote']['table'] = 'node';
-  $handler->display->display_options['filters']['promote']['field'] = 'promote';
-  $handler->display->display_options['filters']['promote']['value'] = '0';
   $handler->display->display_options['pane_title'] = 'Monthly Archive Links';
 
   /* Display: Feed */
