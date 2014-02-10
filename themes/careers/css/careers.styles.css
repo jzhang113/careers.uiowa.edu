@@ -38,11 +38,11 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 #block-menu-block-4 ul.menu .nolink,
 #block-menu-block-3 ul.menu .nolink,
 #block-menu-block-6 ul.menu .nolink {
-  color: #000;
+  color: #333;
 }
 /* line 24, ../sass/utilities/_classes.scss */
 #block-menu-block-4 ul.menu .menu-depth-2 > .menu-inner, #block-menu-block-3 ul.menu .menu-depth-2 > .menu-inner, #block-menu-block-6 ul.menu .menu-depth-2 > .menu-inner {
-  background-color: #000;
+  background-color: #333;
   color: #fff;
   font-weight: bold;
   padding: 5px;
@@ -1052,7 +1052,7 @@ ul.quicktabs-tabs li.active a {
   border-color: #D0D0D0 #D0D0D0 #FFFFFF;
   border-style: solid;
   border-width: 1px;
-  color: #000;
+  color: #333;
 }
 
 /* line 37, ../sass/components/_quicktabs.scss */
