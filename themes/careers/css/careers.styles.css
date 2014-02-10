@@ -517,9 +517,14 @@ img {
   display: none;
 }
 
-/* line 5, ../sass/components/_events.scss */
-.view-display-id-events_list .views-field-field-mcf-date:before,
-.view-display-id-events_teaser_list .views-field-field-mcf-date:before {
+/* line 4, ../sass/components/_events.scss */
+.view-display-id-events_list .views-field-field-mcf-date,
+.view-display-id-events_teaser_list .views-field-field-mcf-date {
+  margin-bottom: 5px;
+}
+/* line 8, ../sass/components/_events.scss */
+.view-display-id-events_list .views-field-field-mcf-date .field-content:before,
+.view-display-id-events_teaser_list .views-field-field-mcf-date .field-content:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -529,13 +534,16 @@ img {
   content: "\f017";
   font-size: 1.2em;
   color: #333333;
-  display: block;
-  float: left;
-  padding-right: 5px;
+  margin-right: 0.5em;
 }
-/* line 13, ../sass/components/_events.scss */
-.view-display-id-events_list .views-field-field-mcf-location:before,
-.view-display-id-events_teaser_list .views-field-field-mcf-location:before {
+/* line 15, ../sass/components/_events.scss */
+.view-display-id-events_list .views-field-field-mcf-location,
+.view-display-id-events_teaser_list .views-field-field-mcf-location {
+  margin-bottom: 5px;
+}
+/* line 19, ../sass/components/_events.scss */
+.view-display-id-events_list .views-field-field-mcf-location .field-content:before,
+.view-display-id-events_teaser_list .views-field-field-mcf-location .field-content:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -545,44 +553,28 @@ img {
   content: "\f041";
   font-size: 1.2em;
   color: #333333;
-  display: block;
-  float: left;
-  padding-right: 5px;
-  position: absolute;
-  margin-left: 2px;
+  margin-right: 0.5em;
+  padding: 0 3px;
 }
-/* line 22, ../sass/components/_events.scss */
-.view-display-id-events_list .fa,
-.view-display-id-events_teaser_list .fa {
-  color: black;
-}
-/* line 25, ../sass/components/_events.scss */
-.view-display-id-events_list .fa-map-marker,
-.view-display-id-events_teaser_list .fa-map-marker {
-  padding: 0px 2px;
-}
-/* line 28, ../sass/components/_events.scss */
+/* line 27, ../sass/components/_events.scss */
 .view-display-id-events_list .views-row,
 .view-display-id-events_teaser_list .views-row {
-  padding: 5px;
-}
-/* line 31, ../sass/components/_events.scss */
-.view-display-id-events_list .views-row-odd,
-.view-display-id-events_teaser_list .views-row-odd {
-  background-color: whitesmoke;
+  border-bottom: 4px solid whitesmoke;
+  margin-bottom: 20px;
+  padding: 0 5px 20px;
 }
 
-/* line 37, ../sass/components/_events.scss */
+/* line 35, ../sass/components/_events.scss */
 .pane-events-events-categories,
 .pane-views-exp-events-events-list {
   background-color: whitesmoke;
 }
 
-/* line 42, ../sass/components/_events.scss */
+/* line 40, ../sass/components/_events.scss */
 .pane-views-exp-events-events-list .views-submit-button, .pane-views-exp-events-events-list .views-reset-button {
   width: auto;
 }
-/* line 45, ../sass/components/_events.scss */
+/* line 43, ../sass/components/_events.scss */
 .pane-views-exp-events-events-list input[type="text"], .pane-views-exp-events-events-list .views-widget-filter-field_event_category_tid, .pane-views-exp-events-events-list .form-select {
   width: 99%;
 }

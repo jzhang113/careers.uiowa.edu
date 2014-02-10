@@ -2,34 +2,32 @@
 .view-display-id-events_list,
 .view-display-id-events_teaser_list {
   .views-field-field-mcf-date {
-    &:before {
-      @include icon($fa-var-clock-o, $color: #333, $size: 1.2em);
-      display: block;
-      float: left;
-      padding-right: 5px;
+    margin-bottom: 5px;
+
+    .field-content {
+      &:before {
+        @include icon($fa-var-clock-o, $color: #333, $size: 1.2em);
+        margin-right: 0.5em;
+      }
     }
   }
+
   .views-field-field-mcf-location {
-    &:before {
-      @include icon($fa-var-map-marker, $color: #333, $size: 1.2em);
-      display: block;
-      float: left;
-      padding-right: 5px;
-      position: absolute;
-      margin-left: 2px;
+    margin-bottom: 5px;
+    
+    .field-content {
+      &:before {
+        @include icon($fa-var-map-marker, $color: #333, $size: 1.2em);
+        margin-right: 0.5em;
+        padding: 0 3px;
+      }
     }
   }
-  .fa {
-    color: black;
-  }
-  .fa-map-marker {
-    padding: 0px 2px;
-  }
-  .views-row{
-    padding: 5px;
-  }
-  .views-row-odd {
-    background-color: $ultralight;
+
+  .views-row {
+    border-bottom: 4px solid $ultralight;
+    margin-bottom: 20px;
+    padding: 0 5px 20px;
   }
 }
 
