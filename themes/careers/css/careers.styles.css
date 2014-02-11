@@ -955,25 +955,17 @@ body {
 .region-footer a {
   color: black;
 }
-/* line 138, ../sass/components/_page.scss */
-.region-footer a:hover {
-  color: black;
-}
-/* line 141, ../sass/components/_page.scss */
-.region-footer a:active {
-  color: black;
-}
-/* line 145, ../sass/components/_page.scss */
+/* line 139, ../sass/components/_page.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 147, ../sass/components/_page.scss */
+/* line 141, ../sass/components/_page.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 153, ../sass/components/_page.scss */
+/* line 147, ../sass/components/_page.scss */
 .region-footer h2 {
   font-size: 18px;
   font-size: 1.8rem;
