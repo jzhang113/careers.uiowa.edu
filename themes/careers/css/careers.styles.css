@@ -1542,10 +1542,6 @@ ul.menu ul {
 ul.menu li {
   margin: 0;
 }
-/* line 54, ../sass/components/navigation/_main.scss */
-ul.menu li a:active, ul.menu li a.active {
-  color: #9c8345;
-}
 
 /* If li.content exists it's a problem, so reset the padding */
 /* line 61, ../sass/components/navigation/_main.scss */
