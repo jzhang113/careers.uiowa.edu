@@ -1,4 +1,5 @@
 body {
+  background-color: #ddd;
   margin: 0;
 }
 
@@ -100,17 +101,6 @@ body {
   }
 }
 
-// Page Wrapper Areas
-#content-wrapper, 
-#header-wrapper, 
-#breadcrumb-wrapper, 
-#content-header-wrapper, 
-#messages-help-wrapper, 
-#tertiary-content-wrapper, 
-#footer-wrapper {
-  background-color: #ddd;
-}
-
 // Page Content Areas
 #main-content, 
 #main-content-header, 
@@ -119,32 +109,4 @@ body {
 .region-tertiary-content, 
 #columns {
   background: $page;
-}
-
-// Footer
-#footer-wrapper {
-  @media #{$responsive-nav} {
-    .block {
-      float: left;
-    }
-  }
-}
-.region-footer{
-  position: relative;
-  @include font-size(1.4);
-  background-color: $tan;
-  a {
-    color: black;
-  }
-  ul {
-    margin-top: 0px;
-    li {
-      list-style-image: none;
-      list-style-type: none;
-      padding-right: 5px;
-    }
-  }
-  h2 {
-    @include font-size(1.8);
-  }
 }

@@ -815,16 +815,17 @@ img {
 
 /* line 1, ../sass/components/_page.scss */
 body {
+  background-color: #ddd;
   margin: 0;
 }
 
-/* line 5, ../sass/components/_page.scss */
+/* line 6, ../sass/components/_page.scss */
 #header-wrapper {
   background-color: #333;
   background: url("images/bg_tile.gif") repeat;
 }
 
-/* line 10, ../sass/components/_page.scss */
+/* line 11, ../sass/components/_page.scss */
 #header {
   background-color: #eee;
   background: url("images/header.png") no-repeat;
@@ -835,34 +836,34 @@ body {
   background-position: center;
 }
 
-/* line 20, ../sass/components/_page.scss */
+/* line 21, ../sass/components/_page.scss */
 #branding {
   position: absolute;
   bottom: 55px;
 }
 @media only screen and (min-width: 40em) {
-  /* line 20, ../sass/components/_page.scss */
+  /* line 21, ../sass/components/_page.scss */
   #branding {
     bottom: 45px;
   }
 }
 
-/* line 28, ../sass/components/_page.scss */
+/* line 29, ../sass/components/_page.scss */
 #logo {
   padding: 10px 0;
 }
 @media only screen and (min-width: 40em) {
-  /* line 28, ../sass/components/_page.scss */
+  /* line 29, ../sass/components/_page.scss */
   #logo {
     padding-left: 20px;
   }
 }
-/* line 34, ../sass/components/_page.scss */
+/* line 35, ../sass/components/_page.scss */
 #logo img {
   vertical-align: bottom;
 }
 
-/* line 39, ../sass/components/_page.scss */
+/* line 40, ../sass/components/_page.scss */
 #site-name {
   position: absolute;
   top: -99999em;
@@ -872,7 +873,7 @@ body {
   outline: 0;
 }
 
-/* line 43, ../sass/components/_page.scss */
+/* line 44, ../sass/components/_page.scss */
 #site-slogan {
   font-size: 18px;
   font-size: 1.8rem;
@@ -884,24 +885,24 @@ body {
   text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0, rgba(0, 0, 0, 0.2) 2px 2px 0, rgba(0, 0, 0, 0.2) 3px 3px 0;
 }
 @media only screen and (min-width: 40em) {
-  /* line 43, ../sass/components/_page.scss */
+  /* line 44, ../sass/components/_page.scss */
   #site-slogan {
     padding-left: 80px;
   }
 }
 
-/* line 56, ../sass/components/_page.scss */
+/* line 57, ../sass/components/_page.scss */
 .site-logo {
   width: 320px;
 }
 
-/* line 60, ../sass/components/_page.scss */
+/* line 61, ../sass/components/_page.scss */
 #page-title {
   margin: 0;
   padding-left: 10px;
 }
 
-/* line 65, ../sass/components/_page.scss */
+/* line 66, ../sass/components/_page.scss */
 #skip-link {
   left: 50%;
   margin-left: -6.5em;
@@ -911,7 +912,7 @@ body {
   width: 12em;
   z-index: 50;
 }
-/* line 74, ../sass/components/_page.scss */
+/* line 75, ../sass/components/_page.scss */
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -922,7 +923,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 85, ../sass/components/_page.scss */
+/* line 86, ../sass/components/_page.scss */
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -933,23 +934,12 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 97, ../sass/components/_page.scss */
+/* line 98, ../sass/components/_page.scss */
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active {
   outline: 0;
 }
 
 /* line 110, ../sass/components/_page.scss */
-#content-wrapper,
-#header-wrapper,
-#breadcrumb-wrapper,
-#content-header-wrapper,
-#messages-help-wrapper,
-#tertiary-content-wrapper,
-#footer-wrapper {
-  background-color: #ddd;
-}
-
-/* line 120, ../sass/components/_page.scss */
 #main-content,
 #main-content-header,
 #breadcrumb,
@@ -957,40 +947,6 @@ body {
 .region-tertiary-content,
 #columns {
   background: white;
-}
-
-@media only screen and (min-width: 40em) {
-  /* line 127, ../sass/components/_page.scss */
-  #footer-wrapper .block {
-    float: left;
-  }
-}
-
-/* line 132, ../sass/components/_page.scss */
-.region-footer {
-  position: relative;
-  font-size: 14px;
-  font-size: 1.4rem;
-  background-color: #eae3d2;
-}
-/* line 136, ../sass/components/_page.scss */
-.region-footer a {
-  color: black;
-}
-/* line 139, ../sass/components/_page.scss */
-.region-footer ul {
-  margin-top: 0px;
-}
-/* line 141, ../sass/components/_page.scss */
-.region-footer ul li {
-  list-style-image: none;
-  list-style-type: none;
-  padding-right: 5px;
-}
-/* line 147, ../sass/components/_page.scss */
-.region-footer h2 {
-  font-size: 18px;
-  font-size: 1.8rem;
 }
 
 /* line 4, ../sass/components/_people.scss */
