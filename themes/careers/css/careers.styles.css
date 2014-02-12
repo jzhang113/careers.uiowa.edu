@@ -233,6 +233,28 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   }
 }
 
+@media only screen and (min-width: 481px) {
+  /* line 19, ../sass/base/_layout.scss */
+  #footer-upper-wrapper .region {
+    float: left;
+    width: 50%;
+  }
+  /* line 24, ../sass/base/_layout.scss */
+  #footer-upper-wrapper .region.region-footer-third {
+    clear: left;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* line 19, ../sass/base/_layout.scss */
+  #footer-upper-wrapper .region {
+    width: 25%;
+  }
+  /* line 32, ../sass/base/_layout.scss */
+  #footer-upper-wrapper .region.region-footer-third {
+    clear: none;
+  }
+}
+
 /* line 1, ../sass/base/_panel_panes.scss */
 .pane-title {
   background-color: transparent;

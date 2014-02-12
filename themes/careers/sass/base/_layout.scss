@@ -15,3 +15,22 @@
     }
   }
 }
+
+#footer-upper-wrapper .region {
+  @media #{"only screen and (min-width: 481px)"} {
+    float: left;
+    width: 50%;
+
+    &.region-footer-third {
+      clear: left;
+    }
+  }
+
+  @media #{"only screen and (min-width: 769px)"} {
+    width: 25%;
+
+    &.region-footer-third {
+      clear: none;
+    }
+  }
+}

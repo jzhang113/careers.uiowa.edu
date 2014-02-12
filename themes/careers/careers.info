@@ -84,6 +84,10 @@
   regions[content_aside]     = Aside
   regions[secondary_content] = Secondary
   regions[tertiary_content]  = Tertiary
+  regions[footer_first]      = Upper footer first
+  regions[footer_second]     = Upper footer second
+  regions[footer_third]      = Upper footer third
+  regions[footer_fourth]     = Upper footer fourth
   regions[footer]            = Footer
   regions[leaderboard]       = Leaderboard
   regions[header]            = Header
