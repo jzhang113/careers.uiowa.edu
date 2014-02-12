@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Careers Webform feature.
+ */
+
+include_once 'careers_webform.features.inc';
