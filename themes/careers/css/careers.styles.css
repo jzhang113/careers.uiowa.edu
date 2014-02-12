@@ -330,19 +330,29 @@ h4 {
   font-size: 1.8rem;
 }
 
-/* line 42, ../sass/base/_typography.scss */
+/* line 43, ../sass/base/_typography.scss */
 a {
   color: #687893;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 48, ../sass/base/_typography.scss */
+/* line 49, ../sass/base/_typography.scss */
 a:hover, a:focus {
   color: black;
   text-decoration: underline;
 }
 
-/* line 54, ../sass/base/_typography.scss */
+/* line 55, ../sass/base/_typography.scss */
+#footer a {
+  color: #4e5b6e;
+}
+/* line 59, ../sass/base/_typography.scss */
+#footer a:hover, #footer a:focus {
+  color: black;
+  text-decoration: underline;
+}
+
+/* line 66, ../sass/base/_typography.scss */
 img {
   height: auto;
   max-width: 100%;
@@ -1519,17 +1529,16 @@ ul.menu li {
   padding: 0;
 }
 
-/* line 3, ../sass/components/navigation/_quick_links.scss */
-.front .pane-menu-menu-quick-links ul.menu {
-  margin-top: 0px;
+/* line 2, ../sass/components/navigation/_programs.scss */
+.view-display-id-program_terms_level_1_block ul {
+  margin-top: 0;
 }
-/* line 5, ../sass/components/navigation/_quick_links.scss */
-.front .pane-menu-menu-quick-links ul.menu li {
-  font-size: 1.8rem;
+/* line 5, ../sass/components/navigation/_programs.scss */
+.view-display-id-program_terms_level_1_block ul li.leaf {
   list-style: none;
 }
 /* line 181, ../sass/utilities/_mixins.scss */
-.front .pane-menu-menu-quick-links ul.menu li:before {
+.view-display-id-program_terms_level_1_block ul li.leaf:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -1543,20 +1552,37 @@ ul.menu li {
   width: 10px;
   padding-right: 2px;
 }
+/* line 11, ../sass/components/navigation/_programs.scss */
+.view-display-id-program_terms_level_1_block a {
+  color: #4e5b6e;
+}
+/* line 13, ../sass/components/navigation/_programs.scss */
+.view-display-id-program_terms_level_1_block a:hover, .view-display-id-program_terms_level_1_block a:focus {
+  color: #000;
+}
 
-@media only screen and (min-width: 40em) {
-  /* line 14, ../sass/components/navigation/_quick_links.scss */
-  .region-footer #block-menu-block-1 {
-    width: 75%;
-  }
-  /* line 17, ../sass/components/navigation/_quick_links.scss */
-  .region-footer #block-menu-block-1 ul {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    -ms-column-count: 3;
-    -o-column-count: 3;
-    column-count: 3;
-  }
+/* line 3, ../sass/components/navigation/_quick_links.scss */
+nav .menu-name-menu-quick-links ul {
+  margin-top: 0;
+}
+/* line 6, ../sass/components/navigation/_quick_links.scss */
+nav .menu-name-menu-quick-links ul li.leaf {
+  list-style: none;
+}
+/* line 181, ../sass/utilities/_mixins.scss */
+nav .menu-name-menu-quick-links ul li.leaf:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f105";
+  font-size: 1em;
+  color: #9c8345;
+  display: inline-block;
+  width: 10px;
+  padding-right: 2px;
 }
 
 /* line 2, ../sass/components/navigation/_site_links_menu.scss */

@@ -39,6 +39,7 @@ h4 {
   @include font-size(1.8);
 }
 
+
 a {
   color: $blue;
   font-weight: bold;
@@ -50,6 +51,17 @@ a {
     text-decoration: underline;
   }
 }
+
+#footer a {
+  color: $dark_blue;
+
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
 
 img {
   height: auto;

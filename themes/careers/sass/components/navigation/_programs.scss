@@ -1,0 +1,17 @@
+.view-display-id-program_terms_level_1_block {
+  ul {
+    margin-top: 0;
+
+    li.leaf {
+      list-style: none;
+      @include angle-bullet-right;
+    }
+  }
+
+  a {
+    color: $dark_blue;
+    &:hover, &:focus {
+      color: #000;
+    }
+  }
+}
