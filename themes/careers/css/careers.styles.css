@@ -814,17 +814,20 @@ img {
 }
 
 /* line 2, ../sass/components/_in_the_news.scss */
-.pane-inthenews-inthenews-month-links {
+.pane-inthenews-inthenews-archive-links {
   background-color: whitesmoke;
 }
 
 /* line 7, ../sass/components/_in_the_news.scss */
 .view-display-id-inthenews .views-row {
-  padding: 5px;
+  height: auto;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
 }
-/* line 10, ../sass/components/_in_the_news.scss */
-.view-display-id-inthenews .views-row-odd {
-  background-color: whitesmoke;
+/* line 11, ../sass/components/_in_the_news.scss */
+.view-display-id-inthenews .views-row-last {
+  border-bottom: 0px;
 }
 
 /* line 1, ../sass/components/_messages.scss */
