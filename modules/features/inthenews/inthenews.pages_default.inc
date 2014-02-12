@@ -85,7 +85,7 @@ function inthenews_default_page_manager_pages() {
     $pane->pid = 'new-2';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'inthenews-inthenews_month_links';
+    $pane->subtype = 'inthenews-inthenews_archive_links';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
