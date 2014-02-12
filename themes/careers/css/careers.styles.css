@@ -622,31 +622,37 @@ img {
 /* line 27, ../sass/components/_events.scss */
 .view-display-id-events_list .views-row,
 .view-display-id-events_teaser_list .views-row {
-  border-bottom: 4px solid whitesmoke;
-  margin-bottom: 20px;
-  padding: 0 5px 20px;
+  height: auto;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+/* line 31, ../sass/components/_events.scss */
+.view-display-id-events_list .views-row-last,
+.view-display-id-events_teaser_list .views-row-last {
+  border-bottom: 0px;
 }
 
-/* line 35, ../sass/components/_events.scss */
+/* line 37, ../sass/components/_events.scss */
 .pane-events-events-categories,
 .pane-views-exp-events-events-list {
   background-color: whitesmoke;
 }
 
-/* line 40, ../sass/components/_events.scss */
+/* line 42, ../sass/components/_events.scss */
 .pane-views-exp-events-events-list .views-submit-button, .pane-views-exp-events-events-list .views-reset-button {
   width: auto;
 }
-/* line 43, ../sass/components/_events.scss */
+/* line 45, ../sass/components/_events.scss */
 .pane-views-exp-events-events-list input[type="text"], .pane-views-exp-events-events-list .views-widget-filter-field_event_category_tid, .pane-views-exp-events-events-list .form-select {
   width: 99%;
 }
 
-/* line 48, ../sass/components/_events.scss */
+/* line 50, ../sass/components/_events.scss */
 .field-name-field-mcf-date {
   margin-bottom: 5px;
 }
-/* line 52, ../sass/components/_events.scss */
+/* line 54, ../sass/components/_events.scss */
 .field-name-field-mcf-date .field-items:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -661,11 +667,11 @@ img {
   float: left;
 }
 
-/* line 60, ../sass/components/_events.scss */
+/* line 62, ../sass/components/_events.scss */
 .field-name-field-mcf-location {
   margin-bottom: 5px;
 }
-/* line 64, ../sass/components/_events.scss */
+/* line 66, ../sass/components/_events.scss */
 .field-name-field-mcf-location .field-items:before {
   font-family: FontAwesome;
   font-weight: normal;
