@@ -465,7 +465,7 @@ img {
 }
 
 /* line 60, ../sass/components/_buttons.scss */
-.page .button, .page input[type="button"], .page input[type="reset"], .page input[type="submit"] {
+.page a.button, .page input[type="button"], .page input[type="reset"], .page input[type="submit"], #footer a.button, #footer input[type="button"], #footer input[type="reset"], #footer input[type="submit"] {
   display: inline-block;
   font-family: "Fjalla One", sans-serif;
   background-color: #687893;
@@ -486,7 +486,7 @@ img {
   -o-user-select: none;
 }
 /* line 79, ../sass/components/_buttons.scss */
-.page .button:hover, .page input[type="button"]:hover, .page input[type="reset"]:hover, .page input[type="submit"]:hover {
+.page a.button:hover, .page input[type="button"]:hover, .page input[type="reset"]:hover, .page input[type="submit"]:hover, #footer a.button:hover, #footer input[type="button"]:hover, #footer input[type="reset"]:hover, #footer input[type="submit"]:hover {
   background-color: black;
   color: white;
   text-decoration: none;
