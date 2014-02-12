@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Code for the Careers Webform feature.
+ */
+
+include_once 'careers_webform.features.inc';
+
+/**
+* Implements hook_form_alter()
+*/
+function careers_webform_form_alter(&$form, &$form_state, $form_id) {
+  //Add captcha to all webforms
+  if (strstr($form_id, 'webform_client_form')) {
+        $form['sitenow_captcha'] = array(
+            '#type' => 'captcha',
+            '#captcha_type' => 'hidden_captcha/Hidden CAPTCHA',
+        );
+    }
+}

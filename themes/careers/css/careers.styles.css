@@ -622,6 +622,45 @@ img {
   width: 99%;
 }
 
+/* line 48, ../sass/components/_events.scss */
+.field-name-field-mcf-date {
+  margin-bottom: 5px;
+}
+/* line 52, ../sass/components/_events.scss */
+.field-name-field-mcf-date .field-items:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f017";
+  font-size: 1.2em;
+  color: #333333;
+  margin-right: 0.5em;
+  float: left;
+}
+
+/* line 60, ../sass/components/_events.scss */
+.field-name-field-mcf-location {
+  margin-bottom: 5px;
+}
+/* line 64, ../sass/components/_events.scss */
+.field-name-field-mcf-location .field-items:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f041";
+  font-size: 1.2em;
+  color: #333333;
+  margin-right: 0.5em;
+  padding: 0 3px;
+  float: left;
+}
+
 /* line 1, ../sass/components/_flexslider.scss */
 .flexslider {
   margin: 0px;
@@ -938,25 +977,17 @@ body {
 .region-footer a {
   color: black;
 }
-/* line 138, ../sass/components/_page.scss */
-.region-footer a:hover {
-  color: black;
-}
-/* line 141, ../sass/components/_page.scss */
-.region-footer a:active {
-  color: black;
-}
-/* line 145, ../sass/components/_page.scss */
+/* line 139, ../sass/components/_page.scss */
 .region-footer ul {
   margin-top: 0px;
 }
-/* line 147, ../sass/components/_page.scss */
+/* line 141, ../sass/components/_page.scss */
 .region-footer ul li {
   list-style-image: none;
   list-style-type: none;
   padding-right: 5px;
 }
-/* line 153, ../sass/components/_page.scss */
+/* line 147, ../sass/components/_page.scss */
 .region-footer h2 {
   font-size: 18px;
   font-size: 1.8rem;
@@ -1524,10 +1555,6 @@ ul.menu ul {
 /* line 49, ../sass/components/navigation/_main.scss */
 ul.menu li {
   margin: 0;
-}
-/* line 54, ../sass/components/navigation/_main.scss */
-ul.menu li a:active, ul.menu li a.active {
-  color: #9c8345;
 }
 
 /* If li.content exists it's a problem, so reset the padding */

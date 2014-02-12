@@ -44,3 +44,28 @@
     width: 99%;
   }
 }
+
+.field-name-field-mcf-date {
+    margin-bottom: 5px;
+
+    .field-items {
+      &:before {
+        @include icon($fa-var-clock-o, $color: #333, $size: 1.2em);
+        margin-right: 0.5em;
+        float: left;
+      }
+    }
+  }
+
+  .field-name-field-mcf-location {
+    margin-bottom: 5px;
+    
+    .field-items {
+      &:before {
+        @include icon($fa-var-map-marker, $color: #333, $size: 1.2em);
+        margin-right: 0.5em;
+        padding: 0 3px;
+        float: left;
+      }
+    }
+  }

@@ -325,6 +325,29 @@ function taxonomy_blocks_views_default_views() {
   $handler->display->display_options['fields']['field_side_button_link']['label'] = '';
   $handler->display->display_options['fields']['field_side_button_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_side_button_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
+    'audience' => 'audience',
+    'program' => 'program',
+  );
+  $handler->display->display_options['arguments']['tid']['validate']['fail'] = 'empty';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy term: Side Button Link (field_side_button_link:url) */
+  $handler->display->display_options['filters']['field_side_button_link_url']['id'] = 'field_side_button_link_url';
+  $handler->display->display_options['filters']['field_side_button_link_url']['table'] = 'field_data_field_side_button_link';
+  $handler->display->display_options['filters']['field_side_button_link_url']['field'] = 'field_side_button_link_url';
+  $handler->display->display_options['filters']['field_side_button_link_url']['operator'] = 'not empty';
   $handler->display->display_options['block_description'] = 'Side Button Term Block';
   $export['taxonomy_blocks_terms'] = $view;
 
