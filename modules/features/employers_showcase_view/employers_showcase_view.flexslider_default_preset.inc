@@ -25,7 +25,7 @@ function employers_showcase_view_flexslider_default_presets() {
     'direction' => 'horizontal',
     'reverse' => 0,
     'smoothHeight' => 0,
-    'startAt' => '1',
+    'startAt' => '2',
     'animationSpeed' => '600',
     'initDelay' => '0',
     'useCSS' => 1,
