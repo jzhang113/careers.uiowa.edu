@@ -75,6 +75,43 @@ function program_taxonomy_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+
+  /* Display: Social Media Block */
+  $handler = $view->new_display('block', 'Social Media Block', 'programs_social_media_block');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Connect with Us';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Social Media Links */
+  $handler->display->display_options['fields']['field_program_social_media_links']['id'] = 'field_program_social_media_links';
+  $handler->display->display_options['fields']['field_program_social_media_links']['table'] = 'field_data_field_program_social_media_links';
+  $handler->display->display_options['fields']['field_program_social_media_links']['field'] = 'field_program_social_media_links';
+  $handler->display->display_options['fields']['field_program_social_media_links']['label'] = '';
+  $handler->display->display_options['fields']['field_program_social_media_links']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_program_social_media_links']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_program_social_media_links']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_program_social_media_links']['separator'] = '<br>';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'program' => 'program',
+  );
+  $handler->display->display_options['block_description'] = 'Program Social Media Links';
   $export['programs'] = $view;
 
   return $export;

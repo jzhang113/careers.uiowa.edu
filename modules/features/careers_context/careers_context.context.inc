@@ -158,6 +158,12 @@ function careers_context_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '2',
         ),
+        'views-77d67690efde8905c465b157f1b7c650' => array(
+          'module' => 'views',
+          'delta' => '77d67690efde8905c465b157f1b7c650',
+          'region' => 'sidebar_first',
+          'weight' => '3',
+        ),
       ),
     ),
   );

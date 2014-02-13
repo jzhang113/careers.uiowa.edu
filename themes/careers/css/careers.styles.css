@@ -198,6 +198,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.428571429;
   color: #555555;
   vertical-align: middle;
@@ -465,6 +466,7 @@ img {
   padding: 6px 12px;
   margin: 5px 5px 5px 0px;
   font-size: 14px;
+  font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.428571429;
   text-align: center;
@@ -787,6 +789,7 @@ img {
 /* line 6, ../sass/components/_hireahawk.scss */
 .pane-block-1 h2, #block-block-1 h2 {
   font-family: "Fjalla One", sans-serif;
+  font-size: 29px;
   font-size: 2.9rem;
   text-align: center;
 }
@@ -1453,7 +1456,8 @@ ul.quicktabs-tabs li.active a {
 }
 /* line 6, ../sass/components/navigation/_breadcrumb.scss */
 #breadcrumb .breadcrumb-label {
-  font-size: 1em;
+  font-size: 10px;
+  font-size: 1rem;
   display: inline;
   padding-right: 10px;
 }
@@ -1538,7 +1542,7 @@ ul.menu li {
 .view-display-id-program_terms_level_1_block ul li.leaf {
   list-style: none;
 }
-/* line 181, ../sass/utilities/_mixins.scss */
+/* line 158, ../sass/utilities/_mixins.scss */
 .view-display-id-program_terms_level_1_block ul li.leaf:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1562,7 +1566,7 @@ nav .menu-name-menu-quick-links ul {
 nav .menu-name-menu-quick-links ul li.leaf {
   list-style: none;
 }
-/* line 181, ../sass/utilities/_mixins.scss */
+/* line 158, ../sass/utilities/_mixins.scss */
 nav .menu-name-menu-quick-links ul li.leaf:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1662,114 +1666,83 @@ nav .menu-name-menu-quick-links ul li.leaf:before {
   text-decoration: none;
 }
 
-/* line 157, ../sass/utilities/_mixins.scss */
-#block-menu-block-5 .menu-item-1078 a, .block-menu-social-media .menu-item-1078 a {
-  background: url("images/social/twitter-icon.png") no-repeat;
+/* line 1, ../sass/components/navigation/_social_media.scss */
+a.social-media {
+  line-height: 2em;
 }
-/* line 160, ../sass/utilities/_mixins.scss */
-#block-menu-block-5 .menu-item-1080 a, .block-menu-social-media .menu-item-1080 a {
-  background: url("images/social/youtube-icon.png") no-repeat;
+/* line 4, ../sass/components/navigation/_social_media.scss */
+a.social-media:before {
+  margin-right: 0.3em;
+  font-size: 25px;
+  font-size: 2.5rem;
 }
-/* line 163, ../sass/utilities/_mixins.scss */
-#block-menu-block-5 .menu-item-1079 a, .block-menu-social-media .menu-item-1079 a {
-  background: url("images/social/facebook-icon.png") no-repeat;
+/* line 9, ../sass/components/navigation/_social_media.scss */
+a.social-media:hover {
+  text-decoration: none;
 }
-/* line 166, ../sass/utilities/_mixins.scss */
-#block-menu-block-5 .menu-item-1228 a, .block-menu-social-media .menu-item-1228 a {
-  background: url("images/social/linkedin-icon.png") no-repeat;
+
+/* line 14, ../sass/components/navigation/_social_media.scss */
+a[href*="facebook.com"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f09a";
 }
-/* line 169, ../sass/utilities/_mixins.scss */
-#block-menu-block-5 .menu-item-1229 a, .block-menu-social-media .menu-item-1229 a {
-  background: url("images/social/pintrest-icon.png") no-repeat;
-}
-/* line 172, ../sass/utilities/_mixins.scss */
-#block-menu-block-5 .menu-item-1230 a, .block-menu-social-media .menu-item-1230 a {
-  background: url("images/social/instagram-icon.png") no-repeat;
-}
-@media only screen and (min-width: 40em) {
-  /* line 4, ../sass/components/navigation/_social_media.scss */
-  #block-menu-block-5 ul.menu, .block-menu-social-media ul.menu {
-    margin: 0;
-    padding: 0;
-    text-align: right;
-  }
-}
-/* line 11, ../sass/components/navigation/_social_media.scss */
-#block-menu-block-5 ul.menu li, .block-menu-social-media ul.menu li {
-  display: inline-block;
-  width: auto;
-  margin: 0 3px;
-  padding: 0px;
-}
+
 /* line 18, ../sass/components/navigation/_social_media.scss */
-#block-menu-block-5 ul.menu a, .block-menu-social-media ul.menu a {
-  display: block;
-  overflow: hidden;
-  width: 30px;
-  height: 30px;
-  margin-bottom: -10px;
-  text-indent: 9999px;
-  font-size: 0px;
-}
-/* line 27, ../sass/components/navigation/_social_media.scss */
-#block-menu-block-5 ul.menu a:hover, #block-menu-block-5 ul.menu a:focus, .block-menu-social-media ul.menu a:hover, .block-menu-social-media ul.menu a:focus {
-  background-color: transparent;
+a[href*="twitter.com"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f099";
 }
 
-/* line 35, ../sass/components/navigation/_social_media.scss */
-#block-menu-menu-social-media {
-  display: none;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.7);
-  bottom: 35px;
-  float: right;
-  margin: 0;
-  position: absolute;
-  width: 100%;
-}
-@media only screen and (min-width: 40em) {
-  /* line 35, ../sass/components/navigation/_social_media.scss */
-  #block-menu-menu-social-media {
-    display: block;
-    position: relative;
-    width: auto;
-    bottom: 0;
-  }
-}
-/* line 52, ../sass/components/navigation/_social_media.scss */
-#block-menu-menu-social-media ul.menu {
-  text-align: center;
-  height: 30px;
-}
-/* line 56, ../sass/components/navigation/_social_media.scss */
-#block-menu-menu-social-media ul.menu a {
-  background-position: top;
-}
-/* line 59, ../sass/components/navigation/_social_media.scss */
-#block-menu-menu-social-media ul.menu a:hover, #block-menu-menu-social-media ul.menu a:focus {
-  background-position: bottom;
+/* line 22, ../sass/components/navigation/_social_media.scss */
+a[href*="linkedin.com"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0e1";
 }
 
-/* line 67, ../sass/components/navigation/_social_media.scss */
-#footer-wrapper #block-menu-block-5 {
-  display: block;
-  padding: 3px 3px 8px 4px;
+/* line 26, ../sass/components/navigation/_social_media.scss */
+a[href*="pinterest.com"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0d2";
 }
-@media only screen and (min-width: 40em) {
-  /* line 67, ../sass/components/navigation/_social_media.scss */
-  #footer-wrapper #block-menu-block-5 {
-    float: right;
-  }
+
+/* line 30, ../sass/components/navigation/_social_media.scss */
+a[href*="youtube.com"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f167";
 }
-/* line 75, ../sass/components/navigation/_social_media.scss */
-#footer-wrapper #block-menu-block-5 ul.menu a {
-  background-position: bottom;
-}
-/* line 78, ../sass/components/navigation/_social_media.scss */
-#footer-wrapper #block-menu-block-5 ul.menu a:hover, #footer-wrapper #block-menu-block-5 ul.menu a:focus {
-  background-position: top;
-}
-/* line 85, ../sass/components/navigation/_social_media.scss */
-#footer-wrapper #block-menu-block-5 li ul {
-  display: none;
+
+/* line 34, ../sass/components/navigation/_social_media.scss */
+a[href*="instagram.com"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f16d";
 }
