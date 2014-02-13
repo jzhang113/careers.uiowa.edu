@@ -36,10 +36,6 @@ ul.quicktabs-tabs {
 .front .pane-quicktabs-announcements-events {
   ul.quicktabs-tabs li a {
     @include font-size(2);
-
-    @media #{$nine-hundred} {
-      @include font-size(2.5);
-    }
   }
 
   .block-inner {
@@ -48,6 +44,9 @@ ul.quicktabs-tabs {
 
   .pane-title {
     @include offscreen;
+  }
+  .views-field-title {
+    @include font-size(1.6);
   }
 }
 

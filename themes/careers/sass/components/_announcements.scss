@@ -11,7 +11,7 @@
 // Announcements on the front page
 .view-display-id-announcements_front_content_pane {
   .views-field {
-    margin-left: 100px;
+    margin-left: 80px;
   }
 
   .views-field-field-announcement-image{
@@ -20,13 +20,14 @@
     margin-left: 0;
 
     img {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      width: 70px;
       @include blue-border;
     }
   }
 
   .views-row {
     clear: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
