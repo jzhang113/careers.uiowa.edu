@@ -17,7 +17,7 @@ function employers_showcase_view_flexslider_default_presets() {
   $preset->title = 'Employer Showcase Carousel';
   $preset->theme = 'classic';
   $preset->imagestyle_normal = 'square';
-  $preset->imagestyle_thumbnail = 'square_small';
+  $preset->imagestyle_thumbnail = 'square';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',
@@ -25,7 +25,7 @@ function employers_showcase_view_flexslider_default_presets() {
     'direction' => 'horizontal',
     'reverse' => 0,
     'smoothHeight' => 0,
-    'startAt' => '0',
+    'startAt' => '2',
     'animationSpeed' => '600',
     'initDelay' => '0',
     'useCSS' => 1,
@@ -37,13 +37,13 @@ function employers_showcase_view_flexslider_default_presets() {
     'controlsContainer' => '.flex-control-nav-container',
     'sync' => '',
     'asNavFor' => '',
-    'itemWidth' => '275',
+    'itemWidth' => '160',
     'itemMargin' => '0',
     'minItems' => '1',
     'maxItems' => '0',
     'move' => '0',
     'animation' => 'slide',
-    'slideshow' => 1,
+    'slideshow' => 0,
     'slideshowSpeed' => '7000',
     'directionNav' => 1,
     'controlNav' => '1',

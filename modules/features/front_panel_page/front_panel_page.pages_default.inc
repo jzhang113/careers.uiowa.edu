@@ -103,10 +103,13 @@ function front_panel_page_default_page_manager_pages() {
     $pane->pid = 'new-2';
     $pane->panel = 'contentcolumn2';
     $pane->type = 'views_panes';
-    $pane->subtype = 'employer_showcase-employer_showcase_slider_panel_pane';
+    $pane->subtype = 'homepage_pane-homepage_block';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -119,48 +122,6 @@ function front_panel_page_default_page_manager_pages() {
     $display->panels['contentcolumn2'][0] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
-    $pane->panel = 'contentcolumn2';
-    $pane->type = 'block';
-    $pane->subtype = 'block-3';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Have a plan?',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['contentcolumn2'][1] = 'new-3';
-    $pane = new stdClass();
-    $pane->pid = 'new-4';
-    $pane->panel = 'contentcolumn2';
-    $pane->type = 'block';
-    $pane->subtype = 'block-4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Give Support',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['contentcolumn2'][2] = 'new-4';
-    $pane = new stdClass();
-    $pane->pid = 'new-5';
     $pane->panel = 'contentfeatured';
     $pane->type = 'views_panes';
     $pane->subtype = 'featured-panel_pane_featured';
@@ -175,10 +136,10 @@ function front_panel_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['contentfeatured'][0] = 'new-5';
+    $display->content['new-3'] = $pane;
+    $display->panels['contentfeatured'][0] = 'new-3';
     $pane = new stdClass();
-    $pane->pid = 'new-6';
+    $pane->pid = 'new-4';
     $pane->panel = 'contentmain';
     $pane->type = 'block';
     $pane->subtype = 'quicktabs-announcements_events';
@@ -196,8 +157,26 @@ function front_panel_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['contentmain'][0] = 'new-6';
+    $display->content['new-4'] = $pane;
+    $display->panels['contentmain'][0] = 'new-4';
+    $pane = new stdClass();
+    $pane->pid = 'new-5';
+    $pane->panel = 'contentmain';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'employer_showcase-employer_showcase_slider_panel_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-5'] = $pane;
+    $display->panels['contentmain'][1] = 'new-5';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
