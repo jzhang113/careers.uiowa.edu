@@ -198,6 +198,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.428571429;
   color: #555555;
   vertical-align: middle;
@@ -465,6 +466,7 @@ img {
   padding: 6px 12px;
   margin: 5px 5px 5px 0px;
   font-size: 14px;
+  font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.428571429;
   text-align: center;
@@ -820,6 +822,7 @@ img {
 /* line 6, ../sass/components/_hireahawk.scss */
 .pane-block-1 h2, #block-block-1 h2 {
   font-family: "Fjalla One", sans-serif;
+  font-size: 29px;
   font-size: 2.9rem;
   text-align: center;
 }
@@ -1486,7 +1489,8 @@ ul.quicktabs-tabs li.active a {
 }
 /* line 6, ../sass/components/navigation/_breadcrumb.scss */
 #breadcrumb .breadcrumb-label {
-  font-size: 1em;
+  font-size: 10px;
+  font-size: 1rem;
   display: inline;
   padding-right: 10px;
 }
