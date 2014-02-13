@@ -1,5 +1,4 @@
-$blue: #687893;
-$dark_blue: #4e5b6e;
+$blue: #4e5b6e;
 $gold: #9C8345;
 $tan: #EAE3D2;
 $yellow: #ffd451;
@@ -17,6 +16,8 @@ $light:        #eee;    // table row odd active, primary link inactive hover
 $medium_light: #ebebeb; // table row even active
 $medium_dark:  #e5e5e5; // table thead
 $debug:        rgba(255, 192, 203, 0.5); // Full width wrapper test
+$links:        $blue;
+$links_focus:  #000;
 
 $thead:          $medium_dark;
 $tr_odd:         $page;

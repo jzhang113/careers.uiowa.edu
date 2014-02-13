@@ -12,12 +12,14 @@ ul.quicktabs-tabs {
     a {
       background-color: #fff;
       border: 1px solid #D0D0D0;
-      color: $blue;
       padding: 5px 10px 0px;
 
+      &.active {
+        color: $links;
+      }
+
       &:hover, &:focus {
-        color: #363636;
-        text-decoration: none;
+        color: $links_focus;
       }
     }
 
@@ -27,6 +29,7 @@ ul.quicktabs-tabs {
         border-style: solid;
         border-width: 1px;
         color: #333;
+        text-decoration: none;
       }
     }
   }

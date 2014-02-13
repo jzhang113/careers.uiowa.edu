@@ -7,11 +7,4 @@
       @include angle-bullet-right;
     }
   }
-
-  a {
-    color: $dark_blue;
-    &:hover, &:focus {
-      color: #000;
-    }
-  }
 }
