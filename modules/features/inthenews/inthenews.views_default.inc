@@ -36,22 +36,9 @@ function inthenews_views_default_views() {
   $handler->display->display_options['fields']['field_published_date']['field'] = 'field_published_date';
   $handler->display->display_options['fields']['field_published_date']['label'] = '';
   $handler->display->display_options['fields']['field_published_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_published_date']['element_wrapper_type'] = 'strong';
   $handler->display->display_options['fields']['field_published_date']['settings'] = array(
-    'format_type' => 'month_year',
-    'fromto' => 'both',
-    'multiple_number' => '',
-    'multiple_from' => '',
-    'multiple_to' => '',
-  );
-  /* Field: Content: Published Date */
-  $handler->display->display_options['fields']['field_published_date_1']['id'] = 'field_published_date_1';
-  $handler->display->display_options['fields']['field_published_date_1']['table'] = 'field_data_field_published_date';
-  $handler->display->display_options['fields']['field_published_date_1']['field'] = 'field_published_date';
-  $handler->display->display_options['fields']['field_published_date_1']['label'] = '';
-  $handler->display->display_options['fields']['field_published_date_1']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_published_date_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_published_date_1']['settings'] = array(
-    'format_type' => 'yyyymm',
+    'format_type' => 'long',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -97,12 +84,13 @@ function inthenews_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
   /* Field: Content: Published Date */
-  $handler->display->display_options['fields']['field_published_date_1']['id'] = 'field_published_date_1';
-  $handler->display->display_options['fields']['field_published_date_1']['table'] = 'field_data_field_published_date';
-  $handler->display->display_options['fields']['field_published_date_1']['field'] = 'field_published_date';
-  $handler->display->display_options['fields']['field_published_date_1']['label'] = '';
-  $handler->display->display_options['fields']['field_published_date_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_published_date_1']['settings'] = array(
+  $handler->display->display_options['fields']['field_published_date']['id'] = 'field_published_date';
+  $handler->display->display_options['fields']['field_published_date']['table'] = 'field_data_field_published_date';
+  $handler->display->display_options['fields']['field_published_date']['field'] = 'field_published_date';
+  $handler->display->display_options['fields']['field_published_date']['label'] = '';
+  $handler->display->display_options['fields']['field_published_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_published_date']['element_wrapper_type'] = 'strong';
+  $handler->display->display_options['fields']['field_published_date']['settings'] = array(
     'format_type' => 'long',
     'fromto' => 'both',
     'multiple_number' => '',
@@ -127,18 +115,25 @@ function inthenews_views_default_views() {
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['click_sort_column'] = 'url';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Published Date (field_published_date) */
+  $handler->display->display_options['sorts']['field_published_date_value']['id'] = 'field_published_date_value';
+  $handler->display->display_options['sorts']['field_published_date_value']['table'] = 'field_data_field_published_date';
+  $handler->display->display_options['sorts']['field_published_date_value']['field'] = 'field_published_date_value';
+  $handler->display->display_options['sorts']['field_published_date_value']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Published Date (field_published_date) */
   $handler->display->display_options['arguments']['field_published_date_value']['id'] = 'field_published_date_value';
   $handler->display->display_options['arguments']['field_published_date_value']['table'] = 'field_data_field_published_date';
   $handler->display->display_options['arguments']['field_published_date_value']['field'] = 'field_published_date_value';
   $handler->display->display_options['arguments']['field_published_date_value']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['field_published_date_value']['title'] = 'News from %1';
+  $handler->display->display_options['arguments']['field_published_date_value']['title'] = 'News Articles from %1';
   $handler->display->display_options['arguments']['field_published_date_value']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['field_published_date_value']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_published_date_value']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_published_date_value']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['field_published_date_value']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_published_date_value']['year_range'] = '-25:+25';
+  $handler->display->display_options['arguments']['field_published_date_value']['granularity'] = 'year';
   $handler->display->display_options['arguments']['field_published_date_value']['use_fromto'] = 'no';
   $handler->display->display_options['allow']['use_pager'] = 0;
   $handler->display->display_options['allow']['items_per_page'] = 0;
@@ -161,23 +156,22 @@ function inthenews_views_default_views() {
   );
   $handler->display->display_options['inherit_panels_path'] = '0';
 
-  /* Display: In The News Monthly Links */
-  $handler = $view->new_display('panel_pane', 'In The News Monthly Links', 'inthenews_month_links');
+  /* Display: In The News Monthly Archive */
+  $handler = $view->new_display('panel_pane', 'In The News Monthly Archive', 'inthenews_archive_links');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Monthly Archive';
+  $handler->display->display_options['title'] = 'Archive by Year';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['link_url'] = 'inthenews';
   $handler->display->display_options['defaults']['group_by'] = FALSE;
-  $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Nid */
@@ -188,18 +182,16 @@ function inthenews_views_default_views() {
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['nid']['prefix'] = '(';
-  $handler->display->display_options['fields']['nid']['suffix'] = ')';
-  /* Field: Published Date YYYYMM */
+  /* Field: Published Date YYYY */
   $handler->display->display_options['fields']['field_published_date_1']['id'] = 'field_published_date_1';
   $handler->display->display_options['fields']['field_published_date_1']['table'] = 'field_data_field_published_date';
   $handler->display->display_options['fields']['field_published_date_1']['field'] = 'field_published_date';
-  $handler->display->display_options['fields']['field_published_date_1']['ui_name'] = 'Published Date YYYYMM';
+  $handler->display->display_options['fields']['field_published_date_1']['ui_name'] = 'Published Date YYYY';
   $handler->display->display_options['fields']['field_published_date_1']['label'] = '';
   $handler->display->display_options['fields']['field_published_date_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_published_date_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_published_date_1']['settings'] = array(
-    'format_type' => 'yyyymm',
+    'format_type' => 'yyyy',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -216,13 +208,30 @@ function inthenews_views_default_views() {
   $handler->display->display_options['fields']['field_published_date']['alter']['path'] = 'inthenews/[field_published_date_1]';
   $handler->display->display_options['fields']['field_published_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_published_date']['settings'] = array(
-    'format_type' => 'month_year',
+    'format_type' => 'yyyy',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Published Date (field_published_date) */
+  $handler->display->display_options['arguments']['field_published_date_value']['id'] = 'field_published_date_value';
+  $handler->display->display_options['arguments']['field_published_date_value']['table'] = 'field_data_field_published_date';
+  $handler->display->display_options['arguments']['field_published_date_value']['field'] = 'field_published_date_value';
+  $handler->display->display_options['arguments']['field_published_date_value']['default_action'] = 'summary';
+  $handler->display->display_options['arguments']['field_published_date_value']['default_argument_type'] = 'date';
+  $handler->display->display_options['arguments']['field_published_date_value']['summary']['sort_order'] = 'desc';
+  $handler->display->display_options['arguments']['field_published_date_value']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_published_date_value']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_published_date_value']['summary_options']['base_path'] = 'inthenews';
+  $handler->display->display_options['arguments']['field_published_date_value']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_published_date_value']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_published_date_value']['year_range'] = '-25:+25';
+  $handler->display->display_options['arguments']['field_published_date_value']['granularity'] = 'year';
+  $handler->display->display_options['arguments']['field_published_date_value']['use_fromto'] = 'no';
+  $handler->display->display_options['arguments']['field_published_date_value']['title_format'] = 'custom';
+  $handler->display->display_options['arguments']['field_published_date_value']['title_format_custom'] = 'Y';
   $handler->display->display_options['pane_title'] = 'In The News Monthly Links';
   $export['inthenews'] = $view;
 

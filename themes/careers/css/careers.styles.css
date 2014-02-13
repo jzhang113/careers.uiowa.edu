@@ -368,7 +368,7 @@ img {
 
 /* line 13, ../sass/components/_announcements.scss */
 .view-display-id-announcements_front_content_pane .views-field {
-  margin-left: 100px;
+  margin-left: 80px;
 }
 /* line 17, ../sass/components/_announcements.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-image {
@@ -378,13 +378,14 @@ img {
 }
 /* line 22, ../sass/components/_announcements.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-image img {
-  margin-bottom: 20px;
-  border: 5px solid #4e5b6e;
+  margin-bottom: 10px;
+  width: 70px;
+  border: 3px solid #4e5b6e;
 }
-/* line 28, ../sass/components/_announcements.scss */
+/* line 29, ../sass/components/_announcements.scss */
 .view-display-id-announcements_front_content_pane .views-row {
   clear: left;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* line 3, ../sass/components/_audience_featured.scss */
@@ -602,31 +603,37 @@ img {
 /* line 27, ../sass/components/_events.scss */
 .view-display-id-events_list .views-row,
 .view-display-id-events_teaser_list .views-row {
-  border-bottom: 4px solid whitesmoke;
-  margin-bottom: 20px;
-  padding: 0 5px 20px;
+  height: auto;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+/* line 31, ../sass/components/_events.scss */
+.view-display-id-events_list .views-row-last,
+.view-display-id-events_teaser_list .views-row-last {
+  border-bottom: 0px;
 }
 
-/* line 35, ../sass/components/_events.scss */
+/* line 37, ../sass/components/_events.scss */
 .pane-events-events-categories,
 .pane-views-exp-events-events-list {
   background-color: whitesmoke;
 }
 
-/* line 40, ../sass/components/_events.scss */
+/* line 42, ../sass/components/_events.scss */
 .pane-views-exp-events-events-list .views-submit-button, .pane-views-exp-events-events-list .views-reset-button {
   width: auto;
 }
-/* line 43, ../sass/components/_events.scss */
+/* line 45, ../sass/components/_events.scss */
 .pane-views-exp-events-events-list input[type="text"], .pane-views-exp-events-events-list .views-widget-filter-field_event_category_tid, .pane-views-exp-events-events-list .form-select {
   width: 99%;
 }
 
-/* line 48, ../sass/components/_events.scss */
+/* line 50, ../sass/components/_events.scss */
 .field-name-field-mcf-date {
   margin-bottom: 5px;
 }
-/* line 52, ../sass/components/_events.scss */
+/* line 54, ../sass/components/_events.scss */
 .field-name-field-mcf-date .field-items:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -641,11 +648,11 @@ img {
   float: left;
 }
 
-/* line 60, ../sass/components/_events.scss */
+/* line 62, ../sass/components/_events.scss */
 .field-name-field-mcf-location {
   margin-bottom: 5px;
 }
-/* line 64, ../sass/components/_events.scss */
+/* line 66, ../sass/components/_events.scss */
 .field-name-field-mcf-location .field-items:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -794,17 +801,20 @@ img {
 }
 
 /* line 2, ../sass/components/_in_the_news.scss */
-.pane-inthenews-inthenews-month-links {
+.pane-inthenews-inthenews-archive-links {
   background-color: whitesmoke;
 }
 
 /* line 7, ../sass/components/_in_the_news.scss */
 .view-display-id-inthenews .views-row {
-  padding: 5px;
+  height: auto;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
 }
-/* line 10, ../sass/components/_in_the_news.scss */
-.view-display-id-inthenews .views-row-odd {
-  background-color: whitesmoke;
+/* line 11, ../sass/components/_in_the_news.scss */
+.view-display-id-inthenews .views-row-last {
+  border-bottom: 0px;
 }
 
 /* line 1, ../sass/components/_messages.scss */
@@ -971,7 +981,7 @@ body {
 }
 /* line 18, ../sass/components/_people.scss */
 .node-type-people .pane-node-field-people-picture img {
-  border: 5px solid #4e5b6e;
+  border: 3px solid #4e5b6e;
 }
 @media only screen and (min-width: 40em) {
   /* line 16, ../sass/components/_people.scss */
@@ -1072,18 +1082,11 @@ ul.quicktabs-tabs li.active a {
   font-size: 20px;
   font-size: 2rem;
 }
-@media only screen and (min-width: 899px) {
-  /* line 40, ../sass/components/_quicktabs.scss */
-  .front .pane-quicktabs-announcements-events ul.quicktabs-tabs li a {
-    font-size: 25px;
-    font-size: 2.5rem;
-  }
-}
-/* line 48, ../sass/components/_quicktabs.scss */
+/* line 44, ../sass/components/_quicktabs.scss */
 .front .pane-quicktabs-announcements-events .block-inner {
   border-bottom: 2px solid #4e5b6e;
 }
-/* line 52, ../sass/components/_quicktabs.scss */
+/* line 48, ../sass/components/_quicktabs.scss */
 .front .pane-quicktabs-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -1092,8 +1095,13 @@ ul.quicktabs-tabs li.active a {
   overflow: hidden;
   outline: 0;
 }
+/* line 51, ../sass/components/_quicktabs.scss */
+.front .pane-quicktabs-announcements-events .views-field-title {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
 
-/* line 59, ../sass/components/_quicktabs.scss */
+/* line 58, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -1102,21 +1110,21 @@ ul.quicktabs-tabs li.active a {
   overflow: hidden;
   outline: 0;
 }
-/* line 63, ../sass/components/_quicktabs.scss */
+/* line 62, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs {
   padding: 0 5px;
 }
-/* line 66, ../sass/components/_quicktabs.scss */
+/* line 65, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs li {
   padding: 0 3px;
 }
-/* line 69, ../sass/components/_quicktabs.scss */
+/* line 68, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs li a {
   padding: 2px 5px 0;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 76, ../sass/components/_quicktabs.scss */
+/* line 75, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events h3 {
   font-size: 15px;
   font-size: 1.5rem;
@@ -1229,7 +1237,7 @@ ul.quicktabs-tabs li.active a {
 }
 /* line 8, ../sass/components/_spotlight.scss */
 .view-display-id-spotlight_teaser_pane .views-field-field-spotlight-image img {
-  border: 5px solid #4e5b6e;
+  border: 3px solid #4e5b6e;
 }
 
 @media only screen and (min-width: 899px) {
@@ -1252,7 +1260,7 @@ ul.quicktabs-tabs li.active a {
 }
 /* line 28, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-field-field-spotlight-image img {
-  border: 5px solid #4e5b6e;
+  border: 3px solid #4e5b6e;
 }
 
 /* line 2, ../sass/components/_success_stories.scss */

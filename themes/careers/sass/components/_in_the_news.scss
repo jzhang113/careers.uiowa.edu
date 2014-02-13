@@ -1,13 +1,14 @@
 // In The News
-.pane-inthenews-inthenews-month-links {
+.pane-inthenews-inthenews-archive-links {
   background-color: $ultralight;
 }
 
 .view-display-id-inthenews {
-  .views-row{
-    padding: 5px;
-  }
-  .views-row-odd {
-    background-color: $ultralight;
-  }
+  .views-row {
+		@include hr;
+	}
+
+	.views-row-last {
+		border-bottom: 0px;
+	}
 }

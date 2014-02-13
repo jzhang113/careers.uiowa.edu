@@ -25,9 +25,11 @@
   }
 
   .views-row {
-    border-bottom: 4px solid $ultralight;
-    margin-bottom: 20px;
-    padding: 0 5px 20px;
+    @include hr;
+  }
+
+  .views-row-last {
+    border-bottom: 0px;
   }
 }
 
