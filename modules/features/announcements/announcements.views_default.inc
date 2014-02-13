@@ -201,9 +201,9 @@ function announcements_views_default_views() {
   $handler->display->display_options['fields']['field_announcement_image']['label'] = '';
   $handler->display->display_options['fields']['field_announcement_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_announcement_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_announcement_image']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_announcement_image']['settings'] = array(
-    'image_style' => 'square_small',
-    'image_link' => 'content',
+    'file_view_mode' => 'preview',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -223,7 +223,7 @@ function announcements_views_default_views() {
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '250',
+    'trim_length' => '200',
   );
   /* Field: Content: Related Link */
   $handler->display->display_options['fields']['field_announcement_link']['id'] = 'field_announcement_link';
