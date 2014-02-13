@@ -7,7 +7,7 @@ body {
   color: #333;
   background-color: $page;
   font-family: $base-font; // Set from _custom.scss font variables
-  font-size: 1.4rem;
+  @include font-size(1.4);
 }
 
 p {
@@ -41,23 +41,13 @@ h4 {
 
 
 a {
-  color: $blue;
+  color: $links;
   font-weight: bold;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: black;
-    text-decoration: underline;
-  }
-}
-
-#footer a {
-  color: $dark_blue;
-
-  &:hover,
-  &:focus {
-    color: black;
+    color: $links_focus;
     text-decoration: underline;
   }
 }
