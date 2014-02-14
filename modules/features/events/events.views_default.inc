@@ -194,7 +194,6 @@ function events_views_default_views() {
   /* Display: Events Listing */
   $handler = $view->new_display('panel_pane', 'Events Listing', 'events_list');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'All Events';
   $handler->display->display_options['defaults']['exposed_form'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
@@ -264,8 +263,6 @@ function events_views_default_views() {
   $handler->display->display_options['arguments']['field_event_category_tid']['id'] = 'field_event_category_tid';
   $handler->display->display_options['arguments']['field_event_category_tid']['table'] = 'field_data_field_event_category';
   $handler->display->display_options['arguments']['field_event_category_tid']['field'] = 'field_event_category_tid';
-  $handler->display->display_options['arguments']['field_event_category_tid']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['field_event_category_tid']['title'] = '%1 Events';
   $handler->display->display_options['arguments']['field_event_category_tid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['field_event_category_tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_event_category_tid']['summary']['format'] = 'default_summary';
