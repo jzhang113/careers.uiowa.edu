@@ -20,6 +20,10 @@ function careers_entity_view_modes_strongarm() {
         'label' => 'Employer Showcase',
         'custom settings' => 1,
       ),
+      'featured' => array(
+        'label' => 'Featured',
+        'custom settings' => 1,
+      ),
     ),
   );
   $export['entity_view_modes'] = $strongarm;
