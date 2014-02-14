@@ -1,0 +1,10 @@
+name = Careers Entity View Modes
+description = Provides custom entity view modes. See https://drupal.org/node/1425620
+core = 7.x
+package = Careers
+dependencies[] = ctools
+dependencies[] = entity_view_mode
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = entity_view_modes
