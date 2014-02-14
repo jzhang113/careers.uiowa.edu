@@ -1,89 +1,36 @@
-#block-menu-block-5, .block-menu-social-media {
-  @include social-icons;
-  
-  ul.menu {
-    @media #{$responsive-nav} {
-      margin: 0;
-      padding: 0;
-      text-align: right;
-    }
+a.social-media {
+  line-height: 2em;
 
-    li {
-      display: inline-block;
-      width: auto;
-      margin: 0 3px;
-      padding: 0px;
-    }
+  &:before {
+    margin-right: 0.3em;
+    @include font-size(2.5);
+  }
 
-    a {
-      display: block;
-      overflow: hidden;
-      width: 30px;
-      height: 30px;
-      margin-bottom: -10px;
-      text-indent: 9999px;
-      font-size: 0px;
-
-      &:hover, &:focus {
-        background-color: transparent;
-      }
-    }
+  &:hover {
+    text-decoration: none;
   }
 }
 
-// block in header
-#block-menu-menu-social-media {
-  display: none;
-  background-color:rgb(0,0,0); // Old Browser Fall Back
-  background-color:rgba(0,0,0,0.7);
-  bottom: 35px;
-  float: right;
-  margin: 0;
-  position: absolute;
-  width: 100%;
-
-  @media #{$responsive-nav} {
-    display: block;
-    position: relative;
-    width: auto;
-    bottom: 0;
-  }
-  
-  ul.menu {
-    text-align: center;
-    height: 30px;
-
-    a {
-      background-position: top;
-
-      &:hover, &:focus {
-        background-position: bottom;
-      }
-    }
-  }
+a[href*="facebook.com"]:before {
+  @include icon($fa-var-facebook);
 }
 
-// block in footer
-#footer-wrapper #block-menu-block-5 {
-  display: block;
-  padding: 3px 3px 8px 4px;
-  @media #{$responsive-nav} {
-    float: right;
-  }
+a[href*="twitter.com"]:before {
+  @include icon($fa-var-twitter);
+}
 
-  ul.menu {
-    a {
-      background-position: bottom;
+a[href*="linkedin.com"]:before {
+  @include icon($fa-var-linkedin);
+}
 
-      &:hover, &:focus {
-        background-position: top;
-      }
-    }
-  }
-  
-  li{
-    ul {
-      display:none;
-    }
-  }
+a[href*="pinterest.com"]:before {
+  @include icon($fa-var-pinterest);
+}
+
+a[href*="youtube.com"]:before {
+  @include icon($fa-var-youtube);
+}
+
+a[href*="instagram.com"]:before {
+  @include icon($fa-var-instagram);
 }

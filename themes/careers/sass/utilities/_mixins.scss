@@ -150,29 +150,6 @@
   font-size: $sizeValue + rem;
 }
 
-//
-// Social Media Icons
-//
-@mixin social-icons {
-  .menu-item-1078 a { // Twitter
-    background: url('images/social/twitter-icon.png') no-repeat;
-  }
-  .menu-item-1080 a { // YouTube
-    background: url('images/social/youtube-icon.png') no-repeat;
-  }
-  .menu-item-1079 a { // Facebook
-    background: url('images/social/facebook-icon.png') no-repeat;
-  }
-  .menu-item-1228 a { // LinkedIn
-    background: url('images/social/linkedin-icon.png') no-repeat;
-  }
-  .menu-item-1229 a { // Pinterest
-    background: url('images/social/pintrest-icon.png') no-repeat;
-  }
-  .menu-item-1230 a { // Instagram
-    background: url('images/social/instagram-icon.png') no-repeat;
-  }
-}
 
 //
 //  Angle Bullet

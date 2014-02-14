@@ -19,3 +19,4 @@ features[variable][] = context_block_rebuild_needed
 features_exclude[dependencies][basic_page_content_type] = basic_page_content_type
 features_exclude[dependencies][block] = block
 features_exclude[dependencies][views] = views
+project path = sites/careers.uiowa.edu/modules/features
