@@ -18,6 +18,10 @@
 
 // CONTENT PANE Video View
 .view-display-id-video_panel_pane {
+  .views-row{
+    min-height: 105px;
+    @include hr;
+  }
   .views-field-field-video-file, .views-field-field-video-screenshot{
     display: block;
     float: left;

@@ -1346,11 +1346,19 @@ ul.quicktabs-tabs li.active a {
 }
 
 /* line 21, ../sass/components/_videos.scss */
+.view-display-id-video_panel_pane .views-row {
+  min-height: 105px;
+  height: auto;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+/* line 25, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-field-field-video-file, .view-display-id-video_panel_pane .views-field-field-video-screenshot {
   display: block;
   float: left;
 }
-/* line 25, ../sass/components/_videos.scss */
+/* line 29, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-field-title, .view-display-id-video_panel_pane .views-field-field-video-description {
   margin-left: 110px;
 }
