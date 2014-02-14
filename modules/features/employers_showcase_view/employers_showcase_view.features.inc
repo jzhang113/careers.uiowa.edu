@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function employers_showcase_view_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "file_entity" && $api == "file_default_displays") {
+    return array("version" => "1");
+  }
   if ($module == "flexslider" && $api == "flexslider_default_preset") {
     return array("version" => "1");
   }
