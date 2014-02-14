@@ -394,7 +394,12 @@ img {
   margin-top: 12px;
   padding: 0px;
 }
-/* line 6, ../sass/components/_audience_featured.scss */
+/* line 7, ../sass/components/_audience_featured.scss */
+#content .pane-featured-featured-entity-reference .featured-logo img {
+  max-width: 80px;
+  max-height: 80px;
+}
+/* line 12, ../sass/components/_audience_featured.scss */
 #content .pane-featured-featured-entity-reference .block-content {
   padding: 0px;
 }
