@@ -59,9 +59,9 @@ function video_views_default_views() {
   $handler->display->display_options['fields']['field_video_screenshot']['label'] = '';
   $handler->display->display_options['fields']['field_video_screenshot']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_video_screenshot']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_video_screenshot']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_video_screenshot']['settings'] = array(
-    'image_style' => 'media_thumbnail',
-    'image_link' => 'content',
+    'file_view_mode' => 'preview',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
