@@ -46,4 +46,3 @@ features[variable][] = panelizer_defaults_taxonomy_term_program
 features[variable][] = pathauto_taxonomy_term_program_pattern
 features[views_view][] = programs
 features_exclude[dependencies][audience_taxonomy] = audience_taxonomy
-project path = sites/careers.uiowa.edu/modules/features
