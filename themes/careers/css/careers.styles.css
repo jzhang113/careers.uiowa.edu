@@ -688,39 +688,41 @@ img {
 .flexslider .views-field-field-front-featured-text {
   position: absolute;
   bottom: 0px;
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0.7);
 }
-/* line 47, ../sass/components/_flexslider.scss */
+/* line 48, ../sass/components/_flexslider.scss */
 .flexslider .views-field-field-featured-text {
   background-color: black;
 }
 @media only screen and (min-width: 899px) {
-  /* line 47, ../sass/components/_flexslider.scss */
+  /* line 48, ../sass/components/_flexslider.scss */
   .flexslider .views-field-field-featured-text {
     position: absolute;
     bottom: 0px;
+    background-color: #000;
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-/* line 58, ../sass/components/_flexslider.scss */
+/* line 60, ../sass/components/_flexslider.scss */
 .flexslider .flex-control-nav {
   width: auto;
   position: absolute;
   bottom: -2px;
   right: 10px;
 }
-/* line 64, ../sass/components/_flexslider.scss */
+/* line 66, ../sass/components/_flexslider.scss */
 .flexslider .flex-control-nav li {
   margin: 0;
   padding: 0;
 }
-/* line 72, ../sass/components/_flexslider.scss */
+/* line 74, ../sass/components/_flexslider.scss */
 .flexslider .flex-control-paging li a {
   background-color: whitesmoke;
   border-width: 0px;
   margin-left: 1px;
 }
-/* line 77, ../sass/components/_flexslider.scss */
+/* line 79, ../sass/components/_flexslider.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background-color: #ffd451;
 }
