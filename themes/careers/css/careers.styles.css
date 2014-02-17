@@ -300,10 +300,11 @@ img {
 /* line 22, ../sass/components/_announcements.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-image img {
   margin-bottom: 10px;
+  *max-width: 70px;
   width: 70px;
   border: 3px solid #4e5b6e;
 }
-/* line 29, ../sass/components/_announcements.scss */
+/* line 30, ../sass/components/_announcements.scss */
 .view-display-id-announcements_front_content_pane .views-row {
   clear: left;
   margin-bottom: 10px;

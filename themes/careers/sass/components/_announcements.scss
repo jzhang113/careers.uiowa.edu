@@ -14,13 +14,14 @@
     margin-left: 80px;
   }
 
-  .views-field-field-announcement-image{
+  .views-field-field-announcement-image {
     display: block;
     float: left;
     margin-left: 0;
 
     img {
       margin-bottom: 10px;
+      *max-width: 70px;
       width: 70px;
       @include blue-border;
     }
