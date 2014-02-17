@@ -24,6 +24,18 @@ function careers_entity_view_modes_strongarm() {
         'label' => 'Featured',
         'custom settings' => 1,
       ),
+      'people_node' => array(
+        'label' => 'People Node',
+        'custom settings' => 1,
+      ),
+      'people_list' => array(
+        'label' => 'People List',
+        'custom settings' => 1,
+      ),
+      'featured_page' => array(
+        'label' => 'Featured Page',
+        'custom settings' => 1,
+      ),
     ),
   );
   $export['entity_view_modes'] = $strongarm;
