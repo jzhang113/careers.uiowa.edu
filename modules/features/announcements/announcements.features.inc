@@ -37,10 +37,10 @@ function announcements_node_info() {
     'announcement' => array(
       'name' => t('Announcement'),
       'base' => 'node_content',
-      'description' => t('Add announcements, reminders, etc. that is displayed on the front page.'),
+      'description' => t('Use <em>Announcements</em> for time-sensitive content such as news items, reminders, deadlines, etc.'),
       'has_title' => '1',
       'title_label' => t('Title'),
-      'help' => '',
+      'help' => t('To feature announcement on the homepage, make sure this item is \'published\' and \'promoted to front page.\''),
     ),
   );
   return $items;
