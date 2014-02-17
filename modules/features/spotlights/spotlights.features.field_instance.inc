@@ -59,7 +59,7 @@ function spotlights_field_default_field_instances() {
     'bundle' => 'spotlight',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Tag this spotlight to one or more audiences.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -432,7 +432,7 @@ function spotlights_field_default_field_instances() {
     'bundle' => 'spotlight',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Tag this spotlight with one or more programs.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -469,7 +469,7 @@ function spotlights_field_default_field_instances() {
     'bundle' => 'spotlight',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'What type of spotlight is this?',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -513,7 +513,10 @@ function spotlights_field_default_field_instances() {
   t('Organization');
   t('Program');
   t('Spotlight Type');
+  t('Tag this spotlight to one or more audiences.');
+  t('Tag this spotlight with one or more programs.');
   t('Title/Position');
+  t('What type of spotlight is this?');
 
   return $field_instances;
 }
