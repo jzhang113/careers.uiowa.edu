@@ -34,7 +34,7 @@ function video_node_info() {
     'video' => array(
       'name' => t('Video'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Use <em>Video</em> to add YouTube videos or links to other videos for inclusion into Career Tube.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => t('Add either a YouTube Video or a Video Link to an external video. Both fields cannot be filled out at the time of submission. The screenshot field is only for use with the Video Link field.'),

@@ -34,7 +34,7 @@ function spotlights_node_info() {
     'spotlight' => array(
       'name' => t('Spotlight'),
       'base' => 'node_content',
-      'description' => t('Add a success story, employer testimonial, etc.'),
+      'description' => t('<em>Spotlights</em> are stories that highlight student success stories, employer testimonials, etc.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

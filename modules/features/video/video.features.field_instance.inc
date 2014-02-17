@@ -19,7 +19,7 @@ function video_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '',
+    'description' => 'If the video is not hosted by youtube.com, check this box for other options.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -109,7 +109,7 @@ function video_field_default_field_instances() {
   $field_instances['node-video-field_video_file'] = array(
     'bundle' => 'video',
     'deleted' => 0,
-    'description' => 'A screenshot will be taken from YouTube for use on this site.',
+    'description' => '<em>Note: A screenshot will automatically be taken from the YouTube video for use in the Career Tube list.</em>',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -176,7 +176,6 @@ function video_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
@@ -184,7 +183,6 @@ function video_field_default_field_instances() {
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
@@ -204,7 +202,7 @@ function video_field_default_field_instances() {
     'bundle' => 'video',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Provide a link to the video you want to add to the Career Tube list.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -264,7 +262,8 @@ function video_field_default_field_instances() {
   $field_instances['node-video-field_video_screenshot'] = array(
     'bundle' => 'video',
     'deleted' => 0,
-    'description' => 'The screenshot is only used for the Video Link option.',
+    'description' => 'Provide a screenshot for use in the Career Tube list.
+<em>Note: The screenshot provided will only be used if not using a YouTube video.</em>',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -337,7 +336,6 @@ function video_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
@@ -345,7 +343,6 @@ function video_field_default_field_instances() {
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
@@ -365,7 +362,7 @@ function video_field_default_field_instances() {
     'bundle' => 'video',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Tag this video with one or more Career Tube categories.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -404,11 +401,15 @@ function video_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A screenshot will be taken from YouTube for use on this site.');
+  t('<em>Note: A screenshot will automatically be taken from the YouTube video for use in the Career Tube list.</em>');
   t('Category');
   t('Description');
+  t('If the video is not hosted by youtube.com, check this box for other options.');
   t('Not a YouTube Video?');
-  t('The screenshot is only used for the Video Link option.');
+  t('Provide a link to the video you want to add to the Career Tube list.');
+  t('Provide a screenshot for use in the Career Tube list.
+<em>Note: The screenshot provided will only be used if not using a YouTube video.</em>');
+  t('Tag this video with one or more Career Tube categories.');
   t('Video Link');
   t('Video Link Screenshot');
   t('YouTube Video');

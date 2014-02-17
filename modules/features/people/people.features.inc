@@ -126,7 +126,7 @@ function people_node_info() {
     'people' => array(
       'name' => t('People'),
       'base' => 'node_content',
-      'description' => t('Add staff members, peer advisors, etc.'),
+      'description' => t('Use <em>People</em> to create \'profiles\' for Pomerantz Career Center professional staff and student staff (peer advisors).'),
       'has_title' => '1',
       'title_label' => t('Full Name'),
       'help' => '',

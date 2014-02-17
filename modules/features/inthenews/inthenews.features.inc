@@ -34,10 +34,10 @@ function inthenews_node_info() {
     'news_content_type' => array(
       'name' => t('In The News'),
       'base' => 'node_content',
-      'description' => t('Add summaries related to the Pomerantz Career Center by media agencies.'),
+      'description' => t('Use <em>In The News</em> to feature Pomerantz Career Center related news/media from external sources such as the <em>Daily Iowan</em>.'),
       'has_title' => '1',
       'title_label' => t('Title'),
-      'help' => '',
+      'help' => t('Do not post copyrighted material without proper permission.'),
     ),
   );
   return $items;

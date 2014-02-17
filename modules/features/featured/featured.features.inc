@@ -34,10 +34,10 @@ function featured_node_info() {
     'featured' => array(
       'name' => t('Featured'),
       'base' => 'node_content',
-      'description' => t('Feature content, images, links which can be placed in the front page slider, audience pages, and program pages.'),
+      'description' => t('<em>Featured</em> are image \'slides\' that can be pulled to different parts of the site as a standalone item or as part of a slideshow, and can include a title, caption, link, and logo.'),
       'has_title' => '1',
       'title_label' => t('Administrative Title'),
-      'help' => '',
+      'help' => t('To feature on the homepage, make sure this item is \'published\' and \'promoted to front page.\' To add to a program or audience page, reference the slide while editing the program and/or audience.'),
     ),
   );
   return $items;

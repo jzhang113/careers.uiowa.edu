@@ -15,7 +15,7 @@ function featured_field_default_field_instances() {
     'bundle' => 'featured',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Caption will be displayed on the featured slide.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -157,7 +157,7 @@ function featured_field_default_field_instances() {
     'bundle' => 'featured',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Link will be used to link the image, title, and logo if provided.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -217,7 +217,7 @@ function featured_field_default_field_instances() {
   $field_instances['node-featured-field_featured_logo'] = array(
     'bundle' => 'featured',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Icon/Logo will be displayed on the featured slide except for the homepage.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -280,18 +280,14 @@ function featured_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
-          'featured_small' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
           'square' => 'square',
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
-          'featured_small' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
           'square' => 'square',
@@ -310,7 +306,7 @@ function featured_field_default_field_instances() {
     'bundle' => 'featured',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Title will be displayed on the featured slide.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -348,10 +344,14 @@ function featured_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Caption');
+  t('Caption will be displayed on the featured slide.');
   t('Featured Image');
   t('Icon/Logo Overlay');
+  t('Icon/Logo will be displayed on the featured slide except for the homepage.');
   t('Link');
+  t('Link will be used to link the image, title, and logo if provided.');
   t('Title');
+  t('Title will be displayed on the featured slide.');
 
   return $field_instances;
 }

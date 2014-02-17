@@ -58,7 +58,7 @@ function basic_page_content_type_field_default_field_instances() {
   $field_instances['node-page-field_page_image'] = array(
     'bundle' => 'page',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Use an image to represent the page.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -121,7 +121,6 @@ function basic_page_content_type_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 'featured_page',
           'people_profile_100' => 0,
           'people_profile_320' => 0,
@@ -129,7 +128,6 @@ function basic_page_content_type_field_default_field_instances() {
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 'featured_page',
           'people_profile_100' => 0,
           'people_profile_320' => 0,
@@ -149,7 +147,7 @@ function basic_page_content_type_field_default_field_instances() {
     'bundle' => 'page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Tag this page to a particular program.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -185,6 +183,8 @@ function basic_page_content_type_field_default_field_instances() {
   t('Body');
   t('Featured Image');
   t('Program');
+  t('Tag this page to a particular program.');
+  t('Use an image to represent the page.');
 
   return $field_instances;
 }

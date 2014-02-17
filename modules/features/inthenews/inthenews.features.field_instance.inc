@@ -58,7 +58,7 @@ function inthenews_field_default_field_instances() {
   $field_instances['node-news_content_type-field_published_date'] = array(
     'bundle' => 'news_content_type',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'When was this article originally published by the \'Source.\'',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -112,7 +112,7 @@ function inthenews_field_default_field_instances() {
     'bundle' => 'news_content_type',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The original source of this item. E.g. the <em>Daily Iowan</em>, or <em>Press-Citizen</em>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -166,6 +166,8 @@ function inthenews_field_default_field_instances() {
   t('Body');
   t('Published Date');
   t('Source');
+  t('The original source of this item. E.g. the <em>Daily Iowan</em>, or <em>Press-Citizen</em>.');
+  t('When was this article originally published by the \'Source.\'');
 
   return $field_instances;
 }
