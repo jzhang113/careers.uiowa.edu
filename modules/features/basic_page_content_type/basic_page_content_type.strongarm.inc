@@ -14,7 +14,7 @@ function basic_page_content_type_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_page';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -65,8 +65,9 @@ function basic_page_content_type_strongarm() {
   $strongarm->name = 'menu_options_page';
   $strongarm->value = array(
     0 => 'menu-audience-menu',
-    1 => 'menu-quick-links',
-    2 => 'menu-site-links',
+    1 => 'menu-programs',
+    2 => 'menu-quick-links',
+    3 => 'menu-site-links',
   );
   $export['menu_options_page'] = $strongarm;
 
