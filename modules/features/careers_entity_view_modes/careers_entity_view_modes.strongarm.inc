@@ -36,6 +36,10 @@ function careers_entity_view_modes_strongarm() {
         'label' => 'Featured Page',
         'custom settings' => 1,
       ),
+      'square' => array(
+        'label' => 'Square',
+        'custom settings' => 1,
+      ),
     ),
   );
   $export['entity_view_modes'] = $strongarm;
