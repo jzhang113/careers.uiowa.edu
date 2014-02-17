@@ -706,7 +706,7 @@ img {
 .flexslider .flex-control-nav {
   width: auto;
   position: absolute;
-  bottom: -5px;
+  bottom: -2px;
   right: 10px;
 }
 /* line 64, ../sass/components/_flexslider.scss */
