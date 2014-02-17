@@ -300,7 +300,7 @@ img {
 /* line 22, ../sass/components/_announcements.scss */
 .view-display-id-announcements_front_content_pane .views-field-field-announcement-image img {
   margin-bottom: 10px;
-  *max-width: 70px;
+  max-width: auto;
   width: 70px;
   border: 3px solid #4e5b6e;
 }
