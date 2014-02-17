@@ -19,6 +19,74 @@ $bp-tablet-landscape-only: $bp-tablet ($bp-desktop - 1px); // 700 - 949
 $bp-tablet-only: $bp-mobile ($bp-desktop - 1px); // 500 -949
 $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 */
+/* line 5, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu li {
+  font-weight: bold;
+  margin: 7px 0;
+  padding: 0;
+}
+/* line 10, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu li.expanded, .region-sidebar-first .block-menu-block ul.menu li.collapsed {
+  list-style: none;
+}
+/* line 13, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu li.expanded > .menu-inner > a:before, .region-sidebar-first .block-menu-block ul.menu li.collapsed > .menu-inner > a:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0d7";
+  margin-right: .5em;
+}
+/* line 22, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu a, .region-sidebar-first .block-menu-block ul.menu .nolink {
+  color: #333;
+}
+/* line 26, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu .menu-depth-2 > .menu-inner {
+  background-color: #333;
+  color: #fff;
+  display: block;
+  padding: 5px;
+}
+/* line 32, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu .menu-depth-2 > .menu-inner a, .region-sidebar-first .block-menu-block ul.menu .menu-depth-2 > .menu-inner .nolink {
+  color: #fff;
+}
+/* line 38, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu .menu-toggle {
+  display: block;
+  cursor: pointer;
+}
+/* line 42, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu .menu-toggle:focus {
+  outline: 1px dotted #fff;
+}
+/* line 46, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu .menu-toggle.is-expanded:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f146";
+  margin-right: .5em;
+}
+/* line 51, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu .menu-toggle.is-collapsed:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0fe";
+  margin-right: .5em;
+}
+
 /* line 1, ../sass/base/_block.scss */
 .block {
   padding: 20px;
@@ -1358,6 +1426,22 @@ ul.quicktabs-tabs li.active a {
 #breadcrumb li {
   list-style: none;
   display: inline;
+}
+
+/* line 167, ../sass/utilities/_mixins.scss */
+#footer li.leaf:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f105";
+  font-size: 1em;
+  color: #9c8345;
+  display: inline-block;
+  width: 10px;
+  padding-right: 2px;
 }
 
 /* =============================================================================
