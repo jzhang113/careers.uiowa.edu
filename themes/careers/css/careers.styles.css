@@ -1308,6 +1308,11 @@ ul.quicktabs-tabs li.active a {
   border: 3px solid #4e5b6e;
 }
 
+/* line 37, ../sass/components/_spotlight.scss */
+.node-type-spotlight #content .block-content {
+  padding: 0px 10px;
+}
+
 /* line 2, ../sass/components/_success_stories.scss */
 .view-display-id-success_stories_teaser_content_pane {
   margin: 10px;
