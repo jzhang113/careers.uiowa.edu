@@ -6,8 +6,6 @@
 
 include_once 'employers_showcase_view.features.inc';
 
-include_once 'employers_showcase_view.features.inc';
-
 // Create a variable to store the path to this module
 define('EMPLOYERS_SHOWCASE_VIEW_PATH', drupal_get_path('module', 'employers_showcase_view'));
 
