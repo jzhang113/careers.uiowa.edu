@@ -52,13 +52,14 @@ function employers_orgs_content_type_panelizer_defaults() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'image',
+      'formatter' => 'file_rendered',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => '',
         'image_style' => 'two_hundred',
+        'file_view_mode' => 'employer_showcase',
       ),
       'context' => 'panelizer',
       'override_title' => 0,

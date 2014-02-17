@@ -14,7 +14,7 @@ function program_taxonomy_panelizer_defaults() {
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
   $panelizer->name = 'taxonomy_term:program:default';
-  $panelizer->title = 'Default';
+  $panelizer->title = 'Full-Width Body';
   $panelizer->panelizer_type = 'taxonomy_term';
   $panelizer->panelizer_key = 'program';
   $panelizer->no_blocks = FALSE;

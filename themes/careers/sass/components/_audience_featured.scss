@@ -3,6 +3,12 @@
  .pane-featured-featured-entity-reference{
   margin-top: 12px;
   padding: 0px;
+  .featured-logo{
+  	img {
+  		max-width: 80px;
+  		max-height: 80px;
+  	}
+  }
   .block-content{
     padding: 0px;
   }

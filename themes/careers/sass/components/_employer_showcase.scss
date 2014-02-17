@@ -27,12 +27,19 @@
 .view-display-id-employer_showcase_slider_panel_pane {
   overflow: hidden;
   width: 100%;
+  position: relative;
   .flexslider{
-      border: 0px;
-      //margin: 0 0 5px;
-      max-width: auto;
-      width: 150px;
-      margin: 0 auto;
+    border: 0px;
+    max-width: auto;
+    width: 150px;
+    margin: 0 auto;
+    position: static;
+    .flex-direction-nav {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+    }
   }
   .flex-viewport {
     overflow: visible !important;
@@ -65,6 +72,7 @@
       }
     }
   }
+  
   .flex-control-paging{
     display: none;
   }

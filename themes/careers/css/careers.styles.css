@@ -314,7 +314,12 @@ img {
   margin-top: 12px;
   padding: 0px;
 }
-/* line 6, ../sass/components/_audience_featured.scss */
+/* line 7, ../sass/components/_audience_featured.scss */
+#content .pane-featured-featured-entity-reference .featured-logo img {
+  max-width: 80px;
+  max-height: 80px;
+}
+/* line 12, ../sass/components/_audience_featured.scss */
 #content .pane-featured-featured-entity-reference .block-content {
   padding: 0px;
 }
@@ -451,24 +456,33 @@ img {
 .view-display-id-employer_showcase_slider_panel_pane {
   overflow: hidden;
   width: 100%;
+  position: relative;
 }
-/* line 30, ../sass/components/_employer_showcase.scss */
+/* line 31, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider {
   border: 0px;
   max-width: auto;
   width: 150px;
   margin: 0 auto;
+  position: static;
 }
 /* line 37, ../sass/components/_employer_showcase.scss */
+.view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-direction-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+/* line 44, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flex-viewport {
   overflow: visible !important;
 }
-/* line 41, ../sass/components/_employer_showcase.scss */
+/* line 48, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content {
   position: relative;
   height: 150px;
 }
-/* line 44, ../sass/components/_employer_showcase.scss */
+/* line 51, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content img {
   position: absolute;
   top: 0;
@@ -490,7 +504,7 @@ img {
   filter: alpha(opacity=40);
   /* For IE8 and earlier */
 }
-/* line 57, ../sass/components/_employer_showcase.scss */
+/* line 64, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content img:hover {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
@@ -506,7 +520,7 @@ img {
   -o-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
-/* line 68, ../sass/components/_employer_showcase.scss */
+/* line 76, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flex-control-paging {
   display: none;
 }
@@ -1186,27 +1200,31 @@ ul.quicktabs-tabs li.active a {
   border: 3px solid #4e5b6e;
 }
 
-@media only screen and (min-width: 899px) {
-  /* line 16, ../sass/components/_spotlight.scss */
-  .view-display-id-spotlights_panel_pane .view-content {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    -ms-column-count: 2;
-    -o-column-count: 2;
-    column-count: 2;
-  }
-}
-/* line 21, ../sass/components/_spotlight.scss */
+/* line 16, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-row {
-  margin: 20px 0px;
+  min-height: 105px;
+  height: auto;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
 }
-/* line 24, ../sass/components/_spotlight.scss */
+/* line 20, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-field {
   margin: 0px;
 }
-/* line 28, ../sass/components/_spotlight.scss */
+/* line 23, ../sass/components/_spotlight.scss */
+.view-display-id-spotlights_panel_pane .views-field-field-spotlight-image {
+  float: left;
+  margin-right: 10px;
+}
+/* line 26, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-field-field-spotlight-image img {
   border: 3px solid #4e5b6e;
+}
+
+/* line 35, ../sass/components/_spotlight.scss */
+.node-type-spotlight #content .block-content {
+  padding: 0px 10px;
 }
 
 /* line 2, ../sass/components/_success_stories.scss */
@@ -1247,11 +1265,19 @@ ul.quicktabs-tabs li.active a {
 }
 
 /* line 21, ../sass/components/_videos.scss */
+.view-display-id-video_panel_pane .views-row {
+  min-height: 105px;
+  height: auto;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+/* line 25, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-field-field-video-file, .view-display-id-video_panel_pane .views-field-field-video-screenshot {
   display: block;
   float: left;
 }
-/* line 25, ../sass/components/_videos.scss */
+/* line 29, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-field-title, .view-display-id-video_panel_pane .views-field-field-video-description {
   margin-left: 110px;
 }

@@ -14,7 +14,7 @@ function audience_taxonomy_panelizer_defaults() {
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
   $panelizer->name = 'taxonomy_term:audience:default';
-  $panelizer->title = 'Default';
+  $panelizer->title = 'Full-Width Body';
   $panelizer->panelizer_type = 'taxonomy_term';
   $panelizer->panelizer_key = 'audience';
   $panelizer->no_blocks = FALSE;

@@ -82,13 +82,14 @@ function video_panelizer_defaults() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'image',
+      'formatter' => 'file_rendered',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_style' => 'large',
         'image_link' => '',
+        'file_view_mode' => 'full',
       ),
       'context' => 'panelizer',
       'override_title' => 0,

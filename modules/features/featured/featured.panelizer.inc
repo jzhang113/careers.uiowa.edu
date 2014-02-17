@@ -78,7 +78,7 @@ function featured_panelizer_defaults() {
     $pane->pid = 'new-2';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:body';
+    $pane->subtype = 'node:field_featured_caption';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -89,6 +89,8 @@ function featured_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -153,8 +155,8 @@ function featured_panelizer_defaults() {
     $pane->locks = array();
     $display->content['new-4'] = $pane;
     $display->panels['contentmain'][3] = 'new-4';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-2';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = '0';
   $panelizer->display = $display;
   $export['node:featured:default:default'] = $panelizer;
 

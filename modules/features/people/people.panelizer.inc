@@ -61,14 +61,14 @@ function people_panelizer_defaults() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'image',
+      'formatter' => 'file_rendered',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_style' => 'people_profile_320',
         'image_link' => '',
-        'file_view_mode' => 'default',
+        'file_view_mode' => 'people_node',
       ),
       'context' => 'panelizer',
       'override_title' => 0,
@@ -275,27 +275,6 @@ function people_panelizer_defaults() {
     $pane->locks = array();
     $display->content['new-8'] = $pane;
     $display->panels['contentmain'][7] = 'new-8';
-    $pane = new stdClass();
-    $pane->pid = 'new-9';
-    $pane->panel = 'contentmain';
-    $pane->type = 'block';
-    $pane->subtype = 'block-1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'HireaHawk.com',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 8;
-    $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['contentmain'][8] = 'new-9';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-3';
   $panelizer->display = $display;

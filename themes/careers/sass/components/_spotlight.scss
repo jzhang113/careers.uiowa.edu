@@ -13,20 +13,27 @@
 
 // CONTENT PANE Spotlight List
 .view-display-id-spotlights_panel_pane {
-  .view-content {
-    @media #{$nine-hundred} {
-      @include column-count(2);
-    }
-  }
   .views-row {
-    margin: 20px 0px;
+    min-height: 105px;
+    @include hr;
   }
   .views-field {
     margin: 0px;
   }
   .views-field-field-spotlight-image {
+    float: left;
+    margin-right: 10px;
     img {
       @include blue-border;
+    }
+  }
+}
+
+// Spotlight Node
+.node-type-spotlight {
+  #content {
+    .block-content{
+      padding: 0px 10px;
     }
   }
 }

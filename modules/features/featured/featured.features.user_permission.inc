@@ -10,6 +10,48 @@
 function featured_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node featured content'.
+  $permissions['administer panelizer node featured content'] = array(
+    'name' => 'administer panelizer node featured content',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node featured context'.
+  $permissions['administer panelizer node featured context'] = array(
+    'name' => 'administer panelizer node featured context',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node featured defaults'.
+  $permissions['administer panelizer node featured defaults'] = array(
+    'name' => 'administer panelizer node featured defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node featured layout'.
+  $permissions['administer panelizer node featured layout'] = array(
+    'name' => 'administer panelizer node featured layout',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node featured overview'.
+  $permissions['administer panelizer node featured overview'] = array(
+    'name' => 'administer panelizer node featured overview',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node featured settings'.
+  $permissions['administer panelizer node featured settings'] = array(
+    'name' => 'administer panelizer node featured settings',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'create featured content'.
   $permissions['create featured content'] = array(
     'name' => 'create featured content',
