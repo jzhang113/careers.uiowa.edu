@@ -311,15 +311,14 @@ img {
 
 /* line 3, ../sass/components/_audience_featured.scss */
 #content .pane-featured-featured-entity-reference {
-  margin-top: 12px;
-  padding: 0px;
+  padding-bottom: 0;
 }
 /* line 7, ../sass/components/_audience_featured.scss */
 #content .pane-featured-featured-entity-reference .featured-logo img {
   max-width: 80px;
   max-height: 80px;
 }
-/* line 12, ../sass/components/_audience_featured.scss */
+/* line 13, ../sass/components/_audience_featured.scss */
 #content .pane-featured-featured-entity-reference .block-content {
   padding: 0px;
 }
@@ -735,15 +734,6 @@ img {
   outline: 0;
 }
 
-/* line 7, ../sass/components/_front.scss */
-#content .pane-featured-panel-pane-featured {
-  padding: 5px 0px;
-}
-/* line 9, ../sass/components/_front.scss */
-#content .pane-featured-panel-pane-featured .block-content {
-  padding: 10px 0px;
-}
-
 /* line 3, ../sass/components/_hireahawk.scss */
 .pane-block-1 img, #block-block-1 img {
   width: 50%;
@@ -757,12 +747,9 @@ img {
 }
 
 /* line 12, ../sass/components/_hireahawk.scss */
-.pane-block-1 {
+.pane-block-1 .block-content {
   background-color: #ffd451;
-}
-/* line 15, ../sass/components/_hireahawk.scss */
-.pane-block-1 a {
-  color: #4e5b6e;
+  padding: 20px;
 }
 
 /* line 2, ../sass/components/_in_the_news.scss */
@@ -1092,19 +1079,15 @@ ul.quicktabs-tabs li.active a {
 
 /* line 3, ../sass/components/_related_links.scss */
 #content .pane-taxonomy-term-field-audience-links, #content .pane-taxonomy-term-field-program-links {
-  padding: 0px;
-}
-/* line 5, ../sass/components/_related_links.scss */
-#content .pane-taxonomy-term-field-audience-links .block-content, #content .pane-taxonomy-term-field-program-links .block-content {
-  padding: 0px;
+  padding-top: 0px;
 }
 
-/* line 10, ../sass/components/_related_links.scss */
+/* line 8, ../sass/components/_related_links.scss */
 .field-name-field-audience-links, .field-name-field-program-links {
   width: 100%;
   font-size: 1.8rem;
 }
-/* line 13, ../sass/components/_related_links.scss */
+/* line 12, ../sass/components/_related_links.scss */
 .field-name-field-audience-links .field-items, .field-name-field-program-links .field-items {
   width: 100%;
   text-align: center;
@@ -1127,7 +1110,7 @@ ul.quicktabs-tabs li.active a {
     height: 65px;
   }
 }
-/* line 24, ../sass/components/_related_links.scss */
+/* line 25, ../sass/components/_related_links.scss */
 .field-name-field-audience-links .field-items .field-item a, .field-name-field-program-links .field-items .field-item a {
   display: block;
   width: 100%;
@@ -1137,32 +1120,32 @@ ul.quicktabs-tabs li.active a {
   color: white;
   font-weight: normal;
 }
-/* line 32, ../sass/components/_related_links.scss */
+/* line 34, ../sass/components/_related_links.scss */
 .field-name-field-audience-links .field-items .field-item a:hover, .field-name-field-program-links .field-items .field-item a:hover {
   background-color: black;
   color: white;
   text-decoration: none;
 }
 @media only screen and (min-width: 1025px) {
-  /* line 43, ../sass/components/_related_links.scss */
+  /* line 45, ../sass/components/_related_links.scss */
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(1),
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(1) ~ .field-item, .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(1),
   .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(1) ~ .field-item {
     width: 100%;
   }
-  /* line 43, ../sass/components/_related_links.scss */
+  /* line 45, ../sass/components/_related_links.scss */
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(2),
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(2) ~ .field-item, .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(2),
   .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(2) ~ .field-item {
     width: 50%;
   }
-  /* line 43, ../sass/components/_related_links.scss */
+  /* line 45, ../sass/components/_related_links.scss */
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(3),
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(3) ~ .field-item, .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(3),
   .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(3) ~ .field-item {
     width: 33.33333%;
   }
-  /* line 43, ../sass/components/_related_links.scss */
+  /* line 45, ../sass/components/_related_links.scss */
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(4),
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(4) ~ .field-item, .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(4),
   .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(4) ~ .field-item {

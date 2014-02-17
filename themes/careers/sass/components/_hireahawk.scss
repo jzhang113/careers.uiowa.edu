@@ -9,10 +9,7 @@
     text-align: center;
   }
 }
-.pane-block-1 {
+.pane-block-1 .block-content {
   background-color: $yellow;
-
-  a {
-    color: #4e5b6e;
-  }
+  padding: $gutters;
 }

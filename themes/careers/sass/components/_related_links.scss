@@ -1,27 +1,28 @@
 // Related Links
 #content {
-  .pane-taxonomy-term-field-audience-links, .pane-taxonomy-term-field-program-links{
-    padding: 0px;
-    .block-content{
-      padding: 0px;
-    }
+  .pane-taxonomy-term-field-audience-links, .pane-taxonomy-term-field-program-links {
+    padding-top: 0px;
   }
 }
-.field-name-field-audience-links, .field-name-field-program-links{
+
+.field-name-field-audience-links, .field-name-field-program-links {
   width: 100%;
   font-size: 1.8rem;
+
   .field-items {
     width: 100%;
     text-align: center;
     background-color: $blue;
     color: white;
+
     .field-item {
       @include inline-block;
       width: 100%;
       @media #{$desktop} {
         height: 65px;
       }
-      a{
+
+      a {
         display: block;
         width: 100%;
         height: 100%;
@@ -29,7 +30,8 @@
         font-family: $hireahawk;
         color: white;
         font-weight: normal;
-        &:hover{
+
+        &:hover {
           background-color: black;
           color: white;
           text-decoration: none;

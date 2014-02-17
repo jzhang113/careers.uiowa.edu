@@ -1,15 +1,16 @@
 // CONTENT PANE Audience Featured
-#content{
- .pane-featured-featured-entity-reference{
-  margin-top: 12px;
-  padding: 0px;
-  .featured-logo{
+#content {
+ .pane-featured-featured-entity-reference {
+  padding-bottom: 0;
+
+  .featured-logo {
   	img {
   		max-width: 80px;
   		max-height: 80px;
   	}
   }
-  .block-content{
+
+  .block-content {
     padding: 0px;
   }
  }
