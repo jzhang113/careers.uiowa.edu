@@ -13,13 +13,8 @@
 
 // CONTENT PANE Spotlight List
 .view-display-id-spotlights_panel_pane {
-  .view-content {
-    @media #{$nine-hundred} {
-      @include column-count(2);
-    }
-  }
   .views-row {
-    margin: 20px 0px;
+    @include hr;
   }
   .views-field {
     margin: 0px;
