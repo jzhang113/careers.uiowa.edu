@@ -278,7 +278,7 @@ img {
 /* line 2, ../sass/components/_announcements.scss */
 .pane-announcements-announcements-archive .views-row {
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
@@ -568,7 +568,7 @@ img {
 .view-display-id-events_list .views-row,
 .view-display-id-events_teaser_list .views-row {
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
@@ -773,7 +773,7 @@ img {
 /* line 7, ../sass/components/_in_the_news.scss */
 .view-display-id-inthenews .views-row {
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
@@ -1204,7 +1204,7 @@ ul.quicktabs-tabs li.active a {
 .view-display-id-spotlights_panel_pane .views-row {
   min-height: 105px;
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
@@ -1268,7 +1268,7 @@ ul.quicktabs-tabs li.active a {
 .view-display-id-video_panel_pane .views-row {
   min-height: 105px;
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
