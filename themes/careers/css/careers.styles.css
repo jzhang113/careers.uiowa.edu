@@ -1287,21 +1287,27 @@ ul.quicktabs-tabs li.active a {
 
 /* line 16, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-row {
+  min-height: 105px;
   height: auto;
   margin-bottom: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
-/* line 19, ../sass/components/_spotlight.scss */
+/* line 20, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-field {
   margin: 0px;
 }
 /* line 23, ../sass/components/_spotlight.scss */
+.view-display-id-spotlights_panel_pane .views-field-field-spotlight-image {
+  float: left;
+  margin-right: 10px;
+}
+/* line 26, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-field-field-spotlight-image img {
   border: 3px solid #4e5b6e;
 }
 
-/* line 32, ../sass/components/_spotlight.scss */
+/* line 35, ../sass/components/_spotlight.scss */
 .node-type-spotlight #content .block-content {
   padding: 0px 10px;
 }

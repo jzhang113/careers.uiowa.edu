@@ -14,12 +14,15 @@
 // CONTENT PANE Spotlight List
 .view-display-id-spotlights_panel_pane {
   .views-row {
+    min-height: 105px;
     @include hr;
   }
   .views-field {
     margin: 0px;
   }
   .views-field-field-spotlight-image {
+    float: left;
+    margin-right: 10px;
     img {
       @include blue-border;
     }
