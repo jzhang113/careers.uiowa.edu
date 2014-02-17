@@ -1,4 +1,4 @@
-a.social-media {
+a.social-media, .block-menu-social-media a {
   line-height: 2em;
 
   &:before {
@@ -33,4 +33,10 @@ a[href*="youtube.com"]:before {
 
 a[href*="instagram.com"]:before {
   @include icon($fa-var-instagram);
+}
+
+#footer .block-menu-social-media {
+  li.leaf:before {
+    content: none;
+  }
 }

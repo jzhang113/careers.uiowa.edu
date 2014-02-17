@@ -11,25 +11,23 @@ body {
 #header {
   background-color: #eee;
   background: url('images/header.png') no-repeat;
-  position: relative;
-  height: 230px;
   background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
+  background-position: top center;
+  position: relative;
+
+  @media #{$responsive-nav} {
+    min-height: 230px;
+  }
 }
 
 #branding {
-  position: absolute;
-  bottom: 55px;
-  @media #{$responsive-nav} {
-    bottom: 45px;
-  }
+  margin-bottom: 20px;
 }
 
 #logo {
   padding: 10px 0;
   @media #{$responsive-nav} {
-    padding-left: 20px;
+    padding: 50px 10px 0 20px;
   }
 
   img {
@@ -44,10 +42,8 @@ body {
 #site-slogan {
   @include font-size(1.8);
   color: white;
-  text-align: center;
-  margin: 0;
-  position: relative;
-  bottom: 25px;
+  margin: -15px 0 0;
+  padding: 0 10px;
   @include text-shadow(rgba(black, 0.2) 1px 1px 0, rgba(black, 0.2) 2px 2px 0, rgba(black, 0.2) 3px 3px 0);
   @media #{$responsive-nav} {
     padding-left: 80px;

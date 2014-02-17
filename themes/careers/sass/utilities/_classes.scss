@@ -2,97 +2,53 @@
 
 %toggle-menu-tree {
   ul.menu {
-    margin: 0;
-    padding: 0;
-
     li {
-      margin: .5em 0 .5em 1em;
-      position: relative;
+      font-weight: bold;
+      margin: 7px 0;
+      padding: 0;
 
-      &:before {
+      &.expanded, &.collapsed {
+        list-style: none;
+
+        & > .menu-inner > a:before {
+          // Use the same icon for .expanded and .collapsed since the menus
+          // are configured to expand all children.
+          @include icon($fa-var-caret-down);
+          margin-right: .5em;
+        }
       }
     }
-    li.menu-depth-2 {
-      margin: .5em 0em;
-    }
 
-    a,
-    .nolink {
+    a, .nolink {
       color: #333;
     }
 
     .menu-depth-2 >.menu-inner {
       background-color: #333;
       color: #fff;
-      font-weight: bold;
-      padding: 5px;
       display: block;
+      padding: 5px;
 
-      a,
-      .nolink {
+      a, .nolink {
         color: #fff;
       }
-    }
-
-    li.leaf,
-    li.expanded,
-    li.collapsed {
-      list-style-image: none;
-      list-style-type: none;
-      font-weight: bold;
-      padding: 0px;
-    }
-
-    li.expanded a {
-
-      &:before {
-        @include icon($fa-var-caret-down);
-        margin-right: .5em;
-      }
-    }
-
-    li.collapsed a {
-
-      &:before {
-        @include icon($fa-var-caret-right);
-        margin-right: .5em;
-      }
-    }
-
-    li.leaf a {
-      &:before {
-        content: "";
-        margin-right: 0;
-      }
-    }
-
-    ul {
-      display: none;
-    }
-
-    li.active-trail > ul {
-      display: block;
     }
 
     //jquery toggle
     .menu-toggle {
       display: block;
       cursor: pointer;
-    }
-    .menu-toggle.is-expanded {
+
       &:focus {
-        outline: 1px dotted white;;
+        outline: 1px dotted #fff;
       }
-      &:before {
+
+      &.is-expanded:before {
         @include icon($fa-var-minus-square);
         margin-right: .5em;
       }
-    }
-    .menu-toggle.is-collapsed {
-      &:focus {
-        outline: 1px dotted white;
-      }
-      &:before {
+
+      &.is-collapsed:before {
         @include icon($fa-var-plus-square);
         margin-right: .5em;
       }

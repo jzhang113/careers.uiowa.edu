@@ -108,6 +108,15 @@
   outline: 0;
 }
 
+//
+// Turns off the offscreen effect
+//
+@mixin offscreen-off {
+  position: relative;
+  top: auto;
+  width: auto;
+  height: auto;
+}
 
 //
 // Hide content from all users

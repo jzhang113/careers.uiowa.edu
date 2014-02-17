@@ -19,143 +19,9 @@ $bp-tablet-landscape-only: $bp-tablet ($bp-desktop - 1px); // 700 - 949
 $bp-tablet-only: $bp-mobile ($bp-desktop - 1px); // 500 -949
 $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 */
-/* line 4, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu, #block-menu-block-3 ul.menu, #block-menu-block-6 ul.menu {
-  margin: 0;
-  padding: 0;
-}
-/* line 8, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu li, #block-menu-block-3 ul.menu li, #block-menu-block-6 ul.menu li {
-  margin: .5em 0 .5em 1em;
-  position: relative;
-}
-/* line 15, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu li.menu-depth-2, #block-menu-block-3 ul.menu li.menu-depth-2, #block-menu-block-6 ul.menu li.menu-depth-2 {
-  margin: .5em 0em;
-}
-/* line 20, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu a, #block-menu-block-3 ul.menu a, #block-menu-block-6 ul.menu a,
-#block-menu-block-4 ul.menu .nolink,
-#block-menu-block-3 ul.menu .nolink,
-#block-menu-block-6 ul.menu .nolink {
-  color: #333;
-}
-/* line 24, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu .menu-depth-2 > .menu-inner, #block-menu-block-3 ul.menu .menu-depth-2 > .menu-inner, #block-menu-block-6 ul.menu .menu-depth-2 > .menu-inner {
-  background-color: #333;
-  color: #fff;
-  font-weight: bold;
-  padding: 5px;
-  display: block;
-}
-/* line 32, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu .menu-depth-2 > .menu-inner a, #block-menu-block-3 ul.menu .menu-depth-2 > .menu-inner a, #block-menu-block-6 ul.menu .menu-depth-2 > .menu-inner a,
-#block-menu-block-4 ul.menu .menu-depth-2 > .menu-inner .nolink,
-#block-menu-block-3 ul.menu .menu-depth-2 > .menu-inner .nolink,
-#block-menu-block-6 ul.menu .menu-depth-2 > .menu-inner .nolink {
-  color: #fff;
-}
-/* line 39, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu li.leaf, #block-menu-block-3 ul.menu li.leaf, #block-menu-block-6 ul.menu li.leaf,
-#block-menu-block-4 ul.menu li.expanded,
-#block-menu-block-3 ul.menu li.expanded,
-#block-menu-block-6 ul.menu li.expanded,
-#block-menu-block-4 ul.menu li.collapsed,
-#block-menu-block-3 ul.menu li.collapsed,
-#block-menu-block-6 ul.menu li.collapsed {
-  list-style-image: none;
-  list-style-type: none;
-  font-weight: bold;
-  padding: 0px;
-}
-/* line 48, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu li.expanded a:before, #block-menu-block-3 ul.menu li.expanded a:before, #block-menu-block-6 ul.menu li.expanded a:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f0d7";
-  margin-right: .5em;
-}
-/* line 56, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu li.collapsed a:before, #block-menu-block-3 ul.menu li.collapsed a:before, #block-menu-block-6 ul.menu li.collapsed a:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f0da";
-  margin-right: .5em;
-}
-/* line 63, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu li.leaf a:before, #block-menu-block-3 ul.menu li.leaf a:before, #block-menu-block-6 ul.menu li.leaf a:before {
-  content: "";
-  margin-right: 0;
-}
-/* line 69, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu ul, #block-menu-block-3 ul.menu ul, #block-menu-block-6 ul.menu ul {
-  display: none;
-}
-/* line 73, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu li.active-trail > ul, #block-menu-block-3 ul.menu li.active-trail > ul, #block-menu-block-6 ul.menu li.active-trail > ul {
-  display: block;
-}
-/* line 78, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu .menu-toggle, #block-menu-block-3 ul.menu .menu-toggle, #block-menu-block-6 ul.menu .menu-toggle {
-  display: block;
-  cursor: pointer;
-}
-/* line 83, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu .menu-toggle.is-expanded:focus, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:focus, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:focus {
-  outline: 1px dotted white;
-}
-/* line 86, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-3 ul.menu .menu-toggle.is-expanded:before, #block-menu-block-6 ul.menu .menu-toggle.is-expanded:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f146";
-  margin-right: .5em;
-}
-/* line 92, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu .menu-toggle.is-collapsed:focus, #block-menu-block-3 ul.menu .menu-toggle.is-collapsed:focus, #block-menu-block-6 ul.menu .menu-toggle.is-collapsed:focus {
-  outline: 1px dotted white;
-}
-/* line 95, ../sass/utilities/_classes.scss */
-#block-menu-block-4 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-3 ul.menu .menu-toggle.is-collapsed:before, #block-menu-block-6 ul.menu .menu-toggle.is-collapsed:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f0fe";
-  margin-right: .5em;
-}
-
 /* line 1, ../sass/base/_block.scss */
 .block {
-  padding: 5px;
-}
-
-/* line 5, ../sass/base/_block.scss */
-.block-title {
-  background-color: transparent;
-  color: #333;
-  padding: 10px;
-  border-bottom: 0px;
-  margin: 0px;
-}
-
-/* line 13, ../sass/base/_block.scss */
-#content .block-content {
-  padding: 10px;
+  padding: 20px;
 }
 
 /* line 1, ../sass/base/_fields.scss */
@@ -257,27 +123,13 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 }
 
 /* line 1, ../sass/base/_panel_panes.scss */
-.pane-title {
-  background-color: transparent;
-  color: #333;
-  padding: 10px;
-  border-bottom: 0px;
-  margin: 0px;
-}
-
-/* line 8, ../sass/base/_panel_panes.scss */
 .pane-node-created {
   font-weight: bold;
 }
 
-/* line 12, ../sass/base/_panel_panes.scss */
+/* line 5, ../sass/base/_panel_panes.scss */
 .panel-display {
-  margin: -5px;
-}
-
-/* line 19, ../sass/base/_panel_panes.scss */
-#content .pane-node .block-content {
-  padding: 5px;
+  margin: -20px;
 }
 
 /* line 1, ../sass/base/_typography.scss */
@@ -870,41 +722,38 @@ body {
 #header {
   background-color: #eee;
   background: url("images/header.png") no-repeat;
-  position: relative;
-  height: 230px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* line 21, ../sass/components/_page.scss */
-#branding {
-  position: absolute;
-  bottom: 55px;
+  background-position: top center;
+  position: relative;
 }
 @media only screen and (min-width: 40em) {
-  /* line 21, ../sass/components/_page.scss */
-  #branding {
-    bottom: 45px;
+  /* line 11, ../sass/components/_page.scss */
+  #header {
+    min-height: 230px;
   }
 }
 
-/* line 29, ../sass/components/_page.scss */
+/* line 23, ../sass/components/_page.scss */
+#branding {
+  margin-bottom: 20px;
+}
+
+/* line 27, ../sass/components/_page.scss */
 #logo {
   padding: 10px 0;
 }
 @media only screen and (min-width: 40em) {
-  /* line 29, ../sass/components/_page.scss */
+  /* line 27, ../sass/components/_page.scss */
   #logo {
-    padding-left: 20px;
+    padding: 50px 10px 0 20px;
   }
 }
-/* line 35, ../sass/components/_page.scss */
+/* line 33, ../sass/components/_page.scss */
 #logo img {
   vertical-align: bottom;
 }
 
-/* line 40, ../sass/components/_page.scss */
+/* line 38, ../sass/components/_page.scss */
 #site-name {
   position: absolute;
   top: -99999em;
@@ -914,36 +763,34 @@ body {
   outline: 0;
 }
 
-/* line 44, ../sass/components/_page.scss */
+/* line 42, ../sass/components/_page.scss */
 #site-slogan {
   font-size: 18px;
   font-size: 1.8rem;
   color: white;
-  text-align: center;
-  margin: 0;
-  position: relative;
-  bottom: 25px;
+  margin: -15px 0 0;
+  padding: 0 10px;
   text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0, rgba(0, 0, 0, 0.2) 2px 2px 0, rgba(0, 0, 0, 0.2) 3px 3px 0;
 }
 @media only screen and (min-width: 40em) {
-  /* line 44, ../sass/components/_page.scss */
+  /* line 42, ../sass/components/_page.scss */
   #site-slogan {
     padding-left: 80px;
   }
 }
 
-/* line 57, ../sass/components/_page.scss */
+/* line 53, ../sass/components/_page.scss */
 .site-logo {
   width: 320px;
 }
 
-/* line 61, ../sass/components/_page.scss */
+/* line 57, ../sass/components/_page.scss */
 #page-title {
   margin: 0;
   padding-left: 10px;
 }
 
-/* line 66, ../sass/components/_page.scss */
+/* line 62, ../sass/components/_page.scss */
 #skip-link {
   left: 50%;
   margin-left: -6.5em;
@@ -953,7 +800,7 @@ body {
   width: 12em;
   z-index: 50;
 }
-/* line 75, ../sass/components/_page.scss */
+/* line 71, ../sass/components/_page.scss */
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -964,7 +811,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 86, ../sass/components/_page.scss */
+/* line 82, ../sass/components/_page.scss */
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -975,12 +822,12 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 98, ../sass/components/_page.scss */
+/* line 94, ../sass/components/_page.scss */
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active {
   outline: 0;
 }
 
-/* line 110, ../sass/components/_page.scss */
+/* line 106, ../sass/components/_page.scss */
 #main-content,
 #main-content-header,
 #breadcrumb,
@@ -1341,139 +1188,144 @@ ul.quicktabs-tabs li.active a {
   margin-left: 110px;
 }
 
-/* line 2, ../sass/components/navigation/_audience_menu.scss */
-.block-menu-audience-menu {
-  position: absolute;
-  bottom: 0;
-  padding: 0px;
-  background: black;
-  width: 100%;
-  min-width: 320px;
-  height: 35px;
-  font-size: 18px;
-  font-size: 1.8rem;
+/* line 3, ../sass/components/navigation/_audience_menu.scss */
+.region-header .block-responsive-navigation {
+  padding: 0;
 }
-@media only screen and (min-width: 899px) {
-  /* line 2, ../sass/components/navigation/_audience_menu.scss */
-  .block-menu-audience-menu {
-    height: 50px;
-  }
-}
-@media only screen and (min-width: 899px) {
-  /* line 2, ../sass/components/navigation/_audience_menu.scss */
-  .block-menu-audience-menu {
-    width: auto;
-    right: 0;
-    padding-left: 105px;
-  }
-  /* line 18, ../sass/components/navigation/_audience_menu.scss */
-  .block-menu-audience-menu:before {
-    content: "Start Here";
+@media only screen and (min-width: 40em) {
+  /* line 3, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation {
+    bottom: 0;
     position: absolute;
-    right: 660px;
-    top: 25%;
-    color: white;
-    font-weight: bold;
+    right: 0;
   }
 }
-@media only screen and (max-width: 480px) {
-  /* line 2, ../sass/components/navigation/_audience_menu.scss */
-  .block-menu-audience-menu {
+/* line 12, ../sass/components/navigation/_audience_menu.scss */
+.region-header .block-responsive-navigation .block-title {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0;
+}
+@media only screen and (min-width: 40em) {
+  /* line 12, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation .block-title {
+    float: left;
+    margin-bottom: 0;
+    padding: 10px;
     font-size: 14px;
     font-size: 1.4rem;
-  }
-}
-/* line 30, ../sass/components/navigation/_audience_menu.scss */
-.block-menu-audience-menu ul.menu {
-  background-color: #ffd451;
-  float: right;
-  height: 35px;
-  margin: 0px;
-  min-width: 320px;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-}
-@media only screen and (min-width: 899px) {
-  /* line 30, ../sass/components/navigation/_audience_menu.scss */
-  .block-menu-audience-menu ul.menu {
-    height: 50px;
-  }
-}
-@media only screen and (min-width: 899px) {
-  /* line 30, ../sass/components/navigation/_audience_menu.scss */
-  .block-menu-audience-menu ul.menu {
+    position: relative;
+    top: auto;
     width: auto;
-    padding-left: 25px;
+    height: auto;
   }
-  /* line 47, ../sass/components/navigation/_audience_menu.scss */
-  .block-menu-audience-menu ul.menu:before {
+}
+@media only screen and (min-width: 1025px) {
+  /* line 12, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation .block-title {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 40em) {
+  /* line 30, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation .block-content {
+    float: left;
+  }
+}
+/* line 35, ../sass/components/navigation/_audience_menu.scss */
+.region-header .block-responsive-navigation .block-content a#nav-toggle {
+  background-color: #000;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+/* line 42, ../sass/components/navigation/_audience_menu.scss */
+.region-header .block-responsive-navigation .block-content a#nav-toggle:before {
+  margin-right: 0.5em;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0c9";
+  font-size: 1.2em;
+}
+/* line 47, ../sass/components/navigation/_audience_menu.scss */
+.region-header .block-responsive-navigation .block-content a#nav-toggle:hover, .region-header .block-responsive-navigation .block-content a#nav-toggle:focus {
+  color: #ffd451;
+  text-decoration: none;
+}
+@media only screen and (min-width: 40em) {
+  /* line 35, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation .block-content a#nav-toggle {
+    display: none;
+  }
+}
+@media only screen and (min-width: 40em) {
+  /* line 57, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation .block-content ul:before {
+    border-bottom: 19px solid #ffd451;
+    border-left: 19px solid #000;
+    border-top: 19px solid #ffd451;
     content: "";
-    left: 100px;
-    position: absolute;
-    font-size: 0px;
-    background-color: #ffd451;
-    line-height: 0px;
-    width: 0px;
-    height: 0px;
-    border-bottom: 25px solid transparent;
-    border-top: 25px solid transparent;
-    border-left: 20px solid black;
+    display: block;
+    height: 0;
+    width: 0;
+    float: left;
     -webkit-transform: rotate(360deg);
   }
 }
-/* line 62, ../sass/components/navigation/_audience_menu.scss */
-.block-menu-audience-menu ul.menu li {
-  list-style: none;
-  list-style-image: none;
-  list-style-type: none;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  height: 100%;
-  background-color: transparent;
-  padding: 0;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-}
-/* line 74, ../sass/components/navigation/_audience_menu.scss */
-.block-menu-audience-menu ul.menu li ul {
-  display: none;
-}
-/* line 77, ../sass/components/navigation/_audience_menu.scss */
-.block-menu-audience-menu ul.menu li a {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 6px 3px;
-  line-height: 1.6em;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-@media only screen and (min-width: 899px) {
-  /* line 77, ../sass/components/navigation/_audience_menu.scss */
-  .block-menu-audience-menu ul.menu li a {
-    padding: 10px 26px;
+@media only screen and (min-width: 1025px) {
+  /* line 57, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation .block-content ul:before {
+    border-bottom: 21px solid #ffd451;
+    border-left: 21px solid #000;
+    border-top: 21px solid #ffd451;
   }
 }
-/* line 89, ../sass/components/navigation/_audience_menu.scss */
-.block-menu-audience-menu ul.menu li a:hover, .block-menu-audience-menu ul.menu li a .active-trail {
+@media only screen and (min-width: 40em) {
+  /* line 78, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation .block-content #nav li {
+    float: left;
+    width: auto;
+  }
+}
+/* line 85, ../sass/components/navigation/_audience_menu.scss */
+.region-header .block-responsive-navigation .block-content a {
+  background-color: #ffd451;
+  color: #000;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+/* line 92, ../sass/components/navigation/_audience_menu.scss */
+.region-header .block-responsive-navigation .block-content a:hover, .region-header .block-responsive-navigation .block-content a:focus {
+  background-color: #000;
+  color: #fff;
   text-decoration: none;
-  color: white;
 }
-/* line 94, ../sass/components/navigation/_audience_menu.scss */
-.block-menu-audience-menu ul.menu li:hover, .block-menu-audience-menu ul.menu li .active-trail {
-  background-color: black;
-  color: white;
+@media only screen and (min-width: 40em) {
+  /* line 85, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation .block-content a {
+    float: left;
+    padding: 10px 20px;
+  }
 }
-/* line 97, ../sass/components/navigation/_audience_menu.scss */
-.block-menu-audience-menu ul.menu li:hover a, .block-menu-audience-menu ul.menu li .active-trail a {
-  color: white;
+@media only screen and (min-width: 1025px) {
+  /* line 85, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation .block-content a {
+    padding: 10px 26px;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
 }
 
 /* line 1, ../sass/components/navigation/_breadcrumb.scss */
@@ -1508,204 +1360,36 @@ ul.quicktabs-tabs li.active a {
   display: inline;
 }
 
-/* line 1, ../sass/components/navigation/_main.scss */
-.nav {
-  clear: both;
-  margin: 10px 0;
-}
-/* line 6, ../sass/components/navigation/_main.scss */
-.nav ul,
-.nav ul.menu {
-  margin: 0;
-  padding: 0;
-}
-/* line 12, ../sass/components/navigation/_main.scss */
-.nav li,
-.nav ul.menu li {
-  display: inline;
-  float: left;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 21, ../sass/components/navigation/_main.scss */
-.nav li a,
-.nav ul.menu li a {
-  display: block;
-  white-space: nowrap;
-  padding: 0 10px;
-}
-/* line 32, ../sass/components/navigation/_main.scss */
-.nav .block {
-  margin-bottom: 0;
-}
-
 /* =============================================================================
  *   Menus, usually blocks
  * ========================================================================== */
-/* line 42, ../sass/components/navigation/_main.scss */
+/* line 4, ../sass/components/navigation/_main.scss */
 ul.menu {
-  padding-left: 15px;
+  margin: 0;
+  padding-left: 0;
 }
-/* line 45, ../sass/components/navigation/_main.scss */
+/* line 8, ../sass/components/navigation/_main.scss */
 ul.menu ul {
   padding-left: 15px;
 }
-/* line 49, ../sass/components/navigation/_main.scss */
-ul.menu li {
+/* line 12, ../sass/components/navigation/_main.scss */
+ul.menu li.leaf {
+  list-style: none;
   margin: 0;
 }
 
-/* If li.content exists it's a problem, so reset the padding */
-/* line 61, ../sass/components/navigation/_main.scss */
-.block .menu li.content {
-  padding: 0;
-}
-
-/* line 2, ../sass/components/navigation/_programs.scss */
-.view-display-id-program_terms_level_1_block ul {
-  margin-top: 0;
-}
-/* line 5, ../sass/components/navigation/_programs.scss */
-.view-display-id-program_terms_level_1_block ul li.leaf {
-  list-style: none;
-}
-/* line 158, ../sass/utilities/_mixins.scss */
-.view-display-id-program_terms_level_1_block ul li.leaf:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f105";
-  font-size: 1em;
-  color: #9c8345;
-  display: inline-block;
-  width: 10px;
-  padding-right: 2px;
-}
-
-/* line 3, ../sass/components/navigation/_quick_links.scss */
-nav .menu-name-menu-quick-links ul {
-  margin-top: 0;
-}
-/* line 6, ../sass/components/navigation/_quick_links.scss */
-nav .menu-name-menu-quick-links ul li.leaf {
-  list-style: none;
-}
-/* line 158, ../sass/utilities/_mixins.scss */
-nav .menu-name-menu-quick-links ul li.leaf:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f105";
-  font-size: 1em;
-  color: #9c8345;
-  display: inline-block;
-  width: 10px;
-  padding-right: 2px;
-}
-
-/* line 2, ../sass/components/navigation/_site_links_menu.scss */
-#block-responsive-navigation-1 {
-  padding: 0px;
-  position: relative;
-  font-size: 18px;
-  font-size: 1.8rem;
-}
-@media only screen and (min-width: 40em) {
-  /* line 2, ../sass/components/navigation/_site_links_menu.scss */
-  #block-responsive-navigation-1 {
-    background-color: transparent;
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
-}
-/* line 12, ../sass/components/navigation/_site_links_menu.scss */
-#block-responsive-navigation-1 a#nav-toggle {
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  display: block;
-  padding-left: 5px;
-}
-/* line 19, ../sass/components/navigation/_site_links_menu.scss */
-#block-responsive-navigation-1 a#nav-toggle:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f0c9";
-  font-size: 1.2em;
-  padding-right: 5px;
-  vertical-align: middle;
-}
-/* line 25, ../sass/components/navigation/_site_links_menu.scss */
-#block-responsive-navigation-1 a#nav-toggle:hover {
-  color: #ffd451;
-  text-decoration: none;
-}
-@media only screen and (min-width: 40em) {
-  /* line 12, ../sass/components/navigation/_site_links_menu.scss */
-  #block-responsive-navigation-1 a#nav-toggle {
-    display: none;
-  }
-}
-/* line 36, ../sass/components/navigation/_site_links_menu.scss */
-#block-responsive-navigation-1 #nav ul {
-  text-align: center;
-}
-@media only screen and (min-width: 40em) {
-  /* line 36, ../sass/components/navigation/_site_links_menu.scss */
-  #block-responsive-navigation-1 #nav ul {
-    text-align: right;
-  }
-}
-@media only screen and (min-width: 40em) {
-  /* line 44, ../sass/components/navigation/_site_links_menu.scss */
-  #block-responsive-navigation-1 #nav li {
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    zoom: 1;
-    *display: inline;
-    width: auto;
-  }
-}
-/* line 51, ../sass/components/navigation/_site_links_menu.scss */
-#block-responsive-navigation-1 #nav a {
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  display: block;
-  padding: 6px;
-}
-/* line 58, ../sass/components/navigation/_site_links_menu.scss */
-#block-responsive-navigation-1 #nav a:hover, #block-responsive-navigation-1 #nav a:focus {
-  background-color: #fff;
-  color: #333;
-  text-decoration: none;
-}
-
 /* line 1, ../sass/components/navigation/_social_media.scss */
-a.social-media {
+a.social-media, .block-menu-social-media a {
   line-height: 2em;
 }
 /* line 4, ../sass/components/navigation/_social_media.scss */
-a.social-media:before {
+a.social-media:before, .block-menu-social-media a:before {
   margin-right: 0.3em;
   font-size: 25px;
   font-size: 2.5rem;
 }
 /* line 9, ../sass/components/navigation/_social_media.scss */
-a.social-media:hover {
+a.social-media:hover, .block-menu-social-media a:hover {
   text-decoration: none;
 }
 
@@ -1773,4 +1457,9 @@ a[href*="instagram.com"]:before {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f16d";
+}
+
+/* line 39, ../sass/components/navigation/_social_media.scss */
+#footer .block-menu-social-media li.leaf:before {
+  content: none;
 }
