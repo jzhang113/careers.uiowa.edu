@@ -113,16 +113,18 @@ function announcements_field_default_field_instances() {
         'manualcrop_instant_crop' => FALSE,
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
-          '80px' => 0,
-          'featured_home' => 0,
+          'featured' => 0,
+          'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
+          'square' => 0,
         ),
         'manualcrop_styles_list' => array(
-          '80px' => 0,
-          'featured_home' => 0,
+          'featured' => 0,
+          'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
+          'square' => 0,
         ),
         'manualcrop_styles_mode' => 'exclude',
         'manualcrop_thumblist' => 0,
@@ -138,7 +140,7 @@ function announcements_field_default_field_instances() {
     'bundle' => 'announcement',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Tag this announcement to one or more audiences.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -173,7 +175,7 @@ function announcements_field_default_field_instances() {
   $field_instances['node-announcement-field_announcement_image'] = array(
     'bundle' => 'announcement',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Use an image to represent the announcement. A default image will be used if none is selected.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -234,18 +236,14 @@ function announcements_field_default_field_instances() {
         'manualcrop_instant_crop' => FALSE,
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
-          '80px' => 0,
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
           'square' => 'square',
         ),
         'manualcrop_styles_list' => array(
-          '80px' => 0,
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
           'people_profile_100' => 0,
           'people_profile_320' => 0,
@@ -319,7 +317,7 @@ function announcements_field_default_field_instances() {
     'bundle' => 'announcement',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Tag this announcement to one or more programs.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -358,6 +356,9 @@ function announcements_field_default_field_instances() {
   t('Featured Image');
   t('Program');
   t('Related Link');
+  t('Tag this announcement to one or more audiences.');
+  t('Tag this announcement to one or more programs.');
+  t('Use an image to represent the announcement. A default image will be used if none is selected.');
 
   return $field_instances;
 }
