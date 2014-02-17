@@ -7,7 +7,7 @@
 
 .field-name-field-audience-links, .field-name-field-program-links {
   width: 100%;
-  font-size: 1.8rem;
+  @include font-size(1.8);
 
   .field-items {
     width: 100%;

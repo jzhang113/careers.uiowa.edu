@@ -1085,6 +1085,7 @@ ul.quicktabs-tabs li.active a {
 /* line 8, ../sass/components/_related_links.scss */
 .field-name-field-audience-links, .field-name-field-program-links {
   width: 100%;
+  font-size: 18px;
   font-size: 1.8rem;
 }
 /* line 12, ../sass/components/_related_links.scss */
