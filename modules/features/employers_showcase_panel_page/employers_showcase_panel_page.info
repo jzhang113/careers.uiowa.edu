@@ -2,7 +2,6 @@ name = Employers Showcase Panel Page
 description = A panel page displaying the Employers Showcase Grid view
 core = 7.x
 package = Careers
-php = 5.2.4
 dependencies[] = ctools
 dependencies[] = employers_showcase_view
 dependencies[] = page_manager

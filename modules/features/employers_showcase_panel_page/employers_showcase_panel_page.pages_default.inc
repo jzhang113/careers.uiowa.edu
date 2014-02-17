@@ -16,7 +16,10 @@ function employers_showcase_panel_page_default_page_manager_pages() {
   $page->admin_title = 'Employer Showcase';
   $page->admin_description = '';
   $page->path = 'showcasegallery';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(

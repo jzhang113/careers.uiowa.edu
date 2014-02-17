@@ -72,12 +72,6 @@ function career_center_visited_view_views_default_views() {
   $handler->display->display_options['style_options']['name_field'] = 'title';
   $handler->display->display_options['style_options']['description_field'] = 'title';
   $handler->display->display_options['style_options']['map'] = 'OSM Mapnik';
-  $handler->display->display_options['style_options']['zoom']['initialZoom'] = '-1';
-  $handler->display->display_options['style_options']['zoom']['minZoom'] = '0';
-  $handler->display->display_options['style_options']['zoom']['maxZoom'] = '18';
-  $handler->display->display_options['style_options']['vector_display']['stroke'] = 0;
-  $handler->display->display_options['style_options']['vector_display']['fill'] = 0;
-  $handler->display->display_options['style_options']['vector_display']['clickable'] = 0;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;

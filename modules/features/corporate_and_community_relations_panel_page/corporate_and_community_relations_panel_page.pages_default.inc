@@ -16,7 +16,10 @@ function corporate_and_community_relations_panel_page_default_page_manager_pages
   $page->admin_title = 'Corporate And Community Relations';
   $page->admin_description = '';
   $page->path = 'relations';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
