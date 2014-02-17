@@ -89,7 +89,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 
 /* line 1, ../sass/base/_block.scss */
 .block {
-  padding: 20px;
+  padding: 10px;
 }
 
 /* line 1, ../sass/base/_fields.scss */
@@ -197,7 +197,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 
 /* line 5, ../sass/base/_panel_panes.scss */
 .panel-display {
-  margin: -20px;
+  margin: -10px;
 }
 
 /* line 1, ../sass/base/_typography.scss */
