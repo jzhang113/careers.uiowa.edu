@@ -52,13 +52,14 @@ function basic_page_content_type_panelizer_defaults() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'image',
+      'formatter' => 'file_rendered',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_style' => 'featured_page',
         'image_link' => '',
+        'file_view_mode' => 'featured_page',
       ),
       'context' => 'panelizer',
       'override_title' => 0,
