@@ -48,10 +48,13 @@ function featured_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '1',
+          'weight' => '7',
+        ),
+        'redirect' => array(
+          'weight' => '6',
         ),
       ),
       'display' => array(),
