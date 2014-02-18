@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Corporate And Community Relations Panel Page feature.
- */
-
-include_once 'corporate_and_community_relations_panel_page.features.inc';
