@@ -168,25 +168,24 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   }
 }
 
-@media only screen and (min-width: 481px) {
-  /* line 19, ../sass/base/_layout.scss */
-  #footer-upper-wrapper .region {
+@media only screen and (min-width: 900px) {
+  /* line 20, ../sass/base/_layout.scss */
+  #footer-upper-wrapper .region-footer-first {
     float: left;
     width: 50%;
   }
-  /* line 24, ../sass/base/_layout.scss */
-  #footer-upper-wrapper .region.region-footer-third {
-    clear: left;
+}
+@media only screen and (min-width: 600px) {
+  /* line 27, ../sass/base/_layout.scss */
+  #footer-upper-wrapper .region-footer-second, #footer-upper-wrapper .region-footer-third {
+    float: left;
+    width: 50%;
   }
 }
-@media only screen and (min-width: 769px) {
-  /* line 19, ../sass/base/_layout.scss */
-  #footer-upper-wrapper .region {
+@media only screen and (min-width: 900px) {
+  /* line 27, ../sass/base/_layout.scss */
+  #footer-upper-wrapper .region-footer-second, #footer-upper-wrapper .region-footer-third {
     width: 25%;
-  }
-  /* line 32, ../sass/base/_layout.scss */
-  #footer-upper-wrapper .region.region-footer-third {
-    clear: none;
   }
 }
 
@@ -1458,6 +1457,16 @@ ul.quicktabs-tabs li.active a {
   display: inline-block;
   width: 10px;
   padding-right: 2px;
+}
+@media only screen and (min-width: 600px) {
+  /* line 6, ../sass/components/navigation/_footer_menus.scss */
+  #footer .menu-name-menu-quick-links ul.menu {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -o-column-count: 2;
+    column-count: 2;
+  }
 }
 
 /* =============================================================================

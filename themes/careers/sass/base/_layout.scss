@@ -16,21 +16,22 @@
   }
 }
 
-#footer-upper-wrapper .region {
-  @media #{"only screen and (min-width: 481px)"} {
-    float: left;
-    width: 50%;
-
-    &.region-footer-third {
-      clear: left;
+#footer-upper-wrapper {
+  .region-footer-first {
+    @media #{$footer-all-inline} {
+      float: left;
+      width: 50%;
     }
   }
 
-  @media #{"only screen and (min-width: 769px)"} {
-    width: 25%;
+  .region-footer-second, .region-footer-third {
+    @media #{$footer-2-and-3-inline} {
+      float: left;
+      width: 50%;
+    }
 
-    &.region-footer-third {
-      clear: none;
+    @media #{$footer-all-inline} {
+      width: 25%;
     }
   }
 }

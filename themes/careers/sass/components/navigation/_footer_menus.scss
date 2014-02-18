@@ -2,4 +2,10 @@
   li.leaf {
     @include angle-bullet-right;
   }
+
+  .menu-name-menu-quick-links ul.menu {
+    @media #{$footer-2-and-3-inline} {
+      @include column-count(2);
+    }
+  }
 }
