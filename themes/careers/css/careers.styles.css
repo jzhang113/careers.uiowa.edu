@@ -1353,7 +1353,7 @@ ul.quicktabs-tabs li.active a {
 @media only screen and (min-width: 40em) {
   /* line 57, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content ul:before {
-    border-bottom: 19px solid #ffd451;
+    border-bottom: 17px solid #ffd451;
     border-left: 19px solid #000;
     border-top: 19px solid #ffd451;
     content: "";
@@ -1367,7 +1367,7 @@ ul.quicktabs-tabs li.active a {
 @media only screen and (min-width: 1025px) {
   /* line 57, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content ul:before {
-    border-bottom: 21px solid #ffd451;
+    border-bottom: 20px solid #ffd451;
     border-left: 21px solid #000;
     border-top: 21px solid #ffd451;
   }
