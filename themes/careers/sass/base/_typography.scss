@@ -56,4 +56,8 @@ a {
 img {
   height: auto;
   max-width: 100%;
+
+  .lt-ie9 & {
+    max-width: auto;
+  }
 }
