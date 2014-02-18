@@ -50,7 +50,7 @@ function spotlights_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 11,
+      'weight' => 5,
     ),
   );
 
@@ -87,7 +87,7 @@ function spotlights_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 10,
     ),
   );
 
@@ -140,7 +140,7 @@ function spotlights_field_default_field_instances() {
         'year_range' => '1950:+10',
       ),
       'type' => 'date_select',
-      'weight' => 10,
+      'weight' => 6,
     ),
   );
 
@@ -223,7 +223,7 @@ function spotlights_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -263,7 +263,7 @@ function spotlights_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 4,
     ),
   );
 
@@ -303,7 +303,7 @@ function spotlights_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 5,
     ),
   );
 
@@ -343,7 +343,7 @@ function spotlights_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 2,
     ),
   );
 
@@ -383,7 +383,7 @@ function spotlights_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 3,
     ),
   );
 
@@ -423,7 +423,7 @@ function spotlights_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 2,
     ),
   );
 
@@ -460,7 +460,7 @@ function spotlights_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 11,
     ),
   );
 
@@ -497,7 +497,7 @@ function spotlights_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 

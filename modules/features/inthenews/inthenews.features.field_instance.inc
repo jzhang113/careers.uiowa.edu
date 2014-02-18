@@ -50,7 +50,7 @@ function inthenews_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 2,
     ),
   );
 
@@ -103,7 +103,7 @@ function inthenews_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_select',
-      'weight' => 33,
+      'weight' => 3,
     ),
   );
 
@@ -157,7 +157,7 @@ function inthenews_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 32,
+      'weight' => 4,
     ),
   );
 

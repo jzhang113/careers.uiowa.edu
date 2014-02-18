@@ -496,33 +496,8 @@ img {
   max-height: 150px;
   height: auto;
   width: auto;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  /* Firefox 10+, Firefox on Android */
-  filter: gray;
-  /* IE6-9 */
-  -webkit-filter: grayscale(100%);
-  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-  /* For IE8 and earlier */
 }
-/* line 64, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content img:hover {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(0%);
-  opacity: 1.0;
-  filter: alpha(opacity=100);
-  /* For IE8 and earlier */
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
-}
-/* line 76, ../sass/components/_employer_showcase.scss */
+/* line 63, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flex-control-paging {
   display: none;
 }
@@ -1355,7 +1330,7 @@ ul.quicktabs-tabs li.active a {
 @media only screen and (min-width: 40em) {
   /* line 57, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content ul:before {
-    border-bottom: 19px solid #ffd451;
+    border-bottom: 17px solid #ffd451;
     border-left: 19px solid #000;
     border-top: 19px solid #ffd451;
     content: "";
@@ -1369,7 +1344,7 @@ ul.quicktabs-tabs li.active a {
 @media only screen and (min-width: 1025px) {
   /* line 57, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content ul:before {
-    border-bottom: 21px solid #ffd451;
+    border-bottom: 20px solid #ffd451;
     border-left: 21px solid #000;
     border-top: 21px solid #ffd451;
   }
