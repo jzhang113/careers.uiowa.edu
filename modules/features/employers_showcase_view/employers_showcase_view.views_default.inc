@@ -71,6 +71,14 @@ function employers_showcase_view_views_default_views() {
     'employers_orgs_content_type' => 'employers_orgs_content_type',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Date -  start date (field_mcf_date) */
+  $handler->display->display_options['filters']['field_mcf_date_value']['id'] = 'field_mcf_date_value';
+  $handler->display->display_options['filters']['field_mcf_date_value']['table'] = 'field_data_field_mcf_date';
+  $handler->display->display_options['filters']['field_mcf_date_value']['field'] = 'field_mcf_date_value';
+  $handler->display->display_options['filters']['field_mcf_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_mcf_date_value']['group'] = 2;
+  $handler->display->display_options['filters']['field_mcf_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_mcf_date_value']['year_range'] = '-10:+10';
   /* Filter criterion: Content: Sponsor Date - end date (field_sponsor_date:value2) */
   $handler->display->display_options['filters']['field_sponsor_date_value2']['id'] = 'field_sponsor_date_value2';
   $handler->display->display_options['filters']['field_sponsor_date_value2']['table'] = 'field_data_field_sponsor_date';
@@ -78,12 +86,7 @@ function employers_showcase_view_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_date_value2']['operator'] = '>=';
   $handler->display->display_options['filters']['field_sponsor_date_value2']['group'] = 2;
   $handler->display->display_options['filters']['field_sponsor_date_value2']['default_date'] = 'now';
-  /* Filter criterion: Content: Sponsor Date - end date (field_sponsor_date:value2) */
-  $handler->display->display_options['filters']['field_sponsor_date_value2_1']['id'] = 'field_sponsor_date_value2_1';
-  $handler->display->display_options['filters']['field_sponsor_date_value2_1']['table'] = 'field_data_field_sponsor_date';
-  $handler->display->display_options['filters']['field_sponsor_date_value2_1']['field'] = 'field_sponsor_date_value2';
-  $handler->display->display_options['filters']['field_sponsor_date_value2_1']['operator'] = 'empty';
-  $handler->display->display_options['filters']['field_sponsor_date_value2_1']['group'] = 2;
+  $handler->display->display_options['filters']['field_sponsor_date_value2']['year_range'] = '-10:+10';
 
   /* Display: Employer Showcase Grid */
   $handler = $view->new_display('panel_pane', 'Employer Showcase Grid', 'employer_showcase_grid_panel_pane');

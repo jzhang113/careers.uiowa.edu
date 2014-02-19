@@ -46,7 +46,7 @@ function employers_orgs_content_type_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 11,
+      'weight' => 9,
     ),
   );
 
@@ -88,7 +88,7 @@ function employers_orgs_content_type_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -237,7 +237,7 @@ function employers_orgs_content_type_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -296,7 +296,7 @@ function employers_orgs_content_type_field_default_field_instances() {
         ),
       ),
       'type' => 'geocoder',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -380,7 +380,7 @@ function employers_orgs_content_type_field_default_field_instances() {
   $field_instances['node-employers_orgs_content_type-field_sponsor_date'] = array(
     'bundle' => 'employers_orgs_content_type',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'If this organization has paid to be a sponsor, what is the date range of the sponsorship?',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -407,25 +407,25 @@ function employers_orgs_content_type_field_default_field_instances() {
     'label' => 'Sponsor Date',
     'required' => 0,
     'settings' => array(
-      'default_value' => 'now',
-      'default_value2' => 'same',
+      'default_value' => 'blank',
+      'default_value2' => 'blank',
       'default_value_code' => '',
-      'default_value_code2' => '',
+      'default_value_code2' => '+365 days',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'date',
       'settings' => array(
-        'increment' => 15,
+        'increment' => 30,
         'input_format' => 'm/d/Y - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'above',
         'text_parts' => array(),
-        'year_range' => '-3:+3',
+        'year_range' => '-10:+10',
       ),
       'type' => 'date_popup',
-      'weight' => 8,
+      'weight' => 4,
     ),
   );
 
@@ -433,7 +433,7 @@ function employers_orgs_content_type_field_default_field_instances() {
   $field_instances['node-employers_orgs_content_type-field_visited_date'] = array(
     'bundle' => 'employers_orgs_content_type',
     'deleted' => 0,
-    'description' => 'When the Pomerantz Career Center visited this employer/organization',
+    'description' => 'When the Pomerantz Career Center visited this organization.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -478,7 +478,7 @@ function employers_orgs_content_type_field_default_field_instances() {
         'year_range' => '-10:+3',
       ),
       'type' => 'date_select',
-      'weight' => 10,
+      'weight' => 8,
     ),
   );
 
@@ -542,6 +542,7 @@ function employers_orgs_content_type_field_default_field_instances() {
   t('Check if the Pomerantz Career Center has visited this employer/organization.');
   t('Check if this employer/organization has paid to be a sponsor. If checked, they will be featured in the showcase gallery.');
   t('Description');
+  t('If this organization has paid to be a sponsor, what is the date range of the sponsorship?');
   t('Location');
   t('Location Geofield');
   t('Logo');
@@ -550,7 +551,7 @@ function employers_orgs_content_type_field_default_field_instances() {
   t('Sponsor Date');
   t('Visit Date(s)');
   t('Website Link');
-  t('When the Pomerantz Career Center visited this employer/organization');
+  t('When the Pomerantz Career Center visited this organization.');
 
   return $field_instances;
 }

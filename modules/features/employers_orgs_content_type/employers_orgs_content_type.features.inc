@@ -26,7 +26,7 @@ function employers_orgs_content_type_node_info() {
       'base' => 'node_content',
       'description' => t('Use <em>Employers and Organizations</em> to create \'profiles\' for outside organizations that have a relationship with the Pomerantz Career Center.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Company/Organization'),
       'help' => '',
     ),
   );
