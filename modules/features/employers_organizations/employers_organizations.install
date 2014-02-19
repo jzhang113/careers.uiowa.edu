@@ -1,0 +1,31 @@
+<?php
+/**
+ * @file 
+ * Install, update and uninstall functions for the employers_organizations feature.
+ */
+
+/**
+ * Disable abandonded dependecy Conditional Fields.
+ */
+function employers_organizations_update_7102() {
+  if (module_exists('conditional_fields')) {
+    module_disable(array('conditional_fields'));
+  }
+}
+
+/**
+ * Delete list(text) field field_visited.
+ */
+function employers_organizations_update_7101() {
+  // Delete the base and all instances of field_visited.
+  field_delete_field('field_visited');
+  field_purge_batch(10);
+}
+
+/**
+ * Delete list(text) field field_sponsor.
+ */
+function employers_organizations_update_7100() {
+  // Delete the base and all instances of field_sponsor.
+  field_delete_field('field_sponsor');
+}
