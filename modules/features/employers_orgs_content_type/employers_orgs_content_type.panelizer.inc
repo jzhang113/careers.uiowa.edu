@@ -79,6 +79,32 @@ function employers_orgs_content_type_panelizer_defaults() {
     $pane->pid = 'new-2';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_website_link';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'above',
+      'formatter' => 'link_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'panelizer',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-2'] = $pane;
+    $display->panels['contentmain'][1] = 'new-2';
+    $pane = new stdClass();
+    $pane->pid = 'new-3';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field';
     $pane->subtype = 'node:field_location_address';
     $pane->shown = TRUE;
     $pane->access = array();
@@ -102,32 +128,6 @@ function employers_orgs_content_type_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['contentmain'][1] = 'new-2';
-    $pane = new stdClass();
-    $pane->pid = 'new-3';
-    $pane->panel = 'contentmain';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_description';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
     $display->content['new-3'] = $pane;
@@ -136,12 +136,12 @@ function employers_orgs_content_type_panelizer_defaults() {
     $pane->pid = 'new-4';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_website_link';
+    $pane->subtype = 'node:field_description';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'above',
-      'formatter' => 'link_default',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
@@ -250,7 +250,7 @@ function employers_orgs_content_type_panelizer_defaults() {
     $display->content['new-7'] = $pane;
     $display->panels['contentmain'][6] = 'new-7';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-4';
+  $display->title_pane = 'new-2';
   $panelizer->display = $display;
   $export['node:employers_orgs_content_type:default:default'] = $panelizer;
 

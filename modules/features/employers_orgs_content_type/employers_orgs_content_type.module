@@ -5,24 +5,3 @@
  */
 
 include_once 'employers_orgs_content_type.features.inc';
-
-/**
- * Implements hook_form_FORM_ID_alter()
- */
-function employers_orgs_content_type_form_employers_orgs_content_type_node_form_alter(&$form, &$form_state, $form_id) {
-  // Show the 'Sponsor Date' field if the 'Pomerantz Career Center Sponsor' 
-  // checkbox is checked.
-  $form['field_sponsor_date']['#states'] = array(
-    'visible' => array(
-      ':input[name="field_is_sponsor[' . LANGUAGE_NONE .']"]' => array('checked' => TRUE),
-    ),
-  );
-
-  // Show the 'Visit Date(s)' field if the 'Pomerantz Career Center Visited'
-  // checkbox is checked.
-  $form['field_visited_date']['#states'] = array(
-    'visible' => array(
-      ':input[name="field_has_visited[' . LANGUAGE_NONE .']"]' => array('checked' => TRUE),
-    ),
-  );
-}

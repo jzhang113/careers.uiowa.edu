@@ -29,7 +29,7 @@ function events_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'mini';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
@@ -102,11 +102,10 @@ function events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Date -  start date (field_mcf_date) */
+  $handler->display->display_options['sorts']['field_mcf_date_value']['id'] = 'field_mcf_date_value';
+  $handler->display->display_options['sorts']['field_mcf_date_value']['table'] = 'field_data_field_mcf_date';
+  $handler->display->display_options['sorts']['field_mcf_date_value']['field'] = 'field_mcf_date_value';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';

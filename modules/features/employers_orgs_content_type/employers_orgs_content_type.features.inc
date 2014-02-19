@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function employers_orgs_content_type_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
   if ($module == "panelizer" && $api == "panelizer") {
     return array("version" => "1");
   }
@@ -26,7 +29,7 @@ function employers_orgs_content_type_node_info() {
       'base' => 'node_content',
       'description' => t('Use <em>Employers and Organizations</em> to create \'profiles\' for outside organizations that have a relationship with the Pomerantz Career Center.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Company/Organization'),
       'help' => '',
     ),
   );
