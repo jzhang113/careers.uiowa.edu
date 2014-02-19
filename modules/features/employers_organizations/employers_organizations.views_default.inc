@@ -68,7 +68,7 @@ function employers_organizations_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'employers_orgs_content_type' => 'employers_orgs_content_type',
+    'employers_organizations' => 'employers_organizations',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Content: Date -  start date (field_mcf_date) */

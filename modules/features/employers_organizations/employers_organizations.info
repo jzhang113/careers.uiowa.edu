@@ -104,4 +104,3 @@ features[variable][] = pathauto_nodesymlinks_employers_organizations_pattern
 features[variable][] = webform_node_employers_organizations
 features[views_view][] = employer_showcase
 features_exclude[dependencies][news_content_type] = news_content_type
-project path = sites/careers.uiowa.edu/modules/features
