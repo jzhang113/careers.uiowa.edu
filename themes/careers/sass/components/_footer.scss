@@ -1,0 +1,31 @@
+#footer-upper-wrapper {
+  h2 {
+    border-bottom: 1px solid $yellow;
+    padding-bottom: 2px;
+  }
+
+  a.button {
+    background-color: $yellow;
+    color: #000;
+
+    &:hover, &:focus {
+      background-color: #fff;
+    }
+  }
+}
+
+.region-footer .block {
+  h2.block-title {
+    @include offscreen;
+    background-color: $yellow;
+    color: #000;
+  }
+
+  .block-content {
+    text-align: center;
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

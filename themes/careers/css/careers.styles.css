@@ -207,7 +207,7 @@ html {
 
 /* line 6, ../sass/base/_typography.scss */
 body {
-  color: #333;
+  color: #333333;
   background-color: white;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
@@ -235,20 +235,20 @@ h1 {
 
 /* line 28, ../sass/base/_typography.scss */
 h2 {
-  font-size: 25px;
-  font-size: 2.5rem;
-}
-
-/* line 33, ../sass/base/_typography.scss */
-h3 {
   font-size: 20px;
   font-size: 2rem;
 }
 
-/* line 38, ../sass/base/_typography.scss */
-h4 {
+/* line 33, ../sass/base/_typography.scss */
+h3 {
   font-size: 18px;
   font-size: 1.8rem;
+}
+
+/* line 38, ../sass/base/_typography.scss */
+h4 {
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /* line 43, ../sass/base/_typography.scss */
@@ -410,20 +410,6 @@ img {
   background-color: black;
   color: white;
   text-decoration: none;
-}
-
-/* line 3, ../sass/components/_contact_info.scss */
-.region-footer #block-block-2 {
-  padding: 0 0 0 15px;
-  margin-top: 10px;
-}
-@media only screen and (min-width: 40em) {
-  /* line 3, ../sass/components/_contact_info.scss */
-  .region-footer #block-block-2 {
-    width: 25%;
-    text-align: right;
-    padding: 0 15px 0 0;
-  }
 }
 
 /* line 3, ../sass/components/_employer_showcase.scss */
@@ -704,6 +690,41 @@ img {
   background-color: #ffd451;
 }
 
+/* line 2, ../sass/components/_footer.scss */
+#footer-upper-wrapper h2 {
+  border-bottom: 1px solid #ffd451;
+  padding-bottom: 2px;
+}
+/* line 7, ../sass/components/_footer.scss */
+#footer-upper-wrapper a.button {
+  background-color: #ffd451;
+  color: #000;
+}
+/* line 11, ../sass/components/_footer.scss */
+#footer-upper-wrapper a.button:hover, #footer-upper-wrapper a.button:focus {
+  background-color: #fff;
+}
+
+/* line 18, ../sass/components/_footer.scss */
+.region-footer .block h2.block-title {
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0;
+  background-color: #ffd451;
+  color: #000;
+}
+/* line 24, ../sass/components/_footer.scss */
+.region-footer .block .block-content {
+  text-align: center;
+}
+/* line 27, ../sass/components/_footer.scss */
+.region-footer .block .block-content p:last-of-type {
+  margin-bottom: 0;
+}
+
 /* line 1, ../sass/components/_front.scss */
 .front #page-title {
   position: absolute;
@@ -884,6 +905,23 @@ body {
 .region-tertiary-content,
 #columns {
   background: white;
+}
+
+/* line 110, ../sass/components/_page.scss */
+#footer-upper-wrapper {
+  background-color: #333;
+  background: url("images/bg_tile.gif") repeat;
+  color: #fafafa;
+}
+/* line 115, ../sass/components/_page.scss */
+#footer-upper-wrapper a {
+  color: #fafafa;
+}
+
+/* line 120, ../sass/components/_page.scss */
+#footer-wrapper {
+  background-color: #ffd451;
+  color: #000;
 }
 
 /* line 4, ../sass/components/_people.scss */
@@ -1419,7 +1457,7 @@ ul.quicktabs-tabs li.active a {
 }
 
 /* line 167, ../sass/utilities/_mixins.scss */
-#footer li.leaf:before {
+#footer-upper-wrapper li.leaf:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -1428,14 +1466,14 @@ ul.quicktabs-tabs li.active a {
   *margin-right: .3em;
   content: "\f105";
   font-size: 1em;
-  color: #9c8345;
+  color: #ffd451;
   display: inline-block;
   width: 10px;
   padding-right: 2px;
 }
 @media only screen and (min-width: 600px) {
   /* line 6, ../sass/components/navigation/_footer_menus.scss */
-  #footer .menu-name-menu-quick-links ul.menu {
+  #footer-upper-wrapper .menu-name-menu-quick-links ul.menu {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     -ms-column-count: 2;
@@ -1463,22 +1501,8 @@ ul.menu li.leaf {
 }
 
 /* line 1, ../sass/components/navigation/_social_media.scss */
-a.social-media, .block-menu-social-media a {
-  line-height: 2em;
-}
-/* line 4, ../sass/components/navigation/_social_media.scss */
-a.social-media:before, .block-menu-social-media a:before {
-  margin-right: 0.3em;
-  font-size: 25px;
-  font-size: 2.5rem;
-}
-/* line 9, ../sass/components/navigation/_social_media.scss */
-a.social-media:hover, .block-menu-social-media a:hover {
-  text-decoration: none;
-}
-
-/* line 14, ../sass/components/navigation/_social_media.scss */
 a[href*="facebook.com"]:before {
+  margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -1486,10 +1510,12 @@ a[href*="facebook.com"]:before {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f09a";
+  font-size: 25px;
 }
 
-/* line 18, ../sass/components/navigation/_social_media.scss */
+/* line 6, ../sass/components/navigation/_social_media.scss */
 a[href*="twitter.com"]:before {
+  margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -1497,10 +1523,12 @@ a[href*="twitter.com"]:before {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f099";
+  font-size: 25px;
 }
 
-/* line 22, ../sass/components/navigation/_social_media.scss */
+/* line 11, ../sass/components/navigation/_social_media.scss */
 a[href*="linkedin.com"]:before {
+  margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -1508,10 +1536,12 @@ a[href*="linkedin.com"]:before {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f0e1";
+  font-size: 25px;
 }
 
-/* line 26, ../sass/components/navigation/_social_media.scss */
+/* line 16, ../sass/components/navigation/_social_media.scss */
 a[href*="pinterest.com"]:before {
+  margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -1519,10 +1549,12 @@ a[href*="pinterest.com"]:before {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f0d2";
+  font-size: 25px;
 }
 
-/* line 30, ../sass/components/navigation/_social_media.scss */
+/* line 21, ../sass/components/navigation/_social_media.scss */
 a[href*="youtube.com"]:before {
+  margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -1530,10 +1562,12 @@ a[href*="youtube.com"]:before {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f167";
+  font-size: 25px;
 }
 
-/* line 34, ../sass/components/navigation/_social_media.scss */
+/* line 26, ../sass/components/navigation/_social_media.scss */
 a[href*="instagram.com"]:before {
+  margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -1541,9 +1575,50 @@ a[href*="instagram.com"]:before {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f16d";
+  font-size: 25px;
 }
 
-/* line 39, ../sass/components/navigation/_social_media.scss */
+/* line 32, ../sass/components/navigation/_social_media.scss */
+a.social-media:before, #footer .block-menu-social-media .block-content a:before {
+  height: 30px;
+  padding: 2px 3px;
+  margin-right: 0.3em;
+  text-align: center;
+  width: 30px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 42, ../sass/components/navigation/_social_media.scss */
+a.social-media:hover:before, #footer .block-menu-social-media .block-content a:hover:before, a.social-media:focus:before, #footer .block-menu-social-media .block-content a:focus:before {
+  text-decoration: none;
+}
+
+/* line 49, ../sass/components/navigation/_social_media.scss */
+#footer .block-menu-social-media ul.menu {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+}
+/* line 53, ../sass/components/navigation/_social_media.scss */
+#footer .block-menu-social-media li.leaf {
+  padding-bottom: 5px;
+}
+/* line 55, ../sass/components/navigation/_social_media.scss */
 #footer .block-menu-social-media li.leaf:before {
   content: none;
+}
+/* line 60, ../sass/components/navigation/_social_media.scss */
+#footer .block-menu-social-media .block-content a {
+  line-height: 2em;
+}
+/* line 63, ../sass/components/navigation/_social_media.scss */
+#footer .block-menu-social-media .block-content a:before {
+  background-color: #fff;
+  color: #000;
 }
