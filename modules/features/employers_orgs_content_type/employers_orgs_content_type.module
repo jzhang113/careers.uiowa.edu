@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Employers and Organizations Content Type feature.
- */
-
-include_once 'employers_orgs_content_type.features.inc';
