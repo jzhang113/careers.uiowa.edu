@@ -256,14 +256,13 @@
       </div>
     <?php endif; ?>
 
-    <?php if ($page['footer'] || $page['footer_first'] || $page['footer_second'] || $page['footer_third'] || $page['footer_fourth']): ?>
+    <?php if ($page['footer'] || $page['footer_first'] || $page['footer_second'] || $page['footer_third']): ?>
       <footer <?php if ($footer_attributes): print $footer_attributes; endif; ?>>
         <div id="footer-upper-wrapper">
           <div class="container clearfix">
             <?php if ($page['footer_first']): print render($page['footer_first']); endif; ?>
             <?php if ($page['footer_second']): print render($page['footer_second']); endif; ?>
             <?php if ($page['footer_third']): print render($page['footer_third']); endif; ?>
-            <?php if ($page['footer_fourth']): print render($page['footer_fourth']); endif; ?>
           </div>
         </div>
 

@@ -87,7 +87,6 @@
   regions[footer_first]      = Upper footer first
   regions[footer_second]     = Upper footer second
   regions[footer_third]      = Upper footer third
-  regions[footer_fourth]     = Upper footer fourth
   regions[footer]            = Footer
   regions[leaderboard]       = Leaderboard
   regions[header]            = Header
