@@ -16,10 +16,6 @@ function careers_entity_view_modes_strongarm() {
   $strongarm->name = 'entity_view_modes';
   $strongarm->value = array(
     'file' => array(
-      'employer_showcase' => array(
-        'label' => 'Employer Showcase',
-        'custom settings' => 1,
-      ),
       'featured' => array(
         'label' => 'Featured',
         'custom settings' => 1,
@@ -38,6 +34,10 @@ function careers_entity_view_modes_strongarm() {
       ),
       'square' => array(
         'label' => 'Square',
+        'custom settings' => 1,
+      ),
+      'employer_showcase' => array(
+        'label' => 'Employer Showcase',
         'custom settings' => 1,
       ),
     ),
