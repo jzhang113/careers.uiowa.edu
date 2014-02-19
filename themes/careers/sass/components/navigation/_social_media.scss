@@ -1,42 +1,69 @@
-a.social-media, .block-menu-social-media a {
-  line-height: 2em;
-
-  &:before {
-    margin-right: 0.3em;
-    @include font-size(2.5);
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 a[href*="facebook.com"]:before {
-  @include icon($fa-var-facebook);
+  margin-right: 0.3em;
+  @include icon($fa-var-facebook, $size: 25px);
 }
 
 a[href*="twitter.com"]:before {
-  @include icon($fa-var-twitter);
+  margin-right: 0.3em;
+  @include icon($fa-var-twitter, $size: 25px);
 }
 
 a[href*="linkedin.com"]:before {
-  @include icon($fa-var-linkedin);
+  margin-right: 0.3em;
+  @include icon($fa-var-linkedin, $size: 25px);
 }
 
 a[href*="pinterest.com"]:before {
-  @include icon($fa-var-pinterest);
+  margin-right: 0.3em;
+  @include icon($fa-var-pinterest, $size: 25px);
 }
 
 a[href*="youtube.com"]:before {
-  @include icon($fa-var-youtube);
+  margin-right: 0.3em;
+  @include icon($fa-var-youtube, $size: 25px);
 }
 
 a[href*="instagram.com"]:before {
-  @include icon($fa-var-instagram);
+  margin-right: 0.3em;
+  @include icon($fa-var-instagram, $size: 25px);
+}
+
+a.social-media {
+  &:before {
+    height: 30px;
+    padding: 2px 3px;
+    margin-right: 0.3em;
+    text-align: center;
+    width: 30px;
+    @include inline-block;
+  }
+
+ &:hover, &:focus {
+    &:before {
+      text-decoration: none;
+    }
+  }
 }
 
 #footer .block-menu-social-media {
-  li.leaf:before {
-    content: none;
+  ul.menu {
+    @include column-count(2);
+  }
+
+  li.leaf {
+    padding-bottom: 5px;
+    &:before {
+      content: none;
+    }
+  }
+
+  .block-content a {
+    line-height: 2em;
+
+    &:before {
+      background-color: #fff;
+      color: #000;
+      @extend a.social-media;
+    }
   }
 }

@@ -106,3 +106,18 @@ body {
 #columns {
   background: $page;
 }
+
+#footer-upper-wrapper {
+  background-color: #333;
+  background: url('images/bg_tile.gif') repeat;
+  color: $text_footer;
+
+  a {
+    color: $text_footer;
+  }
+}
+
+#footer-wrapper {
+  background-color: $yellow;
+  color: #000;
+}

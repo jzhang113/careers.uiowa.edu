@@ -1,6 +1,6 @@
-#footer {
+#footer-upper-wrapper {
   li.leaf {
-    @include angle-bullet-right;
+    @include angle-bullet-right($yellow);
   }
 
   .menu-name-menu-quick-links ul.menu {
