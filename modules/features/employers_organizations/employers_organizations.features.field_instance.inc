@@ -92,92 +92,6 @@ function employers_organizations_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employers_organizations-field_has_visited'
-  $field_instances['node-employers_organizations-field_has_visited'] = array(
-    'bundle' => 'employers_organizations',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Check if the Pomerantz Career Center has visited this employer/organization.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 12,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_has_visited',
-    'label' => 'Pomerantz Career Center Visited',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 9,
-    ),
-  );
-
-  // Exported field_instance: 'node-employers_organizations-field_is_sponsor'
-  $field_instances['node-employers_organizations-field_is_sponsor'] = array(
-    'bundle' => 'employers_organizations',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Check if this employer/organization has paid to be a sponsor. If checked, they will be featured in the showcase gallery.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 11,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_is_sponsor',
-    'label' => 'Pomerantz Career Center Sponsor',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-employers_organizations-field_location_address'
   $field_instances['node-employers_organizations-field_location_address'] = array(
     'bundle' => 'employers_organizations',
@@ -539,15 +453,11 @@ function employers_organizations_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Additional Notes');
-  t('Check if the Pomerantz Career Center has visited this employer/organization.');
-  t('Check if this employer/organization has paid to be a sponsor. If checked, they will be featured in the showcase gallery.');
   t('Description');
   t('If this organization has paid to be a sponsor, what is the date range of the sponsorship?');
   t('Location');
   t('Location Geofield');
   t('Logo');
-  t('Pomerantz Career Center Sponsor');
-  t('Pomerantz Career Center Visited');
   t('Sponsor Date');
   t('Visit Date(s)');
   t('Website Link');
