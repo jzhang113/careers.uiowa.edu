@@ -311,6 +311,10 @@ img {
   clear: left;
   margin-bottom: 10px;
 }
+/* line 33, ../sass/components/_announcements.scss */
+.view-display-id-announcements_front_content_pane .view-footer {
+  clear: both;
+}
 
 /* line 3, ../sass/components/_audience_featured.scss */
 #content .pane-featured-featured-entity-reference {
