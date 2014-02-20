@@ -59,8 +59,8 @@ function announcements_views_default_views() {
     'announcement' => 'announcement',
   );
 
-  /* Display: Announcements Archive */
-  $handler = $view->new_display('panel_pane', 'Announcements Archive', 'announcements_archive');
+  /* Display: Announcements Panel Page */
+  $handler = $view->new_display('panel_pane', 'Announcements Panel Page', 'announcements_archive');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
@@ -70,6 +70,23 @@ function announcements_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'audience' => 'audience',
+    'program' => 'program',
+    'events' => 0,
+    'people_groups' => 0,
+    'people_type' => 0,
+    'spotlights' => 0,
+    'student_status' => 0,
+    'tags' => 0,
+    'testimonials' => 0,
+    'video_type' => 0,
+  );
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -99,21 +116,6 @@ function announcements_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Field: Content: Related Link */
-  $handler->display->display_options['fields']['field_announcement_link']['id'] = 'field_announcement_link';
-  $handler->display->display_options['fields']['field_announcement_link']['table'] = 'field_data_field_announcement_link';
-  $handler->display->display_options['fields']['field_announcement_link']['field'] = 'field_announcement_link';
-  $handler->display->display_options['fields']['field_announcement_link']['label'] = '';
-  $handler->display->display_options['fields']['field_announcement_link']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_announcement_link']['click_sort_column'] = 'url';
-  /* Field: Content: Attachments */
-  $handler->display->display_options['fields']['field_announcement_attachments']['id'] = 'field_announcement_attachments';
-  $handler->display->display_options['fields']['field_announcement_attachments']['table'] = 'field_data_field_announcement_attachments';
-  $handler->display->display_options['fields']['field_announcement_attachments']['field'] = 'field_announcement_attachments';
-  $handler->display->display_options['fields']['field_announcement_attachments']['label'] = '';
-  $handler->display->display_options['fields']['field_announcement_attachments']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_announcement_attachments']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_announcement_attachments']['delta_offset'] = '0';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -121,17 +123,37 @@ function announcements_views_default_views() {
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['tid']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['title'] = '%1 Announcements';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
+    'audience' => 'audience',
+    'program' => 'program',
+  );
+  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
   /* Contextual filter: Optional Date - Month Year */
   $handler->display->display_options['arguments']['created_year_month']['id'] = 'created_year_month';
   $handler->display->display_options['arguments']['created_year_month']['table'] = 'node';
   $handler->display->display_options['arguments']['created_year_month']['field'] = 'created_year_month';
   $handler->display->display_options['arguments']['created_year_month']['ui_name'] = 'Optional Date - Month Year';
   $handler->display->display_options['arguments']['created_year_month']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['created_year_month']['title'] = '%1';
+  $handler->display->display_options['arguments']['created_year_month']['title'] = '%2 Announcements';
   $handler->display->display_options['arguments']['created_year_month']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['created_year_month']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['created_year_month']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['created_year_month']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['created_year_month']['specify_validation'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -148,39 +170,49 @@ function announcements_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'announcement' => 'announcement',
   );
-  $handler->display->display_options['allow']['use_pager'] = 0;
-  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['pane_title'] = 'All Announcements';
+  $handler->display->display_options['pane_description'] = 'All Announcements';
+  $handler->display->display_options['pane_category']['name'] = 'Announcements';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['allow']['use_pager'] = 'use_pager';
+  $handler->display->display_options['allow']['items_per_page'] = 'items_per_page';
   $handler->display->display_options['allow']['offset'] = 0;
   $handler->display->display_options['allow']['link_to_view'] = 0;
   $handler->display->display_options['allow']['more_link'] = 0;
   $handler->display->display_options['allow']['path_override'] = 0;
-  $handler->display->display_options['allow']['title_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 0;
   $handler->display->display_options['argument_input'] = array(
-    'created_year_month' => array(
+    'tid' => array(
       'type' => 'panel',
       'context' => 'entity:file.field-file-image-alt-text',
       'context_optional' => 0,
       'panel' => '0',
+      'fixed' => '',
+      'label' => 'Taxonomy term: Term ID',
+    ),
+    'created_year_month' => array(
+      'type' => 'panel',
+      'context' => 'entity:file.field-file-image-alt-text',
+      'context_optional' => 0,
+      'panel' => '1',
       'fixed' => '',
       'label' => 'Optional Date - Month Year',
     ),
   );
   $handler->display->display_options['inherit_panels_path'] = '0';
 
-  /* Display: Announcements Front */
-  $handler = $view->new_display('panel_pane', 'Announcements Front', 'announcements_front_content_pane');
+  /* Display: Promoted Announcements */
+  $handler = $view->new_display('panel_pane', 'Promoted Announcements', 'announcements_front_content_pane');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Announcements';
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['expose']['items_per_page_options'] = '4, 5, 10, 20, 40, 60';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -188,11 +220,12 @@ function announcements_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['footer'] = FALSE;
-  /* Footer: Global: Unfiltered text */
-  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
-  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="announcements">View Announcement Archive</a>';
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="announcements">View all Announcements</a>';
+  $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_announcement_image']['id'] = 'field_announcement_image';
@@ -225,24 +258,6 @@ function announcements_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '200',
   );
-  /* Field: Content: Related Link */
-  $handler->display->display_options['fields']['field_announcement_link']['id'] = 'field_announcement_link';
-  $handler->display->display_options['fields']['field_announcement_link']['table'] = 'field_data_field_announcement_link';
-  $handler->display->display_options['fields']['field_announcement_link']['field'] = 'field_announcement_link';
-  $handler->display->display_options['fields']['field_announcement_link']['label'] = '';
-  $handler->display->display_options['fields']['field_announcement_link']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_announcement_link']['click_sort_column'] = 'url';
-  /* Field: Content: Attachments */
-  $handler->display->display_options['fields']['field_announcement_attachments']['id'] = 'field_announcement_attachments';
-  $handler->display->display_options['fields']['field_announcement_attachments']['table'] = 'field_data_field_announcement_attachments';
-  $handler->display->display_options['fields']['field_announcement_attachments']['field'] = 'field_announcement_attachments';
-  $handler->display->display_options['fields']['field_announcement_attachments']['label'] = '';
-  $handler->display->display_options['fields']['field_announcement_attachments']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_announcement_attachments']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_announcement_attachments']['settings'] = array(
-    'file_view_mode' => 'default',
-  );
-  $handler->display->display_options['fields']['field_announcement_attachments']['delta_offset'] = '0';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -270,9 +285,13 @@ function announcements_views_default_views() {
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['value'] = '1';
+  $handler->display->display_options['pane_title'] = 'Promoted Announcements';
+  $handler->display->display_options['pane_description'] = 'Promoted Announcements';
+  $handler->display->display_options['pane_category']['name'] = 'Announcements';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: Monthly Archive Links */
-  $handler = $view->new_display('panel_pane', 'Monthly Archive Links', 'announcements_archive_monthly_links');
+  /* Display: Announcements Monthly Archive */
+  $handler = $view->new_display('panel_pane', 'Announcements Monthly Archive', 'announcements_archive_monthly_links');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Monthly Archive';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
@@ -293,14 +312,11 @@ function announcements_views_default_views() {
   $handler->display->display_options['arguments']['created_year_month']['table'] = 'node';
   $handler->display->display_options['arguments']['created_year_month']['field'] = 'created_year_month';
   $handler->display->display_options['arguments']['created_year_month']['default_action'] = 'summary';
-  $handler->display->display_options['arguments']['created_year_month']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['created_year_month']['title'] = '%1';
   $handler->display->display_options['arguments']['created_year_month']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['created_year_month']['summary']['sort_order'] = 'desc';
   $handler->display->display_options['arguments']['created_year_month']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['created_year_month']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['created_year_month']['summary_options']['base_path'] = 'announcements';
-  $handler->display->display_options['arguments']['created_year_month']['summary_options']['override'] = TRUE;
+  $handler->display->display_options['arguments']['created_year_month']['summary_options']['base_path'] = 'announcements/all';
   $handler->display->display_options['arguments']['created_year_month']['summary_options']['items_per_page'] = '30';
   $handler->display->display_options['arguments']['created_year_month']['specify_validation'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -319,7 +335,19 @@ function announcements_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'announcement' => 'announcement',
   );
-  $handler->display->display_options['pane_title'] = 'Monthly Archive Links';
+  $handler->display->display_options['pane_title'] = 'Announcements Monthly Archive';
+  $handler->display->display_options['pane_description'] = 'Announcements Monthly Archive';
+  $handler->display->display_options['pane_category']['name'] = 'Announcements';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 'items_per_page';
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_announcements');
@@ -339,18 +367,25 @@ function announcements_views_default_views() {
   );
   $handler->display->display_options['sitename_title'] = 1;
 
-  /* Display: Announcements Subpages */
-  $handler = $view->new_display('panel_pane', 'Announcements Subpages', 'announcements_subpage_pane');
+  /* Display: Announcements by Term */
+  $handler = $view->new_display('panel_pane', 'Announcements by Term', 'announcements_subpage_pane');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Announcements';
   $handler->display->display_options['display_description'] = 'For display on audience portals or program pages.';
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="announcements/!1">View all %1 Announcements</a>';
+  $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
@@ -370,26 +405,31 @@ function announcements_views_default_views() {
     'video_type' => 0,
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Taxonomy term: Term ID */
-  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'raw';
-  $handler->display->display_options['arguments']['tid']['default_argument_options']['index'] = '0';
-  $handler->display->display_options['arguments']['tid']['default_argument_options']['use_alias'] = TRUE;
-  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
-  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
+  /* Contextual filter: Taxonomy term: Name */
+  $handler->display->display_options['arguments']['name']['id'] = 'name';
+  $handler->display->display_options['arguments']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['name']['field'] = 'name';
+  $handler->display->display_options['arguments']['name']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['name']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['name']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['name']['title'] = '%1';
+  $handler->display->display_options['arguments']['name']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['name']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['name']['default_argument_options']['use_alias'] = TRUE;
+  $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['name']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['name']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['name']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['name']['validate_options']['vocabularies'] = array(
     'audience' => 'audience',
     'program' => 'program',
   );
-  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
-  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['arguments']['name']['validate_options']['type'] = 'name';
+  $handler->display->display_options['arguments']['name']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['arguments']['name']['limit'] = '0';
+  $handler->display->display_options['arguments']['name']['path_case'] = 'lower';
+  $handler->display->display_options['arguments']['name']['transform_dash'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -406,6 +446,19 @@ function announcements_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'announcement' => 'announcement',
   );
+  $handler->display->display_options['pane_title'] = 'Announcements by Term';
+  $handler->display->display_options['pane_description'] = 'Announcements by Term';
+  $handler->display->display_options['pane_category']['name'] = 'Announcements';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 'items_per_page';
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $handler->display->display_options['argument_input'] = array(
     'tid' => array(
       'type' => 'context',
@@ -416,6 +469,66 @@ function announcements_views_default_views() {
       'label' => 'Taxonomy term: Term ID',
     ),
   );
+
+  /* Display: Announcement Terms */
+  $handler = $view->new_display('panel_pane', 'Announcement Terms', 'panel_pane_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Filter by Keywords';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'audience' => 'audience',
+    'program' => 'program',
+    'events' => 0,
+    'people_groups' => 0,
+    'people_type' => 0,
+    'spotlights' => 0,
+    'student_status' => 0,
+    'tags' => 0,
+    'testimonials' => 0,
+    'video_type' => 0,
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Name */
+  $handler->display->display_options['arguments']['name']['id'] = 'name';
+  $handler->display->display_options['arguments']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['name']['field'] = 'name';
+  $handler->display->display_options['arguments']['name']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['name']['default_action'] = 'summary';
+  $handler->display->display_options['arguments']['name']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['name']['summary_options']['base_path'] = 'announcements';
+  $handler->display->display_options['arguments']['name']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['name']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['name']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['name']['validate_options']['vocabularies'] = array(
+    'audience' => 'audience',
+    'program' => 'program',
+  );
+  $handler->display->display_options['arguments']['name']['limit'] = '0';
+  $handler->display->display_options['arguments']['name']['case'] = 'ucwords';
+  $handler->display->display_options['arguments']['name']['path_case'] = 'lower';
+  $handler->display->display_options['arguments']['name']['transform_dash'] = TRUE;
+  $handler->display->display_options['pane_title'] = 'Announcement Terms';
+  $handler->display->display_options['pane_description'] = 'Announcement Terms';
+  $handler->display->display_options['pane_category']['name'] = 'Announcements';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $export['announcements'] = $view;
 
   return $export;

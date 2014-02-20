@@ -15,18 +15,42 @@ function announcements_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Announcements';
   $page->admin_description = '';
-  $page->path = 'announcements/!month';
+  $page->path = 'announcements/!audience/!month';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
   );
   $page->menu = array();
   $page->arguments = array(
+    'audience' => array(
+      'id' => 1,
+      'identifier' => 'Taxonomy term: ID',
+      'name' => 'term',
+      'settings' => array(
+        'input_form' => 'term',
+        'vids' => array(
+          2 => '2',
+          11 => '11',
+          3 => 0,
+          10 => 0,
+          9 => 0,
+          8 => 0,
+          12 => 0,
+          1 => 0,
+          5 => 0,
+          7 => 0,
+        ),
+        'breadcrumb' => 1,
+        'transform' => 1,
+      ),
+    ),
     'month' => array(
-      'id' => '',
-      'identifier' => '',
-      'argument' => '',
-      'settings' => array(),
+      'id' => 1,
+      'identifier' => 'Date',
+      'name' => 'string',
+      'settings' => array(
+        'use_tail' => 0,
+      ),
     ),
   );
   $page->conf = array(
@@ -88,10 +112,13 @@ function announcements_default_page_manager_pages() {
     $pane->pid = 'new-2';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'announcements-announcements_archive_monthly_links';
+    $pane->subtype = 'announcements-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -104,6 +131,24 @@ function announcements_default_page_manager_pages() {
     $display->panels['sidebar'][0] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'announcements-announcements_archive_monthly_links';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-3'] = $pane;
+    $display->panels['sidebar'][1] = 'new-3';
+    $pane = new stdClass();
+    $pane->pid = 'new-4';
     $pane->panel = 'sidebar';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -125,10 +170,10 @@ function announcements_default_page_manager_pages() {
       'css_class' => 'rss-feed',
     );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['sidebar'][1] = 'new-3';
+    $display->content['new-4'] = $pane;
+    $display->panels['sidebar'][2] = 'new-4';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
