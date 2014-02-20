@@ -74,11 +74,12 @@ function video_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'admin_title' => 'Career Tube Intro Text',
+      'admin_title' => 'Career Tube Header Text',
       'title' => '',
       'body' => '<p><span style="color: rgb(51, 51, 51); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 15.671875px;">The Pomerantz Career Center has developed a series of video seminars designed to help you move through the various stages of the job search process. We have also partnered with CareerTV.com to bring you additional short informational videos on a variety of topics. To get started, simply select a topic from the menu below.</span></p>',
       'format' => 'filtered_html',
       'substitute' => TRUE,
+      'name' => 'career_tube_header_text',
     );
     $pane->cache = array();
     $pane->style = array(

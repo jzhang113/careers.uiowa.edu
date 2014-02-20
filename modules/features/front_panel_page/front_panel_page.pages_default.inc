@@ -102,13 +102,17 @@ function front_panel_page_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-2';
     $pane->panel = 'contentcolumn2';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'homepage_pane-homepage_block';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+      'name' => 'homepage_custom_content',
     );
     $pane->cache = array();
     $pane->style = array(
