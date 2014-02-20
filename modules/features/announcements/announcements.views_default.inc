@@ -236,7 +236,7 @@ function announcements_views_default_views() {
   $handler->display->display_options['fields']['field_announcement_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_announcement_image']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_announcement_image']['settings'] = array(
-    'file_view_mode' => 'square',
+    'file_view_mode' => 'square_small',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';

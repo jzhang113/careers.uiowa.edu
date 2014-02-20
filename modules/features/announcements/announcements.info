@@ -85,5 +85,6 @@ features_exclude[dependencies][announcements_content_type] = announcements_conte
 features_exclude[dependencies][audience_taxonomy] = audience_taxonomy
 features_exclude[dependencies][inthenews] = inthenews
 features_exclude[dependencies][program_taxonomy] = program_taxonomy
+features_exclude[dependencies][file_entity] = file_entity
 features_exclude[field_base][body] = body
 features_exclude[taxonomy][program] = program
