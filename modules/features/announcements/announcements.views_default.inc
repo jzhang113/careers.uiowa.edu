@@ -131,6 +131,7 @@ function announcements_views_default_views() {
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
   $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['tid']['exception']['title_enable'] = TRUE;
   $handler->display->display_options['arguments']['tid']['title_enable'] = TRUE;
   $handler->display->display_options['arguments']['tid']['title'] = '%1 Announcements';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
