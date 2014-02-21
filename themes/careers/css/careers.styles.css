@@ -593,25 +593,19 @@ img {
 }
 
 /* line 37, ../sass/components/_events.scss */
-.pane-events-events-categories,
-.pane-views-exp-events-events-list {
-  background-color: whitesmoke;
-}
-
-/* line 42, ../sass/components/_events.scss */
 .pane-views-exp-events-events-list .views-submit-button, .pane-views-exp-events-events-list .views-reset-button {
   width: auto;
 }
-/* line 45, ../sass/components/_events.scss */
+/* line 40, ../sass/components/_events.scss */
 .pane-views-exp-events-events-list input[type="text"], .pane-views-exp-events-events-list .views-widget-filter-field_event_category_tid, .pane-views-exp-events-events-list .form-select {
   width: 99%;
 }
 
-/* line 50, ../sass/components/_events.scss */
+/* line 45, ../sass/components/_events.scss */
 .field-name-field-mcf-date {
   margin-bottom: 5px;
 }
-/* line 54, ../sass/components/_events.scss */
+/* line 49, ../sass/components/_events.scss */
 .field-name-field-mcf-date .field-items:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -626,11 +620,11 @@ img {
   float: left;
 }
 
-/* line 62, ../sass/components/_events.scss */
+/* line 57, ../sass/components/_events.scss */
 .field-name-field-mcf-location {
   margin-bottom: 5px;
 }
-/* line 66, ../sass/components/_events.scss */
+/* line 61, ../sass/components/_events.scss */
 .field-name-field-mcf-location .field-items:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -804,19 +798,14 @@ img {
   padding: 10px;
 }
 
-/* line 2, ../sass/components/_in_the_news.scss */
-.pane-inthenews-inthenews-archive-links {
-  background-color: whitesmoke;
-}
-
-/* line 7, ../sass/components/_in_the_news.scss */
+/* line 4, ../sass/components/_in_the_news.scss */
 .view-display-id-inthenews .views-row {
   height: auto;
   margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
-/* line 11, ../sass/components/_in_the_news.scss */
+/* line 8, ../sass/components/_in_the_news.scss */
 .view-display-id-inthenews .views-row-last {
   border-bottom: 0px;
 }
