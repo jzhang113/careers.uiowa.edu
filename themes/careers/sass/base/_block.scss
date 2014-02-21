@@ -1,3 +1,9 @@
 .block {
   padding: $gutters;
 }
+
+.block{
+  .views-summary {
+    @extend %views-summary;
+  }
+}
