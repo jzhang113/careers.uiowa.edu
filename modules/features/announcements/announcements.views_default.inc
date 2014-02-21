@@ -479,7 +479,7 @@ function announcements_views_default_views() {
   $handler->display->display_options['inherit_panels_path'] = '0';
 
   /* Display: Announcement Terms */
-  $handler = $view->new_display('panel_pane', 'Announcement Terms', 'panel_pane_1');
+  $handler = $view->new_display('panel_pane', 'Announcement Terms', 'announcements_archive_term_links');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Filter by Keywords';
   $handler->display->display_options['defaults']['pager'] = FALSE;
