@@ -55,3 +55,43 @@
     }
   }
 }
+
+%views-summary {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    position: relative;
+    @include hr;
+    padding-right: 35px;
+  }
+
+  .summary-count {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    text-align: center;
+    line-height: normal;
+    color: #333;
+    @include font-size(1.1);
+    font-weight: 800;
+    border: 1px solid $border;
+    padding: 0 3px;
+    min-width: 20px;
+  }
+
+  .has-filter {
+    .label {
+      display: none;
+    }
+
+    .active {
+      &:before {
+        @include icon($fa-var-times-circle);
+        margin-right: .4em;
+      }
+    }
+  }
+}
