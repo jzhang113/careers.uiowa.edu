@@ -509,6 +509,43 @@ function people_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-people-field_people_type'
+  $field_instances['node-people-field_people_type'] = array(
+    'bundle' => 'people',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_people_type',
+    'label' => 'Type',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Biography');
@@ -523,6 +560,7 @@ function people_field_default_field_instances() {
   t('Position');
   t('Responsibilities');
   t('Staff Member Since');
+  t('Type');
   t('Year in School');
 
   return $field_instances;

@@ -13,9 +13,9 @@ function people_default_page_manager_pages() {
   $page->api_version = 1;
   $page->name = 'people';
   $page->task = 'page';
-  $page->admin_title = 'Staff';
+  $page->admin_title = 'People';
   $page->admin_description = '';
-  $page->path = 'staff/!group';
+  $page->path = 'people/!type/!group';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
@@ -33,12 +33,34 @@ function people_default_page_manager_pages() {
     ),
   );
   $page->arguments = array(
-    'group' => array(
+    'type' => array(
       'id' => 1,
-      'identifier' => 'People Group Term Name',
+      'identifier' => 'People Type',
       'name' => 'term',
       'settings' => array(
-        'input_form' => 'term',
+        'input_form' => 'tid',
+        'vids' => array(
+          9 => '9',
+          2 => 0,
+          3 => 0,
+          10 => 0,
+          11 => 0,
+          8 => 0,
+          12 => 0,
+          1 => 0,
+          5 => 0,
+          7 => 0,
+        ),
+        'breadcrumb' => 1,
+        'transform' => 1,
+      ),
+    ),
+    'group' => array(
+      'id' => 2,
+      'identifier' => 'People Group',
+      'name' => 'term',
+      'settings' => array(
+        'input_form' => 'tid',
         'vids' => array(
           10 => '10',
           2 => 0,
@@ -69,7 +91,7 @@ function people_default_page_manager_pages() {
   $handler->handler = 'panel_context';
   $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'term name',
+    'title' => 'Professional Staff',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -81,13 +103,13 @@ function people_default_page_manager_pages() {
     'access' => array(
       'plugins' => array(
         0 => array(
-          'name' => 'term_vocabulary',
+          'name' => 'path_visibility',
           'settings' => array(
-            'vids' => array(
-              10 => '10',
-            ),
+            'visibility_setting' => '1',
+            'paths' => 'people/professional-staff
+people/professional-staff/*',
           ),
-          'context' => 'argument_term_1',
+          'context' => 'empty',
           'not' => FALSE,
         ),
       ),
@@ -112,13 +134,15 @@ function people_default_page_manager_pages() {
     $pane->pid = 'new-1';
     $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
-    $pane->subtype = 'people-people_panel_pane';
+    $pane->subtype = 'people-people_panel_pane_professional';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'arguments' => array(
-        'tid' => '%group:tid',
-      ),
+      'use_pager' => 1,
+      'pager_id' => '0',
+      'items_per_page' => '20',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -134,7 +158,7 @@ function people_default_page_manager_pages() {
     $pane->pid = 'new-2';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'people-people_groups_panel_pane';
+    $pane->subtype = 'people-people_type_panel_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -148,8 +172,26 @@ function people_default_page_manager_pages() {
     $pane->locks = array();
     $display->content['new-2'] = $pane;
     $display->panels['sidebar'][0] = 'new-2';
+    $pane = new stdClass();
+    $pane->pid = 'new-3';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'people-people_groups_panel_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-3'] = $pane;
+    $display->panels['sidebar'][1] = 'new-3';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-1';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $handler = new stdClass();
@@ -186,7 +228,7 @@ function people_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-4';
     $pane->panel = 'contentmain';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -208,20 +250,16 @@ function people_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['contentmain'][0] = 'new-3';
+    $display->content['new-4'] = $pane;
+    $display->panels['contentmain'][0] = 'new-4';
     $pane = new stdClass();
-    $pane->pid = 'new-4';
+    $pane->pid = 'new-5';
     $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
     $pane->subtype = 'people-people_panel_pane';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array(
-      'arguments' => array(
-        'tid' => 'all',
-      ),
-    );
+    $pane->configuration = array();
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -230,13 +268,13 @@ function people_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['contentmain'][1] = 'new-4';
+    $display->content['new-5'] = $pane;
+    $display->panels['contentmain'][1] = 'new-5';
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-6';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'people-people_groups_panel_pane';
+    $pane->subtype = 'people-people_type_panel_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -248,8 +286,8 @@ function people_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['sidebar'][0] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['sidebar'][0] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
