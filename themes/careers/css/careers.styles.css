@@ -747,9 +747,10 @@ img {
 /* line 11, ../sass/components/_footer.scss */
 #footer-upper-wrapper a.button:hover, #footer-upper-wrapper a.button:focus {
   background-color: #fff;
+  text-decoration: none;
 }
 
-/* line 18, ../sass/components/_footer.scss */
+/* line 19, ../sass/components/_footer.scss */
 .region-footer .block h2.block-title {
   position: absolute;
   top: -99999em;
@@ -760,11 +761,11 @@ img {
   background-color: #ffd451;
   color: #000;
 }
-/* line 24, ../sass/components/_footer.scss */
+/* line 25, ../sass/components/_footer.scss */
 .region-footer .block .block-content {
   text-align: center;
 }
-/* line 27, ../sass/components/_footer.scss */
+/* line 28, ../sass/components/_footer.scss */
 .region-footer .block .block-content p:last-of-type {
   margin-bottom: 0;
 }
@@ -1519,6 +1520,10 @@ ul.quicktabs-tabs li.active a {
     -o-column-count: 2;
     column-count: 2;
   }
+}
+/* line 13, ../sass/components/navigation/_footer_menus.scss */
+#footer-upper-wrapper a:hover, #footer-upper-wrapper a:focus {
+  text-decoration: underline;
 }
 
 /* =============================================================================

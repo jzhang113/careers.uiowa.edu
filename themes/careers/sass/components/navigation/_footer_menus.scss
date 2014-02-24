@@ -8,4 +8,10 @@
       @include column-count(2);
     }
   }
+
+  a {
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
 }
