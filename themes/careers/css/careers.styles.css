@@ -307,15 +307,14 @@ a {
 /* line 49, ../sass/base/_typography.scss */
 a:hover, a:focus {
   color: black;
-  text-decoration: underline;
 }
 
-/* line 56, ../sass/base/_typography.scss */
+/* line 55, ../sass/base/_typography.scss */
 img {
   height: auto;
   max-width: 100%;
 }
-/* line 60, ../sass/base/_typography.scss */
+/* line 59, ../sass/base/_typography.scss */
 .lt-ie9 img {
   max-width: auto;
 }
