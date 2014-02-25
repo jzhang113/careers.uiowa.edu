@@ -22,7 +22,7 @@ function announcements_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -94,16 +94,13 @@ function announcements_field_default_field_instances() {
   $field_instances['node-announcement-field_announcement_image'] = array(
     'bundle' => 'announcement',
     'deleted' => 0,
-    'description' => 'Use an image to represent the announcement. A default image will be used if none is selected.',
+    'description' => 'Use an image to represent the announcement on the homepage. A default image will be used if none is selected.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'file_entity',
-        'settings' => array(
-          'file_view_mode' => 'full',
-        ),
-        'type' => 'file_rendered',
-        'weight' => 0,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -221,7 +218,7 @@ function announcements_field_default_field_instances() {
   t('Program');
   t('Tag this announcement to one or more audiences.');
   t('Tag this announcement to one or more programs.');
-  t('Use an image to represent the announcement. A default image will be used if none is selected.');
+  t('Use an image to represent the announcement on the homepage. A default image will be used if none is selected.');
 
   return $field_instances;
 }
