@@ -122,7 +122,13 @@ function announcements_default_page_manager_pages() {
     $pane->subtype = 'announcements-announcements_archive';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'use_pager' => 1,
+      'pager_id' => '0',
+      'items_per_page' => '25',
+      'override_title' => 1,
+      'override_title_text' => '<none>',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -137,7 +143,7 @@ function announcements_default_page_manager_pages() {
     $pane->pid = 'new-3';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'announcements-panel_pane_1';
+    $pane->subtype = 'announcements-announcements_archive_term_links';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -199,8 +205,8 @@ function announcements_default_page_manager_pages() {
     $pane->locks = array();
     $display->content['new-5'] = $pane;
     $display->panels['sidebar'][2] = 'new-5';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
+  $display->hide_title = PANELS_TITLE_PANE;
+  $display->title_pane = 'new-2';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['announcements'] = $page;

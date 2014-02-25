@@ -62,6 +62,7 @@ function announcements_views_default_views() {
   /* Display: Announcements Panel Page */
   $handler = $view->new_display('panel_pane', 'Announcements Panel Page', 'announcements_archive');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Announcements';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['defaults']['query'] = FALSE;
@@ -131,7 +132,6 @@ function announcements_views_default_views() {
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
   $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['arguments']['tid']['exception']['title_enable'] = TRUE;
   $handler->display->display_options['arguments']['tid']['title_enable'] = TRUE;
   $handler->display->display_options['arguments']['tid']['title'] = '%1 Announcements';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
