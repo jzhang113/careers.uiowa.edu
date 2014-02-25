@@ -67,6 +67,7 @@ function inthenews_views_default_views() {
   /* Display: In The News */
   $handler = $view->new_display('panel_pane', 'In The News', 'inthenews');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'In The News';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -82,7 +83,7 @@ function inthenews_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h2';
   /* Field: Content: Published Date */
   $handler->display->display_options['fields']['field_published_date']['id'] = 'field_published_date';
   $handler->display->display_options['fields']['field_published_date']['table'] = 'field_data_field_published_date';
@@ -126,7 +127,7 @@ function inthenews_views_default_views() {
   $handler->display->display_options['arguments']['field_published_date_value']['table'] = 'field_data_field_published_date';
   $handler->display->display_options['arguments']['field_published_date_value']['field'] = 'field_published_date_value';
   $handler->display->display_options['arguments']['field_published_date_value']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['field_published_date_value']['title'] = 'News Articles from %1';
+  $handler->display->display_options['arguments']['field_published_date_value']['title'] = 'In The News %1';
   $handler->display->display_options['arguments']['field_published_date_value']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['field_published_date_value']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_published_date_value']['summary']['format'] = 'default_summary';
@@ -141,7 +142,7 @@ function inthenews_views_default_views() {
   $handler->display->display_options['allow']['link_to_view'] = 0;
   $handler->display->display_options['allow']['more_link'] = 0;
   $handler->display->display_options['allow']['path_override'] = 0;
-  $handler->display->display_options['allow']['title_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 0;
   $handler->display->display_options['argument_input'] = array(
