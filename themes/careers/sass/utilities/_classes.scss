@@ -21,6 +21,9 @@
 
     a, .nolink {
       color: #333;
+      &:hover {
+        color: $blue;
+      }
     }
 
     .menu-depth-2 >.menu-inner {
