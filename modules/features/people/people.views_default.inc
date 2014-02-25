@@ -383,7 +383,7 @@ function people_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h2';
   /* Field: Content: Position */
   $handler->display->display_options['fields']['field_people_position']['id'] = 'field_people_position';
   $handler->display->display_options['fields']['field_people_position']['table'] = 'field_data_field_people_position';
@@ -631,7 +631,7 @@ function people_views_default_views() {
   /* Display: Student Staff */
   $handler = $view->new_display('panel_pane', 'Student Staff', 'people_panel_pane_student');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Student Staff (Peer Advisors)';
+  $handler->display->display_options['title'] = 'Peer Advisors';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['defaults']['query'] = FALSE;
@@ -664,7 +664,7 @@ function people_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h2';
   /* Field: Content: Position */
   $handler->display->display_options['fields']['field_people_position']['id'] = 'field_people_position';
   $handler->display->display_options['fields']['field_people_position']['table'] = 'field_data_field_people_position';
