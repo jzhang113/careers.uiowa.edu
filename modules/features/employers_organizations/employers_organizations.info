@@ -54,6 +54,7 @@ features[field_instance][] = node-employers_organizations-field_logo
 features[field_instance][] = node-employers_organizations-field_sponsor_date
 features[field_instance][] = node-employers_organizations-field_visited_date
 features[field_instance][] = node-employers_organizations-field_website_link
+features[flexslider_optionset][] = employer_showcase_carousel
 features[node][] = employers_organizations
 features[page_manager_pages][] = employer_showcase
 features[panelizer_defaults][] = node:employers_organizations:default:default

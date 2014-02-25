@@ -43,7 +43,7 @@ function employers_organizations_flexslider_default_presets() {
     'maxItems' => '0',
     'move' => '0',
     'animation' => 'slide',
-    'slideshow' => 0,
+    'slideshow' => 1,
     'slideshowSpeed' => '7000',
     'directionNav' => 1,
     'controlNav' => '0',
