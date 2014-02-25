@@ -126,7 +126,7 @@ function people_views_default_views() {
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'people:people_reorder_page_all';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'people:people_reorder_page';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_arguments'] = 'none';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
@@ -404,7 +404,7 @@ function people_views_default_views() {
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'people:people_reorder_page';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'people:people_reorder_page_professional';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_arguments'] = 'none';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
@@ -677,7 +677,7 @@ function people_views_default_views() {
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'people:page_1';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'people:people_reorder_page_student';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_arguments'] = 'none';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
@@ -881,8 +881,8 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['field_people_type_tid']['vocabulary'] = 'people_type';
   $handler->display->display_options['path'] = 'admin/config/people/student-staff';
 
-  /* Display: Reorder People Default List */
-  $handler = $view->new_display('page', 'Reorder People Default List', 'people_reorder_page_all');
+  /* Display: Reorder People */
+  $handler = $view->new_display('page', 'Reorder People', 'people_reorder_page');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Reorder People';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
@@ -1017,7 +1017,7 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['field_people_exclude_value']['value'] = array(
     0 => '0',
   );
-  $handler->display->display_options['path'] = 'admin/config/people/all';
+  $handler->display->display_options['path'] = 'admin/config/people';
   $export['people'] = $view;
 
   return $export;
