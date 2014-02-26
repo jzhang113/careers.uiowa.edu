@@ -47,13 +47,13 @@ function people_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '15',
+          'weight' => '9',
         ),
         'redirect' => array(
-          'weight' => '16',
+          'weight' => '10',
         ),
       ),
       'display' => array(),
