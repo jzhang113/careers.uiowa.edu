@@ -633,12 +633,12 @@ img {
 .flexslider {
   border: none;
   box-shadow: none;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 /* line 6, ../sass/components/_flexslider.scss */
 .flexslider .flex-control-paging {
   background-color: #000;
-  bottom: -23px;
+  bottom: -21px;
   padding: 0 5px;
   text-align: left;
 }
@@ -710,10 +710,10 @@ img {
 }
 /* line 67, ../sass/components/_flexslider.scss */
 .flexslider .flex-pauseplay a {
-  bottom: -21px;
+  bottom: -20px;
   color: whitesmoke;
   display: block;
-  height: 20px;
+  height: 18px;
   width: 20px;
   overflow: hidden;
   position: absolute;
@@ -767,7 +767,7 @@ img {
   font-size: 1.5rem;
 }
 /* line 105, ../sass/components/_flexslider.scss */
-.flexslider .flex-caption .views-field-featured-title {
+.flexslider .flex-caption .views-field-field-featured-title {
   display: block;
   font-weight: 700;
   margin-right: 0.5em;
@@ -775,25 +775,25 @@ img {
   font-size: 1.8rem;
 }
 /* line 112, ../sass/components/_flexslider.scss */
-.flexslider .flex-caption .views-field-featured-caption {
+.flexslider .flex-caption .views-field-field-featured-caption {
   display: block;
 }
 /* line 116, ../sass/components/_flexslider.scss */
-.flexslider .flex-caption .views-field-featured-link {
+.flexslider .flex-caption .views-field-field-featured-link {
   display: block;
   text-align: right;
 }
 /* line 120, ../sass/components/_flexslider.scss */
-.flexslider .flex-caption .views-field-featured-link a {
+.flexslider .flex-caption .views-field-field-featured-link a {
   color: #fff;
   font-weight: normal;
 }
 /* line 124, ../sass/components/_flexslider.scss */
-.flexslider .flex-caption .views-field-featured-link a:hover, .flexslider .flex-caption .views-field-featured-link a:focus {
+.flexslider .flex-caption .views-field-field-featured-link a:hover, .flexslider .flex-caption .views-field-field-featured-link a:focus {
   color: #ffd451;
 }
 /* line 128, ../sass/components/_flexslider.scss */
-.flexslider .flex-caption .views-field-featured-link a:after {
+.flexslider .flex-caption .views-field-field-featured-link a:after {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -804,20 +804,15 @@ img {
   margin-left: 0.3em;
 }
 /* line 135, ../sass/components/_flexslider.scss */
-.flexslider .flex-caption .views-field-featured-logo {
+.flexslider .flex-caption .views-field-field-featured-logo {
   border-right: 1px dotted #fff;
   float: left;
   margin-right: 10px;
 }
 /* line 140, ../sass/components/_flexslider.scss */
-.flexslider .flex-caption .views-field-featured-logo img {
+.flexslider .flex-caption .views-field-field-featured-logo img {
   max-width: 80px;
   padding-right: 10px;
-}
-
-/* line 148, ../sass/components/_flexslider.scss */
-.flex-nav-container {
-  padding-bottom: 15px;
 }
 
 /* line 2, ../sass/components/_footer.scss */

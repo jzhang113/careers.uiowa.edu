@@ -5,3 +5,11 @@
  */
 
 include_once 'featured.features.inc';
+
+/**
+ * Process function for flexslider_list_item
+ */
+function featured_process_flexslider_list(&$vars) {
+  // Add aria-live property to all slideshows.
+  $vars['settings']['attributes']['aria-live'] = 'polite';
+}
