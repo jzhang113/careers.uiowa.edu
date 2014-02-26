@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * feeds_mastercal.feeds_importer_default.inc
+ * careers_feeds_mastercal.feeds_importer_default.inc
  */
 
 /**
  * Implements hook_feeds_importer_default().
  */
-function feeds_mastercal_feeds_importer_default() {
+function careers_feeds_mastercal_feeds_importer_default() {
   $export = array();
 
   $feeds_importer = new stdClass();
@@ -37,6 +37,7 @@ function feeds_mastercal_feeds_importer_default() {
           'xpathparser:4' => 'EventEndTime',
           'xpathparser:5' => 'Location',
           'xpathparser:6' => 'EventUrl',
+          'xpathparser:7' => 'PomerantzCareerFairEvent',
         ),
         'rawXML' => array(
           'xpathparser:1' => 0,
@@ -46,6 +47,7 @@ function feeds_mastercal_feeds_importer_default() {
           'xpathparser:4' => 0,
           'xpathparser:5' => 0,
           'xpathparser:6' => 0,
+          'xpathparser:7' => 0,
         ),
         'context' => '/events/event',
         'exp' => array(
@@ -59,6 +61,7 @@ function feeds_mastercal_feeds_importer_default() {
             'xpathparser:4' => 0,
             'xpathparser:5' => 0,
             'xpathparser:6' => 0,
+            'xpathparser:7' => 0,
           ),
         ),
         'allow_override' => 0,
@@ -105,6 +108,12 @@ function feeds_mastercal_feeds_importer_default() {
             'source' => 'xpathparser:6',
             'target' => 'field_mcf_event_url:url',
             'unique' => FALSE,
+          ),
+          7 => array(
+            'source' => 'xpathparser:7',
+            'target' => 'field_mcf_event_category',
+            'term_search' => '0',
+            'autocreate' => 1,
           ),
         ),
         'update_existing' => '2',

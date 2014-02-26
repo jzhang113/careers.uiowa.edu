@@ -11,6 +11,9 @@ function people_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "ctools_custom_content" && $api == "ctools_content") {
     return array("version" => "1");
   }
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
@@ -39,7 +42,7 @@ function people_node_info() {
       'base' => 'node_content',
       'description' => t('Use <em>People</em> to create \'profiles\' for Pomerantz Career Center professional staff and student staff (peer advisors).'),
       'has_title' => '1',
-      'title_label' => t('Full Name'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );

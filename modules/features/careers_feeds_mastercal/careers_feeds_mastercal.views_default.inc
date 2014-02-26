@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * events.views_default.inc
+ * careers_feeds_mastercal.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function events_views_default_views() {
+function careers_feeds_mastercal_views_default_views() {
   $export = array();
 
   $view = new view();
@@ -51,7 +51,7 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h2';
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_mcf_date']['id'] = 'field_mcf_date';
   $handler->display->display_options['fields']['field_mcf_date']['table'] = 'field_data_field_mcf_date';
@@ -80,13 +80,12 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_location']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_mcf_location']['type'] = 'text_plain';
   /* Field: Content: Event Category */
-  $handler->display->display_options['fields']['field_event_category']['id'] = 'field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['table'] = 'field_data_field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['field'] = 'field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['label'] = '';
-  $handler->display->display_options['fields']['field_event_category']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_event_category']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_event_category']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_mcf_event_category']['id'] = 'field_mcf_event_category';
+  $handler->display->display_options['fields']['field_mcf_event_category']['table'] = 'field_data_field_mcf_event_category';
+  $handler->display->display_options['fields']['field_mcf_event_category']['field'] = 'field_mcf_event_category';
+  $handler->display->display_options['fields']['field_mcf_event_category']['label'] = '';
+  $handler->display->display_options['fields']['field_mcf_event_category']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_event_category']['element_label_colon'] = FALSE;
   /* Field: Date Short Format */
   $handler->display->display_options['fields']['field_mcf_date_1']['id'] = 'field_mcf_date_1';
   $handler->display->display_options['fields']['field_mcf_date_1']['table'] = 'field_data_field_mcf_date';
@@ -121,14 +120,18 @@ function events_views_default_views() {
     'master_calendar_event' => 'master_calendar_event',
   );
 
-  /* Display: Teaser List */
-  $handler = $view->new_display('panel_pane', 'Teaser List', 'events_teaser_list');
+  /* Display: Front Page Events */
+  $handler = $view->new_display('panel_pane', 'Front Page Events', 'events_front_page');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['footer'] = FALSE;
   /* Footer: Global: Unfiltered text */
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="events">View All Events</a>';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="events">View all Events</a>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -167,13 +170,12 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_location']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_mcf_location']['type'] = 'text_plain';
   /* Field: Content: Event Category */
-  $handler->display->display_options['fields']['field_event_category']['id'] = 'field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['table'] = 'field_data_field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['field'] = 'field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['label'] = '';
-  $handler->display->display_options['fields']['field_event_category']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_event_category']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_event_category']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_mcf_event_category']['id'] = 'field_mcf_event_category';
+  $handler->display->display_options['fields']['field_mcf_event_category']['table'] = 'field_data_field_mcf_event_category';
+  $handler->display->display_options['fields']['field_mcf_event_category']['field'] = 'field_mcf_event_category';
+  $handler->display->display_options['fields']['field_mcf_event_category']['label'] = '';
+  $handler->display->display_options['fields']['field_mcf_event_category']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_event_category']['element_label_colon'] = FALSE;
   /* Field: Date Short Format */
   $handler->display->display_options['fields']['field_mcf_date_1']['id'] = 'field_mcf_date_1';
   $handler->display->display_options['fields']['field_mcf_date_1']['table'] = 'field_data_field_mcf_date';
@@ -189,10 +191,15 @@ function events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
+  $handler->display->display_options['pane_title'] = 'Front Page Events';
+  $handler->display->display_options['pane_description'] = 'Front Page Events';
+  $handler->display->display_options['pane_category']['name'] = 'Events';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: Events Listing */
-  $handler = $view->new_display('panel_pane', 'Events Listing', 'events_list');
+  /* Display: Events Panel Page */
+  $handler = $view->new_display('panel_pane', 'Events Panel Page', 'events_panel_page');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Events';
   $handler->display->display_options['defaults']['exposed_form'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
@@ -212,7 +219,7 @@ function events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h2';
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_mcf_date']['id'] = 'field_mcf_date';
   $handler->display->display_options['fields']['field_mcf_date']['table'] = 'field_data_field_mcf_date';
@@ -250,29 +257,28 @@ function events_views_default_views() {
     'trim_length' => '200',
   );
   /* Field: Content: Event Category */
-  $handler->display->display_options['fields']['field_event_category']['id'] = 'field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['table'] = 'field_data_field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['field'] = 'field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['label'] = '';
-  $handler->display->display_options['fields']['field_event_category']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_event_category']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_event_category']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_mcf_event_category']['id'] = 'field_mcf_event_category';
+  $handler->display->display_options['fields']['field_mcf_event_category']['table'] = 'field_data_field_mcf_event_category';
+  $handler->display->display_options['fields']['field_mcf_event_category']['field'] = 'field_mcf_event_category';
+  $handler->display->display_options['fields']['field_mcf_event_category']['label'] = '';
+  $handler->display->display_options['fields']['field_mcf_event_category']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_mcf_event_category']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Event Category (field_event_category) */
-  $handler->display->display_options['arguments']['field_event_category_tid']['id'] = 'field_event_category_tid';
-  $handler->display->display_options['arguments']['field_event_category_tid']['table'] = 'field_data_field_event_category';
-  $handler->display->display_options['arguments']['field_event_category_tid']['field'] = 'field_event_category_tid';
-  $handler->display->display_options['arguments']['field_event_category_tid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_event_category_tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_event_category_tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_event_category_tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_event_category_tid']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['field_event_category_tid']['validate']['type'] = 'taxonomy_term';
-  $handler->display->display_options['arguments']['field_event_category_tid']['validate_options']['vocabularies'] = array(
+  /* Contextual filter: Content: Event Category (field_mcf_event_category) */
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['id'] = 'field_mcf_event_category_tid';
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['table'] = 'field_data_field_mcf_event_category';
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['field'] = 'field_mcf_event_category_tid';
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['validate_options']['vocabularies'] = array(
     'events' => 'events',
   );
-  $handler->display->display_options['arguments']['field_event_category_tid']['validate_options']['type'] = 'convert';
-  $handler->display->display_options['arguments']['field_event_category_tid']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['validate_options']['transform'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -290,26 +296,25 @@ function events_views_default_views() {
     'master_calendar_event' => 'master_calendar_event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Event Category (field_event_category) */
-  $handler->display->display_options['filters']['field_event_category_tid']['id'] = 'field_event_category_tid';
-  $handler->display->display_options['filters']['field_event_category_tid']['table'] = 'field_data_field_event_category';
-  $handler->display->display_options['filters']['field_event_category_tid']['field'] = 'field_event_category_tid';
-  $handler->display->display_options['filters']['field_event_category_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_event_category_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_event_category_tid']['expose']['operator_id'] = 'field_event_category_tid_op';
-  $handler->display->display_options['filters']['field_event_category_tid']['expose']['label'] = 'Event Category';
-  $handler->display->display_options['filters']['field_event_category_tid']['expose']['operator'] = 'field_event_category_tid_op';
-  $handler->display->display_options['filters']['field_event_category_tid']['expose']['identifier'] = 'field_event_category_tid';
-  $handler->display->display_options['filters']['field_event_category_tid']['expose']['remember_roles'] = array(
+  /* Filter criterion: Content: Event Category (field_mcf_event_category) */
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['id'] = 'field_mcf_event_category_tid';
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['table'] = 'field_data_field_mcf_event_category';
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['field'] = 'field_mcf_event_category_tid';
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['expose']['operator_id'] = 'field_mcf_event_category_tid_op';
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['expose']['label'] = 'Event Category';
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['expose']['operator'] = 'field_mcf_event_category_tid_op';
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['expose']['identifier'] = 'field_mcf_event_category_tid';
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
     4 => 0,
     5 => 0,
   );
-  $handler->display->display_options['filters']['field_event_category_tid']['reduce_duplicates'] = TRUE;
-  $handler->display->display_options['filters']['field_event_category_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_event_category_tid']['vocabulary'] = 'events';
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_mcf_event_category_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Date -  start date (field_mcf_date) */
   $handler->display->display_options['filters']['field_mcf_date_value']['id'] = 'field_mcf_date_value';
   $handler->display->display_options['filters']['field_mcf_date_value']['table'] = 'field_data_field_mcf_date';
@@ -337,77 +342,46 @@ function events_views_default_views() {
     3 => array(),
   );
   $handler->display->display_options['filters']['field_mcf_date_value']['form_type'] = 'date_popup';
+  $handler->display->display_options['pane_title'] = 'Events Panel Page';
+  $handler->display->display_options['pane_description'] = 'Events Panel Page';
+  $handler->display->display_options['pane_category']['name'] = 'Events';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['allow']['use_pager'] = 'use_pager';
+  $handler->display->display_options['allow']['items_per_page'] = 'items_per_page';
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $handler->display->display_options['argument_input'] = array(
-    'field_event_category_tid' => array(
+    'field_mcf_event_category_tid' => array(
       'type' => 'panel',
       'context' => 'entity:file.field-file-image-alt-text',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
-      'label' => 'Content: Event Category (field_event_category)',
+      'label' => 'Content: Event Category (field_mcf_event_category)',
     ),
   );
   $handler->display->display_options['inherit_panels_path'] = '1';
 
-  /* Display: Event Categories */
-  $handler = $view->new_display('panel_pane', 'Event Categories', 'events_categories');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Event Categories';
-  $handler->display->display_options['enabled'] = FALSE;
-  $handler->display->display_options['defaults']['group_by'] = FALSE;
-  $handler->display->display_options['group_by'] = TRUE;
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid']['id'] = 'nid';
-  $handler->display->display_options['fields']['nid']['table'] = 'node';
-  $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  $handler->display->display_options['fields']['nid']['group_type'] = 'count';
-  $handler->display->display_options['fields']['nid']['label'] = '';
-  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['nid']['prefix'] = '(';
-  $handler->display->display_options['fields']['nid']['suffix'] = ')';
-  /* Field: Content: Event Category */
-  $handler->display->display_options['fields']['field_event_category']['id'] = 'field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['table'] = 'field_data_field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['field'] = 'field_event_category';
-  $handler->display->display_options['fields']['field_event_category']['label'] = '';
-  $handler->display->display_options['fields']['field_event_category']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_event_category']['alter']['text'] = '[field_event_category] <span class="summary-count">[nid]</span>';
-  $handler->display->display_options['fields']['field_event_category']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_event_category']['alter']['path'] = 'events/[field_event_category]';
-  $handler->display->display_options['fields']['field_event_category']['alter']['replace_spaces'] = TRUE;
-  $handler->display->display_options['fields']['field_event_category']['alter']['path_case'] = 'lower';
-  $handler->display->display_options['fields']['field_event_category']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_event_category']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_event_category']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_event_category']['delta_offset'] = '0';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Event Category (field_event_category) */
-  $handler->display->display_options['sorts']['field_event_category_tid']['id'] = 'field_event_category_tid';
-  $handler->display->display_options['sorts']['field_event_category_tid']['table'] = 'field_data_field_event_category';
-  $handler->display->display_options['sorts']['field_event_category_tid']['field'] = 'field_event_category_tid';
-  $handler->display->display_options['sorts']['field_event_category_tid']['order'] = 'DESC';
-
-  /* Display: Subpage Events */
-  $handler = $view->new_display('panel_pane', 'Subpage Events', 'subpage_events_pane');
+  /* Display: Events by Term */
+  $handler = $view->new_display('panel_pane', 'Events by Term', 'events_term');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Events';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'View all Events';
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['defaults']['empty'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Taxonomy terms on node */
@@ -458,6 +432,10 @@ function events_views_default_views() {
   );
   $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
   $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['pane_title'] = 'Events by Term';
+  $handler->display->display_options['pane_description'] = 'Events by Term';
+  $handler->display->display_options['pane_category']['name'] = 'Events';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['argument_input'] = array(
     'tid' => array(
       'type' => 'context',

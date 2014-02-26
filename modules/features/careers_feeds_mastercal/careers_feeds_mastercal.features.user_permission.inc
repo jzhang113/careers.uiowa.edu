@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * events.features.user_permission.inc
+ * careers_feeds_mastercal.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function events_user_default_permissions() {
+function careers_feeds_mastercal_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'administer panelizer node master_calendar_event content'.
@@ -57,6 +57,15 @@ function events_user_default_permissions() {
     'name' => 'administer panelizer taxonomy_term events defaults',
     'roles' => array(),
     'module' => 'panelizer',
+  );
+
+  // Exported permission: 'clear master_calendar_feed feeds'.
+  $permissions['clear master_calendar_feed feeds'] = array(
+    'name' => 'clear master_calendar_feed feeds',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'feeds',
   );
 
   // Exported permission: 'create master_calendar_event content'.
@@ -119,6 +128,15 @@ function events_user_default_permissions() {
     'module' => 'override_node_options',
   );
 
+  // Exported permission: 'import master_calendar_feed feeds'.
+  $permissions['import master_calendar_feed feeds'] = array(
+    'name' => 'import master_calendar_feed feeds',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'feeds',
+  );
+
   // Exported permission: 'override master_calendar_event authored by option'.
   $permissions['override master_calendar_event authored by option'] = array(
     'name' => 'override master_calendar_event authored by option',
@@ -159,6 +177,15 @@ function events_user_default_permissions() {
     'name' => 'override master_calendar_event sticky option',
     'roles' => array(),
     'module' => 'override_node_options',
+  );
+
+  // Exported permission: 'unlock master_calendar_feed feeds'.
+  $permissions['unlock master_calendar_feed feeds'] = array(
+    'name' => 'unlock master_calendar_feed feeds',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'feeds',
   );
 
   return $permissions;

@@ -1,14 +1,20 @@
 <?php
 /**
  * @file
- * events.features.inc
+ * careers_feeds_mastercal.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function events_ctools_plugin_api($module = NULL, $api = NULL) {
+function careers_feeds_mastercal_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "ctools_custom_content" && $api == "ctools_content") {
+    return array("version" => "1");
+  }
+  if ($module == "feeds" && $api == "feeds_importer_default") {
+    return array("version" => "1");
+  }
+  if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
   if ($module == "page_manager" && $api == "pages_default") {
@@ -25,6 +31,6 @@ function events_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function events_views_api($module = NULL, $api = NULL) {
+function careers_feeds_mastercal_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }

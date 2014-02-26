@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * events.pages_default.inc
+ * careers_feeds_mastercal.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_pages().
  */
-function events_default_page_manager_pages() {
+function careers_feeds_mastercal_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
@@ -95,10 +95,16 @@ function events_default_page_manager_pages() {
     $pane->pid = 'new-2';
     $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
-    $pane->subtype = 'events-events_list';
+    $pane->subtype = 'events-events_panel_page';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'use_pager' => 1,
+      'pager_id' => '0',
+      'items_per_page' => '20',
+      'override_title' => 1,
+      'override_title_text' => '<none>',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -113,13 +119,13 @@ function events_default_page_manager_pages() {
     $pane->pid = 'new-3';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
-    $pane->subtype = 'views--exp-events-events_list';
+    $pane->subtype = 'views--exp-events-events_panel_page';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'inherit_path' => 1,
       'override_title' => 0,
-      'override_title_text' => 'Date Range',
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -131,7 +137,7 @@ function events_default_page_manager_pages() {
     $pane->locks = array();
     $display->content['new-3'] = $pane;
     $display->panels['sidebar'][0] = 'new-3';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-2';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

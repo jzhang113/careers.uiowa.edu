@@ -6,6 +6,6 @@
  */
 
 // Implements hook_enable().
-function feeds_mastercal_enable() {
+function careers_feeds_mastercal_enable() {
   cache_clear_all('plugins:feeds:plugins', 'cache');
 }

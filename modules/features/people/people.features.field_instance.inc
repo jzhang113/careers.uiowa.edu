@@ -22,7 +22,7 @@ function people_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -36,6 +36,48 @@ function people_field_default_field_instances() {
     'label' => 'Biography',
     'required' => 0,
     'settings' => array(
+      'display_summary' => 0,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-people-field_people_degree'
+  $field_instances['node-people-field_people_degree'] = array(
+    'bundle' => 'people',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_people_degree',
+    'label' => 'Degree',
+    'required' => 0,
+    'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -43,10 +85,10 @@ function people_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 3,
+        'size' => 60,
       ),
-      'type' => 'text_textarea',
-      'weight' => 10,
+      'type' => 'text_textfield',
+      'weight' => 5,
     ),
   );
 
@@ -89,23 +131,19 @@ function people_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-people-field_people_exclude'
-  $field_instances['node-people-field_people_exclude'] = array(
+  // Exported field_instance: 'node-people-field_people_first_name'
+  $field_instances['node-people-field_people_first_name'] = array(
     'bundle' => 'people',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Exclude this person from staff directory. An example is person that is not part of the staff that are only used for testimonials.',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 9,
+        'type' => 'text_default',
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -115,20 +153,21 @@ function people_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_people_exclude',
-    'label' => 'Exclude from directory?',
-    'required' => 0,
+    'field_name' => 'field_people_first_name',
+    'label' => 'First Name',
+    'required' => 1,
     'settings' => array(
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'text',
       'settings' => array(
-        'display_label' => 1,
+        'size' => 60,
       ),
-      'type' => 'options_onoff',
-      'weight' => 1,
+      'type' => 'text_textfield',
+      'weight' => 2,
     ),
   );
 
@@ -165,7 +204,7 @@ function people_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 11,
+      'weight' => 3,
     ),
   );
 
@@ -209,6 +248,46 @@ function people_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-people-field_people_last_name'
+  $field_instances['node-people-field_people_last_name'] = array(
+    'bundle' => 'people',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_people_last_name',
+    'label' => 'Last Name',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-people-field_people_major'
   $field_instances['node-people-field_people_major'] = array(
     'bundle' => 'people',
@@ -245,7 +324,7 @@ function people_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 6,
     ),
   );
 
@@ -298,7 +377,7 @@ function people_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_select',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -388,7 +467,7 @@ function people_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 2,
+      'weight' => 4,
     ),
   );
 
@@ -428,7 +507,7 @@ function people_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 6,
     ),
   );
 
@@ -468,7 +547,7 @@ function people_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 4,
     ),
   );
 
@@ -505,7 +584,7 @@ function people_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -542,19 +621,20 @@ function people_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Biography');
+  t('Degree');
   t('Email');
   t('Enter as many as you want, however, only the first ten will be displayed.');
-  t('Exclude from directory?');
-  t('Exclude this person from staff directory. An example is person that is not part of the staff that are only used for testimonials.');
+  t('First Name');
   t('Groups');
   t('Hometown');
+  t('Last Name');
   t('Major');
   t('Picture');
   t('Position');

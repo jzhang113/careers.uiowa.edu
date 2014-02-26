@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * events.features.taxonomy.inc
+ * careers_feeds_mastercal.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function events_taxonomy_default_vocabularies() {
+function careers_feeds_mastercal_taxonomy_default_vocabularies() {
   return array(
     'events' => array(
       'name' => 'Events',

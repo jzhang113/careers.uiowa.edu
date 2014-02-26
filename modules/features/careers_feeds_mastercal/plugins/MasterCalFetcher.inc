@@ -20,7 +20,7 @@ class MasterCalFetcher extends FeedsHTTPFetcher {
       '#title' => t('URL'),
       '#access' => FALSE,
       '#description' => t('Enter a feed URL.'),
-      '#default_value' => 'http://data.its.uiowa.edu/mastercal/custom',
+      '#default_value' => 'http://data.its.uiowa.edu/mastercal/custom-udq',
       '#maxlength' => NULL,
       '#required' => TRUE,
     );

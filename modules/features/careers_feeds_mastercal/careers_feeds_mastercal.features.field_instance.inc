@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * feeds_mastercal.features.field_instance.inc
+ * careers_feeds_mastercal.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function feeds_mastercal_field_default_field_instances() {
+function careers_feeds_mastercal_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-master_calendar_event-body'
@@ -50,7 +50,79 @@ function feeds_mastercal_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
+      'weight' => -4,
+    ),
+  );
+
+  // Exported field_instance: 'node-master_calendar_event-field_event_audience'
+  $field_instances['node-master_calendar_event-field_event_audience'] = array(
+    'bundle' => 'master_calendar_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_audience',
+    'label' => 'Audience',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
       'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-master_calendar_event-field_event_program'
+  $field_instances['node-master_calendar_event-field_event_program'] = array(
+    'bundle' => 'master_calendar_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_program',
+    'label' => 'Program',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 3,
     ),
   );
 
@@ -103,7 +175,47 @@ function feeds_mastercal_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 3,
+      'weight' => -3,
+    ),
+  );
+
+  // Exported field_instance: 'node-master_calendar_event-field_mcf_event_category'
+  $field_instances['node-master_calendar_event-field_mcf_event_category'] = array(
+    'bundle' => 'master_calendar_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_mcf_event_category',
+    'label' => 'Event Category',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 0,
     ),
   );
 
@@ -157,7 +269,7 @@ function feeds_mastercal_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => -1,
     ),
   );
 
@@ -196,16 +308,19 @@ function feeds_mastercal_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => -2,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Audience');
   t('Body');
   t('Date');
+  t('Event Category');
   t('Event URL');
   t('Location');
+  t('Program');
 
   return $field_instances;
 }

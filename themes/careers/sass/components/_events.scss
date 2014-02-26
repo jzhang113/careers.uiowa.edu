@@ -1,6 +1,6 @@
 // Events
-.view-display-id-events_list,
-.view-display-id-events_teaser_list {
+.view-display-id-events_panel_page,
+.view-display-id-events_front_page {
   .views-field-field-mcf-date {
     margin-bottom: 5px;
 
@@ -33,7 +33,7 @@
   }
 }
 
-.pane-views-exp-events-events-list {
+.pane-views-exp-events-events-panel-page {
   .views-submit-button, .views-reset-button {
     width: auto;
   }
