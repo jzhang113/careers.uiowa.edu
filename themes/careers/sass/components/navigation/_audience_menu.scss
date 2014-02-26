@@ -23,7 +23,7 @@
       }
 
       @media #{$desktop} {
-        @include font-size(1.8);
+        @include font-size(1.9);
       }
     }
 
@@ -57,7 +57,7 @@
       ul:before {
         // add triange to "start here" label
         @media #{$responsive-nav} {
-          border-bottom: 17px solid $yellow;;
+          border-bottom: 19px solid $yellow;;
           border-left: 19px solid #000;
           border-top: 19px solid $yellow;
           content: "";
@@ -69,9 +69,9 @@
         }
         
         @media #{$desktop} {
-          border-bottom: 20px solid $yellow;;
-          border-left: 21px solid #000;
-          border-top: 21px solid $yellow;
+          border-bottom: 21px solid $yellow;;
+          border-left: 22px solid #000;
+          border-top: 22px solid $yellow;
         }
       }
 
@@ -102,7 +102,7 @@
 
         @media #{$desktop} {
           padding: 10px 26px;
-          @include font-size(1.8);
+          @include font-size(1.9);
         }
       }
     }
