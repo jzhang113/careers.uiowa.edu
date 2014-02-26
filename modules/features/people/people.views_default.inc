@@ -84,7 +84,7 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Content: Exclude from directory? (field_people_exclude) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
   $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
   $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
@@ -250,7 +250,7 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Content: Exclude from directory? (field_people_exclude) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
   $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
   $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
@@ -444,7 +444,7 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Content: Exclude from directory? (field_people_exclude) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
   $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
   $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
@@ -610,7 +610,7 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Content: Exclude from directory? (field_people_exclude) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
   $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
   $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
@@ -697,7 +697,7 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Content: Exclude from directory? (field_people_exclude) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
   $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
   $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
@@ -863,7 +863,7 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Content: Exclude from directory? (field_people_exclude) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
   $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
   $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
@@ -1010,7 +1010,7 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Content: Exclude from directory? (field_people_exclude) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
   $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
   $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
