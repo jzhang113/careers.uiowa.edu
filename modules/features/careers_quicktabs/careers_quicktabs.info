@@ -9,6 +9,7 @@ dependencies[] = strongarm
 features[ctools][] = quicktabs:quicktabs:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
+features[quicktabs][] = announcements_events
 features[quicktabs][] = subpage_announcements_events
 features[user_permission][] = administer quicktabs
 features[variable][] = quicktabs_tabstyle
