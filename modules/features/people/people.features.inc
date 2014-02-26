@@ -39,7 +39,7 @@ function people_node_info() {
       'base' => 'node_content',
       'description' => t('Use <em>People</em> to create \'profiles\' for Pomerantz Career Center professional staff and student staff (peer advisors).'),
       'has_title' => '1',
-      'title_label' => t('Full Name'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );

@@ -20,6 +20,27 @@ function people_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_node_people';
+  $strongarm->value = '1';
+  $export['auto_entitylabel_node_people'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_pattern_node_people';
+  $strongarm->value = '[node:field-people-first-name] [node:field-people-last-name]';
+  $export['auto_entitylabel_pattern_node_people'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_php_node_people';
+  $strongarm->value = 0;
+  $export['auto_entitylabel_php_node_people'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__people';
   $strongarm->value = array(
     'view_modes' => array(),
@@ -29,7 +50,10 @@ function people_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '12',
+          'weight' => '15',
+        ),
+        'redirect' => array(
+          'weight' => '16',
         ),
       ),
       'display' => array(),
