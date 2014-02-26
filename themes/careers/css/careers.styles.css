@@ -366,20 +366,6 @@ img {
   clear: both;
 }
 
-/* line 3, ../sass/components/_audience_featured.scss */
-#content .pane-featured-featured-entity-reference {
-  padding-bottom: 0;
-}
-/* line 7, ../sass/components/_audience_featured.scss */
-#content .pane-featured-featured-entity-reference .featured-logo img {
-  max-width: 80px;
-  max-height: 80px;
-}
-/* line 13, ../sass/components/_audience_featured.scss */
-#content .pane-featured-featured-entity-reference .block-content {
-  padding: 0px;
-}
-
 /* line 4, ../sass/components/_buttons.scss */
 .region-sidebar-first .views-field-field-side-button-link .button {
   width: 100%;
@@ -645,97 +631,193 @@ img {
 
 /* line 1, ../sass/components/_flexslider.scss */
 .flexslider {
-  margin: 0px;
-  border: 0px;
-  border-radius: 0px;
-  background-color: transparent;
-  -webkit-box-shadow: white 0px 0px 0px;
-  -moz-box-shadow: white 0px 0px 0px;
-  box-shadow: white 0px 0px 0px;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
 }
-/* line 2, ../sass/components/_flexslider.scss */
-.flexslider ul {
-  padding: 0px;
-}
-/* line 10, ../sass/components/_flexslider.scss */
-.flexslider a {
-  color: white;
+/* line 6, ../sass/components/_flexslider.scss */
+.flexslider .flex-control-paging {
+  background-color: #000;
+  bottom: -23px;
+  padding: 0 5px;
+  text-align: left;
 }
 /* line 12, ../sass/components/_flexslider.scss */
-.flexslider a:hover {
-  color: #9c8345;
-  text-decoration: none;
+.flexslider .flex-control-paging li {
+  margin: 0 0.2em 0 0;
+  padding: 5px 0;
 }
-/* line 18, ../sass/components/_flexslider.scss */
-.flexslider .views-field-field-featured-text, .flexslider .views-field-field-front-featured-text {
-  display: block;
-  overflow: hidden;
-  margin-bottom: 0px;
-  width: 100%;
-  padding: 5px 10px 10px 10px;
-  color: white;
-}
-/* line 25, ../sass/components/_flexslider.scss */
-.flexslider .views-field-field-featured-text a, .flexslider .views-field-field-front-featured-text a {
-  color: white;
-}
-/* line 27, ../sass/components/_flexslider.scss */
-.flexslider .views-field-field-featured-text a:hover, .flexslider .views-field-field-front-featured-text a:hover {
-  text-decoration: underline;
-}
-/* line 31, ../sass/components/_flexslider.scss */
-.flexslider .views-field-field-featured-text .featured-logo, .flexslider .views-field-field-front-featured-text .featured-logo {
-  float: left;
-  width: auto;
-  padding-right: 10px;
-  margin-right: 10px;
-  border-right: 1px dotted white;
-}
-/* line 38, ../sass/components/_flexslider.scss */
-.flexslider .views-field-field-featured-text h3, .flexslider .views-field-field-front-featured-text h3 {
-  margin-bottom: 0px;
-}
-/* line 42, ../sass/components/_flexslider.scss */
-.flexslider .views-field-field-front-featured-text {
-  position: absolute;
-  bottom: 0px;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-/* line 48, ../sass/components/_flexslider.scss */
-.flexslider .views-field-field-featured-text {
-  background-color: black;
-}
-@media only screen and (min-width: 899px) {
-  /* line 48, ../sass/components/_flexslider.scss */
-  .flexslider .views-field-field-featured-text {
-    position: absolute;
-    bottom: 0px;
-    background-color: #000;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-}
-/* line 60, ../sass/components/_flexslider.scss */
-.flexslider .flex-control-nav {
-  width: auto;
-  position: absolute;
-  bottom: -2px;
-  right: 10px;
-}
-/* line 66, ../sass/components/_flexslider.scss */
-.flexslider .flex-control-nav li {
-  margin: 0;
-  padding: 0;
-}
-/* line 74, ../sass/components/_flexslider.scss */
+/* line 16, ../sass/components/_flexslider.scss */
 .flexslider .flex-control-paging li a {
   background-color: whitesmoke;
-  border-width: 0px;
-  margin-left: 1px;
 }
-/* line 79, ../sass/components/_flexslider.scss */
+/* line 19, ../sass/components/_flexslider.scss */
 .flexslider .flex-control-paging li a.flex-active {
   background-color: #ffd451;
+}
+/* line 26, ../sass/components/_flexslider.scss */
+.flexslider .flex-direction-nav a {
+  color: whitesmoke;
+  display: block;
+  top: auto;
+  bottom: -18px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 34, ../sass/components/_flexslider.scss */
+.flexslider .flex-direction-nav a.flex-prev, .flexslider .flex-direction-nav a.flex-next {
+  background-image: none;
+  text-indent: 0;
+  height: auto;
+  width: auto;
+  font-size: 0px;
+  font-size: 0rem;
+  right: auto;
+  left: auto;
+}
+/* line 43, ../sass/components/_flexslider.scss */
+.flexslider .flex-direction-nav a.flex-prev:before, .flexslider .flex-direction-nav a.flex-next:before {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+/* line 48, ../sass/components/_flexslider.scss */
+.flexslider .flex-direction-nav a.flex-prev {
+  right: 50px;
+}
+/* line 51, ../sass/components/_flexslider.scss */
+.flexslider .flex-direction-nav a.flex-prev:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f04a";
+}
+/* line 56, ../sass/components/_flexslider.scss */
+.flexslider .flex-direction-nav a.flex-next {
+  right: 5px;
+}
+/* line 59, ../sass/components/_flexslider.scss */
+.flexslider .flex-direction-nav a.flex-next:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f04e";
+}
+/* line 67, ../sass/components/_flexslider.scss */
+.flexslider .flex-pauseplay a {
+  bottom: -21px;
+  color: whitesmoke;
+  display: block;
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  position: absolute;
+  left: auto;
+  right: 22px;
+  opacity: 1;
+  text-align: center;
+}
+/* line 80, ../sass/components/_flexslider.scss */
+.flexslider .flex-pauseplay a:before {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 85, ../sass/components/_flexslider.scss */
+.flexslider .flex-pauseplay a.flex-pause:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f04c";
+  font-size: 12px;
+}
+/* line 89, ../sass/components/_flexslider.scss */
+.flexslider .flex-pauseplay a.flex-play:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f04b";
+  font-size: 12px;
+}
+/* line 94, ../sass/components/_flexslider.scss */
+.flexslider .flex-caption {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  color: #fff;
+  line-height: 1.2em;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+/* line 105, ../sass/components/_flexslider.scss */
+.flexslider .flex-caption .views-field-featured-title {
+  display: block;
+  font-weight: 700;
+  margin-right: 0.5em;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+/* line 112, ../sass/components/_flexslider.scss */
+.flexslider .flex-caption .views-field-featured-caption {
+  display: block;
+}
+/* line 116, ../sass/components/_flexslider.scss */
+.flexslider .flex-caption .views-field-featured-link {
+  display: block;
+  text-align: right;
+}
+/* line 120, ../sass/components/_flexslider.scss */
+.flexslider .flex-caption .views-field-featured-link a {
+  color: #fff;
+  font-weight: normal;
+}
+/* line 124, ../sass/components/_flexslider.scss */
+.flexslider .flex-caption .views-field-featured-link a:hover, .flexslider .flex-caption .views-field-featured-link a:focus {
+  color: #ffd451;
+}
+/* line 128, ../sass/components/_flexslider.scss */
+.flexslider .flex-caption .views-field-featured-link a:after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f101";
+  margin-left: 0.3em;
+}
+/* line 135, ../sass/components/_flexslider.scss */
+.flexslider .flex-caption .views-field-featured-logo {
+  border-right: 1px dotted #fff;
+  float: left;
+  margin-right: 10px;
+}
+/* line 140, ../sass/components/_flexslider.scss */
+.flexslider .flex-caption .views-field-featured-logo img {
+  max-width: 80px;
+  padding-right: 10px;
+}
+
+/* line 148, ../sass/components/_flexslider.scss */
+.flex-nav-container {
+  padding-bottom: 15px;
 }
 
 /* line 2, ../sass/components/_footer.scss */
@@ -1147,25 +1229,7 @@ ul.quicktabs-tabs li.active a {
   font-size: 1.5rem;
 }
 
-/* line 3, ../sass/components/_related_links.scss */
-#content .pane-taxonomy-term-field-audience-links, #content .pane-taxonomy-term-field-program-links {
-  padding-top: 0px;
-}
-
-/* line 8, ../sass/components/_related_links.scss */
-.field-name-field-audience-links, .field-name-field-program-links {
-  width: 100%;
-  font-size: 18px;
-  font-size: 1.8rem;
-}
-/* line 12, ../sass/components/_related_links.scss */
-.field-name-field-audience-links .field-items, .field-name-field-program-links .field-items {
-  width: 100%;
-  text-align: center;
-  background-color: #4e5b6e;
-  color: white;
-}
-/* line 18, ../sass/components/_related_links.scss */
+/* line 4, ../sass/components/_related_links.scss */
 .field-name-field-audience-links .field-items .field-item, .field-name-field-program-links .field-items .field-item {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1173,50 +1237,58 @@ ul.quicktabs-tabs li.active a {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+  margin-bottom: 10px;
+  padding: 0 5px;
   width: 100%;
 }
-@media only screen and (min-width: 1025px) {
-  /* line 18, ../sass/components/_related_links.scss */
-  .field-name-field-audience-links .field-items .field-item, .field-name-field-program-links .field-items .field-item {
-    height: 65px;
+@media only screen and (min-width: 769px) {
+  /* line 10, ../sass/components/_related_links.scss */
+  .field-name-field-audience-links .field-items .field-item:first-of-type, .field-name-field-program-links .field-items .field-item:first-of-type {
+    padding-left: 0;
   }
 }
-/* line 25, ../sass/components/_related_links.scss */
-.field-name-field-audience-links .field-items .field-item a, .field-name-field-program-links .field-items .field-item a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 10px 5px;
-  font-family: "Fjalla One", sans-serif;
-  color: white;
-  font-weight: normal;
+@media only screen and (min-width: 769px) {
+  /* line 16, ../sass/components/_related_links.scss */
+  .field-name-field-audience-links .field-items .field-item:last-of-type, .field-name-field-program-links .field-items .field-item:last-of-type {
+    padding-right: 0;
+  }
 }
-/* line 34, ../sass/components/_related_links.scss */
+/* line 22, ../sass/components/_related_links.scss */
+.field-name-field-audience-links .field-items .field-item a, .field-name-field-program-links .field-items .field-item a {
+  background-color: #4e5b6e;
+  color: white;
+  display: block;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+  padding: 10px 5px;
+  text-align: center;
+}
+/* line 31, ../sass/components/_related_links.scss */
 .field-name-field-audience-links .field-items .field-item a:hover, .field-name-field-program-links .field-items .field-item a:hover {
   background-color: black;
   color: white;
   text-decoration: none;
 }
-@media only screen and (min-width: 1025px) {
-  /* line 45, ../sass/components/_related_links.scss */
+@media only screen and (min-width: 769px) {
+  /* line 42, ../sass/components/_related_links.scss */
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(1),
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(1) ~ .field-item, .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(1),
   .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(1) ~ .field-item {
     width: 100%;
   }
-  /* line 45, ../sass/components/_related_links.scss */
+  /* line 42, ../sass/components/_related_links.scss */
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(2),
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(2) ~ .field-item, .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(2),
   .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(2) ~ .field-item {
     width: 50%;
   }
-  /* line 45, ../sass/components/_related_links.scss */
+  /* line 42, ../sass/components/_related_links.scss */
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(3),
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(3) ~ .field-item, .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(3),
   .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(3) ~ .field-item {
     width: 33.33333%;
   }
-  /* line 45, ../sass/components/_related_links.scss */
+  /* line 42, ../sass/components/_related_links.scss */
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(4),
   .field-name-field-audience-links .field-items .field-item:first-of-type:nth-last-child(4) ~ .field-item, .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(4),
   .field-name-field-program-links .field-items .field-item:first-of-type:nth-last-child(4) ~ .field-item {

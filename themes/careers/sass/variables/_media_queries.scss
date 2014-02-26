@@ -9,3 +9,5 @@ $desktop: "only screen and (min-width : 1025px)";
 $responsive-nav: "only screen and (min-width : 40em)"; //This media query is copied from responsive-nav.css
 $footer-2-and-3-inline: "only screen and (min-width: 600px)";
 $footer-all-inline: "only screen and (min-width: 900px)";
+$drupal-sidebar-stacked: "only screen and (max-width: 768px)";
+$drupal-sidebar-inline: "only screen and (min-width: 769px)";

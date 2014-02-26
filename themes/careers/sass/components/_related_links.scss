@@ -1,45 +1,42 @@
 // Related Links
-#content {
-  .pane-taxonomy-term-field-audience-links, .pane-taxonomy-term-field-program-links {
-    padding-top: 0px;
-  }
-}
-
 .field-name-field-audience-links, .field-name-field-program-links {
-  width: 100%;
-  @include font-size(1.8);
-
   .field-items {
-    width: 100%;
-    text-align: center;
-    background-color: $blue;
-    color: white;
-
     .field-item {
       @include inline-block;
+      margin-bottom: 10px;
+      padding: 0 0.5*$gutters;
       width: 100%;
-      @media #{$desktop} {
-        height: 65px;
+
+      &:first-of-type {
+        @media #{$drupal-sidebar-inline} {
+          padding-left: 0;
+        }
+      }
+
+      &:last-of-type {
+        @media #{$drupal-sidebar-inline} {
+          padding-right: 0;
+        }
       }
 
       a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        padding: 10px 5px;
-        font-family: $hireahawk;
+        background-color: $blue;
         color: white;
+        display: block;
+        font-family: $hireahawk;
         font-weight: normal;
+        padding: 10px 5px;
+        text-align: center;
 
         &:hover {
           background-color: black;
           color: white;
           text-decoration: none;
         }
-      }
+       }
     }
     // Adjust item width based on number of links 1-4 column.
-    @media #{$desktop} {
+    @media #{$drupal-sidebar-inline} {
       @for $i from 1 through 4 {
         .field-item:first-of-type:nth-last-child(#{$i}),
         .field-item:first-of-type:nth-last-child(#{$i}) ~ .field-item {

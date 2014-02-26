@@ -1,82 +1,151 @@
-.flexslider{
-  ul{
-    padding:0px;
-  }
-  margin: 0px;
-  border: 0px;
-  border-radius: 0px;
-  background-color: transparent;
-  @include box-shadow($page 0px 0px 0px);
-  a{
-    color: white;
-    &:hover {
-      color: $gold;
-      text-decoration: none;
-    }
-  }
-  // Program/Portal Pages
-  .views-field-field-featured-text, .views-field-field-front-featured-text {
-    display: block;
-    overflow:hidden;
-    margin-bottom: 0px;
-    width: 100%;
-    padding: 5px 10px 10px 10px;
-    color: white;
-    a{
-      color: white;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    .featured-logo {
-      float: left;
-      width: auto;
-      padding-right: 10px;
-      margin-right: 10px;
-      border-right: 1px dotted white;
-    }
-    h3 {
-      margin-bottom: 0px;
-    }
-  }
-  .views-field-field-front-featured-text {
-    position: absolute;
-    bottom: 0px;
-    background-color: #000;
-    background-color:rgba(0,0,0,0.7);
-  }
-  .views-field-field-featured-text {
-    background-color:rgb(0,0,0); // Old Browser Fall Back
-    @media #{$nine-hundred} {
-      position: absolute;
-      bottom: 0px;
-      background-color: #000;
-      background-color:rgba(0,0,0,0.7);
-    }
-  }
+.flexslider {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
 
-  
-  // Flexslider Pager
-  .flex-control-nav {
-    width:auto;
-    position: absolute;
-    bottom: -2px;
-    right: 10px;
+  .flex-control-paging {
+    background-color: #000;
+    bottom: -23px;
+    padding: 0 5px;
+    text-align: left;
 
     li {
-      margin: 0;
-      padding: 0;
+      margin: 0 0.2em 0 0;
+      padding: 5px 0;
+
+      a {
+        background-color: $ultralight;
+
+        &.flex-active {
+          background-color: $yellow;
+        }
+      }
     }
   }
-  //.views-field-field-featured-image .field-content{
-    //padding-bottom: 5px;
-  //}
-  .flex-control-paging li a {
-    background-color: $ultralight;
-    border-width: 0px;
-    margin-left: 1px;
+
+  .flex-direction-nav a {
+    color: $ultralight;
+    display: block;
+    top: auto;
+    bottom: -18px;
+    @include opacity(1);
+
+    &.flex-prev,
+    &.flex-next {
+      background-image: none;
+      text-indent: 0;
+      height: auto;
+      width: auto;
+      @include font-size(0);
+      right: auto;
+      left: auto;
+
+      &:before {
+        @include font-size(1.2);
+      }
+    }
+
+    &.flex-prev {
+      right: 50px;
+
+      &:before {
+        @include icon($fa-var-backward);
+      }
+    }
+
+    &.flex-next {
+      right: 5px;
+
+      &:before {
+        @include icon($fa-var-forward);
+      }
+    }
   }
-  .flex-control-paging li a.flex-active {
-    background-color: $yellow;
+
+  // Play Pause Controls
+  .flex-pauseplay {
+    a {
+      bottom: -21px;
+      color: $ultralight;
+      display: block;
+      height: 20px;
+      width: 20px;
+      overflow: hidden;
+      position: absolute;
+      left: auto;
+      right: 22px;
+      opacity: 1;
+      text-align: center;
+
+      &:before {
+        @include inline-block;
+      }
+    }
+
+    a.flex-pause:before {
+      @include icon($fa-var-pause, $size: 12px);
+    }
+
+    a.flex-play:before {
+      @include icon($fa-var-play, $size: 12px);
+    }
   }
+
+  .flex-caption {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+    bottom: 0;
+    color: #fff;
+    line-height: 1.2em;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    @include font-size(1.5);
+
+    .views-field-featured-title {
+      display: block;
+      font-weight: 700;
+      margin-right: 0.5em;
+      @include font-size(1.8);
+    }
+
+    .views-field-featured-caption {
+      display: block;
+    }
+
+    .views-field-featured-link {
+      display: block;
+      text-align: right;
+
+      a {
+        color: #fff;
+        font-weight: normal;
+
+        &:hover, &:focus {
+          color: $yellow;
+        }
+        
+        &:after {
+          @include icon($fa-var-angle-double-right);
+          margin-left: 0.3em;
+        }
+      }
+    }
+
+    .views-field-featured-logo {
+      border-right: 1px dotted #fff;
+      float: left;
+      margin-right: 10px;
+
+      img {
+        max-width: 80px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.flex-nav-container {
+  // Padding to accomodate for pager & navigation controls.
+  padding-bottom: 1.5*$gutters;
 }
