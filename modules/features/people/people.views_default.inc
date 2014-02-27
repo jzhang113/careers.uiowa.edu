@@ -84,13 +84,6 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
-  $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
-  $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
-  $handler->display->display_options['filters']['field_people_exclude_value']['value'] = array(
-    0 => '0',
-  );
 
   /* Display: Default People */
   $handler = $view->new_display('panel_pane', 'Default People', 'people_panel_pane');
@@ -99,11 +92,8 @@ function people_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
@@ -121,6 +111,42 @@ function people_views_default_views() {
     'testimonials' => 0,
     'video_type' => 0,
   );
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Picture */
+  $handler->display->display_options['fields']['field_people_picture']['id'] = 'field_people_picture';
+  $handler->display->display_options['fields']['field_people_picture']['table'] = 'field_data_field_people_picture';
+  $handler->display->display_options['fields']['field_people_picture']['field'] = 'field_people_picture';
+  $handler->display->display_options['fields']['field_people_picture']['label'] = '';
+  $handler->display->display_options['fields']['field_people_picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_people_picture']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_people_picture']['type'] = 'file_rendered';
+  $handler->display->display_options['fields']['field_people_picture']['settings'] = array(
+    'file_view_mode' => 'people_list',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h2';
+  /* Field: Content: Position */
+  $handler->display->display_options['fields']['field_people_position']['id'] = 'field_people_position';
+  $handler->display->display_options['fields']['field_people_position']['table'] = 'field_data_field_people_position';
+  $handler->display->display_options['fields']['field_people_position']['field'] = 'field_people_position';
+  $handler->display->display_options['fields']['field_people_position']['label'] = '';
+  $handler->display->display_options['fields']['field_people_position']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_people_position']['element_wrapper_type'] = 'strong';
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['field_people_type']['id'] = 'field_people_type';
+  $handler->display->display_options['fields']['field_people_type']['table'] = 'field_data_field_people_type';
+  $handler->display->display_options['fields']['field_people_type']['field'] = 'field_people_type';
+  $handler->display->display_options['fields']['field_people_type']['label'] = '';
+  $handler->display->display_options['fields']['field_people_type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_people_type']['element_wrapper_type'] = 'strong';
+  $handler->display->display_options['fields']['field_people_type']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Draggableviews: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
@@ -150,6 +176,10 @@ function people_views_default_views() {
   );
   $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
   $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['pane_title'] = 'All People Profiles';
+  $handler->display->display_options['pane_description'] = 'All People Profiles';
+  $handler->display->display_options['pane_category']['name'] = 'People';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 'use_pager';
   $handler->display->display_options['allow']['items_per_page'] = 'items_per_page';
   $handler->display->display_options['allow']['offset'] = 0;
