@@ -629,30 +629,6 @@ img {
   float: left;
 }
 
-/* line 71, ../sass/components/_events.scss */
-#views-exposed-form-events-events-panel-page label[for=edit-field-mcf-date-value] {
-  font-size: 20px;
-  font-size: 2rem;
-}
-/* line 76, ../sass/components/_events.scss */
-#views-exposed-form-events-events-panel-page #edit-field-mcf-date-value-wrapper, #views-exposed-form-events-events-panel-page .form-type-date-popup,
-#views-exposed-form-events-events-panel-page .date-padding, #views-exposed-form-events-events-panel-page .form-type-textfield {
-  width: 100%;
-}
-/* line 80, ../sass/components/_events.scss */
-#views-exposed-form-events-events-panel-page #edit-field-mcf-date-value-min-wrapper,
-#views-exposed-form-events-events-panel-page #edit-field-mcf-date-value-max-wrapper {
-  margin: 0 0 0.25em 1.5em;
-}
-/* line 83, ../sass/components/_events.scss */
-#views-exposed-form-events-events-panel-page .views-submit-button, #views-exposed-form-events-events-panel-page .views-reset-button {
-  float: right;
-}
-/* line 85, ../sass/components/_events.scss */
-#views-exposed-form-events-events-panel-page .views-submit-button .form-submit, #views-exposed-form-events-events-panel-page .views-reset-button .form-submit {
-  margin-top: 0;
-}
-
 /* line 1, ../sass/components/_flexslider.scss */
 .flexslider {
   border: none;

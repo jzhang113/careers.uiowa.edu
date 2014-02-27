@@ -191,6 +191,28 @@ function careers_feeds_mastercal_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'master_calendar_event' => 'master_calendar_event',
+  );
+  /* Filter criterion: Content: Date -  start date (field_mcf_date) */
+  $handler->display->display_options['filters']['field_mcf_date_value']['id'] = 'field_mcf_date_value';
+  $handler->display->display_options['filters']['field_mcf_date_value']['table'] = 'field_data_field_mcf_date';
+  $handler->display->display_options['filters']['field_mcf_date_value']['field'] = 'field_mcf_date_value';
+  $handler->display->display_options['filters']['field_mcf_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_mcf_date_value']['default_date'] = 'now';
   $handler->display->display_options['pane_title'] = 'Front Page Events';
   $handler->display->display_options['pane_description'] = 'Front Page Events';
   $handler->display->display_options['pane_category']['name'] = 'Events';
@@ -209,7 +231,6 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
-  $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
@@ -300,6 +321,10 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
   $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'OR',
+  );
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
@@ -317,32 +342,32 @@ function careers_feeds_mastercal_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Content: Date -  start date (field_mcf_date) */
-  $handler->display->display_options['filters']['field_mcf_date_value']['id'] = 'field_mcf_date_value';
-  $handler->display->display_options['filters']['field_mcf_date_value']['table'] = 'field_data_field_mcf_date';
-  $handler->display->display_options['filters']['field_mcf_date_value']['field'] = 'field_mcf_date_value';
-  $handler->display->display_options['filters']['field_mcf_date_value']['operator'] = 'between';
-  $handler->display->display_options['filters']['field_mcf_date_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_mcf_date_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_mcf_date_value']['expose']['operator_id'] = 'field_mcf_date_value_op';
-  $handler->display->display_options['filters']['field_mcf_date_value']['expose']['label'] = 'Date Range';
-  $handler->display->display_options['filters']['field_mcf_date_value']['expose']['operator'] = 'field_mcf_date_value_op';
-  $handler->display->display_options['filters']['field_mcf_date_value']['expose']['identifier'] = 'field_mcf_date_value';
-  $handler->display->display_options['filters']['field_mcf_date_value']['expose']['remember_roles'] = array(
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['id'] = 'field_mcf_date_value_1';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['table'] = 'field_data_field_mcf_date';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['field'] = 'field_mcf_date_value';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['group'] = 2;
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['expose']['operator_id'] = 'field_mcf_date_value_1_op';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['expose']['label'] = 'Future Events';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['expose']['operator'] = 'field_mcf_date_value_1_op';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['expose']['identifier'] = 'field_mcf_date_value_1';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
     4 => 0,
     5 => 0,
   );
-  $handler->display->display_options['filters']['field_mcf_date_value']['group_info']['label'] = 'Date -  start date (field_mcf_date)';
-  $handler->display->display_options['filters']['field_mcf_date_value']['group_info']['identifier'] = 'field_mcf_date_value';
-  $handler->display->display_options['filters']['field_mcf_date_value']['group_info']['remember'] = FALSE;
-  $handler->display->display_options['filters']['field_mcf_date_value']['group_info']['group_items'] = array(
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['is_grouped'] = TRUE;
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['group_info']['label'] = 'Date -  start date (field_mcf_date)';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['group_info']['identifier'] = 'field_mcf_date_value_1';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['group_info']['remember'] = FALSE;
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['group_info']['group_items'] = array(
     1 => array(),
     2 => array(),
     3 => array(),
   );
-  $handler->display->display_options['filters']['field_mcf_date_value']['form_type'] = 'date_popup';
+  $handler->display->display_options['filters']['field_mcf_date_value_1']['default_date'] = 'now';
   $handler->display->display_options['pane_title'] = 'Events Panel Page';
   $handler->display->display_options['pane_description'] = 'Events Panel Page';
   $handler->display->display_options['pane_category']['name'] = 'Events';
@@ -433,6 +458,28 @@ function careers_feeds_mastercal_views_default_views() {
   );
   $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
   $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'master_calendar_event' => 'master_calendar_event',
+  );
+  /* Filter criterion: Content: Date -  start date (field_mcf_date) */
+  $handler->display->display_options['filters']['field_mcf_date_value']['id'] = 'field_mcf_date_value';
+  $handler->display->display_options['filters']['field_mcf_date_value']['table'] = 'field_data_field_mcf_date';
+  $handler->display->display_options['filters']['field_mcf_date_value']['field'] = 'field_mcf_date_value';
+  $handler->display->display_options['filters']['field_mcf_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_mcf_date_value']['default_date'] = 'now';
   $handler->display->display_options['pane_title'] = 'Events by Term';
   $handler->display->display_options['pane_description'] = 'Events by Term';
   $handler->display->display_options['pane_category']['name'] = 'Events';
