@@ -123,11 +123,22 @@ function people_views_default_views() {
   $handler->display->display_options['fields']['field_people_picture']['settings'] = array(
     'file_view_mode' => 'people_list',
   );
+  /* Field: Content: Degree */
+  $handler->display->display_options['fields']['field_people_degree']['id'] = 'field_people_degree';
+  $handler->display->display_options['fields']['field_people_degree']['table'] = 'field_data_field_people_degree';
+  $handler->display->display_options['fields']['field_people_degree']['field'] = 'field_people_degree';
+  $handler->display->display_options['fields']['field_people_degree']['label'] = '';
+  $handler->display->display_options['fields']['field_people_degree']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_people_degree']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_people_degree']['alter']['text'] = ', [field_people_degree]';
+  $handler->display->display_options['fields']['field_people_degree']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[title][field_people_degree]';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
@@ -369,6 +380,12 @@ function people_views_default_views() {
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Picture */
@@ -409,6 +426,20 @@ function people_views_default_views() {
   $handler->display->display_options['fields']['field_people_position']['label'] = '';
   $handler->display->display_options['fields']['field_people_position']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_people_position']['element_wrapper_type'] = 'strong';
+  /* Field: Content: Year in School */
+  $handler->display->display_options['fields']['field_people_student_status']['id'] = 'field_people_student_status';
+  $handler->display->display_options['fields']['field_people_student_status']['table'] = 'field_data_field_people_student_status';
+  $handler->display->display_options['fields']['field_people_student_status']['field'] = 'field_people_student_status';
+  $handler->display->display_options['fields']['field_people_student_status']['label'] = 'Year';
+  $handler->display->display_options['fields']['field_people_student_status']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Major */
+  $handler->display->display_options['fields']['field_people_major']['id'] = 'field_people_major';
+  $handler->display->display_options['fields']['field_people_major']['table'] = 'field_data_field_people_major';
+  $handler->display->display_options['fields']['field_people_major']['field'] = 'field_people_major';
+  /* Field: Content: Hometown */
+  $handler->display->display_options['fields']['field_people_hometown']['id'] = 'field_people_hometown';
+  $handler->display->display_options['fields']['field_people_hometown']['table'] = 'field_data_field_people_hometown';
+  $handler->display->display_options['fields']['field_people_hometown']['field'] = 'field_people_hometown';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Draggableviews: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
