@@ -62,14 +62,19 @@ function program_taxonomy_user_default_permissions() {
   // Exported permission: 'delete terms in program'.
   $permissions['delete terms in program'] = array(
     'name' => 'delete terms in program',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in program'.
   $permissions['edit terms in program'] = array(
     'name' => 'edit terms in program',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'taxonomy',
   );
 

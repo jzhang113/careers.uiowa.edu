@@ -98,6 +98,7 @@ function careers_webform_user_default_permissions() {
     'name' => 'create webform content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -128,6 +129,7 @@ function careers_webform_user_default_permissions() {
     'name' => 'delete own webform content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -159,6 +161,7 @@ function careers_webform_user_default_permissions() {
     'name' => 'edit any webform content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -169,6 +172,7 @@ function careers_webform_user_default_permissions() {
     'name' => 'edit own webform content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -190,6 +194,7 @@ function careers_webform_user_default_permissions() {
     'name' => 'enter webform revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
@@ -210,6 +215,7 @@ function careers_webform_user_default_permissions() {
     'name' => 'override webform authored on option',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
@@ -229,6 +235,7 @@ function careers_webform_user_default_permissions() {
     'name' => 'override webform published option',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',

@@ -56,6 +56,7 @@ function employers_organizations_user_default_permissions() {
   $permissions['create employers_organizations content'] = array(
     'name' => 'create employers_organizations content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -74,6 +75,7 @@ function employers_organizations_user_default_permissions() {
   $permissions['delete own employers_organizations content'] = array(
     'name' => 'delete own employers_organizations content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -83,6 +85,7 @@ function employers_organizations_user_default_permissions() {
   $permissions['edit any employers_organizations content'] = array(
     'name' => 'edit any employers_organizations content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -92,6 +95,7 @@ function employers_organizations_user_default_permissions() {
   $permissions['edit own employers_organizations content'] = array(
     'name' => 'edit own employers_organizations content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',

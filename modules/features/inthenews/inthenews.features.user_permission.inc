@@ -56,6 +56,7 @@ function inthenews_user_default_permissions() {
   $permissions['create news_content_type content'] = array(
     'name' => 'create news_content_type content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -74,6 +75,7 @@ function inthenews_user_default_permissions() {
   $permissions['delete own news_content_type content'] = array(
     'name' => 'delete own news_content_type content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -83,6 +85,7 @@ function inthenews_user_default_permissions() {
   $permissions['edit any news_content_type content'] = array(
     'name' => 'edit any news_content_type content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -92,6 +95,7 @@ function inthenews_user_default_permissions() {
   $permissions['edit own news_content_type content'] = array(
     'name' => 'edit own news_content_type content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
