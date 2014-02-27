@@ -70,7 +70,6 @@ function people_form_people_node_form_alter(&$form, &$form_state, $form_id) {
  * Custom validate function added to people node form
 */
 function people_people_form_validate($form, &$form_state) {
-  dpm($form_state);
   // if professional staff is checked and group field null then set error.
   if (($form_state['values']['field_people_type'][LANGUAGE_NONE][0]['tid'] == 39)
     && $form_state['values']['field_people_groups'][LANGUAGE_NONE][0]['tid'] == NULL) {
@@ -88,7 +87,7 @@ function people_people_form_validate($form, &$form_state) {
     form_set_error('field_people_type', $form['field_people_hometown'][LANGUAGE_NONE]['#title'] . ' cannot be set if ' . $form['field_people_type'][LANGUAGE_NONE]['#title'] . ' is set to Professional Staff');
   }
   if (($form_state['values']['field_people_type'][LANGUAGE_NONE][0]['tid'] == 39)
-    && $form_state['values']['field_people_student_status'][LANGUAGE_NONE] != '_none') {
+    && $form_state['values']['field_people_student_status'][LANGUAGE_NONE][0]['tid'] != NULL) {
     form_set_error('field_people_type', $form['field_people_student_status'][LANGUAGE_NONE]['#title'] . ' cannot be set if ' . $form['field_people_type'][LANGUAGE_NONE]['#title'] . ' is set to Professional Staff');
   }
 
