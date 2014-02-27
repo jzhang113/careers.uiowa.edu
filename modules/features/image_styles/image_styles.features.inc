@@ -115,8 +115,8 @@ function image_styles_image_default_styles() {
         'module' => 'manualcrop',
         'name' => 'manualcrop_crop',
         'data' => array(
-          'width' => 300,
-          'height' => 420,
+          'width' => 220,
+          'height' => 308,
           'keepproportions' => 1,
           'style_name' => 'people_profile',
         ),
@@ -132,8 +132,8 @@ function image_styles_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 300,
-          'height' => 420,
+          'width' => 220,
+          'height' => 308,
         ),
         'weight' => 2,
       ),
