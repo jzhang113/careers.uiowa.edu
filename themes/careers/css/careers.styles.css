@@ -1369,12 +1369,14 @@ ul.quicktabs-tabs li.active a {
 .media-youtube-video {
   text-align: center;
   position: relative;
+  max-width: 95%;
+  margin: 0 auto;
   padding-bottom: 50%;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
 }
-/* line 9, ../sass/components/_videos.scss */
+/* line 11, ../sass/components/_videos.scss */
 .media-youtube-video iframe, .media-youtube-video object, .media-youtube-video embed {
   position: absolute;
   top: 0;
@@ -1383,12 +1385,12 @@ ul.quicktabs-tabs li.active a {
   height: 100%;
 }
 
-/* line 19, ../sass/components/_videos.scss */
+/* line 21, ../sass/components/_videos.scss */
 .field-name-field-video-screenshot {
   text-align: center;
 }
 
-/* line 25, ../sass/components/_videos.scss */
+/* line 27, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-row {
   min-height: 105px;
   height: auto;
@@ -1396,12 +1398,12 @@ ul.quicktabs-tabs li.active a {
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
-/* line 29, ../sass/components/_videos.scss */
+/* line 31, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-field-field-video-file, .view-display-id-video_panel_pane .views-field-field-video-screenshot {
   display: block;
   float: left;
 }
-/* line 33, ../sass/components/_videos.scss */
+/* line 35, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-field-title, .view-display-id-video_panel_pane .views-field-field-video-description {
   margin-left: 110px;
 }
