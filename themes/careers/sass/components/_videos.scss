@@ -1,16 +1,20 @@
 // YouTube Embeds
 .media-youtube-video {
   text-align: center;
-
-  .media-youtube-player{
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 640px;
-  }
-  #player {
-    height: auto;
-    width: auto;
+    height: 100%;
   }
 }
+
 
 .field-name-field-video-screenshot{
   text-align: center;

@@ -1368,24 +1368,27 @@ ul.quicktabs-tabs li.active a {
 /* line 2, ../sass/components/_videos.scss */
 .media-youtube-video {
   text-align: center;
-}
-/* line 5, ../sass/components/_videos.scss */
-.media-youtube-video .media-youtube-player {
-  width: 100%;
-  max-width: 640px;
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 /* line 9, ../sass/components/_videos.scss */
-.media-youtube-video #player {
-  height: auto;
-  width: auto;
+.media-youtube-video iframe, .media-youtube-video object, .media-youtube-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* line 15, ../sass/components/_videos.scss */
+/* line 19, ../sass/components/_videos.scss */
 .field-name-field-video-screenshot {
   text-align: center;
 }
 
-/* line 21, ../sass/components/_videos.scss */
+/* line 25, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-row {
   min-height: 105px;
   height: auto;
@@ -1393,12 +1396,12 @@ ul.quicktabs-tabs li.active a {
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
-/* line 25, ../sass/components/_videos.scss */
+/* line 29, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-field-field-video-file, .view-display-id-video_panel_pane .views-field-field-video-screenshot {
   display: block;
   float: left;
 }
-/* line 29, ../sass/components/_videos.scss */
+/* line 33, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-field-title, .view-display-id-video_panel_pane .views-field-field-video-description {
   margin-left: 110px;
 }
