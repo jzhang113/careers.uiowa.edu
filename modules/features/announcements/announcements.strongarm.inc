@@ -20,6 +20,13 @@ function announcements_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'custom_breadcrumbs_show_form_table_announcement';
+  $strongarm->value = 1;
+  $export['custom_breadcrumbs_show_form_table_announcement'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'diff_enable_revisions_page_node_announcement';
   $strongarm->value = 1;
   $export['diff_enable_revisions_page_node_announcement'] = $strongarm;
@@ -730,6 +737,13 @@ function announcements_strongarm() {
   $strongarm->name = 'pathauto_node_announcement_pattern';
   $strongarm->value = 'announcements/[node:created:custom:Ym]/[node:title]';
   $export['pathauto_node_announcement_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'webform_node_announcement';
+  $strongarm->value = 0;
+  $export['webform_node_announcement'] = $strongarm;
 
   return $export;
 }

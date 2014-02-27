@@ -56,6 +56,7 @@ function announcements_user_default_permissions() {
   $permissions['create announcement content'] = array(
     'name' => 'create announcement content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -74,6 +75,7 @@ function announcements_user_default_permissions() {
   $permissions['delete own announcement content'] = array(
     'name' => 'delete own announcement content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -83,6 +85,7 @@ function announcements_user_default_permissions() {
   $permissions['edit any announcement content'] = array(
     'name' => 'edit any announcement content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -92,6 +95,7 @@ function announcements_user_default_permissions() {
   $permissions['edit own announcement content'] = array(
     'name' => 'edit own announcement content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -131,6 +135,7 @@ function announcements_user_default_permissions() {
     'name' => 'override announcement promote to front page option',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
