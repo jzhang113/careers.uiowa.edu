@@ -66,3 +66,24 @@
       }
     }
   }
+
+#views-exposed-form-events-events-panel-page{
+  label[for=edit-field-mcf-date-value]{
+    @include font-size(2);
+  }
+  // Full-width form fields
+  #edit-field-mcf-date-value-wrapper, .form-type-date-popup,
+  .date-padding, .form-type-textfield{
+    width: 100%;
+  }
+  #edit-field-mcf-date-value-min-wrapper,
+  #edit-field-mcf-date-value-max-wrapper {
+    margin: 0 0 0.25em 1.5em;
+  }
+  .views-submit-button, .views-reset-button {
+    float: right;
+    .form-submit {
+      margin-top: 0;
+    }
+  }
+}  

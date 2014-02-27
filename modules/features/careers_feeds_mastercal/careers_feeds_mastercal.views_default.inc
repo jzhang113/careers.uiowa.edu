@@ -210,6 +210,23 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['exposed_block'] = TRUE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'events' => 'events',
+    'audience' => 0,
+    'people_groups' => 0,
+    'people_type' => 0,
+    'program' => 0,
+    'spotlights' => 0,
+    'student_status' => 0,
+    'tags' => 0,
+    'testimonials' => 0,
+    'video_type' => 0,
+  );
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -264,21 +281,24 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['fields']['field_mcf_event_category']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_mcf_event_category']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Event Category (field_mcf_event_category) */
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['id'] = 'field_mcf_event_category_tid';
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['table'] = 'field_data_field_mcf_event_category';
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['field'] = 'field_mcf_event_category_tid';
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['validate']['type'] = 'taxonomy_term';
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['validate_options']['vocabularies'] = array(
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['tid']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['title'] = '%1 Events';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
     'events' => 'events',
   );
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['validate_options']['type'] = 'convert';
-  $handler->display->display_options['arguments']['field_mcf_event_category_tid']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -296,25 +316,6 @@ function careers_feeds_mastercal_views_default_views() {
     'master_calendar_event' => 'master_calendar_event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Event Category (field_mcf_event_category) */
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['id'] = 'field_mcf_event_category_tid';
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['table'] = 'field_data_field_mcf_event_category';
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['field'] = 'field_mcf_event_category_tid';
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['expose']['operator_id'] = 'field_mcf_event_category_tid_op';
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['expose']['label'] = 'Event Category';
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['expose']['operator'] = 'field_mcf_event_category_tid_op';
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['expose']['identifier'] = 'field_mcf_event_category_tid';
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-  );
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_mcf_event_category_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Date -  start date (field_mcf_date) */
   $handler->display->display_options['filters']['field_mcf_date_value']['id'] = 'field_mcf_date_value';
   $handler->display->display_options['filters']['field_mcf_date_value']['table'] = 'field_data_field_mcf_date';
@@ -356,13 +357,13 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 0;
   $handler->display->display_options['argument_input'] = array(
-    'field_mcf_event_category_tid' => array(
+    'tid' => array(
       'type' => 'panel',
       'context' => 'entity:file.field-file-image-alt-text',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
-      'label' => 'Content: Event Category (field_mcf_event_category)',
+      'label' => 'Taxonomy term: Term ID',
     ),
   );
   $handler->display->display_options['inherit_panels_path'] = '1';
@@ -446,6 +447,78 @@ function careers_feeds_mastercal_views_default_views() {
       'label' => 'Content: Has taxonomy term ID',
     ),
   );
+
+  /* Display: Event Categories */
+  $handler = $view->new_display('panel_pane', 'Event Categories', 'event_categories');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Events by Category';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'events' => 'events',
+    'audience' => 0,
+    'people_groups' => 0,
+    'people_type' => 0,
+    'program' => 0,
+    'spotlights' => 0,
+    'student_status' => 0,
+    'tags' => 0,
+    'testimonials' => 0,
+    'video_type' => 0,
+  );
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h2';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Name */
+  $handler->display->display_options['arguments']['name']['id'] = 'name';
+  $handler->display->display_options['arguments']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['name']['field'] = 'name';
+  $handler->display->display_options['arguments']['name']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['name']['default_action'] = 'summary';
+  $handler->display->display_options['arguments']['name']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['name']['summary_options']['base_path'] = 'events';
+  $handler->display->display_options['arguments']['name']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['name']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['name']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['name']['validate_options']['vocabularies'] = array(
+    'events' => 'events',
+  );
+  $handler->display->display_options['arguments']['name']['limit'] = '0';
+  $handler->display->display_options['arguments']['name']['case'] = 'ucwords';
+  $handler->display->display_options['arguments']['name']['path_case'] = 'lower';
+  $handler->display->display_options['arguments']['name']['transform_dash'] = TRUE;
+  $handler->display->display_options['pane_title'] = 'Event Categories';
+  $handler->display->display_options['pane_description'] = 'Event Categories';
+  $handler->display->display_options['pane_category']['name'] = 'Events';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $export['events'] = $view;
 
   return $export;
