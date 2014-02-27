@@ -775,13 +775,6 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
-  $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
-  $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
-  $handler->display->display_options['filters']['field_people_exclude_value']['value'] = array(
-    0 => '0',
-  );
   $handler->display->display_options['path'] = 'admin/config/people';
 
   /* Display: Reorder Professional Staff */
@@ -850,18 +843,6 @@ function people_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Picture */
-  $handler->display->display_options['fields']['field_people_picture']['id'] = 'field_people_picture';
-  $handler->display->display_options['fields']['field_people_picture']['table'] = 'field_data_field_people_picture';
-  $handler->display->display_options['fields']['field_people_picture']['field'] = 'field_people_picture';
-  $handler->display->display_options['fields']['field_people_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_people_picture']['alter']['path'] = '[path]';
-  $handler->display->display_options['fields']['field_people_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_people_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_people_picture']['type'] = 'file_rendered';
-  $handler->display->display_options['fields']['field_people_picture']['settings'] = array(
-    'file_view_mode' => 'people_list',
-  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -871,13 +852,6 @@ function people_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
-  /* Field: Content: Position */
-  $handler->display->display_options['fields']['field_people_position']['id'] = 'field_people_position';
-  $handler->display->display_options['fields']['field_people_position']['table'] = 'field_data_field_people_position';
-  $handler->display->display_options['fields']['field_people_position']['field'] = 'field_people_position';
-  $handler->display->display_options['fields']['field_people_position']['label'] = '';
-  $handler->display->display_options['fields']['field_people_position']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_people_position']['element_wrapper_type'] = 'strong';
   /* Field: Draggableviews: Content */
   $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
   $handler->display->display_options['fields']['draggableviews']['table'] = 'node';
@@ -889,13 +863,6 @@ function people_views_default_views() {
   $handler->display->display_options['fields']['draggableviews']['draggableviews']['save_button_label'] = 'Update';
   $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 1;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Draggableviews: Weight */
-  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
-  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'self';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_arguments'] = 'none';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -913,22 +880,6 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
   );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
-  $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
-  $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
-  $handler->display->display_options['filters']['field_people_exclude_value']['value'] = array(
-    0 => '0',
-  );
-  /* Filter criterion: Content: Type (field_people_type) */
-  $handler->display->display_options['filters']['field_people_type_tid']['id'] = 'field_people_type_tid';
-  $handler->display->display_options['filters']['field_people_type_tid']['table'] = 'field_data_field_people_type';
-  $handler->display->display_options['filters']['field_people_type_tid']['field'] = 'field_people_type_tid';
-  $handler->display->display_options['filters']['field_people_type_tid']['value'] = array(
-    39 => '39',
-  );
-  $handler->display->display_options['filters']['field_people_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_people_type_tid']['vocabulary'] = 'people_type';
   $handler->display->display_options['path'] = 'admin/config/people/professional-staff';
 
   /* Display: Reorder Student Staff */
@@ -1059,13 +1010,6 @@ function people_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'people' => 'people',
-  );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_people_exclude_value']['id'] = 'field_people_exclude_value';
-  $handler->display->display_options['filters']['field_people_exclude_value']['table'] = 'field_data_field_people_exclude';
-  $handler->display->display_options['filters']['field_people_exclude_value']['field'] = 'field_people_exclude_value';
-  $handler->display->display_options['filters']['field_people_exclude_value']['value'] = array(
-    0 => '0',
   );
   /* Filter criterion: Content: Type (field_people_type) */
   $handler->display->display_options['filters']['field_people_type_tid']['id'] = 'field_people_type_tid';
