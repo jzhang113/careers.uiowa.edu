@@ -100,6 +100,7 @@ function careers_feeds_mastercal_user_default_permissions() {
   $permissions['edit any master_calendar_event content'] = array(
     'name' => 'edit any master_calendar_event content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -109,6 +110,7 @@ function careers_feeds_mastercal_user_default_permissions() {
   $permissions['edit own master_calendar_event content'] = array(
     'name' => 'edit own master_calendar_event content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -124,7 +126,10 @@ function careers_feeds_mastercal_user_default_permissions() {
   // Exported permission: 'enter master_calendar_event revision log entry'.
   $permissions['enter master_calendar_event revision log entry'] = array(
     'name' => 'enter master_calendar_event revision log entry',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'override_node_options',
   );
 
