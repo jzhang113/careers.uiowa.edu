@@ -221,7 +221,7 @@ function careers_feeds_mastercal_views_default_views() {
   /* Display: Events Panel Page */
   $handler = $view->new_display('panel_pane', 'Events Panel Page', 'events_panel_page');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Events';
+  $handler->display->display_options['title'] = 'Upcoming Events';
   $handler->display->display_options['defaults']['exposed_form'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
@@ -308,7 +308,7 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
   $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['arguments']['tid']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['tid']['title'] = '%1 Events';
+  $handler->display->display_options['arguments']['tid']['title'] = 'Upcoming %1 Events';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
