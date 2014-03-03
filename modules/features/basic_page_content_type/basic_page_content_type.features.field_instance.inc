@@ -108,7 +108,7 @@ function basic_page_content_type_field_default_field_instances() {
         ),
         'browser_plugins' => array(
           'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+          'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 'upload',
           'youtube' => 0,
@@ -122,15 +122,13 @@ function basic_page_content_type_field_default_field_instances() {
         'manualcrop_require_cropping' => array(
           'featured' => 0,
           'featured_page' => 'featured_page',
-          'people_profile_100' => 0,
-          'people_profile_320' => 0,
+          'people_profile' => 0,
           'square' => 0,
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
           'featured_page' => 'featured_page',
-          'people_profile_100' => 0,
-          'people_profile_320' => 0,
+          'people_profile' => 0,
           'square' => 0,
         ),
         'manualcrop_styles_mode' => 'include',
