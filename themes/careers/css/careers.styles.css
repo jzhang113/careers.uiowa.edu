@@ -149,6 +149,18 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   font-size: 1.8rem;
 }
 
+/* line 6, ../sass/base/_fields.scss */
+.field-label-inline .field-label, .field-label-inline .field-items {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  float: none;
+  vertical-align: baseline;
+}
+
 /*
  * Wrapper for a form element (or group of form elements) and its label
  */

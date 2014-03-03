@@ -1,3 +1,11 @@
 .field-label {
   @include font-size(1.8);
 }
+
+.field-label-inline {
+  .field-label, .field-items {
+    @include inline-block;
+    float: none;
+    vertical-align: baseline;
+  }
+}
