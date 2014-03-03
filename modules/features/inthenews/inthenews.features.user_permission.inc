@@ -13,42 +13,54 @@ function inthenews_user_default_permissions() {
   // Exported permission: 'administer panelizer node news_content_type content'.
   $permissions['administer panelizer node news_content_type content'] = array(
     'name' => 'administer panelizer node news_content_type content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node news_content_type context'.
   $permissions['administer panelizer node news_content_type context'] = array(
     'name' => 'administer panelizer node news_content_type context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node news_content_type defaults'.
   $permissions['administer panelizer node news_content_type defaults'] = array(
     'name' => 'administer panelizer node news_content_type defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node news_content_type layout'.
   $permissions['administer panelizer node news_content_type layout'] = array(
     'name' => 'administer panelizer node news_content_type layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node news_content_type overview'.
   $permissions['administer panelizer node news_content_type overview'] = array(
     'name' => 'administer panelizer node news_content_type overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node news_content_type settings'.
   $permissions['administer panelizer node news_content_type settings'] = array(
     'name' => 'administer panelizer node news_content_type settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -56,6 +68,7 @@ function inthenews_user_default_permissions() {
   $permissions['create news_content_type content'] = array(
     'name' => 'create news_content_type content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -66,6 +79,8 @@ function inthenews_user_default_permissions() {
   $permissions['delete any news_content_type content'] = array(
     'name' => 'delete any news_content_type content',
     'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -75,6 +90,7 @@ function inthenews_user_default_permissions() {
   $permissions['delete own news_content_type content'] = array(
     'name' => 'delete own news_content_type content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -85,6 +101,7 @@ function inthenews_user_default_permissions() {
   $permissions['edit any news_content_type content'] = array(
     'name' => 'edit any news_content_type content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -95,6 +112,7 @@ function inthenews_user_default_permissions() {
   $permissions['edit own news_content_type content'] = array(
     'name' => 'edit own news_content_type content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -117,6 +135,7 @@ function inthenews_user_default_permissions() {
     'name' => 'override news_content_type authored by option',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -126,6 +145,8 @@ function inthenews_user_default_permissions() {
     'name' => 'override news_content_type authored on option',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
