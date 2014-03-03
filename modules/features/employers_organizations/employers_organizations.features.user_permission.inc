@@ -13,42 +13,54 @@ function employers_organizations_user_default_permissions() {
   // Exported permission: 'administer panelizer node employers_organizations content'.
   $permissions['administer panelizer node employers_organizations content'] = array(
     'name' => 'administer panelizer node employers_organizations content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node employers_organizations context'.
   $permissions['administer panelizer node employers_organizations context'] = array(
     'name' => 'administer panelizer node employers_organizations context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node employers_organizations defaults'.
   $permissions['administer panelizer node employers_organizations defaults'] = array(
     'name' => 'administer panelizer node employers_organizations defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node employers_organizations layout'.
   $permissions['administer panelizer node employers_organizations layout'] = array(
     'name' => 'administer panelizer node employers_organizations layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node employers_organizations overview'.
   $permissions['administer panelizer node employers_organizations overview'] = array(
     'name' => 'administer panelizer node employers_organizations overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node employers_organizations settings'.
   $permissions['administer panelizer node employers_organizations settings'] = array(
     'name' => 'administer panelizer node employers_organizations settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -56,6 +68,7 @@ function employers_organizations_user_default_permissions() {
   $permissions['create employers_organizations content'] = array(
     'name' => 'create employers_organizations content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -66,6 +79,8 @@ function employers_organizations_user_default_permissions() {
   $permissions['delete any employers_organizations content'] = array(
     'name' => 'delete any employers_organizations content',
     'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -75,6 +90,7 @@ function employers_organizations_user_default_permissions() {
   $permissions['delete own employers_organizations content'] = array(
     'name' => 'delete own employers_organizations content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -85,6 +101,7 @@ function employers_organizations_user_default_permissions() {
   $permissions['edit any employers_organizations content'] = array(
     'name' => 'edit any employers_organizations content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -95,6 +112,7 @@ function employers_organizations_user_default_permissions() {
   $permissions['edit own employers_organizations content'] = array(
     'name' => 'edit own employers_organizations content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -117,6 +135,7 @@ function employers_organizations_user_default_permissions() {
     'name' => 'override employers_organizations authored by option',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -126,6 +145,8 @@ function employers_organizations_user_default_permissions() {
     'name' => 'override employers_organizations authored on option',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
