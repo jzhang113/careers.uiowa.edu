@@ -375,6 +375,8 @@ function careers_permissions_user_default_permissions() {
     'name' => 'administer nodesymlinks',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'nodesymlinks',
   );
