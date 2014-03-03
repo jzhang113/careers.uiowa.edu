@@ -40,10 +40,11 @@ function careers_webform_panelizer_defaults() {
   );
   $display->cache = array();
   $display->title = '%node:title';
+  $display->uuid = '5960cb19-e0cc-46a7-b177-ffaf837d3cbd';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-1';
+    $pane->pid = 'new-06261355-818a-4f96-969c-fbdf76b5e11b';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:body';
@@ -66,10 +67,11 @@ function careers_webform_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['contentmain'][0] = 'new-1';
+    $pane->uuid = '06261355-818a-4f96-969c-fbdf76b5e11b';
+    $display->content['new-06261355-818a-4f96-969c-fbdf76b5e11b'] = $pane;
+    $display->panels['contentmain'][0] = 'new-06261355-818a-4f96-969c-fbdf76b5e11b';
     $pane = new stdClass();
-    $pane->pid = 'new-2';
+    $pane->pid = 'new-5c8b6ae8-a668-472b-b9cd-983f5c466dee';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field_extra';
     $pane->subtype = 'node:webform';
@@ -89,10 +91,11 @@ function careers_webform_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['contentmain'][1] = 'new-2';
+    $pane->uuid = '5c8b6ae8-a668-472b-b9cd-983f5c466dee';
+    $display->content['new-5c8b6ae8-a668-472b-b9cd-983f5c466dee'] = $pane;
+    $display->panels['contentmain'][1] = 'new-5c8b6ae8-a668-472b-b9cd-983f5c466dee';
     $pane = new stdClass();
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-f3f77dcb-ea94-4bc9-be7e-a53d67cbe095';
     $pane->panel = 'contentmain';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
@@ -116,10 +119,11 @@ function careers_webform_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['contentmain'][2] = 'new-3';
+    $pane->uuid = 'f3f77dcb-ea94-4bc9-be7e-a53d67cbe095';
+    $display->content['new-f3f77dcb-ea94-4bc9-be7e-a53d67cbe095'] = $pane;
+    $display->panels['contentmain'][2] = 'new-f3f77dcb-ea94-4bc9-be7e-a53d67cbe095';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-1';
+  $display->title_pane = 'new-06261355-818a-4f96-969c-fbdf76b5e11b';
   $panelizer->display = $display;
   $export['node:webform:default:default'] = $panelizer;
 
