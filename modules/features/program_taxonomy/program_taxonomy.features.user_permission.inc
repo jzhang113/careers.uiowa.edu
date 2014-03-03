@@ -13,49 +13,64 @@ function program_taxonomy_user_default_permissions() {
   // Exported permission: 'administer panelizer taxonomy_term program choice'.
   $permissions['administer panelizer taxonomy_term program choice'] = array(
     'name' => 'administer panelizer taxonomy_term program choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term program content'.
   $permissions['administer panelizer taxonomy_term program content'] = array(
     'name' => 'administer panelizer taxonomy_term program content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term program context'.
   $permissions['administer panelizer taxonomy_term program context'] = array(
     'name' => 'administer panelizer taxonomy_term program context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term program defaults'.
   $permissions['administer panelizer taxonomy_term program defaults'] = array(
     'name' => 'administer panelizer taxonomy_term program defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term program layout'.
   $permissions['administer panelizer taxonomy_term program layout'] = array(
     'name' => 'administer panelizer taxonomy_term program layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term program overview'.
   $permissions['administer panelizer taxonomy_term program overview'] = array(
     'name' => 'administer panelizer taxonomy_term program overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term program settings'.
   $permissions['administer panelizer taxonomy_term program settings'] = array(
     'name' => 'administer panelizer taxonomy_term program settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -63,6 +78,7 @@ function program_taxonomy_user_default_permissions() {
   $permissions['delete terms in program'] = array(
     'name' => 'delete terms in program',
     'roles' => array(
+      'administrator' => 'administrator',
       'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
@@ -72,7 +88,7 @@ function program_taxonomy_user_default_permissions() {
   $permissions['edit terms in program'] = array(
     'name' => 'edit terms in program',
     'roles' => array(
-      'editor' => 'editor',
+      'administrator' => 'administrator',
       'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
