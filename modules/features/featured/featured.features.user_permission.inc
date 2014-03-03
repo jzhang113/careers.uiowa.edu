@@ -56,6 +56,7 @@ function featured_user_default_permissions() {
   $permissions['create featured content'] = array(
     'name' => 'create featured content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -74,6 +75,7 @@ function featured_user_default_permissions() {
   $permissions['delete own featured content'] = array(
     'name' => 'delete own featured content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -83,6 +85,7 @@ function featured_user_default_permissions() {
   $permissions['edit any featured content'] = array(
     'name' => 'edit any featured content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -92,6 +95,7 @@ function featured_user_default_permissions() {
   $permissions['edit own featured content'] = array(
     'name' => 'edit own featured content',
     'roles' => array(
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -131,6 +135,8 @@ function featured_user_default_permissions() {
     'name' => 'override featured promote to front page option',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );

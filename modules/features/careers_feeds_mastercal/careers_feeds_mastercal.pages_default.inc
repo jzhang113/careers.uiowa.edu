@@ -23,10 +23,26 @@ function careers_feeds_mastercal_default_page_manager_pages() {
   $page->menu = array();
   $page->arguments = array(
     'category' => array(
-      'id' => '',
-      'identifier' => '',
-      'argument' => '',
-      'settings' => array(),
+      'id' => 1,
+      'identifier' => 'Taxonomy term: ID',
+      'name' => 'term',
+      'settings' => array(
+        'input_form' => 'term',
+        'vids' => array(
+          3 => '3',
+          2 => 0,
+          10 => 0,
+          9 => 0,
+          11 => 0,
+          8 => 0,
+          12 => 0,
+          1 => 0,
+          5 => 0,
+          7 => 0,
+        ),
+        'breadcrumb' => 1,
+        'transform' => 1,
+      ),
     ),
   );
   $page->conf = array(
@@ -69,31 +85,6 @@ function careers_feeds_mastercal_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-1';
     $pane->panel = 'contentmain';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '',
-      'format' => 'filtered_html',
-      'substitute' => TRUE,
-      'name' => 'events_header_text',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['contentmain'][0] = 'new-1';
-    $pane = new stdClass();
-    $pane->pid = 'new-2';
-    $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
     $pane->subtype = 'events-events_panel_page';
     $pane->shown = TRUE;
@@ -111,10 +102,31 @@ function careers_feeds_mastercal_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-1'] = $pane;
+    $display->panels['contentmain'][0] = 'new-1';
+    $pane = new stdClass();
+    $pane->pid = 'new-2';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'events-event_categories';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['contentmain'][1] = 'new-2';
+    $display->panels['sidebar'][0] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
     $pane->panel = 'sidebar';
@@ -133,12 +145,12 @@ function careers_feeds_mastercal_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $display->content['new-3'] = $pane;
-    $display->panels['sidebar'][0] = 'new-3';
+    $display->panels['sidebar'][1] = 'new-3';
   $display->hide_title = PANELS_TITLE_PANE;
-  $display->title_pane = 'new-2';
+  $display->title_pane = 'new-1';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['events'] = $page;

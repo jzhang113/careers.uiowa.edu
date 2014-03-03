@@ -279,6 +279,7 @@ function image_styles_file_default_displays() {
   $file_display->status = FALSE;
   $file_display->settings = array(
     'optionset' => 'default',
+    'image_style' => '',
     'caption' => 0,
   );
   $export['image__people_list__file_field_flexslider'] = $file_display;
@@ -308,7 +309,7 @@ function image_styles_file_default_displays() {
   $file_display->weight = 0;
   $file_display->status = TRUE;
   $file_display->settings = array(
-    'image_style' => 'people_profile_100',
+    'image_style' => 'people_profile_small',
     'alt' => '[file:field_file_image_alt_text]',
     'title' => '[file:field_file_image_title_text]',
   );
@@ -355,6 +356,7 @@ function image_styles_file_default_displays() {
   $file_display->status = FALSE;
   $file_display->settings = array(
     'optionset' => 'default',
+    'image_style' => '',
     'caption' => 0,
   );
   $export['image__people_node__file_field_flexslider'] = $file_display;
@@ -384,7 +386,7 @@ function image_styles_file_default_displays() {
   $file_display->weight = 0;
   $file_display->status = TRUE;
   $file_display->settings = array(
-    'image_style' => 'people_profile_320',
+    'image_style' => 'people_profile',
     'alt' => '[file:field_file_image_alt_text]',
     'title' => '[file:field_file_image_title_text]',
   );

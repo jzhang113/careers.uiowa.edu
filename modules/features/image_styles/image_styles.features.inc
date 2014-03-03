@@ -100,12 +100,12 @@ function image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: people_profile_100.
-  $styles['people_profile_100'] = array(
-    'name' => 'people_profile_100',
-    'label' => 'people_profile_100',
+  // Exported image style: people_profile.
+  $styles['people_profile'] = array(
+    'name' => 'people_profile',
+    'label' => 'people_profile',
     'effects' => array(
-      5 => array(
+      1 => array(
         'label' => 'Manual crop',
         'help' => 'Crop a freely user-selected area.',
         'effect callback' => 'manualcrop_crop_effect',
@@ -115,14 +115,14 @@ function image_styles_image_default_styles() {
         'module' => 'manualcrop',
         'name' => 'manualcrop_crop',
         'data' => array(
-          'width' => 100,
-          'height' => 140,
+          'width' => 220,
+          'height' => 308,
           'keepproportions' => 1,
-          'style_name' => 'people_profile_100',
+          'style_name' => 'people_profile',
         ),
         'weight' => 0,
       ),
-      7 => array(
+      2 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -132,48 +132,46 @@ function image_styles_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 100,
-          'height' => 140,
+          'width' => 220,
+          'height' => 308,
         ),
         'weight' => 2,
       ),
     ),
   );
 
-  // Exported image style: people_profile_320.
-  $styles['people_profile_320'] = array(
-    'name' => 'people_profile_320',
-    'label' => 'people_profile_320',
+  // Exported image style: people_profile_small.
+  $styles['people_profile_small'] = array(
+    'name' => 'people_profile_small',
+    'label' => 'people_profile_small',
     'effects' => array(
-      5 => array(
-        'label' => 'Manual crop',
-        'help' => 'Crop a freely user-selected area.',
-        'effect callback' => 'manualcrop_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'manualcrop_crop_form',
-        'summary theme' => 'manualcrop_crop_summary',
+      3 => array(
+        'label' => 'Reuse a Manual Crop selection',
+        'help' => 'Reuse a crop selection from another Manual Crop enabled image style.',
+        'effect callback' => 'manualcrop_reuse_effect',
+        'form callback' => 'manualcrop_reuse_form',
+        'summary theme' => 'manualcrop_reuse_summary',
         'module' => 'manualcrop',
-        'name' => 'manualcrop_crop',
+        'name' => 'manualcrop_reuse',
         'data' => array(
-          'width' => 320,
-          'height' => 320,
-          'keepproportions' => 1,
-          'style_name' => 'people_profile_320',
+          'reusestyle' => 'people_profile',
+          'style_name' => 'people_profile_small',
         ),
         'weight' => 0,
       ),
-      6 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
+      4 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
         'module' => 'image',
-        'name' => 'image_scale_and_crop',
+        'name' => 'image_scale',
         'data' => array(
-          'width' => 320,
-          'height' => 320,
+          'width' => 100,
+          'height' => 140,
+          'upscale' => 0,
         ),
         'weight' => 2,
       ),

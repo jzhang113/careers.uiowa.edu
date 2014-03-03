@@ -37,7 +37,7 @@ function careers_feeds_mastercal_feeds_importer_default() {
           'xpathparser:4' => 'EventEndTime',
           'xpathparser:5' => 'Location',
           'xpathparser:6' => 'EventUrl',
-          'xpathparser:7' => 'PomerantzCareerFairEvent',
+          'xpathparser:7' => 'PomerantzEventType',
         ),
         'rawXML' => array(
           'xpathparser:1' => 0,

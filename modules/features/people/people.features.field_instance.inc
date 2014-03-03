@@ -48,7 +48,7 @@ function people_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
@@ -57,7 +57,7 @@ function people_field_default_field_instances() {
     'bundle' => 'people',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'An optional degree field. It will be appended next to the person\'s name. Example: Jane Doe, Ph.D.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -97,7 +97,7 @@ function people_field_default_field_instances() {
     'bundle' => 'people',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Valid email address for this person. Will be automatically formatted as a mail-to link.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -127,7 +127,7 @@ function people_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -359,7 +359,7 @@ function people_field_default_field_instances() {
     'label' => 'Staff Member Since',
     'required' => 0,
     'settings' => array(
-      'default_value' => 'now',
+      'default_value' => 'blank',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
@@ -370,14 +370,93 @@ function people_field_default_field_instances() {
       'module' => 'date',
       'settings' => array(
         'increment' => 15,
-        'input_format' => 'Y-m-d H:i:s',
+        'input_format' => 'm/d/Y - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'above',
         'text_parts' => array(),
-        'year_range' => '-3:+3',
+        'year_range' => '-10:+0',
       ),
       'type' => 'date_select',
       'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-people-field_people_office'
+  $field_instances['node-people-field_people_office'] = array(
+    'bundle' => 'people',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'The campus address or office number of this person.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_people_office',
+    'label' => 'Office',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-people-field_people_phone'
+  $field_instances['node-people-field_people_phone'] = array(
+    'bundle' => 'people',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter the phone number as it should be displayed. Example: (555) 555-5555.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_people_phone',
+    'label' => 'Phone',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'telephone',
+      'settings' => array(
+        'placeholder' => '',
+      ),
+      'type' => 'telephone_default',
+      'weight' => 7,
     ),
   );
 
@@ -415,7 +494,7 @@ function people_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '320x480',
+      'min_resolution' => '220x308',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -435,7 +514,7 @@ function people_field_default_field_instances() {
         ),
         'browser_plugins' => array(
           'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+          'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 'upload',
           'youtube' => 0,
@@ -448,22 +527,18 @@ function people_field_default_field_instances() {
         'manualcrop_instant_preview' => 0,
         'manualcrop_require_cropping' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
-          'people_profile_100' => 'people_profile_100',
-          'people_profile_320' => 'people_profile_320',
+          'people_profile' => 'people_profile',
           'square' => 0,
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
-          'people_profile_100' => 'people_profile_100',
-          'people_profile_320' => 'people_profile_320',
+          'people_profile' => 'people_profile',
           'square' => 0,
         ),
         'manualcrop_styles_mode' => 'include',
-        'manualcrop_thumblist' => 1,
+        'manualcrop_thumblist' => 0,
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -476,7 +551,7 @@ function people_field_default_field_instances() {
     'bundle' => 'people',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'An optional position field, e.g. Associate Professor.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -627,20 +702,27 @@ function people_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('An optional degree field. It will be appended next to the person\'s name. Example: Jane Doe, Ph.D.');
+  t('An optional position field, e.g. Associate Professor.');
   t('Biography');
   t('Degree');
   t('Email');
   t('Enter as many as you want, however, only the first ten will be displayed.');
+  t('Enter the phone number as it should be displayed. Example: (555) 555-5555.');
   t('First Name');
   t('Groups');
   t('Hometown');
   t('Last Name');
   t('Major');
+  t('Office');
+  t('Phone');
   t('Picture');
   t('Position');
   t('Responsibilities');
   t('Staff Member Since');
+  t('The campus address or office number of this person.');
   t('Type');
+  t('Valid email address for this person. Will be automatically formatted as a mail-to link.');
   t('Year in School');
 
   return $field_instances;

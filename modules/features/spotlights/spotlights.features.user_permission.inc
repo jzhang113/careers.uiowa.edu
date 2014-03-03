@@ -62,21 +62,29 @@ function spotlights_user_default_permissions() {
   // Exported permission: 'create spotlight content'.
   $permissions['create spotlight content'] = array(
     'name' => 'create spotlight content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any spotlight content'.
   $permissions['delete any spotlight content'] = array(
     'name' => 'delete any spotlight content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own spotlight content'.
   $permissions['delete own spotlight content'] = array(
     'name' => 'delete own spotlight content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -90,14 +98,20 @@ function spotlights_user_default_permissions() {
   // Exported permission: 'edit any spotlight content'.
   $permissions['edit any spotlight content'] = array(
     'name' => 'edit any spotlight content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own spotlight content'.
   $permissions['edit own spotlight content'] = array(
     'name' => 'edit own spotlight content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -111,7 +125,10 @@ function spotlights_user_default_permissions() {
   // Exported permission: 'enter spotlight revision log entry'.
   $permissions['enter spotlight revision log entry'] = array(
     'name' => 'enter spotlight revision log entry',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'override_node_options',
   );
 
@@ -139,7 +156,10 @@ function spotlights_user_default_permissions() {
   // Exported permission: 'override spotlight published option'.
   $permissions['override spotlight published option'] = array(
     'name' => 'override spotlight published option',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'override_node_options',
   );
 

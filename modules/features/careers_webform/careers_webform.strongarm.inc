@@ -13,6 +13,13 @@ function careers_webform_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_webform';
+  $strongarm->value = 'edit-menu';
+  $export['additional_settings__active_tab_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'captcha_add_captcha_description';
   $strongarm->value = 1;
   $export['captcha_add_captcha_description'] = $strongarm;
@@ -72,6 +79,34 @@ function careers_webform_strongarm() {
   $strongarm->name = 'captcha_persistence';
   $strongarm->value = '1';
   $export['captcha_persistence'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'custom_breadcrumbs_show_form_table_webform';
+  $strongarm->value = 1;
+  $export['custom_breadcrumbs_show_form_table_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_webform';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_webform';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_webform';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_webform'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -153,6 +188,13 @@ function careers_webform_strongarm() {
   $strongarm->name = 'pathauto_node_webform_pattern';
   $strongarm->value = 'form/[node:title]';
   $export['pathauto_node_webform_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'webform_node_page';
+  $strongarm->value = 0;
+  $export['webform_node_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

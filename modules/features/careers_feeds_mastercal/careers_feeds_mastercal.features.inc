@@ -34,3 +34,20 @@ function careers_feeds_mastercal_ctools_plugin_api($module = NULL, $api = NULL) 
 function careers_feeds_mastercal_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
+
+/**
+ * Implements hook_node_info().
+ */
+function careers_feeds_mastercal_node_info() {
+  $items = array(
+    'master_calendar_event' => array(
+      'name' => t('Event'),
+      'base' => 'node_content',
+      'description' => t('<em>Events</em> are imported from the Master Calendar based on the <a href="/import/master_calendar_feed">feed configuration</a>. <em>Events</em> can also be created and managed manually.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}
