@@ -13,42 +13,54 @@ function featured_user_default_permissions() {
   // Exported permission: 'administer panelizer node featured content'.
   $permissions['administer panelizer node featured content'] = array(
     'name' => 'administer panelizer node featured content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node featured context'.
   $permissions['administer panelizer node featured context'] = array(
     'name' => 'administer panelizer node featured context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node featured defaults'.
   $permissions['administer panelizer node featured defaults'] = array(
     'name' => 'administer panelizer node featured defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node featured layout'.
   $permissions['administer panelizer node featured layout'] = array(
     'name' => 'administer panelizer node featured layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node featured overview'.
   $permissions['administer panelizer node featured overview'] = array(
     'name' => 'administer panelizer node featured overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node featured settings'.
   $permissions['administer panelizer node featured settings'] = array(
     'name' => 'administer panelizer node featured settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -56,6 +68,7 @@ function featured_user_default_permissions() {
   $permissions['create featured content'] = array(
     'name' => 'create featured content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -66,6 +79,8 @@ function featured_user_default_permissions() {
   $permissions['delete any featured content'] = array(
     'name' => 'delete any featured content',
     'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -75,6 +90,7 @@ function featured_user_default_permissions() {
   $permissions['delete own featured content'] = array(
     'name' => 'delete own featured content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -85,6 +101,7 @@ function featured_user_default_permissions() {
   $permissions['edit any featured content'] = array(
     'name' => 'edit any featured content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -95,6 +112,7 @@ function featured_user_default_permissions() {
   $permissions['edit own featured content'] = array(
     'name' => 'edit own featured content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -117,6 +135,7 @@ function featured_user_default_permissions() {
     'name' => 'override featured authored by option',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -126,6 +145,8 @@ function featured_user_default_permissions() {
     'name' => 'override featured authored on option',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -135,7 +156,6 @@ function featured_user_default_permissions() {
     'name' => 'override featured promote to front page option',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
