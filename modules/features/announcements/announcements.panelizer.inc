@@ -40,10 +40,11 @@ function announcements_panelizer_defaults() {
   );
   $display->cache = array();
   $display->title = '%node:title';
+  $display->uuid = 'e44d5689-9e13-4d54-82f9-3592495bb0d7';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-1';
+    $pane->pid = 'new-e2038f81-faed-4794-92f6-3f68075b5d8f';
     $pane->panel = 'center';
     $pane->type = 'node_created';
     $pane->subtype = 'node_created';
@@ -63,10 +64,11 @@ function announcements_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['center'][0] = 'new-1';
+    $pane->uuid = 'e2038f81-faed-4794-92f6-3f68075b5d8f';
+    $display->content['new-e2038f81-faed-4794-92f6-3f68075b5d8f'] = $pane;
+    $display->panels['center'][0] = 'new-e2038f81-faed-4794-92f6-3f68075b5d8f';
     $pane = new stdClass();
-    $pane->pid = 'new-2';
+    $pane->pid = 'new-8221ccff-8a22-473f-92cc-1d3d507e2ee0';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:body';
@@ -89,10 +91,11 @@ function announcements_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['center'][1] = 'new-2';
+    $pane->uuid = '8221ccff-8a22-473f-92cc-1d3d507e2ee0';
+    $display->content['new-8221ccff-8a22-473f-92cc-1d3d507e2ee0'] = $pane;
+    $display->panels['center'][1] = 'new-8221ccff-8a22-473f-92cc-1d3d507e2ee0';
     $pane = new stdClass();
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-27f231da-939e-48e0-8a8f-f427d603c3ba';
     $pane->panel = 'center';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
@@ -116,10 +119,11 @@ function announcements_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['center'][2] = 'new-3';
+    $pane->uuid = '27f231da-939e-48e0-8a8f-f427d603c3ba';
+    $display->content['new-27f231da-939e-48e0-8a8f-f427d603c3ba'] = $pane;
+    $display->panels['center'][2] = 'new-27f231da-939e-48e0-8a8f-f427d603c3ba';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-3';
+  $display->title_pane = 'new-27f231da-939e-48e0-8a8f-f427d603c3ba';
   $panelizer->display = $display;
   $export['node:announcement:default:default'] = $panelizer;
 
