@@ -141,3 +141,46 @@ function careers_panels_default_style_render_region($vars) {
   $output .= implode('', $vars['panes']);
   return $output;
 }
+
+
+/**
+ * Returns HTML for a field.
+ *
+ * @param $vars
+ *   An associative array containing:
+ *   - label_hidden: A boolean indicating to show or hide the field label.
+ *   - title_attributes: A string containing the attributes for the title.
+ *   - label: The label for the field.
+ *   - content_attributes: A string containing the attributes for the content's
+ *     div.
+ *   - items: An array of field items.
+ *   - item_attributes: An array of attributes for each item.
+ *   - classes: A string containing the classes for the wrapping div.
+ *   - attributes: A string containing the attributes for the wrapping div.
+ *
+ * @see template_preprocess_field()
+ * @see template_process_field()
+ * @see field.tpl.php
+ */
+function careers_field($vars) {
+  $output = '';
+
+  // Render the label, if it's not hidden.
+  if (!$vars['label_hidden']) {
+    $output .= '<div class="field-label"' . $vars['title_attributes'] . '>' . $vars['label'] . ':&nbsp;</div>';
+  }
+
+  // Render the items.
+  $output .= '<div class="field-items"' . $vars['content_attributes'] . '>';
+  foreach ($vars['items'] as $delta => $item) {
+    $classes = 'field-item ' . ($delta % 2 ? 'odd' : 'even');
+    $output .= '<div class="' . $classes . '"' . $vars['item_attributes'][$delta] . '>' . drupal_render($item) . '</div>';
+  }
+  $output .= '</div>';
+
+  // Render the top-level wrapper element.
+  $tag = $vars['tag'];
+  $output = "<$tag class=\"" . $vars['classes'] . '"' . $vars['attributes'] . '>' . $output . "</$tag>";
+
+  return $output;
+}
