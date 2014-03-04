@@ -121,12 +121,15 @@ function video_views_default_views() {
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
-  $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
   $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
     'video_type' => 'video_type',
     'audience' => 0,
     'events' => 0,
-    'groups' => 0,
+    'people_groups' => 0,
+    'people_type' => 0,
+    'program' => 0,
+    'spotlights' => 0,
+    'student_status' => 0,
     'tags' => 0,
     'testimonials' => 0,
   );

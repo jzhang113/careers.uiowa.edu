@@ -1503,7 +1503,7 @@ ul.quicktabs-tabs li.active a {
 }
 
 /* line 21, ../sass/components/_videos.scss */
-.field-name-field-video-screenshot {
+.field-name-field-video-screenshot, .field-name-field-video-link {
   text-align: center;
 }
 
