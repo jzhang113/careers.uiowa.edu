@@ -28,14 +28,21 @@ function people_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_pattern_node_people';
-  $strongarm->value = '[node:field-people-first-name] [node:field-people-last-name]';
+  $strongarm->value = '<?php
+  $output = \'[node:field-people-first-name] [node:field-people-last-name]\';
+  $degree = field_get_items(\'node\', $entity, \'field_people_degree\');
+  if ($degree) {
+    $output .= \', [node:field-people-degree]\';
+  }
+  print $output;
+?>';
   $export['auto_entitylabel_pattern_node_people'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_php_node_people';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['auto_entitylabel_php_node_people'] = $strongarm;
 
   $strongarm = new stdClass();
