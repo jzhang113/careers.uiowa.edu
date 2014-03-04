@@ -149,7 +149,7 @@ function employers_organizations_field_default_field_bases() {
         'year' => 'year',
       ),
       'timezone_db' => '',
-      'todate' => 'optional',
+      'todate' => 'required',
       'tz_handling' => 'none',
     ),
     'translatable' => 0,

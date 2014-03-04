@@ -38,13 +38,11 @@
       position: absolute;
       left: 0;
       right: 0;
-      top: 50%;
+      bottom: 20px;
+      a {
+        color: #333;
+      }
     }
-  }
-  .flex-viewport {
-    overflow: visible !important;
-  }
-  #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane {
     .field-content{
       position: relative;
       height: 150px;
@@ -58,6 +56,9 @@
         width: auto;
       }
     }
+  }
+  .flex-viewport {
+    overflow: visible !important;
   }
   
   .flex-control-paging{

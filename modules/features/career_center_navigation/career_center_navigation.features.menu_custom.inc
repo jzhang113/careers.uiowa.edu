@@ -22,12 +22,6 @@ function career_center_navigation_menu_default_menu_custom() {
     'title' => 'Quick Links',
     'description' => '',
   );
-  // Exported menu: menu-site-links.
-  $menus['menu-site-links'] = array(
-    'menu_name' => 'menu-site-links',
-    'title' => 'Site Links',
-    'description' => '',
-  );
   // Exported menu: menu-social-media.
   $menus['menu-social-media'] = array(
     'menu_name' => 'menu-social-media',
@@ -38,7 +32,6 @@ function career_center_navigation_menu_default_menu_custom() {
   // Included for use with string extractors like potx.
   t('Audience Menu');
   t('Quick Links');
-  t('Site Links');
   t('Social Media');
 
 

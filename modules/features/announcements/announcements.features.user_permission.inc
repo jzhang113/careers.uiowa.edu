@@ -13,42 +13,54 @@ function announcements_user_default_permissions() {
   // Exported permission: 'administer panelizer node announcement content'.
   $permissions['administer panelizer node announcement content'] = array(
     'name' => 'administer panelizer node announcement content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node announcement context'.
   $permissions['administer panelizer node announcement context'] = array(
     'name' => 'administer panelizer node announcement context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node announcement defaults'.
   $permissions['administer panelizer node announcement defaults'] = array(
     'name' => 'administer panelizer node announcement defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node announcement layout'.
   $permissions['administer panelizer node announcement layout'] = array(
     'name' => 'administer panelizer node announcement layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node announcement overview'.
   $permissions['administer panelizer node announcement overview'] = array(
     'name' => 'administer panelizer node announcement overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node announcement settings'.
   $permissions['administer panelizer node announcement settings'] = array(
     'name' => 'administer panelizer node announcement settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -56,6 +68,7 @@ function announcements_user_default_permissions() {
   $permissions['create announcement content'] = array(
     'name' => 'create announcement content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -66,6 +79,8 @@ function announcements_user_default_permissions() {
   $permissions['delete any announcement content'] = array(
     'name' => 'delete any announcement content',
     'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -75,6 +90,7 @@ function announcements_user_default_permissions() {
   $permissions['delete own announcement content'] = array(
     'name' => 'delete own announcement content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -85,6 +101,7 @@ function announcements_user_default_permissions() {
   $permissions['edit any announcement content'] = array(
     'name' => 'edit any announcement content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -95,6 +112,7 @@ function announcements_user_default_permissions() {
   $permissions['edit own announcement content'] = array(
     'name' => 'edit own announcement content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -117,6 +135,7 @@ function announcements_user_default_permissions() {
     'name' => 'override announcement authored by option',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -126,6 +145,8 @@ function announcements_user_default_permissions() {
     'name' => 'override announcement authored on option',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -135,7 +156,6 @@ function announcements_user_default_permissions() {
     'name' => 'override announcement promote to front page option',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',

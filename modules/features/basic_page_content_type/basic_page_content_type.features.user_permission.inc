@@ -13,42 +13,54 @@ function basic_page_content_type_user_default_permissions() {
   // Exported permission: 'administer panelizer node page content'.
   $permissions['administer panelizer node page content'] = array(
     'name' => 'administer panelizer node page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node page context'.
   $permissions['administer panelizer node page context'] = array(
     'name' => 'administer panelizer node page context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node page defaults'.
   $permissions['administer panelizer node page defaults'] = array(
     'name' => 'administer panelizer node page defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node page layout'.
   $permissions['administer panelizer node page layout'] = array(
     'name' => 'administer panelizer node page layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node page overview'.
   $permissions['administer panelizer node page overview'] = array(
     'name' => 'administer panelizer node page overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node page settings'.
   $permissions['administer panelizer node page settings'] = array(
     'name' => 'administer panelizer node page settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -68,6 +80,7 @@ function basic_page_content_type_user_default_permissions() {
     'name' => 'delete any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -122,6 +135,7 @@ function basic_page_content_type_user_default_permissions() {
     'name' => 'override page authored by option',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -131,6 +145,8 @@ function basic_page_content_type_user_default_permissions() {
     'name' => 'override page authored on option',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );

@@ -521,19 +521,19 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  bottom: 20px;
 }
-/* line 44, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane .flex-viewport {
-  overflow: visible !important;
+/* line 42, ../sass/components/_employer_showcase.scss */
+.view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-direction-nav a {
+  color: #333;
 }
-/* line 48, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content {
+/* line 46, ../sass/components/_employer_showcase.scss */
+.view-display-id-employer_showcase_slider_panel_pane .flexslider .field-content {
   position: relative;
   height: 150px;
 }
-/* line 51, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane #flexslider_views_slideshow_employer_showcase-employer_showcase_slider_panel_pane .field-content img {
+/* line 49, ../sass/components/_employer_showcase.scss */
+.view-display-id-employer_showcase_slider_panel_pane .flexslider .field-content img {
   position: absolute;
   top: 0;
   left: 0;
@@ -545,7 +545,11 @@ img {
   height: auto;
   width: auto;
 }
-/* line 63, ../sass/components/_employer_showcase.scss */
+/* line 60, ../sass/components/_employer_showcase.scss */
+.view-display-id-employer_showcase_slider_panel_pane .flex-viewport {
+  overflow: visible !important;
+}
+/* line 64, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flex-control-paging {
   display: none;
 }

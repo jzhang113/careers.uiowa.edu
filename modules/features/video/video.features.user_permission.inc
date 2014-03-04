@@ -13,49 +13,63 @@ function video_user_default_permissions() {
   // Exported permission: 'administer panelizer node video content'.
   $permissions['administer panelizer node video content'] = array(
     'name' => 'administer panelizer node video content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node video context'.
   $permissions['administer panelizer node video context'] = array(
     'name' => 'administer panelizer node video context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node video defaults'.
   $permissions['administer panelizer node video defaults'] = array(
     'name' => 'administer panelizer node video defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node video layout'.
   $permissions['administer panelizer node video layout'] = array(
     'name' => 'administer panelizer node video layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node video overview'.
   $permissions['administer panelizer node video overview'] = array(
     'name' => 'administer panelizer node video overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node video settings'.
   $permissions['administer panelizer node video settings'] = array(
     'name' => 'administer panelizer node video settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term video_type defaults'.
   $permissions['administer panelizer taxonomy_term video_type defaults'] = array(
     'name' => 'administer panelizer taxonomy_term video_type defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -63,6 +77,7 @@ function video_user_default_permissions() {
   $permissions['create video content'] = array(
     'name' => 'create video content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -73,6 +88,8 @@ function video_user_default_permissions() {
   $permissions['delete any video content'] = array(
     'name' => 'delete any video content',
     'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -82,6 +99,7 @@ function video_user_default_permissions() {
   $permissions['delete own video content'] = array(
     'name' => 'delete own video content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -91,7 +109,10 @@ function video_user_default_permissions() {
   // Exported permission: 'delete terms in video_type'.
   $permissions['delete terms in video_type'] = array(
     'name' => 'delete terms in video_type',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -99,6 +120,7 @@ function video_user_default_permissions() {
   $permissions['edit any video content'] = array(
     'name' => 'edit any video content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -109,6 +131,7 @@ function video_user_default_permissions() {
   $permissions['edit own video content'] = array(
     'name' => 'edit own video content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -118,7 +141,10 @@ function video_user_default_permissions() {
   // Exported permission: 'edit terms in video_type'.
   $permissions['edit terms in video_type'] = array(
     'name' => 'edit terms in video_type',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -126,6 +152,7 @@ function video_user_default_permissions() {
   $permissions['enter video revision log entry'] = array(
     'name' => 'enter video revision log entry',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -135,21 +162,30 @@ function video_user_default_permissions() {
   // Exported permission: 'override video authored by option'.
   $permissions['override video authored by option'] = array(
     'name' => 'override video authored by option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override video authored on option'.
   $permissions['override video authored on option'] = array(
     'name' => 'override video authored on option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override video promote to front page option'.
   $permissions['override video promote to front page option'] = array(
     'name' => 'override video promote to front page option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
@@ -157,6 +193,7 @@ function video_user_default_permissions() {
   $permissions['override video published option'] = array(
     'name' => 'override video published option',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -166,14 +203,18 @@ function video_user_default_permissions() {
   // Exported permission: 'override video revision option'.
   $permissions['override video revision option'] = array(
     'name' => 'override video revision option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override video sticky option'.
   $permissions['override video sticky option'] = array(
     'name' => 'override video sticky option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 

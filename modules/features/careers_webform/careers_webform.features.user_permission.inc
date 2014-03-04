@@ -54,42 +54,54 @@ function careers_webform_user_default_permissions() {
   // Exported permission: 'administer panelizer node webform content'.
   $permissions['administer panelizer node webform content'] = array(
     'name' => 'administer panelizer node webform content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node webform context'.
   $permissions['administer panelizer node webform context'] = array(
     'name' => 'administer panelizer node webform context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node webform defaults'.
   $permissions['administer panelizer node webform defaults'] = array(
     'name' => 'administer panelizer node webform defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node webform layout'.
   $permissions['administer panelizer node webform layout'] = array(
     'name' => 'administer panelizer node webform layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node webform overview'.
   $permissions['administer panelizer node webform overview'] = array(
     'name' => 'administer panelizer node webform overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node webform settings'.
   $permissions['administer panelizer node webform settings'] = array(
     'name' => 'administer panelizer node webform settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -98,7 +110,6 @@ function careers_webform_user_default_permissions() {
     'name' => 'create webform content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -129,7 +140,6 @@ function careers_webform_user_default_permissions() {
     'name' => 'delete own webform content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -161,7 +171,6 @@ function careers_webform_user_default_permissions() {
     'name' => 'edit any webform content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -172,7 +181,6 @@ function careers_webform_user_default_permissions() {
     'name' => 'edit own webform content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',

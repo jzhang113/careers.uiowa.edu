@@ -77,4 +77,3 @@ features[variable][] = pathauto_nodesymlinks_featured_pattern
 features[views_view][] = featured
 features_exclude[dependencies][news_content_type] = news_content_type
 features_exclude[dependencies][inthenews] = inthenews
-project path = sites/careers.uiowa.edu/modules/features
