@@ -138,6 +138,16 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   margin-right: .4em;
 }
 
+/* line 102, ../sass/utilities/_classes.scss */
+.node-full.node-people .field-name-field-people-picture img {
+  border: 3px solid #4e5b6e;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
 /* line 1, ../sass/base/_block.scss */
 .block {
   padding: 10px;
@@ -1061,80 +1071,171 @@ body {
   color: #000;
 }
 
-/* line 4, ../sass/components/_people.scss */
-#content .pane-node-field-people-picture .block-content, #content .pane-node-title .block-content, #content .pane-node-field-people-position .block-content, #content .pane-node-field-people-email .block-content {
-  padding: 0px 10px;
+/* line 2, ../sass/components/_people.scss */
+.node-full.node-people {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-@media only screen and (min-width: 40em) {
-  /* line 12, ../sass/components/_people.scss */
-  .node-type-people #page-title {
-    position: absolute;
-    top: -99999em;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    outline: 0;
+/* line 7, ../sass/components/_people.scss */
+.node-full.node-people .block {
+  padding: 5px 10px;
+}
+@media only screen and (min-width: 540px) {
+  /* line 7, ../sass/components/_people.scss */
+  .node-full.node-people .block {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 /* line 16, ../sass/components/_people.scss */
-.node-type-people .pane-node-field-people-picture {
-  padding-top: 0px;
+.node-full.node-people .field-label {
+  font-size: 14px;
+  font-size: 1.4rem;
 }
-/* line 18, ../sass/components/_people.scss */
-.node-type-people .pane-node-field-people-picture img {
-  border: 3px solid #4e5b6e;
+/* line 21, ../sass/components/_people.scss */
+.node-full.node-people .pane-node-title {
+  font-size: 25px;
+  font-size: 2.5rem;
+  text-align: center;
+  border-bottom: 1px solid #ffd451;
+  margin-bottom: 10px;
 }
-@media only screen and (min-width: 40em) {
-  /* line 16, ../sass/components/_people.scss */
-  .node-type-people .pane-node-field-people-picture {
-    float: right;
-    width: 50%;
+@media only screen and (min-width: 540px) {
+  /* line 21, ../sass/components/_people.scss */
+  .node-full.node-people .pane-node-title {
+    font-size: 30px;
+    font-size: 3rem;
   }
 }
-/* line 27, ../sass/components/_people.scss */
-.node-type-people .pane-node-title .pane-title {
-  display: none;
-}
-/* line 30, ../sass/components/_people.scss */
-.node-type-people .pane-node-title .block-content {
-  display: none;
-}
-@media only screen and (min-width: 40em) {
-  /* line 30, ../sass/components/_people.scss */
-  .node-type-people .pane-node-title .block-content {
-    display: block;
+@media only screen and (min-width: 540px) {
+  /* line 32, ../sass/components/_people.scss */
+  .node-full.node-people .pane-node-title .block-content:before, .node-full.node-people .pane-node-title .block-content:after {
+    color: #707070;
+    content: "-";
+    margin: 0 0.5em;
   }
 }
-@media only screen and (min-width: 899px) {
-  /* line 38, ../sass/components/_people.scss */
-  .node-type-people .pane-node-title, .node-type-people .pane-node-field-people-position, .node-type-people .pane-node-field-people-email {
-    text-align: right;
-  }
-  /* line 41, ../sass/components/_people.scss */
-  .node-type-people .pane-node-title {
-    padding-top: 180px;
-  }
-  /* line 44, ../sass/components/_people.scss */
-  .node-type-people .pane-node-field-people-email {
-    margin-bottom: 14px;
-  }
+/* line 42, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-picture {
+  text-align: center;
 }
-/* line 49, ../sass/components/_people.scss */
-.node-type-people .pane-node-title, .node-type-people .pane-node-field-people-position,
-.node-type-people .pane-node-field-people-email {
-  overflow: hidden;
-  width: 50%;
+/* line 51, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-member-since .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0c0";
+  margin-right: 0.6em;
 }
-/* line 55, ../sass/components/_people.scss */
-.node-type-people .pane-node-field-people-biography,
-.node-type-people .pane-node-field-people-responsibilities, .node-type-people .pane-node-field-people-group,
-.node-type-people .pane-node-links {
-  overflow: inherit;
-  min-width: 200px;
+/* line 57, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-major .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f040";
+  margin-right: 0.6em;
+}
+/* line 63, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-hometown .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f015";
+  margin-right: 0.6em;
+}
+/* line 69, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-student-status .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f073";
+  margin-right: 0.6em;
+}
+/* line 75, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-position .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f007";
+  margin-right: 0.6em;
+}
+/* line 81, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-phone .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f095";
+  margin-right: 0.6em;
+}
+/* line 87, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-email .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f003";
+  margin-right: 0.6em;
+}
+/* line 93, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-office .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f041";
+  margin-right: 0.6em;
+}
+/* line 98, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-responsibilities {
+  margin-top: 10px;
+}
+/* line 101, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-responsibilities .field-label {
+  font-size: 18px;
+  font-size: 1.8rem;
+  display: block;
+  border-bottom: 1px solid #ffd451;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+/* line 110, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-biography {
+  margin-top: 10px;
+}
+/* line 113, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-biography .field-label {
+  font-size: 18px;
+  font-size: 1.8rem;
+  display: block;
+  border-bottom: 1px solid #ffd451;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 
-/* line 64, ../sass/components/_people.scss */
+/* line 125, ../sass/components/_people.scss */
 .view-display-id-people_panel_pane .views-row, .view-display-id-people_panel_pane_professional .views-row, .view-display-id-people_panel_pane_student .views-row {
   min-height: 150px;
   height: auto;
@@ -1142,12 +1243,12 @@ body {
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
-/* line 68, ../sass/components/_people.scss */
+/* line 129, ../sass/components/_people.scss */
 .view-display-id-people_panel_pane .views-field-field-people-picture, .view-display-id-people_panel_pane_professional .views-field-field-people-picture, .view-display-id-people_panel_pane_student .views-field-field-people-picture {
   display: block;
   float: left;
 }
-/* line 72, ../sass/components/_people.scss */
+/* line 133, ../sass/components/_people.scss */
 .view-display-id-people_panel_pane .views-field-title, .view-display-id-people_panel_pane .views-field-field-people-position .field-content, .view-display-id-people_panel_pane .views-field-field-people-type .field-content, .view-display-id-people_panel_pane .views-field-field-people-responsibilities, .view-display-id-people_panel_pane_professional .views-field-title, .view-display-id-people_panel_pane_professional .views-field-field-people-position .field-content, .view-display-id-people_panel_pane_professional .views-field-field-people-type .field-content, .view-display-id-people_panel_pane_professional .views-field-field-people-responsibilities, .view-display-id-people_panel_pane_student .views-field-title, .view-display-id-people_panel_pane_student .views-field-field-people-position .field-content, .view-display-id-people_panel_pane_student .views-field-field-people-type .field-content, .view-display-id-people_panel_pane_student .views-field-field-people-responsibilities {
   margin-left: 110px;
 }

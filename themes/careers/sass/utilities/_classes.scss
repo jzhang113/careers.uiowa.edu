@@ -98,3 +98,8 @@
     }
   }
 }
+
+%rounded-image {
+  @include blue-border;
+  @include border-radius(50%);
+}
