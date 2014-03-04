@@ -650,7 +650,7 @@ function people_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_people_pattern';
-  $strongarm->value = 'people/[node:title]';
+  $strongarm->value = 'people/[node:field-people-first-name]-[node:field-people-last-name]';
   $export['pathauto_node_people_pattern'] = $strongarm;
 
   return $export;
