@@ -78,6 +78,40 @@ function employers_organizations_panelizer_defaults() {
     $display->content['new-b9afaf72-cc5f-4d99-b282-07b80c9f0ed1'] = $pane;
     $display->panels['contentmain'][0] = 'new-b9afaf72-cc5f-4d99-b282-07b80c9f0ed1';
     $pane = new stdClass();
+    $pane->pid = 'new-dbc409ef-91cc-4542-a342-100c5f1e9819';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_location_address';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'addressfield_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'format_handlers' => array(
+          'address' => 'address',
+        ),
+        'use_widget_handlers' => 1,
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'dbc409ef-91cc-4542-a342-100c5f1e9819';
+    $display->content['new-dbc409ef-91cc-4542-a342-100c5f1e9819'] = $pane;
+    $display->panels['contentmain'][1] = 'new-dbc409ef-91cc-4542-a342-100c5f1e9819';
+    $pane = new stdClass();
     $pane->pid = 'new-89ca261a-03be-4539-9691-dfd136cb640a';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
@@ -99,43 +133,11 @@ function employers_organizations_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = '89ca261a-03be-4539-9691-dfd136cb640a';
     $display->content['new-89ca261a-03be-4539-9691-dfd136cb640a'] = $pane;
-    $display->panels['contentmain'][1] = 'new-89ca261a-03be-4539-9691-dfd136cb640a';
-    $pane = new stdClass();
-    $pane->pid = 'new-dbc409ef-91cc-4542-a342-100c5f1e9819';
-    $pane->panel = 'contentmain';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_location_address';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'addressfield_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'format_handlers' => array(
-          0 => 'address',
-        ),
-        'use_widget_handlers' => 1,
-      ),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $pane->uuid = 'dbc409ef-91cc-4542-a342-100c5f1e9819';
-    $display->content['new-dbc409ef-91cc-4542-a342-100c5f1e9819'] = $pane;
-    $display->panels['contentmain'][2] = 'new-dbc409ef-91cc-4542-a342-100c5f1e9819';
+    $display->panels['contentmain'][2] = 'new-89ca261a-03be-4539-9691-dfd136cb640a';
     $pane = new stdClass();
     $pane->pid = 'new-ba56931d-cd86-491b-9c54-0894e63a4464';
     $pane->panel = 'contentmain';
