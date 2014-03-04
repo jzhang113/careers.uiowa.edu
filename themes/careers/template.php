@@ -185,3 +185,45 @@ function careers_field($vars) {
 
   return $output;
 }
+
+
+/**
+ * Returns HTML for a taxonomy field.
+ *
+ * Output taxonomy term fields as unordered lists.
+ */
+function careers_field__taxonomy_term_reference($vars) {
+  $output = '';
+
+  // Render the label, if it's not hidden.
+  if (!$vars['label_hidden']) {
+    $separator = (in_array('field-label-inline', $vars['classes_array']) ? ':&nbsp;' : false);
+    $output .= '<div class="field-label"' . $vars['title_attributes'] . '>' . $vars['label'] . $separator . '</div>';
+  }
+
+  // Render a single item the same as other field types.
+  if (count($vars['items']) == 1) {
+    $output .= '<div class="field-items"' . $vars['content_attributes'] . '>';
+    foreach ($vars['items'] as $delta => $item) {
+      $classes = 'field-item ' . ($delta % 2 ? 'odd' : 'even');
+      $output .= '<div class="' . $classes . '"' . $vars['item_attributes'][$delta] . '>' . drupal_render($item) . '</div>';
+    }
+    $output .= '</div>';
+  }
+  // Render multiple items in an unordered list.
+  else {
+    $output .= '<ul class="field-items"' . $vars['content_attributes'] . '>';
+    foreach ($vars['items'] as $delta => $item) {
+      $classes = 'field-item ' . ($delta % 2 ? 'odd' : 'even');
+      $output .= '<li class="' . $classes . '"' . $vars['item_attributes'][$delta] . '>' . drupal_render($item) . '</li>';
+    }
+
+    $output .= '</ul>';
+  }
+
+  // Render the top-level wrapper element.
+  $tag = $vars['tag'];
+  $output = "<$tag class=\"" . $vars['classes'] . '"' . $vars['attributes'] . '>' . $output . "</$tag>";
+
+  return $output;
+}
