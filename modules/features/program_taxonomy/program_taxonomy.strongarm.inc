@@ -32,10 +32,13 @@ function program_taxonomy_strongarm() {
           'weight' => '5',
         ),
         'name' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'description' => array(
-          'weight' => '4',
+          'weight' => '3',
+        ),
+        'redirect' => array(
+          'weight' => '6',
         ),
       ),
       'display' => array(
