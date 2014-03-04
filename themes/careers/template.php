@@ -227,3 +227,32 @@ function careers_field__taxonomy_term_reference($vars) {
 
   return $output;
 }
+
+/**
+ * Returns HTML for the field field_people_responsibilities.
+ *
+ * Output field_people_reponsibilites as an unordered list.
+ */
+function careers_field__field_people_responsibilities(&$vars) {
+  $output = '';
+
+  // Render the label, if it's not hidden.
+  if (!$vars['label_hidden']) {
+    $separator = (in_array('field-label-inline', $vars['classes_array']) ? ':&nbsp;' : false);
+    $output .= '<div class="field-label"' . $vars['title_attributes'] . '>' . $vars['label'] . $separator . '</div>';
+  }
+
+  // Render the items.
+  $output .= '<ul class="field-items"' . $vars['content_attributes'] . '>';
+  foreach ($vars['items'] as $delta => $item) {
+    $classes = 'field-item ' . ($delta % 2 ? 'odd' : 'even');
+    $output .= '<li class="' . $classes . '"' . $vars['item_attributes'][$delta] . '>' . drupal_render($item) . '</li>';
+  }
+  $output .= '</ul>';
+
+  // Render the top-level wrapper element.
+  $tag = $vars['tag'];
+  $output = "<$tag class=\"" . $vars['classes'] . '"' . $vars['attributes'] . '>' . $output . "</$tag>";
+
+  return $output;
+}
