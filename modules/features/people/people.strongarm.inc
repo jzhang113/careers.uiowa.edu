@@ -29,10 +29,10 @@ function people_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_pattern_node_people';
   $strongarm->value = '<?php
-  $output = \'[node:field-people-first-name] [node:field-people-last-name]\';
-  $degree = field_get_items(\'node\', $entity, \'field_people_degree\');
+  $output = "[node:field-people-first-name] [node:field-people-last-name]";
+  $degree = field_get_items("node", $entity, "field_people_degree");
   if ($degree) {
-    $output .= \', [node:field-people-degree]\';
+    $output .= ", [node:field-people-degree]";
   }
   print $output;
 ?>';
