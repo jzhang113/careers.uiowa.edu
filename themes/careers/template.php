@@ -167,7 +167,8 @@ function careers_field($vars) {
 
   // Render the label, if it's not hidden.
   if (!$vars['label_hidden']) {
-    $output .= '<div class="field-label"' . $vars['title_attributes'] . '>' . $vars['label'] . ':&nbsp;</div>';
+    $separator = (in_array('field-label-inline', $vars['classes_array']) ? ':&nbsp;' : false);
+    $output .= '<div class="field-label"' . $vars['title_attributes'] . '>' . $vars['label'] . $separator . '</div>';
   }
 
   // Render the items.
