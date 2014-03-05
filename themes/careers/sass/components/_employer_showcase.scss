@@ -9,9 +9,10 @@
       margin: 0.25em;
       background-color: $page;
       @include border;
+      *border: 0px; // ie7 hack since buffer area around images is lost
     }
   }
-  
+
   // Vertical Center Image
   .views-field-field-logo{
       line-height: 200px;

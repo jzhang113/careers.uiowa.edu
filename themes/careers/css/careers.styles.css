@@ -495,25 +495,26 @@ img {
   -o-border-radius: 4px;
   border-radius: 4px;
   border: 1px solid #cccccc;
+  *border: 0px;
 }
-/* line 16, ../sass/components/_employer_showcase.scss */
+/* line 17, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_grid_panel_pane .views-field-field-logo {
   line-height: 200px;
   width: 200px;
   text-align: center;
 }
-/* line 21, ../sass/components/_employer_showcase.scss */
+/* line 22, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_grid_panel_pane .views-field-field-logo img {
   vertical-align: middle;
 }
 
-/* line 29, ../sass/components/_employer_showcase.scss */
+/* line 30, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane {
   overflow: hidden;
   width: 100%;
   position: relative;
 }
-/* line 33, ../sass/components/_employer_showcase.scss */
+/* line 34, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider {
   border: 0px;
   max-width: auto;
@@ -521,23 +522,23 @@ img {
   margin: 0 auto;
   position: static;
 }
-/* line 39, ../sass/components/_employer_showcase.scss */
+/* line 40, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-direction-nav, .view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-pauseplay {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 20px;
 }
-/* line 44, ../sass/components/_employer_showcase.scss */
+/* line 45, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-direction-nav a, .view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-pauseplay a {
   color: #333;
 }
-/* line 48, ../sass/components/_employer_showcase.scss */
+/* line 49, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider .field-content {
   position: relative;
   height: 150px;
 }
-/* line 51, ../sass/components/_employer_showcase.scss */
+/* line 52, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider .field-content img {
   position: absolute;
   top: 0;
@@ -550,11 +551,11 @@ img {
   height: auto;
   width: auto;
 }
-/* line 62, ../sass/components/_employer_showcase.scss */
+/* line 63, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flex-viewport {
   overflow: visible !important;
 }
-/* line 66, ../sass/components/_employer_showcase.scss */
+/* line 67, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flex-control-paging {
   display: none;
 }
