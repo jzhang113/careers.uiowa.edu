@@ -49,7 +49,7 @@ function employers_organizations_flexslider_default_presets() {
     'controlNav' => '0',
     'prevText' => 'Previous',
     'nextText' => 'Next',
-    'pausePlay' => 0,
+    'pausePlay' => 1,
     'pauseText' => 'Pause',
     'playText' => 'Play',
     'randomize' => 1,
