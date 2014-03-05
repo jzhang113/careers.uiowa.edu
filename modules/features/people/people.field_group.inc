@@ -67,6 +67,7 @@ function people_field_group_info() {
       4 => 'field_people_member_since',
       5 => 'field_people_student_status',
       6 => 'field_people_type',
+      7 => 'field_people_responsibility',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

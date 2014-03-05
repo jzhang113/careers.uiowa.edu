@@ -244,7 +244,7 @@ function people_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -324,7 +324,7 @@ function people_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -377,7 +377,7 @@ function people_field_default_field_instances() {
         'year_range' => '-10:+0',
       ),
       'type' => 'date_select',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -622,6 +622,46 @@ function people_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-people-field_people_responsibility'
+  $field_instances['node-people-field_people_responsibility'] = array(
+    'bundle' => 'people',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_people_responsibility',
+    'label' => 'Responsibilities',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
       'weight' => 4,
     ),
   );
@@ -659,7 +699,7 @@ function people_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
