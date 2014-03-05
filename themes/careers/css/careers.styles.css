@@ -517,14 +517,14 @@ img {
   position: static;
 }
 /* line 37, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-direction-nav {
+.view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-direction-nav, .view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-pauseplay {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 20px;
 }
 /* line 42, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-direction-nav a {
+.view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-direction-nav a, .view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-pauseplay a {
   color: #333;
 }
 /* line 46, ../sass/components/_employer_showcase.scss */
