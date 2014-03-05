@@ -2,14 +2,16 @@
 .view-display-id-employer_showcase_grid_panel_pane {
   .item-list ul {
     list-style:none;
+    text-align: center;
+
     li {
-      display: block;
-      float: left;
+      @include inline-block;
       margin: 0.25em;
       background-color: $page;
       @include border;
     }
   }
+  
   // Vertical Center Image
   .views-field-field-logo{
       line-height: 200px;
