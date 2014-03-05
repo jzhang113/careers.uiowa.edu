@@ -55,6 +55,8 @@ function careers_context_context_default_contexts() {
     'menu' => array(
       'values' => array(
         'taxonomy/term/3' => 'taxonomy/term/3',
+        'taxonomy/term/4' => 'taxonomy/term/4',
+        'taxonomy/term/6' => 'taxonomy/term/6',
       ),
     ),
   );
