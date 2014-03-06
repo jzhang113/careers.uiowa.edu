@@ -609,7 +609,7 @@ function people_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_people_responsibilities',
-    'label' => 'Responsibilities',
+    'label' => 'Responsibilities (OLD)',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -759,6 +759,7 @@ function people_field_default_field_instances() {
   t('Picture');
   t('Position');
   t('Responsibilities');
+  t('Responsibilities (OLD)');
   t('Staff Member Since');
   t('The campus address or office number of this person.');
   t('Type');

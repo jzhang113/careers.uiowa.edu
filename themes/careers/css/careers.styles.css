@@ -1215,11 +1215,11 @@ body {
   margin-right: 0.6em;
 }
 /* line 98, ../sass/components/_people.scss */
-.node-full.node-people .field-name-field-people-responsibilities {
+.node-full.node-people .field-name-field-people-responsibility {
   margin-top: 10px;
 }
 /* line 101, ../sass/components/_people.scss */
-.node-full.node-people .field-name-field-people-responsibilities .field-label {
+.node-full.node-people .field-name-field-people-responsibility .field-label {
   font-size: 18px;
   font-size: 1.8rem;
   display: block;
@@ -1255,7 +1255,7 @@ body {
   float: left;
 }
 /* line 133, ../sass/components/_people.scss */
-.view-display-id-people_panel_pane .views-field-title, .view-display-id-people_panel_pane .views-field-field-people-position .field-content, .view-display-id-people_panel_pane .views-field-field-people-type .field-content, .view-display-id-people_panel_pane .views-field-field-people-responsibilities, .view-display-id-people_panel_pane_professional .views-field-title, .view-display-id-people_panel_pane_professional .views-field-field-people-position .field-content, .view-display-id-people_panel_pane_professional .views-field-field-people-type .field-content, .view-display-id-people_panel_pane_professional .views-field-field-people-responsibilities, .view-display-id-people_panel_pane_student .views-field-title, .view-display-id-people_panel_pane_student .views-field-field-people-position .field-content, .view-display-id-people_panel_pane_student .views-field-field-people-type .field-content, .view-display-id-people_panel_pane_student .views-field-field-people-responsibilities {
+.view-display-id-people_panel_pane .views-field-title, .view-display-id-people_panel_pane .views-field-field-people-position .field-content, .view-display-id-people_panel_pane .views-field-field-people-type .field-content, .view-display-id-people_panel_pane .views-field-field-people-responsibility, .view-display-id-people_panel_pane_professional .views-field-title, .view-display-id-people_panel_pane_professional .views-field-field-people-position .field-content, .view-display-id-people_panel_pane_professional .views-field-field-people-type .field-content, .view-display-id-people_panel_pane_professional .views-field-field-people-responsibility, .view-display-id-people_panel_pane_student .views-field-title, .view-display-id-people_panel_pane_student .views-field-field-people-position .field-content, .view-display-id-people_panel_pane_student .views-field-field-people-type .field-content, .view-display-id-people_panel_pane_student .views-field-field-people-responsibility {
   margin-left: 110px;
 }
 

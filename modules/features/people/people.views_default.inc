@@ -260,13 +260,11 @@ function people_views_default_views() {
   $handler->display->display_options['fields']['field_people_position']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_people_position']['element_wrapper_type'] = 'strong';
   /* Field: Content: Responsibilities */
-  $handler->display->display_options['fields']['field_people_responsibilities']['id'] = 'field_people_responsibilities';
-  $handler->display->display_options['fields']['field_people_responsibilities']['table'] = 'field_data_field_people_responsibilities';
-  $handler->display->display_options['fields']['field_people_responsibilities']['field'] = 'field_people_responsibilities';
-  $handler->display->display_options['fields']['field_people_responsibilities']['label'] = '';
-  $handler->display->display_options['fields']['field_people_responsibilities']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_people_responsibilities']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_people_responsibilities']['multi_type'] = 'ul';
+  $handler->display->display_options['fields']['field_people_responsibility']['id'] = 'field_people_responsibility';
+  $handler->display->display_options['fields']['field_people_responsibility']['table'] = 'field_data_field_people_responsibility';
+  $handler->display->display_options['fields']['field_people_responsibility']['field'] = 'field_people_responsibility';
+  $handler->display->display_options['fields']['field_people_responsibility']['label'] = '';
+  $handler->display->display_options['fields']['field_people_responsibility']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Draggableviews: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
