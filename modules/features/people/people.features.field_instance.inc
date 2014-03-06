@@ -586,46 +586,6 @@ function people_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-people-field_people_responsibilities'
-  $field_instances['node-people-field_people_responsibilities'] = array(
-    'bundle' => 'people',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter as many as you want, however, only the first ten will be displayed.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_people_responsibilities',
-    'label' => 'Responsibilities (OLD)',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 5,
-    ),
-  );
-
   // Exported field_instance: 'node-people-field_people_responsibility'
   $field_instances['node-people-field_people_responsibility'] = array(
     'bundle' => 'people',
@@ -747,7 +707,6 @@ function people_field_default_field_instances() {
   t('Biography');
   t('Degree');
   t('Email');
-  t('Enter as many as you want, however, only the first ten will be displayed.');
   t('Enter the phone number as it should be displayed. Example: (555) 555-5555.');
   t('First Name');
   t('Groups');
@@ -759,7 +718,6 @@ function people_field_default_field_instances() {
   t('Picture');
   t('Position');
   t('Responsibilities');
-  t('Responsibilities (OLD)');
   t('Staff Member Since');
   t('The campus address or office number of this person.');
   t('Type');

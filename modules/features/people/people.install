@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file 
+ * Install, update and uninstall functions for the people feature.
+ */
+
+/**
+ * Delete text field field_people_responsibilities.
+ */
+function people_update_7100() {
+  // Delete the base and all instances of field_people_responsibilities.
+  field_delete_field('field_people_responsibilities');
+}
