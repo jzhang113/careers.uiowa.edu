@@ -201,7 +201,7 @@ function people_default_page_manager_pages() {
   $handler->handler = 'panel_context';
   $handler->weight = -28;
   $handler->conf = array(
-    'title' => 'Default',
+    'title' => 'All People',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -210,6 +210,19 @@ function people_default_page_manager_pages() {
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'path_visibility',
+          'settings' => array(
+            'visibility_setting' => '1',
+            'paths' => 'people',
+          ),
+          'context' => 'empty',
+          'not' => FALSE,
+        ),
+      ),
+    ),
   );
   $display = new panels_display();
   $display->layout = 'burr_flipped';
@@ -390,6 +403,25 @@ function people_default_page_manager_pages() {
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-4adb9982-dbc4-4ac1-a007-75aa7659913d';
   $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_people_http_response';
+  $handler->task = 'page';
+  $handler->subtask = 'people';
+  $handler->handler = 'http_response';
+  $handler->weight = -27;
+  $handler->conf = array(
+    'title' => 'Default',
+    'contexts' => array(),
+    'relationships' => array(),
+    'code' => '404',
+    'destination' => '',
+    'access' => array(
+      'logic' => 'and',
+    ),
+  );
   $page->default_handlers[$handler->name] = $handler;
   $pages['people'] = $page;
 
