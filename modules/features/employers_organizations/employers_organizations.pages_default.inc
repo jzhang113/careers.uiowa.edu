@@ -92,7 +92,10 @@ function employers_organizations_default_page_manager_pages() {
     $pane->subtype = 'employer_showcase-employer_showcase_grid_panel_pane';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '<none>',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -104,8 +107,8 @@ function employers_organizations_default_page_manager_pages() {
     $pane->uuid = 'b3d4de14-e481-4cf1-b7d7-2862de4b5c1b';
     $display->content['new-b3d4de14-e481-4cf1-b7d7-2862de4b5c1b'] = $pane;
     $display->panels['contentmain'][1] = 'new-b3d4de14-e481-4cf1-b7d7-2862de4b5c1b';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
+  $display->hide_title = PANELS_TITLE_PANE;
+  $display->title_pane = 'new-b3d4de14-e481-4cf1-b7d7-2862de4b5c1b';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['employer_showcase'] = $page;

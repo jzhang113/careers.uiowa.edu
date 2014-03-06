@@ -100,7 +100,10 @@ function video_default_page_manager_pages() {
     $pane->subtype = 'video-video_panel_pane';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '<none>',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -131,8 +134,8 @@ function video_default_page_manager_pages() {
     $pane->uuid = '8bdd7f72-9e2c-4874-83de-e75bcd3ec617';
     $display->content['new-8bdd7f72-9e2c-4874-83de-e75bcd3ec617'] = $pane;
     $display->panels['sidebar'][0] = 'new-8bdd7f72-9e2c-4874-83de-e75bcd3ec617';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
+  $display->hide_title = PANELS_TITLE_PANE;
+  $display->title_pane = 'new-0994c3bf-582a-4d50-9b5e-78ee3beb3fc1';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['career_tube'] = $page;

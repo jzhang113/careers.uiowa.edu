@@ -92,7 +92,10 @@ function spotlights_default_page_manager_pages() {
     $pane->subtype = 'spotlights-spotlights_panel_pane';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '<none>',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -104,7 +107,7 @@ function spotlights_default_page_manager_pages() {
     $pane->uuid = '22ae9960-9f68-4ff9-8c08-1add7514d298';
     $display->content['new-22ae9960-9f68-4ff9-8c08-1add7514d298'] = $pane;
     $display->panels['contentmain'][1] = 'new-22ae9960-9f68-4ff9-8c08-1add7514d298';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-22ae9960-9f68-4ff9-8c08-1add7514d298';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
