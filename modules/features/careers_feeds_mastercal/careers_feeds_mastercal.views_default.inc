@@ -39,9 +39,9 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
-  $handler->display->display_options['empty']['area']['label'] = 'No events';
+  $handler->display->display_options['empty']['area']['label'] = 'No Results Found';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'There are no events scheduled at this time.';
+  $handler->display->display_options['empty']['area']['content'] = 'No Results Found';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
