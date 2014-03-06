@@ -1,0 +1,14 @@
+<?php
+/**
+ * @file
+ * Install and update tasks for the Careers Entity View Modes featrue.
+ */
+
+/**
+ * Enable new dependency Media Wysiwyg View Mode
+ */
+function careers_entity_view_modes_update_7100() {
+  if (!module_exists('media_wysiwyg_view_mode')) {
+    module_enable(array('media_wysiwyg_view_mode'));
+  }
+}
