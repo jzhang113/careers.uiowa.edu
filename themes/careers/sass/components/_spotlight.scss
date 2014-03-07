@@ -48,7 +48,7 @@
     @include font-size($base-font-size);
   }
 
-  .pane-node-title {
+  .pane-node-field-spotlight-name {
     @include font-size(2.5);
     text-align: center;
     border-bottom: 1px solid $yellow;
@@ -58,7 +58,7 @@
       @include font-size(3);
     }
 
-    .block-content {
+    .field-name-field-spotlight-name .field-item {
       &:before, &:after {
         @media #{$people-name-decorated} {
           color: #707070;

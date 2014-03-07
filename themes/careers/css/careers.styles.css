@@ -1490,7 +1490,7 @@ ul.quicktabs-tabs li.active a {
   font-size: 1.4rem;
 }
 /* line 51, ../sass/components/_spotlight.scss */
-.node-full.node-spotlight .pane-node-title {
+.node-full.node-spotlight .pane-node-field-spotlight-name {
   font-size: 25px;
   font-size: 2.5rem;
   text-align: center;
@@ -1499,14 +1499,14 @@ ul.quicktabs-tabs li.active a {
 }
 @media only screen and (min-width: 540px) {
   /* line 51, ../sass/components/_spotlight.scss */
-  .node-full.node-spotlight .pane-node-title {
+  .node-full.node-spotlight .pane-node-field-spotlight-name {
     font-size: 30px;
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 540px) {
   /* line 62, ../sass/components/_spotlight.scss */
-  .node-full.node-spotlight .pane-node-title .block-content:before, .node-full.node-spotlight .pane-node-title .block-content:after {
+  .node-full.node-spotlight .pane-node-field-spotlight-name .field-name-field-spotlight-name .field-item:before, .node-full.node-spotlight .pane-node-field-spotlight-name .field-name-field-spotlight-name .field-item:after {
     color: #707070;
     content: "-";
     margin: 0 0.5em;
