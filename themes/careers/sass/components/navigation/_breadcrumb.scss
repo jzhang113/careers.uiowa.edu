@@ -1,6 +1,8 @@
 #breadcrumb {
+  background-color: $main-content-header-bkgrd;
+  color: #fff;
   margin: 0;
-  padding: 10px;
+  padding: 10px 10px 0;
 
   /* If the label is set to show in theme settings the label class is added */
   .breadcrumb-label {
@@ -25,5 +27,13 @@
   li {
     list-style: none;
     display: inline;
+  }
+
+  a {
+    color: $yellow;
+
+    &:hover, &:focus {
+      color: #fff;
+    }
   }
 }

@@ -99,12 +99,20 @@ body {
 
 // Page Content Areas
 #main-content, 
-#main-content-header, 
-#breadcrumb, 
 #messages, 
 .region-tertiary-content, 
 #columns {
   background: $page;
+}
+
+#main-content-header {
+  background-color: $main-content-header-bkgrd;
+  border-bottom: 4px solid $yellow;
+  color: #fff;
+}
+
+#messages {
+  background-color: $main-content-header-bkgrd;
 }
 
 #footer-upper-wrapper {

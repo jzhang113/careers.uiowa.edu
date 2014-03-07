@@ -1,3 +1,9 @@
-.front #page-title {
+.front {
+  #page-title {
     @include offscreen;
+  }
+
+  #main-content-header {
+    border-bottom: 0;
+  }
 }

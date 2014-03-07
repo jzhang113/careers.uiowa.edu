@@ -893,7 +893,7 @@ img {
   margin-bottom: 0;
 }
 
-/* line 1, ../sass/components/_front.scss */
+/* line 2, ../sass/components/_front.scss */
 .front #page-title {
   position: absolute;
   top: -99999em;
@@ -901,6 +901,10 @@ img {
   height: 1px;
   overflow: hidden;
   outline: 0;
+}
+/* line 6, ../sass/components/_front.scss */
+.front #main-content-header {
+  border-bottom: 0;
 }
 
 /* line 3, ../sass/components/_hireahawk.scss */
@@ -1060,28 +1064,38 @@ body {
   outline: 0;
 }
 
-/* line 106, ../sass/components/_page.scss */
+/* line 104, ../sass/components/_page.scss */
 #main-content,
-#main-content-header,
-#breadcrumb,
 #messages,
 .region-tertiary-content,
 #columns {
   background: white;
 }
 
-/* line 110, ../sass/components/_page.scss */
+/* line 108, ../sass/components/_page.scss */
+#main-content-header {
+  background-color: #333333;
+  border-bottom: 4px solid #ffd451;
+  color: #fff;
+}
+
+/* line 114, ../sass/components/_page.scss */
+#messages {
+  background-color: #333333;
+}
+
+/* line 118, ../sass/components/_page.scss */
 #footer-upper-wrapper {
   background-color: #333;
   background: url("images/bg_tile.gif") repeat;
   color: #fafafa;
 }
-/* line 115, ../sass/components/_page.scss */
+/* line 123, ../sass/components/_page.scss */
 #footer-upper-wrapper a {
   color: #fafafa;
 }
 
-/* line 120, ../sass/components/_page.scss */
+/* line 128, ../sass/components/_page.scss */
 #footer-wrapper {
   background-color: #ffd451;
   color: #000;
@@ -1817,34 +1831,44 @@ ul.quicktabs-tabs li.active a {
 
 /* line 1, ../sass/components/navigation/_breadcrumb.scss */
 #breadcrumb {
+  background-color: #333333;
+  color: #fff;
   margin: 0;
-  padding: 10px;
+  padding: 10px 10px 0;
   /* If the label is set to show in theme settings the label class is added */
 }
-/* line 6, ../sass/components/navigation/_breadcrumb.scss */
+/* line 8, ../sass/components/navigation/_breadcrumb.scss */
 #breadcrumb .breadcrumb-label {
   font-size: 10px;
   font-size: 1rem;
   display: inline;
   padding-right: 10px;
 }
-/* line 11, ../sass/components/navigation/_breadcrumb.scss */
+/* line 13, ../sass/components/navigation/_breadcrumb.scss */
 #breadcrumb .breadcrumb-label:after {
   content: ":";
 }
-/* line 16, ../sass/components/navigation/_breadcrumb.scss */
+/* line 18, ../sass/components/navigation/_breadcrumb.scss */
 #breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-/* line 21, ../sass/components/navigation/_breadcrumb.scss */
+/* line 23, ../sass/components/navigation/_breadcrumb.scss */
 #breadcrumb .with-breadcrumb-label ol {
   display: inline;
 }
-/* line 25, ../sass/components/navigation/_breadcrumb.scss */
+/* line 27, ../sass/components/navigation/_breadcrumb.scss */
 #breadcrumb li {
   list-style: none;
   display: inline;
+}
+/* line 32, ../sass/components/navigation/_breadcrumb.scss */
+#breadcrumb a {
+  color: #ffd451;
+}
+/* line 35, ../sass/components/navigation/_breadcrumb.scss */
+#breadcrumb a:hover, #breadcrumb a:focus {
+  color: #fff;
 }
 
 /* line 167, ../sass/utilities/_mixins.scss */
