@@ -5,3 +5,14 @@
  */
 
 include_once 'audience_taxonomy.features.inc';
+
+function audience_taxonomy_form_taxonomy_form_term_alter(&$form, &$form_state, $form_id) {
+  // Add additional settings vertical tab like a node edit page.
+  $form['additional_settings'] = array(
+    '#type' => 'vertical_tabs',
+    '#weight' => 99,
+  );
+  // Add relations and redirect fieldsets to additional_settings vertical tab.
+  $form['relations']['#group'] = 'additional_settings';
+  $form['redirect']['#group'] = 'additional_settings';
+}
