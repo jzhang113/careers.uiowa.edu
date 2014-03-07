@@ -36,14 +36,15 @@ function spotlights_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'label' => 'Story',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
@@ -198,27 +199,23 @@ function spotlights_field_default_field_instances() {
         ),
         'manualcrop_crop_info' => 1,
         'manualcrop_default_crop_area' => 1,
-        'manualcrop_enable' => 0,
+        'manualcrop_enable' => 1,
         'manualcrop_inline_crop' => FALSE,
         'manualcrop_instant_crop' => FALSE,
-        'manualcrop_instant_preview' => 1,
+        'manualcrop_instant_preview' => 0,
         'manualcrop_require_cropping' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
-          'people_profile_100' => 0,
-          'people_profile_320' => 0,
+          'people_profile' => 'people_profile',
           'square' => 0,
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
-          'featured_home' => 0,
           'featured_page' => 0,
-          'people_profile_100' => 0,
-          'people_profile_320' => 0,
+          'people_profile' => 'people_profile',
           'square' => 0,
         ),
-        'manualcrop_styles_mode' => 'exclude',
+        'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
         'progress_indicator' => 'throbber',
       ),
@@ -504,7 +501,6 @@ function spotlights_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Audience');
-  t('Body');
   t('Graduation Year');
   t('Image');
   t('Location');
@@ -513,6 +509,7 @@ function spotlights_field_default_field_instances() {
   t('Organization');
   t('Program');
   t('Spotlight Type');
+  t('Story');
   t('Tag this spotlight to one or more audiences.');
   t('Tag this spotlight with one or more programs.');
   t('Title/Position');

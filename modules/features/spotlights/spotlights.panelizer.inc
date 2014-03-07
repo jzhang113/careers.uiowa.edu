@@ -57,7 +57,7 @@ function spotlights_panelizer_defaults() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'file_view_mode' => 'full',
+        'file_view_mode' => 'people_node',
       ),
       'context' => 'panelizer',
       'override_title' => 0,
