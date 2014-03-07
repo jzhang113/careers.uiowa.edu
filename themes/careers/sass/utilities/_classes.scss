@@ -103,3 +103,11 @@
   @include blue-border;
   @include border-radius(50%);
 }
+
+%underlined-field-label {
+  @include font-size(1.8);
+  display: block;
+  border-bottom: 1px solid $yellow;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}

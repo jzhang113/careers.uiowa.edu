@@ -111,11 +111,7 @@
     margin-top: 10px;
 
     .field-label {
-      @include font-size(1.8);
-      display: block;
-      border-bottom: 1px solid $yellow;
-      margin-bottom: 10px;
-      padding-bottom: 5px;
+      @extend %underlined-field-label;
     }
   }
 }
