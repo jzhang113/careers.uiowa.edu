@@ -139,7 +139,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 }
 
 /* line 102, ../sass/utilities/_classes.scss */
-.node-full.node-people .field-name-field-people-picture img {
+.node-full.node-people .field-name-field-people-picture img, .node-full.node-spotlight .field-name-field-spotlight-image img {
   border: 3px solid #4e5b6e;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -149,7 +149,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 }
 
 /* line 107, ../sass/utilities/_classes.scss */
-.node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-video .field-label-above .field-label {
+.node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
   font-size: 1.8rem;
   display: block;
@@ -1467,9 +1467,113 @@ ul.quicktabs-tabs li.active a {
   border: 3px solid #4e5b6e;
 }
 
-/* line 35, ../sass/components/_spotlight.scss */
-.node-type-spotlight #content .block-content {
-  padding: 0px 10px;
+/* line 33, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .block {
+  padding: 5px 10px;
+}
+@media only screen and (min-width: 540px) {
+  /* line 38, ../sass/components/_spotlight.scss */
+  .node-full.node-spotlight .block {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+/* line 47, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .field-label {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+/* line 51, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .pane-node-title {
+  font-size: 25px;
+  font-size: 2.5rem;
+  text-align: center;
+  border-bottom: 1px solid #ffd451;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 540px) {
+  /* line 51, ../sass/components/_spotlight.scss */
+  .node-full.node-spotlight .pane-node-title {
+    font-size: 30px;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 540px) {
+  /* line 62, ../sass/components/_spotlight.scss */
+  .node-full.node-spotlight .pane-node-title .block-content:before, .node-full.node-spotlight .pane-node-title .block-content:after {
+    color: #707070;
+    content: "-";
+    margin: 0 0.5em;
+  }
+}
+/* line 72, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .field-name-field-spotlight-image {
+  text-align: center;
+}
+/* line 81, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .field-name-field-spotlight-organization .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0c0";
+  margin-right: 0.6em;
+}
+/* line 87, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .field-name-field-spotlight-major .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f040";
+  margin-right: 0.6em;
+}
+/* line 93, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .field-name-field-spotlight-graduation .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f073";
+  margin-right: 0.6em;
+}
+/* line 99, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .field-name-field-spotlight-position .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f007";
+  margin-right: 0.6em;
+}
+/* line 105, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .field-name-field-spotlight-location .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f041";
+  margin-right: 0.6em;
+}
+/* line 110, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .field-name-body {
+  margin-top: 10px;
 }
 
 /* line 2, ../sass/components/_success_stories.scss */

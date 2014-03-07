@@ -29,11 +29,89 @@
   }
 }
 
-// Spotlight Node
-.node-type-spotlight {
-  #content {
-    .block-content{
-      padding: 0px 10px;
+// Spotlight Nodes
+.node-full.node-spotlight {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .block {
+    padding: 5px $gutters;
+
+    @media #{$people-name-decorated} {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+
+  .field-label {
+    @include font-size($base-font-size);
+  }
+
+  .pane-node-title {
+    @include font-size(2.5);
+    text-align: center;
+    border-bottom: 1px solid $yellow;
+    margin-bottom: 10px;
+
+    @media #{$people-name-decorated} {
+      @include font-size(3);
+    }
+
+    .block-content {
+      &:before, &:after {
+        @media #{$people-name-decorated} {
+          color: #707070;
+          content: "-";
+          margin: 0 0.5em;
+        }
+      }
+    }
+  }
+
+  .field-name-field-spotlight-image {
+    text-align: center;
+
+    img {
+      @extend %rounded-image;
+    }
+  }
+
+  .field-name-field-spotlight-organization {
+    .field-label:before {
+      @include icon($fa-var-group, $margin-right: $field-label-icon-margin);
+    }
+  }
+
+  .field-name-field-spotlight-major {
+    .field-label:before {
+      @include icon($fa-var-pencil, $margin-right: $field-label-icon-margin);
+    }
+  }
+
+  .field-name-field-spotlight-graduation {
+    .field-label:before {
+      @include icon($fa-var-calendar, $margin-right: $field-label-icon-margin);
+    }
+  }
+
+  .field-name-field-spotlight-position {
+    .field-label:before {
+      @include icon($fa-var-user, $margin-right: $field-label-icon-margin);
+    }
+  }
+
+  .field-name-field-spotlight-location {
+    .field-label:before {
+      @include icon($fa-var-map-marker, $margin-right: $field-label-icon-margin);
+    }
+  }
+
+  .field-name-body {
+    margin-top: 10px;
+
+    .field-label {
+      @extend %underlined-field-label;
     }
   }
 }
