@@ -59,7 +59,7 @@
     text-align: center;
 
     img {
-      @extend %rounded-image;
+      @include blue-border;
     }
   }
 

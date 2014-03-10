@@ -148,16 +148,6 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   margin-right: .4em;
 }
 
-/* line 110, ../sass/utilities/_classes.scss */
-.node-full.node-people .field-name-field-people-picture img, .node-full.node-spotlight .field-name-field-spotlight-image img {
-  border: 3px solid #4e5b6e;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-
 /* line 115, ../sass/utilities/_classes.scss */
 .pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
@@ -1200,6 +1190,10 @@ body {
 .node-full.node-people .field-name-field-people-picture {
   text-align: center;
 }
+/* line 27, ../sass/components/_people.scss */
+.node-full.node-people .field-name-field-people-picture img {
+  border: 3px solid #4e5b6e;
+}
 /* line 33, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-member-since .field-label:before {
   font-family: FontAwesome;
@@ -1566,6 +1560,10 @@ ul.quicktabs-tabs li.active a {
 /* line 58, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-image {
   text-align: center;
+}
+/* line 61, ../sass/components/_spotlight.scss */
+.node-full.node-spotlight .field-name-field-spotlight-image img {
+  border: 3px solid #4e5b6e;
 }
 /* line 67, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-organization .field-label:before {
