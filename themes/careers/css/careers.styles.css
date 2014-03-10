@@ -975,6 +975,35 @@ img {
   border-bottom: 0px;
 }
 
+/* line 14, ../sass/components/_in_the_news.scss */
+.node-news-content-type .field-name-field-source {
+  border-top: 1px solid #ffd451;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+/* line 20, ../sass/components/_in_the_news.scss */
+.node-news-content-type .field-name-field-source .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f045";
+  margin-right: 0.3em;
+}
+/* line 28, ../sass/components/_in_the_news.scss */
+.node-news-content-type .field-name-field-published-date .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f073";
+  margin-right: 0.3em;
+}
+
 /* line 1, ../sass/components/_messages.scss */
 #messages {
   margin: 0px;
