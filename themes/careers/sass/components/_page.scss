@@ -115,6 +115,12 @@ body {
   background-color: $main-content-header-bkgrd;
 }
 
+#tasks {
+  ul.primary{
+    border-bottom: 0px;
+  }
+}
+
 #footer-upper-wrapper {
   background-color: #333;
   background: url('images/bg_tile.gif') repeat;

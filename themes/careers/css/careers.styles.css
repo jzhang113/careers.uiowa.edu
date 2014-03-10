@@ -1095,18 +1095,23 @@ body {
   background-color: #333333;
 }
 
-/* line 118, ../sass/components/_page.scss */
+/* line 119, ../sass/components/_page.scss */
+#tasks ul.primary {
+  border-bottom: 0px;
+}
+
+/* line 124, ../sass/components/_page.scss */
 #footer-upper-wrapper {
   background-color: #333;
   background: url("images/bg_tile.gif") repeat;
   color: #fafafa;
 }
-/* line 123, ../sass/components/_page.scss */
+/* line 129, ../sass/components/_page.scss */
 #footer-upper-wrapper a {
   color: #fafafa;
 }
 
-/* line 128, ../sass/components/_page.scss */
+/* line 134, ../sass/components/_page.scss */
 #footer-wrapper {
   background-color: #ffd451;
   color: #000;
