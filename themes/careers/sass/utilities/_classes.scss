@@ -22,7 +22,8 @@
     a, .nolink {
       color: #333;
       &:hover {
-        color: $blue;
+        color: $gold;
+        text-decoration: none;
       }
     }
 
@@ -68,6 +69,13 @@
     position: relative;
     @include hr;
     padding-right: 35px;
+    a{
+      color: black;
+      &:hover{
+        text-decoration: none;
+        color: $gold;
+      }
+    }
   }
 
   .summary-count {

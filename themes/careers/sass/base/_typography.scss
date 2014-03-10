@@ -52,6 +52,7 @@ a {
   &:hover,
   &:focus {
     color: $links_focus;
+    text-decoration: underline;
   }
 }
 

@@ -64,7 +64,7 @@ function program_taxonomy_views_default_views() {
   /* Display: Social Media Block */
   $handler = $view->new_display('block', 'Social Media Block', 'programs_social_media_block');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Connect with Us';
+  $handler->display->display_options['title'] = 'Connect With Us';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Taxonomy term: Social Media Links */
@@ -87,6 +87,11 @@ function program_taxonomy_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
+    'program' => 'program',
+  );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Taxonomy vocabulary: Machine name */
@@ -96,6 +101,11 @@ function program_taxonomy_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'program' => 'program',
   );
+  /* Filter criterion: Taxonomy term: Social Media Links (field_program_social_media_links:url) */
+  $handler->display->display_options['filters']['field_program_social_media_links_url']['id'] = 'field_program_social_media_links_url';
+  $handler->display->display_options['filters']['field_program_social_media_links_url']['table'] = 'field_data_field_program_social_media_links';
+  $handler->display->display_options['filters']['field_program_social_media_links_url']['field'] = 'field_program_social_media_links_url';
+  $handler->display->display_options['filters']['field_program_social_media_links_url']['operator'] = 'not empty';
   $handler->display->display_options['block_description'] = 'Program Social Media Links';
   $export['programs'] = $view;
 
