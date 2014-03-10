@@ -1445,7 +1445,11 @@ ul.quicktabs-tabs li.active a {
   }
 }
 
-/* line 3, ../sass/components/_rss.scss */
+/* line 2, ../sass/components/_rss.scss */
+.rss-feed a {
+  color: black;
+}
+/* line 4, ../sass/components/_rss.scss */
 .rss-feed a:before {
   margin-right: 0.5em;
   font-family: FontAwesome;
@@ -1458,9 +1462,10 @@ ul.quicktabs-tabs li.active a {
   font-size: 1em;
   color: #e68b39;
 }
-/* line 7, ../sass/components/_rss.scss */
+/* line 8, ../sass/components/_rss.scss */
 .rss-feed a:hover {
   text-decoration: none;
+  color: #9c8345;
 }
 
 /* line 3, ../sass/components/_spotlight.scss */

@@ -1,10 +1,12 @@
 // RSS Feed Font Awesome Icon
 .rss-feed a {
+	color: black;
   &:before{
     margin-right: 0.5em;
     @include icon($fa-var-rss-square, $color: $orange, $size: 1.0em);
   }
   &:hover{
     text-decoration: none;
+    color: $gold;
   }
 }
