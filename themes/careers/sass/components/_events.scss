@@ -6,8 +6,7 @@
 
     .field-content {
       &:before {
-        @include icon($fa-var-clock-o, $color: #333, $size: 1.2em);
-        margin-right: 0.5em;
+        @include icon($fa-var-clock-o, $margin-right: 0.5em);
       }
     }
   }
@@ -17,9 +16,7 @@
     
     .field-content {
       &:before {
-        @include icon($fa-var-map-marker, $color: #333, $size: 1.2em);
-        margin-right: 0.5em;
-        padding: 0 3px;
+        @include icon($fa-var-map-marker, $margin-right: 0.5em);
       }
     }
   }
@@ -43,26 +40,33 @@
 }
 
 .field-name-field-mcf-date {
-    margin-bottom: 5px;
-
-    .field-items {
-      &:before {
-        @include icon($fa-var-clock-o, $color: #333, $size: 1.2em);
-        margin-right: 0.5em;
-        float: left;
-      }
+  .field-label {
+    &:before {
+      @include icon($fa-var-clock-o, $margin-right: 0.5em);
     }
   }
+}
 
-  .field-name-field-mcf-location {
-    margin-bottom: 5px;
-    
-    .field-items {
-      &:before {
-        @include icon($fa-var-map-marker, $color: #333, $size: 1.2em);
-        margin-right: 0.5em;
-        padding: 0 3px;
-        float: left;
-      }
+.field-name-field-mcf-location {    
+  .field-label {
+    &:before {
+      @include icon($fa-var-map-marker, $margin-right: 0.5em);
     }
-  } 
+  }
+}
+
+.field-name-field-mcf-event-url {
+  .field-label {
+    &:before {
+      @include icon($fa-var-info-circle, $margin-right: 0.5em);
+    }
+  }
+}
+
+.field-name-body {
+  margin-top: 10px;
+
+  .field-label {
+    @extend %underlined-field-label;
+  }
+}

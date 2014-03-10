@@ -1,5 +1,5 @@
 .field-label {
-  @include font-size(1.8);
+  @include font-size($base-font-size);
 }
 
 .field-label-inline {

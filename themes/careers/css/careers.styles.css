@@ -149,7 +149,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 }
 
 /* line 107, ../sass/utilities/_classes.scss */
-.node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
+.field-name-body .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
   font-size: 1.8rem;
   display: block;
@@ -165,8 +165,8 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 
 /* line 1, ../sass/base/_fields.scss */
 .field-label {
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* line 6, ../sass/base/_fields.scss */
@@ -301,8 +301,12 @@ body {
 p {
   margin: 0 0 10px 0;
 }
+/* line 16, ../sass/base/_typography.scss */
+p:last-of-type {
+  margin-bottom: 0;
+}
 
-/* line 17, ../sass/base/_typography.scss */
+/* line 21, ../sass/base/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
   font-size: 18px;
@@ -310,47 +314,47 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
-/* line 23, ../sass/base/_typography.scss */
+/* line 27, ../sass/base/_typography.scss */
 h1 {
   font-size: 30px;
   font-size: 3rem;
 }
 
-/* line 28, ../sass/base/_typography.scss */
+/* line 32, ../sass/base/_typography.scss */
 h2 {
   font-size: 20px;
   font-size: 2rem;
 }
 
-/* line 33, ../sass/base/_typography.scss */
+/* line 37, ../sass/base/_typography.scss */
 h3 {
   font-size: 18px;
   font-size: 1.8rem;
 }
 
-/* line 38, ../sass/base/_typography.scss */
+/* line 42, ../sass/base/_typography.scss */
 h4 {
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-/* line 43, ../sass/base/_typography.scss */
+/* line 47, ../sass/base/_typography.scss */
 a {
   color: #4e5b6e;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 49, ../sass/base/_typography.scss */
+/* line 53, ../sass/base/_typography.scss */
 a:hover, a:focus {
   color: black;
 }
 
-/* line 55, ../sass/base/_typography.scss */
+/* line 59, ../sass/base/_typography.scss */
 img {
   height: auto;
   max-width: 100%;
 }
-/* line 59, ../sass/base/_typography.scss */
+/* line 63, ../sass/base/_typography.scss */
 .lt-ie9 img {
   max-width: auto;
 }
@@ -585,16 +589,14 @@ img {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f017";
-  font-size: 1.2em;
-  color: #333333;
   margin-right: 0.5em;
 }
-/* line 15, ../sass/components/_events.scss */
+/* line 14, ../sass/components/_events.scss */
 .view-display-id-events_panel_page .views-field-field-mcf-location,
 .view-display-id-events_front_page .views-field-field-mcf-location {
   margin-bottom: 5px;
 }
-/* line 19, ../sass/components/_events.scss */
+/* line 18, ../sass/components/_events.scss */
 .view-display-id-events_panel_page .views-field-field-mcf-location .field-content:before,
 .view-display-id-events_front_page .views-field-field-mcf-location .field-content:before {
   font-family: FontAwesome;
@@ -604,12 +606,9 @@ img {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f041";
-  font-size: 1.2em;
-  color: #333333;
   margin-right: 0.5em;
-  padding: 0 3px;
 }
-/* line 27, ../sass/components/_events.scss */
+/* line 24, ../sass/components/_events.scss */
 .view-display-id-events_panel_page .views-row,
 .view-display-id-events_front_page .views-row {
   height: auto;
@@ -617,27 +616,23 @@ img {
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
-/* line 31, ../sass/components/_events.scss */
+/* line 28, ../sass/components/_events.scss */
 .view-display-id-events_panel_page .views-row-last,
 .view-display-id-events_front_page .views-row-last {
   border-bottom: 0px;
 }
 
-/* line 37, ../sass/components/_events.scss */
+/* line 34, ../sass/components/_events.scss */
 .pane-views-exp-events-events-panel-page .views-submit-button, .pane-views-exp-events-events-panel-page .views-reset-button {
   width: auto;
 }
-/* line 40, ../sass/components/_events.scss */
+/* line 37, ../sass/components/_events.scss */
 .pane-views-exp-events-events-panel-page input[type="text"], .pane-views-exp-events-events-panel-page .views-widget-filter-field_event_category_tid, .pane-views-exp-events-events-panel-page .form-select {
   width: 99%;
 }
 
-/* line 45, ../sass/components/_events.scss */
-.field-name-field-mcf-date {
-  margin-bottom: 5px;
-}
-/* line 49, ../sass/components/_events.scss */
-.field-name-field-mcf-date .field-items:before {
+/* line 44, ../sass/components/_events.scss */
+.field-name-field-mcf-date .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -645,18 +640,11 @@ img {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f017";
-  font-size: 1.2em;
-  color: #333333;
   margin-right: 0.5em;
-  float: left;
 }
 
-/* line 57, ../sass/components/_events.scss */
-.field-name-field-mcf-location {
-  margin-bottom: 5px;
-}
-/* line 61, ../sass/components/_events.scss */
-.field-name-field-mcf-location .field-items:before {
+/* line 52, ../sass/components/_events.scss */
+.field-name-field-mcf-location .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -664,11 +652,24 @@ img {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f041";
-  font-size: 1.2em;
-  color: #333333;
   margin-right: 0.5em;
-  padding: 0 3px;
-  float: left;
+}
+
+/* line 60, ../sass/components/_events.scss */
+.field-name-field-mcf-event-url .field-label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f05a";
+  margin-right: 0.5em;
+}
+
+/* line 66, ../sass/components/_events.scss */
+.field-name-body {
+  margin-top: 10px;
 }
 
 /* line 1, ../sass/components/_flexslider.scss */
@@ -907,6 +908,23 @@ img {
   border-bottom: 0;
 }
 
+/* line 1, ../sass/components/_full_node.scss */
+.node-full {
+  margin: 0 auto;
+  max-width: 640px;
+}
+/* line 5, ../sass/components/_full_node.scss */
+.node-full .block {
+  padding: 5px 10px;
+}
+@media only screen and (min-width: 540px) {
+  /* line 5, ../sass/components/_full_node.scss */
+  .node-full .block {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
 /* line 3, ../sass/components/_hireahawk.scss */
 .pane-block-1 img, #block-block-1 img {
   width: 50%;
@@ -1101,29 +1119,7 @@ body {
   color: #000;
 }
 
-/* line 2, ../sass/components/_people.scss */
-.node-full.node-people {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 7, ../sass/components/_people.scss */
-.node-full.node-people .block {
-  padding: 5px 10px;
-}
-@media only screen and (min-width: 540px) {
-  /* line 7, ../sass/components/_people.scss */
-  .node-full.node-people .block {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-}
-/* line 16, ../sass/components/_people.scss */
-.node-full.node-people .field-label {
-  font-size: 14px;
-  font-size: 1.4rem;
-}
-/* line 21, ../sass/components/_people.scss */
+/* line 3, ../sass/components/_people.scss */
 .node-full.node-people .pane-node-title {
   font-size: 25px;
   font-size: 2.5rem;
@@ -1132,25 +1128,25 @@ body {
   margin-bottom: 10px;
 }
 @media only screen and (min-width: 540px) {
-  /* line 21, ../sass/components/_people.scss */
+  /* line 3, ../sass/components/_people.scss */
   .node-full.node-people .pane-node-title {
     font-size: 30px;
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 540px) {
-  /* line 32, ../sass/components/_people.scss */
+  /* line 14, ../sass/components/_people.scss */
   .node-full.node-people .pane-node-title .block-content:before, .node-full.node-people .pane-node-title .block-content:after {
     color: #707070;
     content: "-";
     margin: 0 0.5em;
   }
 }
-/* line 42, ../sass/components/_people.scss */
+/* line 24, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-picture {
   text-align: center;
 }
-/* line 51, ../sass/components/_people.scss */
+/* line 33, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-member-since .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1161,7 +1157,7 @@ body {
   content: "\f0c0";
   margin-right: 0.6em;
 }
-/* line 57, ../sass/components/_people.scss */
+/* line 39, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-major .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1172,7 +1168,7 @@ body {
   content: "\f040";
   margin-right: 0.6em;
 }
-/* line 63, ../sass/components/_people.scss */
+/* line 45, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-hometown .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1183,7 +1179,7 @@ body {
   content: "\f015";
   margin-right: 0.6em;
 }
-/* line 69, ../sass/components/_people.scss */
+/* line 51, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-student-status .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1194,7 +1190,7 @@ body {
   content: "\f073";
   margin-right: 0.6em;
 }
-/* line 75, ../sass/components/_people.scss */
+/* line 57, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-position .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1205,7 +1201,7 @@ body {
   content: "\f007";
   margin-right: 0.6em;
 }
-/* line 81, ../sass/components/_people.scss */
+/* line 63, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-phone .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1216,7 +1212,7 @@ body {
   content: "\f095";
   margin-right: 0.6em;
 }
-/* line 87, ../sass/components/_people.scss */
+/* line 69, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-email .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1227,7 +1223,7 @@ body {
   content: "\f003";
   margin-right: 0.6em;
 }
-/* line 93, ../sass/components/_people.scss */
+/* line 75, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-office .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1238,11 +1234,11 @@ body {
   content: "\f041";
   margin-right: 0.6em;
 }
-/* line 98, ../sass/components/_people.scss */
+/* line 80, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-responsibility {
   margin-top: 10px;
 }
-/* line 101, ../sass/components/_people.scss */
+/* line 83, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-responsibility .field-label {
   font-size: 18px;
   font-size: 1.8rem;
@@ -1251,12 +1247,12 @@ body {
   margin-bottom: 10px;
   padding-bottom: 5px;
 }
-/* line 110, ../sass/components/_people.scss */
+/* line 92, ../sass/components/_people.scss */
 .node-full.node-people .field-name-field-people-biography {
   margin-top: 10px;
 }
 
-/* line 121, ../sass/components/_people.scss */
+/* line 103, ../sass/components/_people.scss */
 .view-display-id-people_panel_pane .views-row, .view-display-id-people_panel_pane_professional .views-row, .view-display-id-people_panel_pane_student .views-row {
   min-height: 150px;
   height: auto;
@@ -1264,12 +1260,12 @@ body {
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
-/* line 125, ../sass/components/_people.scss */
+/* line 107, ../sass/components/_people.scss */
 .view-display-id-people_panel_pane .views-field-field-people-picture, .view-display-id-people_panel_pane_professional .views-field-field-people-picture, .view-display-id-people_panel_pane_student .views-field-field-people-picture {
   display: block;
   float: left;
 }
-/* line 129, ../sass/components/_people.scss */
+/* line 111, ../sass/components/_people.scss */
 .view-display-id-people_panel_pane .views-field-title, .view-display-id-people_panel_pane .views-field-field-people-position .field-content, .view-display-id-people_panel_pane .views-field-field-people-type .field-content, .view-display-id-people_panel_pane .views-field-field-people-responsibility, .view-display-id-people_panel_pane_professional .views-field-title, .view-display-id-people_panel_pane_professional .views-field-field-people-position .field-content, .view-display-id-people_panel_pane_professional .views-field-field-people-type .field-content, .view-display-id-people_panel_pane_professional .views-field-field-people-responsibility, .view-display-id-people_panel_pane_student .views-field-title, .view-display-id-people_panel_pane_student .views-field-field-people-position .field-content, .view-display-id-people_panel_pane_student .views-field-field-people-type .field-content, .view-display-id-people_panel_pane_student .views-field-field-people-responsibility {
   margin-left: 110px;
 }
@@ -1485,29 +1481,7 @@ ul.quicktabs-tabs li.active a {
   border: 3px solid #4e5b6e;
 }
 
-/* line 36, ../sass/components/_spotlight.scss */
-.node-full.node-spotlight {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 41, ../sass/components/_spotlight.scss */
-.node-full.node-spotlight .block {
-  padding: 5px 10px;
-}
-@media only screen and (min-width: 540px) {
-  /* line 41, ../sass/components/_spotlight.scss */
-  .node-full.node-spotlight .block {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-}
-/* line 50, ../sass/components/_spotlight.scss */
-.node-full.node-spotlight .field-label {
-  font-size: 14px;
-  font-size: 1.4rem;
-}
-/* line 54, ../sass/components/_spotlight.scss */
+/* line 37, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .pane-node-field-spotlight-name {
   font-size: 25px;
   font-size: 2.5rem;
@@ -1516,25 +1490,25 @@ ul.quicktabs-tabs li.active a {
   margin-bottom: 10px;
 }
 @media only screen and (min-width: 540px) {
-  /* line 54, ../sass/components/_spotlight.scss */
+  /* line 37, ../sass/components/_spotlight.scss */
   .node-full.node-spotlight .pane-node-field-spotlight-name {
     font-size: 30px;
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 540px) {
-  /* line 65, ../sass/components/_spotlight.scss */
+  /* line 48, ../sass/components/_spotlight.scss */
   .node-full.node-spotlight .pane-node-field-spotlight-name .field-name-field-spotlight-name .field-item:before, .node-full.node-spotlight .pane-node-field-spotlight-name .field-name-field-spotlight-name .field-item:after {
     color: #707070;
     content: "-";
     margin: 0 0.5em;
   }
 }
-/* line 75, ../sass/components/_spotlight.scss */
+/* line 58, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-image {
   text-align: center;
 }
-/* line 84, ../sass/components/_spotlight.scss */
+/* line 67, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-organization .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1545,7 +1519,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f0c0";
   margin-right: 0.6em;
 }
-/* line 90, ../sass/components/_spotlight.scss */
+/* line 73, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-major .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1556,7 +1530,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f040";
   margin-right: 0.6em;
 }
-/* line 96, ../sass/components/_spotlight.scss */
+/* line 79, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-graduation .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1567,7 +1541,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f073";
   margin-right: 0.6em;
 }
-/* line 102, ../sass/components/_spotlight.scss */
+/* line 85, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-position .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1578,7 +1552,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f007";
   margin-right: 0.6em;
 }
-/* line 108, ../sass/components/_spotlight.scss */
+/* line 91, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-location .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1589,7 +1563,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f041";
   margin-right: 0.6em;
 }
-/* line 113, ../sass/components/_spotlight.scss */
+/* line 96, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-body {
   margin-top: 10px;
 }
@@ -1685,12 +1659,6 @@ ul.quicktabs-tabs li.active a {
 /* line 77, ../sass/components/_videos.scss */
 .view-display-id-video_panel_pane .views-field-title, .view-display-id-video_panel_pane .views-field-field-video-description {
   margin-left: 110px;
-}
-
-/* line 83, ../sass/components/_videos.scss */
-.node-full.node-video {
-  max-width: 640px;
-  margin: 0 auto;
 }
 
 /* line 3, ../sass/components/navigation/_audience_menu.scss */

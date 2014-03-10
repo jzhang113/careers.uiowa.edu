@@ -1,0 +1,13 @@
+.node-full {
+  margin: 0 auto;
+  max-width: 640px;
+
+  .block {
+    padding: 5px $gutters;
+
+    @media #{$people-name-decorated} {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+}
