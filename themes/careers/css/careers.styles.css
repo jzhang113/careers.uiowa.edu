@@ -159,7 +159,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 }
 
 /* line 115, ../sass/utilities/_classes.scss */
-.field-name-body .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
+.pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
   font-size: 1.8rem;
   display: block;
@@ -282,12 +282,24 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   }
 }
 
-/* line 1, ../sass/base/_panel_panes.scss */
-.pane-node-created {
-  font-weight: bold;
+/* line 2, ../sass/base/_panel_panes.scss */
+.pane-node-created .block-content {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+/* line 6, ../sass/base/_panel_panes.scss */
+.pane-node-created .block-content:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f044";
+  margin-right: 0.3em;
 }
 
-/* line 5, ../sass/base/_panel_panes.scss */
+/* line 12, ../sass/base/_panel_panes.scss */
 .panel-display {
   margin: -10px;
 }
@@ -642,8 +654,8 @@ img {
   width: 99%;
 }
 
-/* line 44, ../sass/components/_events.scss */
-.field-name-field-mcf-date .field-label:before {
+/* line 45, ../sass/components/_events.scss */
+.node-master-calendar-event .field-name-field-mcf-date .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -653,9 +665,8 @@ img {
   content: "\f017";
   margin-right: 0.5em;
 }
-
-/* line 52, ../sass/components/_events.scss */
-.field-name-field-mcf-location .field-label:before {
+/* line 53, ../sass/components/_events.scss */
+.node-master-calendar-event .field-name-field-mcf-location .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -665,9 +676,8 @@ img {
   content: "\f041";
   margin-right: 0.5em;
 }
-
-/* line 60, ../sass/components/_events.scss */
-.field-name-field-mcf-event-url .field-label:before {
+/* line 61, ../sass/components/_events.scss */
+.node-master-calendar-event .field-name-field-mcf-event-url .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -677,9 +687,8 @@ img {
   content: "\f05a";
   margin-right: 0.5em;
 }
-
-/* line 66, ../sass/components/_events.scss */
-.field-name-body {
+/* line 67, ../sass/components/_events.scss */
+.node-master-calendar-event .field-name-body {
   margin-top: 10px;
 }
 

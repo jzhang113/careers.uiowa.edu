@@ -39,34 +39,37 @@
   }
 }
 
-.field-name-field-mcf-date {
-  .field-label {
-    &:before {
-      @include icon($fa-var-clock-o, $margin-right: 0.5em);
+.node-master-calendar-event {
+  .field-name-field-mcf-date {
+    .field-label {
+      &:before {
+        @include icon($fa-var-clock-o, $margin-right: 0.5em);
+      }
+    }
+  }
+
+  .field-name-field-mcf-location {    
+    .field-label {
+      &:before {
+        @include icon($fa-var-map-marker, $margin-right: 0.5em);
+      }
+    }
+  }
+
+  .field-name-field-mcf-event-url {
+    .field-label {
+      &:before {
+        @include icon($fa-var-info-circle, $margin-right: 0.5em);
+      }
+    }
+  }
+
+  .field-name-body {
+    margin-top: 10px;
+
+    .field-label {
+      @extend %underlined-field-label;
     }
   }
 }
 
-.field-name-field-mcf-location {    
-  .field-label {
-    &:before {
-      @include icon($fa-var-map-marker, $margin-right: 0.5em);
-    }
-  }
-}
-
-.field-name-field-mcf-event-url {
-  .field-label {
-    &:before {
-      @include icon($fa-var-info-circle, $margin-right: 0.5em);
-    }
-  }
-}
-
-.field-name-body {
-  margin-top: 10px;
-
-  .field-label {
-    @extend %underlined-field-label;
-  }
-}

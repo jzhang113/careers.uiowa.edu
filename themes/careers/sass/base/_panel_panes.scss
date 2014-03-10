@@ -1,5 +1,12 @@
-.pane-node-created{
-  font-weight: bold;
+.pane-node-created {
+  .block-content {
+    @extend %underlined-field-label;
+    @include font-size($base-font-size);
+
+    &:before {
+      @include icon($fa-var-pencil-square-o, $margin-right: 0.3em);
+    }
+  }
 }
 
 .panel-display {
