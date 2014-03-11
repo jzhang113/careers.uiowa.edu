@@ -14,7 +14,7 @@
   }
 
   // Vertical Center Image
-  .views-field-field-logo{
+  .views-field-field-logo {
       line-height: 200px;
       width: 200px;
       text-align: center;
@@ -31,12 +31,14 @@
   overflow: hidden;
   width: 100%;
   position: relative;
-  .flexslider{
+
+  .flexslider {
     border: 0px;
     max-width: auto;
     width: 150px;
     margin: 0 auto;
     position: static;
+
     .flex-direction-nav, .flex-pauseplay {
       position: absolute;
       left: 0;
@@ -46,10 +48,16 @@
         color: #333;
       }
     }
-    .field-content{
+
+    .slides li {
+      margin: 0 10px;
+    }
+
+    .field-content {
       position: relative;
       height: 150px;
-      img{
+
+      img {
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
         margin: auto;
@@ -60,11 +68,12 @@
       }
     }
   }
+
   .flex-viewport {
     overflow: visible !important;
   }
   
-  .flex-control-paging{
+  .flex-control-paging {
     display: none;
   }
 }

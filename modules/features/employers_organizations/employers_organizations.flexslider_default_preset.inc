@@ -38,7 +38,7 @@ function employers_organizations_flexslider_default_presets() {
     'sync' => '',
     'asNavFor' => '',
     'itemWidth' => '160',
-    'itemMargin' => '0',
+    'itemMargin' => '10',
     'minItems' => '1',
     'maxItems' => '0',
     'move' => '0',
