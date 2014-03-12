@@ -28,16 +28,25 @@
       }
     }
 
-    .menu-depth-2 >.menu-inner {
-      a, .nolink {
-        border-bottom: 1px solid transparent;
-        color: $links;
+    
+    a, .nolink {
+      border-bottom: 1px solid transparent;
+      color: $links;
 
+      &:hover, &:focus {
+        border-bottom-color: $links;
+      }
+
+      &.active {
+        color: $text_default;
+        
         &:hover, &:focus {
-          border-bottom-color: $links;
+          border-bottom-color: transparent;
+          cursor: default;
         }
       }
     }
+    
 
     //jquery toggle
     .menu-toggle {

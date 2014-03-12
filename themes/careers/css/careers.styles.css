@@ -50,23 +50,32 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   padding: 5px 10px;
 }
 /* line 32, ../sass/utilities/_classes.scss */
-.region-sidebar-first .block-menu-block ul.menu .menu-depth-2 > .menu-inner a, .region-sidebar-first .block-menu-block ul.menu .menu-depth-2 > .menu-inner .nolink {
+.region-sidebar-first .block-menu-block ul.menu a, .region-sidebar-first .block-menu-block ul.menu .nolink {
   border-bottom: 1px solid transparent;
   color: #2b6390;
 }
 /* line 36, ../sass/utilities/_classes.scss */
-.region-sidebar-first .block-menu-block ul.menu .menu-depth-2 > .menu-inner a:hover, .region-sidebar-first .block-menu-block ul.menu .menu-depth-2 > .menu-inner a:focus, .region-sidebar-first .block-menu-block ul.menu .menu-depth-2 > .menu-inner .nolink:hover, .region-sidebar-first .block-menu-block ul.menu .menu-depth-2 > .menu-inner .nolink:focus {
+.region-sidebar-first .block-menu-block ul.menu a:hover, .region-sidebar-first .block-menu-block ul.menu a:focus, .region-sidebar-first .block-menu-block ul.menu .nolink:hover, .region-sidebar-first .block-menu-block ul.menu .nolink:focus {
   border-bottom-color: #2b6390;
 }
+/* line 40, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu a.active, .region-sidebar-first .block-menu-block ul.menu .nolink.active {
+  color: #333333;
+}
 /* line 43, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu a.active:hover, .region-sidebar-first .block-menu-block ul.menu a.active:focus, .region-sidebar-first .block-menu-block ul.menu .nolink.active:hover, .region-sidebar-first .block-menu-block ul.menu .nolink.active:focus {
+  border-bottom-color: transparent;
+  cursor: default;
+}
+/* line 52, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu .menu-toggle {
   cursor: pointer;
 }
-/* line 46, ../sass/utilities/_classes.scss */
+/* line 55, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu .menu-toggle:focus {
   outline: 1px dotted #fff;
 }
-/* line 50, ../sass/utilities/_classes.scss */
+/* line 59, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu .menu-toggle.is-expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -77,7 +86,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   content: "\f146";
   margin-right: .5em;
 }
-/* line 55, ../sass/utilities/_classes.scss */
+/* line 64, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu .menu-toggle.is-collapsed:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -89,12 +98,12 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   margin-right: .5em;
 }
 
-/* line 63, ../sass/utilities/_classes.scss */
+/* line 72, ../sass/utilities/_classes.scss */
 .block .views-summary {
   margin: 0;
   padding: 0;
 }
-/* line 67, ../sass/utilities/_classes.scss */
+/* line 76, ../sass/utilities/_classes.scss */
 .block .views-summary li {
   list-style: none;
   margin-left: 0;
@@ -105,7 +114,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   border-bottom: 1px solid #ddd;
   padding-right: 35px;
 }
-/* line 75, ../sass/utilities/_classes.scss */
+/* line 84, ../sass/utilities/_classes.scss */
 .block .views-summary .summary-count {
   position: absolute;
   right: 0;
@@ -121,11 +130,11 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   padding: 0 3px;
   min-width: 20px;
 }
-/* line 91, ../sass/utilities/_classes.scss */
+/* line 100, ../sass/utilities/_classes.scss */
 .block .views-summary .has-filter .label {
   display: none;
 }
-/* line 96, ../sass/utilities/_classes.scss */
+/* line 105, ../sass/utilities/_classes.scss */
 .block .views-summary .has-filter .active:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -137,7 +146,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   margin-right: .4em;
 }
 
-/* line 109, ../sass/utilities/_classes.scss */
+/* line 118, ../sass/utilities/_classes.scss */
 .pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
   font-size: 1.8rem;
