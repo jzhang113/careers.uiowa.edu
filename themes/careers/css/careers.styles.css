@@ -878,17 +878,17 @@ img {
 }
 
 /* line 1, ../sass/components/_full_node.scss */
-.node-full {
+.no-sidebars .node-full {
   margin: 0 auto;
   max-width: 640px;
 }
 /* line 5, ../sass/components/_full_node.scss */
-.node-full .block {
+.no-sidebars .node-full .block {
   padding: 5px 10px;
 }
 @media only screen and (min-width: 540px) {
   /* line 5, ../sass/components/_full_node.scss */
-  .node-full .block {
+  .no-sidebars .node-full .block {
     padding-left: 35px;
     padding-right: 35px;
   }
