@@ -525,41 +525,20 @@ img {
   vertical-align: middle;
 }
 
-/* line 30, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
 /* line 35, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane .flexslider {
-  border: 0px;
-  max-width: auto;
-  width: 150px;
-  margin: 0 auto;
-  position: static;
-}
-/* line 42, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-direction-nav, .view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-pauseplay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 20px;
-}
-/* line 47, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-direction-nav a, .view-display-id-employer_showcase_slider_panel_pane .flexslider .flex-pauseplay a {
   color: #333;
 }
-/* line 52, ../sass/components/_employer_showcase.scss */
+/* line 40, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider .slides li {
-  margin: 0 10px;
+  margin-right: 10px;
 }
-/* line 56, ../sass/components/_employer_showcase.scss */
+/* line 44, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider .field-content {
   position: relative;
   height: 150px;
 }
-/* line 60, ../sass/components/_employer_showcase.scss */
+/* line 48, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_slider_panel_pane .flexslider .field-content img {
   position: absolute;
   top: 0;
@@ -569,16 +548,6 @@ img {
   margin: auto;
   max-width: 150px;
   max-height: 150px;
-  height: auto;
-  width: auto;
-}
-/* line 72, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane .flex-viewport {
-  overflow: visible !important;
-}
-/* line 76, ../sass/components/_employer_showcase.scss */
-.view-display-id-employer_showcase_slider_panel_pane .flex-control-paging {
-  display: none;
 }
 
 /* line 4, ../sass/components/_events.scss */
