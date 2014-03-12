@@ -120,10 +120,6 @@
       a {
         color: #fff;
         font-weight: normal;
-
-        &:hover, &:focus {
-          color: $yellow;
-        }
         
         &:after {
           @include icon($fa-var-angle-double-right);

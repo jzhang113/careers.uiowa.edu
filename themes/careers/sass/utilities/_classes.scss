@@ -4,8 +4,12 @@
   ul.menu {
     li {
       font-weight: bold;
-      margin: 7px 0;
+      margin: 10px 0;
       padding: 0;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
 
       &.expanded, &.collapsed {
         list-style: none;
@@ -17,30 +21,26 @@
           margin-right: .5em;
         }
       }
-    }
 
-    a, .nolink {
-      color: #333;
-      &:hover {
-        color: $gold;
-        text-decoration: none;
+      &.menu-depth-2 {
+        border: 1px solid $border;
+        padding: 5px 10px;
       }
     }
 
     .menu-depth-2 >.menu-inner {
-      background-color: #333;
-      color: #fff;
-      display: block;
-      padding: 5px;
-
       a, .nolink {
-        color: #fff;
+        border-bottom: 1px solid transparent;
+        color: $links;
+
+        &:hover, &:focus {
+          border-bottom-color: $links;
+        }
       }
     }
 
     //jquery toggle
     .menu-toggle {
-      display: block;
       cursor: pointer;
 
       &:focus {
@@ -66,16 +66,10 @@
 
   li {
     list-style: none;
+    margin-left: 0;
     position: relative;
     @include hr;
     padding-right: 35px;
-    a{
-      color: black;
-      &:hover{
-        text-decoration: none;
-        color: $gold;
-      }
-    }
   }
 
   .summary-count {
@@ -85,7 +79,7 @@
     margin-top: -10px;
     text-align: center;
     line-height: normal;
-    color: #333;
+    color: $text_default;
     @include font-size(1.1);
     font-weight: 800;
     border: 1px solid $border;

@@ -26,8 +26,13 @@ body {
 
 #logo {
   padding: 10px 0;
+
   @media #{$responsive-nav} {
     padding: 50px 10px 0 20px;
+  }
+
+  a {
+    border-bottom: none;
   }
 
   img {
@@ -134,4 +139,11 @@ body {
 #footer-wrapper {
   background-color: $yellow;
   color: #000;
+}
+
+// uiowa_bar
+.region-page-top, .region-page-bottom {
+  a {
+    border-bottom: none;
+  }
 }

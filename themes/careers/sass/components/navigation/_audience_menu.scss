@@ -46,7 +46,6 @@
 
         &:hover, &:focus {
           color: $yellow;
-          text-decoration: none;
         }
 
         @media #{$responsive-nav} {
@@ -84,6 +83,7 @@
 
       a {
         background-color: $yellow;
+        border-bottom: none;
         color: #000;
         display: block;
         padding: 10px;
@@ -92,7 +92,6 @@
         &:hover, &:focus {
           background-color: #000;
           color: #fff;
-          text-decoration: none;
         }
 
         @media #{$responsive-nav} {

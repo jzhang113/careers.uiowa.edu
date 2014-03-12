@@ -36,6 +36,7 @@ a.social-media {
     text-align: center;
     width: 30px;
     @include inline-block;
+    vertical-align: baseline;
   }
 
  &:hover, &:focus {
