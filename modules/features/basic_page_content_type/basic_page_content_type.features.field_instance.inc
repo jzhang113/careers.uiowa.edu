@@ -58,7 +58,7 @@ function basic_page_content_type_field_default_field_instances() {
   $field_instances['node-page-field_page_image'] = array(
     'bundle' => 'page',
     'deleted' => 0,
-    'description' => 'Use an image to represent the page.',
+    'description' => 'Use an image to represent the page. A minimum 835px wide image is recommended.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -182,7 +182,7 @@ function basic_page_content_type_field_default_field_instances() {
   t('Featured Image');
   t('Program');
   t('Tag this page to a particular program.');
-  t('Use an image to represent the page.');
+  t('Use an image to represent the page. A minimum 835px wide image is recommended.');
 
   return $field_instances;
 }
