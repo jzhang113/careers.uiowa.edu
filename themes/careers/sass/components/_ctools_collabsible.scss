@@ -1,0 +1,39 @@
+html.js .ctools-collapsible-container {
+  .ctools-toggle {
+    background-image: none;
+    float: none;
+
+    &:before {
+      @include icon($fa-var-minus-square, $margin-right: 0.3em, $color: $links);
+    }
+
+    &:hover, &:focus {
+      .ctools-collapsible-handle {
+        border-bottom-color: $links;
+      }
+    }
+
+    &.ctools-toggle-collapsed {
+      background-image: none;
+
+      &:before {
+        @include icon($fa-var-plus-square, $margin-right: 0.3em, $color: $links);
+      }
+    }
+  }
+
+  .ctools-collapsible-handle {
+    border-bottom: 1px solid transparent;
+    color: $links;
+    margin-bottom: 0;
+    @include inline-block;
+
+    &:hover, &:focus {
+      border-bottom-color: $links;
+    }
+  }
+
+  .ctools-collapsible-content {
+    margin-top: 10px;
+  }
+}
