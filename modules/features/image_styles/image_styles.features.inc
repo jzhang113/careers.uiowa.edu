@@ -263,7 +263,7 @@ function image_styles_image_default_styles() {
     'name' => 'two_hundred',
     'label' => 'two_hundred',
     'effects' => array(
-      10 => array(
+      1 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -279,7 +279,7 @@ function image_styles_image_default_styles() {
         ),
         'weight' => -10,
       ),
-      9 => array(
+      2 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
