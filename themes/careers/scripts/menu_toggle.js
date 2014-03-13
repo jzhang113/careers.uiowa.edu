@@ -12,11 +12,7 @@
 
       // check for li attributes
       menuListItems.each(function() {
-        if($(this).hasClass('expanded')) {
-          $(this).removeClass('expanded').addClass('collapsed');
-        }
         if($(this).hasClass('active-trail')) {
-          $(this).removeClass('collapsed').addClass('expanded');
           $(this).parent('ul').toggleClass('is-hidden is-visible').show();
           $(this).parent('ul.is-expandable').siblings('.menu-inner').find('.menu-toggle').removeClass('is-collapsed').addClass('is-expanded');
         }
