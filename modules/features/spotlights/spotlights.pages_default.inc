@@ -15,13 +15,18 @@ function spotlights_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Spotlights';
   $page->admin_description = '';
-  $page->path = 'spotlights';
+  $page->path = 'spotlights/!category';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
   );
   $page->menu = array();
-  $page->arguments = array();
+  $page->arguments = array(
+    'category' => array(
+      'settings' => array(),
+      'identifier' => 'No context',
+    ),
+  );
   $page->conf = array(
     'admin_paths' => FALSE,
   );
@@ -46,12 +51,13 @@ function spotlights_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'boxton';
+  $display->layout = 'burr_flipped';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'contentmain' => NULL,
+      'sidebar' => NULL,
     ),
   );
   $display->cache = array();
@@ -107,6 +113,28 @@ function spotlights_default_page_manager_pages() {
     $pane->uuid = '22ae9960-9f68-4ff9-8c08-1add7514d298';
     $display->content['new-22ae9960-9f68-4ff9-8c08-1add7514d298'] = $pane;
     $display->panels['contentmain'][1] = 'new-22ae9960-9f68-4ff9-8c08-1add7514d298';
+    $pane = new stdClass();
+    $pane->pid = 'new-b4545965-5802-4b38-b48d-bf8d6a54ecd0';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'spotlights-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'b4545965-5802-4b38-b48d-bf8d6a54ecd0';
+    $display->content['new-b4545965-5802-4b38-b48d-bf8d6a54ecd0'] = $pane;
+    $display->panels['sidebar'][0] = 'new-b4545965-5802-4b38-b48d-bf8d6a54ecd0';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-22ae9960-9f68-4ff9-8c08-1add7514d298';
   $handler->conf['display'] = $display;
