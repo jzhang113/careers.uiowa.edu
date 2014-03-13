@@ -262,7 +262,7 @@ function video_field_default_field_instances() {
   $field_instances['node-video-field_video_screenshot'] = array(
     'bundle' => 'video',
     'deleted' => 0,
-    'description' => 'Provide a screenshot for use in the Career Tube list.
+    'description' => 'Provide a screenshot for use in the Career Tube list. A minimum 480px wide image is recommended.
 <em>Note: The screenshot provided will only be used if not using a YouTube video.</em>',
     'display' => array(
       'default' => array(
@@ -337,15 +337,13 @@ function video_field_default_field_instances() {
         'manualcrop_require_cropping' => array(
           'featured' => 0,
           'featured_page' => 0,
-          'people_profile_100' => 0,
-          'people_profile_320' => 0,
+          'people_profile' => 0,
           'square' => 0,
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
           'featured_page' => 0,
-          'people_profile_100' => 0,
-          'people_profile_320' => 0,
+          'people_profile' => 0,
           'square' => 0,
         ),
         'manualcrop_styles_mode' => 'exclude',
@@ -407,7 +405,7 @@ function video_field_default_field_instances() {
   t('If the video is not hosted by youtube.com, check this box for other options.');
   t('Not a YouTube Video?');
   t('Provide a link to the video you want to add to the Career Tube list.');
-  t('Provide a screenshot for use in the Career Tube list.
+  t('Provide a screenshot for use in the Career Tube list. A minimum 480px wide image is recommended.
 <em>Note: The screenshot provided will only be used if not using a YouTube video.</em>');
   t('Tag this video with one or more Career Tube categories.');
   t('Video Link');

@@ -94,7 +94,7 @@ function announcements_field_default_field_instances() {
   $field_instances['node-announcement-field_announcement_image'] = array(
     'bundle' => 'announcement',
     'deleted' => 0,
-    'description' => 'Use an image to represent the announcement on the homepage. A default image will be used if none is selected.',
+    'description' => 'A minimum 70x70px image is recommended. A default image will be used if none is selected.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -210,13 +210,13 @@ function announcements_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A minimum 70x70px image is recommended. A default image will be used if none is selected.');
   t('Audience');
   t('Body');
   t('Featured Image');
   t('Program');
   t('Tag this announcement to one or more audiences.');
   t('Tag this announcement to one or more programs.');
-  t('Use an image to represent the announcement on the homepage. A default image will be used if none is selected.');
 
   return $field_instances;
 }

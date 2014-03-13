@@ -211,6 +211,10 @@ function spotlights_views_default_views() {
     'audience' => 'audience',
     'program' => 'program',
   );
+  $handler->display->display_options['pane_title'] = 'Spotlights Entity Teaser';
+  $handler->display->display_options['pane_description'] = 'Spotlights Entity Teaser';
+  $handler->display->display_options['pane_category']['name'] = 'Spotlights';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['argument_input'] = array(
     'tid' => array(
       'type' => 'context',
@@ -240,6 +244,23 @@ function spotlights_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'No Results Found';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'spotlights' => 'spotlights',
+    'audience' => 0,
+    'events' => 0,
+    'people_groups' => 0,
+    'people_type' => 0,
+    'program' => 0,
+    'student_status' => 0,
+    'tags' => 0,
+    'testimonials' => 0,
+    'video_type' => 0,
+  );
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
@@ -292,6 +313,111 @@ function spotlights_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '300',
   );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['tid']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['title'] = '%1 Spotlights';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
+    'spotlights' => 'spotlights',
+  );
+  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['pane_title'] = 'Spotlights';
+  $handler->display->display_options['pane_description'] = 'Spotlights';
+  $handler->display->display_options['pane_category']['name'] = 'Spotlights';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
+  $handler->display->display_options['argument_input'] = array(
+    'tid' => array(
+      'type' => 'panel',
+      'context' => 'entity:file.field-file-image-alt-text',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'Taxonomy term: Term ID',
+    ),
+  );
+  $handler->display->display_options['inherit_panels_path'] = '0';
+
+  /* Display: Spotlight Categories */
+  $handler = $view->new_display('panel_pane', 'Spotlight Categories', 'panel_pane_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Spotlight by Category';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'spotlights' => 'spotlights',
+    'audience' => 0,
+    'events' => 0,
+    'people_groups' => 0,
+    'people_type' => 0,
+    'program' => 0,
+    'student_status' => 0,
+    'tags' => 0,
+    'testimonials' => 0,
+    'video_type' => 0,
+  );
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Spotlight Type (field_spotlight_type) */
+  $handler->display->display_options['sorts']['field_spotlight_type_tid']['id'] = 'field_spotlight_type_tid';
+  $handler->display->display_options['sorts']['field_spotlight_type_tid']['table'] = 'field_data_field_spotlight_type';
+  $handler->display->display_options['sorts']['field_spotlight_type_tid']['field'] = 'field_spotlight_type_tid';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Name */
+  $handler->display->display_options['arguments']['name']['id'] = 'name';
+  $handler->display->display_options['arguments']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['name']['field'] = 'name';
+  $handler->display->display_options['arguments']['name']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['name']['default_action'] = 'summary';
+  $handler->display->display_options['arguments']['name']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['name']['summary_options']['base_path'] = 'spotlights';
+  $handler->display->display_options['arguments']['name']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['name']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['name']['validate_options']['vocabularies'] = array(
+    'spotlights' => 'spotlights',
+  );
+  $handler->display->display_options['arguments']['name']['limit'] = '0';
+  $handler->display->display_options['arguments']['name']['case'] = 'ucwords';
+  $handler->display->display_options['arguments']['name']['path_case'] = 'lower';
+  $handler->display->display_options['arguments']['name']['transform_dash'] = TRUE;
+  $handler->display->display_options['pane_title'] = 'Spotlight Categories';
+  $handler->display->display_options['pane_description'] = 'Spotlight Categories';
+  $handler->display->display_options['pane_category']['name'] = 'Spotlights';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
   $handler->display->display_options['allow']['items_per_page'] = 0;
   $handler->display->display_options['allow']['offset'] = 0;

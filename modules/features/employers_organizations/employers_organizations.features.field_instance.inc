@@ -218,7 +218,7 @@ function employers_organizations_field_default_field_instances() {
   $field_instances['node-employers_organizations-field_logo'] = array(
     'bundle' => 'employers_organizations',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A minimum 200px wide image is recommend.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -273,16 +273,26 @@ function employers_organizations_field_default_field_instances() {
           'upload' => 'upload',
           'youtube' => 0,
         ),
-        'manualcrop_crop_info' => TRUE,
-        'manualcrop_default_crop_area' => TRUE,
-        'manualcrop_enable' => FALSE,
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
         'manualcrop_inline_crop' => FALSE,
         'manualcrop_instant_crop' => FALSE,
-        'manualcrop_instant_preview' => TRUE,
-        'manualcrop_require_cropping' => array(),
-        'manualcrop_styles_list' => array(),
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_require_cropping' => array(
+          'featured' => 0,
+          'featured_page' => 0,
+          'people_profile' => 0,
+          'square' => 0,
+        ),
+        'manualcrop_styles_list' => array(
+          'featured' => 0,
+          'featured_page' => 0,
+          'people_profile' => 0,
+          'square' => 0,
+        ),
         'manualcrop_styles_mode' => 'exclude',
-        'manualcrop_thumblist' => FALSE,
+        'manualcrop_thumblist' => 0,
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -452,6 +462,7 @@ function employers_organizations_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A minimum 200px wide image is recommend.');
   t('Additional Notes');
   t('Description');
   t('If this organization has paid to be a sponsor, what is the date range of the sponsorship?');

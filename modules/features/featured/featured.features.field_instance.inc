@@ -54,7 +54,7 @@ function featured_field_default_field_instances() {
   $field_instances['node-featured-field_featured_image'] = array(
     'bundle' => 'featured',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A minimum 835x351px image is recommended.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -211,7 +211,7 @@ function featured_field_default_field_instances() {
   $field_instances['node-featured-field_featured_logo'] = array(
     'bundle' => 'featured',
     'deleted' => 0,
-    'description' => 'Icon/Logo will be displayed on the featured slide except for the homepage.',
+    'description' => 'Icon/Logo will not be displayed on homepage slides. A minimum 70px wide image is recommended.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -275,15 +275,13 @@ function featured_field_default_field_instances() {
         'manualcrop_require_cropping' => array(
           'featured' => 0,
           'featured_page' => 0,
-          'people_profile_100' => 0,
-          'people_profile_320' => 0,
+          'people_profile' => 0,
           'square' => 'square',
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
           'featured_page' => 0,
-          'people_profile_100' => 0,
-          'people_profile_320' => 0,
+          'people_profile' => 0,
           'square' => 'square',
         ),
         'manualcrop_styles_mode' => 'include',
@@ -337,11 +335,12 @@ function featured_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A minimum 835x351px image is recommended.');
   t('Caption');
   t('Caption will be displayed on the featured slide.');
   t('Featured Image');
   t('Icon/Logo Overlay');
-  t('Icon/Logo will be displayed on the featured slide except for the homepage.');
+  t('Icon/Logo will not be displayed on homepage slides. A minimum 70px wide image is recommended.');
   t('Link');
   t('The title will be the link text and is required if a URL is provided.');
   t('Title');

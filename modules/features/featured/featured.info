@@ -19,7 +19,6 @@ dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = views
 dependencies[] = views_content
-scripts[] = js/accessibility.js
 features[ctools][] = field_group:field_group:1
 features[ctools][] = flexslider:flexslider_default_preset:1
 features[ctools][] = panelizer:panelizer:1

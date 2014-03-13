@@ -464,7 +464,7 @@ function people_field_default_field_instances() {
   $field_instances['node-people-field_people_picture'] = array(
     'bundle' => 'people',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A minimum 220x308px image is recommended.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -702,6 +702,7 @@ function people_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A minimum 220x308px image is recommended.');
   t('An optional degree field. It will be appended next to the person\'s name. Example: Jane Doe, Ph.D.');
   t('An optional position field, e.g. Associate Professor.');
   t('Biography');
