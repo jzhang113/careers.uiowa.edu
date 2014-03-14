@@ -2,6 +2,15 @@
 
 %toggle-menu-tree {
   ul.menu {
+    :before {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 1px;
+      padding-right: 1em;
+      margin-left: -1em;
+    }
+
     li {
       font-weight: bold;
       margin: 10px 0;
@@ -25,11 +34,13 @@
       &.menu-depth-2 {
         border: 1px solid $border;
         padding: 5px 10px;
+        padding-left: 25px;
       }
     }
 
     
     a, .nolink {
+      position: relative;
       border-bottom: 1px solid transparent;
       color: $links;
 
@@ -51,6 +62,8 @@
     //jquery toggle
     .menu-toggle {
       cursor: pointer;
+      display: block;
+      padding-left: 5px;
 
       &:focus {
         outline: 1px dotted #fff;

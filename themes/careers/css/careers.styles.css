@@ -20,20 +20,29 @@ $bp-tablet-only: $bp-mobile ($bp-desktop - 1px); // 500 -949
 $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 */
 /* line 5, ../sass/utilities/_classes.scss */
+.region-sidebar-first .block-menu-block ul.menu :before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  padding-right: 1em;
+  margin-left: -1em;
+}
+/* line 14, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu li {
   font-weight: bold;
   margin: 10px 0;
   padding: 0;
 }
-/* line 10, ../sass/utilities/_classes.scss */
+/* line 19, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu li:last-of-type {
   margin-bottom: 0;
 }
-/* line 14, ../sass/utilities/_classes.scss */
+/* line 23, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu li.expanded, .region-sidebar-first .block-menu-block ul.menu li.collapsed {
   list-style: none;
 }
-/* line 17, ../sass/utilities/_classes.scss */
+/* line 26, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu li.expanded > .menu-inner > a:before, .region-sidebar-first .block-menu-block ul.menu li.collapsed > .menu-inner > a:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -44,38 +53,42 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   content: "\f0d7";
   margin-right: .5em;
 }
-/* line 25, ../sass/utilities/_classes.scss */
+/* line 34, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu li.menu-depth-2 {
   border: 1px solid #cccccc;
   padding: 5px 10px;
+  padding-left: 25px;
 }
-/* line 32, ../sass/utilities/_classes.scss */
+/* line 42, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu a, .region-sidebar-first .block-menu-block ul.menu .nolink {
+  position: relative;
   border-bottom: 1px solid transparent;
   color: #2b6390;
 }
-/* line 36, ../sass/utilities/_classes.scss */
+/* line 47, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu a:hover, .region-sidebar-first .block-menu-block ul.menu a:focus, .region-sidebar-first .block-menu-block ul.menu .nolink:hover, .region-sidebar-first .block-menu-block ul.menu .nolink:focus {
   border-bottom-color: #2b6390;
 }
-/* line 40, ../sass/utilities/_classes.scss */
+/* line 51, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu a.active, .region-sidebar-first .block-menu-block ul.menu .nolink.active {
   color: #333333;
 }
-/* line 43, ../sass/utilities/_classes.scss */
+/* line 54, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu a.active:hover, .region-sidebar-first .block-menu-block ul.menu a.active:focus, .region-sidebar-first .block-menu-block ul.menu .nolink.active:hover, .region-sidebar-first .block-menu-block ul.menu .nolink.active:focus {
   border-bottom-color: transparent;
   cursor: default;
 }
-/* line 52, ../sass/utilities/_classes.scss */
+/* line 63, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu .menu-toggle {
   cursor: pointer;
+  display: block;
+  padding-left: 5px;
 }
-/* line 55, ../sass/utilities/_classes.scss */
+/* line 68, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu .menu-toggle:focus {
   outline: 1px dotted #fff;
 }
-/* line 59, ../sass/utilities/_classes.scss */
+/* line 72, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu .menu-toggle.is-expanded:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -86,7 +99,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   content: "\f146";
   margin-right: .5em;
 }
-/* line 64, ../sass/utilities/_classes.scss */
+/* line 77, ../sass/utilities/_classes.scss */
 .region-sidebar-first .block-menu-block ul.menu .menu-toggle.is-collapsed:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -98,12 +111,12 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   margin-right: .5em;
 }
 
-/* line 72, ../sass/utilities/_classes.scss */
+/* line 85, ../sass/utilities/_classes.scss */
 .block .views-summary {
   margin: 0;
   padding: 0;
 }
-/* line 76, ../sass/utilities/_classes.scss */
+/* line 89, ../sass/utilities/_classes.scss */
 .block .views-summary li {
   list-style: none;
   margin-left: 0;
@@ -114,7 +127,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   border-bottom: 1px solid #ddd;
   padding-right: 35px;
 }
-/* line 84, ../sass/utilities/_classes.scss */
+/* line 97, ../sass/utilities/_classes.scss */
 .block .views-summary .summary-count {
   position: absolute;
   right: 0;
@@ -130,11 +143,11 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   padding: 0 3px;
   min-width: 20px;
 }
-/* line 100, ../sass/utilities/_classes.scss */
+/* line 113, ../sass/utilities/_classes.scss */
 .block .views-summary .has-filter .label {
   display: none;
 }
-/* line 105, ../sass/utilities/_classes.scss */
+/* line 118, ../sass/utilities/_classes.scss */
 .block .views-summary .has-filter .active:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -146,7 +159,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   margin-right: .4em;
 }
 
-/* line 118, ../sass/utilities/_classes.scss */
+/* line 131, ../sass/utilities/_classes.scss */
 .pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
   font-size: 1.8rem;
