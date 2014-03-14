@@ -1,3 +1,7 @@
 .region-sidebar-first .block-menu-block {
+  li.menu-depth-2:first-of-type {
+    margin-top: 0;
+  }
+  
   @extend %toggle-menu-tree
 }

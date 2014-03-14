@@ -1974,6 +1974,11 @@ ul.menu li.leaf {
   margin: 0;
 }
 
+/* line 2, ../sass/components/navigation/_sidebar_first_menus.scss */
+.region-sidebar-first .block-menu-block li.menu-depth-2:first-of-type {
+  margin-top: 0;
+}
+
 /* line 1, ../sass/components/navigation/_social_media.scss */
 a[href*="facebook.com"]:before {
   margin-right: 0.3em;
