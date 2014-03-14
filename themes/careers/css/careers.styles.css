@@ -1024,10 +1024,12 @@ body {
 
 /* line 11, ../sass/components/_page.scss */
 #header {
-  background-color: #eee;
-  background: url("images/header.png") no-repeat;
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: url("images/header.png") no-repeat top center;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.4))), url("images/header.png");
+  background: -webkit-linear-gradient(top center, transparent, rgba(0, 0, 0, 0.4)), url("images/header.png");
+  background: -moz-linear-gradient(top center, transparent, rgba(0, 0, 0, 0.4)), url("images/header.png");
+  background: -o-linear-gradient(top center, transparent, rgba(0, 0, 0, 0.4)), url("images/header.png");
+  background: linear-gradient(top center, transparent, rgba(0, 0, 0, 0.4)), url("images/header.png");
   position: relative;
 }
 @media only screen and (min-width: 40em) {
@@ -1037,31 +1039,31 @@ body {
   }
 }
 
-/* line 23, ../sass/components/_page.scss */
+/* line 21, ../sass/components/_page.scss */
 #branding {
   margin-bottom: 20px;
 }
 
-/* line 27, ../sass/components/_page.scss */
+/* line 25, ../sass/components/_page.scss */
 #logo {
   padding: 10px 0;
 }
 @media only screen and (min-width: 40em) {
-  /* line 27, ../sass/components/_page.scss */
+  /* line 25, ../sass/components/_page.scss */
   #logo {
     padding: 50px 10px 0 20px;
   }
 }
-/* line 34, ../sass/components/_page.scss */
+/* line 32, ../sass/components/_page.scss */
 #logo a {
   border-bottom: none;
 }
-/* line 38, ../sass/components/_page.scss */
+/* line 36, ../sass/components/_page.scss */
 #logo img {
   vertical-align: bottom;
 }
 
-/* line 43, ../sass/components/_page.scss */
+/* line 41, ../sass/components/_page.scss */
 #site-name {
   position: absolute;
   top: -99999em;
@@ -1071,7 +1073,7 @@ body {
   outline: 0;
 }
 
-/* line 47, ../sass/components/_page.scss */
+/* line 45, ../sass/components/_page.scss */
 #site-slogan {
   font-size: 18px;
   font-size: 1.8rem;
@@ -1081,24 +1083,24 @@ body {
   text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0, rgba(0, 0, 0, 0.2) 2px 2px 0, rgba(0, 0, 0, 0.2) 3px 3px 0;
 }
 @media only screen and (min-width: 40em) {
-  /* line 47, ../sass/components/_page.scss */
+  /* line 45, ../sass/components/_page.scss */
   #site-slogan {
     padding-left: 80px;
   }
 }
 
-/* line 58, ../sass/components/_page.scss */
+/* line 56, ../sass/components/_page.scss */
 .site-logo {
   width: 320px;
 }
 
-/* line 62, ../sass/components/_page.scss */
+/* line 60, ../sass/components/_page.scss */
 #page-title {
   margin: 0;
   padding-left: 10px;
 }
 
-/* line 67, ../sass/components/_page.scss */
+/* line 65, ../sass/components/_page.scss */
 #skip-link {
   left: 50%;
   margin-left: -6.5em;
@@ -1108,7 +1110,7 @@ body {
   width: 12em;
   z-index: 50;
 }
-/* line 76, ../sass/components/_page.scss */
+/* line 74, ../sass/components/_page.scss */
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -1119,7 +1121,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 87, ../sass/components/_page.scss */
+/* line 85, ../sass/components/_page.scss */
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -1130,12 +1132,12 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 99, ../sass/components/_page.scss */
+/* line 97, ../sass/components/_page.scss */
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active {
   outline: 0;
 }
 
-/* line 109, ../sass/components/_page.scss */
+/* line 107, ../sass/components/_page.scss */
 #main-content,
 #messages,
 .region-tertiary-content,
@@ -1143,41 +1145,41 @@ body {
   background: white;
 }
 
-/* line 113, ../sass/components/_page.scss */
+/* line 111, ../sass/components/_page.scss */
 #main-content-header {
   background-color: #333333;
   border-bottom: 4px solid #ffd451;
   color: #fff;
 }
 
-/* line 119, ../sass/components/_page.scss */
+/* line 117, ../sass/components/_page.scss */
 #messages {
   background-color: #333333;
 }
 
-/* line 124, ../sass/components/_page.scss */
+/* line 122, ../sass/components/_page.scss */
 #tasks ul.primary {
   border-bottom: 0px;
 }
 
-/* line 129, ../sass/components/_page.scss */
+/* line 127, ../sass/components/_page.scss */
 #footer-upper-wrapper {
   background-color: #333;
   background: url("images/bg_tile.gif") repeat;
   color: #fafafa;
 }
-/* line 134, ../sass/components/_page.scss */
+/* line 132, ../sass/components/_page.scss */
 #footer-upper-wrapper a {
   color: #fafafa;
 }
 
-/* line 139, ../sass/components/_page.scss */
+/* line 137, ../sass/components/_page.scss */
 #footer-wrapper {
   background-color: #ffd451;
   color: #000;
 }
 
-/* line 146, ../sass/components/_page.scss */
+/* line 144, ../sass/components/_page.scss */
 .region-page-top a, .region-page-bottom a {
   border-bottom: none;
 }

@@ -9,10 +9,8 @@ body {
 }
 
 #header {
-  background-color: #eee;
-  background: url('images/header.png') no-repeat;
-  background-repeat:no-repeat;
-  background-position: top center;
+  background: url('images/header.png') no-repeat top center;
+  @include background(linear-gradient(top center, transparent, rgba(0,0,0,0.4)), url('images/header.png'));
   position: relative;
 
   @media #{$responsive-nav} {
