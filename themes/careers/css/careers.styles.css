@@ -599,6 +599,10 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
 .collapsible.field-group-div .field-group-format-title:hover, .collapsible.field-group-div .field-group-format-title:focus {
   border-bottom-color: #2b6390;
 }
+/* line 71, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div .field {
+  margin-bottom: 1px;
+}
 
 /* line 3, ../sass/components/_employer_showcase.scss */
 .view-display-id-employer_showcase_grid_panel_pane .item-list ul {
@@ -1071,12 +1075,20 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
 .node-major .field-name-body {
   margin-bottom: 10px;
 }
+/* line 43, ../sass/utilities/_mixins.scss */
+.node-major .field-name-field-student-org-link .field-items {
+  padding-left: 40px;
+}
+/* line 45, ../sass/utilities/_mixins.scss */
+.node-major .field-name-field-student-org-link .field-items .field-item {
+  display: list-item;
+}
 
-/* line 13, ../sass/components/_majors.scss */
+/* line 17, ../sass/components/_majors.scss */
 .view-display-id-majors_list_panel_pane .views-field-title {
   margin-bottom: 0px;
 }
-/* line 16, ../sass/components/_majors.scss */
+/* line 20, ../sass/components/_majors.scss */
 .view-display-id-majors_list_panel_pane .views-row {
   height: auto;
   margin-bottom: 10px;
@@ -2012,7 +2024,7 @@ ul.quicktabs-tabs li.active a {
   color: #fff;
 }
 
-/* line 167, ../sass/utilities/_mixins.scss */
+/* line 179, ../sass/utilities/_mixins.scss */
 #footer-upper-wrapper li.leaf:before {
   font-family: FontAwesome;
   font-weight: normal;

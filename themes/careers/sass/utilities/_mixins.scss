@@ -37,6 +37,18 @@
 }
 
 //
+// List Field Div Output to Faux Bullet Unordered List
+//
+@mixin faux-bullet-list{
+  .field-items{
+    padding-left: 40px;
+    .field-item{
+      display: list-item;
+    }
+  }
+}
+
+//
 // Image replacement
 // Kellum Method: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement
 // Additional helpers from http://html5boilerplate.com/docs/css/

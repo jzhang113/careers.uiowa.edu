@@ -7,6 +7,10 @@
   .field-name-body {
   	margin-bottom: 10px;
   }
+  .field-name-field-student-org-link{
+  	@include faux-bullet-list;
+  }
+
 }
 
 .view-display-id-majors_list_panel_pane {

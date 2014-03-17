@@ -68,4 +68,7 @@ html.js .ctools-collapsible-container {
       border-bottom-color: $links;
     }
   }
+  .field{
+    margin-bottom: 1px; // if last line of content is a text link, hover underline border will show
+  }
 }
