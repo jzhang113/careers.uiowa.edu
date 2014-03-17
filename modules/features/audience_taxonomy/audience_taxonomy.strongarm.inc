@@ -25,6 +25,9 @@ function audience_taxonomy_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'student_organizations' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
