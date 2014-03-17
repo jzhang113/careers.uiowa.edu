@@ -45,6 +45,12 @@ function careers_entity_view_modes_strongarm() {
         'custom settings' => 1,
       ),
     ),
+    'taxonomy_term' => array(
+      'student_organizations' => array(
+        'label' => 'Student Organizations',
+        'custom settings' => 1,
+      ),
+    ),
   );
   $export['entity_view_modes'] = $strongarm;
 
