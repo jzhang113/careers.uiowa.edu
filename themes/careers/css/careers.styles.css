@@ -160,7 +160,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 }
 
 /* line 131, ../sass/utilities/_classes.scss */
-.pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
+.pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-major .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
   font-size: 1.8rem;
   display: block;
@@ -343,6 +343,12 @@ img {
 /* line 65, ../sass/base/_typography.scss */
 .lt-ie9 img {
   max-width: auto;
+}
+
+/* line 70, ../sass/base/_typography.scss */
+hr {
+  border: 0px;
+  border-bottom: 1px solid #ddd;
 }
 
 /* line 1, ../sass/base/_views.scss */
@@ -540,6 +546,58 @@ html.js .ctools-collapsible-container .ctools-collapsible-handle:hover, html.js 
 /* line 36, ../sass/components/_ctools_collabsible.scss */
 html.js .ctools-collapsible-container .ctools-collapsible-content {
   margin-top: 10px;
+}
+
+/* line 43, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div .field-group-format-toggler {
+  background-image: none;
+  float: none;
+}
+/* line 47, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div .field-group-format-toggler:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f146";
+  font-size: 0.7em;
+  margin-right: 0.3em;
+  color: #2b6390;
+}
+/* line 53, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div.collapsed .field-group-format-toggler {
+  background-image: none;
+}
+/* line 55, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div.collapsed .field-group-format-toggler:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0fe";
+  font-size: 0.7em;
+  margin-right: 0.3em;
+  color: #2b6390;
+}
+/* line 61, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div .field-group-format-title {
+  border-bottom: 1px solid transparent;
+  color: #2b6390;
+  margin-bottom: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 67, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div .field-group-format-title:hover, .collapsible.field-group-div .field-group-format-title:focus {
+  border-bottom-color: #2b6390;
 }
 
 /* line 3, ../sass/components/_employer_showcase.scss */
@@ -1002,6 +1060,28 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   *margin-right: .3em;
   content: "\f073";
   margin-right: 0.3em;
+}
+
+/* line 3, ../sass/components/_majors.scss */
+.node-major .field-label {
+  font-size: 20px;
+  font-size: 2rem;
+}
+/* line 7, ../sass/components/_majors.scss */
+.node-major .field-name-body {
+  margin-bottom: 10px;
+}
+
+/* line 13, ../sass/components/_majors.scss */
+.view-display-id-majors_list_panel_pane .views-field-title {
+  margin-bottom: 0px;
+}
+/* line 16, ../sass/components/_majors.scss */
+.view-display-id-majors_list_panel_pane .views-row {
+  height: auto;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
 }
 
 /* line 1, ../sass/components/_messages.scss */

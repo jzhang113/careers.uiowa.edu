@@ -37,3 +37,35 @@ html.js .ctools-collapsible-container {
     margin-top: 10px;
   }
 }
+
+// Collapsible Field Groups H2s
+.collapsible.field-group-div {
+  .field-group-format-toggler {
+    background-image: none;
+    float: none;
+
+    &:before {
+      @include icon($fa-var-minus-square, $size: 0.7em, $margin-right: 0.3em, $color: $links);
+    }
+  }
+
+  &.collapsed {
+    .field-group-format-toggler {
+      background-image: none;
+      &:before {
+        @include icon($fa-var-plus-square, $size: 0.7em, $margin-right: 0.3em, $color: $links);
+      }
+    }
+  }
+
+  .field-group-format-title {
+    border-bottom: 1px solid transparent;
+    color: $links;
+    margin-bottom: 0;
+    @include inline-block;
+
+    &:hover, &:focus {
+      border-bottom-color: $links;
+    }
+  }
+}
