@@ -20,6 +20,27 @@ function spotlights_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_node_spotlight';
+  $strongarm->value = '1';
+  $export['auto_entitylabel_node_spotlight'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_pattern_node_spotlight';
+  $strongarm->value = '[node:field_spotlight_type] Spotlight: [node:field-spotlight-name]';
+  $export['auto_entitylabel_pattern_node_spotlight'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_php_node_spotlight';
+  $strongarm->value = 0;
+  $export['auto_entitylabel_php_node_spotlight'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'custom_breadcrumbs_show_form_table_spotlight';
   $strongarm->value = 1;
   $export['custom_breadcrumbs_show_form_table_spotlight'] = $strongarm;
