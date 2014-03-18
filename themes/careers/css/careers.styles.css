@@ -1979,6 +1979,11 @@ ul.quicktabs-tabs li.active a {
     font-size: 1.9rem;
   }
 }
+/* line 108, ../sass/components/navigation/_audience_menu.scss */
+.region-header .block-responsive-navigation .block-content #nav li.active-trail a {
+  background-color: #000;
+  color: #fff;
+}
 
 /* line 1, ../sass/components/navigation/_breadcrumb.scss */
 #breadcrumb {

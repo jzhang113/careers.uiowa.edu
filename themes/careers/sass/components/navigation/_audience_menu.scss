@@ -104,6 +104,11 @@
           @include font-size(1.9);
         }
       }
+
+      #nav li.active-trail a{ //hacky fix since a:active or a.active don't seem to work
+        background-color: #000;
+        color: #fff;
+      }
     }
   }
 }
