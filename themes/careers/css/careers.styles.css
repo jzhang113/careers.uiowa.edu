@@ -1018,9 +1018,8 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   font-size: 2.9rem;
   text-align: center;
 }
-
-/* line 12, ../sass/components/_hireahawk.scss */
-.pane-block-1 .block-content {
+/* line 11, ../sass/components/_hireahawk.scss */
+.pane-block-1 .block-content, #block-block-1 .block-content {
   background-color: #ffd451;
   padding: 10px;
 }

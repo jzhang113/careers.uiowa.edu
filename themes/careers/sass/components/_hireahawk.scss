@@ -8,8 +8,8 @@
     @include font-size (2.9);
     text-align: center;
   }
-}
-.pane-block-1 .block-content {
-  background-color: $yellow;
-  padding: $gutters;
+  .block-content {
+    background-color: $yellow;
+    padding: $gutters;
+  }
 }
