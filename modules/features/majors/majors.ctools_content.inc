@@ -35,10 +35,10 @@ function majors_default_ctools_custom_content() {
   $content->category = '';
   $content->settings = array(
     'admin_title' => 'Majors Sidebar Content',
-    'title' => '',
-    'body' => '',
+    'title' => 'Resources',
+    'body' => '<p><a class="button" href="http://www.onetonline.org/" style="width:100%;">O*NET OnLine</a></p><p><a class="button" href="http://www.bls.gov/ooh/" style="width:100%;">Bureau of Labor Statistics - Occupational Outlook Handbook</a></p><p><a class="button" style="width:100%;" href="/careers/node/159">Ask a peer or career advisor for more information about Focus 2</a></p><p><a class="button" href="http://www.owlnotes.com/" style="width:100%;">Owlnotes</a></p><p><a class="button" style="width:100%;" href="http://www.getthatgig.com/">Get That Gig</a></p><p><a class="button" href="http://gogovernment.org/" style="width:100%;">Find Job and Internship Opportunities with the Federal Government</a></p><p><a class="button" href="http://www.careerprofiles.info/" style="width:100%;">Career Profiles</a></p>',
     'format' => 'filtered_html',
-    'substitute' => TRUE,
+    'substitute' => 1,
   );
   $export['majors_sidebar_content'] = $content;
 
