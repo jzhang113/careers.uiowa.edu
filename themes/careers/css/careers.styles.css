@@ -1648,16 +1648,24 @@ ul.quicktabs-tabs li.active a {
   margin: 0px;
 }
 /* line 26, ../sass/components/_spotlight.scss */
+.view-display-id-spotlights_panel_pane .field-content {
+  margin-left: 110px;
+}
+/* line 29, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-field-field-spotlight-image {
   float: left;
   margin-right: 10px;
 }
-/* line 29, ../sass/components/_spotlight.scss */
+/* line 32, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-field-field-spotlight-image img {
   border: 3px solid #2b6390;
 }
+/* line 35, ../sass/components/_spotlight.scss */
+.view-display-id-spotlights_panel_pane .views-field-field-spotlight-image .field-content {
+  margin-left: 0px;
+}
 
-/* line 37, ../sass/components/_spotlight.scss */
+/* line 43, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .pane-node-field-spotlight-name {
   font-size: 25px;
   font-size: 2.5rem;
@@ -1666,29 +1674,29 @@ ul.quicktabs-tabs li.active a {
   margin-bottom: 10px;
 }
 @media only screen and (min-width: 540px) {
-  /* line 37, ../sass/components/_spotlight.scss */
+  /* line 43, ../sass/components/_spotlight.scss */
   .node-full.node-spotlight .pane-node-field-spotlight-name {
     font-size: 30px;
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 540px) {
-  /* line 48, ../sass/components/_spotlight.scss */
+  /* line 54, ../sass/components/_spotlight.scss */
   .node-full.node-spotlight .pane-node-field-spotlight-name .field-name-field-spotlight-name .field-item:before, .node-full.node-spotlight .pane-node-field-spotlight-name .field-name-field-spotlight-name .field-item:after {
     color: #707070;
     content: "-";
     margin: 0 0.5em;
   }
 }
-/* line 58, ../sass/components/_spotlight.scss */
+/* line 64, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-image {
   text-align: center;
 }
-/* line 61, ../sass/components/_spotlight.scss */
+/* line 67, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-image img {
   border: 3px solid #2b6390;
 }
-/* line 67, ../sass/components/_spotlight.scss */
+/* line 73, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-organization .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1699,7 +1707,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f0c0";
   margin-right: 0.6em;
 }
-/* line 73, ../sass/components/_spotlight.scss */
+/* line 79, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-major .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1710,7 +1718,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f040";
   margin-right: 0.6em;
 }
-/* line 79, ../sass/components/_spotlight.scss */
+/* line 85, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-graduation .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1721,7 +1729,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f073";
   margin-right: 0.6em;
 }
-/* line 85, ../sass/components/_spotlight.scss */
+/* line 91, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-position .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1732,7 +1740,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f007";
   margin-right: 0.6em;
 }
-/* line 91, ../sass/components/_spotlight.scss */
+/* line 97, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-location .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1743,7 +1751,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f041";
   margin-right: 0.6em;
 }
-/* line 96, ../sass/components/_spotlight.scss */
+/* line 102, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-body {
   margin-top: 10px;
 }
