@@ -149,7 +149,7 @@ function spotlights_field_default_field_instances() {
   $field_instances['node-spotlight-field_spotlight_image'] = array(
     'bundle' => 'spotlight',
     'deleted' => 0,
-    'description' => 'A minimum 220x308px image is recommended.',
+    'description' => 'A minimum 300x300px image is recommended.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -500,7 +500,7 @@ function spotlights_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A minimum 220x308px image is recommended.');
+  t('A minimum 300x300px image is recommended.');
   t('Audience');
   t('Graduation Year');
   t('Image');
