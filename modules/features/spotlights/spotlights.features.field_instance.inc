@@ -206,14 +206,14 @@ function spotlights_field_default_field_instances() {
         'manualcrop_require_cropping' => array(
           'featured' => 0,
           'featured_page' => 0,
-          'people_profile' => 'people_profile',
-          'square' => 0,
+          'people_profile' => 0,
+          'square' => 'square',
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
           'featured_page' => 0,
-          'people_profile' => 'people_profile',
-          'square' => 0,
+          'people_profile' => 0,
+          'square' => 'square',
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,

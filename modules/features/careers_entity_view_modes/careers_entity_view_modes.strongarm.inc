@@ -44,6 +44,10 @@ function careers_entity_view_modes_strongarm() {
         'label' => 'Square Small',
         'custom settings' => 1,
       ),
+      'square_medium' => array(
+        'label' => 'Square Medium',
+        'custom settings' => 1,
+      ),
     ),
     'taxonomy_term' => array(
       'student_organizations' => array(
