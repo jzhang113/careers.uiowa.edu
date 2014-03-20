@@ -14,7 +14,7 @@ function majors_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_major';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_major'] = $strongarm;
 
   $strongarm = new stdClass();

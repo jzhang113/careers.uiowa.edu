@@ -37,7 +37,7 @@ function majors_node_info() {
     'major' => array(
       'name' => t('Major'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Use <em>Major</em> to create career information pages related to an academic major.'),
       'has_title' => '1',
       'title_label' => t('Major'),
       'help' => '',
