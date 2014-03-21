@@ -1,7 +1,7 @@
 (function ($) {
     $(document).ready(function() {
       // variables
-      var expandMenus = $('#block-menu-block-3');
+      var expandMenus = $('#block-menu-block-3, #block-menu-block-6');
       var menuToggles = expandMenus.find('span.nolink');
       var menuToggleMenus = menuToggles.closest('li').children('ul.menu');
       var menuListItems = expandMenus.find('li');
