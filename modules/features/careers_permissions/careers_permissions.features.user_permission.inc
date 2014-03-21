@@ -158,6 +158,101 @@ function careers_permissions_user_default_permissions() {
     'module' => 'media_internet',
   );
 
+  // Exported permission: 'add terms in 1'.
+  $permissions['add terms in 1'] = array(
+    'name' => 'add terms in 1',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in 10'.
+  $permissions['add terms in 10'] = array(
+    'name' => 'add terms in 10',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in 11'.
+  $permissions['add terms in 11'] = array(
+    'name' => 'add terms in 11',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in 12'.
+  $permissions['add terms in 12'] = array(
+    'name' => 'add terms in 12',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in 13'.
+  $permissions['add terms in 13'] = array(
+    'name' => 'add terms in 13',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in 2'.
+  $permissions['add terms in 2'] = array(
+    'name' => 'add terms in 2',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in 3'.
+  $permissions['add terms in 3'] = array(
+    'name' => 'add terms in 3',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in 7'.
+  $permissions['add terms in 7'] = array(
+    'name' => 'add terms in 7',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in 8'.
+  $permissions['add terms in 8'] = array(
+    'name' => 'add terms in 8',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in 9'.
+  $permissions['add terms in 9'] = array(
+    'name' => 'add terms in 9',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
   // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
@@ -521,7 +616,6 @@ function careers_permissions_user_default_permissions() {
     'name' => 'administer taxonomy',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
   );
@@ -705,6 +799,13 @@ function careers_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in student_organizations'.
+  $permissions['delete terms in student_organizations'] = array(
+    'name' => 'delete terms in student_organizations',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'delete terms in tags'.
   $permissions['delete terms in tags'] = array(
     'name' => 'delete terms in tags',
@@ -752,6 +853,13 @@ function careers_permissions_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit terms in student_organizations'.
+  $permissions['edit terms in student_organizations'] = array(
+    'name' => 'edit terms in student_organizations',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in tags'.
