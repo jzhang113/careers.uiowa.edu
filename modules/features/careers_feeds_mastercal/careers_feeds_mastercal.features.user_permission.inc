@@ -114,7 +114,6 @@ function careers_feeds_mastercal_user_default_permissions() {
     'name' => 'delete terms in events',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
   );
@@ -146,7 +145,6 @@ function careers_feeds_mastercal_user_default_permissions() {
     'name' => 'edit terms in events',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
   );
