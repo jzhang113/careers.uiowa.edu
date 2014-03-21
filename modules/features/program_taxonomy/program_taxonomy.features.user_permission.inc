@@ -79,7 +79,6 @@ function program_taxonomy_user_default_permissions() {
     'name' => 'delete terms in program',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
   );
@@ -89,6 +88,7 @@ function program_taxonomy_user_default_permissions() {
     'name' => 'edit terms in program',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
