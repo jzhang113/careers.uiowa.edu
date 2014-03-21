@@ -79,7 +79,6 @@ function audience_taxonomy_user_default_permissions() {
     'name' => 'delete terms in audience',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
   );
