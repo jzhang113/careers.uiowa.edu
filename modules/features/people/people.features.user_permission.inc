@@ -148,7 +148,6 @@ function people_user_default_permissions() {
     'name' => 'delete terms in student_status',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
   );
@@ -199,7 +198,6 @@ function people_user_default_permissions() {
     'name' => 'edit terms in student_status',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
   );
