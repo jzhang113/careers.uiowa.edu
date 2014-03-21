@@ -39,13 +39,23 @@ function employers_organizations_views_default_views() {
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['path']['absolute'] = TRUE;
+  /* Field: Content: Website Link */
+  $handler->display->display_options['fields']['field_website_link']['id'] = 'field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['table'] = 'field_data_field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['field'] = 'field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['label'] = '';
+  $handler->display->display_options['fields']['field_website_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_website_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_website_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_website_link']['type'] = 'link_plain';
   /* Field: Content: Logo */
   $handler->display->display_options['fields']['field_logo']['id'] = 'field_logo';
   $handler->display->display_options['fields']['field_logo']['table'] = 'field_data_field_logo';
   $handler->display->display_options['fields']['field_logo']['field'] = 'field_logo';
   $handler->display->display_options['fields']['field_logo']['label'] = '';
   $handler->display->display_options['fields']['field_logo']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_logo']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_logo']['alter']['path'] = '[field_website_link]';
+  $handler->display->display_options['fields']['field_logo']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['field_logo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_logo']['type'] = 'file_rendered';
@@ -149,13 +159,23 @@ function employers_organizations_views_default_views() {
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['path']['absolute'] = TRUE;
+  /* Field: Content: Website Link */
+  $handler->display->display_options['fields']['field_website_link']['id'] = 'field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['table'] = 'field_data_field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['field'] = 'field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['label'] = '';
+  $handler->display->display_options['fields']['field_website_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_website_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_website_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_website_link']['type'] = 'link_plain';
   /* Field: Content: Logo */
   $handler->display->display_options['fields']['field_logo']['id'] = 'field_logo';
   $handler->display->display_options['fields']['field_logo']['table'] = 'field_data_field_logo';
   $handler->display->display_options['fields']['field_logo']['field'] = 'field_logo';
   $handler->display->display_options['fields']['field_logo']['label'] = '';
   $handler->display->display_options['fields']['field_logo']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_logo']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_logo']['alter']['path'] = '[field_website_link] ';
+  $handler->display->display_options['fields']['field_logo']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['field_logo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_logo']['type'] = 'file_rendered';

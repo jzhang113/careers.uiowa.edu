@@ -430,7 +430,7 @@ function employers_organizations_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_website_link',
     'label' => 'Website Link',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'attributes' => array(
         'class' => '',
