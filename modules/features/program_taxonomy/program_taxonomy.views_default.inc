@@ -74,6 +74,7 @@ function program_taxonomy_views_default_views() {
   $handler->display->display_options['fields']['field_program_social_media_links']['label'] = '';
   $handler->display->display_options['fields']['field_program_social_media_links']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_program_social_media_links']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_program_social_media_links']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_program_social_media_links']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_program_social_media_links']['separator'] = '<br>';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
