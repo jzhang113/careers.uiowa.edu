@@ -17,6 +17,8 @@
   stylesheets[screen][] = css/careers.normalize.css
   stylesheets[screen][] = css/careers.styles.css
 
+  stylesheets[print][] = css/careers.print.css
+
   ; Internet Explorer Stylesheets
   ;
   ; AT can load stylesheets in conditional comments from the info file.
