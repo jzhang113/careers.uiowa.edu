@@ -68,6 +68,7 @@ features[image][] = featured_page
 features[image][] = people_profile
 features[image][] = people_profile_small
 features[image][] = square
+features[image][] = square_medium
 features[image][] = square_small
 features[image][] = two_hundred
 features_exclude[dependencies][announcements] = announcements

@@ -66,3 +66,8 @@ img {
     max-width: auto;
   }
 }
+
+hr {
+  border: 0px; //override
+  border-bottom:1px solid #ddd;
+}

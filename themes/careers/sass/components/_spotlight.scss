@@ -23,11 +23,17 @@
   .views-field {
     margin: 0px;
   }
+  .field-content {
+    margin-left: 110px;
+  }
   .views-field-field-spotlight-image {
     float: left;
     margin-right: 10px;
     img {
       @include blue-border;
+    }
+    .field-content {
+      margin-left: 0px;
     }
   }
 }

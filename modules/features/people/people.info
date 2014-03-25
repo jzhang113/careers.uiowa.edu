@@ -49,6 +49,7 @@ features[field_base][] = field_people_position
 features[field_base][] = field_people_responsibility
 features[field_base][] = field_people_student_status
 features[field_base][] = field_people_type
+features[field_group][] = group_more_information|node|people|form
 features[field_group][] = group_people_general|node|people|form
 features[field_group][] = group_person_references|node|people|form
 features[field_instance][] = node-people-field_people_biography

@@ -1,0 +1,23 @@
+// Majors
+.node-major {
+  .field-label {
+    @extend %underlined-field-label;
+    @include font-size(2.0); // Originally smaller than H2s lower on the page.
+  }
+  .field-name-body {
+  	margin-bottom: 10px;
+  }
+  .field-name-field-student-org-link{
+  	@include faux-bullet-list;
+  }
+
+}
+
+.view-display-id-majors_list_panel_pane {
+	.views-field-title {
+		margin-bottom: 0px;
+	}
+	.views-row {
+		@include hr;
+	}
+}

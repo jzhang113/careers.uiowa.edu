@@ -13,6 +13,39 @@ function people_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_more_information|node|people|form';
+  $field_group->group_name = 'group_more_information';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'people';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'More Information',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_people_groups',
+      1 => 'field_people_hometown',
+      2 => 'field_people_major',
+      3 => 'field_people_member_since',
+      4 => 'field_people_student_status',
+      5 => 'field_people_type',
+      6 => 'field_people_responsibility',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-more-information field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_more_information|node|people|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_people_general|node|people|form';
   $field_group->group_name = 'group_people_general';
   $field_group->entity_type = 'node';
@@ -58,17 +91,8 @@ function people_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'References',
-    'weight' => '1',
-    'children' => array(
-      0 => 'field_people_responsibilities',
-      1 => 'field_people_groups',
-      2 => 'field_people_hometown',
-      3 => 'field_people_major',
-      4 => 'field_people_member_since',
-      5 => 'field_people_student_status',
-      6 => 'field_people_type',
-      7 => 'field_people_responsibility',
-    ),
+    'weight' => '2',
+    'children' => array(),
     'format_type' => 'tab',
     'format_settings' => array(
       'label' => 'References',

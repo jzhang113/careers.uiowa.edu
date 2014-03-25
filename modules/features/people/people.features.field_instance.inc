@@ -244,7 +244,7 @@ function people_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -324,7 +324,7 @@ function people_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -377,7 +377,7 @@ function people_field_default_field_instances() {
         'year_range' => '-10:+0',
       ),
       'type' => 'date_select',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -659,7 +659,7 @@ function people_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 

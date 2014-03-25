@@ -160,7 +160,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 }
 
 /* line 131, ../sass/utilities/_classes.scss */
-.pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
+.pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-major .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
   font-size: 1.8rem;
   display: block;
@@ -343,6 +343,12 @@ img {
 /* line 65, ../sass/base/_typography.scss */
 .lt-ie9 img {
   max-width: auto;
+}
+
+/* line 70, ../sass/base/_typography.scss */
+hr {
+  border: 0px;
+  border-bottom: 1px solid #ddd;
 }
 
 /* line 1, ../sass/base/_views.scss */
@@ -540,6 +546,62 @@ html.js .ctools-collapsible-container .ctools-collapsible-handle:hover, html.js 
 /* line 36, ../sass/components/_ctools_collabsible.scss */
 html.js .ctools-collapsible-container .ctools-collapsible-content {
   margin-top: 10px;
+}
+
+/* line 43, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div .field-group-format-toggler {
+  background-image: none;
+  float: none;
+}
+/* line 47, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div .field-group-format-toggler:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f146";
+  font-size: 0.7em;
+  margin-right: 0.3em;
+  color: #2b6390;
+}
+/* line 53, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div.collapsed .field-group-format-toggler {
+  background-image: none;
+}
+/* line 55, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div.collapsed .field-group-format-toggler:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f0fe";
+  font-size: 0.7em;
+  margin-right: 0.3em;
+  color: #2b6390;
+}
+/* line 61, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div .field-group-format-title {
+  border-bottom: 1px solid transparent;
+  color: #2b6390;
+  margin-bottom: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 67, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div .field-group-format-title:hover, .collapsible.field-group-div .field-group-format-title:focus {
+  border-bottom-color: #2b6390;
+}
+/* line 71, ../sass/components/_ctools_collabsible.scss */
+.collapsible.field-group-div .field {
+  margin-bottom: 1px;
 }
 
 /* line 3, ../sass/components/_employer_showcase.scss */
@@ -964,9 +1026,8 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   font-size: 2.9rem;
   text-align: center;
 }
-
-/* line 12, ../sass/components/_hireahawk.scss */
-.pane-block-1 .block-content {
+/* line 11, ../sass/components/_hireahawk.scss */
+.pane-block-1 .block-content, #block-block-1 .block-content {
   background-color: #ffd451;
   padding: 10px;
 }
@@ -1010,6 +1071,36 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   *margin-right: .3em;
   content: "\f073";
   margin-right: 0.3em;
+}
+
+/* line 3, ../sass/components/_majors.scss */
+.node-major .field-label {
+  font-size: 20px;
+  font-size: 2rem;
+}
+/* line 7, ../sass/components/_majors.scss */
+.node-major .field-name-body {
+  margin-bottom: 10px;
+}
+/* line 43, ../sass/utilities/_mixins.scss */
+.node-major .field-name-field-student-org-link .field-items {
+  padding-left: 40px;
+}
+/* line 45, ../sass/utilities/_mixins.scss */
+.node-major .field-name-field-student-org-link .field-items .field-item {
+  display: list-item;
+}
+
+/* line 17, ../sass/components/_majors.scss */
+.view-display-id-majors_list_panel_pane .views-field-title {
+  margin-bottom: 0px;
+}
+/* line 20, ../sass/components/_majors.scss */
+.view-display-id-majors_list_panel_pane .views-row {
+  height: auto;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
 }
 
 /* line 1, ../sass/components/_messages.scss */
@@ -1565,16 +1656,24 @@ ul.quicktabs-tabs li.active a {
   margin: 0px;
 }
 /* line 26, ../sass/components/_spotlight.scss */
+.view-display-id-spotlights_panel_pane .field-content {
+  margin-left: 110px;
+}
+/* line 29, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-field-field-spotlight-image {
   float: left;
   margin-right: 10px;
 }
-/* line 29, ../sass/components/_spotlight.scss */
+/* line 32, ../sass/components/_spotlight.scss */
 .view-display-id-spotlights_panel_pane .views-field-field-spotlight-image img {
   border: 3px solid #2b6390;
 }
+/* line 35, ../sass/components/_spotlight.scss */
+.view-display-id-spotlights_panel_pane .views-field-field-spotlight-image .field-content {
+  margin-left: 0px;
+}
 
-/* line 37, ../sass/components/_spotlight.scss */
+/* line 43, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .pane-node-field-spotlight-name {
   font-size: 25px;
   font-size: 2.5rem;
@@ -1583,29 +1682,29 @@ ul.quicktabs-tabs li.active a {
   margin-bottom: 10px;
 }
 @media only screen and (min-width: 540px) {
-  /* line 37, ../sass/components/_spotlight.scss */
+  /* line 43, ../sass/components/_spotlight.scss */
   .node-full.node-spotlight .pane-node-field-spotlight-name {
     font-size: 30px;
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 540px) {
-  /* line 48, ../sass/components/_spotlight.scss */
+  /* line 54, ../sass/components/_spotlight.scss */
   .node-full.node-spotlight .pane-node-field-spotlight-name .field-name-field-spotlight-name .field-item:before, .node-full.node-spotlight .pane-node-field-spotlight-name .field-name-field-spotlight-name .field-item:after {
     color: #707070;
     content: "-";
     margin: 0 0.5em;
   }
 }
-/* line 58, ../sass/components/_spotlight.scss */
+/* line 64, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-image {
   text-align: center;
 }
-/* line 61, ../sass/components/_spotlight.scss */
+/* line 67, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-image img {
   border: 3px solid #2b6390;
 }
-/* line 67, ../sass/components/_spotlight.scss */
+/* line 73, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-organization .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1616,7 +1715,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f0c0";
   margin-right: 0.6em;
 }
-/* line 73, ../sass/components/_spotlight.scss */
+/* line 79, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-major .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1627,7 +1726,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f040";
   margin-right: 0.6em;
 }
-/* line 79, ../sass/components/_spotlight.scss */
+/* line 85, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-graduation .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1638,7 +1737,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f073";
   margin-right: 0.6em;
 }
-/* line 85, ../sass/components/_spotlight.scss */
+/* line 91, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-position .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1649,7 +1748,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f007";
   margin-right: 0.6em;
 }
-/* line 91, ../sass/components/_spotlight.scss */
+/* line 97, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-field-spotlight-location .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1660,7 +1759,7 @@ ul.quicktabs-tabs li.active a {
   content: "\f041";
   margin-right: 0.6em;
 }
-/* line 96, ../sass/components/_spotlight.scss */
+/* line 102, ../sass/components/_spotlight.scss */
 .node-full.node-spotlight .field-name-body {
   margin-top: 10px;
 }
@@ -1896,6 +1995,11 @@ ul.quicktabs-tabs li.active a {
     font-size: 1.9rem;
   }
 }
+/* line 108, ../sass/components/navigation/_audience_menu.scss */
+.region-header .block-responsive-navigation .block-content #nav li.active-trail a {
+  background-color: #000;
+  color: #fff;
+}
 
 /* line 1, ../sass/components/navigation/_breadcrumb.scss */
 #breadcrumb {
@@ -1940,7 +2044,7 @@ ul.quicktabs-tabs li.active a {
   color: #fff;
 }
 
-/* line 167, ../sass/utilities/_mixins.scss */
+/* line 179, ../sass/utilities/_mixins.scss */
 #footer-upper-wrapper li.leaf:before {
   font-family: FontAwesome;
   font-weight: normal;

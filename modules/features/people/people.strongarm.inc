@@ -57,10 +57,10 @@ function people_strongarm() {
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '3',
         ),
         'redirect' => array(
-          'weight' => '10',
+          'weight' => '4',
         ),
       ),
       'display' => array(),

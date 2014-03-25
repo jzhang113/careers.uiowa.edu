@@ -27,7 +27,8 @@ function image_styles_theme_registry_alter(&$theme_registry) {
     'file__image__people_node',
     'file__image__preview',
     'file__image__square',
-    'file__image_square_small',     
+    'file__image_square_small',
+    'file__image_square_medium',     
   );
   
   foreach ($hooks as $h) {

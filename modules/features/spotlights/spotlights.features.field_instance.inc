@@ -149,7 +149,7 @@ function spotlights_field_default_field_instances() {
   $field_instances['node-spotlight-field_spotlight_image'] = array(
     'bundle' => 'spotlight',
     'deleted' => 0,
-    'description' => 'A minimum 220x308px image is recommended.',
+    'description' => 'A minimum 300x300px image is recommended.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -206,14 +206,14 @@ function spotlights_field_default_field_instances() {
         'manualcrop_require_cropping' => array(
           'featured' => 0,
           'featured_page' => 0,
-          'people_profile' => 'people_profile',
-          'square' => 0,
+          'people_profile' => 0,
+          'square' => 'square',
         ),
         'manualcrop_styles_list' => array(
           'featured' => 0,
           'featured_page' => 0,
-          'people_profile' => 'people_profile',
-          'square' => 0,
+          'people_profile' => 0,
+          'square' => 'square',
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
@@ -500,7 +500,7 @@ function spotlights_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A minimum 220x308px image is recommended.');
+  t('A minimum 300x300px image is recommended.');
   t('Audience');
   t('Graduation Year');
   t('Image');
