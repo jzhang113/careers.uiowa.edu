@@ -5,22 +5,27 @@
       var menuToggles = expandMenus.find('span.nolink');
       var menuToggleMenus = menuToggles.closest('li').children('ul.menu');
       var menuListItems = expandMenus.find('li');
+      var menuTabs = [];  // For 'aria-owns' attribute
 
       // set default states
       expandMenus.attr('role','tablist');
       menuToggles.addClass('menu-toggle is-collapsed').attr('tabindex', 0).attr('role','tab');
-      menuToggleMenus.addClass('is-expandable is-hidden').attr('aria-expanded',false).attr('role','tabpanel').hide();
+      menuToggleMenus.addClass('is-expandable is-hidden').attr('role','tabpanel').attr('aria-expanded',false).hide();
 
       // assign accessible relationship between toggler and toggler content
       menuToggles.each(function(i) {
         $(this).attr('id', 'tab'+(i+1));
         $(this).closest('li').children('ul.menu').attr('aria-labelledby', 'tab'+(i+1));
+        menuTabs[menuTabs.length] = $(this).attr('id');
       });
+
+      // assign ids to aria-owns attribute
+      expandMenus.attr('aria-owns', menuTabs.join(" "));
 
       // check for li attributes
       menuListItems.each(function() {
         if($(this).hasClass('active-trail')) {
-          $(this).parent('ul').toggleClass('is-hidden is-visible').show();
+          $(this).parent('ul').toggleClass('is-hidden is-visible').attr('aria-expanded',true).show();
           $(this).parent('ul.is-expandable').siblings('.menu-inner').find('.menu-toggle').removeClass('is-collapsed').addClass('is-expanded');
         }
       });
