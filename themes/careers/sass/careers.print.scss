@@ -1,0 +1,18 @@
+// hide uiowa_bar, logo
+#ui-wrapper, #ui-global-footer, #logo {
+	display:none;
+}
+
+// hide images and flexslider images
+img, .flexslider.slides img {
+	visibility:hidden;
+	width:0;
+	height:0;
+}
+
+// display alt text instead?
+img:after {
+	display:block;
+	visibility:visible;
+	content:attr(alt);
+}

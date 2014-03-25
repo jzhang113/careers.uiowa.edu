@@ -1,0 +1,18 @@
+/* line 2, ../sass/careers.print.scss */
+#ui-wrapper, #ui-global-footer, #logo {
+  display: none;
+}
+
+/* line 7, ../sass/careers.print.scss */
+img, .flexslider.slides img {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* line 14, ../sass/careers.print.scss */
+img:after {
+  display: block;
+  visibility: visible;
+  content: attr(alt);
+}
