@@ -935,7 +935,7 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
 }
 /* line 5, ../sass/components/_full_node.scss */
 .no-sidebars .node-full .block {
-  padding: 5px 10px;
+  padding: 10px;
 }
 @media only screen and (min-width: 540px) {
   /* line 5, ../sass/components/_full_node.scss */
@@ -943,6 +943,14 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
     padding-left: 35px;
     padding-right: 35px;
   }
+}
+/* line 14, ../sass/components/_full_node.scss */
+.no-sidebars .node-full.node-page {
+  max-width: 100%;
+}
+/* line 17, ../sass/components/_full_node.scss */
+.no-sidebars .node-full.node-page .block {
+  padding: 10px;
 }
 
 /* line 3, ../sass/components/_hireahawk.scss */
