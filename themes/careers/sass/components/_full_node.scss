@@ -3,11 +3,19 @@
   max-width: 640px;
 
   .block {
-    padding: 5px $gutters;
+    padding: $gutters;
 
     @media #{$people-name-decorated} {
       padding-left: 35px;
       padding-right: 35px;
+    }
+  }
+
+  &.node-page {
+    max-width: 100%;
+
+    .block {
+      padding: $gutters;
     }
   }
 }
