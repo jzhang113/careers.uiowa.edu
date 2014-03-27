@@ -1,16 +1,26 @@
-/* line 2, ../sass/careers.print.scss */
-#ui-wrapper, #ui-global-footer, #logo {
+/* line 5, ../sass/careers.print.scss */
+#ui-wrapper,
+#ui-global-footer,
+#logo {
   display: none;
 }
 
-/* line 7, ../sass/careers.print.scss */
+/* line 14, ../sass/careers.print.scss */
+.node-type-page #block-responsive-navigation-1,
+.node-type-page .breadcrumb-wrapper,
+.node-type-page .region-sidebar-first,
+.node-type-page #footer {
+  display: none;
+}
+
+/* line 20, ../sass/careers.print.scss */
 img, .flexslider.slides img {
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-/* line 14, ../sass/careers.print.scss */
+/* line 27, ../sass/careers.print.scss */
 img:after {
   display: block;
   visibility: visible;

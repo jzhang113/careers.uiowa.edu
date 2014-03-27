@@ -1,6 +1,19 @@
-// hide uiowa_bar, logo
-#ui-wrapper, #ui-global-footer, #logo {
+// hide uiowa_bar, logo, audience menu, breadcrumbs, right sidebar, footer
+#ui-wrapper,
+#ui-global-footer,
+#logo,
+{
 	display:none;
+}
+
+// Hide audience menu, breadcrumbs, right sidebar, footer on basic pages.
+.node-type-page {
+	#block-responsive-navigation-1,
+	.breadcrumb-wrapper,
+	.region-sidebar-first,
+	#footer {
+		display:none;
+	}
 }
 
 // hide images and flexslider images
