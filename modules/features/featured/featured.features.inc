@@ -40,7 +40,9 @@ function featured_node_info() {
       'description' => t('<em>Featured</em> are image \'slides\' that can be pulled to different parts of the site as a standalone item or as part of a slideshow, and can include a title, caption, link, and logo.'),
       'has_title' => '1',
       'title_label' => t('Administrative Title'),
-      'help' => t('To feature on the homepage, make sure this item is \'published\' and \'promoted to front page.\' To add to a program or audience page, reference the slide while editing the program and/or audience.'),
+      'help' => t('To feature on the homepage, make sure this item is \'published\' and \'promoted to front page.\' To add to a program or audience page, reference the slide while editing the program and/or audience.
+
+Though optional, a caption must be filled out to display any or all of the following: title, logo, link.'),
     ),
   );
   return $items;

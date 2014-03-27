@@ -15,7 +15,7 @@ function featured_field_default_field_instances() {
     'bundle' => 'featured',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Caption will be displayed on the featured slide.',
+    'description' => 'Caption will be displayed on the featured slide. Though optional, a caption must be filled out to display any or all of the following: title, logo, link.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -337,7 +337,7 @@ function featured_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('A minimum 835x351px image is recommended.');
   t('Caption');
-  t('Caption will be displayed on the featured slide.');
+  t('Caption will be displayed on the featured slide. Though optional, a caption must be filled out to display any or all of the following: title, logo, link.');
   t('Featured Image');
   t('Icon/Logo Overlay');
   t('Icon/Logo will not be displayed on homepage slides. A minimum 70px wide image is recommended.');
