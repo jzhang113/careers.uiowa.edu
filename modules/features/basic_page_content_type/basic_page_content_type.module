@@ -5,3 +5,41 @@
  */
 
 include_once 'basic_page_content_type.features.inc';
+
+/**
+ * Alter Pathauto-generated aliases before saving.
+ *
+ * @param string $alias
+ *   The automatic alias after token replacement and strings cleaned.
+ * @param array $context
+ *   An associative array of additional options, with the following elements:
+ *   - 'module': The module or entity type being aliased.
+ *   - 'op': A string with the operation being performed on the object being
+ *     aliased. Can be either 'insert', 'update', 'return', or 'bulkupdate'.
+ *   - 'source': A string of the source path for the alias (e.g. 'node/1').
+ *     This can be altered by reference.
+ *   - 'data': An array of keyed objects to pass to token_replace().
+ *   - 'type': The sub-type or bundle of the object being aliased.
+ *   - 'language': A string of the language code for the alias (e.g. 'en').
+ *     This can be altered by reference.
+ *   - 'pattern': A string of the pattern used for aliasing the object.
+ */
+function basic_page_content_type_pathauto_alias_alter(&$alias, array &$context) {
+	if ($context['type'] == 'page') {
+
+		// if node has a parent menu item
+		if (isset($context['data']['node']->menu['p1'])) {
+			// get first parent menu link id
+		  $menuitem = menu_link_load($context['data']['node']->menu['p1']);
+
+		  // get internal drupal path of first parent
+		  $path = $menuitem['link_path'];
+		  
+		  // get path alias of first parent
+		  $parentalias = drupal_get_path_alias($path);
+
+		  // update node path url with first parent alias and a cleaned up node title
+		  $alias = $parentalias . '/' . pathauto_cleanstring($context['data']['node']->title);
+		}
+	}
+}
