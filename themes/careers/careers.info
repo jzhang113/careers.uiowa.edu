@@ -75,7 +75,7 @@
   ; ie_scripts[lte IE 8][] = js/my-script.js
 
   scripts[] = scripts/menu_toggle.js
-  scripts[] = scripts/collapsible_aria.js
+
 
 
 ;----------// Regions
