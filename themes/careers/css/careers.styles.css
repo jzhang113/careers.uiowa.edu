@@ -2097,8 +2097,8 @@ ul.menu li.leaf {
   margin-top: 0;
 }
 
-/* line 1, ../sass/components/navigation/_social_media.scss */
-a[href*="facebook.com"]:before {
+/* line 2, ../sass/components/navigation/_social_media.scss */
+.views-field-field-program-social-media-links a[href*="facebook.com"]:before, #block-menu-menu-social-media a[href*="facebook.com"]:before {
   margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
@@ -2109,9 +2109,8 @@ a[href*="facebook.com"]:before {
   content: "\f09a";
   font-size: 25px;
 }
-
-/* line 6, ../sass/components/navigation/_social_media.scss */
-a[href*="twitter.com"]:before {
+/* line 7, ../sass/components/navigation/_social_media.scss */
+.views-field-field-program-social-media-links a[href*="twitter.com"]:before, #block-menu-menu-social-media a[href*="twitter.com"]:before {
   margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
@@ -2122,9 +2121,8 @@ a[href*="twitter.com"]:before {
   content: "\f099";
   font-size: 25px;
 }
-
-/* line 11, ../sass/components/navigation/_social_media.scss */
-a[href*="linkedin.com"]:before {
+/* line 12, ../sass/components/navigation/_social_media.scss */
+.views-field-field-program-social-media-links a[href*="linkedin.com"]:before, #block-menu-menu-social-media a[href*="linkedin.com"]:before {
   margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
@@ -2135,9 +2133,8 @@ a[href*="linkedin.com"]:before {
   content: "\f0e1";
   font-size: 25px;
 }
-
-/* line 16, ../sass/components/navigation/_social_media.scss */
-a[href*="pinterest.com"]:before {
+/* line 17, ../sass/components/navigation/_social_media.scss */
+.views-field-field-program-social-media-links a[href*="pinterest.com"]:before, #block-menu-menu-social-media a[href*="pinterest.com"]:before {
   margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
@@ -2148,9 +2145,8 @@ a[href*="pinterest.com"]:before {
   content: "\f0d2";
   font-size: 25px;
 }
-
-/* line 21, ../sass/components/navigation/_social_media.scss */
-a[href*="youtube.com"]:before {
+/* line 22, ../sass/components/navigation/_social_media.scss */
+.views-field-field-program-social-media-links a[href*="youtube.com"]:before, #block-menu-menu-social-media a[href*="youtube.com"]:before {
   margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
@@ -2161,9 +2157,8 @@ a[href*="youtube.com"]:before {
   content: "\f167";
   font-size: 25px;
 }
-
-/* line 26, ../sass/components/navigation/_social_media.scss */
-a[href*="instagram.com"]:before {
+/* line 27, ../sass/components/navigation/_social_media.scss */
+.views-field-field-program-social-media-links a[href*="instagram.com"]:before, #block-menu-menu-social-media a[href*="instagram.com"]:before {
   margin-right: 0.3em;
   font-family: FontAwesome;
   font-weight: normal;
@@ -2175,7 +2170,7 @@ a[href*="instagram.com"]:before {
   font-size: 25px;
 }
 
-/* line 32, ../sass/components/navigation/_social_media.scss */
+/* line 34, ../sass/components/navigation/_social_media.scss */
 a.social-media:before, #footer .block-menu-social-media .block-content a:before {
   height: 30px;
   padding: 2px 3px;
@@ -2190,12 +2185,12 @@ a.social-media:before, #footer .block-menu-social-media .block-content a:before 
   *display: inline;
   vertical-align: baseline;
 }
-/* line 43, ../sass/components/navigation/_social_media.scss */
+/* line 45, ../sass/components/navigation/_social_media.scss */
 a.social-media:hover:before, #footer .block-menu-social-media .block-content a:hover:before, a.social-media:focus:before, #footer .block-menu-social-media .block-content a:focus:before {
   text-decoration: none;
 }
 
-/* line 50, ../sass/components/navigation/_social_media.scss */
+/* line 52, ../sass/components/navigation/_social_media.scss */
 #footer .block-menu-social-media ul.menu {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -2203,19 +2198,19 @@ a.social-media:hover:before, #footer .block-menu-social-media .block-content a:h
   -o-column-count: 2;
   column-count: 2;
 }
-/* line 54, ../sass/components/navigation/_social_media.scss */
+/* line 56, ../sass/components/navigation/_social_media.scss */
 #footer .block-menu-social-media li.leaf {
   padding-bottom: 5px;
 }
-/* line 56, ../sass/components/navigation/_social_media.scss */
+/* line 58, ../sass/components/navigation/_social_media.scss */
 #footer .block-menu-social-media li.leaf:before {
   content: none;
 }
-/* line 61, ../sass/components/navigation/_social_media.scss */
+/* line 63, ../sass/components/navigation/_social_media.scss */
 #footer .block-menu-social-media .block-content a {
   line-height: 2em;
 }
-/* line 64, ../sass/components/navigation/_social_media.scss */
+/* line 66, ../sass/components/navigation/_social_media.scss */
 #footer .block-menu-social-media .block-content a:before {
   background-color: #fff;
   color: #000;

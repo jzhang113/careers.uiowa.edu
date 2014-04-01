@@ -1,31 +1,33 @@
-a[href*="facebook.com"]:before {
-  margin-right: 0.3em;
-  @include icon($fa-var-facebook, $size: 25px);
-}
+.views-field-field-program-social-media-links, #block-menu-menu-social-media {
+  a[href*="facebook.com"]:before {
+    margin-right: 0.3em;
+    @include icon($fa-var-facebook, $size: 25px);
+  }
 
-a[href*="twitter.com"]:before {
-  margin-right: 0.3em;
-  @include icon($fa-var-twitter, $size: 25px);
-}
+  a[href*="twitter.com"]:before {
+    margin-right: 0.3em;
+    @include icon($fa-var-twitter, $size: 25px);
+  }
 
-a[href*="linkedin.com"]:before {
-  margin-right: 0.3em;
-  @include icon($fa-var-linkedin, $size: 25px);
-}
+  a[href*="linkedin.com"]:before {
+    margin-right: 0.3em;
+    @include icon($fa-var-linkedin, $size: 25px);
+  }
 
-a[href*="pinterest.com"]:before {
-  margin-right: 0.3em;
-  @include icon($fa-var-pinterest, $size: 25px);
-}
+  a[href*="pinterest.com"]:before {
+    margin-right: 0.3em;
+    @include icon($fa-var-pinterest, $size: 25px);
+  }
 
-a[href*="youtube.com"]:before {
-  margin-right: 0.3em;
-  @include icon($fa-var-youtube, $size: 25px);
-}
+  a[href*="youtube.com"]:before {
+    margin-right: 0.3em;
+    @include icon($fa-var-youtube, $size: 25px);
+  }
 
-a[href*="instagram.com"]:before {
-  margin-right: 0.3em;
-  @include icon($fa-var-instagram, $size: 25px);
+  a[href*="instagram.com"]:before {
+    margin-right: 0.3em;
+    @include icon($fa-var-instagram, $size: 25px);
+  }
 }
 
 a.social-media {
@@ -68,3 +70,4 @@ a.social-media {
     }
   }
 }
+
