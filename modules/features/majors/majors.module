@@ -6,6 +6,15 @@
 
 include_once 'majors.features.inc';
 
+// Load .js on Major Nodes
+function majors_init() {
+  $node = menu_get_object();
+
+  if (!empty($node) && $node->type == 'major') {
+    drupal_add_js(drupal_get_path('module', 'majors') .'/aria_collapse_majors.js');
+  }
+}
+
 // Create a variable to store the path to this module
 define('MAJORS_PATH', drupal_get_path('module', 'majors'));
 

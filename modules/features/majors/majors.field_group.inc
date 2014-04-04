@@ -13,6 +13,41 @@ function majors_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_collapsible_fields|node|major|default';
+  $field_group->group_name = 'group_collapsible_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'major';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '1',
+    'children' => array(
+      0 => 'group_major_additional_resources',
+      1 => 'group_major_employment_areas',
+      2 => 'group_major_general',
+      3 => 'group_major_hiriing_orgs',
+      4 => 'group_major_job_titles',
+      5 => 'group_major_jobs_internships',
+      6 => 'group_major_professional_orgs',
+      7 => 'group_major_student_orgs',
+      8 => 'group_major_ui_websites',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'classes' => 'tablist',
+        'element' => 'div',
+        'attributes' => 'role="tablist"',
+      ),
+    ),
+  );
+  $export['group_collapsible_fields|node|major|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_employment_areas|node|major|form';
   $field_group->group_name = 'group_employment_areas';
   $field_group->entity_type = 'node';
@@ -45,10 +80,10 @@ function majors_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'major';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_collapsible_fields';
   $field_group->data = array(
     'label' => 'Additional Resources',
-    'weight' => '9',
+    'weight' => '10',
     'children' => array(
       0 => 'field_major_additonal_resources',
     ),
@@ -103,10 +138,10 @@ function majors_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'major';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_collapsible_fields';
   $field_group->data = array(
     'label' => 'Employment Areas',
-    'weight' => '6',
+    'weight' => '7',
     'children' => array(
       0 => 'field_major_employment_areas',
     ),
@@ -134,10 +169,10 @@ function majors_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'major';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_collapsible_fields';
   $field_group->data = array(
     'label' => 'General Career Information',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'field_major_general_info',
     ),
@@ -193,10 +228,10 @@ function majors_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'major';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_collapsible_fields';
   $field_group->data = array(
     'label' => 'Organizations That Have Hired UI Students and Alumni',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_major_hiring_orgs',
     ),
@@ -251,10 +286,10 @@ function majors_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'major';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_collapsible_fields';
   $field_group->data = array(
     'label' => 'Sample Job Titles',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_major_job_titles',
     ),
@@ -309,10 +344,10 @@ function majors_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'major';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_collapsible_fields';
   $field_group->data = array(
     'label' => 'Job and Internship Listings',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_major_jobs_internshps',
     ),
@@ -395,10 +430,10 @@ function majors_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'major';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_collapsible_fields';
   $field_group->data = array(
     'label' => 'Professional Organizations',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_major_professional_orgs',
     ),
@@ -453,10 +488,10 @@ function majors_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'major';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_collapsible_fields';
   $field_group->data = array(
     'label' => 'UI Student Organizations',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_major_student_orgs',
     ),
@@ -511,10 +546,10 @@ function majors_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'major';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_collapsible_fields';
   $field_group->data = array(
     'label' => 'UI Websites',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_major_ui_websites',
     ),

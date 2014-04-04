@@ -34,6 +34,7 @@ features[field_base][] = field_major_jobs_internshps
 features[field_base][] = field_major_professional_orgs
 features[field_base][] = field_major_student_orgs
 features[field_base][] = field_major_ui_websites
+features[field_group][] = group_collapsible_fields|node|major|default
 features[field_group][] = group_employment_areas|node|major|form
 features[field_group][] = group_major_additional_resources|node|major|default
 features[field_group][] = group_major_additional_resources|node|major|form
