@@ -1,4 +1,0 @@
-name = ARIA Collapse
-description = ARIA roles and attributes for collapsible areas within Drupal.
-core = 7.x
-scripts[] = aria_collapse.js
