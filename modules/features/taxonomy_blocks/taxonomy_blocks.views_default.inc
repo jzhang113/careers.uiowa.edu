@@ -270,8 +270,10 @@ function taxonomy_blocks_views_default_views() {
   $handler->display->display_options['fields']['field_program_poc']['field'] = 'field_program_poc';
   $handler->display->display_options['fields']['field_program_poc']['label'] = '';
   $handler->display->display_options['fields']['field_program_poc']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_program_poc']['type'] = 'entityreference_entity_view';
   $handler->display->display_options['fields']['field_program_poc']['settings'] = array(
-    'link' => 1,
+    'view_mode' => 'point_of_contact',
+    'links' => 1,
   );
   /* Field: Taxonomy term: Program Email */
   $handler->display->display_options['fields']['field_program_email']['id'] = 'field_program_email';
