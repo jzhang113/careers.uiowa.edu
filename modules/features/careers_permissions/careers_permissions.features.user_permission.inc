@@ -201,7 +201,6 @@ function careers_permissions_user_default_permissions() {
     'name' => 'add terms in 13',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy_access_fix',
   );
@@ -1249,6 +1248,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'webform access' => 'webform access',
       'webmaster' => 'webmaster',
     ),
     'module' => 'system',

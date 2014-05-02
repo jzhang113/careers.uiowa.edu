@@ -15,6 +15,7 @@ function careers_webform_user_default_permissions() {
     'name' => 'access all webform results',
     'roles' => array(
       'administrator' => 'administrator',
+      'webform access' => 'webform access',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
@@ -26,6 +27,7 @@ function careers_webform_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'webform access' => 'webform access',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
@@ -37,6 +39,7 @@ function careers_webform_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'webform access' => 'webform access',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
@@ -161,6 +164,7 @@ function careers_webform_user_default_permissions() {
     'name' => 'edit all webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'webform access' => 'webform access',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
@@ -192,6 +196,7 @@ function careers_webform_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'webform access' => 'webform access',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
