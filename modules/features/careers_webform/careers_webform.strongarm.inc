@@ -113,7 +113,11 @@ function careers_webform_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__webform';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'point_of_contact' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(

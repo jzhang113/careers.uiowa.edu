@@ -66,6 +66,9 @@ function majors_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'point_of_contact' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

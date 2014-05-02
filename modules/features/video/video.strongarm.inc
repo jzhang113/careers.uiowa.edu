@@ -72,6 +72,9 @@ function video_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'point_of_contact' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -94,7 +97,13 @@ function video_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_taxonomy_term__video_type';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(),
+    ),
+  );
   $export['field_bundle_settings_taxonomy_term__video_type'] = $strongarm;
 
   $strongarm = new stdClass();
