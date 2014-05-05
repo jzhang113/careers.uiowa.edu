@@ -20,7 +20,7 @@ function articles_default_ctools_custom_content() {
   $content->settings = array(
     'admin_title' => 'Articles Header Text',
     'title' => '',
-    'body' => '<p>Introductory Articles Text/Content Goes Here.</p>',
+    'body' => '',
     'format' => 'filtered_html',
     'substitute' => 1,
   );
