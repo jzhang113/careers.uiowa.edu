@@ -150,6 +150,11 @@ function employers_organizations_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
+      'point_of_contact' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
     ),
   );
   $export['panelizer_defaults_node_employers_organizations'] = $strongarm;

@@ -24,6 +24,12 @@ function employers_organizations_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 10,
       ),
+      'point_of_contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -63,6 +69,12 @@ function employers_organizations_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 9,
+      ),
+      'point_of_contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -121,6 +133,12 @@ function employers_organizations_field_default_field_instances() {
         'type' => 'addressfield_default',
         'weight' => 2,
       ),
+      'point_of_contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -169,6 +187,12 @@ function employers_organizations_field_default_field_instances() {
         ),
         'type' => 'geofield_wkt',
         'weight' => 4,
+      ),
+      'point_of_contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -229,6 +253,12 @@ function employers_organizations_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 3,
+      ),
+      'point_of_contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -319,6 +349,12 @@ function employers_organizations_field_default_field_instances() {
         'type' => 'date_default',
         'weight' => 7,
       ),
+      'point_of_contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -372,6 +408,12 @@ function employers_organizations_field_default_field_instances() {
         'type' => 'date_default',
         'weight' => 8,
       ),
+      'point_of_contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -419,6 +461,12 @@ function employers_organizations_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 1,
+      ),
+      'point_of_contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
