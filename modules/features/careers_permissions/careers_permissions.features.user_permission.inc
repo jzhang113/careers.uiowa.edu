@@ -58,6 +58,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'student' => 'student',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -122,6 +123,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'student' => 'student',
       'webmaster' => 'webmaster',
     ),
     'module' => 'toolbar',
@@ -153,6 +155,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'student' => 'student',
       'webmaster' => 'webmaster',
     ),
     'module' => 'media_internet',
@@ -366,6 +369,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'student' => 'student',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -705,6 +709,7 @@ function careers_permissions_user_default_permissions() {
     'name' => 'bypass node access',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -742,6 +747,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'student' => 'student',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -849,6 +855,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'student' => 'student',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1188,6 +1195,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'student' => 'student',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1208,6 +1216,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'student' => 'student',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1237,6 +1246,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'student' => 'student',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1248,6 +1258,7 @@ function careers_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'student' => 'student',
       'webform access' => 'webform access',
       'webmaster' => 'webmaster',
     ),
