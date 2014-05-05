@@ -314,6 +314,7 @@ function careers_permissions_user_default_permissions() {
     'name' => 'administer custom content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'ctools_custom_content',
   );
