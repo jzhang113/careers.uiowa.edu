@@ -186,6 +186,11 @@ function video_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
+      'student_organizations' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
     ),
   );
   $export['panelizer_defaults_taxonomy_term_video_type'] = $strongarm;
