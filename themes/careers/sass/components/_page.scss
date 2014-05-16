@@ -29,7 +29,16 @@ body {
 }
 
 #branding {
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
+  position: relative;
+  min-height: 160px;
+
+  @media #{$responsive-nav} {
+    min-height: 230px;
+  }
+}
+
+.region-header{
   position: relative;
 }
 
