@@ -1160,31 +1160,31 @@ body {
   }
 }
 
-/* line 42, ../sass/components/_page.scss */
+/* line 41, ../sass/components/_page.scss */
 .region-header {
   position: relative;
 }
 
-/* line 46, ../sass/components/_page.scss */
+/* line 45, ../sass/components/_page.scss */
 #logo {
   padding: 10px 0;
 }
 @media only screen and (min-width: 40em) {
-  /* line 46, ../sass/components/_page.scss */
+  /* line 45, ../sass/components/_page.scss */
   #logo {
     padding: 50px 10px 0 20px;
   }
 }
-/* line 53, ../sass/components/_page.scss */
+/* line 52, ../sass/components/_page.scss */
 #logo a {
   border-bottom: none;
 }
-/* line 57, ../sass/components/_page.scss */
+/* line 56, ../sass/components/_page.scss */
 #logo img {
   vertical-align: bottom;
 }
 
-/* line 62, ../sass/components/_page.scss */
+/* line 61, ../sass/components/_page.scss */
 #site-name {
   position: absolute;
   top: -99999em;
@@ -1194,7 +1194,7 @@ body {
   outline: 0;
 }
 
-/* line 66, ../sass/components/_page.scss */
+/* line 65, ../sass/components/_page.scss */
 #site-slogan {
   font-size: 18px;
   font-size: 1.8rem;
@@ -1204,24 +1204,24 @@ body {
   text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0, rgba(0, 0, 0, 0.2) 2px 2px 0, rgba(0, 0, 0, 0.2) 3px 3px 0;
 }
 @media only screen and (min-width: 40em) {
-  /* line 66, ../sass/components/_page.scss */
+  /* line 65, ../sass/components/_page.scss */
   #site-slogan {
     padding-left: 80px;
   }
 }
 
-/* line 77, ../sass/components/_page.scss */
+/* line 76, ../sass/components/_page.scss */
 .site-logo {
   width: 320px;
 }
 
-/* line 81, ../sass/components/_page.scss */
+/* line 80, ../sass/components/_page.scss */
 #page-title {
   margin: 0;
   padding-left: 10px;
 }
 
-/* line 86, ../sass/components/_page.scss */
+/* line 85, ../sass/components/_page.scss */
 #skip-link {
   left: 50%;
   margin-left: -6.5em;
@@ -1231,7 +1231,7 @@ body {
   width: 12em;
   z-index: 50;
 }
-/* line 95, ../sass/components/_page.scss */
+/* line 94, ../sass/components/_page.scss */
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -1242,7 +1242,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 106, ../sass/components/_page.scss */
+/* line 105, ../sass/components/_page.scss */
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -1253,12 +1253,12 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 118, ../sass/components/_page.scss */
+/* line 117, ../sass/components/_page.scss */
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active {
   outline: 0;
 }
 
-/* line 128, ../sass/components/_page.scss */
+/* line 127, ../sass/components/_page.scss */
 #main-content,
 #messages,
 .region-tertiary-content,
@@ -1266,41 +1266,41 @@ body {
   background: white;
 }
 
-/* line 132, ../sass/components/_page.scss */
+/* line 131, ../sass/components/_page.scss */
 #main-content-header {
   background-color: #333333;
   border-bottom: 4px solid #ffd451;
   color: #fff;
 }
 
-/* line 138, ../sass/components/_page.scss */
+/* line 137, ../sass/components/_page.scss */
 #messages {
   background-color: #333333;
 }
 
-/* line 143, ../sass/components/_page.scss */
+/* line 142, ../sass/components/_page.scss */
 #tasks ul.primary {
   border-bottom: 0px;
 }
 
-/* line 148, ../sass/components/_page.scss */
+/* line 147, ../sass/components/_page.scss */
 #footer-upper-wrapper {
   background-color: #333;
   background: url("images/bg_tile.gif") repeat;
   color: #fafafa;
 }
-/* line 153, ../sass/components/_page.scss */
+/* line 152, ../sass/components/_page.scss */
 #footer-upper-wrapper a {
   color: #fafafa;
 }
 
-/* line 158, ../sass/components/_page.scss */
+/* line 157, ../sass/components/_page.scss */
 #footer-wrapper {
   background-color: #ffd451;
   color: #000;
 }
 
-/* line 165, ../sass/components/_page.scss */
+/* line 164, ../sass/components/_page.scss */
 .region-page-top a, .region-page-bottom a {
   border-bottom: none;
 }
