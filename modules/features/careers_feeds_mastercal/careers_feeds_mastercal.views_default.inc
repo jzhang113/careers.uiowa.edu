@@ -444,9 +444,7 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
   $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'raw';
-  $handler->display->display_options['arguments']['tid']['default_argument_options']['index'] = '0';
-  $handler->display->display_options['arguments']['tid']['default_argument_options']['use_alias'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
   $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
@@ -456,8 +454,6 @@ function careers_feeds_mastercal_views_default_views() {
     'audience' => 'audience',
     'program' => 'program',
   );
-  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
-  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -486,7 +482,7 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['argument_input'] = array(
     'tid' => array(
-      'type' => 'context',
+      'type' => 'none',
       'context' => 'entity:taxonomy_term.tid',
       'context_optional' => 0,
       'panel' => '0',

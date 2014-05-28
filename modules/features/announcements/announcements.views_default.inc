@@ -434,31 +434,22 @@ function announcements_views_default_views() {
     'video_type' => 0,
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Taxonomy term: Name */
-  $handler->display->display_options['arguments']['name']['id'] = 'name';
-  $handler->display->display_options['arguments']['name']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['arguments']['name']['field'] = 'name';
-  $handler->display->display_options['arguments']['name']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['arguments']['name']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['name']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['name']['title'] = '%1';
-  $handler->display->display_options['arguments']['name']['default_argument_type'] = 'raw';
-  $handler->display->display_options['arguments']['name']['default_argument_options']['index'] = '0';
-  $handler->display->display_options['arguments']['name']['default_argument_options']['use_alias'] = TRUE;
-  $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['name']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['name']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['name']['validate']['type'] = 'taxonomy_term';
-  $handler->display->display_options['arguments']['name']['validate_options']['vocabularies'] = array(
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
     'audience' => 'audience',
     'program' => 'program',
   );
-  $handler->display->display_options['arguments']['name']['validate_options']['type'] = 'name';
-  $handler->display->display_options['arguments']['name']['validate_options']['transform'] = TRUE;
-  $handler->display->display_options['arguments']['name']['limit'] = '0';
-  $handler->display->display_options['arguments']['name']['path_case'] = 'lower';
-  $handler->display->display_options['arguments']['name']['transform_dash'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
