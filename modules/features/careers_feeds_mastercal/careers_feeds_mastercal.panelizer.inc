@@ -166,6 +166,35 @@ function careers_feeds_mastercal_panelizer_defaults() {
     $display->content['new-e8dc01a4-0e8f-4cdb-b917-ff945a33f746'] = $pane;
     $display->panels['center'][3] = 'new-e8dc01a4-0e8f-4cdb-b917-ff945a33f746';
     $pane = new stdClass();
+    $pane->pid = 'new-4b9e22c6-f11b-4044-bd04-ebd6596157db';
+    $pane->panel = 'center';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_event_additional_info';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'above',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '4b9e22c6-f11b-4044-bd04-ebd6596157db';
+    $display->content['new-4b9e22c6-f11b-4044-bd04-ebd6596157db'] = $pane;
+    $display->panels['center'][4] = 'new-4b9e22c6-f11b-4044-bd04-ebd6596157db';
+    $pane = new stdClass();
     $pane->pid = 'new-86737c87-af0f-4d5b-8dee-135afb3ad8a8';
     $pane->panel = 'center';
     $pane->type = 'node_links';
@@ -188,11 +217,11 @@ function careers_feeds_mastercal_panelizer_defaults() {
       'css_class' => 'link-wrapper',
     );
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 5;
     $pane->locks = array();
     $pane->uuid = '86737c87-af0f-4d5b-8dee-135afb3ad8a8';
     $display->content['new-86737c87-af0f-4d5b-8dee-135afb3ad8a8'] = $pane;
-    $display->panels['center'][4] = 'new-86737c87-af0f-4d5b-8dee-135afb3ad8a8';
+    $display->panels['center'][5] = 'new-86737c87-af0f-4d5b-8dee-135afb3ad8a8';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-86737c87-af0f-4d5b-8dee-135afb3ad8a8';
   $panelizer->display = $display;

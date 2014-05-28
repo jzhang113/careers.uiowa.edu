@@ -160,7 +160,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 }
 
 /* line 131, ../sass/utilities/_classes.scss */
-.pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-major .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
+.pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-master-calendar-event .field-name-field-event-additional-info .field-label, .node-major .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
   font-size: 1.8rem;
   display: block;
@@ -755,6 +755,10 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
 }
 /* line 67, ../sass/components/_events.scss */
 .node-master-calendar-event .field-name-body {
+  margin-top: 10px;
+}
+/* line 74, ../sass/components/_events.scss */
+.node-master-calendar-event .field-name-field-event-additional-info {
   margin-top: 10px;
 }
 

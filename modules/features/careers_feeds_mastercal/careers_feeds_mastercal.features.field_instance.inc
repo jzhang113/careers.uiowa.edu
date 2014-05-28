@@ -54,6 +54,46 @@ function careers_feeds_mastercal_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-master_calendar_event-field_event_additional_info'
+  $field_instances['node-master_calendar_event-field_event_additional_info'] = array(
+    'bundle' => 'master_calendar_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_additional_info',
+    'label' => 'Additional Information',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 31,
+    ),
+  );
+
   // Exported field_instance: 'node-master_calendar_event-field_event_audience'
   $field_instances['node-master_calendar_event-field_event_audience'] = array(
     'bundle' => 'master_calendar_event',
@@ -314,6 +354,7 @@ function careers_feeds_mastercal_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Additional Information');
   t('Audience');
   t('Body');
   t('Date');

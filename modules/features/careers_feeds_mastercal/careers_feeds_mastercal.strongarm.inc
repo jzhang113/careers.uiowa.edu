@@ -91,6 +91,9 @@ function careers_feeds_mastercal_strongarm() {
         'path' => array(
           'weight' => '30',
         ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),

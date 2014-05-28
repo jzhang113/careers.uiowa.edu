@@ -71,5 +71,12 @@
       @extend %underlined-field-label;
     }
   }
+  .field-name-field-event-additional-info {
+    margin-top: 10px;
+
+    .field-label {
+      @extend %underlined-field-label;
+    }
+  }
 }
 
