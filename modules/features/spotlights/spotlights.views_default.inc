@@ -292,7 +292,7 @@ function spotlights_views_default_views() {
   $handler->display->display_options['fields']['field_spotlight_name']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_spotlight_name']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['field_spotlight_name']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_spotlight_name']['element_wrapper_type'] = 'h3';
+  $handler->display->display_options['fields']['field_spotlight_name']['element_wrapper_type'] = 'h2';
   /* Field: Content: Title/Position */
   $handler->display->display_options['fields']['field_spotlight_position']['id'] = 'field_spotlight_position';
   $handler->display->display_options['fields']['field_spotlight_position']['table'] = 'field_data_field_spotlight_position';
