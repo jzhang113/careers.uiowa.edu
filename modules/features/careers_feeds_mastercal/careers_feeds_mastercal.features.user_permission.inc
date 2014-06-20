@@ -96,6 +96,7 @@ function careers_feeds_mastercal_user_default_permissions() {
     'name' => 'delete any master_calendar_event content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -105,6 +106,7 @@ function careers_feeds_mastercal_user_default_permissions() {
     'name' => 'delete own master_calendar_event content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
