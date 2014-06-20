@@ -60,6 +60,12 @@ function careers_process_page(&$vars) {
 }
 // */
 
+function careers_preprocess_page(&$variables) {
+  if (!empty($variables['node']) && !empty($variables['node']->type)) {
+    $variables['theme_hook_suggestions'][] = 'page__node__' . $variables['node']->type;
+  }
+}
+
 
 /**
  * Override or insert variables into the node templates.
