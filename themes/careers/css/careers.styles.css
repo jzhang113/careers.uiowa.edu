@@ -1223,9 +1223,17 @@ body {
 #page-title {
   margin: 0;
   padding-left: 10px;
+  padding-top: 0px;
 }
 
-/* line 85, ../sass/components/_page.scss */
+/* line 87, ../sass/components/_page.scss */
+.node-type-page #page-title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  padding-top: 10px;
+}
+
+/* line 93, ../sass/components/_page.scss */
 #skip-link {
   left: 50%;
   margin-left: -6.5em;
@@ -1235,7 +1243,7 @@ body {
   width: 12em;
   z-index: 50;
 }
-/* line 94, ../sass/components/_page.scss */
+/* line 102, ../sass/components/_page.scss */
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -1246,7 +1254,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 105, ../sass/components/_page.scss */
+/* line 113, ../sass/components/_page.scss */
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -1257,12 +1265,12 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 117, ../sass/components/_page.scss */
+/* line 125, ../sass/components/_page.scss */
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active {
   outline: 0;
 }
 
-/* line 127, ../sass/components/_page.scss */
+/* line 135, ../sass/components/_page.scss */
 #main-content,
 #messages,
 .region-tertiary-content,
@@ -1270,41 +1278,41 @@ body {
   background: white;
 }
 
-/* line 131, ../sass/components/_page.scss */
+/* line 139, ../sass/components/_page.scss */
 #main-content-header {
   background-color: #333333;
   border-bottom: 4px solid #ffd451;
   color: #fff;
 }
 
-/* line 137, ../sass/components/_page.scss */
+/* line 145, ../sass/components/_page.scss */
 #messages {
   background-color: #333333;
 }
 
-/* line 142, ../sass/components/_page.scss */
+/* line 150, ../sass/components/_page.scss */
 #tasks ul.primary {
   border-bottom: 0px;
 }
 
-/* line 147, ../sass/components/_page.scss */
+/* line 155, ../sass/components/_page.scss */
 #footer-upper-wrapper {
   background-color: #333;
   background: url("images/bg_tile.gif") repeat;
   color: #fafafa;
 }
-/* line 152, ../sass/components/_page.scss */
+/* line 160, ../sass/components/_page.scss */
 #footer-upper-wrapper a {
   color: #fafafa;
 }
 
-/* line 157, ../sass/components/_page.scss */
+/* line 165, ../sass/components/_page.scss */
 #footer-wrapper {
   background-color: #ffd451;
   color: #000;
 }
 
-/* line 164, ../sass/components/_page.scss */
+/* line 172, ../sass/components/_page.scss */
 .region-page-top a, .region-page-bottom a {
   border-bottom: none;
 }
@@ -2029,7 +2037,7 @@ ul.quicktabs-tabs li.active a {
   background-color: #333333;
   color: #fff;
   margin: 0;
-  padding: 10px 10px 0;
+  padding: 10px;
   /* If the label is set to show in theme settings the label class is added */
 }
 /* line 8, ../sass/components/navigation/_breadcrumb.scss */
