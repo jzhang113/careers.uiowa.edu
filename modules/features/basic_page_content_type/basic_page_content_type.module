@@ -6,6 +6,32 @@
 
 include_once 'basic_page_content_type.features.inc';
 
+// Create a variable to store the path to this module
+define('PAGE_PATH', drupal_get_path('module', 'basic_page_content_type'));
+
+function basic_page_content_type_theme_registry_alter(&$theme_registry) {
+  $theme_registry_copy = $theme_registry;
+  _theme_process_registry($theme_registry_copy, 'phptemplate', 'theme_engine', 'careers', PAGE_PATH);
+  $theme_registry += array_diff_key($theme_registry_copy, $theme_registry);
+  // A list of templates the module will provide templates for
+  $hooks = array('page__node__page');
+  foreach ($hooks as $h) {
+    // Add the key 'theme paths' if it doesn't exist in this theme's registry
+    if (!isset($theme_registry[$h]['theme paths'])) {
+      $theme_registry[$h]['theme paths'] = array();
+    }
+    //Shift this module's directory to the top of the theme path list
+    if(is_array($theme_registry[$h]['theme paths'])) {
+      $first_element = array_shift($theme_registry[$h]['theme paths']);
+      if ($first_element) {
+        array_unshift($theme_registry[$h]['theme paths'], $first_element, PAGE_PATH);
+      } else {
+        array_unshift($theme_registry[$h]['theme paths'], PAGE_PATH);
+      }
+    }
+  }
+}
+
 /**
  * Alter Pathauto-generated aliases before saving.
  *
