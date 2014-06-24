@@ -565,7 +565,7 @@ function people_field_default_field_instances() {
       'file_directory' => 'people',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '',
+      'max_resolution' => '2000x2000',
       'min_resolution' => '220x308',
       'title_field' => 0,
       'user_register_form' => FALSE,
