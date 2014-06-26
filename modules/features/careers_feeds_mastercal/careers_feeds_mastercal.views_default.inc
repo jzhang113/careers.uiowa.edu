@@ -191,6 +191,16 @@ function careers_feeds_mastercal_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Sticky */
+  $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
+  $handler->display->display_options['sorts']['sticky']['table'] = 'node';
+  $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
+  $handler->display->display_options['sorts']['sticky']['order'] = 'DESC';
+  /* Sort criterion: Content: Date -  start date (field_mcf_date) */
+  $handler->display->display_options['sorts']['field_mcf_date_value']['id'] = 'field_mcf_date_value';
+  $handler->display->display_options['sorts']['field_mcf_date_value']['table'] = 'field_data_field_mcf_date';
+  $handler->display->display_options['sorts']['field_mcf_date_value']['field'] = 'field_mcf_date_value';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -463,6 +473,16 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
   $handler->display->display_options['fields']['title']['hide_empty'] = TRUE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Sticky */
+  $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
+  $handler->display->display_options['sorts']['sticky']['table'] = 'node';
+  $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
+  $handler->display->display_options['sorts']['sticky']['order'] = 'DESC';
+  /* Sort criterion: Content: Date -  start date (field_mcf_date) */
+  $handler->display->display_options['sorts']['field_mcf_date_value']['id'] = 'field_mcf_date_value';
+  $handler->display->display_options['sorts']['field_mcf_date_value']['table'] = 'field_data_field_mcf_date';
+  $handler->display->display_options['sorts']['field_mcf_date_value']['field'] = 'field_mcf_date_value';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Taxonomy term: Term ID */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
