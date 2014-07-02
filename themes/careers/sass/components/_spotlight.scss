@@ -10,6 +10,7 @@
     float: right;
     img{
       @include blue-border;
+      min-width: 100px; //IE fix
     }
   }
 }
@@ -31,6 +32,7 @@
     margin-right: 10px;
     img {
       @include blue-border;
+      min-width: 100px; //IE fix
     }
     .field-content {
       margin-left: 0px;

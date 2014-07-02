@@ -6,6 +6,7 @@
   .field-label, .field-items {
     @include inline-block;
     float: none;
+    margin-right: 1px; // IE Fix
     vertical-align: baseline;
   }
 }
