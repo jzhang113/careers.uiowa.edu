@@ -241,7 +241,7 @@ function articles_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['style_options']['description'] = 'Articles Feed for the University of Iowa Pomerantz Career Center';
   $handler->display->display_options['row_plugin'] = 'node_rss';
-  $handler->display->display_options['path'] = 'careerbuzz/feed';
+  $handler->display->display_options['path'] = 'feeds/careerbuzz';
   $handler->display->display_options['displays'] = array(
     'default' => 0,
     'announcements_archive' => 0,

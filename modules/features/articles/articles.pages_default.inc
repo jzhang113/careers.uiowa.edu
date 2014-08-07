@@ -153,7 +153,7 @@ function articles_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Articles Feed',
       'title' => 'Subscribe',
-      'body' => '<p><a href="articles/feed">Subscribe to RSS Feed</a></p>',
+      'body' => '<p><a href="feeds/careerbuzz">Subscribe to RSS Feed</a></p>',
       'format' => 'filtered_html',
       'substitute' => 1,
     );

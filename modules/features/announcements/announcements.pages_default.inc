@@ -193,9 +193,9 @@ function announcements_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Announcements Feed',
       'title' => 'Subscribe',
-      'body' => '<p><a href="announcements/feed">Subscribe to RSS Feed</a></p>',
+      'body' => '<p><a href="feeds/announcements">Subscribe to RSS Feed</a></p>',
       'format' => 'filtered_html',
-      'substitute' => TRUE,
+      'substitute' => 1,
     );
     $pane->cache = array();
     $pane->style = array(
