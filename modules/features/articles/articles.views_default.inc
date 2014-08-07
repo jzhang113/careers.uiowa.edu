@@ -62,7 +62,7 @@ function articles_views_default_views() {
   /* Display: Articles Panel Page */
   $handler = $view->new_display('panel_pane', 'Articles Panel Page', 'articles');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Career Buzz';
+  $handler->display->display_options['title'] = 'careerBUZZ';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['defaults']['query'] = FALSE;
