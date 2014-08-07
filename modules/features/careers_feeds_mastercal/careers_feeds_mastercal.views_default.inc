@@ -630,6 +630,15 @@ function careers_feeds_mastercal_views_default_views() {
   $handler->display->display_options['allow']['title_override'] = 'title_override';
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 0;
+
+  /* Display: Events Feed */
+  $handler = $view->new_display('feed', 'Events Feed', 'events_feed');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['path'] = 'events/feed';
+  $handler->display->display_options['sitename_title'] = 1;
   $export['events'] = $view;
 
   return $export;
