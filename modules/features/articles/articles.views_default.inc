@@ -199,7 +199,7 @@ function articles_views_default_views() {
   $handler->display->display_options['arguments']['created_year_month']['summary']['sort_order'] = 'desc';
   $handler->display->display_options['arguments']['created_year_month']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['created_year_month']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['created_year_month']['summary_options']['base_path'] = 'articles';
+  $handler->display->display_options['arguments']['created_year_month']['summary_options']['base_path'] = 'careerbuzz';
   $handler->display->display_options['arguments']['created_year_month']['summary_options']['items_per_page'] = '30';
   $handler->display->display_options['arguments']['created_year_month']['specify_validation'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
