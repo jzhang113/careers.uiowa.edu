@@ -3,6 +3,7 @@ core = 7.x
 package = Careers
 version = 7.x-1.0
 project = articles
+dependencies[] = ctools_custom_content
 dependencies[] = field_group
 dependencies[] = node
 dependencies[] = text

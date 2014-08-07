@@ -15,7 +15,7 @@ function articles_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Articles';
   $page->admin_description = '';
-  $page->path = 'articles/!month';
+  $page->path = 'careerbuzz/!month';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,

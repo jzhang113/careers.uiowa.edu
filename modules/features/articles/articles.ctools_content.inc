@@ -20,7 +20,7 @@ function articles_default_ctools_custom_content() {
   $content->settings = array(
     'admin_title' => 'Articles Header Text',
     'title' => '',
-    'body' => '',
+    'body' => '<p>[[{"fid":"480","view_mode":"full","type":"media","attributes":{"height":"202","width":"480","alt":"test image","class":"media-element file-full"},"link_text":null}]]</p>',
     'format' => 'filtered_html',
     'substitute' => 1,
   );
