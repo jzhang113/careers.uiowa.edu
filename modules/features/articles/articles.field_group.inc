@@ -25,6 +25,7 @@ function articles_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'title',
+      2 => 'field_article_tags',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
