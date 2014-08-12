@@ -1652,6 +1652,16 @@ ul.quicktabs-tabs li.active a {
   color: #9c8345;
 }
 
+/* line 1, ../sass/components/_search.scss */
+.gsc-search-button {
+  min-height: 32px;
+}
+
+/* line 6, ../sass/components/_search.scss */
+.gs-title:hover {
+  border-bottom: 0px;
+}
+
 /* line 3, ../sass/components/_spotlight.scss */
 .view-display-id-spotlight_teaser_pane .view-content {
   margin-bottom: 10px;
