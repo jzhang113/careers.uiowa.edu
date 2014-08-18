@@ -14,7 +14,7 @@ function inthenews_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_news_content_type';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_news_content_type'] = $strongarm;
 
   $strongarm = new stdClass();

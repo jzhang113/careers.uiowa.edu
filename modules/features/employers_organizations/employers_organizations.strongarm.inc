@@ -14,7 +14,7 @@ function employers_organizations_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_employers_organizations';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_employers_organizations'] = $strongarm;
 
   $strongarm = new stdClass();

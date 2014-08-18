@@ -14,7 +14,7 @@ function articles_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_article';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_article'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -239,10 +239,8 @@ function articles_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_settings_node_article';
   $strongarm->value = array(
-    'entity' => 'node',
-    'bundle' => 'articles',
-    'status' => 0,
-    'priority' => 0.5,
+    'status' => '0',
+    'priority' => '0.5',
   );
   $export['xmlsitemap_settings_node_article'] = $strongarm;
 
