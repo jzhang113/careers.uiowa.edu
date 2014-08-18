@@ -14,7 +14,7 @@ function careers_webform_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_webform';
-  $strongarm->value = 'edit-menu';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_webform'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -142,7 +142,6 @@ function careers_webform_strongarm() {
   $strongarm->value = array(
     0 => 'menu-audience-menu',
     1 => 'menu-quick-links',
-    2 => 'menu-site-links',
   );
   $export['menu_options_webform'] = $strongarm;
 
