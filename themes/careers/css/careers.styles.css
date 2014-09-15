@@ -764,6 +764,75 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   margin-top: 10px;
 }
 
+/* line 85, ../sass/components/_events.scss */
+.quicktabs-tabpage .block-block {
+  padding: 0px;
+}
+
+/* line 89, ../sass/components/_events.scss */
+#lwe {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 94, ../sass/components/_events.scss */
+.lwe {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 100, ../sass/components/_events.scss */
+.lwn span {
+  float: none;
+  display: block;
+}
+/* line 103, ../sass/components/_events.scss */
+.lwn span:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f073";
+  margin-right: 0.5em;
+}
+/* line 107, ../sass/components/_events.scss */
+.lwn a {
+  font-size: 1.6rem;
+}
+
+/* line 111, ../sass/components/_events.scss */
+.lwl {
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 114, ../sass/components/_events.scss */
+#lclst_widget_footer {
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 118, ../sass/components/_events.scss */
+.section-events .lwn a {
+  font-size: 2rem;
+}
+
 /* line 1, ../sass/components/_flexslider.scss */
 .flexslider {
   border: none;

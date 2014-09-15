@@ -80,3 +80,42 @@
   }
 }
 
+// Localist Block(s)
+.quicktabs-tabpage {
+  .block-block {
+    padding: 0px;
+  }
+}
+#lwe {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.lwe {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+.lwn {
+  span {
+    float:none;
+    display: block;
+    &:before {
+      @include icon($fa-var-calendar, $margin-right: 0.5em);
+    }
+  }
+  a {
+    font-size: 1.6rem; // h3 equivalent
+  }
+}
+.lwl {
+  @include element-invisible;
+}
+#lclst_widget_footer{
+  @include element-invisible;
+}
+.section-events {
+  .lwn a {
+    font-size: 2rem; // h2 equivalent
+  }
+}
