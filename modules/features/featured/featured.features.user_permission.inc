@@ -156,6 +156,7 @@ function featured_user_default_permissions() {
     'name' => 'override featured promote to front page option',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',

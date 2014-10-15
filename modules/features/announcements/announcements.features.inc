@@ -46,5 +46,6 @@ function announcements_node_info() {
       'help' => t('To feature announcement on the homepage, make sure this item is \'published\' and \'promoted to front page.\''),
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

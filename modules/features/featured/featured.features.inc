@@ -45,5 +45,6 @@ function featured_node_info() {
 Though optional, a caption must be filled out to display any or all of the following: title, logo, link.'),
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
