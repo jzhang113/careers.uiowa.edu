@@ -127,7 +127,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   border-bottom: 1px solid #ddd;
   padding-right: 35px;
 }
-/* line 97, ../sass/utilities/_classes.scss */
+/* line 100, ../sass/utilities/_classes.scss */
 .block .views-summary .summary-count {
   position: absolute;
   right: 0;
@@ -143,11 +143,11 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   padding: 0 3px;
   min-width: 20px;
 }
-/* line 113, ../sass/utilities/_classes.scss */
+/* line 116, ../sass/utilities/_classes.scss */
 .block .views-summary .has-filter .label {
   display: none;
 }
-/* line 118, ../sass/utilities/_classes.scss */
+/* line 121, ../sass/utilities/_classes.scss */
 .block .views-summary .has-filter .active:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -159,7 +159,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
   margin-right: .4em;
 }
 
-/* line 131, ../sass/utilities/_classes.scss */
+/* line 134, ../sass/utilities/_classes.scss */
 .pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-master-calendar-event .field-name-field-event-additional-info .field-label, .node-major .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
   font-size: 1.8rem;
@@ -360,8 +360,8 @@ hr {
 /* line 2, ../sass/components/_announcements.scss */
 .pane-announcements-announcements-archive .views-row {
   height: auto;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
 /* line 6, ../sass/components/_announcements.scss */
@@ -394,6 +394,18 @@ hr {
 /* line 34, ../sass/components/_announcements.scss */
 .view-display-id-announcements_front_content_pane .view-footer {
   clear: both;
+}
+
+/* line 3, ../sass/components/_articles.scss */
+.pane-articles-articles .views-row {
+  height: auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+/* line 7, ../sass/components/_articles.scss */
+.pane-articles-articles .views-row-last {
+  border-bottom: 0px;
 }
 
 /* line 4, ../sass/components/_buttons.scss */
@@ -703,8 +715,8 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
 .view-display-id-events_panel_page .views-row,
 .view-display-id-events_front_page .views-row {
   height: auto;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
 /* line 28, ../sass/components/_events.scss */
@@ -764,75 +776,46 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   margin-top: 10px;
 }
 
-/* line 85, ../sass/components/_events.scss */
-.quicktabs-tabpage .block-block {
-  padding: 0px;
+/* This feature has been put aside for now Task #185 */
+/* // Localist Block(s)
+.quicktabs-tabpage {
+  .block-block {
+    padding: 0px;
+  }
 }
-
-/* line 89, ../sass/components/_events.scss */
 #lwe {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
-
-/* line 94, ../sass/components/_events.scss */
 .lwe {
   margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
-
-/* line 100, ../sass/components/_events.scss */
-.lwn span {
-  float: none;
-  display: block;
+.lwn {
+  span {
+    float:none;
+    display: block;
+    &:before {
+      @include icon($fa-var-calendar, $margin-right: 0.5em);
+    }
+  }
+  a {
+    font-size: 1.6rem; // h3 equivalent
+  }
 }
-/* line 103, ../sass/components/_events.scss */
-.lwn span:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f073";
-  margin-right: 0.5em;
-}
-/* line 107, ../sass/components/_events.scss */
-.lwn a {
-  font-size: 1.6rem;
-}
-
-/* line 111, ../sass/components/_events.scss */
 .lwl {
-  border: 0;
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  width: 1px;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
+  @include element-invisible;
 }
-
-/* line 114, ../sass/components/_events.scss */
-#lclst_widget_footer {
-  border: 0;
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  width: 1px;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
+#lclst_widget_footer{
+  @include element-invisible;
 }
-
-/* line 118, ../sass/components/_events.scss */
-.section-events .lwn a {
-  font-size: 2rem;
-}
-
+.section-events {
+  .lwn a {
+    font-size: 2rem; // h2 equivalent
+  }
+} */
 /* line 1, ../sass/components/_flexslider.scss */
 .flexslider {
   border: none;
@@ -1110,8 +1093,8 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
 /* line 4, ../sass/components/_in_the_news.scss */
 .view-display-id-inthenews .views-row {
   height: auto;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
 /* line 8, ../sass/components/_in_the_news.scss */
@@ -1173,8 +1156,8 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
 /* line 20, ../sass/components/_majors.scss */
 .view-display-id-majors_list_panel_pane .views-row {
   height: auto;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -1529,8 +1512,8 @@ body {
 .view-display-id-people_panel_pane .views-row, .view-display-id-people_panel_pane_professional .views-row, .view-display-id-people_panel_pane_student .views-row {
   min-height: 150px;
   height: auto;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
 /* line 107, ../sass/components/_people.scss */
@@ -1752,8 +1735,8 @@ ul.quicktabs-tabs li.active a {
 .view-display-id-spotlights_panel_pane .views-row {
   min-height: 105px;
   height: auto;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
 /* line 24, ../sass/components/_spotlight.scss */
@@ -1953,8 +1936,8 @@ ul.quicktabs-tabs li.active a {
 .view-display-id-video_panel_pane .views-row {
   min-height: 105px;
   height: auto;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
 /* line 73, ../sass/components/_videos.scss */

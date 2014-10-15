@@ -90,7 +90,10 @@
     list-style: none;
     margin-left: 0;
     position: relative;
-    @include hr;
+    height: auto;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
     padding-right: 35px;
   }
 

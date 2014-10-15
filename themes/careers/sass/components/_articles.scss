@@ -1,0 +1,10 @@
+// CareerBUZZ
+.pane-articles-articles {
+	.views-row {
+		@include hr;
+	}
+
+	.views-row-last {
+		border-bottom: 0px;
+	}
+}
