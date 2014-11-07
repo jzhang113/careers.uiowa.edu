@@ -1,28 +1,37 @@
-/* line 5, ../sass/careers.print.scss */
+/* line 9, ../sass/careers.print.scss */
 #ui-wrapper,
 #ui-global-footer,
-#logo {
+#logo,
+#toolbar,
+#tasks,
+.view-featured,
+#block-responsive-navigation-1 {
   display: none;
 }
 
 /* line 14, ../sass/careers.print.scss */
-.node-type-page #block-responsive-navigation-1,
-.node-type-page .breadcrumb-wrapper,
-.node-type-page .region-sidebar-first,
-.node-type-page #footer {
+.not-front #footer {
   display: none;
 }
 
-/* line 20, ../sass/careers.print.scss */
-img, .flexslider.slides img {
+/* line 21, ../sass/careers.print.scss */
+.front img, .page-taxonomy-term .panel-display img, .block-1 img {
   visibility: hidden;
   width: 0;
   height: 0;
 }
-
-/* line 27, ../sass/careers.print.scss */
-img:after {
+/* line 28, ../sass/careers.print.scss */
+.front img:after, .page-taxonomy-term .panel-display img:after, .block-1 img:after {
   display: block;
   visibility: visible;
   content: attr(alt);
+}
+
+/* line 36, ../sass/careers.print.scss */
+#main-content h2, #main-content h3, #main-content h4 {
+  page-break-after: avoid;
+}
+/* line 39, ../sass/careers.print.scss */
+#main-content ul, #main-content img {
+  page-break-inside: avoid;
 }

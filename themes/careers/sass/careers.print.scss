@@ -2,30 +2,41 @@
 #ui-wrapper,
 #ui-global-footer,
 #logo,
+#toolbar,
+#tasks,
+.view-featured,
+#block-responsive-navigation-1
 {
 	display:none;
 }
 
-// Hide audience menu, breadcrumbs, right sidebar, footer on basic pages.
-.node-type-page {
-	#block-responsive-navigation-1,
-	.breadcrumb-wrapper,
-	.region-sidebar-first,
+.not-front {
 	#footer {
-		display:none;
+		display: none;
 	}
 }
 
-// hide images and flexslider images
-img, .flexslider.slides img {
-	visibility:hidden;
-	width:0;
-	height:0;
+// Hide images on front page, audiences, programs, and the hireahawk block
+.front, .page-taxonomy-term .panel-display, .block-1 {
+	img {
+		visibility:hidden;
+		width:0;
+		height:0;
+	}
+
+	// display alt text instead? works in Opera?
+	img:after {
+		display:block;
+		visibility:visible;
+		content:attr(alt);
+	}
 }
 
-// display alt text instead?
-img:after {
-	display:block;
-	visibility:visible;
-	content:attr(alt);
+#main-content {
+	h2, h3, h4 {
+   page-break-after: avoid;
+	}
+	ul, img {
+   page-break-inside: avoid;
+	}
 }
