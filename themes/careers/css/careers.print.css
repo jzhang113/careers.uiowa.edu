@@ -27,11 +27,11 @@
   content: attr(alt);
 }
 
-/* line 36, ../sass/careers.print.scss */
+/* line 37, ../sass/careers.print.scss */
 #main-content h2, #main-content h3, #main-content h4 {
   page-break-after: avoid;
 }
-/* line 39, ../sass/careers.print.scss */
+/* line 40, ../sass/careers.print.scss */
 #main-content ul, #main-content img {
   page-break-inside: avoid;
 }
