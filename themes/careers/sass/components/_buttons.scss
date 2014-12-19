@@ -58,7 +58,6 @@
 
 .page {
   .button, input[type="button"], input[type="reset"], input[type="submit"] {
-    display: inline-block;
     font-family: $hireahawk;
     background-color: $links;
     color: white;
@@ -80,5 +79,8 @@
       color: white;
       text-decoration: none;
     }
+  }
+  .button {
+    display: inline-block;
   }
 }
