@@ -1,22 +1,22 @@
 <?php
 /**
  * @file
- * careers_feeds_mastercal.panelizer.inc
+ * careers_events.panelizer.inc
  */
 
 /**
  * Implements hook_panelizer_defaults().
  */
-function careers_feeds_mastercal_panelizer_defaults() {
+function careers_events_panelizer_defaults() {
   $export = array();
 
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:master_calendar_event:default:default';
+  $panelizer->name = 'node:event:default:default';
   $panelizer->title = 'Default';
   $panelizer->panelizer_type = 'node';
-  $panelizer->panelizer_key = 'master_calendar_event';
+  $panelizer->panelizer_key = 'event';
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = '';
   $panelizer->css = '';
@@ -30,24 +30,25 @@ function careers_feeds_mastercal_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'flexible';
+  $display->layout = 'boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'center' => NULL,
+      'contentmain' => NULL,
     ),
   );
   $display->cache = array();
   $display->title = '%node:title';
-  $display->uuid = '844a049b-a4d1-4407-ae32-5ade8a41c5b2';
+  $display->uuid = '72e9194a-30ea-41ed-a6ff-4f554ca3c415';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-79a9ace6-54e6-476d-ae0a-7ff777004ee6';
-    $pane->panel = 'center';
+    $pane->pid = 'new-ab49a7eb-6bfe-4d28-afc4-b566ba0e83da';
+    $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_mcf_date';
+    $pane->subtype = 'node:field_event_date';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -58,10 +59,10 @@ function careers_feeds_mastercal_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'format_type' => 'long',
-        'fromto' => 'both',
-        'multiple_from' => '',
         'multiple_number' => '',
+        'multiple_from' => '',
         'multiple_to' => '',
+        'fromto' => 'both',
       ),
       'context' => 'panelizer',
       'override_title' => 0,
@@ -75,23 +76,28 @@ function careers_feeds_mastercal_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '79a9ace6-54e6-476d-ae0a-7ff777004ee6';
-    $display->content['new-79a9ace6-54e6-476d-ae0a-7ff777004ee6'] = $pane;
-    $display->panels['center'][0] = 'new-79a9ace6-54e6-476d-ae0a-7ff777004ee6';
+    $pane->uuid = 'ab49a7eb-6bfe-4d28-afc4-b566ba0e83da';
+    $display->content['new-ab49a7eb-6bfe-4d28-afc4-b566ba0e83da'] = $pane;
+    $display->panels['contentmain'][0] = 'new-ab49a7eb-6bfe-4d28-afc4-b566ba0e83da';
     $pane = new stdClass();
-    $pane->pid = 'new-43cb27a7-5ecc-4e9b-b0a5-8339c6c213e9';
-    $pane->panel = 'center';
+    $pane->pid = 'new-fabd1bc0-9840-4bdc-847c-ad6340913cd8';
+    $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_mcf_location';
+    $pane->subtype = 'node:field_event_location';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'inline',
-      'formatter' => 'text_default',
+      'formatter' => 'addressfield_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
+      'formatter_settings' => array(
+        'use_widget_handlers' => 0,
+        'format_handlers' => array(
+          'name-oneline' => 'name-oneline',
+        ),
+      ),
       'context' => 'panelizer',
       'override_title' => 0,
       'override_title_text' => '',
@@ -104,14 +110,14 @@ function careers_feeds_mastercal_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '43cb27a7-5ecc-4e9b-b0a5-8339c6c213e9';
-    $display->content['new-43cb27a7-5ecc-4e9b-b0a5-8339c6c213e9'] = $pane;
-    $display->panels['center'][1] = 'new-43cb27a7-5ecc-4e9b-b0a5-8339c6c213e9';
+    $pane->uuid = 'fabd1bc0-9840-4bdc-847c-ad6340913cd8';
+    $display->content['new-fabd1bc0-9840-4bdc-847c-ad6340913cd8'] = $pane;
+    $display->panels['contentmain'][1] = 'new-fabd1bc0-9840-4bdc-847c-ad6340913cd8';
     $pane = new stdClass();
-    $pane->pid = 'new-87053436-e574-45f5-82fb-d34447f8912a';
-    $pane->panel = 'center';
+    $pane->pid = 'new-a34a74d2-588f-4179-ba2d-8b7d26d80e17';
+    $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_mcf_event_url';
+    $pane->subtype = 'node:field_event_link';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -133,12 +139,12 @@ function careers_feeds_mastercal_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '87053436-e574-45f5-82fb-d34447f8912a';
-    $display->content['new-87053436-e574-45f5-82fb-d34447f8912a'] = $pane;
-    $display->panels['center'][2] = 'new-87053436-e574-45f5-82fb-d34447f8912a';
+    $pane->uuid = 'a34a74d2-588f-4179-ba2d-8b7d26d80e17';
+    $display->content['new-a34a74d2-588f-4179-ba2d-8b7d26d80e17'] = $pane;
+    $display->panels['contentmain'][2] = 'new-a34a74d2-588f-4179-ba2d-8b7d26d80e17';
     $pane = new stdClass();
-    $pane->pid = 'new-e8dc01a4-0e8f-4cdb-b917-ff945a33f746';
-    $pane->panel = 'center';
+    $pane->pid = 'new-6cd5831d-141c-43fc-a975-ac46cb0bdcfa';
+    $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:body';
     $pane->shown = TRUE;
@@ -152,7 +158,7 @@ function careers_feeds_mastercal_panelizer_defaults() {
       'formatter_settings' => array(),
       'context' => 'panelizer',
       'override_title' => 0,
-      'override_title_text' => '',
+      'override_title_text' => 'Event Description',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -162,19 +168,19 @@ function careers_feeds_mastercal_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = 'e8dc01a4-0e8f-4cdb-b917-ff945a33f746';
-    $display->content['new-e8dc01a4-0e8f-4cdb-b917-ff945a33f746'] = $pane;
-    $display->panels['center'][3] = 'new-e8dc01a4-0e8f-4cdb-b917-ff945a33f746';
+    $pane->uuid = '6cd5831d-141c-43fc-a975-ac46cb0bdcfa';
+    $display->content['new-6cd5831d-141c-43fc-a975-ac46cb0bdcfa'] = $pane;
+    $display->panels['contentmain'][3] = 'new-6cd5831d-141c-43fc-a975-ac46cb0bdcfa';
     $pane = new stdClass();
-    $pane->pid = 'new-4b9e22c6-f11b-4044-bd04-ebd6596157db';
-    $pane->panel = 'center';
+    $pane->pid = 'new-aa117dac-d427-478b-a2a9-7a753aad5cd8';
+    $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_event_additional_info';
+    $pane->subtype = 'node:field_event_localist_url';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'text_default',
+      'label' => 'hidden',
+      'formatter' => 'link_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
@@ -191,41 +197,79 @@ function careers_feeds_mastercal_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = array();
-    $pane->uuid = '4b9e22c6-f11b-4044-bd04-ebd6596157db';
-    $display->content['new-4b9e22c6-f11b-4044-bd04-ebd6596157db'] = $pane;
-    $display->panels['center'][4] = 'new-4b9e22c6-f11b-4044-bd04-ebd6596157db';
+    $pane->uuid = 'aa117dac-d427-478b-a2a9-7a753aad5cd8';
+    $display->content['new-aa117dac-d427-478b-a2a9-7a753aad5cd8'] = $pane;
+    $display->panels['contentmain'][4] = 'new-aa117dac-d427-478b-a2a9-7a753aad5cd8';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = '0';
+  $panelizer->display = $display;
+  $export['node:event:default:default'] = $panelizer;
+
+  $panelizer = new stdClass();
+  $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
+  $panelizer->api_version = 1;
+  $panelizer->name = 'taxonomy_term:events:default';
+  $panelizer->title = 'Default';
+  $panelizer->panelizer_type = 'taxonomy_term';
+  $panelizer->panelizer_key = 'events';
+  $panelizer->no_blocks = FALSE;
+  $panelizer->css_id = '';
+  $panelizer->css = '';
+  $panelizer->pipeline = 'standard';
+  $panelizer->contexts = array();
+  $panelizer->relationships = array();
+  $panelizer->access = array();
+  $panelizer->view_mode = 'page_manager';
+  $panelizer->css_class = '';
+  $panelizer->title_element = 'H2';
+  $panelizer->link_to_entity = TRUE;
+  $panelizer->extra = array();
+  $display = new panels_display();
+  $display->layout = 'boxton';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'contentmain' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'fe6cd107-7100-482e-94eb-0c6e5bb2d9d7';
+  $display->content = array();
+  $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-86737c87-af0f-4d5b-8dee-135afb3ad8a8';
-    $pane->panel = 'center';
-    $pane->type = 'node_links';
-    $pane->subtype = 'node_links';
+    $pane->pid = 'new-b127d13d-202c-4925-9891-77b3eb389a65';
+    $pane->panel = 'contentmain';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'events-events_panel_page';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => FALSE,
+      'use_pager' => 1,
+      'pager_id' => '0',
+      'items_per_page' => '20',
+      'context' => array(
+        0 => 'panelizer',
+      ),
+      'override_title' => 1,
       'override_title_text' => '',
-      'build_mode' => 'default',
-      'identifier' => '',
-      'link' => TRUE,
-      'context' => 'panelizer',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array(
-      'css_class' => 'link-wrapper',
-    );
+    $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '86737c87-af0f-4d5b-8dee-135afb3ad8a8';
-    $display->content['new-86737c87-af0f-4d5b-8dee-135afb3ad8a8'] = $pane;
-    $display->panels['center'][5] = 'new-86737c87-af0f-4d5b-8dee-135afb3ad8a8';
-  $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-86737c87-af0f-4d5b-8dee-135afb3ad8a8';
+    $pane->uuid = 'b127d13d-202c-4925-9891-77b3eb389a65';
+    $display->content['new-b127d13d-202c-4925-9891-77b3eb389a65'] = $pane;
+    $display->panels['contentmain'][0] = 'new-b127d13d-202c-4925-9891-77b3eb389a65';
+  $display->hide_title = PANELS_TITLE_PANE;
+  $display->title_pane = 'new-b127d13d-202c-4925-9891-77b3eb389a65';
   $panelizer->display = $display;
-  $export['node:master_calendar_event:default:default'] = $panelizer;
+  $export['taxonomy_term:events:default'] = $panelizer;
 
   return $export;
 }

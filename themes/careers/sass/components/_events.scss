@@ -1,10 +1,12 @@
 // Events
+.view-display-id-events_filter_pane,
 .view-display-id-events_panel_page,
 .view-display-id-events_front_page {
-  .views-field-field-mcf-date {
+  .views-field-field-mcf-date, .views-field-field-event-date {
     margin-bottom: 5px;
 
     .field-content {
+      font-weight: bold;
       &:before {
         @include icon($fa-var-clock-o, $margin-right: 0.5em);
       }
@@ -15,8 +17,18 @@
     margin-bottom: 5px;
     
     .field-content {
+      font-weight: bold;
       &:before {
-        @include icon($fa-var-map-marker, $margin-right: 0.5em);
+        @include icon($fa-var-map-marker, $margin-right: 0.7em, $margin-left: 0.13em);
+      }
+    }
+  }
+  .views-field-field-event-location {
+    margin-bottom: 5px;
+    font-weight: bold;
+    .addressfield-container-inline .name-block {
+      &:before {
+        @include icon($fa-var-map-marker, $margin-right: 0.7em, $margin-left: 0.13em);
       }
     }
   }
@@ -30,17 +42,25 @@
   }
 }
 
-.pane-views-exp-events-events-panel-page {
-  .views-submit-button, .views-reset-button {
-    width: auto;
+.pane-views-exp-events-events-filter-pane {
+  border: 1px solid $border;
+  margin: 10px;
+}
+#views-exposed-form-events-events-filter-pane {
+  .views-widget-filter-field_event_category_tid {
+    width: 100%;
   }
-  input[type="text"], .views-widget-filter-field_event_category_tid, .form-select {
-    width: 99%;
+  .views-widget-filter-field_event_date_value, .views-widget-filter-field_event_date_value2_1 {
+    width: 50%;
   }
+  input[type="text"], .form-select {
+    width: 95%;
+    margin: 0 auto;
+ }
 }
 
-.node-master-calendar-event {
-  .field-name-field-mcf-date {
+.node-event, .node-master-calendar-event {
+  .field-name-field-mcf-date, .field-name-field-event-date {
     .field-label {
       &:before {
         @include icon($fa-var-clock-o, $margin-right: 0.5em);
@@ -48,7 +68,7 @@
     }
   }
 
-  .field-name-field-mcf-location {    
+  .field-name-field-mcf-location, .field-name-field-event-location {
     .field-label {
       &:before {
         @include icon($fa-var-map-marker, $margin-right: 0.5em);
@@ -56,7 +76,7 @@
     }
   }
 
-  .field-name-field-mcf-event-url {
+  .field-name-field-mcf-event-url, .field-name-field-event-link {
     .field-label {
       &:before {
         @include icon($fa-var-info-circle, $margin-right: 0.5em);
