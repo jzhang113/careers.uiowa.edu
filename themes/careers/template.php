@@ -240,7 +240,7 @@ function careers_field__taxonomy_term_reference($vars) {
  */
 function careers_preprocess_field(&$variables, $hook) {
   // Change the label of the body field for the Event content type.
-  if ($variables['element']['#field_name'] == 'body' && $variables['element']['#bundle'] == 'master_calendar_event') {
+  if ($variables['element']['#field_name'] == 'body' && ($variables['element']['#bundle'] == 'master_calendar_event' || $variables['element']['#bundle'] == 'event')) {
     $variables['label'] = 'Event Description';
   }
 }
