@@ -160,7 +160,7 @@ $bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249
 }
 
 /* line 134, ../sass/utilities/_classes.scss */
-.pane-node-created .block-content, .node-event .field-name-body .field-label, .node-master-calendar-event .field-name-body .field-label, .node-event .field-name-field-event-additional-info .field-label, .node-master-calendar-event .field-name-field-event-additional-info .field-label, .node-major .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
+.pane-node-created .block-content, .node-master-calendar-event .field-name-body .field-label, .node-master-calendar-event .field-name-field-event-additional-info .field-label, .node-major .field-label, .node-full.node-people .field-name-field-people-biography .field-label, .node-full.node-spotlight .field-name-body .field-label, .node-full.node-video .field-label-above .field-label {
   font-size: 18px;
   font-size: 1.8rem;
   display: block;
@@ -357,11 +357,6 @@ hr {
   font-weight: bold;
 }
 
-/* line 6, ../sass/base/_views.scss */
-.view-footer a.button {
-  width: 100%;
-}
-
 /* line 2, ../sass/components/_announcements.scss */
 .pane-announcements-announcements-archive .views-row {
   height: auto;
@@ -473,6 +468,7 @@ hr {
 
 /* line 60, ../sass/components/_buttons.scss */
 .page .button, .page input[type="button"], .page input[type="reset"], .page input[type="submit"] {
+  display: inline-block;
   font-family: "Fjalla One", sans-serif;
   background-color: #2b6390;
   color: white;
@@ -491,15 +487,11 @@ hr {
   -ms-user-select: none;
   -o-user-select: none;
 }
-/* line 77, ../sass/components/_buttons.scss */
+/* line 78, ../sass/components/_buttons.scss */
 .page .button:hover, .page .button:focus, .page input[type="button"]:hover, .page input[type="button"]:focus, .page input[type="reset"]:hover, .page input[type="reset"]:focus, .page input[type="submit"]:hover, .page input[type="submit"]:focus {
   background-color: #000;
   color: white;
   text-decoration: none;
-}
-/* line 83, ../sass/components/_buttons.scss */
-.page .button {
-  display: inline-block;
 }
 
 /* line 1, ../sass/components/_contact_form.scss */
@@ -685,28 +677,14 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   max-height: 150px;
 }
 
-/* line 5, ../sass/components/_events.scss */
-.view-display-id-events_filter_pane .views-field-field-mcf-date, .view-display-id-events_filter_pane .views-field-field-event-date,
+/* line 4, ../sass/components/_events.scss */
 .view-display-id-events_panel_page .views-field-field-mcf-date,
-.view-display-id-events_panel_page .views-field-field-event-date,
-.view-display-id-events_front_page .views-field-field-mcf-date,
-.view-display-id-events_front_page .views-field-field-event-date {
+.view-display-id-events_front_page .views-field-field-mcf-date {
   margin-bottom: 5px;
 }
 /* line 8, ../sass/components/_events.scss */
-.view-display-id-events_filter_pane .views-field-field-mcf-date .field-content, .view-display-id-events_filter_pane .views-field-field-event-date .field-content,
-.view-display-id-events_panel_page .views-field-field-mcf-date .field-content,
-.view-display-id-events_panel_page .views-field-field-event-date .field-content,
-.view-display-id-events_front_page .views-field-field-mcf-date .field-content,
-.view-display-id-events_front_page .views-field-field-event-date .field-content {
-  font-weight: bold;
-}
-/* line 10, ../sass/components/_events.scss */
-.view-display-id-events_filter_pane .views-field-field-mcf-date .field-content:before, .view-display-id-events_filter_pane .views-field-field-event-date .field-content:before,
 .view-display-id-events_panel_page .views-field-field-mcf-date .field-content:before,
-.view-display-id-events_panel_page .views-field-field-event-date .field-content:before,
-.view-display-id-events_front_page .views-field-field-mcf-date .field-content:before,
-.view-display-id-events_front_page .views-field-field-event-date .field-content:before {
+.view-display-id-events_front_page .views-field-field-mcf-date .field-content:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -716,20 +694,12 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   content: "\f017";
   margin-right: 0.5em;
 }
-/* line 16, ../sass/components/_events.scss */
-.view-display-id-events_filter_pane .views-field-field-mcf-location,
+/* line 14, ../sass/components/_events.scss */
 .view-display-id-events_panel_page .views-field-field-mcf-location,
 .view-display-id-events_front_page .views-field-field-mcf-location {
   margin-bottom: 5px;
 }
-/* line 19, ../sass/components/_events.scss */
-.view-display-id-events_filter_pane .views-field-field-mcf-location .field-content,
-.view-display-id-events_panel_page .views-field-field-mcf-location .field-content,
-.view-display-id-events_front_page .views-field-field-mcf-location .field-content {
-  font-weight: bold;
-}
-/* line 21, ../sass/components/_events.scss */
-.view-display-id-events_filter_pane .views-field-field-mcf-location .field-content:before,
+/* line 18, ../sass/components/_events.scss */
 .view-display-id-events_panel_page .views-field-field-mcf-location .field-content:before,
 .view-display-id-events_front_page .views-field-field-mcf-location .field-content:before {
   font-family: FontAwesome;
@@ -739,32 +709,9 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f041";
-  margin-right: 0.7em;
-  margin-left: 0.13em;
+  margin-right: 0.5em;
 }
-/* line 26, ../sass/components/_events.scss */
-.view-display-id-events_filter_pane .views-field-field-event-location,
-.view-display-id-events_panel_page .views-field-field-event-location,
-.view-display-id-events_front_page .views-field-field-event-location {
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-/* line 30, ../sass/components/_events.scss */
-.view-display-id-events_filter_pane .views-field-field-event-location .addressfield-container-inline .name-block:before,
-.view-display-id-events_panel_page .views-field-field-event-location .addressfield-container-inline .name-block:before,
-.view-display-id-events_front_page .views-field-field-event-location .addressfield-container-inline .name-block:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f041";
-  margin-right: 0.7em;
-  margin-left: 0.13em;
-}
-/* line 36, ../sass/components/_events.scss */
-.view-display-id-events_filter_pane .views-row,
+/* line 24, ../sass/components/_events.scss */
 .view-display-id-events_panel_page .views-row,
 .view-display-id-events_front_page .views-row {
   height: auto;
@@ -772,36 +719,23 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
-/* line 40, ../sass/components/_events.scss */
-.view-display-id-events_filter_pane .views-row-last,
+/* line 28, ../sass/components/_events.scss */
 .view-display-id-events_panel_page .views-row-last,
 .view-display-id-events_front_page .views-row-last {
   border-bottom: 0px;
-  margin-bottom: 0px;
 }
 
-/* line 46, ../sass/components/_events.scss */
-.pane-views-exp-events-events-filter-pane {
-  border: 1px solid #cccccc;
-  margin: 10px;
+/* line 34, ../sass/components/_events.scss */
+.pane-views-exp-events-events-panel-page .views-submit-button, .pane-views-exp-events-events-panel-page .views-reset-button {
+  width: auto;
+}
+/* line 37, ../sass/components/_events.scss */
+.pane-views-exp-events-events-panel-page input[type="text"], .pane-views-exp-events-events-panel-page .views-widget-filter-field_event_category_tid, .pane-views-exp-events-events-panel-page .form-select {
+  width: 99%;
 }
 
-/* line 51, ../sass/components/_events.scss */
-#views-exposed-form-events-events-filter-pane .views-widget-filter-field_event_category_tid {
-  width: 100%;
-}
-/* line 54, ../sass/components/_events.scss */
-#views-exposed-form-events-events-filter-pane .views-widget-filter-field_event_date_value, #views-exposed-form-events-events-filter-pane .views-widget-filter-field_event_date_value2_1 {
-  width: 50%;
-}
-/* line 57, ../sass/components/_events.scss */
-#views-exposed-form-events-events-filter-pane input[type="text"], #views-exposed-form-events-events-filter-pane .form-select {
-  width: 95%;
-  margin: 0 auto;
-}
-
-/* line 66, ../sass/components/_events.scss */
-.node-event .field-name-field-mcf-date .field-label:before, .node-event .field-name-field-event-date .field-label:before, .node-master-calendar-event .field-name-field-mcf-date .field-label:before, .node-master-calendar-event .field-name-field-event-date .field-label:before {
+/* line 45, ../sass/components/_events.scss */
+.node-master-calendar-event .field-name-field-mcf-date .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -811,8 +745,8 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   content: "\f017";
   margin-right: 0.5em;
 }
-/* line 74, ../sass/components/_events.scss */
-.node-event .field-name-field-mcf-location .field-label:before, .node-event .field-name-field-event-location .field-label:before, .node-master-calendar-event .field-name-field-mcf-location .field-label:before, .node-master-calendar-event .field-name-field-event-location .field-label:before {
+/* line 53, ../sass/components/_events.scss */
+.node-master-calendar-event .field-name-field-mcf-location .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -822,8 +756,8 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   content: "\f041";
   margin-right: 0.5em;
 }
-/* line 82, ../sass/components/_events.scss */
-.node-event .field-name-field-mcf-event-url .field-label:before, .node-event .field-name-field-event-link .field-label:before, .node-master-calendar-event .field-name-field-mcf-event-url .field-label:before, .node-master-calendar-event .field-name-field-event-link .field-label:before {
+/* line 61, ../sass/components/_events.scss */
+.node-master-calendar-event .field-name-field-mcf-event-url .field-label:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -833,12 +767,12 @@ html.js .ctools-collapsible-container .ctools-collapsible-content {
   content: "\f05a";
   margin-right: 0.5em;
 }
-/* line 88, ../sass/components/_events.scss */
-.node-event .field-name-body, .node-master-calendar-event .field-name-body {
+/* line 67, ../sass/components/_events.scss */
+.node-master-calendar-event .field-name-body {
   margin-top: 10px;
 }
-/* line 95, ../sass/components/_events.scss */
-.node-event .field-name-field-event-additional-info, .node-master-calendar-event .field-name-field-event-additional-info {
+/* line 74, ../sass/components/_events.scss */
+.node-master-calendar-event .field-name-field-event-additional-info {
   margin-top: 10px;
 }
 
@@ -1650,12 +1584,8 @@ ul.quicktabs-tabs li.active a {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 54, ../sass/components/_quicktabs.scss */
-.front .pane-quicktabs-announcements-events .views-row-last {
-  margin-bottom: 0px;
-}
 
-/* line 61, ../sass/components/_quicktabs.scss */
+/* line 58, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events .pane-title {
   position: absolute;
   top: -99999em;
@@ -1664,21 +1594,21 @@ ul.quicktabs-tabs li.active a {
   overflow: hidden;
   outline: 0;
 }
-/* line 65, ../sass/components/_quicktabs.scss */
+/* line 62, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs {
   padding: 0 5px;
 }
-/* line 68, ../sass/components/_quicktabs.scss */
+/* line 65, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs li {
   padding: 0 3px;
 }
-/* line 71, ../sass/components/_quicktabs.scss */
+/* line 68, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events ul.quicktabs-tabs li a {
   padding: 2px 5px 0;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 78, ../sass/components/_quicktabs.scss */
+/* line 75, ../sass/components/_quicktabs.scss */
 .pane-quicktabs-subpage-announcements-events h3 {
   font-size: 15px;
   font-size: 1.5rem;
