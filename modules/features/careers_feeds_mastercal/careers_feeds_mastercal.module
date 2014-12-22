@@ -1,0 +1,41 @@
+<?php
+/**
+ * @file
+ * Code for the Careers Feeds MasterCal feature.
+ */
+
+include_once 'careers_feeds_mastercal.features.inc';
+
+/**
+ * Implements hook_form_FORMID_alter().
+ */
+function careers_feeds_mastercal_form_master_calendar_event_node_form_alter(&$form, &$form_state, $form_id) {
+  // Disable any fields that pull data in from the Master Calendar feed.
+  // @TODO instead of being so heavy-handed, we should first check to see that
+  // the node is being "controlled" by Master Calendar.
+  $form['title']['#disabled'] = TRUE;
+  $form['body']['#disabled'] = TRUE;
+  $form['field_mcf_date']['#disabled'] = TRUE;
+  $form['field_mcf_location']['#disabled'] = TRUE;
+  $form['field_mcf_event_url']['#disabled'] = TRUE;
+  $form['field_mcf_event_category']['#disabled'] = TRUE;
+}
+
+/**
+ * Implements hook_feeds_plugins().
+ */
+function careers_feeds_mastercal_feeds_plugins() {
+  $info = array();
+  $info['MasterCalFetcher'] = array(
+    'name' => 'Master Calendar Fetcher',
+    'description' => 'Fetches Master Calendar Items.',
+    'help' => 'Fetches Master Calendar events based on a specified date range.',
+    'handler' => array(
+      'parent' => 'FeedsHTTPFetcher',
+      'class' => 'MasterCalFetcher',
+      'file' => 'MasterCalFetcher.inc',
+      'path' => drupal_get_path('module', 'careers_feeds_mastercal') . '/plugins',
+    ),
+  );
+  return $info;
+}
