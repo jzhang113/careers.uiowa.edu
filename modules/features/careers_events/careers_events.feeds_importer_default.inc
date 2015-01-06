@@ -24,6 +24,8 @@ function careers_events_feeds_importer_default() {
         'use_pubsubhubbub' => FALSE,
         'designated_hub' => '',
         'request_timeout' => NULL,
+        'auto_scheme' => 'http',
+        'accept_invalid_cert' => FALSE,
       ),
     ),
     'parser' => array(
@@ -198,6 +200,7 @@ function careers_events_feeds_importer_default() {
         'input_format' => 'filtered_html',
         'skip_hash_check' => 0,
         'bundle' => 'event',
+        'update_non_existent' => 'delete',
       ),
     ),
     'content_type' => '',
