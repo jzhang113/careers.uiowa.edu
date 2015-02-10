@@ -46,5 +46,6 @@ function inthenews_node_info() {
       'help' => t('Do not post copyrighted material without proper permission.'),
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

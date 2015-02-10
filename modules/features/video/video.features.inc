@@ -46,5 +46,6 @@ function video_node_info() {
       'help' => t('Add either a YouTube Video or a Video Link to an external video. Both fields cannot be filled out at the time of submission. The screenshot field is only for use with the Video Link field.'),
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
