@@ -203,6 +203,8 @@ function spotlights_field_default_field_instances() {
         'manualcrop_inline_crop' => FALSE,
         'manualcrop_instant_crop' => FALSE,
         'manualcrop_instant_preview' => 0,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
         'manualcrop_require_cropping' => array(
           'featured' => 0,
           'featured_page' => 0,

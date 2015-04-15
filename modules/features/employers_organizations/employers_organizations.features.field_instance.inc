@@ -107,17 +107,7 @@ function employers_organizations_field_default_field_instances() {
   // Exported field_instance: 'node-employers_organizations-field_location_address'
   $field_instances['node-employers_organizations-field_location_address'] = array(
     'bundle' => 'employers_organizations',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'node|employers_organizations|field_location_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -160,6 +150,7 @@ function employers_organizations_field_default_field_instances() {
         'available_countries' => array(
           'US' => 'US',
         ),
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
@@ -309,18 +300,10 @@ function employers_organizations_field_default_field_instances() {
         'manualcrop_inline_crop' => FALSE,
         'manualcrop_instant_crop' => FALSE,
         'manualcrop_instant_preview' => 1,
-        'manualcrop_require_cropping' => array(
-          'featured' => 0,
-          'featured_page' => 0,
-          'people_profile' => 0,
-          'square' => 0,
-        ),
-        'manualcrop_styles_list' => array(
-          'featured' => 0,
-          'featured_page' => 0,
-          'people_profile' => 0,
-          'square' => 0,
-        ),
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
         'manualcrop_styles_mode' => 'exclude',
         'manualcrop_thumblist' => 0,
         'progress_indicator' => 'throbber',

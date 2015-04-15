@@ -337,17 +337,7 @@ function careers_events_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_event_location'
   $field_instances['node-event-field_event_location'] = array(
     'bundle' => 'event',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'node|event|field_event_location|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -390,6 +380,7 @@ function careers_events_field_default_field_instances() {
         'available_countries' => array(
           'US' => 'US',
         ),
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
