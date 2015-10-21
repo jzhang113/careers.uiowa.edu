@@ -631,15 +631,10 @@ function _captcha_get_posted_captcha_info($element, $form_state, $this_form_id) 
         }
 
         // Invalidate CAPTCHA token to avoid reuse.
-        // Add fix to avoid erroneous session id's being posted - efg 2015-06-09
-        // per https://www.drupal.org/node/2474959.
-        // Added condition form_state['submitted'] to keep from adding multiple session ids.
-        if ($form_state['submitted']) {
-          db_update('captcha_sessions')
-           ->fields(array('token' => NULL))
-           ->condition('csid', $posted_captcha_sid)
-           ->execute();
-        }
+        db_update('captcha_sessions')
+          ->fields(array('token' => NULL))
+          ->condition('csid', $posted_captcha_sid)
+          ->execute();
       }
     }
     else {
