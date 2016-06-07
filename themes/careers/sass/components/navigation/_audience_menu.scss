@@ -6,6 +6,10 @@
     @media #{$responsive-nav} {
       bottom: 0;
       position: absolute;
+      left: 0;
+    }
+    @media #{$desktop} {
+      left: auto;
       right: 0;
     }
 
@@ -14,18 +18,13 @@
       color: #fff;
       @include offscreen;
 
-      @media #{$responsive-nav} {
-        float: left;
-        margin-bottom: 0;
-        padding: 10px;
-        @include font-size(1.4);
-        @include offscreen-off;
-        height: 36px;
-      }
-
       @media #{$desktop} {
         @include font-size(1.9);
         height: 42px;
+        float: left;
+        margin-bottom: 0;
+        padding: 10px;
+        @include offscreen-off;
       }
     }
 
@@ -98,7 +97,7 @@
 
         @media #{$responsive-nav} {
           float: left;
-          padding: 10px 20px;
+          padding: 10px 15px;
           height: 36px;
         }
 

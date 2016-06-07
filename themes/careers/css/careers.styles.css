@@ -2028,10 +2028,17 @@ ul.quicktabs-tabs li.active a {
   .region-header .block-responsive-navigation {
     bottom: 0;
     position: absolute;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  /* line 3, ../sass/components/navigation/_audience_menu.scss */
+  .region-header .block-responsive-navigation {
+    left: auto;
     right: 0;
   }
 }
-/* line 12, ../sass/components/navigation/_audience_menu.scss */
+/* line 16, ../sass/components/navigation/_audience_menu.scss */
 .region-header .block-responsive-navigation .block-title {
   background-color: #000;
   color: #fff;
@@ -2042,36 +2049,28 @@ ul.quicktabs-tabs li.active a {
   overflow: hidden;
   outline: 0;
 }
-@media only screen and (min-width: 40em) {
-  /* line 12, ../sass/components/navigation/_audience_menu.scss */
-  .region-header .block-responsive-navigation .block-title {
-    float: left;
-    margin-bottom: 0;
-    padding: 10px;
-    font-size: 14px;
-    font-size: 1.4rem;
-    position: relative;
-    top: auto;
-    width: auto;
-    height: auto;
-    height: 36px;
-  }
-}
 @media only screen and (min-width: 1025px) {
-  /* line 12, ../sass/components/navigation/_audience_menu.scss */
+  /* line 16, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-title {
     font-size: 19px;
     font-size: 1.9rem;
     height: 42px;
+    float: left;
+    margin-bottom: 0;
+    padding: 10px;
+    position: relative;
+    top: auto;
+    width: auto;
+    height: auto;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 32, ../sass/components/navigation/_audience_menu.scss */
+  /* line 31, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content {
     float: left;
   }
 }
-/* line 37, ../sass/components/navigation/_audience_menu.scss */
+/* line 36, ../sass/components/navigation/_audience_menu.scss */
 .region-header .block-responsive-navigation .block-content a#nav-toggle {
   background-color: #000;
   color: #fff;
@@ -2079,7 +2078,7 @@ ul.quicktabs-tabs li.active a {
   padding: 10px;
   text-align: center;
 }
-/* line 44, ../sass/components/navigation/_audience_menu.scss */
+/* line 43, ../sass/components/navigation/_audience_menu.scss */
 .region-header .block-responsive-navigation .block-content a#nav-toggle:before {
   margin-right: 0.5em;
   font-family: FontAwesome;
@@ -2091,18 +2090,18 @@ ul.quicktabs-tabs li.active a {
   content: "\f0c9";
   font-size: 1.2em;
 }
-/* line 49, ../sass/components/navigation/_audience_menu.scss */
+/* line 48, ../sass/components/navigation/_audience_menu.scss */
 .region-header .block-responsive-navigation .block-content a#nav-toggle:hover, .region-header .block-responsive-navigation .block-content a#nav-toggle:focus {
   color: #ffd451;
 }
 @media only screen and (min-width: 40em) {
-  /* line 37, ../sass/components/navigation/_audience_menu.scss */
+  /* line 36, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content a#nav-toggle {
     display: none;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 58, ../sass/components/navigation/_audience_menu.scss */
+  /* line 57, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content ul:before {
     border-bottom: 18px solid #ffd451;
     border-left: 18px solid #000;
@@ -2116,7 +2115,7 @@ ul.quicktabs-tabs li.active a {
   }
 }
 @media only screen and (min-width: 1025px) {
-  /* line 58, ../sass/components/navigation/_audience_menu.scss */
+  /* line 57, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content ul:before {
     border-bottom: 21px solid #ffd451;
     border-left: 21px solid #000;
@@ -2124,13 +2123,13 @@ ul.quicktabs-tabs li.active a {
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 79, ../sass/components/navigation/_audience_menu.scss */
+  /* line 78, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content #nav li {
     float: left;
     width: auto;
   }
 }
-/* line 86, ../sass/components/navigation/_audience_menu.scss */
+/* line 85, ../sass/components/navigation/_audience_menu.scss */
 .region-header .block-responsive-navigation .block-content a {
   background-color: #ffd451;
   border-bottom: none;
@@ -2139,21 +2138,21 @@ ul.quicktabs-tabs li.active a {
   padding: 10px;
   text-align: center;
 }
-/* line 94, ../sass/components/navigation/_audience_menu.scss */
+/* line 93, ../sass/components/navigation/_audience_menu.scss */
 .region-header .block-responsive-navigation .block-content a:hover, .region-header .block-responsive-navigation .block-content a:focus {
   background-color: #000;
   color: #fff;
 }
 @media only screen and (min-width: 40em) {
-  /* line 86, ../sass/components/navigation/_audience_menu.scss */
+  /* line 85, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content a {
     float: left;
-    padding: 10px 20px;
+    padding: 10px 15px;
     height: 36px;
   }
 }
 @media only screen and (min-width: 1025px) {
-  /* line 86, ../sass/components/navigation/_audience_menu.scss */
+  /* line 85, ../sass/components/navigation/_audience_menu.scss */
   .region-header .block-responsive-navigation .block-content a {
     padding: 10px 26px;
     font-size: 19px;
@@ -2161,7 +2160,7 @@ ul.quicktabs-tabs li.active a {
     height: 42px;
   }
 }
-/* line 112, ../sass/components/navigation/_audience_menu.scss */
+/* line 111, ../sass/components/navigation/_audience_menu.scss */
 .region-header .block-responsive-navigation .block-content #nav li.active-trail a {
   background-color: #000;
   color: #fff;
