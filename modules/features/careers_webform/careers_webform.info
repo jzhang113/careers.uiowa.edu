@@ -75,4 +75,5 @@ features[variable][] = pathauto_node_webform_pattern
 features[variable][] = pathauto_nodesymlinks_webform_pattern
 features[variable][] = webform_node_page
 features[variable][] = webform_node_webform
+features[variable][] = xmlsitemap_settings_node_webform
 features_exclude[dependencies][inthenews] = inthenews

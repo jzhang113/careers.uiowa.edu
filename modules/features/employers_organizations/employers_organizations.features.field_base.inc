@@ -10,7 +10,7 @@
 function employers_organizations_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_additional_notes'
+  // Exported field_base: 'field_additional_notes'.
   $field_bases['field_additional_notes'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -29,7 +29,7 @@ function employers_organizations_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_description'
+  // Exported field_base: 'field_description'.
   $field_bases['field_description'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -48,7 +48,7 @@ function employers_organizations_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_location_address'
+  // Exported field_base: 'field_location_address'.
   $field_bases['field_location_address'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -63,7 +63,7 @@ function employers_organizations_field_default_field_bases() {
     'type' => 'addressfield',
   );
 
-  // Exported field_base: 'field_location_geofield'
+  // Exported field_base: 'field_location_geofield'.
   $field_bases['field_location_geofield'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -81,7 +81,7 @@ function employers_organizations_field_default_field_bases() {
     'type' => 'geofield',
   );
 
-  // Exported field_base: 'field_logo'
+  // Exported field_base: 'field_logo'.
   $field_bases['field_logo'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -103,7 +103,7 @@ function employers_organizations_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_sponsor_date'
+  // Exported field_base: 'field_sponsor_date'.
   $field_bases['field_sponsor_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -132,7 +132,7 @@ function employers_organizations_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_visited_date'
+  // Exported field_base: 'field_visited_date'.
   $field_bases['field_visited_date'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -161,7 +161,7 @@ function employers_organizations_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_website_link'
+  // Exported field_base: 'field_website_link'.
   $field_bases['field_website_link'] = array(
     'active' => 1,
     'cardinality' => 1,

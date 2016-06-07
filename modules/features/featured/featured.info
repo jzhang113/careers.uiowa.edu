@@ -73,6 +73,7 @@ features[variable][] = panelizer_node:featured_allowed_types_default
 features[variable][] = panelizer_node:featured_default
 features[variable][] = pathauto_node_featured_pattern
 features[variable][] = pathauto_nodesymlinks_featured_pattern
+features[variable][] = xmlsitemap_settings_node_featured
 features[views_view][] = featured
 features_exclude[dependencies][news_content_type] = news_content_type
 features_exclude[dependencies][inthenews] = inthenews

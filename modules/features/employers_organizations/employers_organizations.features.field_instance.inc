@@ -10,7 +10,8 @@
 function employers_organizations_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-employers_organizations-field_additional_notes'
+  // Exported field_instance:
+  // 'node-employers_organizations-field_additional_notes'.
   $field_instances['node-employers_organizations-field_additional_notes'] = array(
     'bundle' => 'employers_organizations',
     'default_value' => NULL,
@@ -56,7 +57,7 @@ function employers_organizations_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employers_organizations-field_description'
+  // Exported field_instance: 'node-employers_organizations-field_description'.
   $field_instances['node-employers_organizations-field_description'] = array(
     'bundle' => 'employers_organizations',
     'default_value' => NULL,
@@ -104,7 +105,8 @@ function employers_organizations_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employers_organizations-field_location_address'
+  // Exported field_instance:
+  // 'node-employers_organizations-field_location_address'.
   $field_instances['node-employers_organizations-field_location_address'] = array(
     'bundle' => 'employers_organizations',
     'default_value' => NULL,
@@ -164,7 +166,8 @@ function employers_organizations_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employers_organizations-field_location_geofield'
+  // Exported field_instance:
+  // 'node-employers_organizations-field_location_geofield'.
   $field_instances['node-employers_organizations-field_location_geofield'] = array(
     'bundle' => 'employers_organizations',
     'deleted' => 0,
@@ -229,7 +232,7 @@ function employers_organizations_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employers_organizations-field_logo'
+  // Exported field_instance: 'node-employers_organizations-field_logo'.
   $field_instances['node-employers_organizations-field_logo'] = array(
     'bundle' => 'employers_organizations',
     'deleted' => 0,
@@ -313,7 +316,7 @@ function employers_organizations_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employers_organizations-field_sponsor_date'
+  // Exported field_instance: 'node-employers_organizations-field_sponsor_date'.
   $field_instances['node-employers_organizations-field_sponsor_date'] = array(
     'bundle' => 'employers_organizations',
     'deleted' => 0,
@@ -328,6 +331,7 @@ function employers_organizations_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 7,
@@ -372,7 +376,7 @@ function employers_organizations_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employers_organizations-field_visited_date'
+  // Exported field_instance: 'node-employers_organizations-field_visited_date'.
   $field_instances['node-employers_organizations-field_visited_date'] = array(
     'bundle' => 'employers_organizations',
     'deleted' => 0,
@@ -387,6 +391,7 @@ function employers_organizations_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 8,
@@ -431,7 +436,7 @@ function employers_organizations_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employers_organizations-field_website_link'
+  // Exported field_instance: 'node-employers_organizations-field_website_link'.
   $field_instances['node-employers_organizations-field_website_link'] = array(
     'bundle' => 'employers_organizations',
     'default_value' => NULL,

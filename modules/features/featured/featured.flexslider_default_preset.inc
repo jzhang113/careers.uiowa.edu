@@ -16,8 +16,6 @@ function featured_flexslider_default_presets() {
   $preset->name = 'careers';
   $preset->title = 'Careers';
   $preset->theme = 'classic';
-  $preset->imagestyle_normal = 'featured';
-  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',

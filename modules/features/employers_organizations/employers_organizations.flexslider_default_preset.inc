@@ -16,8 +16,6 @@ function employers_organizations_flexslider_default_presets() {
   $preset->name = 'employer_showcase_carousel';
   $preset->title = 'Employer Showcase Carousel';
   $preset->theme = 'classic';
-  $preset->imagestyle_normal = 'square';
-  $preset->imagestyle_thumbnail = 'square';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',

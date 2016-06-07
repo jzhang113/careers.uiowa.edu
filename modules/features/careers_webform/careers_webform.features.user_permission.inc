@@ -277,6 +277,11 @@ function careers_webform_user_default_permissions() {
     'name' => 'skip CAPTCHA',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
+      'student' => 'student',
+      'webform access' => 'webform access',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'captcha',
   );
